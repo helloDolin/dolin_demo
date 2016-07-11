@@ -30,6 +30,8 @@
 		16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */; };
 		16E59EE01D33E718005C0062 /* RichTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E59EDF1D33E718005C0062 /* RichTextViewController.m */; };
 		16E59EE31D33EB90005C0062 /* PwdTextFieldBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E59EE21D33EB90005C0062 /* PwdTextFieldBugViewController.m */; };
+		16E59EF51D33F19C005C0062 /* Dolin2CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E59EF31D33F19C005C0062 /* Dolin2CollectionViewCell.m */; };
+		16E59EF61D33F19C005C0062 /* Dolin2CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E59EF41D33F19C005C0062 /* Dolin2CollectionViewCell.xib */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,9 @@
 		16E59EDF1D33E718005C0062 /* RichTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichTextViewController.m; sourceTree = "<group>"; };
 		16E59EE11D33EB90005C0062 /* PwdTextFieldBugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PwdTextFieldBugViewController.h; sourceTree = "<group>"; };
 		16E59EE21D33EB90005C0062 /* PwdTextFieldBugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PwdTextFieldBugViewController.m; sourceTree = "<group>"; };
+		16E59EF21D33F19C005C0062 /* Dolin2CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin2CollectionViewCell.h; sourceTree = "<group>"; };
+		16E59EF31D33F19C005C0062 /* Dolin2CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin2CollectionViewCell.m; sourceTree = "<group>"; };
+		16E59EF41D33F19C005C0062 /* Dolin2CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dolin2CollectionViewCell.xib; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +137,9 @@
 			children = (
 				163A579B1D33597E003B9609 /* Dolin2ViewController.h */,
 				163A579C1D33597E003B9609 /* Dolin2ViewController.m */,
+				16E59EF21D33F19C005C0062 /* Dolin2CollectionViewCell.h */,
+				16E59EF31D33F19C005C0062 /* Dolin2CollectionViewCell.m */,
+				16E59EF41D33F19C005C0062 /* Dolin2CollectionViewCell.xib */,
 			);
 			path = Dolin2;
 			sourceTree = "<group>";
@@ -324,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E59EF61D33F19C005C0062 /* Dolin2CollectionViewCell.xib in Resources */,
 				16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */,
 				16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */,
 				16C8D6481D33511700228ABD /* Main.storyboard in Resources */,
@@ -388,6 +397,7 @@
 				163A57921D335790003B9609 /* DolinTabBarController.m in Sources */,
 				16C8D6421D33511700228ABD /* AppDelegate.m in Sources */,
 				163A57C91D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				16E59EF51D33F19C005C0062 /* Dolin2CollectionViewCell.m in Sources */,
 				163A579D1D33597E003B9609 /* Dolin2ViewController.m in Sources */,
 				163A57C61D3371E2003B9609 /* DolinBannerView.m in Sources */,
 				163A57A31D335990003B9609 /* Dolin4ViewController.m in Sources */,

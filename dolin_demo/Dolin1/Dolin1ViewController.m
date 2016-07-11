@@ -78,7 +78,7 @@
 #pragma mark -  getter
 - (UITableView*)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:FULL_SCREEN_FRAME style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.delegate = self;
     }
