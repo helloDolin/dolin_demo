@@ -9,6 +9,7 @@
 #import "Dolin1ViewController.h"
 #import "BannerViewController.h"
 #import "SimulateTwitterViewController.h"
+#import "RichTextViewController.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -29,7 +30,8 @@
     
     _arr = @[
              @"Banner-BannerViewController",
-             @"仿Twitter-SimulateTwitterViewController"
+             @"仿Twitter-SimulateTwitterViewController",
+             @"富文本-RichTextViewController"
              ];
 }
 
