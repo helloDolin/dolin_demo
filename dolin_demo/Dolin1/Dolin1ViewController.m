@@ -10,6 +10,7 @@
 #import "BannerViewController.h"
 #import "SimulateTwitterViewController.h"
 #import "RichTextViewController.h"
+#import "PwdTextFieldBugViewController.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -31,7 +32,8 @@
     _arr = @[
              @"Banner-BannerViewController",
              @"仿Twitter-SimulateTwitterViewController",
-             @"富文本-RichTextViewController"
+             @"富文本-RichTextViewController",
+             @"苹果密码框bug-PwdTextFieldBugViewController"
              ];
 }
 

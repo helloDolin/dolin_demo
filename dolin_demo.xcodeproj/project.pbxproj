@@ -29,6 +29,7 @@
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
 		16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */; };
 		16E59EE01D33E718005C0062 /* RichTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E59EDF1D33E718005C0062 /* RichTextViewController.m */; };
+		16E59EE31D33EB90005C0062 /* PwdTextFieldBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E59EE21D33EB90005C0062 /* PwdTextFieldBugViewController.m */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,8 @@
 		16C8D64E1D33511700228ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E59EDE1D33E718005C0062 /* RichTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichTextViewController.h; sourceTree = "<group>"; };
 		16E59EDF1D33E718005C0062 /* RichTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichTextViewController.m; sourceTree = "<group>"; };
+		16E59EE11D33EB90005C0062 /* PwdTextFieldBugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PwdTextFieldBugViewController.h; sourceTree = "<group>"; };
+		16E59EE21D33EB90005C0062 /* PwdTextFieldBugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PwdTextFieldBugViewController.m; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				163A57D11D337E6D003B9609 /* SimulateTwitterViewController.m */,
 				16E59EDE1D33E718005C0062 /* RichTextViewController.h */,
 				16E59EDF1D33E718005C0062 /* RichTextViewController.m */,
+				16E59EE11D33EB90005C0062 /* PwdTextFieldBugViewController.h */,
+				16E59EE21D33EB90005C0062 /* PwdTextFieldBugViewController.m */,
 			);
 			path = Dolin1;
 			sourceTree = "<group>";
@@ -391,6 +396,7 @@
 				163A57B91D3360E2003B9609 /* DolinConstant.m in Sources */,
 				163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */,
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
+				16E59EE31D33EB90005C0062 /* PwdTextFieldBugViewController.m in Sources */,
 				163A57BD1D3361D2003B9609 /* DolinTopWindowUtil.m in Sources */,
 				163A57991D33593B003B9609 /* Dolin1ViewController.m in Sources */,
 				163A57AF1D336022003B9609 /* NSString+Version.m in Sources */,
