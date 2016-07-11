@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		163A57921D335790003B9609 /* DolinTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57911D335790003B9609 /* DolinTabBarController.m */; };
+		163A57991D33593B003B9609 /* Dolin1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57981D33593B003B9609 /* Dolin1ViewController.m */; };
+		163A579D1D33597E003B9609 /* Dolin2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A579C1D33597E003B9609 /* Dolin2ViewController.m */; };
+		163A57A01D335987003B9609 /* Dolin3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A579F1D335987003B9609 /* Dolin3ViewController.m */; };
+		163A57A31D335990003B9609 /* Dolin4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57A21D335990003B9609 /* Dolin4ViewController.m */; };
+		163A57AF1D336022003B9609 /* NSString+Version.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57A81D336022003B9609 /* NSString+Version.m */; };
+		163A57B01D336022003B9609 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57AA1D336022003B9609 /* UIImage+animatedGIF.m */; };
+		163A57B11D336022003B9609 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57AC1D336022003B9609 /* UINavigationBar+Awesome.m */; };
+		163A57B91D3360E2003B9609 /* DolinConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57B81D3360E2003B9609 /* DolinConstant.m */; };
+		163A57BD1D3361D2003B9609 /* DolinTopWindowUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57BC1D3361D2003B9609 /* DolinTopWindowUtil.m */; };
+		163A57C01D33648E003B9609 /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57BF1D33648E003B9609 /* UITabBar+Badge.m */; };
+		163A57C31D3371D8003B9609 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57C21D3371D8003B9609 /* BannerViewController.m */; };
+		163A57C61D3371E2003B9609 /* DolinBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57C51D3371E2003B9609 /* DolinBannerView.m */; };
+		163A57C91D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57C81D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57CE1D337B23003B9609 /* SimulateTwitterView.m */; };
+		163A57D21D337E6D003B9609 /* SimulateTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57D11D337E6D003B9609 /* SimulateTwitterViewController.m */; };
+		16C8D63F1D33511700228ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D63E1D33511700228ABD /* main.m */; };
+		16C8D6421D33511700228ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D6411D33511700228ABD /* AppDelegate.m */; };
+		16C8D6481D33511700228ABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6461D33511700228ABD /* Main.storyboard */; };
+		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
+		16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */; };
+		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		163A578A1D33558E003B9609 /* DolinPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DolinPrefix.pch; sourceTree = "<group>"; };
+		163A57901D335790003B9609 /* DolinTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinTabBarController.h; sourceTree = "<group>"; };
+		163A57911D335790003B9609 /* DolinTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinTabBarController.m; sourceTree = "<group>"; };
+		163A57971D33593B003B9609 /* Dolin1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin1ViewController.h; sourceTree = "<group>"; };
+		163A57981D33593B003B9609 /* Dolin1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin1ViewController.m; sourceTree = "<group>"; };
+		163A579B1D33597E003B9609 /* Dolin2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin2ViewController.h; sourceTree = "<group>"; };
+		163A579C1D33597E003B9609 /* Dolin2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin2ViewController.m; sourceTree = "<group>"; };
+		163A579E1D335987003B9609 /* Dolin3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin3ViewController.h; sourceTree = "<group>"; };
+		163A579F1D335987003B9609 /* Dolin3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin3ViewController.m; sourceTree = "<group>"; };
+		163A57A11D335990003B9609 /* Dolin4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin4ViewController.h; sourceTree = "<group>"; };
+		163A57A21D335990003B9609 /* Dolin4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin4ViewController.m; sourceTree = "<group>"; };
+		163A57A71D336022003B9609 /* NSString+Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Version.h"; sourceTree = "<group>"; };
+		163A57A81D336022003B9609 /* NSString+Version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Version.m"; sourceTree = "<group>"; };
+		163A57A91D336022003B9609 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		163A57AA1D336022003B9609 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		163A57AB1D336022003B9609 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		163A57AC1D336022003B9609 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		163A57B61D3360C1003B9609 /* DolinUsefulMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinUsefulMacros.h; sourceTree = "<group>"; };
+		163A57B71D3360E2003B9609 /* DolinConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinConstant.h; sourceTree = "<group>"; };
+		163A57B81D3360E2003B9609 /* DolinConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinConstant.m; sourceTree = "<group>"; };
+		163A57BB1D3361D2003B9609 /* DolinTopWindowUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinTopWindowUtil.h; sourceTree = "<group>"; };
+		163A57BC1D3361D2003B9609 /* DolinTopWindowUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinTopWindowUtil.m; sourceTree = "<group>"; };
+		163A57BE1D33648E003B9609 /* UITabBar+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Badge.h"; sourceTree = "<group>"; };
+		163A57BF1D33648E003B9609 /* UITabBar+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
+		163A57C11D3371D8003B9609 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		163A57C21D3371D8003B9609 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		163A57C41D3371E2003B9609 /* DolinBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinBannerView.h; sourceTree = "<group>"; };
+		163A57C51D3371E2003B9609 /* DolinBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinBannerView.m; sourceTree = "<group>"; };
+		163A57C71D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		163A57C81D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		163A57CD1D337B23003B9609 /* SimulateTwitterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateTwitterView.h; sourceTree = "<group>"; };
+		163A57CE1D337B23003B9609 /* SimulateTwitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateTwitterView.m; sourceTree = "<group>"; };
+		163A57D01D337E6D003B9609 /* SimulateTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateTwitterViewController.h; sourceTree = "<group>"; };
+		163A57D11D337E6D003B9609 /* SimulateTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateTwitterViewController.m; sourceTree = "<group>"; };
+		16C8D63A1D33511700228ABD /* dolin_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dolin_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C8D63E1D33511700228ABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16C8D6401D33511700228ABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		16C8D6411D33511700228ABD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		16C8D6471D33511700228ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16C8D6491D33511700228ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16C8D64C1D33511700228ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16C8D64E1D33511700228ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
+		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16C8D6371D33511700228ABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		163A578F1D335790003B9609 /* DolinTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				163A57901D335790003B9609 /* DolinTabBarController.h */,
+				163A57911D335790003B9609 /* DolinTabBarController.m */,
+			);
+			path = DolinTabBarController;
+			sourceTree = "<group>";
+		};
+		163A57931D335921003B9609 /* Dolin1 */ = {
+			isa = PBXGroup;
+			children = (
+				163A57971D33593B003B9609 /* Dolin1ViewController.h */,
+				163A57981D33593B003B9609 /* Dolin1ViewController.m */,
+				163A57C41D3371E2003B9609 /* DolinBannerView.h */,
+				163A57C51D3371E2003B9609 /* DolinBannerView.m */,
+				163A57C11D3371D8003B9609 /* BannerViewController.h */,
+				163A57C21D3371D8003B9609 /* BannerViewController.m */,
+				163A57CD1D337B23003B9609 /* SimulateTwitterView.h */,
+				163A57CE1D337B23003B9609 /* SimulateTwitterView.m */,
+				163A57D01D337E6D003B9609 /* SimulateTwitterViewController.h */,
+				163A57D11D337E6D003B9609 /* SimulateTwitterViewController.m */,
+			);
+			path = Dolin1;
+			sourceTree = "<group>";
+		};
+		163A57941D335921003B9609 /* Dolin2 */ = {
+			isa = PBXGroup;
+			children = (
+				163A579B1D33597E003B9609 /* Dolin2ViewController.h */,
+				163A579C1D33597E003B9609 /* Dolin2ViewController.m */,
+			);
+			path = Dolin2;
+			sourceTree = "<group>";
+		};
+		163A57951D335921003B9609 /* Dolin3 */ = {
+			isa = PBXGroup;
+			children = (
+				163A579E1D335987003B9609 /* Dolin3ViewController.h */,
+				163A579F1D335987003B9609 /* Dolin3ViewController.m */,
+			);
+			path = Dolin3;
+			sourceTree = "<group>";
+		};
+		163A57961D335921003B9609 /* Dolin4 */ = {
+			isa = PBXGroup;
+			children = (
+				163A57A11D335990003B9609 /* Dolin4ViewController.h */,
+				163A57A21D335990003B9609 /* Dolin4ViewController.m */,
+			);
+			path = Dolin4;
+			sourceTree = "<group>";
+		};
+		163A579A1D335976003B9609 /* DolinBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DolinBase;
+			sourceTree = "<group>";
+		};
+		163A57A51D335F7F003B9609 /* DolinUtility */ = {
+			isa = PBXGroup;
+			children = (
+				163A57A61D335F9E003B9609 /* category */,
+				163A57BB1D3361D2003B9609 /* DolinTopWindowUtil.h */,
+				163A57BC1D3361D2003B9609 /* DolinTopWindowUtil.m */,
+			);
+			path = DolinUtility;
+			sourceTree = "<group>";
+		};
+		163A57A61D335F9E003B9609 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				163A57C71D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.h */,
+				163A57C81D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.m */,
+				163A57BE1D33648E003B9609 /* UITabBar+Badge.h */,
+				163A57BF1D33648E003B9609 /* UITabBar+Badge.m */,
+				163A57A71D336022003B9609 /* NSString+Version.h */,
+				163A57A81D336022003B9609 /* NSString+Version.m */,
+				163A57A91D336022003B9609 /* UIImage+animatedGIF.h */,
+				163A57AA1D336022003B9609 /* UIImage+animatedGIF.m */,
+				163A57AB1D336022003B9609 /* UINavigationBar+Awesome.h */,
+				163A57AC1D336022003B9609 /* UINavigationBar+Awesome.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		163A57B51D3360C1003B9609 /* DolinMacro+Constant */ = {
+			isa = PBXGroup;
+			children = (
+				163A57B61D3360C1003B9609 /* DolinUsefulMacros.h */,
+				163A57B71D3360E2003B9609 /* DolinConstant.h */,
+				163A57B81D3360E2003B9609 /* DolinConstant.m */,
+			);
+			path = "DolinMacro+Constant";
+			sourceTree = "<group>";
+		};
+		16C8D6311D33511700228ABD = {
+			isa = PBXGroup;
+			children = (
+				16C8D63C1D33511700228ABD /* dolin_demo */,
+				16C8D63B1D33511700228ABD /* Products */,
+				E7346D5FBE4829F14DF92A99 /* Pods */,
+				96B6CFAEDF4D3AF27BC73BDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16C8D63B1D33511700228ABD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16C8D63A1D33511700228ABD /* dolin_demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16C8D63C1D33511700228ABD /* dolin_demo */ = {
+			isa = PBXGroup;
+			children = (
+				16C8D6491D33511700228ABD /* Assets.xcassets */,
+				163A57B51D3360C1003B9609 /* DolinMacro+Constant */,
+				163A57A51D335F7F003B9609 /* DolinUtility */,
+				163A579A1D335976003B9609 /* DolinBase */,
+				163A57931D335921003B9609 /* Dolin1 */,
+				163A57941D335921003B9609 /* Dolin2 */,
+				163A57951D335921003B9609 /* Dolin3 */,
+				163A57961D335921003B9609 /* Dolin4 */,
+				163A578F1D335790003B9609 /* DolinTabBarController */,
+				16C8D63D1D33511700228ABD /* Supporting Files */,
+			);
+			path = dolin_demo;
+			sourceTree = "<group>";
+		};
+		16C8D63D1D33511700228ABD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16C8D6401D33511700228ABD /* AppDelegate.h */,
+				16C8D6411D33511700228ABD /* AppDelegate.m */,
+				16C8D63E1D33511700228ABD /* main.m */,
+				16C8D6461D33511700228ABD /* Main.storyboard */,
+				16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */,
+				16C8D64E1D33511700228ABD /* Info.plist */,
+				163A578A1D33558E003B9609 /* DolinPrefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96B6CFAEDF4D3AF27BC73BDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7346D5FBE4829F14DF92A99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */,
+				C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16C8D6391D33511700228ABD /* dolin_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C8D6511D33511700228ABD /* Build configuration list for PBXNativeTarget "dolin_demo" */;
+			buildPhases = (
+				8C36E570CBD02ECA4B6FF703 /* [CP] Check Pods Manifest.lock */,
+				16C8D6361D33511700228ABD /* Sources */,
+				16C8D6371D33511700228ABD /* Frameworks */,
+				16C8D6381D33511700228ABD /* Resources */,
+				1224C601395866C17C1670D6 /* [CP] Embed Pods Frameworks */,
+				A13F3F133DB0BAB9C5FA1AF8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dolin_demo;
+			productName = dolin_demo;
+			productReference = 16C8D63A1D33511700228ABD /* dolin_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16C8D6321D33511700228ABD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = shaolin;
+				TargetAttributes = {
+					16C8D6391D33511700228ABD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 16C8D6351D33511700228ABD /* Build configuration list for PBXProject "dolin_demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16C8D6311D33511700228ABD;
+			productRefGroup = 16C8D63B1D33511700228ABD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16C8D6391D33511700228ABD /* dolin_demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16C8D6381D33511700228ABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */,
+				16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */,
+				16C8D6481D33511700228ABD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1224C601395866C17C1670D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C36E570CBD02ECA4B6FF703 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A13F3F133DB0BAB9C5FA1AF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16C8D6361D33511700228ABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				163A57921D335790003B9609 /* DolinTabBarController.m in Sources */,
+				16C8D6421D33511700228ABD /* AppDelegate.m in Sources */,
+				163A57C91D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				163A579D1D33597E003B9609 /* Dolin2ViewController.m in Sources */,
+				163A57C61D3371E2003B9609 /* DolinBannerView.m in Sources */,
+				163A57A31D335990003B9609 /* Dolin4ViewController.m in Sources */,
+				163A57B01D336022003B9609 /* UIImage+animatedGIF.m in Sources */,
+				163A57B91D3360E2003B9609 /* DolinConstant.m in Sources */,
+				163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */,
+				16C8D63F1D33511700228ABD /* main.m in Sources */,
+				163A57BD1D3361D2003B9609 /* DolinTopWindowUtil.m in Sources */,
+				163A57991D33593B003B9609 /* Dolin1ViewController.m in Sources */,
+				163A57AF1D336022003B9609 /* NSString+Version.m in Sources */,
+				163A57A01D335987003B9609 /* Dolin3ViewController.m in Sources */,
+				163A57D21D337E6D003B9609 /* SimulateTwitterViewController.m in Sources */,
+				163A57B11D336022003B9609 /* UINavigationBar+Awesome.m in Sources */,
+				163A57C01D33648E003B9609 /* UITabBar+Badge.m in Sources */,
+				163A57C31D3371D8003B9609 /* BannerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16C8D6461D33511700228ABD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16C8D6471D33511700228ABD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16C8D64C1D33511700228ABD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16C8D64F1D33511700228ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16C8D6501D33511700228ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16C8D6521D33511700228ABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "${SRCROOT}/dolin_demo/DolinPrefix.pch";
+				INFOPLIST_FILE = dolin_demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shaolin.dolin-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		16C8D6531D33511700228ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "${SRCROOT}/dolin_demo/DolinPrefix.pch";
+				INFOPLIST_FILE = dolin_demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shaolin.dolin-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16C8D6351D33511700228ABD /* Build configuration list for PBXProject "dolin_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C8D64F1D33511700228ABD /* Debug */,
+				16C8D6501D33511700228ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C8D6511D33511700228ABD /* Build configuration list for PBXNativeTarget "dolin_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C8D6521D33511700228ABD /* Debug */,
+				16C8D6531D33511700228ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16C8D6321D33511700228ABD /* Project object */;
+}

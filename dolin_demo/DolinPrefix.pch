@@ -1,0 +1,36 @@
+//
+//  DolinPrefix.pch
+//  dolin_demo
+//
+//  Created by shaolin on 16/7/11.
+//  Copyright © 2016年 shaolin. All rights reserved.
+//
+
+#ifndef DolinPrefix_pch
+#define DolinPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+// 控制台彩色日志，插件
+#define XCODE_COLORS_ESCAPE @"\033["
+#define XCODE_COLORS_RESET_FG XCODE_COLORS_ESCAPE @"fg;" // Clear any foreground color
+#define XCODE_COLORS_RESET_BG XCODE_COLORS_ESCAPE @"bg;" // Clear any background color
+#define XCODE_COLORS_RESET XCODE_COLORS_ESCAPE @";"      // Clear any foreground or background color
+#define LogBlue(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,0,255;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
+#define LogRed(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,0,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
+#define LogColor(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg123,110,222;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
+
+//自定义log
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(FORMAT, ...) nil
+#endif
+
+
+
+#endif /* DolinPrefix_pch */
