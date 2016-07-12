@@ -26,6 +26,7 @@ static  NSString* cellReuseIdentifier = @"cellReuseIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = RANDOM_UICOLOR;
     _arrDataSource = @[@1,@2,@1,@2,@1,@2,@1,@2,@1,@2,@1,@2,@1];
     [self.view addSubview:self.collectionView];
 }

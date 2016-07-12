@@ -7,7 +7,6 @@
 //
 
 #import "PwdTextFieldBugViewController.h"
-#import "DolinUsefulMacros.h"
 
 @interface PwdTextFieldBugViewController ()
 
@@ -21,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = RANDOM_UICOLOR;
     
     [self.view addSubview:self.btn];
     [self.view addSubview:self.textField];

@@ -7,7 +7,6 @@
 //
 
 #import "SimulateTwitterView.h"
-#import "DolinUsefulMacros.h"
 
 static CGFloat const offset_HeaderStop = 40.0;
 static CGFloat const offset_B_LabelHeader = 95.0;

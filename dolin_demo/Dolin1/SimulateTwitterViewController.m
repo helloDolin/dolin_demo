@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     SimulateTwitterView *simulateTwitterView = [[SimulateTwitterView alloc]initTableViewWithBackgound:[UIImage imageNamed:@"twitter_bg"] avatarImage:[UIImage imageNamed:@"launch_img"] titleString:@"dolin" subtitleString:@"\(^o^)/~👌"];
     
     simulateTwitterView.tableView.delegate = self;
