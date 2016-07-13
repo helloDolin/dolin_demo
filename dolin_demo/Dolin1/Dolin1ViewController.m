@@ -12,6 +12,7 @@
 #import "RichTextViewController.h"
 #import "PwdTextFieldBugViewController.h"
 #import "AnimationImagesViewController.h"
+#import "AnimationLikeBtnViewController.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -35,7 +36,8 @@
              @"仿Twitter-SimulateTwitterViewController",
              @"富文本-RichTextViewController",
              @"苹果密码框bug-PwdTextFieldBugViewController",
-             @"AnimationImages-AnimationImagesViewController"
+             @"AnimationImages-AnimationImagesViewController",
+             @"点赞动画-AnimationLikeBtnViewController"
              ];
 }
 

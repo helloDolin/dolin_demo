@@ -17,6 +17,7 @@
 
 @implementation AnimationImagesViewController
 
+#pragma mark -  life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -31,6 +32,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -  getter 
 - (UIImageView*)bgImgView {
     if (!_bgImgView) {
         _bgImgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"bgImg"]];

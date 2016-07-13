@@ -23,6 +23,7 @@
 		163A57C91D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57C81D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57CE1D337B23003B9609 /* SimulateTwitterView.m */; };
 		163A57D21D337E6D003B9609 /* SimulateTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57D11D337E6D003B9609 /* SimulateTwitterViewController.m */; };
+		163E06AE1D36976400BA52C8 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163E06AD1D36976400BA52C8 /* AnimationLikeBtnViewController.m */; };
 		16C8D63F1D33511700228ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D63E1D33511700228ABD /* main.m */; };
 		16C8D6421D33511700228ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D6411D33511700228ABD /* AppDelegate.m */; };
 		16C8D6481D33511700228ABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6461D33511700228ABD /* Main.storyboard */; };
@@ -71,6 +72,8 @@
 		163A57CE1D337B23003B9609 /* SimulateTwitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateTwitterView.m; sourceTree = "<group>"; };
 		163A57D01D337E6D003B9609 /* SimulateTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateTwitterViewController.h; sourceTree = "<group>"; };
 		163A57D11D337E6D003B9609 /* SimulateTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateTwitterViewController.m; sourceTree = "<group>"; };
+		163E06AC1D36976400BA52C8 /* AnimationLikeBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLikeBtnViewController.h; sourceTree = "<group>"; };
+		163E06AD1D36976400BA52C8 /* AnimationLikeBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLikeBtnViewController.m; sourceTree = "<group>"; };
 		16C8D63A1D33511700228ABD /* dolin_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dolin_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C8D63E1D33511700228ABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16C8D6401D33511700228ABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				16E59EE21D33EB90005C0062 /* PwdTextFieldBugViewController.m */,
 				16E1C3CB1D348DF900A4D153 /* AnimationImagesViewController.h */,
 				16E1C3CC1D348DF900A4D153 /* AnimationImagesViewController.m */,
+				163E06AC1D36976400BA52C8 /* AnimationLikeBtnViewController.h */,
+				163E06AD1D36976400BA52C8 /* AnimationLikeBtnViewController.m */,
 			);
 			path = Dolin1;
 			sourceTree = "<group>";
@@ -410,6 +415,7 @@
 				163A57B01D336022003B9609 /* UIImage+animatedGIF.m in Sources */,
 				163A57B91D3360E2003B9609 /* DolinConstant.m in Sources */,
 				163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */,
+				163E06AE1D36976400BA52C8 /* AnimationLikeBtnViewController.m in Sources */,
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
 				16E59EE31D33EB90005C0062 /* PwdTextFieldBugViewController.m in Sources */,
 				163A57BD1D3361D2003B9609 /* DolinTopWindowUtil.m in Sources */,

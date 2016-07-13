@@ -17,6 +17,7 @@
 
 @implementation PwdTextFieldBugViewController
 
+#pragma mark -  life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -32,6 +33,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -  getter 
 - (void)btnAction {
     self.textField.secureTextEntry = !self.textField.secureTextEntry;
     NSString* txt = self.textField.text;
