@@ -112,11 +112,6 @@
     UIImage *originalImage = [UIImage imageNamed:imageName];
     originalImage = [originalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     return originalImage;
-    
-    
-//    discoverViewController.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"发现"
-//                                                                     image:[self getOriginalImageByImageName:@"tab_bar_item_discover"]
-//                                                             selectedImage:[self getOriginalImageByImageName:@"tab_bar_item_discover_select"]];
 }
 
 @end
