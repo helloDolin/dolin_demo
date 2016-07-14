@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,41 +14,22 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dolin demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJg-ez-yuY">
-                                <rect key="frame" x="20" y="94" width="560" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2016年 Dolin. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqU-c3-FUl">
-                                <rect key="frame" x="20" y="559" width="560" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_img" translatesAutoresizingMaskIntoConstraints="NO" id="GgB-4C-Roq">
-                                <rect key="frame" x="150" y="150" width="300" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="hWV-ES-jbC"/>
-                                    <constraint firstAttribute="height" constant="300" id="kDS-Y2-55F"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_img" translatesAutoresizingMaskIntoConstraints="NO" id="nno-xl-u9M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="YqU-c3-FUl" secondAttribute="bottom" constant="20" id="3LG-v8-Rot"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CJg-ez-yuY" secondAttribute="trailing" id="G1K-rh-ySV"/>
-                            <constraint firstItem="GgB-4C-Roq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="S5s-n6-idH"/>
-                            <constraint firstItem="GgB-4C-Roq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Tcv-Om-QIr"/>
-                            <constraint firstItem="YqU-c3-FUl" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="Uf7-RV-xsz"/>
-                            <constraint firstItem="GgB-4C-Roq" firstAttribute="top" secondItem="CJg-ez-yuY" secondAttribute="bottom" constant="20" id="iY6-TK-JKD"/>
-                            <constraint firstItem="YqU-c3-FUl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="u1U-sl-lTv"/>
-                            <constraint firstItem="CJg-ez-yuY" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="ug8-HB-4VG"/>
+                            <constraint firstAttribute="trailing" secondItem="nno-xl-u9M" secondAttribute="trailing" id="2Qq-Jc-iq8"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="nno-xl-u9M" secondAttribute="bottom" id="8Nh-HA-8Mw"/>
+                            <constraint firstItem="nno-xl-u9M" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="oUr-RI-PAP"/>
+                            <constraint firstItem="nno-xl-u9M" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="zRr-MT-ybv"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launch_img" width="588" height="632"/>
+        <image name="launch_img" width="540" height="960"/>
     </resources>
 </document>

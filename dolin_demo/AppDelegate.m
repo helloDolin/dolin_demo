@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DolinTabBarController.h"
+#import "UIWindow+Expand.h"
 
 @interface AppDelegate ()
 
@@ -18,12 +19,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    // 延长启动图时间
-    [NSThread sleepForTimeInterval:2.0];
+    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     self.window.backgroundColor = [UIColor whiteColor];
+    
     DolinTabBarController* dolinTabBarController = [[DolinTabBarController alloc]init];
     self.window.rootViewController = dolinTabBarController;
+    
+    [self.window makeKeyAndVisible];
+    
+    // 这行代码需放到makeKeyAndVisible之后且window需要自行初始化
+    [self.window showLanuchPageAndSetSomeOthers];
+    
     return YES;
 }
 

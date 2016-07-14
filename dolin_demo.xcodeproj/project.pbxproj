@@ -26,7 +26,6 @@
 		163E06AE1D36976400BA52C8 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163E06AD1D36976400BA52C8 /* AnimationLikeBtnViewController.m */; };
 		16C8D63F1D33511700228ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D63E1D33511700228ABD /* main.m */; };
 		16C8D6421D33511700228ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D6411D33511700228ABD /* AppDelegate.m */; };
-		16C8D6481D33511700228ABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6461D33511700228ABD /* Main.storyboard */; };
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
 		16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */; };
 		16E1C3CD1D348DF900A4D153 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E1C3CC1D348DF900A4D153 /* AnimationImagesViewController.m */; };
@@ -34,6 +33,8 @@
 		16E59EE31D33EB90005C0062 /* PwdTextFieldBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E59EE21D33EB90005C0062 /* PwdTextFieldBugViewController.m */; };
 		16E59EF51D33F19C005C0062 /* Dolin2CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E59EF31D33F19C005C0062 /* Dolin2CollectionViewCell.m */; };
 		16E59EF61D33F19C005C0062 /* Dolin2CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E59EF41D33F19C005C0062 /* Dolin2CollectionViewCell.xib */; };
+		16F226A71D373DAB00191F92 /* UIWindow+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226A61D373DAB00191F92 /* UIWindow+Expand.m */; };
+		16F226AB1D373E9000191F92 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226AA1D373E9000191F92 /* LaunchViewController.m */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +79,6 @@
 		16C8D63E1D33511700228ABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16C8D6401D33511700228ABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		16C8D6411D33511700228ABD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		16C8D6471D33511700228ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16C8D6491D33511700228ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16C8D64C1D33511700228ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16C8D64E1D33511700228ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +91,10 @@
 		16E59EF21D33F19C005C0062 /* Dolin2CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin2CollectionViewCell.h; sourceTree = "<group>"; };
 		16E59EF31D33F19C005C0062 /* Dolin2CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin2CollectionViewCell.m; sourceTree = "<group>"; };
 		16E59EF41D33F19C005C0062 /* Dolin2CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dolin2CollectionViewCell.xib; sourceTree = "<group>"; };
+		16F226A51D373DAB00191F92 /* UIWindow+Expand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Expand.h"; sourceTree = "<group>"; };
+		16F226A61D373DAB00191F92 /* UIWindow+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Expand.m"; sourceTree = "<group>"; };
+		16F226A91D373E9000191F92 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		16F226AA1D373E9000191F92 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 				163A57AA1D336022003B9609 /* UIImage+animatedGIF.m */,
 				163A57AB1D336022003B9609 /* UINavigationBar+Awesome.h */,
 				163A57AC1D336022003B9609 /* UINavigationBar+Awesome.m */,
+				16F226A51D373DAB00191F92 /* UIWindow+Expand.h */,
+				16F226A61D373DAB00191F92 /* UIWindow+Expand.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				16C8D6491D33511700228ABD /* Assets.xcassets */,
+				16F226A81D373E8000191F92 /* launch */,
 				163A57B51D3360C1003B9609 /* DolinMacro+Constant */,
 				163A57A51D335F7F003B9609 /* DolinUtility */,
 				163A579A1D335976003B9609 /* DolinBase */,
@@ -257,12 +264,20 @@
 				16C8D6401D33511700228ABD /* AppDelegate.h */,
 				16C8D6411D33511700228ABD /* AppDelegate.m */,
 				16C8D63E1D33511700228ABD /* main.m */,
-				16C8D6461D33511700228ABD /* Main.storyboard */,
 				16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */,
 				16C8D64E1D33511700228ABD /* Info.plist */,
 				163A578A1D33558E003B9609 /* DolinPrefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16F226A81D373E8000191F92 /* launch */ = {
+			isa = PBXGroup;
+			children = (
+				16F226A91D373E9000191F92 /* LaunchViewController.h */,
+				16F226AA1D373E9000191F92 /* LaunchViewController.m */,
+			);
+			path = launch;
 			sourceTree = "<group>";
 		};
 		96B6CFAEDF4D3AF27BC73BDB /* Frameworks */ = {
@@ -345,7 +360,6 @@
 				16E59EF61D33F19C005C0062 /* Dolin2CollectionViewCell.xib in Resources */,
 				16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */,
 				16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */,
-				16C8D6481D33511700228ABD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +421,7 @@
 				163A57921D335790003B9609 /* DolinTabBarController.m in Sources */,
 				16C8D6421D33511700228ABD /* AppDelegate.m in Sources */,
 				163A57C91D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				16F226AB1D373E9000191F92 /* LaunchViewController.m in Sources */,
 				16E59EF51D33F19C005C0062 /* Dolin2CollectionViewCell.m in Sources */,
 				163A579D1D33597E003B9609 /* Dolin2ViewController.m in Sources */,
 				163A57C61D3371E2003B9609 /* DolinBannerView.m in Sources */,
@@ -417,6 +432,7 @@
 				163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */,
 				163E06AE1D36976400BA52C8 /* AnimationLikeBtnViewController.m in Sources */,
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
+				16F226A71D373DAB00191F92 /* UIWindow+Expand.m in Sources */,
 				16E59EE31D33EB90005C0062 /* PwdTextFieldBugViewController.m in Sources */,
 				163A57BD1D3361D2003B9609 /* DolinTopWindowUtil.m in Sources */,
 				163A57991D33593B003B9609 /* Dolin1ViewController.m in Sources */,
@@ -433,14 +449,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		16C8D6461D33511700228ABD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				16C8D6471D33511700228ABD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
