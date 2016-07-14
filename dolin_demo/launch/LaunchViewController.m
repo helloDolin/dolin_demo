@@ -50,6 +50,11 @@ static CGFloat const kAnimationDuration = 3.0;
     if (!_launchImageView) {
         _launchImageView = [[UIImageView alloc] initWithFrame:self.view.frame];
         _launchImageView.image = [UIImage imageNamed:@"launch_img"];
+        
+        // 也可以从服务器拿图片
+//        [_launchImageView sd_setImageWithURL:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            //
+//        }];
     }
     
     return _launchImageView;
