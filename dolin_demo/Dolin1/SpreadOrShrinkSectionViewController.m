@@ -82,8 +82,8 @@ static const CGFloat kCellHeight = 40.0;
     [sectionButton setTitle:_sectionArr[section] forState:UIControlStateNormal];
     [sectionButton addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     sectionButton.tag = 1000 + section;
-//    sectionButton.backgroundColor = [UIColor orangeColor];
-    [sectionButton setImage:[UIImage imageNamed:@"twitter_bg"] forState:UIControlStateNormal];
+    sectionButton.backgroundColor = [UIColor orangeColor];
+//    [sectionButton setImage:[UIImage imageNamed:@"twitter_bg"] forState:UIControlStateNormal];
     
     return sectionButton;
 }

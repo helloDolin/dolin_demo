@@ -14,6 +14,7 @@
 #import "AnimationImagesViewController.h"
 #import "AnimationLikeBtnViewController.h"
 #import "SpreadOrShrinkSectionViewController.h"
+#import "SimulateKeepViewController.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -39,7 +40,8 @@
              @"苹果密码框bug-PwdTextFieldBugViewController",
              @"AnimationImages-AnimationImagesViewController",
              @"点赞动画-AnimationLikeBtnViewController",
-             @"点击cell玩玩-SpreadOrShrinkSectionViewController"
+             @"点击cell玩玩-SpreadOrShrinkSectionViewController",
+             @"仿keep引导页-SimulateKeepViewController"
              ];
 }
 
