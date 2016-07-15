@@ -4,4 +4,5 @@ platform :ios, '8.0'
 target 'dolin_demo' do
   pod 'AFNetworking', '~> 3.0’
   pod 'SDWebImage'
+  pod 'Masonry'
 end

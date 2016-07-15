@@ -43,6 +43,8 @@ static const NSTimeInterval kAutoScrollViewDelay = 3.0; // 延时时间
     self = [super initWithFrame:frame];
     if (self) {
         
+        NSAssert(infoArr.count > 1,@"传进来的数组要大于1");
+        
         self.currentIndex = 0;
         self.imageArray = [infoArr copy];
         self.maxImageCount = infoArr.count;
@@ -78,9 +80,9 @@ static const NSTimeInterval kAutoScrollViewDelay = 3.0; // 延时时间
 }
 
 #pragma mark -  private method
-- (void)p_changeImageLeft:(NSInteger)LeftIndex center:(NSInteger)centerIndex right:(NSInteger)rightIndex {
+- (void)p_changeImageLeft:(NSInteger)leftIndex center:(NSInteger)centerIndex right:(NSInteger)rightIndex {
     
-    [self.leftImageView sd_setImageWithURL:[NSURL URLWithString:_imageArray[LeftIndex]] placeholderImage:[UIImage imageNamed:@"3.jpg"]];
+    [self.leftImageView sd_setImageWithURL:[NSURL URLWithString:_imageArray[leftIndex]] placeholderImage:[UIImage imageNamed:@"3.jpg"]];
     [self.centerImageView sd_setImageWithURL:[NSURL URLWithString:_imageArray[centerIndex]] placeholderImage:[UIImage imageNamed:@"3.jpg"]];
     [self.rightImageView sd_setImageWithURL:[NSURL URLWithString:_imageArray[rightIndex]] placeholderImage:[UIImage imageNamed:@"3.jpg"]];
     
