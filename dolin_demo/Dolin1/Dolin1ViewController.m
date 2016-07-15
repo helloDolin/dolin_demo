@@ -13,6 +13,7 @@
 #import "PwdTextFieldBugViewController.h"
 #import "AnimationImagesViewController.h"
 #import "AnimationLikeBtnViewController.h"
+#import "SpreadOrShrinkSectionViewController.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -37,7 +38,8 @@
              @"富文本-RichTextViewController",
              @"苹果密码框bug-PwdTextFieldBugViewController",
              @"AnimationImages-AnimationImagesViewController",
-             @"点赞动画-AnimationLikeBtnViewController"
+             @"点赞动画-AnimationLikeBtnViewController",
+             @"点击cell玩玩-SpreadOrShrinkSectionViewController"
              ];
 }
 

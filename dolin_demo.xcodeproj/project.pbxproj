@@ -24,6 +24,7 @@
 		163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57CE1D337B23003B9609 /* SimulateTwitterView.m */; };
 		163A57D21D337E6D003B9609 /* SimulateTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57D11D337E6D003B9609 /* SimulateTwitterViewController.m */; };
 		163E06AE1D36976400BA52C8 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163E06AD1D36976400BA52C8 /* AnimationLikeBtnViewController.m */; };
+		1660A6EA1D387E5200192D6F /* SpreadOrShrinkSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1660A6E91D387E5200192D6F /* SpreadOrShrinkSectionViewController.m */; };
 		16C8D63F1D33511700228ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D63E1D33511700228ABD /* main.m */; };
 		16C8D6421D33511700228ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D6411D33511700228ABD /* AppDelegate.m */; };
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
@@ -75,6 +76,8 @@
 		163A57D11D337E6D003B9609 /* SimulateTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateTwitterViewController.m; sourceTree = "<group>"; };
 		163E06AC1D36976400BA52C8 /* AnimationLikeBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLikeBtnViewController.h; sourceTree = "<group>"; };
 		163E06AD1D36976400BA52C8 /* AnimationLikeBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLikeBtnViewController.m; sourceTree = "<group>"; };
+		1660A6E81D387E5200192D6F /* SpreadOrShrinkSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadOrShrinkSectionViewController.h; sourceTree = "<group>"; };
+		1660A6E91D387E5200192D6F /* SpreadOrShrinkSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadOrShrinkSectionViewController.m; sourceTree = "<group>"; };
 		16C8D63A1D33511700228ABD /* dolin_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dolin_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C8D63E1D33511700228ABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16C8D6401D33511700228ABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 				16E1C3CC1D348DF900A4D153 /* AnimationImagesViewController.m */,
 				163E06AC1D36976400BA52C8 /* AnimationLikeBtnViewController.h */,
 				163E06AD1D36976400BA52C8 /* AnimationLikeBtnViewController.m */,
+				1660A6E81D387E5200192D6F /* SpreadOrShrinkSectionViewController.h */,
+				1660A6E91D387E5200192D6F /* SpreadOrShrinkSectionViewController.m */,
 			);
 			path = Dolin1;
 			sourceTree = "<group>";
@@ -425,6 +430,7 @@
 				16E59EF51D33F19C005C0062 /* Dolin2CollectionViewCell.m in Sources */,
 				163A579D1D33597E003B9609 /* Dolin2ViewController.m in Sources */,
 				163A57C61D3371E2003B9609 /* DolinBannerView.m in Sources */,
+				1660A6EA1D387E5200192D6F /* SpreadOrShrinkSectionViewController.m in Sources */,
 				163A57A31D335990003B9609 /* Dolin4ViewController.m in Sources */,
 				16E59EE01D33E718005C0062 /* RichTextViewController.m in Sources */,
 				163A57B01D336022003B9609 /* UIImage+animatedGIF.m in Sources */,
