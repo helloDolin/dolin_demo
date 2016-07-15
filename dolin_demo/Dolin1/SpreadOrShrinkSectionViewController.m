@@ -77,18 +77,15 @@ static const CGFloat kCellHeight = 40.0;
 #pragma mark -  UITableViewDelegate
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
-    UIView *sectionView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, kCellHeight)];
-    sectionView.backgroundColor = [UIColor orangeColor];
-    
     UIButton *sectionButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    sectionButton.frame = sectionView.frame;
+    sectionButton.frame = CGRectMake(0, 0, SCREEN_WIDTH, kCellHeight);
     [sectionButton setTitle:_sectionArr[section] forState:UIControlStateNormal];
     [sectionButton addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     sectionButton.tag = 1000 + section;
+//    sectionButton.backgroundColor = [UIColor orangeColor];
+    [sectionButton setImage:[UIImage imageNamed:@"twitter_bg"] forState:UIControlStateNormal];
     
-    [sectionView addSubview:sectionButton];
-    
-    return sectionView;
+    return sectionButton;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
