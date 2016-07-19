@@ -18,8 +18,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     
+    application.applicationIconBadgeNumber = 0;
 //    [NSThread sleepForTimeInterval:5];
     
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
@@ -32,6 +32,13 @@
     
     // 这行代码需放到makeKeyAndVisible之后且window需要自行初始化
     [self.window showLanuchPageAndSetSomeOthers];
+    
+    // 在iOS 8.0之后如果要使用本地通知，需要得到用户的许可;
+    if ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0) {
+        UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound |UIUserNotificationTypeAlert categories:nil];
+        // 注册用户是否需要通知内容
+        [application registerUserNotificationSettings:setting];
+    }
     
     return YES;
 }
@@ -56,6 +63,17 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification*)notification {
+    NSDictionary * dic = notification.userInfo;
+    NSLog(@"%@",dic);
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"test" message:notification.alertBody delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    [alert show];
+    
+    // 图标上的数字减1
+    application.applicationIconBadgeNumber -= 1;
 }
 
 @end
