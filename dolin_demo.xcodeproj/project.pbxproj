@@ -24,6 +24,7 @@
 		163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57CE1D337B23003B9609 /* SimulateTwitterView.m */; };
 		163A57D21D337E6D003B9609 /* SimulateTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57D11D337E6D003B9609 /* SimulateTwitterViewController.m */; };
 		163E06AE1D36976400BA52C8 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163E06AD1D36976400BA52C8 /* AnimationLikeBtnViewController.m */; };
+		165094F91D3E170000FACA51 /* LocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 165094F81D3E170000FACA51 /* LocalNotificationViewController.m */; };
 		1660A6EA1D387E5200192D6F /* SpreadOrShrinkSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1660A6E91D387E5200192D6F /* SpreadOrShrinkSectionViewController.m */; };
 		1674F7A31D38B68100180D37 /* SimulateKeepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1674F7A21D38B68100180D37 /* SimulateKeepViewController.m */; };
 		1674F7A71D38B8A800180D37 /* keep.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1674F7A61D38B8A800180D37 /* keep.mp4 */; };
@@ -79,6 +80,8 @@
 		163A57D11D337E6D003B9609 /* SimulateTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateTwitterViewController.m; sourceTree = "<group>"; };
 		163E06AC1D36976400BA52C8 /* AnimationLikeBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLikeBtnViewController.h; sourceTree = "<group>"; };
 		163E06AD1D36976400BA52C8 /* AnimationLikeBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLikeBtnViewController.m; sourceTree = "<group>"; };
+		165094F71D3E170000FACA51 /* LocalNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotificationViewController.h; sourceTree = "<group>"; };
+		165094F81D3E170000FACA51 /* LocalNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationViewController.m; sourceTree = "<group>"; };
 		1660A6E81D387E5200192D6F /* SpreadOrShrinkSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadOrShrinkSectionViewController.h; sourceTree = "<group>"; };
 		1660A6E91D387E5200192D6F /* SpreadOrShrinkSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadOrShrinkSectionViewController.m; sourceTree = "<group>"; };
 		1674F7A11D38B68100180D37 /* SimulateKeepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateKeepViewController.h; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				1674F7A21D38B68100180D37 /* SimulateKeepViewController.m */,
 				16BBAEEB1D38C926007E5B52 /* SimulateKeepScroll.h */,
 				16BBAEEC1D38C926007E5B52 /* SimulateKeepScroll.m */,
+				165094F71D3E170000FACA51 /* LocalNotificationViewController.h */,
+				165094F81D3E170000FACA51 /* LocalNotificationViewController.m */,
 			);
 			path = Dolin1;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 				TargetAttributes = {
 					16C8D6391D33511700228ABD = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 35P2C5J2YM;
 					};
 				};
 			};
@@ -459,6 +465,7 @@
 				16E59EE01D33E718005C0062 /* RichTextViewController.m in Sources */,
 				163A57B01D336022003B9609 /* UIImage+animatedGIF.m in Sources */,
 				163A57B91D3360E2003B9609 /* DolinConstant.m in Sources */,
+				165094F91D3E170000FACA51 /* LocalNotificationViewController.m in Sources */,
 				163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */,
 				163E06AE1D36976400BA52C8 /* AnimationLikeBtnViewController.m in Sources */,
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
@@ -579,12 +586,15 @@
 			baseConfigurationReference = 5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "${SRCROOT}/dolin_demo/DolinPrefix.pch";
 				INFOPLIST_FILE = dolin_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shaolin.dolin-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -594,12 +604,15 @@
 			baseConfigurationReference = C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "${SRCROOT}/dolin_demo/DolinPrefix.pch";
 				INFOPLIST_FILE = dolin_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shaolin.dolin-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

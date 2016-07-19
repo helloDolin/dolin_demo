@@ -15,6 +15,7 @@
 #import "AnimationLikeBtnViewController.h"
 #import "SpreadOrShrinkSectionViewController.h"
 #import "SimulateKeepViewController.h"
+#import "LocalNotificationViewController.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -41,7 +42,8 @@
              @"AnimationImages-AnimationImagesViewController",
              @"点赞动画-AnimationLikeBtnViewController",
              @"点击cell玩玩-SpreadOrShrinkSectionViewController",
-             @"仿keep引导页-SimulateKeepViewController"
+             @"仿keep引导页-SimulateKeepViewController",
+             @"本地推送-LocalNotificationViewController"
              ];
 }
 
