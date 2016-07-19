@@ -51,11 +51,20 @@
 
 - (UIButton*)btn {
     if (!_btn) {
-        _btn = [UIButton buttonWithType:UIButtonTypeSystem];
-        _btn.frame = CGRectMake(0, 0,SCREEN_WIDTH , 50);
-        _btn.backgroundColor = [UIColor orangeColor];
+        CGFloat btnWidth = 40.0;
+        CGFloat btnHeight = 40.0 + 13.0;
+        _btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _btn.frame = CGRectMake(0, 0,btnWidth,btnHeight);
+        _btn.center = CGPointMake(SCREEN_WIDTH / 2, SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR / 2);
+        [_btn setImage:[UIImage imageNamed:@"btn_home_test"] forState:UIControlStateNormal];
         [_btn setTitle:@"test" forState:UIControlStateNormal];
-        _btn.tintColor = [UIColor whiteColor];
+        [_btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_btn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+        
+        _btn.backgroundColor = RANDOM_UICOLOR;
+        _btn.imageEdgeInsets = UIEdgeInsetsMake(-5, 0, 0, 0); // img往上偏移5
+        _btn.titleEdgeInsets = UIEdgeInsetsMake(40, -40, 0, 0); // title 往下偏移40 往左偏移40
+        
         [_btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
     }
     return _btn;
