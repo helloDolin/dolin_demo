@@ -7,15 +7,6 @@
 //
 
 #import "Dolin1ViewController.h"
-#import "BannerViewController.h"
-#import "SimulateTwitterViewController.h"
-#import "RichTextViewController.h"
-#import "PwdTextFieldBugViewController.h"
-#import "AnimationImagesViewController.h"
-#import "AnimationLikeBtnViewController.h"
-#import "SpreadOrShrinkSectionViewController.h"
-#import "SimulateKeepViewController.h"
-#import "LocalNotificationViewController.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
