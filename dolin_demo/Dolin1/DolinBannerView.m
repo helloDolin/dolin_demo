@@ -82,9 +82,9 @@ static const NSTimeInterval kAutoScrollViewDelay = 3.0; // 延时时间
 #pragma mark -  private method
 - (void)p_changeImageLeft:(NSInteger)leftIndex center:(NSInteger)centerIndex right:(NSInteger)rightIndex {
     
-    [self.leftImageView sd_setImageWithURL:[NSURL URLWithString:_imageArray[leftIndex]] placeholderImage:[UIImage imageNamed:@"3.jpg"]];
-    [self.centerImageView sd_setImageWithURL:[NSURL URLWithString:_imageArray[centerIndex]] placeholderImage:[UIImage imageNamed:@"3.jpg"]];
-    [self.rightImageView sd_setImageWithURL:[NSURL URLWithString:_imageArray[rightIndex]] placeholderImage:[UIImage imageNamed:@"3.jpg"]];
+    [self.leftImageView sd_setImageWithURL:[NSURL URLWithString:_imageArray[leftIndex]] placeholderImage:nil];
+    [self.centerImageView sd_setImageWithURL:[NSURL URLWithString:_imageArray[centerIndex]] placeholderImage:nil];
+    [self.rightImageView sd_setImageWithURL:[NSURL URLWithString:_imageArray[rightIndex]] placeholderImage:nil];
     
     [self.scrollView setContentOffset:CGPointMake(ScrollWidth, 0)];
 }
