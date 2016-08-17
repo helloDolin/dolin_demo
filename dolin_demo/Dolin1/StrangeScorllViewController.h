@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 /**
- *  webview（有懒加载） 作为tableView的头view时的处理
+ *  UIScrollView奇技淫巧
+ *  http://www.jianshu.com/p/5804fa72aaed
  */
-@interface WebIsTableHeaderViewController : UIViewController
+@interface StrangeScorllViewController : UIViewController
 
 @end
