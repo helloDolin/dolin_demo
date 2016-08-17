@@ -40,6 +40,7 @@
 		16E59EF61D33F19C005C0062 /* Dolin2CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E59EF41D33F19C005C0062 /* Dolin2CollectionViewCell.xib */; };
 		16F226A71D373DAB00191F92 /* UIWindow+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226A61D373DAB00191F92 /* UIWindow+Expand.m */; };
 		16F226AB1D373E9000191F92 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226AA1D373E9000191F92 /* LaunchViewController.m */; };
+		3A6877581D63FE3900757CB8 /* WebIsTableHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6877571D63FE3900757CB8 /* WebIsTableHeaderViewController.m */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,8 @@
 		16F226A61D373DAB00191F92 /* UIWindow+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Expand.m"; sourceTree = "<group>"; };
 		16F226A91D373E9000191F92 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
 		16F226AA1D373E9000191F92 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		3A6877561D63FE3900757CB8 /* WebIsTableHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebIsTableHeaderViewController.h; sourceTree = "<group>"; };
+		3A6877571D63FE3900757CB8 /* WebIsTableHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebIsTableHeaderViewController.m; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				16BBAEEC1D38C926007E5B52 /* SimulateKeepScroll.m */,
 				165094F71D3E170000FACA51 /* LocalNotificationViewController.h */,
 				165094F81D3E170000FACA51 /* LocalNotificationViewController.m */,
+				3A6877561D63FE3900757CB8 /* WebIsTableHeaderViewController.h */,
+				3A6877571D63FE3900757CB8 /* WebIsTableHeaderViewController.m */,
 			);
 			path = Dolin1;
 			sourceTree = "<group>";
@@ -467,6 +472,7 @@
 				163A57B91D3360E2003B9609 /* DolinConstant.m in Sources */,
 				165094F91D3E170000FACA51 /* LocalNotificationViewController.m in Sources */,
 				163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */,
+				3A6877581D63FE3900757CB8 /* WebIsTableHeaderViewController.m in Sources */,
 				163E06AE1D36976400BA52C8 /* AnimationLikeBtnViewController.m in Sources */,
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
 				16F226A71D373DAB00191F92 /* UIWindow+Expand.m in Sources */,

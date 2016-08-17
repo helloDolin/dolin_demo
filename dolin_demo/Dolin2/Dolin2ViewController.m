@@ -27,7 +27,7 @@ static  NSString* cellReuseIdentifier = @"cellReuseIdentifier";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = RANDOM_UICOLOR;
-    _arrDataSource = @[@1,@2,@1,@2,@1,@2,@1,@2,@1,@2,@1,@2,@1];
+    _arrDataSource = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10"];
     [self.view addSubview:self.collectionView];
 }
 
@@ -42,6 +42,9 @@ static  NSString* cellReuseIdentifier = @"cellReuseIdentifier";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     Dolin2CollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellReuseIdentifier forIndexPath:indexPath];
+    NSString* str = _arrDataSource[indexPath.row];
+    cell.imgView.image = [UIImage imageNamed:str];
+    cell.titleLbl.text = str;
     return cell;
 }
 
@@ -50,10 +53,13 @@ static  NSString* cellReuseIdentifier = @"cellReuseIdentifier";
 - (UICollectionView*)collectionView {
     if (!_collectionView) {
         UICollectionViewFlowLayout* layout = [[UICollectionViewFlowLayout alloc]init];
-        CGFloat padding = 20.0;
-        CGFloat width = ([UIScreen mainScreen].bounds.size.width - padding ) / 2;
-        CGFloat height = 97;
-        layout.itemSize = CGSizeMake(width,height);
+        CGFloat itemW = (SCREEN_WIDTH - 20 * 3) / 2;
+        CGFloat itemH = itemW;
+        
+        layout.itemSize = CGSizeMake(itemW,itemH);
+        layout.minimumLineSpacing = 20;
+        layout.minimumInteritemSpacing = 0;
+        layout.sectionInset = UIEdgeInsetsMake(20, 20, 0, 20);
         
         _collectionView = [[UICollectionView alloc]initWithFrame:FULL_SCREEN_FRAME collectionViewLayout:layout];
         _collectionView.dataSource = self;
