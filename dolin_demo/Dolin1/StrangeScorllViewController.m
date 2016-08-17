@@ -46,7 +46,7 @@
 }
 
 /**
- *  把scollView的y给tableView的y
+ *  把scollView的y给tableView的y（让tableView也可以滚动）
  *  滑动的时候改变cell元素的约束
  *
  *  @param scrollView
