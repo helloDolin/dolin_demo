@@ -35,7 +35,8 @@
              @"点击cell玩玩-SpreadOrShrinkSectionViewController",
              @"仿keep引导页-SimulateKeepViewController",
              @"本地推送-LocalNotificationViewController",
-             @"仿简书文章+评论-WebIsTableHeaderViewController"
+             @"仿简书文章+评论-WebIsTableHeaderViewController",
+             @"自定义Label-DolinLabelViewController"
              ];
 }
 
