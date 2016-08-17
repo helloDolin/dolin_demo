@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface Dolin2CollectionViewCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UILabel *titleLbl;
 
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
 @end
