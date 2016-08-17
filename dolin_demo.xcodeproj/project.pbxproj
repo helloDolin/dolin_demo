@@ -40,9 +40,11 @@
 		16E59EF61D33F19C005C0062 /* Dolin2CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E59EF41D33F19C005C0062 /* Dolin2CollectionViewCell.xib */; };
 		16F226A71D373DAB00191F92 /* UIWindow+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226A61D373DAB00191F92 /* UIWindow+Expand.m */; };
 		16F226AB1D373E9000191F92 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226AA1D373E9000191F92 /* LaunchViewController.m */; };
-		3A6877581D63FE3900757CB8 /* WebIsTableHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6877571D63FE3900757CB8 /* WebIsTableHeaderViewController.m */; };
+		3A6877581D63FE3900757CB8 /* StrangeScorllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6877571D63FE3900757CB8 /* StrangeScorllViewController.m */; };
 		3A68775B1D64052500757CB8 /* DolinLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68775A1D64052500757CB8 /* DolinLabelViewController.m */; };
 		3A68775E1D6408E800757CB8 /* DolinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68775D1D6408E800757CB8 /* DolinLabel.m */; };
+		3A6877621D64492F00757CB8 /* StrangeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6877601D64492F00757CB8 /* StrangeTableViewCell.m */; };
+		3A6877631D64492F00757CB8 /* StrangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6877611D64492F00757CB8 /* StrangeTableViewCell.xib */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
 
@@ -112,12 +114,15 @@
 		16F226A61D373DAB00191F92 /* UIWindow+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Expand.m"; sourceTree = "<group>"; };
 		16F226A91D373E9000191F92 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
 		16F226AA1D373E9000191F92 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
-		3A6877561D63FE3900757CB8 /* WebIsTableHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebIsTableHeaderViewController.h; sourceTree = "<group>"; };
-		3A6877571D63FE3900757CB8 /* WebIsTableHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebIsTableHeaderViewController.m; sourceTree = "<group>"; };
+		3A6877561D63FE3900757CB8 /* StrangeScorllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrangeScorllViewController.h; sourceTree = "<group>"; };
+		3A6877571D63FE3900757CB8 /* StrangeScorllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrangeScorllViewController.m; sourceTree = "<group>"; };
 		3A6877591D64052500757CB8 /* DolinLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinLabelViewController.h; sourceTree = "<group>"; };
 		3A68775A1D64052500757CB8 /* DolinLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinLabelViewController.m; sourceTree = "<group>"; };
 		3A68775C1D6408E800757CB8 /* DolinLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinLabel.h; sourceTree = "<group>"; };
 		3A68775D1D6408E800757CB8 /* DolinLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinLabel.m; sourceTree = "<group>"; };
+		3A68775F1D64492F00757CB8 /* StrangeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrangeTableViewCell.h; sourceTree = "<group>"; };
+		3A6877601D64492F00757CB8 /* StrangeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrangeTableViewCell.m; sourceTree = "<group>"; };
+		3A6877611D64492F00757CB8 /* StrangeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrangeTableViewCell.xib; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,8 +178,11 @@
 				16BBAEEC1D38C926007E5B52 /* SimulateKeepScroll.m */,
 				165094F71D3E170000FACA51 /* LocalNotificationViewController.h */,
 				165094F81D3E170000FACA51 /* LocalNotificationViewController.m */,
-				3A6877561D63FE3900757CB8 /* WebIsTableHeaderViewController.h */,
-				3A6877571D63FE3900757CB8 /* WebIsTableHeaderViewController.m */,
+				3A6877561D63FE3900757CB8 /* StrangeScorllViewController.h */,
+				3A6877571D63FE3900757CB8 /* StrangeScorllViewController.m */,
+				3A68775F1D64492F00757CB8 /* StrangeTableViewCell.h */,
+				3A6877601D64492F00757CB8 /* StrangeTableViewCell.m */,
+				3A6877611D64492F00757CB8 /* StrangeTableViewCell.xib */,
 				3A68775C1D6408E800757CB8 /* DolinLabel.h */,
 				3A68775D1D6408E800757CB8 /* DolinLabel.m */,
 				3A6877591D64052500757CB8 /* DolinLabelViewController.h */,
@@ -404,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6877631D64492F00757CB8 /* StrangeTableViewCell.xib in Resources */,
 				1674F7A71D38B8A800180D37 /* keep.mp4 in Resources */,
 				16E59EF61D33F19C005C0062 /* Dolin2CollectionViewCell.xib in Resources */,
 				16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */,
@@ -483,7 +492,7 @@
 				163A57B91D3360E2003B9609 /* DolinConstant.m in Sources */,
 				165094F91D3E170000FACA51 /* LocalNotificationViewController.m in Sources */,
 				163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */,
-				3A6877581D63FE3900757CB8 /* WebIsTableHeaderViewController.m in Sources */,
+				3A6877581D63FE3900757CB8 /* StrangeScorllViewController.m in Sources */,
 				163E06AE1D36976400BA52C8 /* AnimationLikeBtnViewController.m in Sources */,
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
 				16F226A71D373DAB00191F92 /* UIWindow+Expand.m in Sources */,
@@ -495,6 +504,7 @@
 				163A57D21D337E6D003B9609 /* SimulateTwitterViewController.m in Sources */,
 				163A57B11D336022003B9609 /* UINavigationBar+Awesome.m in Sources */,
 				163A57C01D33648E003B9609 /* UITabBar+Badge.m in Sources */,
+				3A6877621D64492F00757CB8 /* StrangeTableViewCell.m in Sources */,
 				3A68775E1D6408E800757CB8 /* DolinLabel.m in Sources */,
 				163A57C31D3371D8003B9609 /* BannerViewController.m in Sources */,
 				16E1C3CD1D348DF900A4D153 /* AnimationImagesViewController.m in Sources */,
