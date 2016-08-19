@@ -36,7 +36,8 @@
              @"仿keep引导页-SimulateKeepViewController",
              @"本地推送-LocalNotificationViewController",
              @"UIScrollView奇技淫巧-StrangeScorllViewController",
-             @"自定义Label-DolinLabelViewController"
+             @"自定义Label-DolinLabelViewController",
+             @"鬼相册-Dolin3ViewController"
              ];
 }
 

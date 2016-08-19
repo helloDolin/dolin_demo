@@ -8,16 +8,16 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Dolin2CollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="143" height="106"/>
+            <rect key="frame" x="0.0" y="0.0" width="86" height="70"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="143" height="106"/>
+                <rect key="frame" x="0.0" y="0.0" width="86" height="70"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bMM-aI-wwF">
-                        <rect key="frame" x="0.0" y="0.0" width="143" height="89"/>
+                        <rect key="frame" x="0.0" y="0.0" width="86" height="53"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beX-uo-PYo">
-                        <rect key="frame" x="0.0" y="89" width="143" height="17"/>
+                        <rect key="frame" x="0.0" y="53" width="86" height="17"/>
                         <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,12 +35,12 @@
                 <constraint firstItem="bMM-aI-wwF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cVM-9x-Ag5"/>
                 <constraint firstAttribute="trailing" secondItem="bMM-aI-wwF" secondAttribute="trailing" id="h3t-YM-fcf"/>
             </constraints>
-            <size key="customSize" width="143" height="106"/>
+            <size key="customSize" width="86" height="70"/>
             <connections>
                 <outlet property="imgView" destination="bMM-aI-wwF" id="IGw-wE-aWv"/>
                 <outlet property="titleLbl" destination="beX-uo-PYo" id="iFk-02-4lA"/>
             </connections>
-            <point key="canvasLocation" x="326.5" y="345"/>
+            <point key="canvasLocation" x="298" y="327"/>
         </collectionViewCell>
     </objects>
 </document>

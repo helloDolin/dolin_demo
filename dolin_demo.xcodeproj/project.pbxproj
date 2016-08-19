@@ -45,6 +45,10 @@
 		3A68775E1D6408E800757CB8 /* DolinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68775D1D6408E800757CB8 /* DolinLabel.m */; };
 		3A6877621D64492F00757CB8 /* StrangeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6877601D64492F00757CB8 /* StrangeTableViewCell.m */; };
 		3A6877631D64492F00757CB8 /* StrangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6877611D64492F00757CB8 /* StrangeTableViewCell.xib */; };
+		3ABDD3621D66A87400D13764 /* PlantImgItemUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDD3611D66A87400D13764 /* PlantImgItemUtil.m */; };
+		3ABDD3651D66A8B300D13764 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDD3641D66A8B300D13764 /* ImageModel.m */; };
+		3ABDD3701D66A9EB00D13764 /* PlantCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDD36E1D66A9EB00D13764 /* PlantCollectionViewCell.m */; };
+		3ABDD3711D66A9EB00D13764 /* PlantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ABDD36F1D66A9EB00D13764 /* PlantCollectionViewCell.xib */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +127,13 @@
 		3A68775F1D64492F00757CB8 /* StrangeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrangeTableViewCell.h; sourceTree = "<group>"; };
 		3A6877601D64492F00757CB8 /* StrangeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrangeTableViewCell.m; sourceTree = "<group>"; };
 		3A6877611D64492F00757CB8 /* StrangeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrangeTableViewCell.xib; sourceTree = "<group>"; };
+		3ABDD3601D66A87400D13764 /* PlantImgItemUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantImgItemUtil.h; sourceTree = "<group>"; };
+		3ABDD3611D66A87400D13764 /* PlantImgItemUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantImgItemUtil.m; sourceTree = "<group>"; };
+		3ABDD3631D66A8B300D13764 /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		3ABDD3641D66A8B300D13764 /* ImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		3ABDD36D1D66A9EB00D13764 /* PlantCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantCollectionViewCell.h; sourceTree = "<group>"; };
+		3ABDD36E1D66A9EB00D13764 /* PlantCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantCollectionViewCell.m; sourceTree = "<group>"; };
+		3ABDD36F1D66A9EB00D13764 /* PlantCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlantCollectionViewCell.xib; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +217,7 @@
 		163A57951D335921003B9609 /* Dolin3 */ = {
 			isa = PBXGroup;
 			children = (
+				3ABDD35F1D66A85400D13764 /* BoqiPlant */,
 				163A579E1D335987003B9609 /* Dolin3ViewController.h */,
 				163A579F1D335987003B9609 /* Dolin3ViewController.m */,
 			);
@@ -334,6 +346,20 @@
 			path = launch;
 			sourceTree = "<group>";
 		};
+		3ABDD35F1D66A85400D13764 /* BoqiPlant */ = {
+			isa = PBXGroup;
+			children = (
+				3ABDD3631D66A8B300D13764 /* ImageModel.h */,
+				3ABDD3641D66A8B300D13764 /* ImageModel.m */,
+				3ABDD3601D66A87400D13764 /* PlantImgItemUtil.h */,
+				3ABDD3611D66A87400D13764 /* PlantImgItemUtil.m */,
+				3ABDD36D1D66A9EB00D13764 /* PlantCollectionViewCell.h */,
+				3ABDD36E1D66A9EB00D13764 /* PlantCollectionViewCell.m */,
+				3ABDD36F1D66A9EB00D13764 /* PlantCollectionViewCell.xib */,
+			);
+			path = BoqiPlant;
+			sourceTree = "<group>";
+		};
 		96B6CFAEDF4D3AF27BC73BDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +442,7 @@
 				1674F7A71D38B8A800180D37 /* keep.mp4 in Resources */,
 				16E59EF61D33F19C005C0062 /* Dolin2CollectionViewCell.xib in Resources */,
 				16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */,
+				3ABDD3711D66A9EB00D13764 /* PlantCollectionViewCell.xib in Resources */,
 				16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +505,7 @@
 				163A57921D335790003B9609 /* DolinTabBarController.m in Sources */,
 				1674F7A31D38B68100180D37 /* SimulateKeepViewController.m in Sources */,
 				16C8D6421D33511700228ABD /* AppDelegate.m in Sources */,
+				3ABDD3651D66A8B300D13764 /* ImageModel.m in Sources */,
 				163A57C91D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				16F226AB1D373E9000191F92 /* LaunchViewController.m in Sources */,
 				16E59EF51D33F19C005C0062 /* Dolin2CollectionViewCell.m in Sources */,
@@ -492,6 +520,7 @@
 				163A57B91D3360E2003B9609 /* DolinConstant.m in Sources */,
 				165094F91D3E170000FACA51 /* LocalNotificationViewController.m in Sources */,
 				163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */,
+				3ABDD3701D66A9EB00D13764 /* PlantCollectionViewCell.m in Sources */,
 				3A6877581D63FE3900757CB8 /* StrangeScorllViewController.m in Sources */,
 				163E06AE1D36976400BA52C8 /* AnimationLikeBtnViewController.m in Sources */,
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
@@ -501,6 +530,7 @@
 				163A57991D33593B003B9609 /* Dolin1ViewController.m in Sources */,
 				163A57AF1D336022003B9609 /* NSString+Version.m in Sources */,
 				163A57A01D335987003B9609 /* Dolin3ViewController.m in Sources */,
+				3ABDD3621D66A87400D13764 /* PlantImgItemUtil.m in Sources */,
 				163A57D21D337E6D003B9609 /* SimulateTwitterViewController.m in Sources */,
 				163A57B11D336022003B9609 /* UINavigationBar+Awesome.m in Sources */,
 				163A57C01D33648E003B9609 /* UITabBar+Badge.m in Sources */,
