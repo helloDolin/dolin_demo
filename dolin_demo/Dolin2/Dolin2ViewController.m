@@ -21,7 +21,15 @@ static  NSString* cellReuseIdentifier = @"cellReuseIdentifier";
 
 @end
 
+// 可以定义多个匿名类别，扩展
+@interface Dolin2ViewController ()
+
+@property (nonatomic,strong)NSMutableArray* testArray;
+
+@end
+
 @implementation Dolin2ViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
