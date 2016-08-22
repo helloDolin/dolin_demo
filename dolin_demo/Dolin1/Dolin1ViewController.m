@@ -26,7 +26,7 @@
     [self.view addSubview:self.tableView];
     
     _arr = @[
-             @"Banner-BannerViewController",
+             GET_STR(Banner-BannerViewController),
              @"仿Twitter-SimulateTwitterViewController",
              @"富文本-RichTextViewController",
              @"苹果密码框bug-PwdTextFieldBugViewController",
