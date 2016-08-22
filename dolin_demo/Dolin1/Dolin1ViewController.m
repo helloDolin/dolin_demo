@@ -37,7 +37,8 @@
              @"本地推送-LocalNotificationViewController",
              @"UIScrollView奇技淫巧-StrangeScorllViewController",
              @"自定义Label-DolinLabelViewController",
-             @"鬼相册-Dolin3ViewController"
+             @"鬼相册-Dolin3ViewController",
+             @"动画学习-AnimationStudyVC"
              ];
 }
 
