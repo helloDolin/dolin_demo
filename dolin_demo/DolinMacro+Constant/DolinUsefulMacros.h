@@ -183,4 +183,12 @@ return shared##className; \
 #define TOCK NSLog(@"Time:%f", -[startTime timeIntervalSinceNow]);
 
 
+//##是连接的作用, 即当使用上面的宏会把weak与输入的type值连接起来如下图:
+//#的意思是紧跟着它的后面的标识符添加一个双引号""
+//@#的使用, 我们添加一个普通的宏:
+//随便写一个宏
+#define GET_STR(str) [NSString stringWithFormat:@"%@",@#str]
+
+
+
 #endif /* DolinUsefulMacros_h */
