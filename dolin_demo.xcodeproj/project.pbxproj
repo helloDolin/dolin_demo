@@ -40,6 +40,7 @@
 		16E59EF61D33F19C005C0062 /* Dolin2CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E59EF41D33F19C005C0062 /* Dolin2CollectionViewCell.xib */; };
 		16F226A71D373DAB00191F92 /* UIWindow+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226A61D373DAB00191F92 /* UIWindow+Expand.m */; };
 		16F226AB1D373E9000191F92 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226AA1D373E9000191F92 /* LaunchViewController.m */; };
+		3A0868D31D6AF0CF0025350D /* AnimationStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0868D21D6AF0CF0025350D /* AnimationStudyVC.m */; };
 		3A6877581D63FE3900757CB8 /* StrangeScorllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6877571D63FE3900757CB8 /* StrangeScorllViewController.m */; };
 		3A68775B1D64052500757CB8 /* DolinLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68775A1D64052500757CB8 /* DolinLabelViewController.m */; };
 		3A68775E1D6408E800757CB8 /* DolinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68775D1D6408E800757CB8 /* DolinLabel.m */; };
@@ -118,6 +119,8 @@
 		16F226A61D373DAB00191F92 /* UIWindow+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Expand.m"; sourceTree = "<group>"; };
 		16F226A91D373E9000191F92 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
 		16F226AA1D373E9000191F92 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		3A0868D11D6AF0CF0025350D /* AnimationStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationStudyVC.h; sourceTree = "<group>"; };
+		3A0868D21D6AF0CF0025350D /* AnimationStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationStudyVC.m; sourceTree = "<group>"; };
 		3A6877561D63FE3900757CB8 /* StrangeScorllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrangeScorllViewController.h; sourceTree = "<group>"; };
 		3A6877571D63FE3900757CB8 /* StrangeScorllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrangeScorllViewController.m; sourceTree = "<group>"; };
 		3A6877591D64052500757CB8 /* DolinLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinLabelViewController.h; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 				3A68775D1D6408E800757CB8 /* DolinLabel.m */,
 				3A6877591D64052500757CB8 /* DolinLabelViewController.h */,
 				3A68775A1D64052500757CB8 /* DolinLabelViewController.m */,
+				3A0868D11D6AF0CF0025350D /* AnimationStudyVC.h */,
+				3A0868D21D6AF0CF0025350D /* AnimationStudyVC.m */,
 			);
 			path = Dolin1;
 			sourceTree = "<group>";
@@ -514,6 +519,7 @@
 				163A57C61D3371E2003B9609 /* DolinBannerView.m in Sources */,
 				3A68775B1D64052500757CB8 /* DolinLabelViewController.m in Sources */,
 				1660A6EA1D387E5200192D6F /* SpreadOrShrinkSectionViewController.m in Sources */,
+				3A0868D31D6AF0CF0025350D /* AnimationStudyVC.m in Sources */,
 				163A57A31D335990003B9609 /* Dolin4ViewController.m in Sources */,
 				16E59EE01D33E718005C0062 /* RichTextViewController.m in Sources */,
 				163A57B01D336022003B9609 /* UIImage+animatedGIF.m in Sources */,
@@ -650,7 +656,7 @@
 				INFOPLIST_FILE = dolin_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shaolin.dolin-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boqii.boqiimall.shaolin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -668,7 +674,7 @@
 				INFOPLIST_FILE = dolin_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shaolin.dolin-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boqii.boqiimall.shaolin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
