@@ -7,6 +7,9 @@
 //
 
 #import "AnimationStudyVC.h"
+#import "Masonry.h"
+#import "UIView+LJC.h"
+#import "MMPlaceHolder.h"
 
 @interface AnimationStudyVC ()
 {
@@ -18,29 +21,131 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    _testView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+    [self masonryStudy];
+    [self animationStudy];
+}
+
+- (void)animationStudy {
+    _testView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
     _testView.backgroundColor = RANDOM_UICOLOR;
     
-    UIButton* btn;
-    for (int i = 0 ; i < 5; i++) {
-        btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.backgroundColor = RANDOM_UICOLOR;
-        btn.titleLabel.textColor = [UIColor whiteColor];
-        [btn setTitle:[NSString stringWithFormat:@"%d",i] forState:UIControlStateNormal];
-        btn.tag = i + 200;
-        [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_testView];
+    
+    [self setUpBottomView];
+}
+
+- (void)setUpBottomView {
+    UIView* bottomView = [UIView new];
+    [self.view addSubview:bottomView];
+    
+    [bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.mas_equalTo(self.view);
+        make.bottom.mas_equalTo(self.view);
+        make.height.mas_equalTo(@50);
+    }];
+   
+    UIButton* btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn1.backgroundColor = RANDOM_UICOLOR;
+    btn1.titleLabel.textColor = [UIColor whiteColor];
+    [btn1 setTitle:[NSString stringWithFormat:@"hi1"] forState:UIControlStateNormal];
+    btn1.tag = 200;
+    [btn1 addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton* btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn2.backgroundColor = RANDOM_UICOLOR;
+    btn2.titleLabel.textColor = [UIColor whiteColor];
+    [btn2 setTitle:[NSString stringWithFormat:@"hi2"] forState:UIControlStateNormal];
+    btn2.tag = 201;
+    [btn2 addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton* btn3 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn3.backgroundColor = RANDOM_UICOLOR;
+    btn3.titleLabel.textColor = [UIColor whiteColor];
+    [btn3 setTitle:[NSString stringWithFormat:@"hi3"] forState:UIControlStateNormal];
+    btn3.tag = 202;
+    [btn3 addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [bottomView addSubview:btn1];
+    [bottomView addSubview:btn2];
+    [bottomView addSubview:btn3];
+    
+    [btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(@[btn2,btn3,bottomView]);
+        make.size.mas_equalTo(CGSizeMake(50, 50));
+    }];
+    
+    [btn2 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.equalTo(btn1);
+    }];
+    
+    [btn3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.equalTo(btn1);
+    }];
+    
+    [bottomView distributeSpacingHorizontallyWith:@[btn1,btn2,btn3]];
+//    [bottomView showPlaceHolderWithAllSubviews];
+//    [bottomView hidePlaceHolder];
+    
+}
+
+- (void)masonryStudy {
+    UIView *sv = [UIView new];
+    sv.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:sv];
+    [sv mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.size.mas_equalTo(CGSizeMake(300, 300));
+    }];
+    
+    UIScrollView *scrollView = [UIScrollView new];
+    scrollView.backgroundColor = [UIColor whiteColor];
+    [sv addSubview:scrollView];
+    [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(sv).with.insets(UIEdgeInsetsMake(5,5,5,5));
+    }];
+    
+    UIView *container = [UIView new];
+    [scrollView addSubview:container];
+    [container mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(scrollView);
+        make.width.equalTo(scrollView);
+    }];
+    
+    int count = 10;
+    
+    UIView *lastView = nil;
+    
+    for ( int i = 1 ; i <= count ; ++i )
+    {
+        UIView *subv = [UIView new];
+        [container addSubview:subv];
+        subv.backgroundColor = RANDOM_UICOLOR;
         
-        float btnWidth = SCREEN_WIDTH / 5;
-        float btnHeight = btnWidth / 2;
-        btn.frame = CGRectMake(btnWidth * i, SCREEN_HEIGHT - 64 - btnHeight , btnWidth, btnHeight);
-        [self.view addSubview:btn];
+        [subv mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.and.right.equalTo(container);
+            make.height.mas_equalTo(@(20*i));
+            
+            if ( lastView )
+            {
+                make.top.mas_equalTo(lastView.mas_bottom);
+            }
+            else
+            {
+                make.top.mas_equalTo(container.mas_top);
+            }
+        }];
+        
+        lastView = subv;
     }
     
-    [self.view addSubview:_testView];
+    // container这个view起到了一个中间层的作用 能够自动的计算uiscrollView的contentSize
+    [container mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(lastView.mas_bottom);
+    }];
+
 }
 
 - (void)animate0 {
@@ -94,13 +199,6 @@
     [_testView.layer addAnimation:transition forKey:nil];
 }
 
-- (void)animate3 {
-    // group animation
-}
-
-- (void)animate4 {
-    
-}
 
 - (void)btnAction:(UIButton*)btn {
     NSInteger tag = btn.tag - 200;
@@ -113,12 +211,6 @@
             break;
         case 2:
             [self animate2];
-            break;
-        case 3:
-            [self animate3];
-            break;
-        case 4:
-            [self animate4];
             break;
         default:
             break;

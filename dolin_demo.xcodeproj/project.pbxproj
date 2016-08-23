@@ -41,6 +41,8 @@
 		16F226A71D373DAB00191F92 /* UIWindow+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226A61D373DAB00191F92 /* UIWindow+Expand.m */; };
 		16F226AB1D373E9000191F92 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226AA1D373E9000191F92 /* LaunchViewController.m */; };
 		3A0868D31D6AF0CF0025350D /* AnimationStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0868D21D6AF0CF0025350D /* AnimationStudyVC.m */; };
+		3A4779F81D6BE56000AA9A70 /* MMPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4779F71D6BE56000AA9A70 /* MMPlaceHolder.m */; };
+		3A4779FB1D6BEEF200AA9A70 /* UIView+LJC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4779FA1D6BEEF200AA9A70 /* UIView+LJC.m */; };
 		3A6877581D63FE3900757CB8 /* StrangeScorllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6877571D63FE3900757CB8 /* StrangeScorllViewController.m */; };
 		3A68775B1D64052500757CB8 /* DolinLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68775A1D64052500757CB8 /* DolinLabelViewController.m */; };
 		3A68775E1D6408E800757CB8 /* DolinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68775D1D6408E800757CB8 /* DolinLabel.m */; };
@@ -121,6 +123,10 @@
 		16F226AA1D373E9000191F92 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		3A0868D11D6AF0CF0025350D /* AnimationStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationStudyVC.h; sourceTree = "<group>"; };
 		3A0868D21D6AF0CF0025350D /* AnimationStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationStudyVC.m; sourceTree = "<group>"; };
+		3A4779F61D6BE56000AA9A70 /* MMPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPlaceHolder.h; sourceTree = "<group>"; };
+		3A4779F71D6BE56000AA9A70 /* MMPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPlaceHolder.m; sourceTree = "<group>"; };
+		3A4779F91D6BEEF200AA9A70 /* UIView+LJC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJC.h"; sourceTree = "<group>"; };
+		3A4779FA1D6BEEF200AA9A70 /* UIView+LJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJC.m"; sourceTree = "<group>"; };
 		3A6877561D63FE3900757CB8 /* StrangeScorllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrangeScorllViewController.h; sourceTree = "<group>"; };
 		3A6877571D63FE3900757CB8 /* StrangeScorllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrangeScorllViewController.m; sourceTree = "<group>"; };
 		3A6877591D64052500757CB8 /* DolinLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinLabelViewController.h; sourceTree = "<group>"; };
@@ -248,6 +254,8 @@
 		163A57A51D335F7F003B9609 /* DolinUtility */ = {
 			isa = PBXGroup;
 			children = (
+				3A4779F61D6BE56000AA9A70 /* MMPlaceHolder.h */,
+				3A4779F71D6BE56000AA9A70 /* MMPlaceHolder.m */,
 				163A57A61D335F9E003B9609 /* category */,
 				163A57BB1D3361D2003B9609 /* DolinTopWindowUtil.h */,
 				163A57BC1D3361D2003B9609 /* DolinTopWindowUtil.m */,
@@ -258,6 +266,8 @@
 		163A57A61D335F9E003B9609 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				3A4779F91D6BEEF200AA9A70 /* UIView+LJC.h */,
+				3A4779FA1D6BEEF200AA9A70 /* UIView+LJC.m */,
 				163A57C71D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.h */,
 				163A57C81D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.m */,
 				163A57BE1D33648E003B9609 /* UITabBar+Badge.h */,
@@ -524,11 +534,13 @@
 				16E59EE01D33E718005C0062 /* RichTextViewController.m in Sources */,
 				163A57B01D336022003B9609 /* UIImage+animatedGIF.m in Sources */,
 				163A57B91D3360E2003B9609 /* DolinConstant.m in Sources */,
+				3A4779F81D6BE56000AA9A70 /* MMPlaceHolder.m in Sources */,
 				165094F91D3E170000FACA51 /* LocalNotificationViewController.m in Sources */,
 				163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */,
 				3ABDD3701D66A9EB00D13764 /* PlantCollectionViewCell.m in Sources */,
 				3A6877581D63FE3900757CB8 /* StrangeScorllViewController.m in Sources */,
 				163E06AE1D36976400BA52C8 /* AnimationLikeBtnViewController.m in Sources */,
+				3A4779FB1D6BEEF200AA9A70 /* UIView+LJC.m in Sources */,
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
 				16F226A71D373DAB00191F92 /* UIWindow+Expand.m in Sources */,
 				16E59EE31D33EB90005C0062 /* PwdTextFieldBugViewController.m in Sources */,
