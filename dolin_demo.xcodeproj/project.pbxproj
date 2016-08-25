@@ -48,6 +48,7 @@
 		3A68775E1D6408E800757CB8 /* DolinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68775D1D6408E800757CB8 /* DolinLabel.m */; };
 		3A6877621D64492F00757CB8 /* StrangeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6877601D64492F00757CB8 /* StrangeTableViewCell.m */; };
 		3A6877631D64492F00757CB8 /* StrangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6877611D64492F00757CB8 /* StrangeTableViewCell.xib */; };
+		3A8B76371D6E984000F68DE9 /* ChangeDeviceOrientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B76361D6E984000F68DE9 /* ChangeDeviceOrientVC.m */; };
 		3ABDD3621D66A87400D13764 /* PlantImgItemUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDD3611D66A87400D13764 /* PlantImgItemUtil.m */; };
 		3ABDD3651D66A8B300D13764 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDD3641D66A8B300D13764 /* ImageModel.m */; };
 		3ABDD3701D66A9EB00D13764 /* PlantCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDD36E1D66A9EB00D13764 /* PlantCollectionViewCell.m */; };
@@ -136,6 +137,8 @@
 		3A68775F1D64492F00757CB8 /* StrangeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrangeTableViewCell.h; sourceTree = "<group>"; };
 		3A6877601D64492F00757CB8 /* StrangeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrangeTableViewCell.m; sourceTree = "<group>"; };
 		3A6877611D64492F00757CB8 /* StrangeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrangeTableViewCell.xib; sourceTree = "<group>"; };
+		3A8B76351D6E984000F68DE9 /* ChangeDeviceOrientVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeDeviceOrientVC.h; sourceTree = "<group>"; };
+		3A8B76361D6E984000F68DE9 /* ChangeDeviceOrientVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeDeviceOrientVC.m; sourceTree = "<group>"; };
 		3ABDD3601D66A87400D13764 /* PlantImgItemUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantImgItemUtil.h; sourceTree = "<group>"; };
 		3ABDD3611D66A87400D13764 /* PlantImgItemUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantImgItemUtil.m; sourceTree = "<group>"; };
 		3ABDD3631D66A8B300D13764 /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
@@ -209,6 +212,8 @@
 				3A68775A1D64052500757CB8 /* DolinLabelViewController.m */,
 				3A0868D11D6AF0CF0025350D /* AnimationStudyVC.h */,
 				3A0868D21D6AF0CF0025350D /* AnimationStudyVC.m */,
+				3A8B76351D6E984000F68DE9 /* ChangeDeviceOrientVC.h */,
+				3A8B76361D6E984000F68DE9 /* ChangeDeviceOrientVC.m */,
 			);
 			path = Dolin1;
 			sourceTree = "<group>";
@@ -534,6 +539,7 @@
 				16E59EE01D33E718005C0062 /* RichTextViewController.m in Sources */,
 				163A57B01D336022003B9609 /* UIImage+animatedGIF.m in Sources */,
 				163A57B91D3360E2003B9609 /* DolinConstant.m in Sources */,
+				3A8B76371D6E984000F68DE9 /* ChangeDeviceOrientVC.m in Sources */,
 				3A4779F81D6BE56000AA9A70 /* MMPlaceHolder.m in Sources */,
 				165094F91D3E170000FACA51 /* LocalNotificationViewController.m in Sources */,
 				163A57CF1D337B23003B9609 /* SimulateTwitterView.m in Sources */,
@@ -662,15 +668,15 @@
 			baseConfigurationReference = 5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 366688603@qq.com (5885PD2ET9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 366688603@qq.com (5885PD2ET9)";
 				GCC_PREFIX_HEADER = "${SRCROOT}/dolin_demo/DolinPrefix.pch";
 				INFOPLIST_FILE = dolin_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.boqii.boqiimall.shaolin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaolin.dolin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "1f386906-cb95-4242-a656-7f7b81f7df17";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -680,15 +686,15 @@
 			baseConfigurationReference = C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 366688603@qq.com (5885PD2ET9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 366688603@qq.com (5885PD2ET9)";
 				GCC_PREFIX_HEADER = "${SRCROOT}/dolin_demo/DolinPrefix.pch";
 				INFOPLIST_FILE = dolin_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.boqii.boqiimall.shaolin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaolin.dolin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "1f386906-cb95-4242-a656-7f7b81f7df17";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
