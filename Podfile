@@ -5,4 +5,5 @@ target 'dolin_demo' do
   pod 'AFNetworking', '~> 3.0’
   pod 'SDWebImage'
   pod 'Masonry'
+  pod 'pop', '~> 1.0'
 end

@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = RANDOM_UICOLOR;
     [self.view addSubview:self.imgView];
     
     // 监听设备自动旋转

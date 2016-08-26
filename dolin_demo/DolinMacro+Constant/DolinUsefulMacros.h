@@ -122,6 +122,7 @@
 #define BlockWeakObject(o) __typeof(o) __weak
 #define BlockWeakSelf BlockWeakObject(self)
 
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 
 #pragma mark -  Alert
