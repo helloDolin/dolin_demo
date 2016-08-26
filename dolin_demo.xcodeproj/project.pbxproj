@@ -49,6 +49,7 @@
 		3A6877621D64492F00757CB8 /* StrangeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6877601D64492F00757CB8 /* StrangeTableViewCell.m */; };
 		3A6877631D64492F00757CB8 /* StrangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6877611D64492F00757CB8 /* StrangeTableViewCell.xib */; };
 		3A8B76371D6E984000F68DE9 /* ChangeDeviceOrientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B76361D6E984000F68DE9 /* ChangeDeviceOrientVC.m */; };
+		3ABB7CEA1D6EDED200528B49 /* TitleContainerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB7CE91D6EDED200528B49 /* TitleContainerScrollView.m */; };
 		3ABDD3621D66A87400D13764 /* PlantImgItemUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDD3611D66A87400D13764 /* PlantImgItemUtil.m */; };
 		3ABDD3651D66A8B300D13764 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDD3641D66A8B300D13764 /* ImageModel.m */; };
 		3ABDD3701D66A9EB00D13764 /* PlantCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDD36E1D66A9EB00D13764 /* PlantCollectionViewCell.m */; };
@@ -139,6 +140,8 @@
 		3A6877611D64492F00757CB8 /* StrangeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrangeTableViewCell.xib; sourceTree = "<group>"; };
 		3A8B76351D6E984000F68DE9 /* ChangeDeviceOrientVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeDeviceOrientVC.h; sourceTree = "<group>"; };
 		3A8B76361D6E984000F68DE9 /* ChangeDeviceOrientVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeDeviceOrientVC.m; sourceTree = "<group>"; };
+		3ABB7CE81D6EDED200528B49 /* TitleContainerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleContainerScrollView.h; sourceTree = "<group>"; };
+		3ABB7CE91D6EDED200528B49 /* TitleContainerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleContainerScrollView.m; sourceTree = "<group>"; };
 		3ABDD3601D66A87400D13764 /* PlantImgItemUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantImgItemUtil.h; sourceTree = "<group>"; };
 		3ABDD3611D66A87400D13764 /* PlantImgItemUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantImgItemUtil.m; sourceTree = "<group>"; };
 		3ABDD3631D66A8B300D13764 /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
@@ -245,6 +248,8 @@
 			children = (
 				163A57A11D335990003B9609 /* Dolin4ViewController.h */,
 				163A57A21D335990003B9609 /* Dolin4ViewController.m */,
+				3ABB7CE81D6EDED200528B49 /* TitleContainerScrollView.h */,
+				3ABB7CE91D6EDED200528B49 /* TitleContainerScrollView.m */,
 			);
 			path = Dolin4;
 			sourceTree = "<group>";
@@ -562,6 +567,7 @@
 				3A68775E1D6408E800757CB8 /* DolinLabel.m in Sources */,
 				163A57C31D3371D8003B9609 /* BannerViewController.m in Sources */,
 				16E1C3CD1D348DF900A4D153 /* AnimationImagesViewController.m in Sources */,
+				3ABB7CEA1D6EDED200528B49 /* TitleContainerScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
