@@ -8,6 +8,7 @@
 
 #import "Dolin2ViewController.h"
 #import "Dolin2CollectionViewCell.h"
+#import "ExpandClickAreaButton.h"
 
 static  NSString* cellReuseIdentifier = @"cellReuseIdentifier";
 
@@ -35,8 +36,24 @@ static  NSString* cellReuseIdentifier = @"cellReuseIdentifier";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = RANDOM_UICOLOR;
-    _arrDataSource = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10"];
-    [self.view addSubview:self.collectionView];
+    
+
+    ExpandClickAreaButton* btn = [ExpandClickAreaButton buttonWithType:UIButtonTypeSystem];
+    CGFloat btnWidth = 50;
+    CGFloat btnHeight = 50;
+    btn.frame = CGRectMake((SCREEN_WIDTH - btnWidth) / 2, 20, btnWidth, btnHeight);
+    [btn setImage:[UIImage imageNamed:@"btn_like"] forState:UIControlStateNormal];
+    btn.tintColor = [UIColor whiteColor];
+    [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:btn];
+    
+//    _arrDataSource = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10"];
+//    [self.view addSubview:self.collectionView];
+}
+
+- (void)btnAction {
+    NSLog(@"btnAction");
 }
 
 - (void)didReceiveMemoryWarning {
