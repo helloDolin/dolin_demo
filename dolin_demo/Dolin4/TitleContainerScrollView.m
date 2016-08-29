@@ -7,6 +7,7 @@
 //
 
 #import "TitleContainerScrollView.h"
+#import  <pop/POP.h>    //Facebook 动画包
 
 // 默认颜色
 #define kTitleColor_normal   [UIColor blackColor]
@@ -56,7 +57,7 @@ static CGFloat kUnderLineViewHeight = 2.0;
         _buttonClickBlock(_currentPage);
     }
     UIButton *btn = (UIButton *)sender;
-    [self setUpUnderLineViewPositionByBtn:btn];
+    [self setUpUnderLineViewPositionByBtn:btn withAnimation:YES];
 }
 
 #pragma mark - setter
@@ -101,7 +102,7 @@ static CGFloat kUnderLineViewHeight = 2.0;
     firstButton.titleLabel.font = [UIFont systemFontOfSize:kBtnTitleLblSelectedFontSize];
     [firstButton setTitleColor:_titleSelectedColor forState:UIControlStateNormal];
     
-    [self setUpUnderLineViewPositionByBtn:firstButton];
+    [self setUpUnderLineViewPositionByBtn:firstButton withAnimation:NO];
     
     [self addSubview:self.underLineView];
 
@@ -137,15 +138,25 @@ static CGFloat kUnderLineViewHeight = 2.0;
     CGRect frame = button.frame;
     [self scrollRectToVisible:frame animated:YES];
     
-    [UIView animateWithDuration:0.25f animations:^{
-        [self setUpUnderLineViewPositionByBtn:button];
-    } completion:nil];
+
+    [self setUpUnderLineViewPositionByBtn:button withAnimation:YES];
 }
 
 #pragma mark - method
 /**
  *  设置下划线的位置
  */
+- (void)setUpUnderLineViewPositionByBtn:(UIButton*)btn withAnimation:(BOOL)isAnimation{
+    if (isAnimation) {
+        [UIView animateWithDuration:0.25f animations:^{
+            [self setUpUnderLineViewPositionByBtn:btn];
+        }];
+    }
+    else {
+        [self setUpUnderLineViewPositionByBtn:btn];
+    }
+}
+
 - (void)setUpUnderLineViewPositionByBtn:(UIButton*)btn {
     self.underLineView.frame = CGRectMake(0, 0, btn.frame.size.width,kUnderLineViewHeight);
     self.underLineView.center = CGPointMake(btn.center.x, kTitleContainerScrollViewHeight - kUnderLineViewHeight);

@@ -25,6 +25,8 @@
     
     [self.view addSubview:self.tableView];
     
+    [self setLeftBarBtn];
+    
     _arr = @[
              GET_STR(Banner-BannerViewController),
              @"仿Twitter-SimulateTwitterViewController",
@@ -41,6 +43,23 @@
              @"动画学习-AnimationStudyVC",
              @"禁用旋转时全屏横屏方法-ChangeDeviceOrientVC"
              ];
+}
+
+- (void)setLeftBarBtn {
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(leftItemAction)];
+    self.navigationItem.leftBarButtonItem = barButtonItem;
+}
+
+- (void)leftItemAction {
+    static BOOL b = YES;
+    if (b) {
+        [self.tableView setEditing:YES animated:YES];
+        self.navigationItem.leftBarButtonItem.title = @"取消";
+    } else {
+        [self.tableView setEditing:NO animated:YES];
+        self.navigationItem.leftBarButtonItem.title = @"编辑";
+    }
+    b = !b;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -107,12 +126,22 @@
     }
 }
 
+// 编辑状态下的代理
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewCellEditingStyleDelete|UITableViewCellEditingStyleInsert;
+}
+
 #pragma mark -  getter
 - (UITableView*)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc]initWithFrame:FULL_SCREEN_FRAME style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.delegate = self;
+//        _tableView.allowsSelectionDuringEditing = YES; 编辑状态下也可以点击
     }
     return _tableView;
 }
