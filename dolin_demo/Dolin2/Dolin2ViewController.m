@@ -41,10 +41,18 @@ static  NSString* cellReuseIdentifier = @"cellReuseIdentifier";
     ExpandClickAreaButton* btn = [ExpandClickAreaButton buttonWithType:UIButtonTypeSystem];
     CGFloat btnWidth = 50;
     CGFloat btnHeight = 50;
+    btn.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.3];
     btn.frame = CGRectMake((SCREEN_WIDTH - btnWidth) / 2, 20, btnWidth, btnHeight);
     [btn setImage:[UIImage imageNamed:@"btn_like"] forState:UIControlStateNormal];
     btn.tintColor = [UIColor whiteColor];
     [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:btn.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = btn.bounds;
+    maskLayer.path = maskPath.CGPath;
+    btn.layer.mask = maskLayer;
+    
     
     [self.view addSubview:btn];
     
