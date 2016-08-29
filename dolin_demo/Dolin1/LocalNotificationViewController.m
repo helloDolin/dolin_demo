@@ -75,7 +75,6 @@
         
 //         图片在上边，全部居中
         imageSize = _btn.imageView.frame.size;
-        titleSize = _btn.titleLabel.frame.size;
         spacing = 2;
         _btn.titleEdgeInsets = UIEdgeInsetsMake(0.0, - imageSize.width, - (imageSize.height + spacing/2), 0.0);
         titleSize = _btn.titleLabel.frame.size;
