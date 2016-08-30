@@ -17,14 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dj2-fy-bc8">
-                                <rect key="frame" x="2" y="2" width="46" height="46"/>
+                                <rect key="frame" x="2" y="2" width="46" height="48"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dj2-fy-bc8" firstAttribute="leading" secondItem="y46-cw-8b3" secondAttribute="leading" constant="2" id="TjG-jd-k4D"/>
                             <constraint firstItem="dj2-fy-bc8" firstAttribute="top" secondItem="y46-cw-8b3" secondAttribute="top" constant="2" id="gVU-Oe-Ugh"/>
-                            <constraint firstAttribute="bottom" secondItem="dj2-fy-bc8" secondAttribute="bottom" constant="2" id="tpd-GQ-fSE"/>
+                            <constraint firstAttribute="bottom" secondItem="dj2-fy-bc8" secondAttribute="bottom" id="tpd-GQ-fSE"/>
                             <constraint firstAttribute="trailing" secondItem="dj2-fy-bc8" secondAttribute="trailing" constant="2" id="zfg-mi-dxF"/>
                         </constraints>
                     </view>
