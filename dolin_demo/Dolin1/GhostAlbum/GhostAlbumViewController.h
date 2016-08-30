@@ -2,12 +2,14 @@
 //  Dolin3ViewController.h
 //  dolin_demo
 //
-//  Created by dolin on 16/8/30.
+//  Created by shaolin on 16/7/11.
 //  Copyright © 2016年 shaolin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-
-@interface Dolin3ViewController : UIViewController
+/**
+ *  鬼相册
+ */
+@interface GhostAlbumViewController : UIViewController
 
 @end

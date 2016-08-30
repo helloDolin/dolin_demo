@@ -80,7 +80,7 @@
 #pragma mark - getter
 - (TitleContainerScrollView*)titleContainerScrollView {
     if (!_titleContainerScrollView) {
-        _titleContainerScrollView = [[TitleContainerScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, kTitleContainerScrollViewHeight) withTitleNormalColor:RANDOM_UICOLOR withTitleSelectedColor:RANDOM_UICOLOR withUnderLineViewColor:RANDOM_UICOLOR];
+        _titleContainerScrollView = [[TitleContainerScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, kTitleContainerScrollViewHeight)];
         _titleContainerScrollView.backgroundColor = [UIColor orangeColor];
         WS(weakSelf);
         _titleContainerScrollView.buttonClickBlock = ^(NSInteger currentPage){
