@@ -49,21 +49,21 @@
    
     UIButton* btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn1.backgroundColor = RANDOM_UICOLOR;
-    btn1.titleLabel.textColor = [UIColor whiteColor];
+    [btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn1 setTitle:[NSString stringWithFormat:@"hi1"] forState:UIControlStateNormal];
     btn1.tag = 200;
     [btn1 addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton* btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn2.backgroundColor = RANDOM_UICOLOR;
-    btn2.titleLabel.textColor = [UIColor whiteColor];
+    [btn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn2 setTitle:[NSString stringWithFormat:@"hi2"] forState:UIControlStateNormal];
     btn2.tag = 201;
     [btn2 addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton* btn3 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn3.backgroundColor = RANDOM_UICOLOR;
-    btn3.titleLabel.textColor = [UIColor whiteColor];
+    [btn3 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn3 setTitle:[NSString stringWithFormat:@"hi3"] forState:UIControlStateNormal];
     btn3.tag = 202;
     [btn3 addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -86,8 +86,8 @@
     }];
     
     [bottomView distributeSpacingHorizontallyWith:@[btn1,btn2,btn3]];
-//    [bottomView showPlaceHolderWithAllSubviews];
-//    [bottomView hidePlaceHolder];
+    [bottomView showPlaceHolderWithAllSubviews];
+    [bottomView hidePlaceHolder];
     
 }
 
@@ -150,8 +150,8 @@
 
 - (void)animate0 {
     CABasicAnimation* ba = [CABasicAnimation animationWithKeyPath:@"position"];
-    ba.fromValue = [NSValue valueWithCGPoint:CGPointMake(50, 50)];
-    ba.toValue = [NSValue valueWithCGPoint:CGPointMake(200, 200)];
+    ba.fromValue = [NSValue valueWithCGPoint:CGPointMake(25, 25)];
+    ba.toValue = [NSValue valueWithCGPoint:CGPointMake(SCREEN_WIDTH, SCREEN_HEIGHT - 64)];
     ba.duration = 2;
     
     ba.autoreverses = YES; // 动画结束后是否自动回到原来位置；
