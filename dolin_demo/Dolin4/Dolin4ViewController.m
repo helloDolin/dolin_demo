@@ -10,7 +10,7 @@
 #import "TitleContainerScrollView.h"
 #import "BannerViewController.h"
 
-@interface Dolin4ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface Dolin4ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,TitleContainerScrollViewDelegate>
 {
     NSMutableArray* _vcs;
 }
@@ -40,6 +40,11 @@
     
     [self.view addSubview:self.titleContainerScrollView];
     [self.view addSubview:self.collectionView];
+}
+
+#pragma mark - TitleContainerScrollViewDelegate
+- (UIColor*)underLineColor {
+    return [UIColor grayColor];
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -82,6 +87,15 @@
     if (!_titleContainerScrollView) {
         _titleContainerScrollView = [[TitleContainerScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, kTitleContainerScrollViewHeight)];
         _titleContainerScrollView.backgroundColor = [UIColor orangeColor];
+        [_titleContainerScrollView onceParameterConfig:^(CGFloat *fontSizeNormal, CGFloat *fontSizeSelected, CGFloat *underLineHeight ,UIColor** underLineColor) {
+            *fontSizeNormal = 6.0;
+            *fontSizeSelected = 12.0;
+            *underLineHeight = 5;
+            *underLineColor = [UIColor redColor];
+        }];
+        
+        _titleContainerScrollView.titleContainerScrollViewDelegate = self;
+        
         WS(weakSelf);
         _titleContainerScrollView.buttonClickBlock = ^(NSInteger currentPage){
             // 滚动collectionView
