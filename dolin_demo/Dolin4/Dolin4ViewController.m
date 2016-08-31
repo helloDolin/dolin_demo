@@ -43,8 +43,8 @@
 }
 
 #pragma mark - TitleContainerScrollViewDelegate
-- (UIColor*)underLineColor {
-    return [UIColor grayColor];
+- (UIColor*)colorOfUnderLineInTitleContainerScrollView:(TitleContainerScrollView*)titleContainerScrollView {
+    return [UIColor redColor];
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -90,8 +90,8 @@
         [_titleContainerScrollView onceParameterConfig:^(CGFloat *fontSizeNormal, CGFloat *fontSizeSelected, CGFloat *underLineHeight ,UIColor** underLineColor) {
             *fontSizeNormal = 6.0;
             *fontSizeSelected = 12.0;
-            *underLineHeight = 5;
-            *underLineColor = [UIColor redColor];
+            *underLineHeight = 10;
+            *underLineColor = [UIColor greenColor];
         }];
         
         _titleContainerScrollView.titleContainerScrollViewDelegate = self;

@@ -7,16 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class TitleContainerScrollView;
 // 默认高度为40
 #define kTitleContainerScrollViewHeight 40.0
 
 typedef void (^ButtonClickBlock)(NSInteger currentPage);
 
 @protocol TitleContainerScrollViewDelegate <NSObject>
-
-//@property (nonatomic, strong) UIColor *underLineColor;
-//- (void)setUpUnderLineColor:(UIColor*)underLineColor;
+ 
+- (UIColor*)colorOfUnderLineInTitleContainerScrollView:(TitleContainerScrollView*)titleContainerScrollView;
 
 @end
 
