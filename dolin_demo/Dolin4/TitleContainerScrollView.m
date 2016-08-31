@@ -19,7 +19,11 @@ static CGFloat kBtnTitleLblSelectedFontSize = 18.0;
 static CGFloat kPadding             = 5.0;
 static CGFloat kUnderLineViewHeight = 2.0;
 
-@interface TitleContainerScrollView()
+@interface TitleContainerScrollView() {
+    CGFloat _fontSizeNormal;
+    CGFloat _fontSizeSelected;
+    CGFloat _underLineHeight;
+}
 
 @property (nonatomic, strong) UIView         *underLineView;
 @property (nonatomic, strong) NSMutableArray *buttonsArr;
@@ -50,6 +54,26 @@ static CGFloat kUnderLineViewHeight = 2.0;
     return self;
 }
 
+- (void)onceParameterConfig:(void(^)(CGFloat* fontSizeNormal,CGFloat* fontSizeSelected, CGFloat* underLineHeight, UIColor** underLineColor))paramConfigBlock {
+    
+    CGFloat fontSizeNormal = kBtnTitleLblFontSize;
+    CGFloat fontSizeSelected = kBtnTitleLblSelectedFontSize;
+    CGFloat underLineHeight = kUnderLineViewHeight;
+    UIColor* underLineColor = nil;
+    
+    
+    if (paramConfigBlock) {
+        paramConfigBlock(&fontSizeNormal,&fontSizeSelected,&underLineHeight,&underLineColor);
+    }
+    
+    if (fontSizeNormal) {
+        _fontSizeNormal = fontSizeNormal;
+        _fontSizeSelected = fontSizeSelected;
+        _underLineHeight = underLineHeight;
+        self.underLineViewColor = underLineColor;
+    }
+}
+
 #pragma mark - event
 - (void)buttonClick:(UIButton*)sender {
     self.currentPage = [self.buttonsArr indexOfObject:sender];
@@ -77,7 +101,7 @@ static CGFloat kUnderLineViewHeight = 2.0;
         }
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.titleLabel.font = [UIFont systemFontOfSize:kBtnTitleLblFontSize];
+        button.titleLabel.font = [UIFont systemFontOfSize:_fontSizeNormal];
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         [button setTitle:_titles[i] forState:UIControlStateNormal];
         [button setTitleColor:_titleNormalColor forState:UIControlStateNormal];
@@ -99,7 +123,7 @@ static CGFloat kUnderLineViewHeight = 2.0;
     
     // 默认选中第一个按钮
     UIButton *firstButton = self.buttonsArr.firstObject;
-    firstButton.titleLabel.font = [UIFont systemFontOfSize:kBtnTitleLblSelectedFontSize];
+    firstButton.titleLabel.font = [UIFont systemFontOfSize:_fontSizeSelected];
     [firstButton setTitleColor:_titleSelectedColor forState:UIControlStateNormal];
     
     [self setUpUnderLineViewPositionByBtn:firstButton withAnimation:NO];
@@ -115,12 +139,12 @@ static CGFloat kUnderLineViewHeight = 2.0;
     
     // 先重置颜色与大小
     for (UIButton *btn in _buttonsArr) {
-        btn.titleLabel.font = [UIFont systemFontOfSize:15];
+        btn.titleLabel.font = [UIFont systemFontOfSize:_fontSizeNormal];
         [btn setTitleColor:_titleNormalColor forState:UIControlStateNormal];
     }
     
     // 再设置当前btn
-    button.titleLabel.font =  [UIFont systemFontOfSize:18];
+    button.titleLabel.font =  [UIFont systemFontOfSize:_fontSizeSelected];
     [button  setTitleColor:_titleSelectedColor forState:UIControlStateNormal];
     
     // 精华
@@ -158,8 +182,8 @@ static CGFloat kUnderLineViewHeight = 2.0;
 }
 
 - (void)setUpUnderLineViewPositionByBtn:(UIButton*)btn {
-    self.underLineView.frame = CGRectMake(0, 0, btn.frame.size.width,kUnderLineViewHeight);
-    self.underLineView.center = CGPointMake(btn.center.x, kTitleContainerScrollViewHeight - kUnderLineViewHeight);
+    self.underLineView.frame = CGRectMake(0, 0, btn.frame.size.width,_underLineHeight);
+    self.underLineView.center = CGPointMake(btn.center.x, kTitleContainerScrollViewHeight - _underLineHeight);
 }
 
 #pragma mark - getter
