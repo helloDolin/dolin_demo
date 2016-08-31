@@ -50,8 +50,25 @@ static CGFloat kUnderLineViewHeight = 2.0;
         self.titleNormalColor   = titleNormalColor;
         self.titleSelectedColor = titleSelectedColor;
         self.underLineViewColor = underLineViewColor;
+        
+        
     }
     return self;
+}
+
+/**
+ layoutSubviews在以下情况下会被调用：
+ 1、init初始化不会触发layoutSubviews
+ 2、addSubview会触发layoutSubviews
+ 3、设置view的Frame会触发layoutSubviews，当然前提是frame的值设置前后发生了变化
+ 4、滚动一个UIScrollView会触发layoutSubviews
+ 5、旋转Screen会触发父UIView上的layoutSubviews事件
+ 6、改变一个UIView大小的时候也会触发父UIView上的layoutSubviews事件
+ */
+- (void)layoutSubviews {
+    if (self.titleContainerScrollViewDelegate && [self.titleContainerScrollViewDelegate respondsToSelector:@selector(colorOfUnderLineInTitleContainerScrollView:)]) {
+        self.underLineView.backgroundColor = [self.titleContainerScrollViewDelegate colorOfUnderLineInTitleContainerScrollView:self];
+    }
 }
 
 - (void)onceParameterConfig:(void(^)(CGFloat* fontSizeNormal,CGFloat* fontSizeSelected, CGFloat* underLineHeight, UIColor** underLineColor))paramConfigBlock {
@@ -182,8 +199,8 @@ static CGFloat kUnderLineViewHeight = 2.0;
 }
 
 - (void)setUpUnderLineViewPositionByBtn:(UIButton*)btn {
-    self.underLineView.frame = CGRectMake(0, 0, btn.frame.size.width,_underLineHeight);
-    self.underLineView.center = CGPointMake(btn.center.x, kTitleContainerScrollViewHeight - _underLineHeight);
+    self.underLineView.frame = CGRectMake(0, kTitleContainerScrollViewHeight - _underLineHeight, btn.frame.size.width,_underLineHeight);
+    self.underLineView.center = CGPointMake(btn.center.x, kTitleContainerScrollViewHeight - _underLineHeight / 2 );
 }
 
 #pragma mark - getter
