@@ -19,9 +19,7 @@
 #pragma mark -  life circle 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = RANDOM_UICOLOR;
-    
+    // Do any additional setup after loading the view.    
     [self.view addSubview:self.likeBtn];
 }
 
@@ -51,7 +49,8 @@
 - (UIButton*)likeBtn {
     if (!_likeBtn) {
         _likeBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-        _likeBtn.frame = CGRectMake(0,0,50,50);
+        _likeBtn.frame = CGRectMake(0,NavigtationBarHeight,50,50);
+        _likeBtn.center = self.view.center;
         [_likeBtn setImage:[[UIImage imageNamed:@"btn_unlike"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
         [_likeBtn addTarget:self action:@selector(likeBtnAction) forControlEvents:UIControlEventTouchUpInside];
     }

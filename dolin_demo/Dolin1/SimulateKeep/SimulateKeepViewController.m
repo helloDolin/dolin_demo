@@ -34,9 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = RANDOM_UICOLOR;
-    
+        
     [self setNoInterruptOtherMusic];
     [self layoutUI];
     [self setUpUIConstraint];

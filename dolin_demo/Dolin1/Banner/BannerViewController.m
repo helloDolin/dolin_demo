@@ -21,9 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = RANDOM_UICOLOR;
     
-    DolinBannerView *dolinBannerView = [[DolinBannerView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200) WithInfoArr:self.netImageArray];
+    DolinBannerView *dolinBannerView = [[DolinBannerView alloc]initWithFrame:CGRectMake(0, NavigtationBarHeight, self.view.frame.size.width, 200) WithInfoArr:self.netImageArray];
     
     /** 获取网络图片的index*/
     dolinBannerView.delegate = self;

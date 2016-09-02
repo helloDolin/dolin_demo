@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Dolin2ViewController : UIViewController
+@interface Dolin2ViewController : DolinBaseViewController
 
 @end

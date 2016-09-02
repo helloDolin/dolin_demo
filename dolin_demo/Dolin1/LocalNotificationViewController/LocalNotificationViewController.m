@@ -19,8 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = RANDOM_UICOLOR;
     [self.view addSubview:self.btn];
 }
 
@@ -52,7 +50,7 @@
 - (UIButton*)btn {
     if (!_btn) {
         _btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _btn.frame = CGRectMake(0, 0,300,300);
+        _btn.frame = CGRectMake(0, NavigtationBarHeight, 300 ,300);
         _btn.center = CGPointMake(SCREEN_WIDTH / 2, SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR / 2);
         [_btn setImage:[UIImage imageNamed:@"btn_like"] forState:UIControlStateNormal];
         [_btn setTitle:@"test" forState:UIControlStateNormal];

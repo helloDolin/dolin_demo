@@ -22,7 +22,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = RANDOM_UICOLOR;
     [self.view addSubview:self.bgImgView];
     [self.view addSubview:self.animationImgView];
 }
@@ -37,8 +36,8 @@
     if (!_bgImgView) {
         _bgImgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"bgImg"]];
         _bgImgView.alpha = 0.8;
-        _bgImgView.frame = CGRectMake(0, 0, 60, 60);
-        _bgImgView.center = CGPointMake(SCREEN_WIDTH / 2,SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR / 2);
+        _bgImgView.frame = CGRectMake(0, NavigtationBarHeight, 60, 60);
+        _bgImgView.center = self.view.center;
     }
     return _bgImgView;
 }
@@ -46,8 +45,9 @@
 - (UIImageView*)animationImgView {
     if (!_animationImgView) {
         _animationImgView = [[UIImageView alloc]init];
-        _animationImgView.frame = CGRectMake(0, 0, 43, 43);
-        _animationImgView.center = CGPointMake(SCREEN_WIDTH / 2,SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR / 2);
+        _animationImgView.frame = CGRectMake(0, NavigtationBarHeight, 43, 43);
+        _animationImgView.center = self.view.center;
+
         
         NSMutableArray* arr = [NSMutableArray array];
         for (int i = 0; i < 20; i++) {

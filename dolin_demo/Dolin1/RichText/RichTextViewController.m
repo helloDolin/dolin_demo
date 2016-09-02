@@ -18,9 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = RANDOM_UICOLOR;
-    
+        
     UILabel *spacingLabel = [[UILabel alloc] initWithFrame:self.view.frame];
     spacingLabel.text = @"哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈饭卡上的话费卡还得上课发哈神的客服哈打开司法考试的理解啊登录即可法拉第减肥垃圾堆里放假啊来的快解放啦江东父老卡就到了放假啊登录开发及阿里的肌肤轮廓阿迪和法律上的价格啦可是大驾光临卡是大驾光临卡手机丢了卡世界的理解啊收到了看风景啊索朗多吉法律快速的减肥啦数据的法律框架阿萨德了看风景啊索朗多吉发生肯德基放辣椒地方";
     spacingLabel.numberOfLines = 0;

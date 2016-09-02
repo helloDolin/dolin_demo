@@ -34,7 +34,7 @@
              @"苹果密码框bug-PwdTextFieldBugViewController",
              @"AnimationImages-AnimationImagesViewController",
              @"点赞动画-AnimationLikeBtnViewController",
-             @"点击cell玩玩-SpreadOrShrinkSectionViewController",
+             @"section展开收缩-SpreadOrShrinkSectionViewController",
              @"仿keep引导页-SimulateKeepViewController",
              @"本地推送-LocalNotificationViewController",
              @"UIScrollView奇技淫巧-StrangeScorllViewController",

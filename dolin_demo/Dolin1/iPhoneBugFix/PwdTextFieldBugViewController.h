@@ -11,6 +11,6 @@
 /**
  *  密码框显示bug
  */
-@interface PwdTextFieldBugViewController : UIViewController
+@interface PwdTextFieldBugViewController : DolinBaseViewController
 
 @end

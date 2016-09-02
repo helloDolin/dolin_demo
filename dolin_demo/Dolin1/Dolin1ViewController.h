@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface Dolin1ViewController : UIViewController
+/**
+ *  父类作用：
+    1. frame 起始点都从屏幕左上点开始
+    2.
+ */
+@interface Dolin1ViewController : DolinBaseViewController
 
 @end

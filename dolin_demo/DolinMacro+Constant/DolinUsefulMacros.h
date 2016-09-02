@@ -22,7 +22,7 @@
 #define SCREEN_WIDTH       [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR (SCREEN_HEIGHT - 64.0 - 49.0)
 
-#define FULL_SCREEN_FRAME CGRectMake(0, 0,SCREEN_WIDTH,SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR)
+#define FULL_SCREEN_FRAME CGRectMake(0, 64,SCREEN_WIDTH,SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR)
 
 #pragma mark - View 坐标(x,y)和宽高(width,height)
 #define X(v)                    (v).frame.origin.x
@@ -43,7 +43,8 @@
 #pragma mark - 系统控件默认高度
 #define StatusBarHeight        (20.f)
 #define TopBarHeight           (44.f)
-#define BottomBarHeight        (49.f)
+#define NavigtationBarHeight   (StatusBarHeight + TopBarHeight)
+#define TabBarHeight        (49.f)
 #define CellDefaultHeight      (44.f)
 #define EnglishKeyboardHeight  (216.f)
 #define ChineseKeyboardHeight  (252.f)

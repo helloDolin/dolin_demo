@@ -11,6 +11,6 @@
 /**
  *  富文本demo
  */
-@interface RichTextViewController : UIViewController
+@interface RichTextViewController : DolinBaseViewController
 
 @end
