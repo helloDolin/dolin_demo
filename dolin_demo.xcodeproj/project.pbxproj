@@ -56,6 +56,8 @@
 		3A3C695A1D7566BB00D2562C /* Dolin3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C69591D7566BB00D2562C /* Dolin3ViewController.m */; };
 		3A4779F81D6BE56000AA9A70 /* MMPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4779F71D6BE56000AA9A70 /* MMPlaceHolder.m */; };
 		3A4779FB1D6BEEF200AA9A70 /* UIView+LJC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4779FA1D6BEEF200AA9A70 /* UIView+LJC.m */; };
+		3A60AC091D791CF800F81CE8 /* DolinBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A60AC081D791CF800F81CE8 /* DolinBaseViewController.m */; };
+		3A60AC0C1D791DF200F81CE8 /* UIColor+ColorUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A60AC0B1D791DF200F81CE8 /* UIColor+ColorUtility.m */; };
 		3ABB7CEA1D6EDED200528B49 /* TitleContainerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB7CE91D6EDED200528B49 /* TitleContainerScrollView.m */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
@@ -156,6 +158,10 @@
 		3A4779F71D6BE56000AA9A70 /* MMPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPlaceHolder.m; sourceTree = "<group>"; };
 		3A4779F91D6BEEF200AA9A70 /* UIView+LJC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJC.h"; sourceTree = "<group>"; };
 		3A4779FA1D6BEEF200AA9A70 /* UIView+LJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJC.m"; sourceTree = "<group>"; };
+		3A60AC071D791CF800F81CE8 /* DolinBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinBaseViewController.h; sourceTree = "<group>"; };
+		3A60AC081D791CF800F81CE8 /* DolinBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinBaseViewController.m; sourceTree = "<group>"; };
+		3A60AC0A1D791DF200F81CE8 /* UIColor+ColorUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorUtility.h"; sourceTree = "<group>"; };
+		3A60AC0B1D791DF200F81CE8 /* UIColor+ColorUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorUtility.m"; sourceTree = "<group>"; };
 		3ABB7CE81D6EDED200528B49 /* TitleContainerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleContainerScrollView.h; sourceTree = "<group>"; };
 		3ABB7CE91D6EDED200528B49 /* TitleContainerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleContainerScrollView.m; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -238,19 +244,12 @@
 			path = Dolin4;
 			sourceTree = "<group>";
 		};
-		163A579A1D335976003B9609 /* DolinBase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DolinBase;
-			sourceTree = "<group>";
-		};
 		163A57A51D335F7F003B9609 /* DolinUtility */ = {
 			isa = PBXGroup;
 			children = (
+				163A57A61D335F9E003B9609 /* category */,
 				3A4779F61D6BE56000AA9A70 /* MMPlaceHolder.h */,
 				3A4779F71D6BE56000AA9A70 /* MMPlaceHolder.m */,
-				163A57A61D335F9E003B9609 /* category */,
 				163A57BB1D3361D2003B9609 /* DolinTopWindowUtil.h */,
 				163A57BC1D3361D2003B9609 /* DolinTopWindowUtil.m */,
 			);
@@ -260,6 +259,8 @@
 		163A57A61D335F9E003B9609 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				3A60AC0A1D791DF200F81CE8 /* UIColor+ColorUtility.h */,
+				3A60AC0B1D791DF200F81CE8 /* UIColor+ColorUtility.m */,
 				3A4779F91D6BEEF200AA9A70 /* UIView+LJC.h */,
 				3A4779FA1D6BEEF200AA9A70 /* UIView+LJC.m */,
 				163A57C71D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.h */,
@@ -317,12 +318,12 @@
 		16C8D63C1D33511700228ABD /* dolin_demo */ = {
 			isa = PBXGroup;
 			children = (
+				3A60AC061D791CF000F81CE8 /* Base */,
 				16C8D6491D33511700228ABD /* Assets.xcassets */,
 				1674F7A51D38B8A800180D37 /* resource */,
 				16F226A81D373E8000191F92 /* launch */,
 				163A57B51D3360C1003B9609 /* DolinMacro+Constant */,
 				163A57A51D335F7F003B9609 /* DolinUtility */,
-				163A579A1D335976003B9609 /* DolinBase */,
 				163A57931D335921003B9609 /* Dolin1 */,
 				163A57941D335921003B9609 /* Dolin2 */,
 				163A57951D335921003B9609 /* Dolin3 */,
@@ -488,6 +489,15 @@
 			path = SimulateTwitter;
 			sourceTree = "<group>";
 		};
+		3A60AC061D791CF000F81CE8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3A60AC071D791CF800F81CE8 /* DolinBaseViewController.h */,
+				3A60AC081D791CF800F81CE8 /* DolinBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		96B6CFAEDF4D3AF27BC73BDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,6 +654,7 @@
 				3A2933F61D75783000C44279 /* PwdTextFieldBugViewController.m in Sources */,
 				3A2934001D75783000C44279 /* SimulateTwitterViewController.m in Sources */,
 				163A579D1D33597E003B9609 /* Dolin2ViewController.m in Sources */,
+				3A60AC0C1D791DF200F81CE8 /* UIColor+ColorUtility.m in Sources */,
 				3A2933FD1D75783000C44279 /* StrangeTableViewCell.m in Sources */,
 				163A57A31D335990003B9609 /* Dolin4ViewController.m in Sources */,
 				3A2933F51D75783000C44279 /* LeftAlignedFlowLayout.m in Sources */,
@@ -657,6 +668,7 @@
 				3A2933FC1D75783000C44279 /* StrangeScorllViewController.m in Sources */,
 				3A2933F71D75783000C44279 /* LocalNotificationViewController.m in Sources */,
 				3A2933ED1D75783000C44279 /* DolinBannerView.m in Sources */,
+				3A60AC091D791CF800F81CE8 /* DolinBaseViewController.m in Sources */,
 				3A3B6C181D740E4700A2A114 /* ExpandClickAreaButton.m in Sources */,
 				3A2933FB1D75783000C44279 /* SimulateKeepViewController.m in Sources */,
 				3A2933E91D75783000C44279 /* AnimationLikeBtnViewController.m in Sources */,

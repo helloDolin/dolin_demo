@@ -11,6 +11,6 @@
 /**
  *  本地推送demo
  */
-@interface LocalNotificationViewController : UIViewController
+@interface LocalNotificationViewController : DolinBaseViewController
 
 @end

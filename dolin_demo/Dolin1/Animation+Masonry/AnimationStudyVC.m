@@ -29,7 +29,7 @@
 }
 
 - (void)animationStudy {
-    _testView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+    _testView = [[UIView alloc]initWithFrame:CGRectMake(0, 64, 50, 50)];
     _testView.backgroundColor = RANDOM_UICOLOR;
     
     [self.view addSubview:_testView];
@@ -96,7 +96,8 @@
     sv.backgroundColor = [UIColor blackColor];
     [self.view addSubview:sv];
     [sv mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.view);
+        make.top.mas_equalTo(self.view).offset(64);
+        make.centerX.equalTo(self.view.mas_centerX);
         make.size.mas_equalTo(CGSizeMake(300, 300));
     }];
     

@@ -26,7 +26,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = RANDOM_UICOLOR;
     
     NSMutableArray* imgArr = [NSMutableArray array];
     ImageModel * img = nil;
@@ -87,7 +86,7 @@
         layout.sectionInset=UIEdgeInsetsMake(0, 0, 0, 0);
         [layout configLeftAlignedFlowLayoutWithLeftMargin:0 ItemMargin:0];
         
-        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH,SCREEN_HEIGHT - 64) collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, NavigtationBarHeight,SCREEN_WIDTH,SCREEN_HEIGHT - NavigtationBarHeight) collectionViewLayout:layout];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
         _collectionView.backgroundColor = [UIColor whiteColor];

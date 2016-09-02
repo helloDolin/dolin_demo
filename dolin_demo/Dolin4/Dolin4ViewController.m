@@ -72,11 +72,10 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    cell.backgroundColor = RANDOM_UICOLOR;
     // 每次先清空
     [cell.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     BannerViewController* vc = _vcs[indexPath.row];
-    vc.view.frame = CGRectMake(0 , 0, SCREEN_WIDTH, cell.frame.size.height);
+    vc.view.frame = CGRectMake(0 , -64, SCREEN_WIDTH, cell.frame.size.height + 64);
     [cell addSubview:vc.view];
     return cell;
 }
@@ -85,7 +84,7 @@
 #pragma mark - getter
 - (TitleContainerScrollView*)titleContainerScrollView {
     if (!_titleContainerScrollView) {
-        _titleContainerScrollView = [[TitleContainerScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, kTitleContainerScrollViewHeight)];
+        _titleContainerScrollView = [[TitleContainerScrollView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, kTitleContainerScrollViewHeight)];
         _titleContainerScrollView.backgroundColor = [UIColor orangeColor];
         [_titleContainerScrollView onceParameterConfig:^(CGFloat *fontSizeNormal, CGFloat *fontSizeSelected, CGFloat *underLineHeight ,UIColor** underLineColor) {
             *fontSizeNormal = 6.0;
@@ -115,7 +114,7 @@
         layout.minimumInteritemSpacing = 0;
         layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
 
-        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, kTitleContainerScrollViewHeight, SCREEN_WIDTH, SCREEN_HEIGHT - 64 - kTitleContainerScrollViewHeight - 49) collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, kTitleContainerScrollViewHeight + 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64 - kTitleContainerScrollViewHeight - 49) collectionViewLayout:layout];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
         _collectionView.backgroundColor = [UIColor whiteColor];

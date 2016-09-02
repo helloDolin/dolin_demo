@@ -11,6 +11,6 @@
 /**
  *   点赞动画
  */
-@interface AnimationLikeBtnViewController : UIViewController
+@interface AnimationLikeBtnViewController : DolinBaseViewController
 
 @end

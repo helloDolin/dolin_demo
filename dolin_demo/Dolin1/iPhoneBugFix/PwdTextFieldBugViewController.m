@@ -21,9 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = RANDOM_UICOLOR;
-    
+        
     [self.view addSubview:self.btn];
     [self.view addSubview:self.textField];
 }
@@ -44,7 +42,7 @@
 - (UIButton*)btn {
     if (!_btn) {
         _btn = [UIButton buttonWithType:UIButtonTypeSystem];
-        _btn.frame = CGRectMake(0, 0,SCREEN_WIDTH , 50);
+        _btn.frame = CGRectMake(0, 64,SCREEN_WIDTH , 50);
         _btn.backgroundColor = [UIColor orangeColor];
         [_btn setTitle:@"test" forState:UIControlStateNormal];
         _btn.tintColor = [UIColor whiteColor];
@@ -55,7 +53,7 @@
 
 - (UITextField*)textField {
     if (!_textField) {
-        _textField = [[UITextField alloc] initWithFrame:CGRectMake(120.0f, 80.0f, 150.0f, 30.0f)];
+        _textField = [[UITextField alloc] initWithFrame:CGRectMake(120.0f, 80.0f + 64, 150.0f, 30.0f)];
         [_textField setBorderStyle:UITextBorderStyleRoundedRect]; //外框类型
         
         _textField.placeholder = @"password"; //默认显示的字

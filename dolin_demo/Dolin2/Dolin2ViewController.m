@@ -35,14 +35,13 @@ static  NSString* cellReuseIdentifier = @"cellReuseIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = RANDOM_UICOLOR;
     
 
     ExpandClickAreaButton* btn = [ExpandClickAreaButton buttonWithType:UIButtonTypeSystem];
     CGFloat btnWidth = 50;
     CGFloat btnHeight = 50;
     btn.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.3];
-    btn.frame = CGRectMake((SCREEN_WIDTH - btnWidth) / 2, 20, btnWidth, btnHeight);
+    btn.frame = CGRectMake((SCREEN_WIDTH - btnWidth) / 2, 64 + 20, btnWidth, btnHeight);
     [btn setImage:[UIImage imageNamed:@"btn_like"] forState:UIControlStateNormal];
     btn.tintColor = [UIColor whiteColor];
     [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
