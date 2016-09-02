@@ -24,7 +24,7 @@
 //歌曲音量
 @property(nonatomic,strong)UISlider *theVolumeSlider;
 //背景View
-@property (strong,nonatomic) IBOutlet UIView *backgroundView;
+@property (strong,nonatomic) UIView *backgroundView;
 //背景图片(封面)
 @property(nonatomic,strong)UIImageView *backgroundImage;
 //存放时间数组
@@ -163,6 +163,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
+    self.backgroundView = [[UIView alloc]initWithFrame:self.view.frame];
+    [self.view addSubview:self.backgroundView];
+    
     UIView *musicNameAndSinger = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kHeight *0.394f, 40)];
     //musicNameAndSinger.backgroundColor =[UIColor redColor];
     

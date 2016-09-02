@@ -147,8 +147,11 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     PlayMusicViewController *playVc = [PlayMusicViewController sharedManager];
     playVc.index = indexPath.row;
-    self.hidesBottomBarWhenPushed=YES;
+    self.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:playVc animated:YES];
+    self.hidesBottomBarWhenPushed = NO;
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 #pragma mark - UIScrollViewDelegate
