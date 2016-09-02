@@ -43,7 +43,7 @@
     // 让音乐可以在后台播放
     NSError* error;
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
-    
+
     return YES;
 }
 

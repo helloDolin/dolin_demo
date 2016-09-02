@@ -9,6 +9,14 @@
 #ifndef DolinUsefulMacros_h
 #define DolinUsefulMacros_h
 
+#pragma mark - 音乐方面
+
+#define kWidth   self.view.frame.size.width
+#define kHeight  self.view.frame.size.height
+
+#define kUrl @"http://music.163.com/api/playlist/detail?id=107875443"  //我喜欢的音乐
+#define kLyricUrl @"http://music.163.com/api/song/media?id=" // 歌词
+
 #pragma mark - App Frame
 // App Frame
 #define Application_Frame       [[UIScreen mainScreen] applicationFrame]
@@ -20,8 +28,8 @@
 // MainScreen Height&Width
 #define SCREEN_HEIGHT      [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH       [[UIScreen mainScreen] bounds].size.width
-#define SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR (SCREEN_HEIGHT - 64.0 - 49.0)
 
+#define SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR (SCREEN_HEIGHT - 64.0 - 49.0)
 #define FULL_SCREEN_FRAME CGRectMake(0, 64,SCREEN_WIDTH,SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR)
 
 #pragma mark - View 坐标(x,y)和宽高(width,height)

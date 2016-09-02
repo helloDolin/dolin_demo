@@ -10,4 +10,6 @@
 
 @interface Dolin2ViewController : DolinBaseViewController
 
++ (instancetype)sharedDolin2ViewController;
+
 @end

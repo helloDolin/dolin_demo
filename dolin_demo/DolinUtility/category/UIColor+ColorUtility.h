@@ -12,6 +12,4 @@
 
 + (UIColor *)convertHexToRGB:(NSString *)hexString;
 
-+ (UIColor *)randomColor;
-
 @end
