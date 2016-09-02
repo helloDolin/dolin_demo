@@ -7,101 +7,202 @@
 //
 
 #import "Dolin2ViewController.h"
-#import "Dolin2CollectionViewCell.h"
 #import "ExpandClickAreaButton.h"
+#import "RequestManager.h"
+#import "MusicListCell.h"
+#import "PlayMusicViewController.h"
+#import "UINavigationBar+Awesome.h"
 
-static  NSString* cellReuseIdentifier = @"cellReuseIdentifier";
+// TODO：
+// 1.table header 完善
+// 2.section header 完善
 
-@interface Dolin2ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
-{
-    NSArray* _arrDataSource;
-}
 
-@property (nonatomic,strong)UICollectionView* collectionView;
+@interface Dolin2ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
+@property (nonatomic, strong ) UITableView        *tableView;
+
+@property (nonatomic,strong  ) NSString           *playListUrl;
+
+@property (nonatomic,strong  ) UIImageView        *tableViewBackgroundImage;// 背景照片
+
+@property (nonatomic,strong  ) UIImageView        *theCoverImage;// 封面照片
+
+@property (nonatomic,strong  ) UILabel            *theCoverTitle;// 封面标题
+
+@property (nonatomic,strong  ) NSString           *musicListCount;// 歌曲总数
+
+@property (nonatomic , strong) UIBlurEffect       *blureffect;// 毛玻璃
+
+@property (nonatomic , strong) UIVisualEffectView *visualeffectview;// 毛玻璃
+
+@property (nonatomic,strong  ) CATransition       *transition;// 延时动画
 
 @end
 
 // 可以定义多个匿名类别，扩展
 @interface Dolin2ViewController ()
 
-@property (nonatomic,strong)NSMutableArray* testArray;
-
 @end
 
 @implementation Dolin2ViewController
 
+#pragma mark - init
++ (instancetype)sharedDolin2ViewController {
+    static Dolin2ViewController *handle =nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        handle = [[Dolin2ViewController alloc]init];
+    });
+    return handle;
+}
 
+#pragma mark - life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
-
-    ExpandClickAreaButton* btn = [ExpandClickAreaButton buttonWithType:UIButtonTypeSystem];
-    CGFloat btnWidth = 50;
-    CGFloat btnHeight = 50;
-    btn.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.3];
-    btn.frame = CGRectMake((SCREEN_WIDTH - btnWidth) / 2, 64 + 20, btnWidth, btnHeight);
-    [btn setImage:[UIImage imageNamed:@"btn_like"] forState:UIControlStateNormal];
-    btn.tintColor = [UIColor whiteColor];
-    [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:btn.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
-    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
-    maskLayer.frame = btn.bounds;
-    maskLayer.path = maskPath.CGPath;
-    btn.layer.mask = maskLayer;
-    
-    
-    [self.view addSubview:btn];
-    
-//    _arrDataSource = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10"];
-//    [self.view addSubview:self.collectionView];
+    [self layoutUI];
+    self.playListUrl = kUrl;
+    [self updateAction];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController.navigationBar lt_reset];
+    self.navigationController.navigationBar.shadowImage = nil;
+}
+
+#pragma mark - event
 - (void)btnAction {
-    NSLog(@"btnAction");
+    LogBlue(@"btnAction");
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-#pragma mark -  UICollectionViewDataSource
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section; {
-    return _arrDataSource.count;
+#pragma mark - public method 
+
+- (void)layoutUI {
+    //毛玻璃
+    self.blureffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+    //添加毛玻璃view视图
+    self.visualeffectview = [[UIVisualEffectView alloc]initWithEffect:self.blureffect];
+    //设置毛玻璃的view视图的大小
+    self.visualeffectview.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT *0.383f);
+    
+    //背景照片
+    self.tableViewBackgroundImage =[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT *0.383f)];
+    [self.tableViewBackgroundImage setContentScaleFactor:[[UIScreen mainScreen] scale]];
+    self.tableViewBackgroundImage.contentMode = UIViewContentModeScaleAspectFill;
+    self.tableViewBackgroundImage.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    self.tableViewBackgroundImage.clipsToBounds = YES;
+    self.tableViewBackgroundImage.backgroundColor =[UIColor clearColor];
+    
+    self.transition = [CATransition animation];
+    self.transition.duration = 2.0f;
+    self.transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    self.transition.type = kCATransitionFade;
+    
+    
+    [self.view insertSubview:self.tableViewBackgroundImage atIndex:0];
+    [self.view insertSubview:self.visualeffectview atIndex:1];
+    [self.view addSubview:self.tableView];
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    Dolin2CollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellReuseIdentifier forIndexPath:indexPath];
-    NSString* str = _arrDataSource[indexPath.row];
-    cell.imgView.image = [UIImage imageNamed:str];
-    cell.titleLbl.text = str;
+-(void)updateAction {
+    [[RequestManager sharedManager]fetchDataWithUrl:self.playListUrl updateUI:^{
+        Music *music =[[RequestManager sharedManager]returnMusicAtIndex:0];
+        self.theCoverTitle.text = music.listName;
+        [self.tableViewBackgroundImage sd_setImageWithURL:[NSURL URLWithString:music.listTheCoverUrl]];
+        //动画
+        [self.tableViewBackgroundImage.layer addAnimation:self.transition forKey:nil];
+        [self.theCoverImage sd_setImageWithURL:[NSURL URLWithString:music.listTheCoverUrl]];
+        //动画
+        [self.theCoverImage.layer addAnimation:self.transition forKey:nil];
+        self.musicListCount = music.musicListCount;
+        [self.tableView reloadData];
+    }];
+}
+
+#pragma mark - UITableViewDelegate,UITableViewDataSource
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[RequestManager sharedManager]returnArrayCount];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    MusicListCell  *cell =[tableView dequeueReusableCellWithIdentifier:@"MusicListCell"];
+    Music *music = [[RequestManager sharedManager]returnMusicAtIndex:indexPath.row];
+    [cell setCellWithMusic:music];
+    cell.number.text =  [NSString stringWithFormat:@"%ld",indexPath.row+1];
     return cell;
 }
 
-
-#pragma mark -  getter
-- (UICollectionView*)collectionView {
-    if (!_collectionView) {
-        UICollectionViewFlowLayout* layout = [[UICollectionViewFlowLayout alloc]init];
-        CGFloat itemW = (SCREEN_WIDTH - 20 * 3) / 2;
-        CGFloat itemH = itemW;
-        
-        layout.itemSize = CGSizeMake(itemW,itemH);
-        layout.minimumLineSpacing = 20;
-        layout.minimumInteritemSpacing = 0;
-        layout.sectionInset = UIEdgeInsetsMake(20, 20, 0, 20);
-        
-        _collectionView = [[UICollectionView alloc]initWithFrame:FULL_SCREEN_FRAME collectionViewLayout:layout];
-        _collectionView.dataSource = self;
-        _collectionView.delegate = self;
-        _collectionView.backgroundColor = [UIColor whiteColor];
-        [_collectionView registerNib:[UINib nibWithNibName:@"Dolin2CollectionViewCell" bundle:nil] forCellWithReuseIdentifier:cellReuseIdentifier];
-    }
-    return _collectionView;
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return kHeight*0.0724f;  // 这种适配方式也不错嘛 😆
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    PlayMusicViewController *playVc = [PlayMusicViewController sharedManager];
+    playVc.index = indexPath.row;
+    self.hidesBottomBarWhenPushed=YES;
+    [self.navigationController pushViewController:playVc animated:YES];
+}
 
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat offSetY = scrollView.contentOffset.y;
+    if (offSetY < 0) {
+        self.tableViewBackgroundImage.frame  = CGRectMake(offSetY/2, 0, kWidth +(-offSetY), (kHeight*0.383f)+(-offSetY));
+        self.visualeffectview.frame  =CGRectMake(offSetY/2, 0, kWidth +(-offSetY), (kHeight*0.383f)+(-offSetY));
+    }
+}
+
+#pragma mark - getter
+- (UITableView*)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc]initWithFrame:FULL_SCREEN_FRAME style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        [_tableView registerNib:[UINib nibWithNibName:@"MusicListCell" bundle:nil] forCellReuseIdentifier:@"MusicListCell"];
+        
+        UIView *headerView =[[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT *0.2975f)];
+        headerView.backgroundColor = [UIColor clearColor];
+        _tableView.backgroundColor = [UIColor clearColor];
+        _tableView.tableHeaderView = headerView;
+        
+        // 封面
+        self.theCoverImage =[[UIImageView alloc]initWithFrame:CGRectMake(kHeight *0.0199f, kHeight*0.0176f, kHeight *0.19f, kHeight *0.19f)];
+        [headerView addSubview:self.theCoverImage];
+        
+        // 封面标题
+        self.theCoverTitle =[[UILabel alloc]initWithFrame:CGRectMake(kHeight *0.2296f, kHeight *0.039f, kHeight *0.2948f, kHeight *0.0634f)];
+        self.theCoverTitle.numberOfLines = 0;
+        self.theCoverTitle.font =[UIFont systemFontOfSize:18];
+        self.theCoverTitle.textColor =[UIColor whiteColor];
+        [headerView addSubview:self.theCoverTitle];
+        
+        ExpandClickAreaButton* btn = [ExpandClickAreaButton buttonWithType:UIButtonTypeSystem];
+//        CGFloat btnWidth = 50;
+//        CGFloat btnHeight = 50;
+        btn.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.3];
+        btn.frame = CGRectMake(0 , kHeight *0.183f, SCREEN_WIDTH, kHeight *0.12f);
+        [btn setImage:[[UIImage imageNamed:@"btn_like"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
+        
+        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:btn.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
+        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+        maskLayer.frame = btn.bounds;
+        maskLayer.path = maskPath.CGPath;
+        btn.layer.mask = maskLayer;
+        
+        [headerView addSubview:btn];
+
+
+    }
+    return _tableView;
+}
 
 @end
