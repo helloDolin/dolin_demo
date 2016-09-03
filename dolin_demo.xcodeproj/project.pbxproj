@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160C4CC41D7B47860032F6B7 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160C4CC31D7B47860032F6B7 /* CameraViewController.m */; };
 		163A57921D335790003B9609 /* DolinTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57911D335790003B9609 /* DolinTabBarController.m */; };
 		163A57991D33593B003B9609 /* Dolin1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A57981D33593B003B9609 /* Dolin1ViewController.m */; };
 		163A579D1D33597E003B9609 /* Dolin2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 163A579C1D33597E003B9609 /* Dolin2ViewController.m */; };
@@ -118,6 +119,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160C4CC21D7B47860032F6B7 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		160C4CC31D7B47860032F6B7 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		163A578A1D33558E003B9609 /* DolinPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DolinPrefix.pch; sourceTree = "<group>"; };
 		163A57901D335790003B9609 /* DolinTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinTabBarController.h; sourceTree = "<group>"; };
 		163A57911D335790003B9609 /* DolinTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinTabBarController.m; sourceTree = "<group>"; };
@@ -341,6 +344,8 @@
 			children = (
 				3A3C69581D7566BB00D2562C /* Dolin3ViewController.h */,
 				3A3C69591D7566BB00D2562C /* Dolin3ViewController.m */,
+				160C4CC21D7B47860032F6B7 /* CameraViewController.h */,
+				160C4CC31D7B47860032F6B7 /* CameraViewController.m */,
 			);
 			path = Dolin3;
 			sourceTree = "<group>";
@@ -965,6 +970,7 @@
 				3ABB7CEA1D6EDED200528B49 /* TitleContainerScrollView.m in Sources */,
 				3A2933EF1D75783000C44279 /* DolinLabelViewController.m in Sources */,
 				3A2933EE1D75783000C44279 /* DolinLabel.m in Sources */,
+				160C4CC41D7B47860032F6B7 /* CameraViewController.m in Sources */,
 				3A2933F81D75783000C44279 /* RichTextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1076,15 +1082,15 @@
 			baseConfigurationReference = 5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: 366688603@qq.com (5885PD2ET9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 366688603@qq.com (5885PD2ET9)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "${SRCROOT}/dolin_demo/DolinPrefix.pch";
 				INFOPLIST_FILE = dolin_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shaolin.dolin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fd958ced-7bed-47b8-91c7-4dccee6709ec";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1094,15 +1100,15 @@
 			baseConfigurationReference = C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: 366688603@qq.com (5885PD2ET9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 366688603@qq.com (5885PD2ET9)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "${SRCROOT}/dolin_demo/DolinPrefix.pch";
 				INFOPLIST_FILE = dolin_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shaolin.dolin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fd958ced-7bed-47b8-91c7-4dccee6709ec";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
