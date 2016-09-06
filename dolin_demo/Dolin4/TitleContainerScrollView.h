@@ -30,12 +30,12 @@ typedef void (^ButtonClickBlock)(NSInteger currentPage);
 /**
  *  初始化方法
  *
- *  @param frame              <#frame description#>
- *  @param titleNormalColor   <#titleNormalColor description#>
- *  @param titleSelectedColor <#titleSelectedColor description#>
- *  @param underLineViewColor <#underLineViewColor description#>
+ *  @param frame              
+ *  @param titleNormalColor
+ *  @param titleSelectedColor
+ *  @param underLineViewColor
  *
- *  @return <#return value description#>
+ *  @return
  */
 - (TitleContainerScrollView*)initWithFrame:(CGRect)frame
                       withTitleNormalColor:(UIColor*)titleNormalColor
@@ -52,10 +52,10 @@ typedef void (^ButtonClickBlock)(NSInteger currentPage);
 /**
  *  改变相邻两个btn及下划线的状态
  *
- *  @param scaleScale <#scaleScale description#>
- *  @param rightScale <#rightScale description#>
- *  @param leftIndex  <#leftIndex description#>
- *  @param rightIndex <#rightIndex description#>
+ *  @param scaleScale
+ *  @param rightScale
+ *  @param leftIndex
+ *  @param rightIndex
  */
 - (void)changeStatusByLeftScale:(CGFloat)leftScale rightScale:(CGFloat)rightScale leftIndex:(NSInteger)leftIndex rightIndex:(NSInteger)rightIndex;
 
