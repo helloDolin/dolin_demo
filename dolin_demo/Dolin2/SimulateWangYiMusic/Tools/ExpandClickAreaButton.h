@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  增大点击范围的button
+ */
 @interface ExpandClickAreaButton : UIButton
 
 @end
