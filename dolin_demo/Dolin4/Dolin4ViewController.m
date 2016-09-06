@@ -43,11 +43,38 @@
 }
 
 #pragma mark - TitleContainerScrollViewDelegate
-- (UIColor*)colorOfUnderLineInTitleContainerScrollView:(TitleContainerScrollView*)titleContainerScrollView {
-    return [UIColor redColor];
-}
+//- (UIColor*)colorOfUnderLineInTitleContainerScrollView:(TitleContainerScrollView*)titleContainerScrollView {
+//    return [UIColor redColor];
+//}
 
 #pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat value = scrollView.contentOffset.x / scrollView.frame.size.width;
+    
+    // 防止在最左侧的时候，再滑，下划线位置会偏移，颜色渐变会混乱。
+    if (value < 0) {
+        return;
+    }
+    
+    
+    NSUInteger leftIndex = (int)value;
+    NSUInteger rightIndex = leftIndex + 1;
+    
+    // 防止滑到最右，再滑，数组越界，从而崩溃
+    if (rightIndex >= [self.titleContainerScrollView titles].count) {
+        rightIndex = [self.titleContainerScrollView titles].count - 1;
+    }
+    
+    CGFloat scaleRight = value - leftIndex;
+    CGFloat scaleLeft  = 1 - scaleRight;
+    
+    // 会调用此方法1次，会导致【scrollViewDidEndScrollingAnimation】方法中的动画失效，这时直接return。
+    if (scaleLeft == 1 && scaleRight == 0) {
+        return;
+    }
+    [self.titleContainerScrollView changeStatusByLeftScale:scaleLeft rightScale:scaleRight leftIndex:leftIndex rightIndex:rightIndex];
+}
+
 // 滚动减速时
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     [self scrollViewDidEndScrollingAnimation:scrollView];
@@ -87,10 +114,10 @@
         _titleContainerScrollView = [[TitleContainerScrollView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, kTitleContainerScrollViewHeight)];
         _titleContainerScrollView.backgroundColor = [UIColor orangeColor];
         [_titleContainerScrollView onceParameterConfig:^(CGFloat *fontSizeNormal, CGFloat *fontSizeSelected, CGFloat *underLineHeight ,UIColor** underLineColor) {
-            *fontSizeNormal = 6.0;
-            *fontSizeSelected = 12.0;
-            *underLineHeight = 10;
-            *underLineColor = [UIColor greenColor];
+            *fontSizeNormal = 14.0;
+            *fontSizeSelected = 16.0;
+            *underLineHeight = 2;
+            *underLineColor = [UIColor whiteColor];
         }];
         
         _titleContainerScrollView.titleContainerScrollViewDelegate = self;

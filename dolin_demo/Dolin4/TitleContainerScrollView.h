@@ -27,6 +27,16 @@ typedef void (^ButtonClickBlock)(NSInteger currentPage);
 @property (nonatomic, copy  ) ButtonClickBlock buttonClickBlock;
 @property (nonatomic, weak) id<TitleContainerScrollViewDelegate> titleContainerScrollViewDelegate;
 
+/**
+ *  初始化方法
+ *
+ *  @param frame              <#frame description#>
+ *  @param titleNormalColor   <#titleNormalColor description#>
+ *  @param titleSelectedColor <#titleSelectedColor description#>
+ *  @param underLineViewColor <#underLineViewColor description#>
+ *
+ *  @return <#return value description#>
+ */
 - (TitleContainerScrollView*)initWithFrame:(CGRect)frame
                       withTitleNormalColor:(UIColor*)titleNormalColor
                     withTitleSelectedColor:(UIColor*)titleSelectedColor
@@ -38,5 +48,15 @@ typedef void (^ButtonClickBlock)(NSInteger currentPage);
  *  @param paramConfigBlock
  */
 - (void)onceParameterConfig:(void(^)(CGFloat* fontSizeNormal,CGFloat* fontSizeSelected, CGFloat* underLineHeight, UIColor** underLineColor))paramConfigBlock;
+
+/**
+ *  改变相邻两个btn及下划线的状态
+ *
+ *  @param scaleScale <#scaleScale description#>
+ *  @param rightScale <#rightScale description#>
+ *  @param leftIndex  <#leftIndex description#>
+ *  @param rightIndex <#rightIndex description#>
+ */
+- (void)changeStatusByLeftScale:(CGFloat)leftScale rightScale:(CGFloat)rightScale leftIndex:(NSInteger)leftIndex rightIndex:(NSInteger)rightIndex;
 
 @end
