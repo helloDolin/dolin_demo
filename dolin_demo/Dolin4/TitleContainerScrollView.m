@@ -8,6 +8,7 @@
 
 #import "TitleContainerScrollView.h"
 #import  <pop/POP.h>    //Facebook 动画包
+#import "UIView+Extension.h"
 
 // 默认颜色
 #define kTitleColor_normal   [UIColor blackColor]
@@ -179,7 +180,6 @@ static CGFloat kUnderLineViewHeight = 2.0;
     CGRect frame = button.frame;
     [self scrollRectToVisible:frame animated:YES];
     
-
     [self setUpUnderLineViewPositionByBtn:button withAnimation:YES];
 }
 
@@ -189,9 +189,10 @@ static CGFloat kUnderLineViewHeight = 2.0;
  */
 - (void)setUpUnderLineViewPositionByBtn:(UIButton*)btn withAnimation:(BOOL)isAnimation{
     if (isAnimation) {
-        [UIView animateWithDuration:0.25f animations:^{
-            [self setUpUnderLineViewPositionByBtn:btn];
-        }];
+//        在scrollViewDidScroll代理中做处理，这边就不需要动画了
+//        [UIView animateWithDuration:0.25f animations:^{
+//            [self setUpUnderLineViewPositionByBtn:btn];
+//        }];
     }
     else {
         [self setUpUnderLineViewPositionByBtn:btn];
@@ -199,8 +200,21 @@ static CGFloat kUnderLineViewHeight = 2.0;
 }
 
 - (void)setUpUnderLineViewPositionByBtn:(UIButton*)btn {
-    self.underLineView.frame = CGRectMake(0, kTitleContainerScrollViewHeight - _underLineHeight, btn.frame.size.width,_underLineHeight);
-    self.underLineView.center = CGPointMake(btn.center.x, kTitleContainerScrollViewHeight - _underLineHeight / 2 );
+//    self.underLineView.frame = CGRectMake(0, kTitleContainerScrollViewHeight - _underLineHeight, btn.frame.size.width,_underLineHeight);
+//    self.underLineView.center = CGPointMake(btn.center.x, kTitleContainerScrollViewHeight - _underLineHeight / 2 );
+}
+
+- (void)changeStatusByLeftScale:(CGFloat)leftScale rightScale:(CGFloat)rightScale leftIndex:(NSInteger)leftIndex rightIndex:(NSInteger)rightIndex {
+    UIButton* btnLeft = self.buttonsArr[leftIndex];
+    UIButton* btnRight = self.buttonsArr[rightIndex];
+    
+    // 这边的颜色为选中后的颜色，这边需要手动改，暂时没有想到好的方法
+    UIColor* leftColor = [UIColor colorWithRed:leftScale green:leftScale blue:leftScale alpha:1];
+    UIColor* rightColor = [UIColor colorWithRed:rightScale green:rightScale blue:rightScale alpha:1];
+    [btnLeft setTitleColor:leftColor forState:UIControlStateNormal];
+    [btnRight setTitleColor:rightColor forState:UIControlStateNormal];
+    self.underLineView.centerX = btnLeft.centerX + (btnRight.centerX - btnLeft.centerX) * rightScale;
+    self.underLineView.width   = btnLeft.width + (btnRight.width - btnLeft.width) * rightScale;
 }
 
 #pragma mark - getter
