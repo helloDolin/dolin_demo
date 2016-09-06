@@ -200,8 +200,8 @@ static CGFloat kUnderLineViewHeight = 2.0;
 }
 
 - (void)setUpUnderLineViewPositionByBtn:(UIButton*)btn {
-//    self.underLineView.frame = CGRectMake(0, kTitleContainerScrollViewHeight - _underLineHeight, btn.frame.size.width,_underLineHeight);
-//    self.underLineView.center = CGPointMake(btn.center.x, kTitleContainerScrollViewHeight - _underLineHeight / 2 );
+    self.underLineView.frame = CGRectMake(0, kTitleContainerScrollViewHeight - _underLineHeight, btn.frame.size.width,_underLineHeight);
+    self.underLineView.center = CGPointMake(btn.center.x, kTitleContainerScrollViewHeight - _underLineHeight / 2 );
 }
 
 - (void)changeStatusByLeftScale:(CGFloat)leftScale rightScale:(CGFloat)rightScale leftIndex:(NSInteger)leftIndex rightIndex:(NSInteger)rightIndex {
