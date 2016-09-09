@@ -26,6 +26,7 @@
 		16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */; };
 		16F226A71D373DAB00191F92 /* UIWindow+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226A61D373DAB00191F92 /* UIWindow+Expand.m */; };
 		16F226AB1D373E9000191F92 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226AA1D373E9000191F92 /* LaunchViewController.m */; };
+		3A0AB1571D82BD80001E67EB /* UITableView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AB1551D82BD80001E67EB /* UITableView+Common.m */; };
 		3A2933E81D75783000C44279 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933AE1D75783000C44279 /* AnimationImagesViewController.m */; };
 		3A2933E91D75783000C44279 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933B01D75783000C44279 /* AnimationLikeBtnViewController.m */; };
 		3A2933EA1D75783000C44279 /* AnimationStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933B21D75783000C44279 /* AnimationStudyVC.m */; };
@@ -158,6 +159,8 @@
 		16F226A61D373DAB00191F92 /* UIWindow+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Expand.m"; sourceTree = "<group>"; };
 		16F226A91D373E9000191F92 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
 		16F226AA1D373E9000191F92 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		3A0AB1551D82BD80001E67EB /* UITableView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Common.m"; sourceTree = "<group>"; };
+		3A0AB1561D82BD80001E67EB /* UITableView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Common.h"; sourceTree = "<group>"; };
 		3A2933AD1D75783000C44279 /* AnimationImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationImagesViewController.h; sourceTree = "<group>"; };
 		3A2933AE1D75783000C44279 /* AnimationImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationImagesViewController.m; sourceTree = "<group>"; };
 		3A2933AF1D75783000C44279 /* AnimationLikeBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLikeBtnViewController.h; sourceTree = "<group>"; };
@@ -379,6 +382,8 @@
 		163A57A61D335F9E003B9609 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				3A0AB1561D82BD80001E67EB /* UITableView+Common.h */,
+				3A0AB1551D82BD80001E67EB /* UITableView+Common.m */,
 				3AB3C8351D7D7C3C0053F059 /* UIView+Extension.h */,
 				3AB3C8361D7D7C3C0053F059 /* UIView+Extension.m */,
 				3A60AC0A1D791DF200F81CE8 /* UIColor+ColorUtility.h */,
@@ -953,6 +958,7 @@
 				3A2933FC1D75783000C44279 /* StrangeScorllViewController.m in Sources */,
 				3A60AC2D1D792EE400F81CE8 /* ExpandClickAreaButton.m in Sources */,
 				3A2933F71D75783000C44279 /* LocalNotificationViewController.m in Sources */,
+				3A0AB1571D82BD80001E67EB /* UITableView+Common.m in Sources */,
 				3A2933ED1D75783000C44279 /* DolinBannerView.m in Sources */,
 				3A60AC3E1D79527900F81CE8 /* Dowload.m in Sources */,
 				3A60AC091D791CF800F81CE8 /* DolinBaseViewController.m in Sources */,
