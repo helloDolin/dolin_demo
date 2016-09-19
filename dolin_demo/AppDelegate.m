@@ -10,6 +10,7 @@
 #import "DolinTabBarController.h"
 #import "UIWindow+Expand.h"
 #import <AVFoundation/AVFoundation.h>
+#import <JSPatchPlatform/JSPatch.h>
 
 @interface AppDelegate ()
 
@@ -44,6 +45,8 @@
     NSError* error;
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
 
+    [JSPatch testScriptInBundle];
+    
     return YES;
 }
 
