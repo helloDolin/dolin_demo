@@ -9,11 +9,9 @@
 #import "Dolin1ViewController.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource>
-{
-    NSArray* _arr;
-}
 
-@property (nonatomic,strong)UITableView* tableView;
+@property (nonatomic, strong) UITableView    * tableView;
+@property (nonatomic, strong) NSMutableArray *arr;
 
 @end
 
@@ -27,7 +25,9 @@
     
     [self setLeftBarBtn];
     
-    _arr = @[
+    [self setRightBarBtn];
+    
+    self.arr = [@[
              GET_STR(Banner-BannerViewController),
              @"仿Twitter-SimulateTwitterViewController",
              @"富文本-RichTextViewController",
@@ -42,12 +42,23 @@
              @"鬼相册-GhostAlbumViewController",
              @"动画+Masonry学习-AnimationStudyVC",
              @"禁用旋转时全屏横屏方法-ChangeDeviceOrientVC"
-             ];
+             ]mutableCopy];
 }
 
 - (void)setLeftBarBtn {
     UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(leftItemAction)];
     self.navigationItem.leftBarButtonItem = barButtonItem;
+}
+
+- (void)setRightBarBtn {
+    UIButton* btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    [btn addTarget:self action:@selector(addData) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
+
+- (void)addData {
+   
 }
 
 - (void)leftItemAction {

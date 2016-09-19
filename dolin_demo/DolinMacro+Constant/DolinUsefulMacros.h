@@ -122,7 +122,8 @@
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
-#define IOS7_OR_LATER       ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+// 此宏队友iOS 10 已经无效
+//#define IOS7_OR_LATER       ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
 
 
 
