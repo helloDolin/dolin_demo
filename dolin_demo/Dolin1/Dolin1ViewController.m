@@ -11,20 +11,22 @@
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView    * tableView;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 @property (nonatomic, strong) NSMutableArray *arr;
 
 @end
 
 @implementation Dolin1ViewController
 
+#pragma mark -  life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     [self.view addSubview:self.tableView];
     
+    [self setUpRefreshControl];
     [self setLeftBarBtn];
-    
     [self setRightBarBtn];
     
     self.arr = [@[
@@ -45,6 +47,28 @@
              ]mutableCopy];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // 再次回到这个页面cell选中效果慢慢消失
+    NSIndexPath* selectedIndexPath = [self.tableView indexPathForSelectedRow];
+    if (selectedIndexPath) {
+        [self.tableView deselectRowAtIndexPath:selectedIndexPath animated:YES];
+    }
+}
+#pragma mark -  method
+// 可惜这种方式只能下拉刷新，不能上拉加载
+- (void)setUpRefreshControl {
+    self.refreshControl = [[UIRefreshControl alloc]init];
+    self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"刷新啊"];
+    [self.refreshControl addTarget:self action:@selector(refreshAction) forControlEvents:UIControlEventValueChanged];
+    //    CGRect bounds = self.refreshControl.bounds;
+    //    bounds.origin.x = 50; // 左移50 -50就是右移
+    //    bounds.origin.y = 10; // 上移10
+    //    self.refreshControl.bounds = bounds;
+    self.tableView.refreshControl = self.refreshControl;
+}
+
 - (void)setLeftBarBtn {
     UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(leftItemAction)];
     self.navigationItem.leftBarButtonItem = barButtonItem;
@@ -55,6 +79,13 @@
     [btn addTarget:self action:@selector(addData) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
     self.navigationItem.rightBarButtonItem = rightItem;
+}
+
+#pragma mark -  event
+- (void)refreshAction {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.refreshControl endRefreshing];
+    });
 }
 
 - (void)addData {
@@ -73,20 +104,6 @@
     b = !b;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    // 再次回到这个页面cell选中效果慢慢消失
-    NSIndexPath* selectedIndexPath = [self.tableView indexPathForSelectedRow];
-    if (selectedIndexPath) {
-        [self.tableView deselectRowAtIndexPath:selectedIndexPath animated:YES];
-    }
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
