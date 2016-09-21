@@ -70,7 +70,7 @@
 }
 
 - (void)setLeftBarBtn {
-    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(leftItemAction)];
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"编辑", nil) style:UIBarButtonItemStylePlain target:self action:@selector(leftItemAction)];
     self.navigationItem.leftBarButtonItem = barButtonItem;
 }
 

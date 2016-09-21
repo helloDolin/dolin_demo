@@ -1,0 +1,41 @@
+/* 
+  Localizable.strings
+  dolin_demo
+
+  Created by dolin on 16/9/21.
+  Copyright © 2016年 shaolin. All rights reserved.
+*/
+// iOS本地化默认支持的是Localizable.strings文件:
+
+
+// tab
+"discover" = "发现";
+"music"    = "音乐";
+"friend"   = "朋友";
+"me"       = "我";
+
+//general
+"register" = "注册";
+"login"    = "登录";
+"logout"   = "登出";
+"password" = "密码";
+"username" = "个人账户";
+
+"ok"     = "确定";
+"yes"    = "是";
+"cancel" = "取消";
+"no"     = "否";
+
+"search" = "搜索";
+"error"  = "错误";
+"delete" = "删除";
+"copy"   = "复制";
+"save"   = "保存";
+"prompt" = "提示";
+"add"    = "添加";
+"send"   = "发送";
+"open"   = "打开";
+"down"   = "完成";
+"choose" = "选择";
+"accept" = "接受";
+"reject" = "拒绝";

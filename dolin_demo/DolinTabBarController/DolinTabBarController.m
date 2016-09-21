@@ -79,16 +79,16 @@
 // ps： 关于item的设置，这边可以直接用原生的item素材，选中和未选中状态
 - (void)setUpAllChildViewController{
     Dolin1ViewController *dolin1ViewController = [[Dolin1ViewController alloc]init];
-    [self setUpOneChildViewController:dolin1ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_discovery"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_discovery_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:@"发现"];
+    [self setUpOneChildViewController:dolin1ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_discovery"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_discovery_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"discover", nil)];
     
     Dolin2ViewController *dolin2ViewController = [[Dolin2ViewController alloc]init];
-    [self setUpOneChildViewController:dolin2ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_music"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_music_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:@"music"];
+    [self setUpOneChildViewController:dolin2ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_music"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_music_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"music", nil)];
     
     Dolin3ViewController *dolin3ViewController = [[Dolin3ViewController alloc]init];
-    [self setUpOneChildViewController:dolin3ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_friend"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_friend_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:@"friend"];
+    [self setUpOneChildViewController:dolin3ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_friend"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_friend_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"friend", nil)];
     
     Dolin4ViewController *dolin4ViewController = [[Dolin4ViewController alloc]init];
-    [self setUpOneChildViewController:dolin4ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_account"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_account_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:@"我"];
+    [self setUpOneChildViewController:dolin4ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_account"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_account_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"me", nil)];
     
 }
 

@@ -27,6 +27,7 @@
 		16F226A71D373DAB00191F92 /* UIWindow+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226A61D373DAB00191F92 /* UIWindow+Expand.m */; };
 		16F226AB1D373E9000191F92 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226AA1D373E9000191F92 /* LaunchViewController.m */; };
 		3A0AB1571D82BD80001E67EB /* UITableView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AB1551D82BD80001E67EB /* UITableView+Common.m */; };
+		3A201C8B1D922B77004B439D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A201C8D1D922B77004B439D /* Localizable.strings */; };
 		3A2933E81D75783000C44279 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933AE1D75783000C44279 /* AnimationImagesViewController.m */; };
 		3A2933E91D75783000C44279 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933B01D75783000C44279 /* AnimationLikeBtnViewController.m */; };
 		3A2933EA1D75783000C44279 /* AnimationStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933B21D75783000C44279 /* AnimationStudyVC.m */; };
@@ -165,6 +166,8 @@
 		16F226AA1D373E9000191F92 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		3A0AB1551D82BD80001E67EB /* UITableView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Common.m"; sourceTree = "<group>"; };
 		3A0AB1561D82BD80001E67EB /* UITableView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Common.h"; sourceTree = "<group>"; };
+		3A201C8C1D922B77004B439D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A201C8E1D922B80004B439D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		3A2933AD1D75783000C44279 /* AnimationImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationImagesViewController.h; sourceTree = "<group>"; };
 		3A2933AE1D75783000C44279 /* AnimationImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationImagesViewController.m; sourceTree = "<group>"; };
 		3A2933AF1D75783000C44279 /* AnimationLikeBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLikeBtnViewController.h; sourceTree = "<group>"; };
@@ -477,6 +480,7 @@
 		16C8D63D1D33511700228ABD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A201C881D922B10004B439D /* LocalStringStudy */,
 				16C8D6401D33511700228ABD /* AppDelegate.h */,
 				16C8D6411D33511700228ABD /* AppDelegate.m */,
 				16C8D63E1D33511700228ABD /* main.m */,
@@ -494,6 +498,14 @@
 				16F226AA1D373E9000191F92 /* LaunchViewController.m */,
 			);
 			path = launch;
+			sourceTree = "<group>";
+		};
+		3A201C881D922B10004B439D /* LocalStringStudy */ = {
+			isa = PBXGroup;
+			children = (
+				3A201C8D1D922B77004B439D /* Localizable.strings */,
+			);
+			name = LocalStringStudy;
 			sourceTree = "<group>";
 		};
 		3A2933AC1D75783000C44279 /* Animation+Masonry */ = {
@@ -824,6 +836,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 16C8D6311D33511700228ABD;
 			productRefGroup = 16C8D63B1D33511700228ABD /* Products */;
@@ -856,6 +869,7 @@
 				3A60ACE91D79881900F81CE8 /* Icon@2x.png in Resources */,
 				3A60ACC41D79881900F81CE8 /* cm2_fm_vol_btn@3x.png in Resources */,
 				3A60ACCB1D79881900F81CE8 /* cm2_list_detail_icn_cmt@3x.png in Resources */,
+				3A201C8B1D922B77004B439D /* Localizable.strings in Resources */,
 				3A60ACCE1D79881900F81CE8 /* cm2_list_detail_icn_share@3x.png in Resources */,
 				3A60ACEC1D79881900F81CE8 /* shengluohao.png in Resources */,
 				16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */,
@@ -1023,6 +1037,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		3A201C8D1D922B77004B439D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A201C8C1D922B77004B439D /* Base */,
+				3A201C8E1D922B80004B439D /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1030,6 +1053,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1077,6 +1101,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
