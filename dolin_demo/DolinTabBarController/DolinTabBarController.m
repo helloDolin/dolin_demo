@@ -22,6 +22,9 @@
 //毛玻璃
 @property(nonatomic,strong)UIVisualEffectView *visualeffectview;
 
+// 记录点击那个item
+@property (nonatomic, assign) NSInteger indexFlag;
+
 @end
 
 @implementation DolinTabBarController
@@ -130,6 +133,39 @@
     UIImage *originalImage = [UIImage imageNamed:imageName];
     originalImage = [originalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     return originalImage;
+}
+
+#pragma mark - UITabBarDelegate
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+    NSInteger index = [self.tabBar.items indexOfObject:item];
+    
+    if (self.indexFlag != index) {
+        [self animationWithIndex:index];
+    }
+
+}
+
+// 动画
+- (void)animationWithIndex:(NSInteger) index {
+    NSMutableArray * tabbarbuttonArray = [NSMutableArray array];
+    for (UIView *tabBarButton in self.tabBar.subviews) {
+        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            [tabbarbuttonArray addObject:tabBarButton];
+        }
+    }
+    
+    CABasicAnimation*pulse = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    pulse.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    pulse.duration = 0.08;
+    pulse.repeatCount= 1;
+    pulse.autoreverses= YES;
+    pulse.fromValue= [NSNumber numberWithFloat:0.7];
+    pulse.toValue= [NSNumber numberWithFloat:1.3];
+    [[tabbarbuttonArray[index] layer]
+     addAnimation:pulse forKey:nil];
+    
+    self.indexFlag = index;
+    
 }
 
 @end
