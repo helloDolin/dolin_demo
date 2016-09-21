@@ -5,12 +5,4 @@
   Created by dolin on 16/9/21.
   Copyright © 2016年 shaolin. All rights reserved.
 */
-// iOS本地化默认支持的是Localizable.strings文件:
 
-"edit" = "编辑";
-"cancel" = "取消";
-"" = "";
-"" = "";
-"" = "";
-"" = "";
-"" = "";
