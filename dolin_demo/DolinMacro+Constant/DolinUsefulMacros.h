@@ -100,6 +100,15 @@
 /** NSLocalizedStringFromTable宏做的其实就是在当前bundle中查找资源文件名“xxx.strings”(参数:键＋文件名＋注释) */
 #define AppLocalString(x, ...)  NSLocalizedStringFromTable(x, @"someName", nil)
 
+#define NSLocalizedString(key, comment) \
+[NSBundle.mainBundle localizedStringForKey:(key) value:@"" table:nil]
+#define NSLocalizedStringFromTable(key, tbl, comment) \
+[NSBundle.mainBundle localizedStringForKey:(key) value:@"" table:(tbl)]
+#define NSLocalizedStringFromTableInBundle(key, tbl, bundle, comment) \
+[bundle localizedStringForKey:(key) value:@"" table:(tbl)]
+#define NSLocalizedStringWithDefaultValue(key, tbl, bundle, val, comment) \
+[bundle localizedStringForKey:(key) value:(val) table:(tbl)]
+
 
 #pragma mark - 时间方面
 // 时间间隔
@@ -122,7 +131,7 @@
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
-// 此宏队友iOS 10 已经无效
+// 此宏对于iOS 10 已经无效
 //#define IOS7_OR_LATER       ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
 
 
@@ -163,7 +172,7 @@ shared##className = [[self alloc] init]; \
 return shared##className; \
 }
 
-// trim string
+#pragma mark - 检查空对象 + trim string
 #define TRIM_STRING(_string) (\
 (OBJECT_IS_EMPTY(_string) || NO == [_string isKindOfClass:[NSString class]]) ? \
 @"" : [_string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] \
