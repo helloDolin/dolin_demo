@@ -6,7 +6,7 @@
   Copyright © 2016年 shaolin. All rights reserved.
 */
 // iOS本地化默认支持的是Localizable.strings文件:
-
+// http://www.jianshu.com/p/4444f0f4e1f6
 
 // tab
 "discover" = "发现";
