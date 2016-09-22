@@ -10,6 +10,7 @@
 #import "CameraViewController.h"
 #import "LLBootstrap.h"
 #import "SheViewController.h"
+#import "UIView+ZKPulseView.h"
 
 @interface Dolin3ViewController ()<AVCaptureMetadataOutputObjectsDelegate>
 
@@ -28,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor blackColor];
     [self layOutUI];
 }
 
@@ -37,11 +39,14 @@
     [jumpCameraBtn bs_configureAsDefaultStyle];
     
     [jumpCameraBtn addTarget:self action:@selector(jumpCameraBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    [jumpCameraBtn startPulseWithColor:[UIColor convertHexToRGB:@"C1FFC1"]];
+    
 
     UIButton *jumpLoveGirlBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [jumpLoveGirlBtn setTitle:@"扫一扫" forState:UIControlStateNormal];
     [jumpLoveGirlBtn addTarget:self action:@selector(jumpLoveGirlBtnAction) forControlEvents:UIControlEventTouchUpInside];
     [jumpLoveGirlBtn bs_configureAsDefaultStyle];
+    [jumpLoveGirlBtn startPulseWithColor:[UIColor convertHexToRGB:@"EE0000"]];
     
     
     [self.view addSubview:jumpCameraBtn];
