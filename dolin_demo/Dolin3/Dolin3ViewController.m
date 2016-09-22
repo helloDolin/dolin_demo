@@ -45,8 +45,8 @@
     UIButton *jumpLoveGirlBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [jumpLoveGirlBtn setTitle:@"扫一扫" forState:UIControlStateNormal];
     [jumpLoveGirlBtn addTarget:self action:@selector(jumpLoveGirlBtnAction) forControlEvents:UIControlEventTouchUpInside];
-    [jumpLoveGirlBtn bs_configureAsDefaultStyle];
-    [jumpLoveGirlBtn startPulseWithColor:[UIColor convertHexToRGB:@"EE0000"]];
+    [jumpLoveGirlBtn bs_configureAsPrimaryStyle];
+    [jumpLoveGirlBtn startPulseWithColor:[UIColor whiteColor]];
     
     
     [self.view addSubview:jumpCameraBtn];
