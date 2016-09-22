@@ -13,6 +13,8 @@
 
 @interface Dolin3ViewController ()<AVCaptureMetadataOutputObjectsDelegate>
 
+
+// 原生扫描用到的几个类
 @property (nonatomic, strong) AVCaptureDevice *device;
 @property (nonatomic, strong) AVCaptureDeviceInput *input;
 @property (nonatomic, strong) AVCaptureMetadataOutput *output;
@@ -83,7 +85,7 @@
     _output = [[AVCaptureMetadataOutput alloc]init];
     [_output setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
     
-    // Session
+    // Session 连接输入和输出
     _session = [[AVCaptureSession alloc]init];
     [_session setSessionPreset:AVCaptureSessionPresetHigh];
     if ([_session canAddInput:self.input])
@@ -98,14 +100,16 @@
     
     // 条码类型 AVMetadataObjectTypeQRCode
     _output.metadataObjectTypes =@[AVMetadataObjectTypeQRCode];
+    
+    // 添加扫描画面
     dispatch_async(dispatch_get_main_queue(), ^{
         // Preview
         _preview =[AVCaptureVideoPreviewLayer layerWithSession:self.session];
         _preview.videoGravity = AVLayerVideoGravityResizeAspectFill;
-        _preview.frame =CGRectMake(20,64 + 80 + 30,SCREEN_WIDTH - 40,280);
+        _preview.frame = CGRectMake(20,64 + 80 + 30,SCREEN_WIDTH - 40,280);
         [self.view.layer insertSublayer:self.preview atIndex:0];
         
-        // Start
+        // 开始扫描
         [_session startRunning];
     });
 }
@@ -123,9 +127,8 @@
         [self presentViewController:[SheViewController new] animated:YES completion:nil];
     }
     
+    // 停止扫描
     [_session stopRunning];
-    
-//    [timer invalidate];
     
 }
 
