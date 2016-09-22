@@ -6,4 +6,5 @@ target 'dolin_demo' do
   pod 'SDWebImage'
   pod 'Masonry'
   pod 'pop', '~> 1.0'
+  pod "LLBootstrapButton"
 end
