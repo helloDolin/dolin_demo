@@ -28,6 +28,7 @@
 		16F226AB1D373E9000191F92 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F226AA1D373E9000191F92 /* LaunchViewController.m */; };
 		3A0A869A1D93B66D00A1D6BB /* she.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A0A86991D93B66D00A1D6BB /* she.jpg */; };
 		3A0A869D1D93B6E900A1D6BB /* SheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0A869C1D93B6E900A1D6BB /* SheViewController.m */; };
+		3A0A86A01D93CBF000A1D6BB /* UIView+ZKPulseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0A869F1D93CBF000A1D6BB /* UIView+ZKPulseView.m */; };
 		3A0AB1571D82BD80001E67EB /* UITableView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AB1551D82BD80001E67EB /* UITableView+Common.m */; };
 		3A201C8B1D922B77004B439D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A201C8D1D922B77004B439D /* Localizable.strings */; };
 		3A2933E81D75783000C44279 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933AE1D75783000C44279 /* AnimationImagesViewController.m */; };
@@ -169,6 +170,8 @@
 		3A0A86991D93B66D00A1D6BB /* she.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = she.jpg; sourceTree = "<group>"; };
 		3A0A869B1D93B6E900A1D6BB /* SheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SheViewController.h; sourceTree = "<group>"; };
 		3A0A869C1D93B6E900A1D6BB /* SheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SheViewController.m; sourceTree = "<group>"; };
+		3A0A869E1D93CBF000A1D6BB /* UIView+ZKPulseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZKPulseView.h"; sourceTree = "<group>"; };
+		3A0A869F1D93CBF000A1D6BB /* UIView+ZKPulseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZKPulseView.m"; sourceTree = "<group>"; };
 		3A0AB1551D82BD80001E67EB /* UITableView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Common.m"; sourceTree = "<group>"; };
 		3A0AB1561D82BD80001E67EB /* UITableView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Common.h"; sourceTree = "<group>"; };
 		3A201C8C1D922B77004B439D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -403,6 +406,8 @@
 		163A57A61D335F9E003B9609 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				3A0A869E1D93CBF000A1D6BB /* UIView+ZKPulseView.h */,
+				3A0A869F1D93CBF000A1D6BB /* UIView+ZKPulseView.m */,
 				3A0AB1561D82BD80001E67EB /* UITableView+Common.h */,
 				3A0AB1551D82BD80001E67EB /* UITableView+Common.m */,
 				3AB3C8351D7D7C3C0053F059 /* UIView+Extension.h */,
@@ -1033,6 +1038,7 @@
 				3A2933FA1D75783000C44279 /* SimulateKeepScroll.m in Sources */,
 				3A3C695A1D7566BB00D2562C /* Dolin3ViewController.m in Sources */,
 				163A57C01D33648E003B9609 /* UITabBar+Badge.m in Sources */,
+				3A0A86A01D93CBF000A1D6BB /* UIView+ZKPulseView.m in Sources */,
 				3A60AC3B1D79518500F81CE8 /* PlayManager.m in Sources */,
 				3A2933F01D75783000C44279 /* ImageModel.m in Sources */,
 				3ABB7CEA1D6EDED200528B49 /* TitleContainerScrollView.m in Sources */,
