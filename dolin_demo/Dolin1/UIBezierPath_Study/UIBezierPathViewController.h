@@ -12,6 +12,6 @@
  *  贝塞尔曲线学习（也可参考波奇 MJActionSheet）
  *  http://www.jianshu.com/p/734b34e82135
  */
-@interface UIBezierPathViewController : UIViewController
+@interface UIBezierPathViewController : DolinBaseViewController
 
 @end

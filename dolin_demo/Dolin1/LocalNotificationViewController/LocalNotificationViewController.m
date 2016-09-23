@@ -65,7 +65,7 @@
         CGSize titleSize;
         
         
-//        imageSize = _btn.imageView.frame.size;
+//        imageSize =  ;
 //        _btn.titleEdgeInsets = UIEdgeInsetsMake(0.0,  0.0, 0.0,  - spacing/2);
 //        // 对titleEdgeInsets的属性赋值之后，title的宽度可能会变化，所以我们需要在titleEdgeInsets赋值之后去获取titleSize
 //        titleSize = _btn.titleLabel.frame.size;
