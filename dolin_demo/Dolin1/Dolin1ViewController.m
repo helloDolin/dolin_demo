@@ -43,7 +43,8 @@
              @"自定义Label-DolinLabelViewController",
              @"鬼相册-GhostAlbumViewController",
              @"动画+Masonry学习-AnimationStudyVC",
-             @"禁用旋转时全屏横屏方法-ChangeDeviceOrientVC"
+             @"禁用旋转时全屏横屏方法-ChangeDeviceOrientVC",
+             @"贝塞尔先生-UIBezierPathViewController"
              ]mutableCopy];
 }
 
