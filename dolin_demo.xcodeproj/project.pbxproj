@@ -34,7 +34,6 @@
 		3A2933E81D75783000C44279 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933AE1D75783000C44279 /* AnimationImagesViewController.m */; };
 		3A2933E91D75783000C44279 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933B01D75783000C44279 /* AnimationLikeBtnViewController.m */; };
 		3A2933EA1D75783000C44279 /* AnimationStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933B21D75783000C44279 /* AnimationStudyVC.m */; };
-		3A2933EB1D75783000C44279 /* SpreadOrShrinkSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933B41D75783000C44279 /* SpreadOrShrinkSectionViewController.m */; };
 		3A2933EC1D75783000C44279 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933B71D75783000C44279 /* BannerViewController.m */; };
 		3A2933ED1D75783000C44279 /* DolinBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933B91D75783000C44279 /* DolinBannerView.m */; };
 		3A2933EE1D75783000C44279 /* DolinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933BC1D75783000C44279 /* DolinLabel.m */; };
@@ -127,6 +126,8 @@
 		3ABB7CEA1D6EDED200528B49 /* TitleContainerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB7CE91D6EDED200528B49 /* TitleContainerScrollView.m */; };
 		3AD5D3F21D94CE5A00361A1D /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5D3F11D94CE5A00361A1D /* UIBezierPathViewController.m */; };
 		3AD5D3F51D94CE7000361A1D /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5D3F41D94CE7000361A1D /* BezierPathView.m */; };
+		3AD5D3F91D95009500361A1D /* SpreadOrShrinkSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5D3F81D95009500361A1D /* SpreadOrShrinkSectionViewController.m */; };
+		3AD5D3FC1D95014F00361A1D /* CGAffineTransformStudy_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5D3FB1D95014F00361A1D /* CGAffineTransformStudy_VC.m */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
 
@@ -184,8 +185,6 @@
 		3A2933B01D75783000C44279 /* AnimationLikeBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLikeBtnViewController.m; sourceTree = "<group>"; };
 		3A2933B11D75783000C44279 /* AnimationStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationStudyVC.h; sourceTree = "<group>"; };
 		3A2933B21D75783000C44279 /* AnimationStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationStudyVC.m; sourceTree = "<group>"; };
-		3A2933B31D75783000C44279 /* SpreadOrShrinkSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadOrShrinkSectionViewController.h; sourceTree = "<group>"; };
-		3A2933B41D75783000C44279 /* SpreadOrShrinkSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadOrShrinkSectionViewController.m; sourceTree = "<group>"; };
 		3A2933B61D75783000C44279 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		3A2933B71D75783000C44279 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		3A2933B81D75783000C44279 /* DolinBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinBannerView.h; sourceTree = "<group>"; };
@@ -314,6 +313,10 @@
 		3AD5D3F11D94CE5A00361A1D /* UIBezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathViewController.m; sourceTree = "<group>"; };
 		3AD5D3F31D94CE7000361A1D /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
 		3AD5D3F41D94CE7000361A1D /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
+		3AD5D3F71D95009500361A1D /* SpreadOrShrinkSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadOrShrinkSectionViewController.h; sourceTree = "<group>"; };
+		3AD5D3F81D95009500361A1D /* SpreadOrShrinkSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadOrShrinkSectionViewController.m; sourceTree = "<group>"; };
+		3AD5D3FA1D95014F00361A1D /* CGAffineTransformStudy_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAffineTransformStudy_VC.h; sourceTree = "<group>"; };
+		3AD5D3FB1D95014F00361A1D /* CGAffineTransformStudy_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAffineTransformStudy_VC.m; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -346,9 +349,10 @@
 		163A57931D335921003B9609 /* Dolin1 */ = {
 			isa = PBXGroup;
 			children = (
-				3AD5D3EF1D94CE5A00361A1D /* UIBezierPath_Study */,
 				163A57971D33593B003B9609 /* Dolin1ViewController.h */,
 				163A57981D33593B003B9609 /* Dolin1ViewController.m */,
+				3AD5D3F61D95007B00361A1D /* Others */,
+				3AD5D3EF1D94CE5A00361A1D /* UIBezierPath_Study */,
 				3A2933AC1D75783000C44279 /* Animation+Masonry */,
 				3A2933B51D75783000C44279 /* Banner */,
 				3A2933BA1D75783000C44279 /* CostomLabel */,
@@ -545,8 +549,8 @@
 				3A2933B01D75783000C44279 /* AnimationLikeBtnViewController.m */,
 				3A2933B11D75783000C44279 /* AnimationStudyVC.h */,
 				3A2933B21D75783000C44279 /* AnimationStudyVC.m */,
-				3A2933B31D75783000C44279 /* SpreadOrShrinkSectionViewController.h */,
-				3A2933B41D75783000C44279 /* SpreadOrShrinkSectionViewController.m */,
+				3AD5D3FA1D95014F00361A1D /* CGAffineTransformStudy_VC.h */,
+				3AD5D3FB1D95014F00361A1D /* CGAffineTransformStudy_VC.m */,
 			);
 			path = "Animation+Masonry";
 			sourceTree = "<group>";
@@ -810,6 +814,15 @@
 			path = UIBezierPath_Study;
 			sourceTree = "<group>";
 		};
+		3AD5D3F61D95007B00361A1D /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				3AD5D3F71D95009500361A1D /* SpreadOrShrinkSectionViewController.h */,
+				3AD5D3F81D95009500361A1D /* SpreadOrShrinkSectionViewController.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		96B6CFAEDF4D3AF27BC73BDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1017,8 +1030,8 @@
 				16C8D6421D33511700228ABD /* AppDelegate.m in Sources */,
 				163A57C91D337442003B9609 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				16F226AB1D373E9000191F92 /* LaunchViewController.m in Sources */,
-				3A2933EB1D75783000C44279 /* SpreadOrShrinkSectionViewController.m in Sources */,
 				3A2933F61D75783000C44279 /* PwdTextFieldBugViewController.m in Sources */,
+				3AD5D3FC1D95014F00361A1D /* CGAffineTransformStudy_VC.m in Sources */,
 				3A2934001D75783000C44279 /* SimulateTwitterViewController.m in Sources */,
 				3A60AC271D792DE600F81CE8 /* Music.m in Sources */,
 				3A0A869D1D93B6E900A1D6BB /* SheViewController.m in Sources */,
@@ -1037,6 +1050,7 @@
 				16F226A71D373DAB00191F92 /* UIWindow+Expand.m in Sources */,
 				3A2933FC1D75783000C44279 /* StrangeScorllViewController.m in Sources */,
 				3A60AC2D1D792EE400F81CE8 /* ExpandClickAreaButton.m in Sources */,
+				3AD5D3F91D95009500361A1D /* SpreadOrShrinkSectionViewController.m in Sources */,
 				3A2933F71D75783000C44279 /* LocalNotificationViewController.m in Sources */,
 				3A0AB1571D82BD80001E67EB /* UITableView+Common.m in Sources */,
 				3A2933ED1D75783000C44279 /* DolinBannerView.m in Sources */,
