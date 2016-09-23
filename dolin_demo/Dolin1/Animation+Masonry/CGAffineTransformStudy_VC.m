@@ -6,6 +6,27 @@
 //  Copyright © 2016年 shaolin. All rights reserved.
 //
 
+/**
+    放射变换矩阵:从属于CoreGraphics框架
+ 
+    总体来说就三种：平移、旋转、缩放，对应变化一次或一直可变化
+ 
+    矩阵的转换
+ 
+    make：是针对视图的原定最初位置的中心点为起始参照进行相应操作的
+  
+    CGAffineTransformIdentity
+     [ 1 0 0
+       0 1 0
+       0 0 1]
+ 
+    CGAffineTransformMakeScale(-1.0, 1.0);//水平翻转
+ 
+    CGAffineTransformMakeScale(1.0,-1.0);//垂直翻转
+ 
+ 
+ */
+
 #import "CGAffineTransformStudy_VC.h"
 
 @interface CGAffineTransformStudy_VC ()
@@ -34,29 +55,41 @@
     [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
 }
-/**
- *  transform 是一种状态，并且只有一种状态
- *
- *  affine仅仅是矩阵的转换
- *
- *  可以放在animation中添加动画效果
- *
- *  总体来说就三种：平移、旋转、缩放，对应变化一次或一直可变化
- *
- *  make：是针对视图的原定最初位置的中心点为起始参照进行相应操作的，在操作结束之后可对设置量进行还原：
-    view.transform ＝ CGAffineTransformIdentity;
- *
- *  从属于CoreGraphics框架
- *
- *  放射变换矩阵
- *
- */
+
 - (void)btnAction {
 
-    [self translate];
+//    [self translate];
 //    [self rotate1]; // 旋转传的是弧度 arc
 //    [self rotate2];
 //    [self scale];
+    
+//    [self translateAndRotateAndScale];
+    
+//    _imgView.transform = [self CGAffineTransformMakeShear:1 y:0];
+    
+    // test
+    [UIView animateWithDuration:5 animations:^{
+        CGAffineTransform t = CGAffineTransformMakeScale(1.0, -1.0);
+        _imgView.transform = t;
+    }];
+    
+}
+
+- (CGAffineTransform)CGAffineTransformMakeShear:(CGFloat) x y:(CGFloat) y {
+    
+    CGAffineTransform transform = CGAffineTransformIdentity;
+    transform.c = x;
+    transform.b = y;
+    return transform;
+    
+}
+
+
+- (void)translateAndRotateAndScale {
+    CGAffineTransform t = CGAffineTransformMakeScale(1.0, 1.0);
+    t = CGAffineTransformRotate(t, M_PI);
+    t = CGAffineTransformTranslate(t, 0, 60);
+    _imgView.transform = t;
 }
 
 - (void)scale {
