@@ -7,6 +7,7 @@
 //
 
 #import "Dolin1ViewController.h"
+#import "YYFPSLabel.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -24,6 +25,11 @@
     // Do any additional setup after loading the view.
     
     [self.view addSubview:self.tableView];
+    
+    YYFPSLabel *fps = [YYFPSLabel new];
+    fps.frame = CGRectMake(0, 64, SCREEN_WIDTH, 20);
+    [self.view addSubview:fps];
+
     
     [self setUpRefreshControl];
     [self setLeftBarBtn];
