@@ -14,7 +14,6 @@
 
 @interface Dolin3ViewController ()<AVCaptureMetadataOutputObjectsDelegate>
 
-
 // 原生扫描用到的几个类
 @property (nonatomic, strong) AVCaptureDevice *device;
 @property (nonatomic, strong) AVCaptureDeviceInput *input;
@@ -104,7 +103,7 @@
     }
     
     // 条码类型 AVMetadataObjectTypeQRCode
-    _output.metadataObjectTypes =@[AVMetadataObjectTypeQRCode];
+    _output.metadataObjectTypes = @[AVMetadataObjectTypeQRCode,AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeCode128Code];
     
     // 添加扫描画面
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -129,7 +128,8 @@
         AVMetadataMachineReadableCodeObject * metadataObject = [metadataObjects objectAtIndex:0];
         stringValue = metadataObject.stringValue;
         
-        [self presentViewController:[SheViewController new] animated:YES completion:nil];
+        ALERT(@"%@", stringValue);
+//        [self presentViewController:[SheViewController new] animated:YES completion:nil];
     }
     
     // 停止扫描

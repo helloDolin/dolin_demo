@@ -18,6 +18,8 @@
 #import "UIColor+ColorUtility.h"
 #import "Masonry.h"
 
+#import <YYKit/YYKit.h>
+
 // 仿网易相关
 #import <AVFoundation/AVFoundation.h>
 #import "RequestManager.h"       //网络请求工具
