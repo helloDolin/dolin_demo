@@ -26,9 +26,11 @@
     
     [self.view addSubview:self.tableView];
     
+    // 测试FPS
     YYFPSLabel *fps = [YYFPSLabel new];
     fps.frame = CGRectMake(0, 64, SCREEN_WIDTH, 20);
-    [self.view addSubview:fps];
+    [[UIApplication sharedApplication].keyWindow addSubview:fps];
+
 
     
     [self setUpRefreshControl];
