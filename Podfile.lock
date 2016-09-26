@@ -20,9 +20,7 @@ PODS:
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
-  - YYKit (1.0.7):
-    - YYKit/no-arc (= 1.0.7)
-  - YYKit/no-arc (1.0.7)
+  - YYText (1.0.5)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
@@ -30,7 +28,7 @@ DEPENDENCIES:
   - Masonry
   - pop (~> 1.0)
   - SDWebImage
-  - YYKit
+  - YYText
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -38,8 +36,8 @@ SPEC CHECKSUMS:
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
-  YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
+  YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
 
-PODFILE CHECKSUM: e3dea7bbbf6a6be4dc55971dabc03cb0208f076f
+PODFILE CHECKSUM: 9c6d4f1af1a85bc0ff0954579f85ee2516486c7c
 
 COCOAPODS: 1.0.1

@@ -128,6 +128,7 @@
 		3AD5D3F51D94CE7000361A1D /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5D3F41D94CE7000361A1D /* BezierPathView.m */; };
 		3AD5D3F91D95009500361A1D /* SpreadOrShrinkSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5D3F81D95009500361A1D /* SpreadOrShrinkSectionViewController.m */; };
 		3AD5D3FC1D95014F00361A1D /* CGAffineTransformStudy_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5D3FB1D95014F00361A1D /* CGAffineTransformStudy_VC.m */; };
+		3ADC58971D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADC58961D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.m */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
 
@@ -317,6 +318,8 @@
 		3AD5D3F81D95009500361A1D /* SpreadOrShrinkSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadOrShrinkSectionViewController.m; sourceTree = "<group>"; };
 		3AD5D3FA1D95014F00361A1D /* CGAffineTransformStudy_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAffineTransformStudy_VC.h; sourceTree = "<group>"; };
 		3AD5D3FB1D95014F00361A1D /* CGAffineTransformStudy_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAffineTransformStudy_VC.m; sourceTree = "<group>"; };
+		3ADC58951D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatQRCodeAndBarCodeFromLeon.h; sourceTree = "<group>"; };
+		3ADC58961D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatQRCodeAndBarCodeFromLeon.m; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -484,6 +487,7 @@
 		16C8D63C1D33511700228ABD /* dolin_demo */ = {
 			isa = PBXGroup;
 			children = (
+				3ADC58941D991D51007DF1F8 /* BeautifulClasses */,
 				3AB96E291D8FC45200D0114B /* JSPatch */,
 				3A60AC061D791CF000F81CE8 /* Base */,
 				16C8D6491D33511700228ABD /* Assets.xcassets */,
@@ -823,6 +827,15 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
+		3ADC58941D991D51007DF1F8 /* BeautifulClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3ADC58951D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.h */,
+				3ADC58961D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.m */,
+			);
+			path = BeautifulClasses;
+			sourceTree = "<group>";
+		};
 		96B6CFAEDF4D3AF27BC73BDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1076,6 +1089,7 @@
 				3A60AC3B1D79518500F81CE8 /* PlayManager.m in Sources */,
 				3A2933F01D75783000C44279 /* ImageModel.m in Sources */,
 				3ABB7CEA1D6EDED200528B49 /* TitleContainerScrollView.m in Sources */,
+				3ADC58971D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
 				3A2933EF1D75783000C44279 /* DolinLabelViewController.m in Sources */,
 				3AB3C8371D7D7C3C0053F059 /* UIView+Extension.m in Sources */,
 				3A2933EE1D75783000C44279 /* DolinLabel.m in Sources */,
