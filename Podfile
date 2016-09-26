@@ -7,4 +7,5 @@ target 'dolin_demo' do
   pod 'Masonry'
   pod 'pop', '~> 1.0'
   pod "LLBootstrapButton"
+  pod 'YYKit'
 end
