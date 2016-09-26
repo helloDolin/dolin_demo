@@ -28,10 +28,14 @@
  */
 
 #import "CGAffineTransformStudy_VC.h"
+#import "YYWeakProxy.h"
+
+static const CGFloat kAnimateDuration = .5;
 
 @interface CGAffineTransformStudy_VC ()
 {
     UIImageView* _imgView;
+    NSTimer* _timer;
 }
 
 @end
@@ -46,7 +50,7 @@
     _imgView.image = [UIImage imageNamed:@"MT"];
     [self.view addSubview:_imgView];
     
-    // 
+    
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeSystem];
     btn.frame = CGRectMake(0, 64, 375, 100);
     btn.backgroundColor = [UIColor orangeColor];
@@ -54,13 +58,16 @@
     btn.tintColor = [UIColor whiteColor];
     [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    _timer = [NSTimer timerWithTimeInterval:kAnimateDuration target:[YYWeakProxy proxyWithTarget:self] selector:@selector(btnAction) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
 }
 
 - (void)btnAction {
 
 //    [self translate];
 //    [self rotate1]; // 旋转传的是弧度 arc
-//    [self rotate2];
+    [self rotate2];
 //    [self scale];
     
 //    [self translateAndRotateAndScale];
@@ -68,10 +75,10 @@
 //    _imgView.transform = [self CGAffineTransformMakeShear:1 y:0];
     
     // test
-    [UIView animateWithDuration:5 animations:^{
-        CGAffineTransform t = CGAffineTransformMakeScale(1.0, -1.0);
-        _imgView.transform = t;
-    }];
+//    [UIView animateWithDuration:5 animations:^{
+//        CGAffineTransform t = CGAffineTransformMakeScale(1.0, -1.0);
+//        _imgView.transform = t;
+//    }];
     
 }
 
@@ -105,7 +112,7 @@
 
 - (void)rotate2 {
     CGAffineTransform t = _imgView.transform;
-    [UIView animateWithDuration:2 animations:^{
+    [UIView animateWithDuration:kAnimateDuration animations:^{
         _imgView.transform = CGAffineTransformRotate(t, M_PI);
     }];
 }
