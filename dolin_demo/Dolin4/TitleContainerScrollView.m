@@ -136,7 +136,8 @@ static CGFloat kUnderLineViewHeight = 2.0;
         [self.buttonsArr addObject:button];
     }
     
-    self.contentSize = CGSizeMake(CGRectGetMaxX([self.buttonsArr.lastObject frame]) + kPadding, self.frame.size.height);
+    UIButton* lastBtn = self.buttonsArr.lastObject;
+    self.contentSize = CGSizeMake(CGRectGetMaxX(lastBtn.frame) + kPadding, self.frame.size.height);
     
     
     // 默认选中第一个按钮

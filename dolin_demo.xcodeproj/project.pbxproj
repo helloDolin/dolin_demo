@@ -129,6 +129,8 @@
 		3AD5D3F91D95009500361A1D /* SpreadOrShrinkSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5D3F81D95009500361A1D /* SpreadOrShrinkSectionViewController.m */; };
 		3AD5D3FC1D95014F00361A1D /* CGAffineTransformStudy_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5D3FB1D95014F00361A1D /* CGAffineTransformStudy_VC.m */; };
 		3ADC58971D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADC58961D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.m */; };
+		3ADC589A1D992719007DF1F8 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADC58991D992719007DF1F8 /* YYFPSLabel.m */; };
+		3ADC589D1D99286D007DF1F8 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADC589C1D99286D007DF1F8 /* YYWeakProxy.m */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
 
@@ -320,6 +322,10 @@
 		3AD5D3FB1D95014F00361A1D /* CGAffineTransformStudy_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAffineTransformStudy_VC.m; sourceTree = "<group>"; };
 		3ADC58951D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatQRCodeAndBarCodeFromLeon.h; sourceTree = "<group>"; };
 		3ADC58961D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatQRCodeAndBarCodeFromLeon.m; sourceTree = "<group>"; };
+		3ADC58981D992719007DF1F8 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		3ADC58991D992719007DF1F8 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		3ADC589B1D99286D007DF1F8 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		3ADC589C1D99286D007DF1F8 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -830,6 +836,10 @@
 		3ADC58941D991D51007DF1F8 /* BeautifulClasses */ = {
 			isa = PBXGroup;
 			children = (
+				3ADC589B1D99286D007DF1F8 /* YYWeakProxy.h */,
+				3ADC589C1D99286D007DF1F8 /* YYWeakProxy.m */,
+				3ADC58981D992719007DF1F8 /* YYFPSLabel.h */,
+				3ADC58991D992719007DF1F8 /* YYFPSLabel.m */,
 				3ADC58951D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.h */,
 				3ADC58961D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.m */,
 			);
@@ -1062,6 +1072,7 @@
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
 				16F226A71D373DAB00191F92 /* UIWindow+Expand.m in Sources */,
 				3A2933FC1D75783000C44279 /* StrangeScorllViewController.m in Sources */,
+				3ADC589A1D992719007DF1F8 /* YYFPSLabel.m in Sources */,
 				3A60AC2D1D792EE400F81CE8 /* ExpandClickAreaButton.m in Sources */,
 				3AD5D3F91D95009500361A1D /* SpreadOrShrinkSectionViewController.m in Sources */,
 				3A2933F71D75783000C44279 /* LocalNotificationViewController.m in Sources */,
@@ -1083,6 +1094,7 @@
 				3A60AC381D7950F200F81CE8 /* PlayMusicViewController.m in Sources */,
 				3A60AC311D79304A00F81CE8 /* MusicListCell.m in Sources */,
 				3A2933FA1D75783000C44279 /* SimulateKeepScroll.m in Sources */,
+				3ADC589D1D99286D007DF1F8 /* YYWeakProxy.m in Sources */,
 				3A3C695A1D7566BB00D2562C /* Dolin3ViewController.m in Sources */,
 				163A57C01D33648E003B9609 /* UITabBar+Badge.m in Sources */,
 				3A0A86A01D93CBF000A1D6BB /* UIView+ZKPulseView.m in Sources */,
