@@ -98,9 +98,9 @@
     });
 }
 
-- (void)addData {
-   
-}
+//- (void)addData {
+//   
+//}
 
 - (void)leftItemAction {
     static BOOL b = YES;
@@ -133,6 +133,11 @@
 }
 
 #pragma mark -  UITableViewDelegate 
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 49;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *title = _arr[indexPath.row];
     NSString *className = [[title componentsSeparatedByString:@"-"] lastObject];
@@ -176,7 +181,7 @@
 #pragma mark -  getter
 - (UITableView*)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:FULL_SCREEN_FRAME style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64) style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.delegate = self;
 //        _tableView.allowsSelectionDuringEditing = YES; 编辑状态下也可以点击
