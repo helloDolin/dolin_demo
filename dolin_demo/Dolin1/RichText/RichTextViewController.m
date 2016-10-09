@@ -8,7 +8,12 @@
 
 #import "RichTextViewController.h"
 
+static NSString* kStr = @"对酒当歌，人生几何？对酒当歌，人生几何？对酒当歌，人生几何？对酒当歌，人生几何？对酒当歌，人生几何？\n譬如朝露，去日苦多。\n慨当以慷，忧思难忘。\n何以解忧？惟有杜康。\n青青子衿，悠悠我心。";
+
 @interface RichTextViewController ()
+{
+    UILabel* _testLabel;
+}
 
 @end
 
@@ -18,38 +23,97 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-        
-    UILabel *spacingLabel = [[UILabel alloc] initWithFrame:self.view.frame];
-    spacingLabel.text = @"哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈饭卡上的话费卡还得上课发哈神的客服哈打开司法考试的理解啊登录即可法拉第减肥垃圾堆里放假啊来的快解放啦江东父老卡就到了放假啊登录开发及阿里的肌肤轮廓阿迪和法律上的价格啦可是大驾光临卡是大驾光临卡手机丢了卡世界的理解啊收到了看风景啊索朗多吉法律快速的减肥啦数据的法律框架阿萨德了看风景啊索朗多吉发生肯德基放辣椒地方";
-    spacingLabel.numberOfLines = 0;
-    spacingLabel.font  = [UIFont systemFontOfSize:12];
-    spacingLabel.textColor = [UIColor whiteColor];
-    spacingLabel.backgroundColor = [UIColor orangeColor];
     
-    //行间距
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
-    [paragraphStyle setLineSpacing:50];
-    //字间距
-    NSMutableAttributedString *attributedString =  [[NSMutableAttributedString alloc] initWithString:spacingLabel.text attributes:@{NSKernAttributeName : @(5.5f)}];
+    _testLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 64 + 20, SCREEN_WIDTH, 0)];
+    _testLabel.numberOfLines = 0;
+    _testLabel.backgroundColor = [UIColor orangeColor];
     
-    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, spacingLabel.text.length)];
     
-    spacingLabel.attributedText = attributedString;
-    
-//    CGSize size = CGSizeMake(SCREEN_WIDTH, 500000);
-    
-//    CGSize labelSize = [spacingLabel sizeThatFits:size];
-    
-    CGSize labelSize = [spacingLabel sizeThatFits:CGSizeMake(spacingLabel.frame.size.width, MAXFLOAT)];
-    
-    spacingLabel.frame = CGRectMake(0, 0, labelSize.width, labelSize.height);
-    
-    [self.view addSubview:spacingLabel];
+    [self studyAttributeString2];
+    [self.view addSubview:_testLabel];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - method
+
+- (void)studyAttributeString2 {
+    NSMutableAttributedString* attrStr = [[NSMutableAttributedString alloc]initWithString:kStr];
+    
+    NSMutableParagraphStyle *paragraph = [[NSMutableParagraphStyle alloc] init];
+    //行间距
+    paragraph.lineSpacing = 1;
+    //段落间距
+    paragraph.paragraphSpacing = 20;
+    //对齐方式
+    paragraph.alignment = NSTextAlignmentLeft;
+    //首行缩进
+    paragraph.firstLineHeadIndent = 20;
+    
+    
+
+    [attrStr addAttribute:NSParagraphStyleAttributeName value:paragraph range:NSMakeRange(0, attrStr.length)];
+    
+    [attrStr addAttribute:NSFontAttributeName value:_testLabel.font range:NSMakeRange(0, attrStr.length)];
+    
+    //字间距
+    [attrStr addAttribute:NSKernAttributeName value:@(5.0f) range:NSMakeRange(0, attrStr.length)];
+    
+    _testLabel.attributedText = attrStr;
+    
+    // 试验证明size1并不可靠，实际项目中用size2或者size3即可
+    // 特别注意：需要设置所有String的字体大小，才能正确求到高度
+    CGSize size1 =  attrStr.size;
+    CGSize size2 = [attrStr  boundingRectWithSize:CGSizeMake(SCREEN_WIDTH,MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil].size;
+    
+    // size3需要给label attributeText赋值后才可以求，而且比size1、2方式值略大
+    CGSize size3 = [_testLabel sizeThatFits:CGSizeMake(_testLabel.frame.size.width, MAXFLOAT)];
+    
+    // 重新设置label的高度
+    _testLabel.height = size2.height;
+}
+
+/**
+ * iOS 6之前：CoreText,纯C语言,极其蛋疼
+ * iOS 6开始：NSAttributedString,简单易用
+ * iOS 7开始：TextKit,功能强大,简单易用
+   UILabel、UITextField、UITextView都有NSAttributedString属性
+ 
+ 需要注意的是，你不能直接修改已有的AttributedString, 你需要把它copy出来，修改后再进行设置：
+ 
+ NSMutableAttributedString *labelText = [myLabel.attributedText mutableCopy];
+ [labelText setAttributes:...];
+ myLabel.attributedText = labelText;
+ 
+ 设置 hyphenationFactor 属性就可以启用断字。
+ 
+ 
+ */
+- (void)studyAttributeString {
+    NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:@"哈哈123456"];
+    
+    // 添加各种attribute
+    [string setAttributes:@{
+                                NSForegroundColorAttributeName:[UIColor blueColor],
+                                NSFontAttributeName:[UIFont systemFontOfSize:30],
+                                NSBackgroundColorAttributeName:[UIColor redColor]
+                            }
+                    range:NSMakeRange(0, 2)];
+    
+    
+    [string addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(6, 2)];
+    [string addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:24] range:NSMakeRange(6, 2)];
+    [string addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:NSMakeRange(6, 2)];
+    
+    // 创建图片图片附件
+    NSTextAttachment *attach = [[NSTextAttachment alloc] init];
+    attach.image = [UIImage imageNamed:@"MT"];
+    attach.bounds = CGRectMake(0, 0, 15, 15);
+    NSAttributedString *attachString = [NSAttributedString attributedStringWithAttachment:attach];
+    
+    
+    [string appendAttributedString:attachString];
+    [string appendAttributedString:[[NSAttributedString alloc] initWithString:@"789"]];
+    
+    _testLabel.attributedText = string;
 }
 
 #pragma mark -  getter
