@@ -41,12 +41,15 @@ static NSString* kStr = @"对酒当歌，人生几何？对酒当歌，人生几
     NSMutableParagraphStyle *paragraph = [[NSMutableParagraphStyle alloc] init];
     //行间距
     paragraph.lineSpacing = 1;
-    //段落间距
+    //段落间距 \n与\n的间距
     paragraph.paragraphSpacing = 20;
     //对齐方式
     paragraph.alignment = NSTextAlignmentLeft;
     //首行缩进
     paragraph.firstLineHeadIndent = 20;
+    
+    // 其余行缩进
+//    paragraph.headIndent = 20.0f;
     
     
 
