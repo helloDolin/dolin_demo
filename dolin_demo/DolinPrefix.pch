@@ -19,6 +19,7 @@
 #import "Masonry.h"
 
 #import <YYText/YYText.h>
+#import "UIView+Extension.h"
 
 // 仿网易相关
 #import <AVFoundation/AVFoundation.h>
