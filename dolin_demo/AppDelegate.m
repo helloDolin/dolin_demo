@@ -47,6 +47,10 @@
 
     [JSPatch testScriptInBundle];
     
+    [[NSBundle mainBundle]objectForInfoDictionaryKey:@"UIViewControllerBasedStatusBarAppearance"];
+    
+    
+    
     return YES;
 }
 
