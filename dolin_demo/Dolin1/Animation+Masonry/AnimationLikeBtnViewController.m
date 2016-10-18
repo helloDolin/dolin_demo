@@ -32,12 +32,33 @@
     [self.likeBtn setImage:[[UIImage imageNamed:(isClickLikeBtn ? @"btn_like":@"btn_unlike")]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
     isClickLikeBtn = !isClickLikeBtn;
     
+    
+    [self shakeToShow:self.likeBtn];
     // 动画核心代码
-    CAKeyframeAnimation *cAKeyframeAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
-    cAKeyframeAnimation.values = @[@(0.1),@(1.0),@(1.5)];
-    cAKeyframeAnimation.keyTimes = @[@(0.0),@(0.5),@(0.8),@(1.0)];
-    cAKeyframeAnimation.calculationMode = kCAAnimationLinear;
-    [self.likeBtn.layer addAnimation:cAKeyframeAnimation forKey:@"SHOW"];
+//    CAKeyframeAnimation *cAKeyframeAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+//    cAKeyframeAnimation.values = @[@(0.1),@(1.0),@(1.5)];
+//    cAKeyframeAnimation.keyTimes = @[@(0.0),@(0.5),@(0.8),@(1.0)];
+//    cAKeyframeAnimation.calculationMode = kCAAnimationLinear;
+//    [self.likeBtn.layer addAnimation:cAKeyframeAnimation forKey:@"SHOW"];
+}
+
+
+/**
+ 仿支付宝，点击二维码放大动画效果
+ eg:bgView上放二维码：
+ 点击二维码，add 上来 ，且动画
+ 点击bgView remove掉
+
+ @param aView <#aView description#>
+ */
+- (void) shakeToShow:(UIView*)aView{
+    CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    animation.duration = 0.5;
+    NSMutableArray *values = [NSMutableArray array];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.1, 0.1, 1.0)]];
+    [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)]];
+    animation.values = values;
+    [aView.layer addAnimation:animation forKey:nil];
 }
 
 #pragma mark -  getter
