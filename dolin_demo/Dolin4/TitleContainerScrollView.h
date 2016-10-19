@@ -14,7 +14,8 @@
 typedef void (^ButtonClickBlock)(NSInteger currentPage);
 
 @protocol TitleContainerScrollViewDelegate <NSObject>
- 
+
+@optional
 - (UIColor*)colorOfUnderLineInTitleContainerScrollView:(TitleContainerScrollView*)titleContainerScrollView;
 
 @end
