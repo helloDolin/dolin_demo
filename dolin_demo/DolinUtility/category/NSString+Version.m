@@ -11,6 +11,10 @@
 
 @implementation NSString(Version)
 
++ (void)load {
+    NSLog(@"加载类到内存的时候调用");
+}
+
 -(BOOL) isOlderVersionThan:(NSString*)otherVersion
 {
 	return ([self compare:otherVersion options:NSNumericSearch] == NSOrderedAscending);

@@ -8,6 +8,7 @@
 
 #import "BannerViewController.h"
 #import "DolinBannerView.h"
+#import "MMPlaceHolder.h"
 
 @interface BannerViewController ()<DolinBannerViewDelegate>
 
@@ -23,7 +24,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     DolinBannerView *dolinBannerView = [[DolinBannerView alloc]initWithFrame:CGRectMake(0, NavigtationBarHeight, self.view.frame.size.width, 200) WithInfoArr:self.netImageArray];
-    
+    [dolinBannerView showPlaceHolder];
     /** 获取网络图片的index*/
     dolinBannerView.delegate = self;
     /** 添加到当前View上*/
