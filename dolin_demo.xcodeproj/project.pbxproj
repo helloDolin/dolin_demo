@@ -28,8 +28,6 @@
 		3A2933EA1D75783000C44279 /* AnimationStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933B21D75783000C44279 /* AnimationStudyVC.m */; };
 		3A2933EC1D75783000C44279 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933B71D75783000C44279 /* BannerViewController.m */; };
 		3A2933ED1D75783000C44279 /* DolinBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933B91D75783000C44279 /* DolinBannerView.m */; };
-		3A2933EE1D75783000C44279 /* DolinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933BC1D75783000C44279 /* DolinLabel.m */; };
-		3A2933EF1D75783000C44279 /* DolinLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933BE1D75783000C44279 /* DolinLabelViewController.m */; };
 		3A2933F01D75783000C44279 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933C21D75783000C44279 /* ImageModel.m */; };
 		3A2933F11D75783000C44279 /* PlantCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933C41D75783000C44279 /* PlantCollectionViewCell.m */; };
 		3A2933F21D75783000C44279 /* PlantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2933C51D75783000C44279 /* PlantCollectionViewCell.xib */; };
@@ -108,6 +106,12 @@
 		3A60ACEB1D79881900F81CE8 /* moren.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3A60ACBA1D79881900F81CE8 /* moren.jpeg */; };
 		3A60ACEC1D79881900F81CE8 /* shengluohao.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A60ACBB1D79881900F81CE8 /* shengluohao.png */; };
 		3A60ACED1D79881900F81CE8 /* ttt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A60ACBC1D79881900F81CE8 /* ttt@3x.png */; };
+		3A6F5F661DB8B0230028169A /* DolinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F5F631DB8B0230028169A /* DolinLabel.m */; };
+		3A6F5F671DB8B0230028169A /* DolinLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F5F651DB8B0230028169A /* DolinLabelViewController.m */; };
+		3A6F5F6B1DB8B05C0028169A /* RunTimeStudy_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F5F6A1DB8B05C0028169A /* RunTimeStudy_VC.m */; };
+		3A6F5F6E1DB8B0B20028169A /* UIImage+DLRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F5F6D1DB8B0B20028169A /* UIImage+DLRuntime.m */; };
+		3A6F5F711DB8B25E0028169A /* Runtime_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F5F701DB8B25E0028169A /* Runtime_Test.m */; };
+		3A6F5F741DB8B84D0028169A /* NSObject+DLRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F5F731DB8B84D0028169A /* NSObject+DLRuntime.m */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
 		3AB96E2B1D8FC45200D0114B /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E2A1D8FC45200D0114B /* JSPatchPlatform.framework */; };
@@ -180,10 +184,6 @@
 		3A2933B71D75783000C44279 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		3A2933B81D75783000C44279 /* DolinBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinBannerView.h; sourceTree = "<group>"; };
 		3A2933B91D75783000C44279 /* DolinBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinBannerView.m; sourceTree = "<group>"; };
-		3A2933BB1D75783000C44279 /* DolinLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinLabel.h; sourceTree = "<group>"; };
-		3A2933BC1D75783000C44279 /* DolinLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinLabel.m; sourceTree = "<group>"; };
-		3A2933BD1D75783000C44279 /* DolinLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinLabelViewController.h; sourceTree = "<group>"; };
-		3A2933BE1D75783000C44279 /* DolinLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinLabelViewController.m; sourceTree = "<group>"; };
 		3A2933C11D75783000C44279 /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
 		3A2933C21D75783000C44279 /* ImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
 		3A2933C31D75783000C44279 /* PlantCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantCollectionViewCell.h; sourceTree = "<group>"; };
@@ -288,6 +288,18 @@
 		3A60ACBA1D79881900F81CE8 /* moren.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moren.jpeg; sourceTree = "<group>"; };
 		3A60ACBB1D79881900F81CE8 /* shengluohao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shengluohao.png; sourceTree = "<group>"; };
 		3A60ACBC1D79881900F81CE8 /* ttt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ttt@3x.png"; sourceTree = "<group>"; };
+		3A6F5F621DB8B0230028169A /* DolinLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinLabel.h; sourceTree = "<group>"; };
+		3A6F5F631DB8B0230028169A /* DolinLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinLabel.m; sourceTree = "<group>"; };
+		3A6F5F641DB8B0230028169A /* DolinLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinLabelViewController.h; sourceTree = "<group>"; };
+		3A6F5F651DB8B0230028169A /* DolinLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinLabelViewController.m; sourceTree = "<group>"; };
+		3A6F5F691DB8B05C0028169A /* RunTimeStudy_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeStudy_VC.h; sourceTree = "<group>"; };
+		3A6F5F6A1DB8B05C0028169A /* RunTimeStudy_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeStudy_VC.m; sourceTree = "<group>"; };
+		3A6F5F6C1DB8B0B20028169A /* UIImage+DLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DLRuntime.h"; sourceTree = "<group>"; };
+		3A6F5F6D1DB8B0B20028169A /* UIImage+DLRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DLRuntime.m"; sourceTree = "<group>"; };
+		3A6F5F6F1DB8B25E0028169A /* Runtime_Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime_Test.h; sourceTree = "<group>"; };
+		3A6F5F701DB8B25E0028169A /* Runtime_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime_Test.m; sourceTree = "<group>"; };
+		3A6F5F721DB8B84D0028169A /* NSObject+DLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLRuntime.h"; sourceTree = "<group>"; };
+		3A6F5F731DB8B84D0028169A /* NSObject+DLRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLRuntime.m"; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		3AB96E2A1D8FC45200D0114B /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
@@ -372,13 +384,14 @@
 		163A57931D335921003B9609 /* Dolin1 */ = {
 			isa = PBXGroup;
 			children = (
+				3A6F5F681DB8B03C0028169A /* Runtime */,
+				3A6F5F611DB8B0230028169A /* CustomLabel */,
 				163A57971D33593B003B9609 /* Dolin1ViewController.h */,
 				163A57981D33593B003B9609 /* Dolin1ViewController.m */,
 				3AD5D3F61D95007B00361A1D /* Others */,
 				3AD5D3EF1D94CE5A00361A1D /* UIBezierPath_Study */,
 				3A2933AC1D75783000C44279 /* Animation+Masonry */,
 				3A2933B51D75783000C44279 /* Banner */,
-				3A2933BA1D75783000C44279 /* CostomLabel */,
 				3A2933BF1D75783000C44279 /* GhostAlbum */,
 				3A2933CC1D75783000C44279 /* iPhoneBugFix */,
 				3A2933CF1D75783000C44279 /* LocalNotificationViewController */,
@@ -559,17 +572,6 @@
 				3A2933B91D75783000C44279 /* DolinBannerView.m */,
 			);
 			path = Banner;
-			sourceTree = "<group>";
-		};
-		3A2933BA1D75783000C44279 /* CostomLabel */ = {
-			isa = PBXGroup;
-			children = (
-				3A2933BB1D75783000C44279 /* DolinLabel.h */,
-				3A2933BC1D75783000C44279 /* DolinLabel.m */,
-				3A2933BD1D75783000C44279 /* DolinLabelViewController.h */,
-				3A2933BE1D75783000C44279 /* DolinLabelViewController.m */,
-			);
-			path = CostomLabel;
 			sourceTree = "<group>";
 		};
 		3A2933BF1D75783000C44279 /* GhostAlbum */ = {
@@ -787,6 +789,32 @@
 				3A60ACBC1D79881900F81CE8 /* ttt@3x.png */,
 			);
 			path = WYicons;
+			sourceTree = "<group>";
+		};
+		3A6F5F611DB8B0230028169A /* CustomLabel */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F5F621DB8B0230028169A /* DolinLabel.h */,
+				3A6F5F631DB8B0230028169A /* DolinLabel.m */,
+				3A6F5F641DB8B0230028169A /* DolinLabelViewController.h */,
+				3A6F5F651DB8B0230028169A /* DolinLabelViewController.m */,
+			);
+			path = CustomLabel;
+			sourceTree = "<group>";
+		};
+		3A6F5F681DB8B03C0028169A /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F5F691DB8B05C0028169A /* RunTimeStudy_VC.h */,
+				3A6F5F6A1DB8B05C0028169A /* RunTimeStudy_VC.m */,
+				3A6F5F6C1DB8B0B20028169A /* UIImage+DLRuntime.h */,
+				3A6F5F6D1DB8B0B20028169A /* UIImage+DLRuntime.m */,
+				3A6F5F6F1DB8B25E0028169A /* Runtime_Test.h */,
+				3A6F5F701DB8B25E0028169A /* Runtime_Test.m */,
+				3A6F5F721DB8B84D0028169A /* NSObject+DLRuntime.h */,
+				3A6F5F731DB8B84D0028169A /* NSObject+DLRuntime.m */,
+			);
+			path = Runtime;
 			sourceTree = "<group>";
 		};
 		3AB96E291D8FC45200D0114B /* JSPatch */ = {
@@ -1102,11 +1130,13 @@
 				3A2933E81D75783000C44279 /* AnimationImagesViewController.m in Sources */,
 				16C8D6421D33511700228ABD /* AppDelegate.m in Sources */,
 				3AE1816D1DB7877900E8A1FA /* UIImage+animatedGIF.m in Sources */,
+				3A6F5F711DB8B25E0028169A /* Runtime_Test.m in Sources */,
 				16F226AB1D373E9000191F92 /* LaunchViewController.m in Sources */,
 				3A2933F61D75783000C44279 /* PwdTextFieldBugViewController.m in Sources */,
 				3AD5D3FC1D95014F00361A1D /* CGAffineTransformStudy_VC.m in Sources */,
 				3AE181741DB7877900E8A1FA /* UITabBar+Badge.m in Sources */,
 				3AE181761DB7877900E8A1FA /* UIView+Extension.m in Sources */,
+				3A6F5F671DB8B0230028169A /* DolinLabelViewController.m in Sources */,
 				3A2934001D75783000C44279 /* SimulateTwitterViewController.m in Sources */,
 				3A60AC271D792DE600F81CE8 /* Music.m in Sources */,
 				3A0A869D1D93B6E900A1D6BB /* SheViewController.m in Sources */,
@@ -1124,6 +1154,7 @@
 				163A57B91D3360E2003B9609 /* DolinConstant.m in Sources */,
 				3A4779F81D6BE56000AA9A70 /* MMPlaceHolder.m in Sources */,
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
+				3A6F5F741DB8B84D0028169A /* NSObject+DLRuntime.m in Sources */,
 				3A2933FC1D75783000C44279 /* StrangeScorllViewController.m in Sources */,
 				3ADC589A1D992719007DF1F8 /* YYFPSLabel.m in Sources */,
 				3A60AC2D1D792EE400F81CE8 /* ExpandClickAreaButton.m in Sources */,
@@ -1140,6 +1171,7 @@
 				3A2933FF1D75783000C44279 /* SimulateTwitterView.m in Sources */,
 				3AD5D3F51D94CE7000361A1D /* BezierPathView.m in Sources */,
 				3AE1816B1DB7877900E8A1FA /* NSString+Version.m in Sources */,
+				3A6F5F6E1DB8B0B20028169A /* UIImage+DLRuntime.m in Sources */,
 				3A2933F31D75783000C44279 /* PlantImgItemUtil.m in Sources */,
 				3AD5D3F21D94CE5A00361A1D /* UIBezierPathViewController.m in Sources */,
 				3A60AC381D7950F200F81CE8 /* PlayMusicViewController.m in Sources */,
@@ -1152,13 +1184,13 @@
 				3A60AC3B1D79518500F81CE8 /* PlayManager.m in Sources */,
 				3A2933F01D75783000C44279 /* ImageModel.m in Sources */,
 				3ABB7CEA1D6EDED200528B49 /* TitleContainerScrollView.m in Sources */,
+				3A6F5F6B1DB8B05C0028169A /* RunTimeStudy_VC.m in Sources */,
 				3AE181731DB7877900E8A1FA /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				3AE1816E1DB7877900E8A1FA /* UIImage+Blur.m in Sources */,
 				3ADC58971D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
-				3A2933EF1D75783000C44279 /* DolinLabelViewController.m in Sources */,
-				3A2933EE1D75783000C44279 /* DolinLabel.m in Sources */,
 				160C4CC41D7B47860032F6B7 /* CameraViewController.m in Sources */,
 				3A2933F81D75783000C44279 /* RichTextViewController.m in Sources */,
+				3A6F5F661DB8B0230028169A /* DolinLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

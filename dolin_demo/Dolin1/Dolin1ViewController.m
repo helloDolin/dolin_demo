@@ -53,7 +53,8 @@
              @"禁用旋转时全屏横屏方法-ChangeDeviceOrientVC",
              @"贝塞尔先生-UIBezierPathViewController",
              @"CGAffineTransformStudy-CGAffineTransformStudy_VC",
-             @"富文本-RichTextViewController"
+             @"富文本-RichTextViewController",
+             @"runtime-RunTimeStudy_VC"
              ]mutableCopy];
 }
 
