@@ -57,10 +57,13 @@
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-    NSLog(@"我要挂起了");
-    //有音乐播放时，才给后台权限，不做流氓应用。
-    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
-    [self becomeFirstResponder];
+    
+    
+//    Xcode8开始，不需要写代码控制了，在TARGETS -> AppName -> Capabilities中可视化配置
+//    NSLog(@"我要挂起了");
+//    //有音乐播放时，才给后台权限，不做流氓应用。
+//    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+//    [self becomeFirstResponder];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
