@@ -300,7 +300,8 @@
 		3A6F5F701DB8B25E0028169A /* Runtime_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime_Test.m; sourceTree = "<group>"; };
 		3A6F5F721DB8B84D0028169A /* NSObject+DLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLRuntime.h"; sourceTree = "<group>"; };
 		3A6F5F731DB8B84D0028169A /* NSObject+DLRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLRuntime.m"; sourceTree = "<group>"; };
-		3A8BD8731DBEFB9D00CC6CAF /* dolin_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dolin_demo.entitlements; sourceTree = "<group>"; };
+		3A875A741DBF074D002A3F24 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3A98B2051DBF08B900CADF29 /* dolin_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dolin_demo.entitlements; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		3AB96E2A1D8FC45200D0114B /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
@@ -365,6 +366,7 @@
 			files = (
 				3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */,
 				3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */,
+				3A875A751DBF074D002A3F24 /* MapKit.framework in Frameworks */,
 				4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */,
 				3AB96E2B1D8FC45200D0114B /* JSPatchPlatform.framework in Frameworks */,
 			);
@@ -491,7 +493,7 @@
 		16C8D63C1D33511700228ABD /* dolin_demo */ = {
 			isa = PBXGroup;
 			children = (
-				3A8BD8731DBEFB9D00CC6CAF /* dolin_demo.entitlements */,
+				3A98B2051DBF08B900CADF29 /* dolin_demo.entitlements */,
 				3AE181481DB7877900E8A1FA /* Category */,
 				3ADC58941D991D51007DF1F8 /* BeautifulClasses */,
 				3AB96E291D8FC45200D0114B /* JSPatch */,
@@ -926,6 +928,7 @@
 		96B6CFAEDF4D3AF27BC73BDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A875A741DBF074D002A3F24 /* MapKit.framework */,
 				3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */,
 				3AB96E251D8FC3B500D0114B /* libz.tbd */,
 				BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */,
@@ -976,11 +979,20 @@
 				TargetAttributes = {
 					16C8D6391D33511700228ABD = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = N3Q43QAB93;
+						DevelopmentTeam = 35P2C5J2YM;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
-							com.apple.Push = {
+							com.apple.BackgroundModes = {
 								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
 							};
 						};
 					};
@@ -1263,7 +1275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
@@ -1305,7 +1317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -1319,10 +1331,9 @@
 			baseConfigurationReference = 5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = dolin_demo/dolin_demo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = N3Q43QAB93;
+				DEVELOPMENT_TEAM = 35P2C5J2YM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/dolin_demo",
@@ -1344,10 +1355,9 @@
 			baseConfigurationReference = C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = dolin_demo/dolin_demo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = N3Q43QAB93;
+				DEVELOPMENT_TEAM = 35P2C5J2YM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/dolin_demo",
