@@ -42,12 +42,20 @@
     }
     
     // 让音乐可以在后台播放
-    NSError* error;
-    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
-
+//    NSError* error;
+//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
+//
+    // 测试JSPatch
     [JSPatch testScriptInBundle];
     
-    [[NSBundle mainBundle]objectForInfoDictionaryKey:@"UIViewControllerBasedStatusBarAppearance"];
+    // mainBundle信息
+    /*
+     版本号：Bundle version
+     应用标识：Bundle identifier
+     应用名称：Bundle display name
+     */
+    NSDictionary* dic = [[NSBundle mainBundle]infoDictionary];
+//    [[NSBundle mainBundle]objectForInfoDictionaryKey:@"UIViewControllerBasedStatusBarAppearance"];
     
     
     
