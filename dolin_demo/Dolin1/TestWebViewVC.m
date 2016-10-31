@@ -15,6 +15,7 @@
     LoadingViewForOC* _loadingView;
     NSMutableArray* _urlArray;
     ImageViewer *_imgViewer;
+    NSInteger _photoIndex;
 }
 
 @property(nonatomic,strong)UIWebView* webView;
@@ -32,15 +33,15 @@
     NSString* urlStr = @"http://app.topman.max99.cn/index.php?m=Home&c=Web&a=newsDetailV3&id=8513&ver=3.1.0";
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]]];
     
-    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithTitle:@"查看图片" style:UIBarButtonItemStylePlain target:self action:@selector(browerPhotoWithIndex:)];
+    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithTitle:@"查看图片" style:UIBarButtonItemStylePlain target:self action:@selector(browerPhoto)];
     self.navigationItem.rightBarButtonItem = rightItem;
 }
 
 #pragma mark - method
-- (void)browerPhotoWithIndex:(NSInteger)index{
+- (void)browerPhoto{
     _imgViewer.imageArray = _urlArray;
     _imgViewer.pageControl = YES;
-    _imgViewer.index = index;
+    _imgViewer.index = _photoIndex;
     _imgViewer.block = ^(void) {
         
     };
@@ -115,7 +116,8 @@
         
         for (int i = 0; i < _urlArray.count; i++) {
             if ([_urlArray[i] isEqualToString:value]) {
-                [self browerPhotoWithIndex:i];
+                _photoIndex = i;
+                [self browerPhoto];
                 break;
             }
         }
