@@ -404,10 +404,12 @@
 		163A57931D335921003B9609 /* Dolin1 */ = {
 			isa = PBXGroup;
 			children = (
-				3A6F5F681DB8B03C0028169A /* Runtime */,
-				3A6F5F611DB8B0230028169A /* CustomLabel */,
 				163A57971D33593B003B9609 /* Dolin1ViewController.h */,
 				163A57981D33593B003B9609 /* Dolin1ViewController.m */,
+				3A7E8CB41DC34FD700B96ED7 /* TestWebViewVC.h */,
+				3A7E8CB51DC34FD700B96ED7 /* TestWebViewVC.m */,
+				3A6F5F681DB8B03C0028169A /* Runtime */,
+				3A6F5F611DB8B0230028169A /* CustomLabel */,
 				3AD5D3F61D95007B00361A1D /* Others */,
 				3AD5D3EF1D94CE5A00361A1D /* UIBezierPath_Study */,
 				3A2933AC1D75783000C44279 /* Animation+Masonry */,
@@ -420,8 +422,6 @@
 				3A2933D81D75783000C44279 /* SimulateKeep */,
 				3A2933DD1D75783000C44279 /* simulatePhoneMessage */,
 				3A2933E31D75783000C44279 /* SimulateTwitter */,
-				3A7E8CB41DC34FD700B96ED7 /* TestWebViewVC.h */,
-				3A7E8CB51DC34FD700B96ED7 /* TestWebViewVC.m */,
 			);
 			path = Dolin1;
 			sourceTree = "<group>";
@@ -889,13 +889,13 @@
 			children = (
 				3A61A72C1DC6D57E00D133ED /* LoadingViewForOC.h */,
 				3A61A72D1DC6D57E00D133ED /* LoadingViewForOC.m */,
-				3A61A71F1DC6D57500D133ED /* PhotoBrower */,
 				3ADC589B1D99286D007DF1F8 /* YYWeakProxy.h */,
 				3ADC589C1D99286D007DF1F8 /* YYWeakProxy.m */,
 				3ADC58981D992719007DF1F8 /* YYFPSLabel.h */,
 				3ADC58991D992719007DF1F8 /* YYFPSLabel.m */,
 				3ADC58951D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.h */,
 				3ADC58961D991D56007DF1F8 /* CreatQRCodeAndBarCodeFromLeon.m */,
+				3A61A71F1DC6D57500D133ED /* PhotoBrower */,
 			);
 			path = BeautifulClasses;
 			sourceTree = "<group>";
