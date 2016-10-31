@@ -54,7 +54,8 @@
              @"贝塞尔先生-UIBezierPathViewController",
              @"CGAffineTransformStudy-CGAffineTransformStudy_VC",
              @"富文本-RichTextViewController",
-             @"runtime-RunTimeStudy_VC"
+             @"runtime-RunTimeStudy_VC",
+             @"TestWebView-TestWebViewVC"
              ]mutableCopy];
 }
 
