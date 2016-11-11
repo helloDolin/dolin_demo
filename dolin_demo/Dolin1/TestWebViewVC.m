@@ -30,7 +30,7 @@
     _loadingView = [LoadingViewForOC showLoadingWithWindow];
     _imgViewer = [[ImageViewer alloc] init];
     [self.view addSubview:self.webView];
-    NSString* urlStr = @"http://app.topman.max99.cn/index.php?m=Home&c=Web&a=newsDetailV3&id=8513&ver=3.1.0";
+    NSString* urlStr = @"http://liaoshaolim.github.io/";
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]]];
     
     UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithTitle:@"查看图片" style:UIBarButtonItemStylePlain target:self action:@selector(browerPhoto)];
