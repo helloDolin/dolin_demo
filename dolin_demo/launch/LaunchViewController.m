@@ -37,6 +37,22 @@ static CGFloat const kAnimationDuration = 3.0;
 
 #pragma mark -  method
 - (void)animate {
+//    [UIView animateWithDuration:kAnimationDuration animations:^{
+//        // 这里先把View缩小
+//        _lblTitle.frame = CGRectMake(0, 0, 50, 50);
+//        _lblTitle.center = self.view.center;
+//    } completion:^(BOOL finished) {
+//        [UIView animateWithDuration:0.3 animations:^{
+//            // 这里要把View放大
+//            _lblTitle.frame = CGRectMake(0, 0, 5000, 5000);
+//            _lblTitle.center = self.view.center;
+//            _lblTitle.alpha = 0;
+//        } completion:^(BOOL finished) {
+//            [_lblTitle removeFromSuperview];
+//        }];;
+//    }];
+    
+    
     [UIView animateWithDuration:kAnimationDuration animations:^ {
         self.launchImageView.transform = CGAffineTransformMakeScale(1.2, 1.2);
     } completion:^(BOOL finished) {
