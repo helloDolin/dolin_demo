@@ -45,6 +45,7 @@
 		3A2933FE1D75783000C44279 /* StrangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2933E21D75783000C44279 /* StrangeTableViewCell.xib */; };
 		3A2933FF1D75783000C44279 /* SimulateTwitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933E51D75783000C44279 /* SimulateTwitterView.m */; };
 		3A2934001D75783000C44279 /* SimulateTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2933E71D75783000C44279 /* SimulateTwitterViewController.m */; };
+		3A2B7A161DD5CD13006F516A /* TestWKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7A151DD5CD13006F516A /* TestWKWebViewVC.m */; };
 		3A3C695A1D7566BB00D2562C /* Dolin3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C69591D7566BB00D2562C /* Dolin3ViewController.m */; };
 		3A4779F81D6BE56000AA9A70 /* MMPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4779F71D6BE56000AA9A70 /* MMPlaceHolder.m */; };
 		3A60AC091D791CF800F81CE8 /* DolinBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A60AC081D791CF800F81CE8 /* DolinBaseViewController.m */; };
@@ -222,6 +223,8 @@
 		3A2933E51D75783000C44279 /* SimulateTwitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateTwitterView.m; sourceTree = "<group>"; };
 		3A2933E61D75783000C44279 /* SimulateTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateTwitterViewController.h; sourceTree = "<group>"; };
 		3A2933E71D75783000C44279 /* SimulateTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateTwitterViewController.m; sourceTree = "<group>"; };
+		3A2B7A141DD5CD13006F516A /* TestWKWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWKWebViewVC.h; sourceTree = "<group>"; };
+		3A2B7A151DD5CD13006F516A /* TestWKWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWKWebViewVC.m; sourceTree = "<group>"; };
 		3A3C69581D7566BB00D2562C /* Dolin3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin3ViewController.h; sourceTree = "<group>"; };
 		3A3C69591D7566BB00D2562C /* Dolin3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin3ViewController.m; sourceTree = "<group>"; };
 		3A4779F61D6BE56000AA9A70 /* MMPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPlaceHolder.h; sourceTree = "<group>"; };
@@ -408,6 +411,8 @@
 				163A57981D33593B003B9609 /* Dolin1ViewController.m */,
 				3A7E8CB41DC34FD700B96ED7 /* TestWebViewVC.h */,
 				3A7E8CB51DC34FD700B96ED7 /* TestWebViewVC.m */,
+				3A2B7A141DD5CD13006F516A /* TestWKWebViewVC.h */,
+				3A2B7A151DD5CD13006F516A /* TestWKWebViewVC.m */,
 				3A6F5F681DB8B03C0028169A /* Runtime */,
 				3A6F5F611DB8B0230028169A /* CustomLabel */,
 				3AD5D3F61D95007B00361A1D /* Others */,
@@ -1176,6 +1181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2B7A161DD5CD13006F516A /* TestWKWebViewVC.m in Sources */,
 				3AE1816C1DB7877900E8A1FA /* UIColor+ColorUtility.m in Sources */,
 				3A2933F41D75783000C44279 /* GhostAlbumViewController.m in Sources */,
 				3A2933F91D75783000C44279 /* ChangeDeviceOrientVC.m in Sources */,

@@ -55,7 +55,8 @@
              @"CGAffineTransformStudy-CGAffineTransformStudy_VC",
              @"富文本-RichTextViewController",
              @"runtime-RunTimeStudy_VC",
-             @"TestWebView-TestWebViewVC"
+             @"TestWebView-TestWebViewVC",
+             @"TestWKWebViewVC-TestWKWebViewVC"
              ]mutableCopy];
 }
 
