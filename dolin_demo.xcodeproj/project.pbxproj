@@ -119,6 +119,7 @@
 		3A6F5F711DB8B25E0028169A /* Runtime_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F5F701DB8B25E0028169A /* Runtime_Test.m */; };
 		3A6F5F741DB8B84D0028169A /* NSObject+DLRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F5F731DB8B84D0028169A /* NSObject+DLRuntime.m */; };
 		3A7E8CB61DC34FD700B96ED7 /* TestWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7E8CB51DC34FD700B96ED7 /* TestWebViewVC.m */; };
+		3AA7D0DC1DDAEE4B00F25427 /* HYQiHei-50J.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA7D0DB1DDAEE4B00F25427 /* HYQiHei-50J.ttf */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
 		3AB96E2B1D8FC45200D0114B /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E2A1D8FC45200D0114B /* JSPatchPlatform.framework */; };
@@ -323,6 +324,7 @@
 		3A7E8CB51DC34FD700B96ED7 /* TestWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWebViewVC.m; sourceTree = "<group>"; };
 		3A875A741DBF074D002A3F24 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3A98B2051DBF08B900CADF29 /* dolin_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dolin_demo.entitlements; sourceTree = "<group>"; };
+		3AA7D0DB1DDAEE4B00F25427 /* HYQiHei-50J.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HYQiHei-50J.ttf"; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		3AB96E2A1D8FC45200D0114B /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
@@ -540,6 +542,7 @@
 		16C8D63D1D33511700228ABD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3AA7D0DB1DDAEE4B00F25427 /* HYQiHei-50J.ttf */,
 				3A201C881D922B10004B439D /* LocalStringStudy */,
 				3AE180EA1DB70F0600E8A1FA /* DolinInfo.plist */,
 				16C8D6401D33511700228ABD /* AppDelegate.h */,
@@ -1104,6 +1107,7 @@
 				3A60ACDE1D79881900F81CE8 /* cm2_play_icn_loved@3x.png in Resources */,
 				3A60ACC01D79881900F81CE8 /* A.jpg in Resources */,
 				3A60ACE51D79881900F81CE8 /* cm2_vehicle_btn_play_prs@3x.png in Resources */,
+				3AA7D0DC1DDAEE4B00F25427 /* HYQiHei-50J.ttf in Resources */,
 				3A60ACDB1D79881900F81CE8 /* cm2_play_icn_dld@3x.png in Resources */,
 				3A60ACEB1D79881900F81CE8 /* moren.jpeg in Resources */,
 				3AB96E2F1D8FC8AC00D0114B /* main.js in Resources */,
