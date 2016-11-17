@@ -15,6 +15,7 @@ static CGFloat const kAnimationDuration = 3.0;
 
 @property (nonatomic, strong) UIImageView *launchImageView;
 @property (nonatomic, strong) UILabel *lblTitle;
+@property (nonatomic, strong) UIImageView* mtImgView;
 
 @end
 
@@ -25,7 +26,8 @@ static CGFloat const kAnimationDuration = 3.0;
     [super viewDidLoad];
     
     [self.view addSubview:self.launchImageView];
-    [self.view addSubview:self.lblTitle];
+//    [self.view addSubview:self.lblTitle];
+    [self.view addSubview:self.mtImgView];
     
     [self animate];
 }
@@ -37,26 +39,18 @@ static CGFloat const kAnimationDuration = 3.0;
 
 #pragma mark -  method
 - (void)animate {
-//    [UIView animateWithDuration:kAnimationDuration animations:^{
-//        // 这里先把View缩小
-//        _lblTitle.frame = CGRectMake(0, 0, 50, 50);
-//        _lblTitle.center = self.view.center;
-//    } completion:^(BOOL finished) {
-//        [UIView animateWithDuration:0.3 animations:^{
-//            // 这里要把View放大
-//            _lblTitle.frame = CGRectMake(0, 0, 5000, 5000);
-//            _lblTitle.center = self.view.center;
-//            _lblTitle.alpha = 0;
-//        } completion:^(BOOL finished) {
-//            [_lblTitle removeFromSuperview];
-//        }];;
-//    }];
-    
-    
-    [UIView animateWithDuration:kAnimationDuration animations:^ {
+    [UIView animateWithDuration:kAnimationDuration - 2 animations:^ {
+        self.mtImgView.frame = CGRectMake(0, 0, 50, 50);
+        self.mtImgView.center = self.view.center;
         self.launchImageView.transform = CGAffineTransformMakeScale(1.2, 1.2);
     } completion:^(BOOL finished) {
-        [self.view removeFromSuperview];
+        [UIView animateWithDuration:kAnimationDuration animations:^{
+            self.mtImgView.frame = CGRectMake(0, 0, 5000, 5000);
+            self.mtImgView.center = self.view.center;
+            self.view.alpha = 0;
+        } completion:^(BOOL finished) {
+            [self.view removeFromSuperview];
+        }];
     }];
 }
 
@@ -89,6 +83,14 @@ static CGFloat const kAnimationDuration = 3.0;
     return _lblTitle;
 }
 
+- (UIImageView*)mtImgView {
+    if (!_mtImgView) {
+        _mtImgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MT"]];
+        _mtImgView.frame = CGRectMake(0, 0, 150, 150);
+        _mtImgView.center = self.view.center;
+    }
+    return _mtImgView;
+}
 
 
 @end
