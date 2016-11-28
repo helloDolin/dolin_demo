@@ -6,7 +6,10 @@
 * PS：采用CocoaPods集成第三方开源库！请正确打开项目!
 ***
 ### 目录树大概讲解
-![目录树](https://github.com/liaoshaolim/dolin_demo/raw/master/Screen/project_tree.png)
+新目录树（time： 2016年11月28日15:25:48）
+![目录树_new](https://github.com/liaoshaolim/dolin_demo/raw/master/Screen/project_tree_new.png)
+
+![目录树_old](https://github.com/liaoshaolim/dolin_demo/raw/master/Screen/project_tree_old.png)
 
 * base文件夹：               放一些公用的东东
 * assets，resource：      资源文件
