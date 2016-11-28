@@ -20,6 +20,8 @@
 
 #import <YYText/YYText.h>
 #import "UIView+Extension.h"
+#import "MMPlaceHolder.h"
+
 
 // 仿网易相关
 #import <AVFoundation/AVFoundation.h>
