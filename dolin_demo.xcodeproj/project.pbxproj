@@ -859,6 +859,7 @@
 		3A7C68701DEC0D6800225D28 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3A7C68AE1DEC0D6800225D28 /* Transition */,
 				3A7C68711DEC0D6800225D28 /* BeautifulClasses */,
 				3A7C68831DEC0D6800225D28 /* Category */,
 				3A7C68A61DEC0D6800225D28 /* DolinMacro+Constant */,
@@ -866,7 +867,6 @@
 				3A7C68AB1DEC0D6800225D28 /* DolinTopWindowUtil.m */,
 				3A7C68AC1DEC0D6800225D28 /* MMPlaceHolder.h */,
 				3A7C68AD1DEC0D6800225D28 /* MMPlaceHolder.m */,
-				3A7C68AE1DEC0D6800225D28 /* Transition */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
