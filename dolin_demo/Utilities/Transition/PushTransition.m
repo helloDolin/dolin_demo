@@ -35,8 +35,10 @@
     
     // 锚点的位置苹果设计为比例
     // position：layer中锚点在superLayer中的位置坐标
-    toVC.view.layer.position = CGPointMake(CGRectGetMaxX(toVC.view.frame), CGRectGetMidY(toVC.view.frame));
-    toVC.view.layer.anchorPoint = CGPointMake(1, 0.5);
+//    toVC.view.layer.position = CGPointMake(CGRectGetMaxX(toVC.view.frame), CGRectGetMidY(toVC.view.frame));
+//    toVC.view.layer.anchorPoint = ;
+    
+    [self setUpAnchorPoint:CGPointMake(1, 0.5) forView:toVC.view];
     
     CABasicAnimation* animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
     animation.duration = [self transitionDuration:transitionContext];
@@ -52,4 +54,17 @@
     }
 }
 
+
+/**
+ 为某个view设置锚点
+ ❤️❤️❤️修改anchorPoint而不想移动layer
+ 在修改anchorPoint后再重新设置一遍frame就可以达到目的，这时position就会自动进行相应的改变。
+ @param anchorpoint
+ @param view
+ */
+- (void) setUpAnchorPoint:(CGPoint)anchorpoint forView:(UIView *)view{
+    CGRect oldFrame = view.frame;
+    view.layer.anchorPoint = anchorpoint;
+    view.frame = oldFrame;
+}
 @end
