@@ -8,8 +8,9 @@
 
 #import "Dolin1ViewController.h"
 #import "YYFPSLabel.h"
+#import "PushTransition.h"
 
-@interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
 @property (nonatomic, strong) UITableView    * tableView;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
@@ -22,18 +23,13 @@
 #pragma mark -  life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
+   
     [self.view addSubview:self.tableView];
     
-    // 测试FPS
-    YYFPSLabel *fps = [YYFPSLabel new];
-    fps.frame = CGRectMake(0, 64, SCREEN_WIDTH, 20);
-    [[UIApplication sharedApplication].keyWindow addSubview:fps];
+    self.navigationController.delegate = self;
 
-
-    
-    [self setUpRefreshControl];
+//    [self setUpFPSLabel];
+//    [self setUpRefreshControl];
     [self setLeftBarBtn];
     [self setRightBarBtn];
     
@@ -59,7 +55,6 @@
              @"TestWKWebViewVC-TestWKWebViewVC"
              ]mutableCopy];
 }
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
@@ -70,6 +65,16 @@
     }
 }
 #pragma mark -  method
+
+/**
+ window上添加FPSLabel
+ */
+- (void)setUpFPSLabel {
+    YYFPSLabel *fps = [YYFPSLabel new];
+    fps.frame = CGRectMake(0, 64, SCREEN_WIDTH, 20);
+    [[UIApplication sharedApplication].keyWindow addSubview:fps];
+}
+
 /**
  给cell添加动画效果
  
@@ -116,6 +121,7 @@
 
 - (void)setRightBarBtn {
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    // 这个addData由JSPatch实现
     [btn addTarget:self action:@selector(addData) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
     self.navigationItem.rightBarButtonItem = rightItem;
@@ -186,7 +192,7 @@
 // 闭合cell分割线需要实现此协议
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [self animateCell:cell];
+//    [self animateCell:cell];
     
     
     if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
@@ -209,6 +215,15 @@
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewCellEditingStyleDelete|UITableViewCellEditingStyleInsert;
+}
+
+#pragma mark - UINavigationControllerDelegate
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
+    //分pop和push两种情况分别返回动画过渡代理相应不同的动画操作
+    if (operation == UINavigationControllerOperationPush) {
+        return [PushTransition new];
+    }
+    return nil;
 }
 
 
