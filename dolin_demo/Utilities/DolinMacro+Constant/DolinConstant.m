@@ -8,8 +8,6 @@
 
 #import "DolinConstant.h"
 
-NSString* const notification_goIndex = @"notification_goIndex";
+NSString* const NOTIFICATION_GO_INDEX = @"NOTIFICATION_GO_INDEX";
 
-@implementation DolinConstant
 
-@end
