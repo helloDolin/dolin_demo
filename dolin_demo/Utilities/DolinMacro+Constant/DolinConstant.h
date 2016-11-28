@@ -8,8 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString* const notification_goIndex;
+extern NSString* const NOTIFICATION_GO_INDEX;
 
-@interface DolinConstant : NSObject
-
-@end
