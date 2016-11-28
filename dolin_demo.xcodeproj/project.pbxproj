@@ -118,6 +118,7 @@
 		3A6F5F6E1DB8B0B20028169A /* UIImage+DLRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F5F6D1DB8B0B20028169A /* UIImage+DLRuntime.m */; };
 		3A6F5F711DB8B25E0028169A /* Runtime_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F5F701DB8B25E0028169A /* Runtime_Test.m */; };
 		3A6F5F741DB8B84D0028169A /* NSObject+DLRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F5F731DB8B84D0028169A /* NSObject+DLRuntime.m */; };
+		3A7C678B1DEBC4BB00225D28 /* PushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C678A1DEBC4BB00225D28 /* PushTransition.m */; };
 		3A7E8CB61DC34FD700B96ED7 /* TestWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7E8CB51DC34FD700B96ED7 /* TestWebViewVC.m */; };
 		3AA7D0DC1DDAEE4B00F25427 /* HYQiHei-50J.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AA7D0DB1DDAEE4B00F25427 /* HYQiHei-50J.ttf */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
@@ -320,6 +321,8 @@
 		3A6F5F701DB8B25E0028169A /* Runtime_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime_Test.m; sourceTree = "<group>"; };
 		3A6F5F721DB8B84D0028169A /* NSObject+DLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLRuntime.h"; sourceTree = "<group>"; };
 		3A6F5F731DB8B84D0028169A /* NSObject+DLRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLRuntime.m"; sourceTree = "<group>"; };
+		3A7C67891DEBC4BB00225D28 /* PushTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushTransition.h; sourceTree = "<group>"; };
+		3A7C678A1DEBC4BB00225D28 /* PushTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushTransition.m; sourceTree = "<group>"; };
 		3A7E8CB41DC34FD700B96ED7 /* TestWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWebViewVC.h; sourceTree = "<group>"; };
 		3A7E8CB51DC34FD700B96ED7 /* TestWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWebViewVC.m; sourceTree = "<group>"; };
 		3A875A741DBF074D002A3F24 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -519,6 +522,7 @@
 		16C8D63C1D33511700228ABD /* dolin_demo */ = {
 			isa = PBXGroup;
 			children = (
+				3A7C67881DEBC48800225D28 /* Transition */,
 				3A98B2051DBF08B900CADF29 /* dolin_demo.entitlements */,
 				3AE181481DB7877900E8A1FA /* Category */,
 				3ADC58941D991D51007DF1F8 /* BeautifulClasses */,
@@ -861,6 +865,15 @@
 				3A6F5F731DB8B84D0028169A /* NSObject+DLRuntime.m */,
 			);
 			path = Runtime;
+			sourceTree = "<group>";
+		};
+		3A7C67881DEBC48800225D28 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				3A7C67891DEBC4BB00225D28 /* PushTransition.h */,
+				3A7C678A1DEBC4BB00225D28 /* PushTransition.m */,
+			);
+			path = Transition;
 			sourceTree = "<group>";
 		};
 		3AB96E291D8FC45200D0114B /* JSPatch */ = {
@@ -1230,6 +1243,7 @@
 				3AD5D3F91D95009500361A1D /* SpreadOrShrinkSectionViewController.m in Sources */,
 				3A2933F71D75783000C44279 /* LocalNotificationViewController.m in Sources */,
 				3A2933ED1D75783000C44279 /* DolinBannerView.m in Sources */,
+				3A7C678B1DEBC4BB00225D28 /* PushTransition.m in Sources */,
 				3A60AC3E1D79527900F81CE8 /* Dowload.m in Sources */,
 				3A60AC091D791CF800F81CE8 /* DolinBaseViewController.m in Sources */,
 				3A60AC351D794ECC00F81CE8 /* RequestManager.m in Sources */,
