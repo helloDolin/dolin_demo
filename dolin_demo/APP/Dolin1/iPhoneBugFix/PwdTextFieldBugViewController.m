@@ -7,8 +7,13 @@
 //
 
 #import "PwdTextFieldBugViewController.h"
+#import "PopTransition.h"
 
-@interface PwdTextFieldBugViewController ()
+@interface PwdTextFieldBugViewController ()<UINavigationControllerDelegate>
+{
+    UIScreenEdgePanGestureRecognizer* _pan;
+    UIPercentDrivenInteractiveTransition* _interaction;
+}
 
 @property(nonatomic,strong)UIButton* btn;
 @property(nonatomic,strong)UITextField* textField;
@@ -24,12 +29,63 @@
         
     [self.view addSubview:self.btn];
     [self.view addSubview:self.textField];
+    
+    _pan = [[UIScreenEdgePanGestureRecognizer alloc]initWithTarget:self action:@selector(panGestureRecognizer:)];
+    _pan.edges = UIRectEdgeLeft;
+    [self.view addGestureRecognizer:_pan];
+    
+    CATransform3D transform = CATransform3DIdentity;
+    transform.m34 = -1/2000.0;
+    self.view.layer.transform = transform;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.navigationController.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - UINavigationControllerDelegate
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
+    //分pop和push两种情况分别返回动画过渡代理相应不同的动画操作
+    if (operation == UINavigationControllerOperationPop) {
+        return [PopTransition new];
+    }
+    return nil;
+}
+
+
+- (void)panGestureRecognizer:(UIScreenEdgePanGestureRecognizer*)sender {
+    CGFloat progress = (-1 * [sender translationInView:sender.view].x) / self.view.width;
+    switch (sender.state) {
+        case UIGestureRecognizerStateBegan:
+            _interaction = [[UIPercentDrivenInteractiveTransition alloc]init];
+            [self.navigationController popViewControllerAnimated:YES];
+            break;
+        case UIGestureRecognizerStateChanged:
+            [_interaction updateInteractiveTransition:progress];
+            break;
+        case UIGestureRecognizerStateEnded:
+        case UIGestureRecognizerStateCancelled:
+        {
+            if (progress >= 0.5) { // 超过半个屏幕
+                [_interaction finishInteractiveTransition];
+            }
+            else {
+                [_interaction cancelInteractiveTransition];
+            }
+            _interaction = nil;
+        }
+        default:
+            break;
+    }
+}
+
+
 
 #pragma mark -  getter 
 - (void)btnAction {
