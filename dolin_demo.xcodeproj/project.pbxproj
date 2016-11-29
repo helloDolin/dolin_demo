@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16C6717A1DEDD9C3000781E1 /* PopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C671791DEDD9C3000781E1 /* PopTransition.m */; };
+		16C6717D1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		16C8D63F1D33511700228ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D63E1D33511700228ABD /* main.m */; };
 		16C8D6421D33511700228ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D6411D33511700228ABD /* AppDelegate.m */; };
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
@@ -130,7 +132,6 @@
 		3A7C692A1DEC0D6800225D28 /* UIImage+RTTint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68911DEC0D6800225D28 /* UIImage+RTTint.m */; };
 		3A7C692B1DEC0D6800225D28 /* UIImage+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68931DEC0D6800225D28 /* UIImage+Screenshot.m */; };
 		3A7C692C1DEC0D6800225D28 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68961DEC0D6800225D28 /* UINavigationBar+Awesome.m */; };
-		3A7C692D1DEC0D6800225D28 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68981DEC0D6800225D28 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		3A7C692E1DEC0D6800225D28 /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C689A1DEC0D6800225D28 /* UITabBar+Badge.m */; };
 		3A7C692F1DEC0D6800225D28 /* UITableView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C689C1DEC0D6800225D28 /* UITableView+Common.m */; };
 		3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C689F1DEC0D6800225D28 /* UIView+Extension.m */; };
@@ -154,6 +155,10 @@
 
 /* Begin PBXFileReference section */
 		163A578A1D33558E003B9609 /* DolinPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DolinPrefix.pch; sourceTree = "<group>"; };
+		16C671781DEDD9C3000781E1 /* PopTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTransition.h; sourceTree = "<group>"; };
+		16C671791DEDD9C3000781E1 /* PopTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTransition.m; sourceTree = "<group>"; };
+		16C6717B1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		16C8D63A1D33511700228ABD /* dolin_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dolin_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C8D63E1D33511700228ABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16C8D6401D33511700228ABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -342,8 +347,6 @@
 		3A7C68941DEC0D6800225D28 /* UIImage-Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Helpers.h"; sourceTree = "<group>"; };
 		3A7C68951DEC0D6800225D28 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
 		3A7C68961DEC0D6800225D28 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
-		3A7C68971DEC0D6800225D28 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
-		3A7C68981DEC0D6800225D28 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		3A7C68991DEC0D6800225D28 /* UITabBar+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Badge.h"; sourceTree = "<group>"; };
 		3A7C689A1DEC0D6800225D28 /* UITabBar+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
 		3A7C689B1DEC0D6800225D28 /* UITableView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Common.h"; sourceTree = "<group>"; };
@@ -905,14 +908,14 @@
 		3A7C68831DEC0D6800225D28 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				16C6717B1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.h */,
+				16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */,
 				3A7C68841DEC0D6800225D28 /* NSString+Version.h */,
 				3A7C68851DEC0D6800225D28 /* NSString+Version.m */,
 				3A7C68861DEC0D6800225D28 /* UIColor */,
 				3A7C68891DEC0D6800225D28 /* UIImage */,
 				3A7C68951DEC0D6800225D28 /* UINavigationBar+Awesome.h */,
 				3A7C68961DEC0D6800225D28 /* UINavigationBar+Awesome.m */,
-				3A7C68971DEC0D6800225D28 /* UINavigationController+FDFullscreenPopGesture.h */,
-				3A7C68981DEC0D6800225D28 /* UINavigationController+FDFullscreenPopGesture.m */,
 				3A7C68991DEC0D6800225D28 /* UITabBar+Badge.h */,
 				3A7C689A1DEC0D6800225D28 /* UITabBar+Badge.m */,
 				3A7C689B1DEC0D6800225D28 /* UITableView+Common.h */,
@@ -979,6 +982,8 @@
 			children = (
 				3A7C68AF1DEC0D6800225D28 /* PushTransition.h */,
 				3A7C68B01DEC0D6800225D28 /* PushTransition.m */,
+				16C671781DEDD9C3000781E1 /* PopTransition.h */,
+				16C671791DEDD9C3000781E1 /* PopTransition.m */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -1225,6 +1230,7 @@
 				3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */,
 				3A7C68B91DEC0D6800225D28 /* DolinLabelViewController.m in Sources */,
 				3A7C68BE1DEC0D6800225D28 /* PlantImgItemUtil.m in Sources */,
+				16C6717A1DEDD9C3000781E1 /* PopTransition.m in Sources */,
 				3A7C69461DEC0E7E00225D28 /* TestWebViewVC.m in Sources */,
 				3A7C68E51DEC0D6800225D28 /* LaunchViewController.m in Sources */,
 				3A7C69361DEC0D6800225D28 /* MMPlaceHolder.m in Sources */,
@@ -1238,7 +1244,6 @@
 				3A7C68D61DEC0D6800225D28 /* Music.m in Sources */,
 				3A7C68DF1DEC0D6800225D28 /* CameraViewController.m in Sources */,
 				3A7C68C61DEC0D6800225D28 /* NSObject+DLRuntime.m in Sources */,
-				3A7C692D1DEC0D6800225D28 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				3A7C69271DEC0D6800225D28 /* UIImage+animatedGIF.m in Sources */,
 				3A7C69201DEC0D6800225D28 /* ImageViewer.m in Sources */,
 				3A7C68D41DEC0D6800225D28 /* UIBezierPathViewController.m in Sources */,
@@ -1271,6 +1276,7 @@
 				3A7C68E31DEC0D6800225D28 /* TitleContainerScrollView.m in Sources */,
 				3A7C68D91DEC0D6800225D28 /* MBFadeAlertView.m in Sources */,
 				3A7C68BF1DEC0D6800225D28 /* GhostAlbumViewController.m in Sources */,
+				16C6717D1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				3A7C68DD1DEC0D6800225D28 /* MusicListCell.m in Sources */,
 				3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */,
 				3A7C69331DEC0D6800225D28 /* UIWindow+Expand.m in Sources */,
