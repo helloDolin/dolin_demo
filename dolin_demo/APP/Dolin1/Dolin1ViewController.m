@@ -58,7 +58,6 @@
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
     // 再次回到这个页面cell选中效果慢慢消失
     NSIndexPath* selectedIndexPath = [self.tableView indexPathForSelectedRow];
     if (selectedIndexPath) {
