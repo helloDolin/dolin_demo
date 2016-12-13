@@ -13,6 +13,7 @@
 		16C8D6421D33511700228ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D6411D33511700228ABD /* AppDelegate.m */; };
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
 		16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */; };
+		3A0806631DFFC73500C162A3 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0806621DFFC73500C162A3 /* Reveal.framework */; };
 		3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */; };
 		3A7C68B21DEC0D6800225D28 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B61DEC0D6800225D28 /* AnimationImagesViewController.m */; };
 		3A7C68B31DEC0D6800225D28 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B81DEC0D6800225D28 /* AnimationLikeBtnViewController.m */; };
@@ -165,6 +166,7 @@
 		16C8D6411D33511700228ABD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		16C8D6491D33511700228ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16C8D64C1D33511700228ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A0806621DFFC73500C162A3 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		3A7C67B11DEC0D6800225D28 /* DolinBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinBaseViewController.h; sourceTree = "<group>"; };
 		3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinBaseViewController.m; sourceTree = "<group>"; };
 		3A7C67B51DEC0D6800225D28 /* AnimationImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationImagesViewController.h; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 			files = (
 				3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */,
 				3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */,
+				3A0806631DFFC73500C162A3 /* Reveal.framework in Frameworks */,
 				4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */,
 				3A7C691B1DEC0D6800225D28 /* JSPatchPlatform.framework in Frameworks */,
 			);
@@ -845,6 +848,7 @@
 		3A7C686C1DEC0D6800225D28 /* ThirdLibs */ = {
 			isa = PBXGroup;
 			children = (
+				3A0806621DFFC73500C162A3 /* Reveal.framework */,
 				3A7C686D1DEC0D6800225D28 /* JSPatch */,
 			);
 			path = ThirdLibs;
@@ -1435,11 +1439,51 @@
 					"$(PROJECT_DIR)/dolin_demo",
 					"$(PROJECT_DIR)/dolin_demo/JSPatch",
 					"$(PROJECT_DIR)/dolin_demo/ThirdLibs/JSPatch",
+					"$(PROJECT_DIR)/dolin_demo/ThirdLibs",
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
 				);
 				GCC_PREFIX_HEADER = "${SRCROOT}/dolin_demo/DolinPrefix.pch";
 				INFOPLIST_FILE = "${SRCROOT}/dolin_demo/DolinInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"LLBootstrapButton\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"YYText\"",
+					"-l\"c++\"",
+					"-l\"pop\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.shaolin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1461,11 +1505,51 @@
 					"$(PROJECT_DIR)/dolin_demo",
 					"$(PROJECT_DIR)/dolin_demo/JSPatch",
 					"$(PROJECT_DIR)/dolin_demo/ThirdLibs/JSPatch",
+					"$(PROJECT_DIR)/dolin_demo/ThirdLibs",
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
 				);
 				GCC_PREFIX_HEADER = "${SRCROOT}/dolin_demo/DolinPrefix.pch";
 				INFOPLIST_FILE = "${SRCROOT}/dolin_demo/DolinInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"LLBootstrapButton\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"YYText\"",
+					"-l\"c++\"",
+					"-l\"pop\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.shaolin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
