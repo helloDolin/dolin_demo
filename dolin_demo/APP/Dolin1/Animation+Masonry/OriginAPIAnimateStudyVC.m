@@ -42,10 +42,42 @@
 }
 
 - (void)leftItemAction {
-//    [self test1];
-    [self test2];
+    [self test3];
 }
 
+// 重复转圈
+- (void)test4 {
+//    frameStartTime
+//    开始指定动画的时间。此值必须在0到1的范围内，其中0表示整个动画的开始，1表示整个动画的结束。例如，对于持续时间为两秒的动画，指定开始时间为0.5会导致动画在整个动画开始后一秒钟开始执行。
+//    frameDuration
+//    动画到指定值的时间长度。此值必须在0到1的范围内，并指示相对于整个动画长度的时间量。如果指定值为0，则在动画块中设置的任何属性都会在指定的开始时间立即更新。如果指定非零值，则属性将在该时间量内生成动画。例如，对于持续时间为两秒的动画，指定持续时间0.5会导致动画持续时间为1秒。
+//    动画
+//    包含要执行的动画的块对象。这是您以编程方式更改视图层次结构中视图的任何可动画属性的位置。此块不使用参数，并且没有返回值。此参数不能为nil。
+    [UIView animateKeyframesWithDuration:2.0
+                                   delay:0.0
+                                 options:UIViewKeyframeAnimationOptionRepeat
+                              animations:^{
+                                  [UIView addKeyframeWithRelativeStartTime:0.0
+                                                          relativeDuration:1/3.0
+                                                                animations:^{
+                                                                    self.view1.transform = CGAffineTransformMakeRotation(1 * M_PI / 3.0);
+                                                                }];
+                                  [UIView addKeyframeWithRelativeStartTime:1/3.0
+                                                          relativeDuration:1/3.0
+                                                                animations:^{
+                                                                    self.view1.transform = CGAffineTransformMakeRotation(2.0 * M_PI / 3.0);
+                                                                }];
+                                  [UIView addKeyframeWithRelativeStartTime:2/3.0
+                                                          relativeDuration:1/3.0
+                                                                animations:^{
+                                                                    self.view1.transform = CGAffineTransformMakeRotation(M_PI);
+                                                                }];
+                                  
+                              }
+                              completion:nil];
+}
+
+// 小飞机动画
 - (void)test3 {
     CGPoint originCenter = self.view1.center;
     /**
@@ -86,6 +118,7 @@
     }];
 }
 
+// 过度动画
 - (void)test2 {
     /**
      *  为指定的容器视图创建一个过渡动画。
@@ -97,6 +130,7 @@
     }];
 }
 
+//
 - (void)test1 {
     
     self.view2.alpha = 0;
@@ -167,6 +201,7 @@
     if (!_view1) {
         _view1 = [[UIImageView alloc]init];
         _view1.backgroundColor = RANDOM_UICOLOR;
+        _view1.image = [UIImage imageNamed:@"twitter_bg"];
     }
     return _view1;
 }
