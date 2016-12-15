@@ -6,6 +6,10 @@
 //  Copyright © 2016年 shaolin. All rights reserved.
 //
 
+// ❤️❤️❤️
+// anchorPoint:动画的支点
+// position:anchorPoint在父view中的point
+
 #import "OriginAPIAnimateStudyVC.h"
 
 @interface OriginAPIAnimateStudyVC ()
@@ -13,6 +17,8 @@
 @property (nonatomic, strong) UIImageView *view1;
 @property (nonatomic, strong) UIImageView *view2;
 @property (nonatomic, strong) UIImageView *view3;
+
+@property (nonatomic, strong) UIView *alwaysRotateView;
 
 @end
 
@@ -42,7 +48,8 @@
 }
 
 - (void)leftItemAction {
-    [self test3];
+    [self test4];
+    [self test1];
 }
 
 // 重复转圈
@@ -53,24 +60,24 @@
 //    动画到指定值的时间长度。此值必须在0到1的范围内，并指示相对于整个动画长度的时间量。如果指定值为0，则在动画块中设置的任何属性都会在指定的开始时间立即更新。如果指定非零值，则属性将在该时间量内生成动画。例如，对于持续时间为两秒的动画，指定持续时间0.5会导致动画持续时间为1秒。
 //    动画
 //    包含要执行的动画的块对象。这是您以编程方式更改视图层次结构中视图的任何可动画属性的位置。此块不使用参数，并且没有返回值。此参数不能为nil。
-    [UIView animateKeyframesWithDuration:2.0
+    [UIView animateKeyframesWithDuration:3.0
                                    delay:0.0
                                  options:UIViewKeyframeAnimationOptionRepeat
                               animations:^{
                                   [UIView addKeyframeWithRelativeStartTime:0.0
                                                           relativeDuration:1/3.0
                                                                 animations:^{
-                                                                    self.view1.transform = CGAffineTransformMakeRotation(1 * M_PI / 3.0);
+                                                                    self.alwaysRotateView.transform = CGAffineTransformMakeRotation(2 * M_PI / 3.0);
                                                                 }];
                                   [UIView addKeyframeWithRelativeStartTime:1/3.0
                                                           relativeDuration:1/3.0
                                                                 animations:^{
-                                                                    self.view1.transform = CGAffineTransformMakeRotation(2.0 * M_PI / 3.0);
+                                                                    self.alwaysRotateView.transform = CGAffineTransformMakeRotation(4 * M_PI / 3.0);
                                                                 }];
                                   [UIView addKeyframeWithRelativeStartTime:2/3.0
                                                           relativeDuration:1/3.0
                                                                 animations:^{
-                                                                    self.view1.transform = CGAffineTransformMakeRotation(M_PI);
+                                                                    self.alwaysRotateView.transform = CGAffineTransformMakeRotation(2 * M_PI);
                                                                 }];
                                   
                               }
@@ -167,6 +174,7 @@
 }
 
 - (void)layoutUI {
+    [self.view addSubview:self.alwaysRotateView];
     [self.view addSubview:self.view1];
     [self.view addSubview:self.view2];
     [self.view addSubview:self.view3];
@@ -197,6 +205,17 @@
 #pragma mark - UITableViewDelegate && UITableViewDataSource
 
 #pragma mark - getter && setter
+- (UIView*)alwaysRotateView {
+    if (!_alwaysRotateView) {
+        _alwaysRotateView = [[UIView alloc]init];
+        _alwaysRotateView.backgroundColor = RANDOM_UICOLOR;
+        _alwaysRotateView.frame = CGRectMake(0, 0, 100, 100);
+        _alwaysRotateView.layer.position = CGPointMake((SCREEN_WIDTH - 100) / 2, 100 + 64 );
+        _alwaysRotateView.layer.anchorPoint = CGPointMake(0, 0);
+    }
+    return _alwaysRotateView;
+}
+
 - (UIImageView*)view1 {
     if (!_view1) {
         _view1 = [[UIImageView alloc]init];
