@@ -8,7 +8,7 @@
 
 #import "AnimationLikeBtnViewController.h"
 
-@interface AnimationLikeBtnViewController ()
+@interface AnimationLikeBtnViewController ()<CAAnimationDelegate>
 
 @property(nonatomic,strong)UIButton* likeBtn;
 
@@ -34,14 +34,16 @@
     
     
     [self shakeToShow:self.likeBtn];
-    // 动画核心代码
-//    CAKeyframeAnimation *cAKeyframeAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
-//    cAKeyframeAnimation.values = @[@(0.1),@(1.0),@(1.5)];
-//    cAKeyframeAnimation.keyTimes = @[@(0.0),@(0.5),@(0.8),@(1.0)];
-//    cAKeyframeAnimation.calculationMode = kCAAnimationLinear;
-//    [self.likeBtn.layer addAnimation:cAKeyframeAnimation forKey:@"SHOW"];
+
+}
+#pragma mark - CAAnimationDelegate
+- (void)animationDidStart:(CAAnimation *)anim {
+    
 }
 
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    
+}
 
 /**
  仿支付宝，点击二维码放大动画效果
@@ -53,6 +55,7 @@
  */
 - (void) shakeToShow:(UIView*)aView{
     CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    animation.delegate = self;
     animation.duration = 0.5;
     NSMutableArray *values = [NSMutableArray array];
     [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.1, 0.1, 1.0)]];

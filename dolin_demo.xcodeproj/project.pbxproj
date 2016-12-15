@@ -148,6 +148,8 @@
 		3A7C69451DEC0E7E00225D28 /* StrangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C693D1DEC0E7E00225D28 /* StrangeTableViewCell.xib */; };
 		3A7C69461DEC0E7E00225D28 /* TestWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C69401DEC0E7E00225D28 /* TestWebViewVC.m */; };
 		3A7C69471DEC0E7E00225D28 /* TestWKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */; };
+		3AB459BE1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB459BD1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.m */; };
+		3AB459C41E02419000D8AA86 /* README_animate.md in Sources */ = {isa = PBXBuildFile; fileRef = 3AB459C31E02419000D8AA86 /* README_animate.md */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
 		3AE180EB1DB70F0600E8A1FA /* DolinInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AE180EA1DB70F0600E8A1FA /* DolinInfo.plist */; };
@@ -381,6 +383,9 @@
 		3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWKWebViewVC.m; sourceTree = "<group>"; };
 		3A875A741DBF074D002A3F24 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3A98B2051DBF08B900CADF29 /* dolin_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dolin_demo.entitlements; sourceTree = "<group>"; };
+		3AB459BC1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginAPIAnimateStudyVC.h; sourceTree = "<group>"; };
+		3AB459BD1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginAPIAnimateStudyVC.m; sourceTree = "<group>"; };
+		3AB459C31E02419000D8AA86 /* README_animate.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README_animate.md; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		3AE180EA1DB70F0600E8A1FA /* DolinInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DolinInfo.plist; sourceTree = "<group>"; };
@@ -509,6 +514,9 @@
 				3A7C67BA1DEC0D6800225D28 /* AnimationStudyVC.m */,
 				3A7C67BB1DEC0D6800225D28 /* CGAffineTransformStudy_VC.h */,
 				3A7C67BC1DEC0D6800225D28 /* CGAffineTransformStudy_VC.m */,
+				3AB459BC1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.h */,
+				3AB459BD1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.m */,
+				3AB459C31E02419000D8AA86 /* README_animate.md */,
 			);
 			path = "Animation+Masonry";
 			sourceTree = "<group>";
@@ -1289,6 +1297,7 @@
 				3A7C68DC1DEC0D6800225D28 /* PlayMusicViewController.m in Sources */,
 				3A7C68B21DEC0D6800225D28 /* AnimationImagesViewController.m in Sources */,
 				3A7C69241DEC0D6800225D28 /* YYWeakProxy.m in Sources */,
+				3AB459BE1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.m in Sources */,
 				3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */,
 				3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */,
 				3A7C692C1DEC0D6800225D28 /* UINavigationBar+Awesome.m in Sources */,
@@ -1307,6 +1316,7 @@
 				3A7C68C91DEC0D6800225D28 /* UIImage+DLRuntime.m in Sources */,
 				3A7C68DA1DEC0D6800225D28 /* PlayManager.m in Sources */,
 				3A7C69251DEC0D6800225D28 /* NSString+Version.m in Sources */,
+				3AB459C41E02419000D8AA86 /* README_animate.md in Sources */,
 				3A7C68C51DEC0D6800225D28 /* ChangeDeviceOrientVC.m in Sources */,
 				3A7C69341DEC0D6800225D28 /* DolinConstant.m in Sources */,
 				3A7C68CF1DEC0D6800225D28 /* SimulateTwitterView.m in Sources */,
