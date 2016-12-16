@@ -82,25 +82,10 @@
  @param cell
  */
 - (void)animateCell:(UITableViewCell*)cell {
-    static const CGFloat value = (90.0 * M_PI) / 180.0;
-    CATransform3D ca3d = CATransform3DMakeRotation(value, 0.0, 0.7, 0.4);
-    ca3d.m34 = 1.0 / -600;
-    
-    cell.layer.shadowColor = [[UIColor blackColor]CGColor];
-    cell.layer.shadowOffset = CGSizeMake(10, 10);
-    cell.alpha = 0;
-    cell.layer.transform = ca3d;
-    cell.layer.anchorPoint = CGPointMake(0, 0.5);
-    
-    if(cell.layer.position.x != 0){
-        cell.layer.position = CGPointMake(0, cell.layer.position.y);
-    }
-    [UIView animateWithDuration:0.8 animations:^{
-        cell.layer.transform = CATransform3DIdentity;
-        cell.alpha = 1;
-        cell.layer.shadowOffset = CGSizeMake(0, 0);
-    }];
-    
+    cell.transform = CGAffineTransformMakeScale(0.5, 0.5);
+    [UIView animateWithDuration:1 delay:0.6 usingSpringWithDamping:0.1 initialSpringVelocity:5 options:UIViewAnimationOptionLayoutSubviews animations:^{
+        cell.transform = CGAffineTransformIdentity;
+    } completion:nil];
 }
 
 // 可惜这种方式只能下拉刷新，不能上拉加载
@@ -194,7 +179,7 @@
 // 闭合cell分割线需要实现此协议
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    [self animateCell:cell];
+    [self animateCell:cell];
     
     
     if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
