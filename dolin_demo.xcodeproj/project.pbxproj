@@ -14,6 +14,7 @@
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
 		16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */; };
 		3A0806631DFFC73500C162A3 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0806621DFFC73500C162A3 /* Reveal.framework */; };
+		3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CF2621E03BD3700CAF8F6 /* UIImage+DLRoundImg.m */; };
 		3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */; };
 		3A7C68B21DEC0D6800225D28 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B61DEC0D6800225D28 /* AnimationImagesViewController.m */; };
 		3A7C68B31DEC0D6800225D28 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B81DEC0D6800225D28 /* AnimationLikeBtnViewController.m */; };
@@ -169,6 +170,8 @@
 		16C8D6491D33511700228ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16C8D64C1D33511700228ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0806621DFFC73500C162A3 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		3A5CF2611E03BD3700CAF8F6 /* UIImage+DLRoundImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DLRoundImg.h"; sourceTree = "<group>"; };
+		3A5CF2621E03BD3700CAF8F6 /* UIImage+DLRoundImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DLRoundImg.m"; sourceTree = "<group>"; };
 		3A7C67B11DEC0D6800225D28 /* DolinBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinBaseViewController.h; sourceTree = "<group>"; };
 		3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinBaseViewController.m; sourceTree = "<group>"; };
 		3A7C67B51DEC0D6800225D28 /* AnimationImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationImagesViewController.h; sourceTree = "<group>"; };
@@ -951,6 +954,8 @@
 		3A7C68891DEC0D6800225D28 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				3A5CF2611E03BD3700CAF8F6 /* UIImage+DLRoundImg.h */,
+				3A5CF2621E03BD3700CAF8F6 /* UIImage+DLRoundImg.m */,
 				3A7C688A1DEC0D6800225D28 /* UIImage+animatedGIF.h */,
 				3A7C688B1DEC0D6800225D28 /* UIImage+animatedGIF.m */,
 				3A7C688C1DEC0D6800225D28 /* UIImage+Blur.h */,
@@ -1290,6 +1295,7 @@
 				3A7C68BF1DEC0D6800225D28 /* GhostAlbumViewController.m in Sources */,
 				16C6717D1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				3A7C68DD1DEC0D6800225D28 /* MusicListCell.m in Sources */,
+				3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */,
 				3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */,
 				3A7C69331DEC0D6800225D28 /* UIWindow+Expand.m in Sources */,
 				3A7C69281DEC0D6800225D28 /* UIImage+Blur.m in Sources */,
