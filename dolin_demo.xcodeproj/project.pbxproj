@@ -402,11 +402,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7C691B1DEC0D6800225D28 /* JSPatchPlatform.framework in Frameworks */,
 				3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */,
 				3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */,
 				3A0806631DFFC73500C162A3 /* Reveal.framework in Frameworks */,
 				4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */,
-				3A7C691B1DEC0D6800225D28 /* JSPatchPlatform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1450,6 +1450,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 35P2C5J2YM;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/dolin_demo",
@@ -1516,6 +1517,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 35P2C5J2YM;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/dolin_demo",
