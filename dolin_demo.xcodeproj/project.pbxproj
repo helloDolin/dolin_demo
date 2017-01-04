@@ -153,6 +153,8 @@
 		3AB459C41E02419000D8AA86 /* README_animate.md in Sources */ = {isa = PBXBuildFile; fileRef = 3AB459C31E02419000D8AA86 /* README_animate.md */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
+		3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */; };
+		3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */; };
 		3AE180EB1DB70F0600E8A1FA /* DolinInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AE180EA1DB70F0600E8A1FA /* DolinInfo.plist */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
@@ -391,6 +393,10 @@
 		3AB459C31E02419000D8AA86 /* README_animate.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README_animate.md; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		3AC533C81E1CF8DE00FE560E /* UIView+Explode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Explode.h"; sourceTree = "<group>"; };
+		3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Explode.m"; sourceTree = "<group>"; };
+		3AC533CC1E1CF92300FE560E /* UIButton+DLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DLButton.h"; sourceTree = "<group>"; };
+		3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DLButton.m"; sourceTree = "<group>"; };
 		3AE180EA1DB70F0600E8A1FA /* DolinInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DolinInfo.plist; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -923,19 +929,20 @@
 		3A7C68831DEC0D6800225D28 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				3A7C689D1DEC0D6800225D28 /* UIView */,
+				3A7C68891DEC0D6800225D28 /* UIImage */,
+				3A7C68861DEC0D6800225D28 /* UIColor */,
+				3AC533CB1E1CF92300FE560E /* DLButton */,
 				16C6717B1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.h */,
 				16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */,
 				3A7C68841DEC0D6800225D28 /* NSString+Version.h */,
 				3A7C68851DEC0D6800225D28 /* NSString+Version.m */,
-				3A7C68861DEC0D6800225D28 /* UIColor */,
-				3A7C68891DEC0D6800225D28 /* UIImage */,
 				3A7C68951DEC0D6800225D28 /* UINavigationBar+Awesome.h */,
 				3A7C68961DEC0D6800225D28 /* UINavigationBar+Awesome.m */,
 				3A7C68991DEC0D6800225D28 /* UITabBar+Badge.h */,
 				3A7C689A1DEC0D6800225D28 /* UITabBar+Badge.m */,
 				3A7C689B1DEC0D6800225D28 /* UITableView+Common.h */,
 				3A7C689C1DEC0D6800225D28 /* UITableView+Common.m */,
-				3A7C689D1DEC0D6800225D28 /* UIView */,
 				3A7C68A41DEC0D6800225D28 /* UIWindow+Expand.h */,
 				3A7C68A51DEC0D6800225D28 /* UIWindow+Expand.m */,
 			);
@@ -974,6 +981,8 @@
 		3A7C689D1DEC0D6800225D28 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				3AC533C81E1CF8DE00FE560E /* UIView+Explode.h */,
+				3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */,
 				3A7C689E1DEC0D6800225D28 /* UIView+Extension.h */,
 				3A7C689F1DEC0D6800225D28 /* UIView+Extension.m */,
 				3A7C68A01DEC0D6800225D28 /* UIView+LJC.h */,
@@ -1026,6 +1035,15 @@
 				3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */,
 			);
 			path = WebViewVC;
+			sourceTree = "<group>";
+		};
+		3AC533CB1E1CF92300FE560E /* DLButton */ = {
+			isa = PBXGroup;
+			children = (
+				3AC533CC1E1CF92300FE560E /* UIButton+DLButton.h */,
+				3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */,
+			);
+			path = DLButton;
 			sourceTree = "<group>";
 		};
 		96B6CFAEDF4D3AF27BC73BDB /* Frameworks */ = {
@@ -1259,6 +1277,7 @@
 				3A7C68E41DEC0D6800225D28 /* DolinTabBarController.m in Sources */,
 				3A7C68D81DEC0D6800225D28 /* ExpandClickAreaButton.m in Sources */,
 				3A7C68D61DEC0D6800225D28 /* Music.m in Sources */,
+				3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */,
 				3A7C68DF1DEC0D6800225D28 /* CameraViewController.m in Sources */,
 				3A7C68C61DEC0D6800225D28 /* NSObject+DLRuntime.m in Sources */,
 				3A7C69271DEC0D6800225D28 /* UIImage+animatedGIF.m in Sources */,
@@ -1298,6 +1317,7 @@
 				3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */,
 				3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */,
 				3A7C69331DEC0D6800225D28 /* UIWindow+Expand.m in Sources */,
+				3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */,
 				3A7C69281DEC0D6800225D28 /* UIImage+Blur.m in Sources */,
 				3A7C68B71DEC0D6800225D28 /* DolinBannerView.m in Sources */,
 				3A7C68DC1DEC0D6800225D28 /* PlayMusicViewController.m in Sources */,
