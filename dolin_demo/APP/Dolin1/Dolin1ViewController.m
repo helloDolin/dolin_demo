@@ -35,26 +35,22 @@
     [self setRightBarBtn];
 
     self.arr = [@[
-                  @"原生动画API_study-OriginAPIAnimateStudyVC",
-                  GET_STR(Banner-BannerViewController),
+                  @"动画相关-Animation_Study_VC",
+                  @"AutoLayout+Scroll-AutoLayout_ScrollViewVC",
                   @"仿Twitter-SimulateTwitterViewController",
-                  @"苹果密码框bug-PwdTextFieldBugViewController",
-                  @"AnimationImages-AnimationImagesViewController",
-                  @"点赞动画-AnimationLikeBtnViewController",
-                  @"section展开收缩-SpreadOrShrinkSectionViewController",
                   @"仿keep引导页-SimulateKeepViewController",
+                  GET_STR(Banner-BannerViewController),
+                  @"苹果密码框bug-PwdTextFieldBugViewController",
                   @"本地推送-LocalNotificationViewController",
                   @"UIScrollView奇技淫巧-StrangeScorllViewController",
                   @"自定义Label-DolinLabelViewController",
                   @"鬼相册-GhostAlbumViewController",
-                  @"动画+Masonry学习-AnimationStudyVC",
                   @"禁用旋转时全屏横屏方法-ChangeDeviceOrientVC",
                   @"贝塞尔先生-UIBezierPathViewController",
-                  @"CGAffineTransformStudy-CGAffineTransformStudy_VC",
                   @"富文本-RichTextViewController",
                   @"runtime-RunTimeStudy_VC",
                   @"TestWebView-TestWebViewVC",
-                  @"TestWKWebViewVC-TestWKWebViewVC"
+                  @"TestWKWebViewVC-TestWKWebViewVC",
                   ]mutableCopy];
 }
 - (void)viewWillAppear:(BOOL)animated {
