@@ -24,7 +24,6 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self masonryStudy];
     [self animationStudy];
 }
 
@@ -87,66 +86,8 @@
     
     [bottomView distributeSpacingHorizontallyWith:@[btn1,btn2,btn3]];
     [bottomView showPlaceHolderWithAllSubviews];
-    [bottomView hidePlaceHolder];
+//    [bottomView hidePlaceHolderWithAllSubviews];
     
-}
-
-- (void)masonryStudy {
-    UIView *sv = [UIView new];
-    sv.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:sv];
-    [sv mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.view).offset(64);
-        make.centerX.equalTo(self.view.mas_centerX);
-        make.size.mas_equalTo(CGSizeMake(300, 300));
-    }];
-    
-    UIScrollView *scrollView = [UIScrollView new];
-    scrollView.backgroundColor = [UIColor whiteColor];
-    [sv addSubview:scrollView];
-    [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(sv).with.insets(UIEdgeInsetsMake(5,5,5,5));
-    }];
-    
-    UIView *container = [UIView new];
-    [scrollView addSubview:container];
-    [container mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(scrollView);
-        make.width.equalTo(scrollView);
-    }];
-    
-    int count = 10;
-    
-    UIView *lastView = nil;
-    
-    for ( int i = 1 ; i <= count ; ++i )
-    {
-        UIView *subv = [UIView new];
-        [container addSubview:subv];
-        subv.backgroundColor = RANDOM_UICOLOR;
-        
-        [subv mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.and.right.equalTo(container);
-            make.height.mas_equalTo(@(20*i));
-            
-            if ( lastView )
-            {
-                make.top.mas_equalTo(lastView.mas_bottom);
-            }
-            else
-            {
-                make.top.mas_equalTo(container.mas_top);
-            }
-        }];
-        
-        lastView = subv;
-    }
-    
-    // container这个view起到了一个中间层的作用 能够自动的计算uiscrollView的contentSize
-    [container mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(lastView.mas_bottom);
-    }];
-
 }
 
 - (void)animate0 {

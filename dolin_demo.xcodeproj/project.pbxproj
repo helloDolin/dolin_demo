@@ -14,12 +14,18 @@
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
 		16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */; };
 		3A0806631DFFC73500C162A3 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0806621DFFC73500C162A3 /* Reveal.framework */; };
+		3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4761E1E55090036DE63 /* AnimationImagesViewController.m */; };
+		3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4781E1E55090036DE63 /* AnimationLikeBtnViewController.m */; };
+		3A38F4821E1E55090036DE63 /* AnimationStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F47A1E1E55090036DE63 /* AnimationStudyVC.m */; };
+		3A38F4831E1E55090036DE63 /* CGAffineTransformStudy_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F47C1E1E55090036DE63 /* CGAffineTransformStudy_VC.m */; };
+		3A38F4841E1E55090036DE63 /* OriginAPIAnimateStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F47E1E1E55090036DE63 /* OriginAPIAnimateStudyVC.m */; };
+		3A38F4851E1E55090036DE63 /* README_animate.md in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F47F1E1E55090036DE63 /* README_animate.md */; };
+		3A38F48C1E1E55350036DE63 /* AutoLayout_ScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4881E1E55350036DE63 /* AutoLayout_ScrollViewVC.m */; };
+		3A38F48D1E1E55350036DE63 /* ScrollBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F48A1E1E55350036DE63 /* ScrollBoxView.m */; };
+		3A38F48E1E1E55350036DE63 /* ScrollBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A38F48B1E1E55350036DE63 /* ScrollBoxView.xib */; };
+		3A38F4911E1E558D0036DE63 /* Animation_Study_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4901E1E558D0036DE63 /* Animation_Study_VC.m */; };
 		3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CF2621E03BD3700CAF8F6 /* UIImage+DLRoundImg.m */; };
 		3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */; };
-		3A7C68B21DEC0D6800225D28 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B61DEC0D6800225D28 /* AnimationImagesViewController.m */; };
-		3A7C68B31DEC0D6800225D28 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B81DEC0D6800225D28 /* AnimationLikeBtnViewController.m */; };
-		3A7C68B41DEC0D6800225D28 /* AnimationStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67BA1DEC0D6800225D28 /* AnimationStudyVC.m */; };
-		3A7C68B51DEC0D6800225D28 /* CGAffineTransformStudy_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67BC1DEC0D6800225D28 /* CGAffineTransformStudy_VC.m */; };
 		3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67BF1DEC0D6800225D28 /* BannerViewController.m */; };
 		3A7C68B71DEC0D6800225D28 /* DolinBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67C11DEC0D6800225D28 /* DolinBannerView.m */; };
 		3A7C68B81DEC0D6800225D28 /* DolinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67C41DEC0D6800225D28 /* DolinLabel.m */; };
@@ -149,8 +155,6 @@
 		3A7C69451DEC0E7E00225D28 /* StrangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C693D1DEC0E7E00225D28 /* StrangeTableViewCell.xib */; };
 		3A7C69461DEC0E7E00225D28 /* TestWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C69401DEC0E7E00225D28 /* TestWebViewVC.m */; };
 		3A7C69471DEC0E7E00225D28 /* TestWKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */; };
-		3AB459BE1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB459BD1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.m */; };
-		3AB459C41E02419000D8AA86 /* README_animate.md in Sources */ = {isa = PBXBuildFile; fileRef = 3AB459C31E02419000D8AA86 /* README_animate.md */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
 		3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */; };
@@ -172,18 +176,28 @@
 		16C8D6491D33511700228ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16C8D64C1D33511700228ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0806621DFFC73500C162A3 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		3A38F4751E1E55090036DE63 /* AnimationImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationImagesViewController.h; sourceTree = "<group>"; };
+		3A38F4761E1E55090036DE63 /* AnimationImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationImagesViewController.m; sourceTree = "<group>"; };
+		3A38F4771E1E55090036DE63 /* AnimationLikeBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLikeBtnViewController.h; sourceTree = "<group>"; };
+		3A38F4781E1E55090036DE63 /* AnimationLikeBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLikeBtnViewController.m; sourceTree = "<group>"; };
+		3A38F4791E1E55090036DE63 /* AnimationStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationStudyVC.h; sourceTree = "<group>"; };
+		3A38F47A1E1E55090036DE63 /* AnimationStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationStudyVC.m; sourceTree = "<group>"; };
+		3A38F47B1E1E55090036DE63 /* CGAffineTransformStudy_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAffineTransformStudy_VC.h; sourceTree = "<group>"; };
+		3A38F47C1E1E55090036DE63 /* CGAffineTransformStudy_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAffineTransformStudy_VC.m; sourceTree = "<group>"; };
+		3A38F47D1E1E55090036DE63 /* OriginAPIAnimateStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginAPIAnimateStudyVC.h; sourceTree = "<group>"; };
+		3A38F47E1E1E55090036DE63 /* OriginAPIAnimateStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginAPIAnimateStudyVC.m; sourceTree = "<group>"; };
+		3A38F47F1E1E55090036DE63 /* README_animate.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README_animate.md; sourceTree = "<group>"; };
+		3A38F4871E1E55350036DE63 /* AutoLayout_ScrollViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayout_ScrollViewVC.h; sourceTree = "<group>"; };
+		3A38F4881E1E55350036DE63 /* AutoLayout_ScrollViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayout_ScrollViewVC.m; sourceTree = "<group>"; };
+		3A38F4891E1E55350036DE63 /* ScrollBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollBoxView.h; sourceTree = "<group>"; };
+		3A38F48A1E1E55350036DE63 /* ScrollBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollBoxView.m; sourceTree = "<group>"; };
+		3A38F48B1E1E55350036DE63 /* ScrollBoxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollBoxView.xib; sourceTree = "<group>"; };
+		3A38F48F1E1E558D0036DE63 /* Animation_Study_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation_Study_VC.h; sourceTree = "<group>"; };
+		3A38F4901E1E558D0036DE63 /* Animation_Study_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation_Study_VC.m; sourceTree = "<group>"; };
 		3A5CF2611E03BD3700CAF8F6 /* UIImage+DLRoundImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DLRoundImg.h"; sourceTree = "<group>"; };
 		3A5CF2621E03BD3700CAF8F6 /* UIImage+DLRoundImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DLRoundImg.m"; sourceTree = "<group>"; };
 		3A7C67B11DEC0D6800225D28 /* DolinBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinBaseViewController.h; sourceTree = "<group>"; };
 		3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinBaseViewController.m; sourceTree = "<group>"; };
-		3A7C67B51DEC0D6800225D28 /* AnimationImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationImagesViewController.h; sourceTree = "<group>"; };
-		3A7C67B61DEC0D6800225D28 /* AnimationImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationImagesViewController.m; sourceTree = "<group>"; };
-		3A7C67B71DEC0D6800225D28 /* AnimationLikeBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLikeBtnViewController.h; sourceTree = "<group>"; };
-		3A7C67B81DEC0D6800225D28 /* AnimationLikeBtnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLikeBtnViewController.m; sourceTree = "<group>"; };
-		3A7C67B91DEC0D6800225D28 /* AnimationStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationStudyVC.h; sourceTree = "<group>"; };
-		3A7C67BA1DEC0D6800225D28 /* AnimationStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationStudyVC.m; sourceTree = "<group>"; };
-		3A7C67BB1DEC0D6800225D28 /* CGAffineTransformStudy_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAffineTransformStudy_VC.h; sourceTree = "<group>"; };
-		3A7C67BC1DEC0D6800225D28 /* CGAffineTransformStudy_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAffineTransformStudy_VC.m; sourceTree = "<group>"; };
 		3A7C67BE1DEC0D6800225D28 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		3A7C67BF1DEC0D6800225D28 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		3A7C67C01DEC0D6800225D28 /* DolinBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinBannerView.h; sourceTree = "<group>"; };
@@ -388,9 +402,6 @@
 		3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWKWebViewVC.m; sourceTree = "<group>"; };
 		3A875A741DBF074D002A3F24 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3A98B2051DBF08B900CADF29 /* dolin_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dolin_demo.entitlements; sourceTree = "<group>"; };
-		3AB459BC1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginAPIAnimateStudyVC.h; sourceTree = "<group>"; };
-		3AB459BD1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginAPIAnimateStudyVC.m; sourceTree = "<group>"; };
-		3AB459C31E02419000D8AA86 /* README_animate.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README_animate.md; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		3AC533C81E1CF8DE00FE560E /* UIView+Explode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Explode.h"; sourceTree = "<group>"; };
@@ -464,6 +475,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3A38F4741E1E55090036DE63 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				3A38F48F1E1E558D0036DE63 /* Animation_Study_VC.h */,
+				3A38F4901E1E558D0036DE63 /* Animation_Study_VC.m */,
+				3A38F4751E1E55090036DE63 /* AnimationImagesViewController.h */,
+				3A38F4761E1E55090036DE63 /* AnimationImagesViewController.m */,
+				3A38F4771E1E55090036DE63 /* AnimationLikeBtnViewController.h */,
+				3A38F4781E1E55090036DE63 /* AnimationLikeBtnViewController.m */,
+				3A38F4791E1E55090036DE63 /* AnimationStudyVC.h */,
+				3A38F47A1E1E55090036DE63 /* AnimationStudyVC.m */,
+				3A38F47B1E1E55090036DE63 /* CGAffineTransformStudy_VC.h */,
+				3A38F47C1E1E55090036DE63 /* CGAffineTransformStudy_VC.m */,
+				3A38F47D1E1E55090036DE63 /* OriginAPIAnimateStudyVC.h */,
+				3A38F47E1E1E55090036DE63 /* OriginAPIAnimateStudyVC.m */,
+				3A38F47F1E1E55090036DE63 /* README_animate.md */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		3A38F4861E1E55350036DE63 /* AutoLayout+Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				3A38F4871E1E55350036DE63 /* AutoLayout_ScrollViewVC.h */,
+				3A38F4881E1E55350036DE63 /* AutoLayout_ScrollViewVC.m */,
+				3A38F4891E1E55350036DE63 /* ScrollBoxView.h */,
+				3A38F48A1E1E55350036DE63 /* ScrollBoxView.m */,
+				3A38F48B1E1E55350036DE63 /* ScrollBoxView.xib */,
+			);
+			path = "AutoLayout+Masonry";
+			sourceTree = "<group>";
+		};
 		3A7C67AF1DEC0D6700225D28 /* APP */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,9 +536,10 @@
 			children = (
 				3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */,
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
+				3A38F4741E1E55090036DE63 /* Animation */,
+				3A38F4861E1E55350036DE63 /* AutoLayout+Masonry */,
 				3A7C69381DEC0E7E00225D28 /* SimulatePhoneMessage */,
 				3A7C693E1DEC0E7E00225D28 /* WebViewVC */,
-				3A7C67B41DEC0D6800225D28 /* Animation+Masonry */,
 				3A7C67BD1DEC0D6800225D28 /* Banner */,
 				3A7C67C21DEC0D6800225D28 /* CustomLabel */,
 				3A7C67C91DEC0D6800225D28 /* GhostAlbum */,
@@ -510,24 +554,6 @@
 				3A7C68021DEC0D6800225D28 /* UIBezierPath_Study */,
 			);
 			path = Dolin1;
-			sourceTree = "<group>";
-		};
-		3A7C67B41DEC0D6800225D28 /* Animation+Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				3A7C67B51DEC0D6800225D28 /* AnimationImagesViewController.h */,
-				3A7C67B61DEC0D6800225D28 /* AnimationImagesViewController.m */,
-				3A7C67B71DEC0D6800225D28 /* AnimationLikeBtnViewController.h */,
-				3A7C67B81DEC0D6800225D28 /* AnimationLikeBtnViewController.m */,
-				3A7C67B91DEC0D6800225D28 /* AnimationStudyVC.h */,
-				3A7C67BA1DEC0D6800225D28 /* AnimationStudyVC.m */,
-				3A7C67BB1DEC0D6800225D28 /* CGAffineTransformStudy_VC.h */,
-				3A7C67BC1DEC0D6800225D28 /* CGAffineTransformStudy_VC.m */,
-				3AB459BC1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.h */,
-				3AB459BD1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.m */,
-				3AB459C31E02419000D8AA86 /* README_animate.md */,
-			);
-			path = "Animation+Masonry";
 			sourceTree = "<group>";
 		};
 		3A7C67BD1DEC0D6800225D28 /* Banner */ = {
@@ -1197,6 +1223,7 @@
 				3A7C68EA1DEC0D6800225D28 /* 123@3x.png in Resources */,
 				3A7C68FC1DEC0D6800225D28 /* cm2_list_icn_play@3x.png in Resources */,
 				16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */,
+				3A38F48E1E1E55350036DE63 /* ScrollBoxView.xib in Resources */,
 				3A7C68EC1DEC0D6800225D28 /* A.jpg in Resources */,
 				3A7C690E1DEC0D6800225D28 /* cm2_topbar_icn_share@3x.png in Resources */,
 				3A7C69131DEC0D6800225D28 /* cm2_vol_btn@3x.png in Resources */,
@@ -1264,6 +1291,7 @@
 				3A7C691F1DEC0D6800225D28 /* BasePictureTableView.m in Sources */,
 				3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */,
 				3A7C68B91DEC0D6800225D28 /* DolinLabelViewController.m in Sources */,
+				3A38F4821E1E55090036DE63 /* AnimationStudyVC.m in Sources */,
 				3A7C68BE1DEC0D6800225D28 /* PlantImgItemUtil.m in Sources */,
 				16C6717A1DEDD9C3000781E1 /* PopTransition.m in Sources */,
 				3A7C69461DEC0E7E00225D28 /* TestWebViewVC.m in Sources */,
@@ -1276,22 +1304,22 @@
 				3A7C692A1DEC0D6800225D28 /* UIImage+RTTint.m in Sources */,
 				3A7C68E41DEC0D6800225D28 /* DolinTabBarController.m in Sources */,
 				3A7C68D81DEC0D6800225D28 /* ExpandClickAreaButton.m in Sources */,
+				3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */,
 				3A7C68D61DEC0D6800225D28 /* Music.m in Sources */,
 				3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */,
 				3A7C68DF1DEC0D6800225D28 /* CameraViewController.m in Sources */,
 				3A7C68C61DEC0D6800225D28 /* NSObject+DLRuntime.m in Sources */,
+				3A38F4841E1E55090036DE63 /* OriginAPIAnimateStudyVC.m in Sources */,
 				3A7C69271DEC0D6800225D28 /* UIImage+animatedGIF.m in Sources */,
+				3A38F4911E1E558D0036DE63 /* Animation_Study_VC.m in Sources */,
 				3A7C69201DEC0D6800225D28 /* ImageViewer.m in Sources */,
 				3A7C68D41DEC0D6800225D28 /* UIBezierPathViewController.m in Sources */,
 				3A7C69311DEC0D6800225D28 /* UIView+LJC.m in Sources */,
-				3A7C68B51DEC0D6800225D28 /* CGAffineTransformStudy_VC.m in Sources */,
-				3A7C68B41DEC0D6800225D28 /* AnimationStudyVC.m in Sources */,
 				3A7C68E11DEC0D6800225D28 /* SheViewController.m in Sources */,
 				3A7C691D1DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
 				3A7C68C31DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.m in Sources */,
 				3A7C68C21DEC0D6800225D28 /* LocalNotificationViewController.m in Sources */,
 				3A7C692F1DEC0D6800225D28 /* UITableView+Common.m in Sources */,
-				3A7C68B31DEC0D6800225D28 /* AnimationLikeBtnViewController.m in Sources */,
 				3A7C69441DEC0E7E00225D28 /* StrangeTableViewCell.m in Sources */,
 				3A7C692E1DEC0D6800225D28 /* UITabBar+Badge.m in Sources */,
 				3A7C68D31DEC0D6800225D28 /* BezierPathView.m in Sources */,
@@ -1302,6 +1330,7 @@
 				3A7C69261DEC0D6800225D28 /* UIColor+ColorUtility.m in Sources */,
 				3A7C68C81DEC0D6800225D28 /* RunTimeStudy_VC.m in Sources */,
 				3A7C68C71DEC0D6800225D28 /* Runtime_Test.m in Sources */,
+				3A38F4851E1E55090036DE63 /* README_animate.md in Sources */,
 				3A7C68D01DEC0D6800225D28 /* SimulateTwitterViewController.m in Sources */,
 				3A7C69221DEC0D6800225D28 /* PhotoTableView.m in Sources */,
 				3A7C68C01DEC0D6800225D28 /* LeftAlignedFlowLayout.m in Sources */,
@@ -1321,10 +1350,10 @@
 				3A7C69281DEC0D6800225D28 /* UIImage+Blur.m in Sources */,
 				3A7C68B71DEC0D6800225D28 /* DolinBannerView.m in Sources */,
 				3A7C68DC1DEC0D6800225D28 /* PlayMusicViewController.m in Sources */,
-				3A7C68B21DEC0D6800225D28 /* AnimationImagesViewController.m in Sources */,
 				3A7C69241DEC0D6800225D28 /* YYWeakProxy.m in Sources */,
-				3AB459BE1E014F5C00D8AA86 /* OriginAPIAnimateStudyVC.m in Sources */,
+				3A38F4831E1E55090036DE63 /* CGAffineTransformStudy_VC.m in Sources */,
 				3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */,
+				3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */,
 				3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */,
 				3A7C692C1DEC0D6800225D28 /* UINavigationBar+Awesome.m in Sources */,
 				3A7C68DB1DEC0D6800225D28 /* RequestManager.m in Sources */,
@@ -1342,8 +1371,9 @@
 				3A7C68C91DEC0D6800225D28 /* UIImage+DLRuntime.m in Sources */,
 				3A7C68DA1DEC0D6800225D28 /* PlayManager.m in Sources */,
 				3A7C69251DEC0D6800225D28 /* NSString+Version.m in Sources */,
-				3AB459C41E02419000D8AA86 /* README_animate.md in Sources */,
 				3A7C68C51DEC0D6800225D28 /* ChangeDeviceOrientVC.m in Sources */,
+				3A38F48D1E1E55350036DE63 /* ScrollBoxView.m in Sources */,
+				3A38F48C1E1E55350036DE63 /* AutoLayout_ScrollViewVC.m in Sources */,
 				3A7C69341DEC0D6800225D28 /* DolinConstant.m in Sources */,
 				3A7C68CF1DEC0D6800225D28 /* SimulateTwitterView.m in Sources */,
 			);

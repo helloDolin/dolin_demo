@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 /**
- *  所有的VC都需要继承此类，便于公用
+ *  作用：
+ *  frame 起始点都从屏幕左上点开始
+ *  所有的VC都需要继承此类 便于公用
  */
 @interface DolinBaseViewController : UIViewController
 
