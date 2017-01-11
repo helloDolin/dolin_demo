@@ -13,18 +13,60 @@
 @property (nonatomic, strong) UIImageView *bgImgView;
 @property (nonatomic, strong) UIImageView *animationImgView;
 
+@property (nonatomic, strong) UIView *containerView;
+
 @end
 
 @implementation AnimationImagesViewController
 
 #pragma mark -  life circle
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     [self.view addSubview:self.bgImgView];
     [self.view addSubview:self.animationImgView];
+    [self.view addSubview:self.containerView];
+    
+    // 新的布局方式学习
+    [self.containerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(200);
+        make.centerX.equalTo(self.view);
+        make.width.mas_lessThanOrEqualTo([UIScreen mainScreen].bounds.size.width-20);
+    }];
 }
+
+- (UIView *)containerView {
+    if (!_containerView) {
+        _containerView = [[UIView alloc] init];
+        _containerView.backgroundColor = [UIColor orangeColor];
+        
+        UIImageView *imgView = [[UIImageView alloc] init];
+        imgView.image = [UIImage imageNamed:@"MT"];
+        [_containerView addSubview:imgView];
+        [imgView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.right.equalTo(_containerView).offset(0);
+            make.size.mas_equalTo(CGSizeMake(100, 100));
+            make.centerY.equalTo(_containerView);
+        }];
+        
+        UILabel *label = [[UILabel alloc] init];
+        label.numberOfLines = 0;
+        label.text = @"这是阿三冲击红进口付出dsk红进口付出ds口付出dsk红进口付出dskjfhks口付kjfhks口付出dskj红进口付出dskjfhks口付出dskjjfhks口付出dskjfhd付出dsk红进口付出ds口付出dsk红进口付出dskjfhks口付kjfhks口付出dskj红进口付出dskjfhks口付出dskjjfhks口付出dskjfhdjfhdksjhfdk";
+        [_containerView addSubview:label];
+        [label mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.right.equalTo(imgView.mas_left).offset(-20);
+            make.left.equalTo(_containerView).offset(0);
+            make.bottom.top.equalTo(_containerView).offset(0);
+            make.height.mas_greaterThanOrEqualTo(100);
+        }];
+    }
+    return _containerView;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
