@@ -24,8 +24,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"%p",self);
+
+    WS(weakSelf);
     _btn1 = [LoadingBtn LoadingBtnInitWithFrame:CGRectMake(0, 64, 300, 100) andBackgroundColor:RANDOM_UICOLOR andTitle:@"hello" andTitleColor:RANDOM_UICOLOR andTitleFont:[UIFont systemFontOfSize:15] andCornerRadius:10 andClickBlock:^{
-//        NSLog(@"%p",self);
+        NSLog(@"%p",weakSelf);
     }];
     [self.view addSubview:_btn1];
     
@@ -44,9 +47,8 @@
    
 }
 
-
-
 #pragma mark - method
+
 
 #pragma mark - event
 - (void)btnAction {
