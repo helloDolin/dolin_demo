@@ -155,6 +155,8 @@
 		3A7C69451DEC0E7E00225D28 /* StrangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C693D1DEC0E7E00225D28 /* StrangeTableViewCell.xib */; };
 		3A7C69461DEC0E7E00225D28 /* TestWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C69401DEC0E7E00225D28 /* TestWebViewVC.m */; };
 		3A7C69471DEC0E7E00225D28 /* TestWKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */; };
+		3A92DAEE1E2774550092A33A /* LoadingBtnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92DAED1E2774550092A33A /* LoadingBtnVC.m */; };
+		3A92DAF11E2774850092A33A /* LoadingBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92DAF01E2774850092A33A /* LoadingBtn.m */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
 		3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */; };
@@ -401,6 +403,10 @@
 		3A7C69411DEC0E7E00225D28 /* TestWKWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWKWebViewVC.h; sourceTree = "<group>"; };
 		3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWKWebViewVC.m; sourceTree = "<group>"; };
 		3A875A741DBF074D002A3F24 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3A92DAEC1E2774550092A33A /* LoadingBtnVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingBtnVC.h; sourceTree = "<group>"; };
+		3A92DAED1E2774550092A33A /* LoadingBtnVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingBtnVC.m; sourceTree = "<group>"; };
+		3A92DAEF1E2774850092A33A /* LoadingBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingBtn.h; sourceTree = "<group>"; };
+		3A92DAF01E2774850092A33A /* LoadingBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingBtn.m; sourceTree = "<group>"; };
 		3A98B2051DBF08B900CADF29 /* dolin_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dolin_demo.entitlements; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -490,6 +496,10 @@
 				3A38F47C1E1E55090036DE63 /* CGAffineTransformStudy_VC.m */,
 				3A38F47D1E1E55090036DE63 /* OriginAPIAnimateStudyVC.h */,
 				3A38F47E1E1E55090036DE63 /* OriginAPIAnimateStudyVC.m */,
+				3A92DAEC1E2774550092A33A /* LoadingBtnVC.h */,
+				3A92DAED1E2774550092A33A /* LoadingBtnVC.m */,
+				3A92DAEF1E2774850092A33A /* LoadingBtn.h */,
+				3A92DAF01E2774850092A33A /* LoadingBtn.m */,
 				3A38F47F1E1E55090036DE63 /* README_animate.md */,
 			);
 			path = Animation;
@@ -1295,6 +1305,7 @@
 				3A7C68BE1DEC0D6800225D28 /* PlantImgItemUtil.m in Sources */,
 				16C6717A1DEDD9C3000781E1 /* PopTransition.m in Sources */,
 				3A7C69461DEC0E7E00225D28 /* TestWebViewVC.m in Sources */,
+				3A92DAF11E2774850092A33A /* LoadingBtn.m in Sources */,
 				3A7C68E51DEC0D6800225D28 /* LaunchViewController.m in Sources */,
 				3A7C69361DEC0D6800225D28 /* MMPlaceHolder.m in Sources */,
 				3A7C68E21DEC0D6800225D28 /* Dolin4ViewController.m in Sources */,
@@ -1324,6 +1335,7 @@
 				3A7C692E1DEC0D6800225D28 /* UITabBar+Badge.m in Sources */,
 				3A7C68D31DEC0D6800225D28 /* BezierPathView.m in Sources */,
 				3A7C68BB1DEC0D6800225D28 /* ImageModel.m in Sources */,
+				3A92DAEE1E2774550092A33A /* LoadingBtnVC.m in Sources */,
 				3A7C691E1DEC0D6800225D28 /* LoadingViewForOC.m in Sources */,
 				3A7C68CA1DEC0D6800225D28 /* SimulateKeepScroll.m in Sources */,
 				3A7C68D71DEC0D6800225D28 /* Dowload.m in Sources */,
