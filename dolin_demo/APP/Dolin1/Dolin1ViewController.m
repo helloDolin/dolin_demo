@@ -35,6 +35,7 @@
     [self setRightBarBtn];
 
     self.arr = [@[
+                  @"通讯录相关-GetContactsVC",
                   @"动画相关-Animation_Study_VC",
                   @"AutoLayout+Scroll-AutoLayout_ScrollViewVC",
                   @"仿Twitter-SimulateTwitterViewController",
