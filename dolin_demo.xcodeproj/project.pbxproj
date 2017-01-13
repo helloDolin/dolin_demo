@@ -14,6 +14,7 @@
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
 		16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */; };
 		3A0806631DFFC73500C162A3 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0806621DFFC73500C162A3 /* Reveal.framework */; };
+		3A0AB9B71E28792F000CE541 /* GetContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AB9B61E28792F000CE541 /* GetContactsVC.m */; };
 		3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4761E1E55090036DE63 /* AnimationImagesViewController.m */; };
 		3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4781E1E55090036DE63 /* AnimationLikeBtnViewController.m */; };
 		3A38F4821E1E55090036DE63 /* AnimationStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F47A1E1E55090036DE63 /* AnimationStudyVC.m */; };
@@ -178,6 +179,8 @@
 		16C8D6491D33511700228ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16C8D64C1D33511700228ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0806621DFFC73500C162A3 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		3A0AB9B51E28792F000CE541 /* GetContactsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetContactsVC.h; sourceTree = "<group>"; };
+		3A0AB9B61E28792F000CE541 /* GetContactsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetContactsVC.m; sourceTree = "<group>"; };
 		3A38F4751E1E55090036DE63 /* AnimationImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationImagesViewController.h; sourceTree = "<group>"; };
 		3A38F4761E1E55090036DE63 /* AnimationImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationImagesViewController.m; sourceTree = "<group>"; };
 		3A38F4771E1E55090036DE63 /* AnimationLikeBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLikeBtnViewController.h; sourceTree = "<group>"; };
@@ -544,6 +547,8 @@
 		3A7C67B31DEC0D6800225D28 /* Dolin1 */ = {
 			isa = PBXGroup;
 			children = (
+				3A0AB9B51E28792F000CE541 /* GetContactsVC.h */,
+				3A0AB9B61E28792F000CE541 /* GetContactsVC.m */,
 				3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */,
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
 				3A38F4741E1E55090036DE63 /* Animation */,
@@ -1341,6 +1346,7 @@
 				3A7C68D71DEC0D6800225D28 /* Dowload.m in Sources */,
 				3A7C69261DEC0D6800225D28 /* UIColor+ColorUtility.m in Sources */,
 				3A7C68C81DEC0D6800225D28 /* RunTimeStudy_VC.m in Sources */,
+				3A0AB9B71E28792F000CE541 /* GetContactsVC.m in Sources */,
 				3A7C68C71DEC0D6800225D28 /* Runtime_Test.m in Sources */,
 				3A38F4851E1E55090036DE63 /* README_animate.md in Sources */,
 				3A7C68D01DEC0D6800225D28 /* SimulateTwitterViewController.m in Sources */,
