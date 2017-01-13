@@ -8,4 +8,5 @@ target 'dolin_demo' do
   pod 'pop', '~> 1.0'
   pod "LLBootstrapButton"
   pod 'YYText'
+  pod 'SVProgressHUD'
 end
