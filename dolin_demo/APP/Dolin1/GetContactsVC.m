@@ -9,6 +9,7 @@
 #import "GetContactsVC.h"
 #import <AddressBookUI/AddressBookUI.h> //iOS8
 #import <ContactsUI/ContactsUI.h>  //iOS9
+#import "SVProgressHUD.h"
 
 @interface GetContactsVC ()<CNContactPickerDelegate,ABPeoplePickerNavigationControllerDelegate>
 
@@ -80,9 +81,7 @@
             [self presentViewController: picker  animated:YES completion:nil];
         }
         else{
-            
-//            [SVProgressHUD showInfoWithStatus:@"您未开启通讯录权限,请前往设置中心开启"];
-            NSLog(@"您未开启通讯录权限,请前往设置中心开启");
+            [SVProgressHUD showInfoWithStatus:@"您未开启通讯录权限,请前往设置中心开启"];
         }
         
     }else{
@@ -115,8 +114,7 @@
             [weakSelf presentViewController:peosonVC animated:YES completion:nil];
         }else
         {
-//            [SVProgressHUD showInfoWithStatus:@"您未开启通讯录权限,请前往设置中心开启"];
-            NSLog(@"您未开启通讯录权限,请前往设置中心开启");
+            [SVProgressHUD showInfoWithStatus:@"您未开启通讯录权限,请前往设置中心开启"];
         }
     }
 }
@@ -129,7 +127,7 @@
     NSLog(@"givenName: %@, familyName: %@", contact.givenName, contact.familyName);
     
     if (![contactProperty.value isKindOfClass:[CNPhoneNumber class]]) {
-//        [SVProgressHUD showInfoWithStatus:@"请选择11位手机号"];
+        [SVProgressHUD showInfoWithStatus:@"请选择11位手机号"];
         return;
     }
     CNPhoneNumber *phoneNumber = contactProperty.value;
@@ -138,7 +136,7 @@
     NSString *phoneStr = [[Str componentsSeparatedByCharactersInSet:setToRemove]componentsJoinedByString:@""];
     if (phoneStr.length != 11) {
         
-//        [SVProgressHUD showInfoWithStatus:@"请选择11位手机号"];
+        [SVProgressHUD showInfoWithStatus:@"请选择11位手机号"];
         
         return;
     }
@@ -170,7 +168,7 @@
         aPhone = [aPhone stringByReplacingOccurrencesOfString:@"-" withString:@"" ];
         if (aPhone.length != 11) {
             
-//            [SVProgressHUD showInfoWithStatus:@"请选择11位手机号"];
+            [SVProgressHUD showInfoWithStatus:@"请选择11位手机号"];
             
             return;
         }

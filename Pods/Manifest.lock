@@ -20,6 +20,7 @@ PODS:
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
+  - SVProgressHUD (2.1.2)
   - YYText (1.0.5)
 
 DEPENDENCIES:
@@ -28,6 +29,7 @@ DEPENDENCIES:
   - Masonry
   - pop (~> 1.0)
   - SDWebImage
+  - SVProgressHUD
   - YYText
 
 SPEC CHECKSUMS:
@@ -36,8 +38,9 @@ SPEC CHECKSUMS:
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
 
-PODFILE CHECKSUM: 9c6d4f1af1a85bc0ff0954579f85ee2516486c7c
+PODFILE CHECKSUM: ab593c08872c6ed54b599d965e357f0f2ba5d704
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1
