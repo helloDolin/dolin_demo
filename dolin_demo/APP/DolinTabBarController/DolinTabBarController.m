@@ -100,7 +100,6 @@
                         normalImage:(UIImage*)normalImage
                       selectedImage:(UIImage*)selectedImage
                               title:(NSString *)title {
-    
     viewController.title = title;
     UINavigationController *navC = [[UINavigationController alloc]initWithRootViewController:viewController];
     navC.tabBarItem.image = normalImage;
