@@ -35,6 +35,7 @@
     
     [self setupTabBar];
     [self setUpAllChildViewController];
+    [self setUpNavigationBar];
     [self.tabBar showBadgeOnItemIndex:3];  // 设置小红点
     [self setUpTabBarItemFontColor];
     
@@ -100,12 +101,10 @@
                       selectedImage:(UIImage*)selectedImage
                               title:(NSString *)title {
     
-    UINavigationController *navC = [[UINavigationController alloc]initWithRootViewController:viewController];
     viewController.title = title;
+    UINavigationController *navC = [[UINavigationController alloc]initWithRootViewController:viewController];
     navC.tabBarItem.image = normalImage;
     navC.tabBarItem.selectedImage = selectedImage;
-                                  
-    [self setUpNavigationBar];
     [self addChildViewController:navC];
 }
 
