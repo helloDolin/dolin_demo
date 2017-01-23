@@ -65,6 +65,7 @@
     [self layoutUI];
     [self setLeftBarBtn];
     [self setRightBarBtn];
+    self.playListUrl = kUrl;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -187,7 +188,7 @@
     playVc.index = indexPath.row;
     self.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:playVc animated:YES];
-    
+    self.hidesBottomBarWhenPushed = NO;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
