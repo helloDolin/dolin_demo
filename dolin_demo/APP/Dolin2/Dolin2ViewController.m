@@ -32,16 +32,18 @@
 
 @property (nonatomic,strong  ) NSString           *musicListCount;// 歌曲总数
 
-@property (nonatomic , strong) UIBlurEffect       *blureffect;// 毛玻璃
 
-@property (nonatomic , strong) UIVisualEffectView *visualeffectview;// 毛玻璃
-
-@property (nonatomic,strong  ) CATransition       *transition;// 延时动画
 
 @end
 
 // 可以定义多个匿名类别，扩展
 @interface Dolin2ViewController ()
+
+@property (nonatomic , strong) UIBlurEffect       *blureffect;// 毛玻璃
+
+@property (nonatomic , strong) UIVisualEffectView *visualeffectview;// 毛玻璃
+
+@property (nonatomic,strong  ) CATransition       *transition;// 延时动画
 
 @end
 
@@ -60,8 +62,10 @@
 #pragma mark - life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self layoutUI];
+    
+    // to do 输入id
+    
     self.playListUrl = kUrl;
     [self updateAction];
 }
@@ -78,10 +82,6 @@
     self.navigationController.navigationBar.shadowImage = nil;
 }
 
-#pragma mark - event
-- (void)btnAction {
-    LogBlue(@"btnAction");
-}
 
 #pragma mark - public method 
 
@@ -187,21 +187,20 @@
         self.theCoverTitle.textColor =[UIColor whiteColor];
         [headerView addSubview:self.theCoverTitle];
         
-        ExpandClickAreaButton* btn = [ExpandClickAreaButton buttonWithType:UIButtonTypeSystem];
-//        CGFloat btnWidth = 50;
-//        CGFloat btnHeight = 50;
-        btn.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.3];
-        btn.frame = CGRectMake(0 , kHeight *0.183f, SCREEN_WIDTH, kHeight *0.12f);
-        [btn setImage:[[UIImage imageNamed:@"btn_like"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
-        [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
         
-        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:btn.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
-        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
-        maskLayer.frame = btn.bounds;
-        maskLayer.path = maskPath.CGPath;
-        btn.layer.mask = maskLayer;
-        
-        [headerView addSubview:btn];
+//        设置扩展按钮，指定角为圆角
+//        ExpandClickAreaButton* btn = [ExpandClickAreaButton buttonWithType:UIButtonTypeSystem];
+//        btn.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.3];
+//        btn.frame = CGRectMake(0 , kHeight *0.183f, SCREEN_WIDTH, kHeight *0.12f);
+//        [btn setImage:[[UIImage imageNamed:@"btn_like"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+//        [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
+//        
+//        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:btn.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
+//        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+//        maskLayer.frame = btn.bounds;
+//        maskLayer.path = maskPath.CGPath;
+//        btn.layer.mask = maskLayer;
+//        [headerView addSubview:btn];
 
 
     }
