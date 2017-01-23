@@ -14,7 +14,9 @@
 #define kWidth   self.view.frame.size.width
 #define kHeight  self.view.frame.size.height
 
-#define kUrl @"http://music.163.com/api/playlist/detail?id=112370983"  //我喜欢的音乐
+// 我的id：107875443
+// 二哥id：112370983
+#define kUrl @"http://music.163.com/api/playlist/detail?id=107875443"  //我喜欢的音乐
 #define kLyricUrl @"http://music.163.com/api/song/media?id=" // 歌词
 
 #pragma mark - App Frame
