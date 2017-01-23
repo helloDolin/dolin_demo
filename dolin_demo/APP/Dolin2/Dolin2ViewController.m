@@ -63,11 +63,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self layoutUI];
-    
-    // to do 输入id
-    
-    self.playListUrl = kUrl;
-    [self updateAction];
+    [self setLeftBarBtn];
+    [self setRightBarBtn];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -81,6 +78,45 @@
     [self.navigationController.navigationBar lt_reset];
     self.navigationController.navigationBar.shadowImage = nil;
 }
+
+#pragma mark -  左右两个bar item 点击事件
+
+- (void)leftBtnAction {
+    UIAlertController* alertVC = [UIAlertController alertControllerWithTitle:@"更换id" message:@"可通过分享歌单获得" preferredStyle:UIAlertControllerStyleAlert];
+
+    [alertVC addTextFieldWithConfigurationHandler:^(UITextField *textField){
+        textField.placeholder = @"输入网易云id";
+        textField.keyboardType = UIKeyboardTypeNumberPad;
+    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UITextField* textField = alertVC.textFields[0];
+        NSString* musicID = textField.text;
+        if (musicID.length !=9) {
+            [SVProgressHUD showErrorWithStatus:@"请输入正确的id号"];
+            return;
+        }
+        NSRange range = [kUrl rangeOfString:@"id"];
+        NSString* str = [kUrl substringToIndex:range.location];
+        self.playListUrl = [NSString stringWithFormat:@"%@id=%@",str,musicID];
+        [self updateAction];
+    }];
+    [alertVC addAction:cancelAction];
+    [alertVC addAction:okAction];
+    
+    [self presentViewController:alertVC animated:YES completion:nil];
+}
+
+- (void)setRightBarBtn {
+    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithTitle:@"刷新歌单" style:UIBarButtonItemStylePlain target:self action:@selector(updateAction)];
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
+
+- (void)setLeftBarBtn {
+    UIBarButtonItem* leftItem = [[UIBarButtonItem alloc]initWithTitle:@"更换id" style:UIBarButtonItemStylePlain target:self action:@selector(leftBtnAction)];
+    self.navigationItem.leftBarButtonItem = leftItem;
+}
+
 
 
 #pragma mark - public method 
@@ -113,7 +149,9 @@
 }
 
 -(void)updateAction {
+    [SVProgressHUD show];
     [[RequestManager sharedManager]fetchDataWithUrl:self.playListUrl updateUI:^{
+        [SVProgressHUD dismiss];
         Music *music =[[RequestManager sharedManager]returnMusicAtIndex:0];
         self.theCoverTitle.text = music.listName;
         [self.tableViewBackgroundImage sd_setImageWithURL:[NSURL URLWithString:music.listTheCoverUrl]];
@@ -149,7 +187,6 @@
     playVc.index = indexPath.row;
     self.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:playVc animated:YES];
-    self.hidesBottomBarWhenPushed = NO;
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
