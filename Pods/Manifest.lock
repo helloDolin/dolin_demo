@@ -15,13 +15,13 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - LLBootstrapButton (0.0.1)
-  - Masonry (1.0.0)
+  - Masonry (1.0.2)
   - pop (1.0.9)
-  - SDWebImage (3.7.6):
-    - SDWebImage/Core (= 3.7.6)
-  - SDWebImage/Core (3.7.6)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - SVProgressHUD (2.1.2)
-  - YYText (1.0.5)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
@@ -35,11 +35,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   LLBootstrapButton: b4f9735e1684f7525aa3b8aea65c55f0af66348d
-  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
-  YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
 PODFILE CHECKSUM: ab593c08872c6ed54b599d965e357f0f2ba5d704
 
