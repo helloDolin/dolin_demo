@@ -81,7 +81,6 @@
 }
 
 #pragma mark -  左右两个bar item 点击事件
-
 - (void)leftBtnAction {
     UIAlertController* alertVC = [UIAlertController alertControllerWithTitle:@"更换id" message:@"可通过分享歌单获得" preferredStyle:UIAlertControllerStyleAlert];
 
