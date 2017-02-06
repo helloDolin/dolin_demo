@@ -162,6 +162,8 @@
 		3A92DAF11E2774850092A33A /* LoadingBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92DAF01E2774850092A33A /* LoadingBtn.m */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
+		3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4831F1E48115C0008CE57 /* BlockAlertView.m */; };
+		3AC483231E481C230008CE57 /* SystemPermissionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483221E481C230008CE57 /* SystemPermissionsManager.m */; };
 		3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */; };
 		3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */; };
 		3AE180EB1DB70F0600E8A1FA /* DolinInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AE180EA1DB70F0600E8A1FA /* DolinInfo.plist */; };
@@ -419,6 +421,10 @@
 		3A98B2051DBF08B900CADF29 /* dolin_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dolin_demo.entitlements; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		3AC4831E1E48115C0008CE57 /* BlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlertView.h; sourceTree = "<group>"; };
+		3AC4831F1E48115C0008CE57 /* BlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockAlertView.m; sourceTree = "<group>"; };
+		3AC483211E481C230008CE57 /* SystemPermissionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemPermissionsManager.h; sourceTree = "<group>"; };
+		3AC483221E481C230008CE57 /* SystemPermissionsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemPermissionsManager.m; sourceTree = "<group>"; };
 		3AC533C81E1CF8DE00FE560E /* UIView+Explode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Explode.h"; sourceTree = "<group>"; };
 		3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Explode.m"; sourceTree = "<group>"; };
 		3AC533CC1E1CF92300FE560E /* UIButton+DLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DLButton.h"; sourceTree = "<group>"; };
@@ -934,14 +940,18 @@
 		3A7C68701DEC0D6800225D28 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				3A7C68AE1DEC0D6800225D28 /* Transition */,
-				3A7C68711DEC0D6800225D28 /* BeautifulClasses */,
-				3A7C68831DEC0D6800225D28 /* Category */,
-				3A7C68A61DEC0D6800225D28 /* DolinMacro+Constant */,
 				3A7C68AA1DEC0D6800225D28 /* DolinTopWindowUtil.h */,
 				3A7C68AB1DEC0D6800225D28 /* DolinTopWindowUtil.m */,
 				3A7C68AC1DEC0D6800225D28 /* MMPlaceHolder.h */,
 				3A7C68AD1DEC0D6800225D28 /* MMPlaceHolder.m */,
+				3AC4831E1E48115C0008CE57 /* BlockAlertView.h */,
+				3AC4831F1E48115C0008CE57 /* BlockAlertView.m */,
+				3AC483211E481C230008CE57 /* SystemPermissionsManager.h */,
+				3AC483221E481C230008CE57 /* SystemPermissionsManager.m */,
+				3A7C68AE1DEC0D6800225D28 /* Transition */,
+				3A7C68711DEC0D6800225D28 /* BeautifulClasses */,
+				3A7C68831DEC0D6800225D28 /* Category */,
+				3A7C68A61DEC0D6800225D28 /* DolinMacro+Constant */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1313,6 +1323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC483231E481C230008CE57 /* SystemPermissionsManager.m in Sources */,
 				3A7C691F1DEC0D6800225D28 /* BasePictureTableView.m in Sources */,
 				3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */,
 				3A7C68B91DEC0D6800225D28 /* DolinLabelViewController.m in Sources */,
@@ -1382,6 +1393,7 @@
 				3A7C69241DEC0D6800225D28 /* YYWeakProxy.m in Sources */,
 				3A38F4831E1E55090036DE63 /* CGAffineTransformStudy_VC.m in Sources */,
 				3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */,
+				3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */,
 				3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */,
 				3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */,
 				3A7C692C1DEC0D6800225D28 /* UINavigationBar+Awesome.m in Sources */,
