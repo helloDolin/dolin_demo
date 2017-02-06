@@ -34,8 +34,10 @@
     return self;
 }
 
+#pragma mark - 单例
 SINGLETON_FOR_IMPLEMENTATION(SystemPermissionsManager);
 
+#pragma mark - method
 + (BOOL)requestAuthorization:(SystemPermissions)systemPermissions {
     SystemPermissionsManager* systemPermissionsManager = [SystemPermissionsManager sharedSystemPermissionsManager];
     return [systemPermissionsManager requestAuthorization:systemPermissions];
@@ -63,7 +65,7 @@ SINGLETON_FOR_IMPLEMENTATION(SystemPermissionsManager);
     return YES;
 }
 
-#pragma mark - method
+
 /**
  *  处理通讯录
  */
@@ -218,7 +220,7 @@ SINGLETON_FOR_IMPLEMENTATION(SystemPermissionsManager);
     return NO;
 }
 
-- (void)executeAlterTips:(NSString *)alterTips isSupport:(BOOL)isSupport{
+- (void)executeAlterTips:(NSString *)alterTips isSupport:(BOOL)isSupport {
     // 异步处理
     dispatch_async(dispatch_get_main_queue(), ^{
         NSString *alterContent = @"";
@@ -256,6 +258,8 @@ SINGLETON_FOR_IMPLEMENTATION(SystemPermissionsManager);
         [_locationManager requestAlwaysAuthorization]; // 永久授权
     }
     
+    //    //开始定位，不断调用其代理方法
+    //    [self.locationManager startUpdatingLocation];
     
     if ([CLLocationManager locationServicesEnabled]) {
         if ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 8.0) {
