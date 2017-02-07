@@ -36,6 +36,7 @@
 
     self.arr = [@[
                   @"动画相关-Animation_Study_VC",
+                  @"商品详情-ImitateGoodDetailVC",
                   @"AutoLayout+Scroll-AutoLayout_ScrollViewVC",
                   @"仿Twitter-SimulateTwitterViewController",
                   @"仿keep引导页-SimulateKeepViewController",

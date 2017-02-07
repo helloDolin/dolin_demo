@@ -14,7 +14,6 @@
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
 		16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */; };
 		3A0806631DFFC73500C162A3 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0806621DFFC73500C162A3 /* Reveal.framework */; };
-		3A0AB9B71E28792F000CE541 /* GetContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AB9B61E28792F000CE541 /* GetContactsVC.m */; };
 		3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4761E1E55090036DE63 /* AnimationImagesViewController.m */; };
 		3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4781E1E55090036DE63 /* AnimationLikeBtnViewController.m */; };
 		3A38F4821E1E55090036DE63 /* AnimationStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F47A1E1E55090036DE63 /* AnimationStudyVC.m */; };
@@ -49,10 +48,6 @@
 		3A7C68C71DEC0D6800225D28 /* Runtime_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67E91DEC0D6800225D28 /* Runtime_Test.m */; };
 		3A7C68C81DEC0D6800225D28 /* RunTimeStudy_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67EB1DEC0D6800225D28 /* RunTimeStudy_VC.m */; };
 		3A7C68C91DEC0D6800225D28 /* UIImage+DLRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67ED1DEC0D6800225D28 /* UIImage+DLRuntime.m */; };
-		3A7C68CA1DEC0D6800225D28 /* SimulateKeepScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67F01DEC0D6800225D28 /* SimulateKeepScroll.m */; };
-		3A7C68CB1DEC0D6800225D28 /* SimulateKeepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67F21DEC0D6800225D28 /* SimulateKeepViewController.m */; };
-		3A7C68CF1DEC0D6800225D28 /* SimulateTwitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67FB1DEC0D6800225D28 /* SimulateTwitterView.m */; };
-		3A7C68D01DEC0D6800225D28 /* SimulateTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67FD1DEC0D6800225D28 /* SimulateTwitterViewController.m */; };
 		3A7C68D31DEC0D6800225D28 /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68041DEC0D6800225D28 /* BezierPathView.m */; };
 		3A7C68D41DEC0D6800225D28 /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68061DEC0D6800225D28 /* UIBezierPathViewController.m */; };
 		3A7C68D51DEC0D6800225D28 /* Dolin2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68091DEC0D6800225D28 /* Dolin2ViewController.m */; };
@@ -153,9 +148,6 @@
 		3A7C69351DEC0D6800225D28 /* DolinTopWindowUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68AB1DEC0D6800225D28 /* DolinTopWindowUtil.m */; };
 		3A7C69361DEC0D6800225D28 /* MMPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68AD1DEC0D6800225D28 /* MMPlaceHolder.m */; };
 		3A7C69371DEC0D6800225D28 /* PushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68B01DEC0D6800225D28 /* PushTransition.m */; };
-		3A7C69431DEC0E7E00225D28 /* StrangeScorllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C693A1DEC0E7E00225D28 /* StrangeScorllViewController.m */; };
-		3A7C69441DEC0E7E00225D28 /* StrangeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C693C1DEC0E7E00225D28 /* StrangeTableViewCell.m */; };
-		3A7C69451DEC0E7E00225D28 /* StrangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C693D1DEC0E7E00225D28 /* StrangeTableViewCell.xib */; };
 		3A7C69461DEC0E7E00225D28 /* TestWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C69401DEC0E7E00225D28 /* TestWebViewVC.m */; };
 		3A7C69471DEC0E7E00225D28 /* TestWKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */; };
 		3A92DAEE1E2774550092A33A /* LoadingBtnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92DAED1E2774550092A33A /* LoadingBtnVC.m */; };
@@ -164,6 +156,15 @@
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
 		3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4831F1E48115C0008CE57 /* BlockAlertView.m */; };
 		3AC483231E481C230008CE57 /* SystemPermissionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483221E481C230008CE57 /* SystemPermissionsManager.m */; };
+		3AC4835C1E49A93D0008CE57 /* SimulateKeepScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4834E1E49A93D0008CE57 /* SimulateKeepScroll.m */; };
+		3AC4835D1E49A93D0008CE57 /* SimulateKeepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483501E49A93D0008CE57 /* SimulateKeepViewController.m */; };
+		3AC4835E1E49A93D0008CE57 /* StrangeScorllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483531E49A93D0008CE57 /* StrangeScorllViewController.m */; };
+		3AC4835F1E49A93D0008CE57 /* StrangeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483551E49A93D0008CE57 /* StrangeTableViewCell.m */; };
+		3AC483601E49A93D0008CE57 /* StrangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AC483561E49A93D0008CE57 /* StrangeTableViewCell.xib */; };
+		3AC483611E49A93D0008CE57 /* SimulateTwitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483591E49A93D0008CE57 /* SimulateTwitterView.m */; };
+		3AC483621E49A93D0008CE57 /* SimulateTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4835B1E49A93D0008CE57 /* SimulateTwitterViewController.m */; };
+		3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483651E49A9860008CE57 /* ImitateGoodDetailVC.m */; };
+		3AC483691E49A9DE0008CE57 /* GetContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483681E49A9DE0008CE57 /* GetContactsVC.m */; };
 		3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */; };
 		3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */; };
 		3AE180EB1DB70F0600E8A1FA /* DolinInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AE180EA1DB70F0600E8A1FA /* DolinInfo.plist */; };
@@ -183,8 +184,6 @@
 		16C8D6491D33511700228ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16C8D64C1D33511700228ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0806621DFFC73500C162A3 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
-		3A0AB9B51E28792F000CE541 /* GetContactsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetContactsVC.h; sourceTree = "<group>"; };
-		3A0AB9B61E28792F000CE541 /* GetContactsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetContactsVC.m; sourceTree = "<group>"; };
 		3A38F4751E1E55090036DE63 /* AnimationImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationImagesViewController.h; sourceTree = "<group>"; };
 		3A38F4761E1E55090036DE63 /* AnimationImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationImagesViewController.m; sourceTree = "<group>"; };
 		3A38F4771E1E55090036DE63 /* AnimationLikeBtnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLikeBtnViewController.h; sourceTree = "<group>"; };
@@ -250,14 +249,6 @@
 		3A7C67EB1DEC0D6800225D28 /* RunTimeStudy_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeStudy_VC.m; sourceTree = "<group>"; };
 		3A7C67EC1DEC0D6800225D28 /* UIImage+DLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DLRuntime.h"; sourceTree = "<group>"; };
 		3A7C67ED1DEC0D6800225D28 /* UIImage+DLRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DLRuntime.m"; sourceTree = "<group>"; };
-		3A7C67EF1DEC0D6800225D28 /* SimulateKeepScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateKeepScroll.h; sourceTree = "<group>"; };
-		3A7C67F01DEC0D6800225D28 /* SimulateKeepScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateKeepScroll.m; sourceTree = "<group>"; };
-		3A7C67F11DEC0D6800225D28 /* SimulateKeepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateKeepViewController.h; sourceTree = "<group>"; };
-		3A7C67F21DEC0D6800225D28 /* SimulateKeepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateKeepViewController.m; sourceTree = "<group>"; };
-		3A7C67FA1DEC0D6800225D28 /* SimulateTwitterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateTwitterView.h; sourceTree = "<group>"; };
-		3A7C67FB1DEC0D6800225D28 /* SimulateTwitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateTwitterView.m; sourceTree = "<group>"; };
-		3A7C67FC1DEC0D6800225D28 /* SimulateTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateTwitterViewController.h; sourceTree = "<group>"; };
-		3A7C67FD1DEC0D6800225D28 /* SimulateTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateTwitterViewController.m; sourceTree = "<group>"; };
 		3A7C68031DEC0D6800225D28 /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
 		3A7C68041DEC0D6800225D28 /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
 		3A7C68051DEC0D6800225D28 /* UIBezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathViewController.h; sourceTree = "<group>"; };
@@ -404,11 +395,6 @@
 		3A7C68AD1DEC0D6800225D28 /* MMPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPlaceHolder.m; sourceTree = "<group>"; };
 		3A7C68AF1DEC0D6800225D28 /* PushTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushTransition.h; sourceTree = "<group>"; };
 		3A7C68B01DEC0D6800225D28 /* PushTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushTransition.m; sourceTree = "<group>"; };
-		3A7C69391DEC0E7E00225D28 /* StrangeScorllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrangeScorllViewController.h; sourceTree = "<group>"; };
-		3A7C693A1DEC0E7E00225D28 /* StrangeScorllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrangeScorllViewController.m; sourceTree = "<group>"; };
-		3A7C693B1DEC0E7E00225D28 /* StrangeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrangeTableViewCell.h; sourceTree = "<group>"; };
-		3A7C693C1DEC0E7E00225D28 /* StrangeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrangeTableViewCell.m; sourceTree = "<group>"; };
-		3A7C693D1DEC0E7E00225D28 /* StrangeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrangeTableViewCell.xib; sourceTree = "<group>"; };
 		3A7C693F1DEC0E7E00225D28 /* TestWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWebViewVC.h; sourceTree = "<group>"; };
 		3A7C69401DEC0E7E00225D28 /* TestWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWebViewVC.m; sourceTree = "<group>"; };
 		3A7C69411DEC0E7E00225D28 /* TestWKWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWKWebViewVC.h; sourceTree = "<group>"; };
@@ -425,6 +411,23 @@
 		3AC4831F1E48115C0008CE57 /* BlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockAlertView.m; sourceTree = "<group>"; };
 		3AC483211E481C230008CE57 /* SystemPermissionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemPermissionsManager.h; sourceTree = "<group>"; };
 		3AC483221E481C230008CE57 /* SystemPermissionsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemPermissionsManager.m; sourceTree = "<group>"; };
+		3AC4834D1E49A93D0008CE57 /* SimulateKeepScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateKeepScroll.h; sourceTree = "<group>"; };
+		3AC4834E1E49A93D0008CE57 /* SimulateKeepScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateKeepScroll.m; sourceTree = "<group>"; };
+		3AC4834F1E49A93D0008CE57 /* SimulateKeepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateKeepViewController.h; sourceTree = "<group>"; };
+		3AC483501E49A93D0008CE57 /* SimulateKeepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateKeepViewController.m; sourceTree = "<group>"; };
+		3AC483521E49A93D0008CE57 /* StrangeScorllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrangeScorllViewController.h; sourceTree = "<group>"; };
+		3AC483531E49A93D0008CE57 /* StrangeScorllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrangeScorllViewController.m; sourceTree = "<group>"; };
+		3AC483541E49A93D0008CE57 /* StrangeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrangeTableViewCell.h; sourceTree = "<group>"; };
+		3AC483551E49A93D0008CE57 /* StrangeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrangeTableViewCell.m; sourceTree = "<group>"; };
+		3AC483561E49A93D0008CE57 /* StrangeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrangeTableViewCell.xib; sourceTree = "<group>"; };
+		3AC483581E49A93D0008CE57 /* SimulateTwitterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateTwitterView.h; sourceTree = "<group>"; };
+		3AC483591E49A93D0008CE57 /* SimulateTwitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateTwitterView.m; sourceTree = "<group>"; };
+		3AC4835A1E49A93D0008CE57 /* SimulateTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateTwitterViewController.h; sourceTree = "<group>"; };
+		3AC4835B1E49A93D0008CE57 /* SimulateTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateTwitterViewController.m; sourceTree = "<group>"; };
+		3AC483641E49A9860008CE57 /* ImitateGoodDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImitateGoodDetailVC.h; sourceTree = "<group>"; };
+		3AC483651E49A9860008CE57 /* ImitateGoodDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImitateGoodDetailVC.m; sourceTree = "<group>"; };
+		3AC483671E49A9DE0008CE57 /* GetContactsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetContactsVC.h; sourceTree = "<group>"; };
+		3AC483681E49A9DE0008CE57 /* GetContactsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetContactsVC.m; sourceTree = "<group>"; };
 		3AC533C81E1CF8DE00FE560E /* UIView+Explode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Explode.h"; sourceTree = "<group>"; };
 		3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Explode.m"; sourceTree = "<group>"; };
 		3AC533CC1E1CF92300FE560E /* UIButton+DLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DLButton.h"; sourceTree = "<group>"; };
@@ -559,13 +562,11 @@
 		3A7C67B31DEC0D6800225D28 /* Dolin1 */ = {
 			isa = PBXGroup;
 			children = (
-				3A0AB9B51E28792F000CE541 /* GetContactsVC.h */,
-				3A0AB9B61E28792F000CE541 /* GetContactsVC.m */,
+				3AC4834B1E49A93D0008CE57 /* Imitate */,
 				3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */,
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
 				3A38F4741E1E55090036DE63 /* Animation */,
 				3A38F4861E1E55350036DE63 /* AutoLayout+Masonry */,
-				3A7C69381DEC0E7E00225D28 /* SimulatePhoneMessage */,
 				3A7C693E1DEC0E7E00225D28 /* WebViewVC */,
 				3A7C67BD1DEC0D6800225D28 /* Banner */,
 				3A7C67C21DEC0D6800225D28 /* CustomLabel */,
@@ -576,8 +577,6 @@
 				3A7C67DF1DEC0D6800225D28 /* RichText */,
 				3A7C67E21DEC0D6800225D28 /* RotateScreen */,
 				3A7C67E51DEC0D6800225D28 /* Runtime */,
-				3A7C67EE1DEC0D6800225D28 /* SimulateKeep */,
-				3A7C67F91DEC0D6800225D28 /* SimulateTwitter */,
 				3A7C68021DEC0D6800225D28 /* UIBezierPath_Study */,
 			);
 			path = Dolin1;
@@ -652,6 +651,8 @@
 		3A7C67DC1DEC0D6800225D28 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				3AC483671E49A9DE0008CE57 /* GetContactsVC.h */,
+				3AC483681E49A9DE0008CE57 /* GetContactsVC.m */,
 				3A7C67DD1DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.h */,
 				3A7C67DE1DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.m */,
 			);
@@ -689,28 +690,6 @@
 				3A7C67ED1DEC0D6800225D28 /* UIImage+DLRuntime.m */,
 			);
 			path = Runtime;
-			sourceTree = "<group>";
-		};
-		3A7C67EE1DEC0D6800225D28 /* SimulateKeep */ = {
-			isa = PBXGroup;
-			children = (
-				3A7C67EF1DEC0D6800225D28 /* SimulateKeepScroll.h */,
-				3A7C67F01DEC0D6800225D28 /* SimulateKeepScroll.m */,
-				3A7C67F11DEC0D6800225D28 /* SimulateKeepViewController.h */,
-				3A7C67F21DEC0D6800225D28 /* SimulateKeepViewController.m */,
-			);
-			path = SimulateKeep;
-			sourceTree = "<group>";
-		};
-		3A7C67F91DEC0D6800225D28 /* SimulateTwitter */ = {
-			isa = PBXGroup;
-			children = (
-				3A7C67FA1DEC0D6800225D28 /* SimulateTwitterView.h */,
-				3A7C67FB1DEC0D6800225D28 /* SimulateTwitterView.m */,
-				3A7C67FC1DEC0D6800225D28 /* SimulateTwitterViewController.h */,
-				3A7C67FD1DEC0D6800225D28 /* SimulateTwitterViewController.m */,
-			);
-			path = SimulateTwitter;
 			sourceTree = "<group>";
 		};
 		3A7C68021DEC0D6800225D28 /* UIBezierPath_Study */ = {
@@ -1075,18 +1054,6 @@
 			path = Transition;
 			sourceTree = "<group>";
 		};
-		3A7C69381DEC0E7E00225D28 /* SimulatePhoneMessage */ = {
-			isa = PBXGroup;
-			children = (
-				3A7C69391DEC0E7E00225D28 /* StrangeScorllViewController.h */,
-				3A7C693A1DEC0E7E00225D28 /* StrangeScorllViewController.m */,
-				3A7C693B1DEC0E7E00225D28 /* StrangeTableViewCell.h */,
-				3A7C693C1DEC0E7E00225D28 /* StrangeTableViewCell.m */,
-				3A7C693D1DEC0E7E00225D28 /* StrangeTableViewCell.xib */,
-			);
-			path = SimulatePhoneMessage;
-			sourceTree = "<group>";
-		};
 		3A7C693E1DEC0E7E00225D28 /* WebViewVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1096,6 +1063,60 @@
 				3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */,
 			);
 			path = WebViewVC;
+			sourceTree = "<group>";
+		};
+		3AC4834B1E49A93D0008CE57 /* Imitate */ = {
+			isa = PBXGroup;
+			children = (
+				3AC483631E49A96C0008CE57 /* ImitateGoodDetail */,
+				3AC4834C1E49A93D0008CE57 /* SimulateKeep */,
+				3AC483511E49A93D0008CE57 /* SimulatePhoneMessage */,
+				3AC483571E49A93D0008CE57 /* SimulateTwitter */,
+			);
+			path = Imitate;
+			sourceTree = "<group>";
+		};
+		3AC4834C1E49A93D0008CE57 /* SimulateKeep */ = {
+			isa = PBXGroup;
+			children = (
+				3AC4834D1E49A93D0008CE57 /* SimulateKeepScroll.h */,
+				3AC4834E1E49A93D0008CE57 /* SimulateKeepScroll.m */,
+				3AC4834F1E49A93D0008CE57 /* SimulateKeepViewController.h */,
+				3AC483501E49A93D0008CE57 /* SimulateKeepViewController.m */,
+			);
+			path = SimulateKeep;
+			sourceTree = "<group>";
+		};
+		3AC483511E49A93D0008CE57 /* SimulatePhoneMessage */ = {
+			isa = PBXGroup;
+			children = (
+				3AC483521E49A93D0008CE57 /* StrangeScorllViewController.h */,
+				3AC483531E49A93D0008CE57 /* StrangeScorllViewController.m */,
+				3AC483541E49A93D0008CE57 /* StrangeTableViewCell.h */,
+				3AC483551E49A93D0008CE57 /* StrangeTableViewCell.m */,
+				3AC483561E49A93D0008CE57 /* StrangeTableViewCell.xib */,
+			);
+			path = SimulatePhoneMessage;
+			sourceTree = "<group>";
+		};
+		3AC483571E49A93D0008CE57 /* SimulateTwitter */ = {
+			isa = PBXGroup;
+			children = (
+				3AC483581E49A93D0008CE57 /* SimulateTwitterView.h */,
+				3AC483591E49A93D0008CE57 /* SimulateTwitterView.m */,
+				3AC4835A1E49A93D0008CE57 /* SimulateTwitterViewController.h */,
+				3AC4835B1E49A93D0008CE57 /* SimulateTwitterViewController.m */,
+			);
+			path = SimulateTwitter;
+			sourceTree = "<group>";
+		};
+		3AC483631E49A96C0008CE57 /* ImitateGoodDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3AC483641E49A9860008CE57 /* ImitateGoodDetailVC.h */,
+				3AC483651E49A9860008CE57 /* ImitateGoodDetailVC.m */,
+			);
+			path = ImitateGoodDetail;
 			sourceTree = "<group>";
 		};
 		3AC533CB1E1CF92300FE560E /* DLButton */ = {
@@ -1204,7 +1225,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A7C69451DEC0E7E00225D28 /* StrangeTableViewCell.xib in Resources */,
 				3A7C68FF1DEC0D6800225D28 /* cm2_mv_btn_play_ver@3x.png in Resources */,
 				3A7C690D1DEC0D6800225D28 /* cm2_topbar_icn_back@3x.png in Resources */,
 				3A7C690F1DEC0D6800225D28 /* cm2_vehicle_btn_next_prs@3x.png in Resources */,
@@ -1244,6 +1264,7 @@
 				3A7C69071DEC0D6800225D28 /* cm2_play_icn_dld@3x.png in Resources */,
 				3A7C690A1DEC0D6800225D28 /* cm2_play_icn_loved@3x.png in Resources */,
 				3A7C691C1DEC0D6800225D28 /* main.js in Resources */,
+				3AC483601E49A93D0008CE57 /* StrangeTableViewCell.xib in Resources */,
 				3A7C68F51DEC0D6800225D28 /* cm2_icn_loop@3x副本.png in Resources */,
 				3A7C68F71DEC0D6800225D28 /* cm2_list_detail_icn_cmt@3x.png in Resources */,
 				3A7C69151DEC0D6800225D28 /* Icon@2x.png in Resources */,
@@ -1325,6 +1346,7 @@
 			files = (
 				3AC483231E481C230008CE57 /* SystemPermissionsManager.m in Sources */,
 				3A7C691F1DEC0D6800225D28 /* BasePictureTableView.m in Sources */,
+				3AC483691E49A9DE0008CE57 /* GetContactsVC.m in Sources */,
 				3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */,
 				3A7C68B91DEC0D6800225D28 /* DolinLabelViewController.m in Sources */,
 				3A38F4821E1E55090036DE63 /* AnimationStudyVC.m in Sources */,
@@ -1341,6 +1363,7 @@
 				3A7C692A1DEC0D6800225D28 /* UIImage+RTTint.m in Sources */,
 				3A7C68E41DEC0D6800225D28 /* DolinTabBarController.m in Sources */,
 				3A515C9A1E2CB2DA00ECFBB0 /* UIBezierPathVC.m in Sources */,
+				3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */,
 				3A7C68D81DEC0D6800225D28 /* ExpandClickAreaButton.m in Sources */,
 				3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */,
 				3A7C68D61DEC0D6800225D28 /* Music.m in Sources */,
@@ -1351,31 +1374,30 @@
 				3A7C69271DEC0D6800225D28 /* UIImage+animatedGIF.m in Sources */,
 				3A38F4911E1E558D0036DE63 /* Animation_Study_VC.m in Sources */,
 				3A7C69201DEC0D6800225D28 /* ImageViewer.m in Sources */,
+				3AC483611E49A93D0008CE57 /* SimulateTwitterView.m in Sources */,
 				3A7C68D41DEC0D6800225D28 /* UIBezierPathViewController.m in Sources */,
 				3A7C69311DEC0D6800225D28 /* UIView+LJC.m in Sources */,
 				3A7C68E11DEC0D6800225D28 /* SheViewController.m in Sources */,
 				3A7C691D1DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
 				3A7C68C31DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.m in Sources */,
+				3AC483621E49A93D0008CE57 /* SimulateTwitterViewController.m in Sources */,
 				3A7C68C21DEC0D6800225D28 /* LocalNotificationViewController.m in Sources */,
 				3A7C692F1DEC0D6800225D28 /* UITableView+Common.m in Sources */,
-				3A7C69441DEC0E7E00225D28 /* StrangeTableViewCell.m in Sources */,
 				3A7C692E1DEC0D6800225D28 /* UITabBar+Badge.m in Sources */,
 				3A7C68D31DEC0D6800225D28 /* BezierPathView.m in Sources */,
+				3AC4835D1E49A93D0008CE57 /* SimulateKeepViewController.m in Sources */,
 				3A7C68BB1DEC0D6800225D28 /* ImageModel.m in Sources */,
 				3A92DAEE1E2774550092A33A /* LoadingBtnVC.m in Sources */,
+				3AC4835C1E49A93D0008CE57 /* SimulateKeepScroll.m in Sources */,
 				3A7C691E1DEC0D6800225D28 /* LoadingViewForOC.m in Sources */,
-				3A7C68CA1DEC0D6800225D28 /* SimulateKeepScroll.m in Sources */,
 				3A7C68D71DEC0D6800225D28 /* Dowload.m in Sources */,
 				3A7C69261DEC0D6800225D28 /* UIColor+ColorUtility.m in Sources */,
 				3A7C68C81DEC0D6800225D28 /* RunTimeStudy_VC.m in Sources */,
-				3A0AB9B71E28792F000CE541 /* GetContactsVC.m in Sources */,
 				3A7C68C71DEC0D6800225D28 /* Runtime_Test.m in Sources */,
 				3A38F4851E1E55090036DE63 /* README_animate.md in Sources */,
-				3A7C68D01DEC0D6800225D28 /* SimulateTwitterViewController.m in Sources */,
 				3A7C69221DEC0D6800225D28 /* PhotoTableView.m in Sources */,
 				3A7C68C01DEC0D6800225D28 /* LeftAlignedFlowLayout.m in Sources */,
 				3A7C69321DEC0D6800225D28 /* UIView+ZKPulseView.m in Sources */,
-				3A7C69431DEC0E7E00225D28 /* StrangeScorllViewController.m in Sources */,
 				3A7C68BC1DEC0D6800225D28 /* PlantCollectionViewCell.m in Sources */,
 				3A7C69371DEC0D6800225D28 /* PushTransition.m in Sources */,
 				3A7C68E31DEC0D6800225D28 /* TitleContainerScrollView.m in Sources */,
@@ -1384,6 +1406,7 @@
 				16C6717D1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				3A7C68DD1DEC0D6800225D28 /* MusicListCell.m in Sources */,
 				3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */,
+				3AC4835F1E49A93D0008CE57 /* StrangeTableViewCell.m in Sources */,
 				3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */,
 				3A7C69331DEC0D6800225D28 /* UIWindow+Expand.m in Sources */,
 				3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */,
@@ -1395,6 +1418,7 @@
 				3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */,
 				3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */,
 				3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */,
+				3AC4835E1E49A93D0008CE57 /* StrangeScorllViewController.m in Sources */,
 				3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */,
 				3A7C692C1DEC0D6800225D28 /* UINavigationBar+Awesome.m in Sources */,
 				3A7C68DB1DEC0D6800225D28 /* RequestManager.m in Sources */,
@@ -1405,7 +1429,6 @@
 				3A7C68B81DEC0D6800225D28 /* DolinLabel.m in Sources */,
 				3A7C69291DEC0D6800225D28 /* UIImage+ImageWithColor.m in Sources */,
 				3A7C68BA1DEC0D6800225D28 /* Dolin1ViewController.m in Sources */,
-				3A7C68CB1DEC0D6800225D28 /* SimulateKeepViewController.m in Sources */,
 				3A7C68C11DEC0D6800225D28 /* PwdTextFieldBugViewController.m in Sources */,
 				3A7C68C41DEC0D6800225D28 /* RichTextViewController.m in Sources */,
 				3A7C69471DEC0E7E00225D28 /* TestWKWebViewVC.m in Sources */,
@@ -1416,7 +1439,6 @@
 				3A38F48D1E1E55350036DE63 /* ScrollBoxView.m in Sources */,
 				3A38F48C1E1E55350036DE63 /* AutoLayout_ScrollViewVC.m in Sources */,
 				3A7C69341DEC0D6800225D28 /* DolinConstant.m in Sources */,
-				3A7C68CF1DEC0D6800225D28 /* SimulateTwitterView.m in Sources */,
 				3A515C9D1E2CB30100ECFBB0 /* UIBezierPathView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
