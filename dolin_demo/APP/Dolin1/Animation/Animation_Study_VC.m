@@ -32,6 +32,7 @@
                   @"CGAffineTransformStudy-CGAffineTransformStudy_VC",
                   @"炫酷loading按钮-LoadingBtnVC"
                   ]mutableCopy];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,6 +80,11 @@
     self.navigationItem.backBarButtonItem = customLeftBarButtonItem;
     
     [self.navigationController pushViewController:viewController animated:YES];
+}
+
+// 取消底部footer的灰色
+- (void)tableView:(UITableView *)tableView willDisplayFooterView:(UIView *)view forSection:(NSInteger)section {
+    view.tintColor = [UIColor clearColor];
 }
 
 
