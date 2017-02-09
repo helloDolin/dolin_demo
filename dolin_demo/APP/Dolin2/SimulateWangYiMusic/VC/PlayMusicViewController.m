@@ -374,7 +374,7 @@
     //选择自己喜欢的颜色
     UIColor * color = [UIColor whiteColor];
     //这里我们设置的是颜色，还可以设置shadow等，具体可以参见api
-    NSDictionary * dict = [NSDictionary dictionaryWithObject:color forKey:UITextAttributeTextColor];
+    NSDictionary * dict = [NSDictionary dictionaryWithObject:color forKey:NSForegroundColorAttributeName];
     //标题颜色
     self.navigationController.navigationBar.titleTextAttributes = dict;
     //按钮颜色

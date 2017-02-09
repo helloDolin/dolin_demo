@@ -120,8 +120,6 @@
 		3A7C69181DEC0D6800225D28 /* shengluohao.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C68681DEC0D6800225D28 /* shengluohao.png */; };
 		3A7C69191DEC0D6800225D28 /* ttt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C68691DEC0D6800225D28 /* ttt@3x.png */; };
 		3A7C691A1DEC0D6800225D28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C686A1DEC0D6800225D28 /* Localizable.strings */; };
-		3A7C691B1DEC0D6800225D28 /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7C686E1DEC0D6800225D28 /* JSPatchPlatform.framework */; };
-		3A7C691C1DEC0D6800225D28 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C686F1DEC0D6800225D28 /* main.js */; };
 		3A7C691D1DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68731DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.m */; };
 		3A7C691E1DEC0D6800225D28 /* LoadingViewForOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68751DEC0D6800225D28 /* LoadingViewForOC.m */; };
 		3A7C691F1DEC0D6800225D28 /* BasePictureTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68781DEC0D6800225D28 /* BasePictureTableView.m */; };
@@ -165,9 +163,10 @@
 		3AC483621E49A93D0008CE57 /* SimulateTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4835B1E49A93D0008CE57 /* SimulateTwitterViewController.m */; };
 		3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483651E49A9860008CE57 /* ImitateGoodDetailVC.m */; };
 		3AC483691E49A9DE0008CE57 /* GetContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483681E49A9DE0008CE57 /* GetContactsVC.m */; };
+		3AC483B51E4C56C50008CE57 /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC483B31E4C56C50008CE57 /* JSPatchPlatform.framework */; };
+		3AC483B61E4C56C50008CE57 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 3AC483B41E4C56C50008CE57 /* main.js */; };
 		3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */; };
 		3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */; };
-		3AE180EB1DB70F0600E8A1FA /* DolinInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AE180EA1DB70F0600E8A1FA /* DolinInfo.plist */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
 
@@ -339,8 +338,6 @@
 		3A7C68681DEC0D6800225D28 /* shengluohao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shengluohao.png; sourceTree = "<group>"; };
 		3A7C68691DEC0D6800225D28 /* ttt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ttt@3x.png"; sourceTree = "<group>"; };
 		3A7C686B1DEC0D6800225D28 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		3A7C686E1DEC0D6800225D28 /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
-		3A7C686F1DEC0D6800225D28 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		3A7C68721DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatQRCodeAndBarCodeFromLeon.h; sourceTree = "<group>"; };
 		3A7C68731DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatQRCodeAndBarCodeFromLeon.m; sourceTree = "<group>"; };
 		3A7C68741DEC0D6800225D28 /* LoadingViewForOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewForOC.h; sourceTree = "<group>"; };
@@ -428,6 +425,8 @@
 		3AC483651E49A9860008CE57 /* ImitateGoodDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImitateGoodDetailVC.m; sourceTree = "<group>"; };
 		3AC483671E49A9DE0008CE57 /* GetContactsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetContactsVC.h; sourceTree = "<group>"; };
 		3AC483681E49A9DE0008CE57 /* GetContactsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetContactsVC.m; sourceTree = "<group>"; };
+		3AC483B31E4C56C50008CE57 /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
+		3AC483B41E4C56C50008CE57 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		3AC533C81E1CF8DE00FE560E /* UIView+Explode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Explode.h"; sourceTree = "<group>"; };
 		3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Explode.m"; sourceTree = "<group>"; };
 		3AC533CC1E1CF92300FE560E /* UIButton+DLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DLButton.h"; sourceTree = "<group>"; };
@@ -443,8 +442,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A7C691B1DEC0D6800225D28 /* JSPatchPlatform.framework in Frameworks */,
 				3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */,
+				3AC483B51E4C56C50008CE57 /* JSPatchPlatform.framework in Frameworks */,
 				3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */,
 				3A0806631DFFC73500C162A3 /* Reveal.framework in Frameworks */,
 				4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */,
@@ -901,19 +900,10 @@
 		3A7C686C1DEC0D6800225D28 /* ThirdLibs */ = {
 			isa = PBXGroup;
 			children = (
+				3AC483B21E4C56C50008CE57 /* JSPatch */,
 				3A0806621DFFC73500C162A3 /* Reveal.framework */,
-				3A7C686D1DEC0D6800225D28 /* JSPatch */,
 			);
 			path = ThirdLibs;
-			sourceTree = "<group>";
-		};
-		3A7C686D1DEC0D6800225D28 /* JSPatch */ = {
-			isa = PBXGroup;
-			children = (
-				3A7C686E1DEC0D6800225D28 /* JSPatchPlatform.framework */,
-				3A7C686F1DEC0D6800225D28 /* main.js */,
-			);
-			path = JSPatch;
 			sourceTree = "<group>";
 		};
 		3A7C68701DEC0D6800225D28 /* Utilities */ = {
@@ -1119,6 +1109,15 @@
 			path = ImitateGoodDetail;
 			sourceTree = "<group>";
 		};
+		3AC483B21E4C56C50008CE57 /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				3AC483B31E4C56C50008CE57 /* JSPatchPlatform.framework */,
+				3AC483B41E4C56C50008CE57 /* main.js */,
+			);
+			path = JSPatch;
+			sourceTree = "<group>";
+		};
 		3AC533CB1E1CF92300FE560E /* DLButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -1177,7 +1176,7 @@
 		16C8D6321D33511700228ABD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = shaolin;
 				TargetAttributes = {
 					16C8D6391D33511700228ABD = {
@@ -1236,7 +1235,6 @@
 				3A7C69161DEC0D6800225D28 /* IMG_0004.PNG in Resources */,
 				3A7C69111DEC0D6800225D28 /* cm2_vehicle_btn_play_prs@3x.png in Resources */,
 				3A7C69121DEC0D6800225D28 /* cm2_vehicle_btn_prev_prs@3x.png in Resources */,
-				3AE180EB1DB70F0600E8A1FA /* DolinInfo.plist in Resources */,
 				3A7C68EE1DEC0D6800225D28 /* cm2_default_cover_playlistonly_112@3x.png in Resources */,
 				3A7C69021DEC0D6800225D28 /* cm2_play_disc_mask-ip6@2x.png in Resources */,
 				3A7C691A1DEC0D6800225D28 /* Localizable.strings in Resources */,
@@ -1263,9 +1261,9 @@
 				3A7C68EB1DEC0D6800225D28 /* 456@3x.png in Resources */,
 				3A7C69071DEC0D6800225D28 /* cm2_play_icn_dld@3x.png in Resources */,
 				3A7C690A1DEC0D6800225D28 /* cm2_play_icn_loved@3x.png in Resources */,
-				3A7C691C1DEC0D6800225D28 /* main.js in Resources */,
 				3AC483601E49A93D0008CE57 /* StrangeTableViewCell.xib in Resources */,
 				3A7C68F51DEC0D6800225D28 /* cm2_icn_loop@3x副本.png in Resources */,
+				3AC483B61E4C56C50008CE57 /* main.js in Resources */,
 				3A7C68F71DEC0D6800225D28 /* cm2_list_detail_icn_cmt@3x.png in Resources */,
 				3A7C69151DEC0D6800225D28 /* Icon@2x.png in Resources */,
 				3A7C68FA1DEC0D6800225D28 /* cm2_list_detail_icn_share@3x.png in Resources */,
@@ -1480,8 +1478,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1528,8 +1528,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

@@ -108,7 +108,11 @@
 - (void)setRightBarBtn {
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
     // 这个addData由JSPatch实现
+    //<#消除警告#>
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
     [btn addTarget:self action:@selector(addData) forControlEvents:UIControlEventTouchUpInside];
+#pragma clang diagnostic pop
     UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
     self.navigationItem.rightBarButtonItem = rightItem;
 }

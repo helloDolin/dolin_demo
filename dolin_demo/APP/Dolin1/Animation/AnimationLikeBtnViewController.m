@@ -78,7 +78,7 @@
 }
 
 - (void)addAnimationToView2:(UIView*)view {
-    [UIView animateKeyframesWithDuration:1.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateKeyframesWithDuration:1.5 delay:0 options:UIViewKeyframeAnimationOptionLayoutSubviews animations:^{
         [UIView addKeyframeWithRelativeStartTime:0 relativeDuration:0.25 animations:^{
             view.transform = CGAffineTransformMakeScale(0.1, 0.1);
         }];

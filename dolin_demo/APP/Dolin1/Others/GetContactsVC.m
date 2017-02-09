@@ -158,7 +158,13 @@
     
     // 获取该联系人的名字，简单属性，只需ABRecordCopyValue取一次值
     ABMutableMultiValueRef firstName = ABRecordCopyValue(person, kABPersonFirstNameProperty);
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
     NSString *name = (__bridge NSString *)(firstName);
+#pragma clang diagnostic pop
+    
+    
     
     // 点击某个联系人电话后dismiss联系人控制器，并回调点击的数据
     [self dismissViewControllerAnimated:YES completion:^{

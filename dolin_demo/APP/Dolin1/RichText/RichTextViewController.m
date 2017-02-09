@@ -71,11 +71,20 @@ static NSString* kStr = @"对酒当歌，人生几何？对酒当歌，人生几
     
     // 试验证明size1并不可靠，实际项目中用size2或者size3即可
     // 特别注意：需要设置所有String的字体大小，才能正确求到高度
+    //<#消除警告#>
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
     CGSize size1 =  attrStr.size;
+#pragma clang diagnostic pop
     CGSize size2 = [attrStr  boundingRectWithSize:CGSizeMake(SCREEN_WIDTH,MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil].size;
     
     // size3需要给label attributeText赋值后才可以求，而且比size1、2方式值略大
+    //<#消除警告#>
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
+    
     CGSize size3 = [_testLabel sizeThatFits:CGSizeMake(_testLabel.frame.size.width, MAXFLOAT)];
+#pragma clang diagnostic pop
     
     // 重新设置label的高度
     _testLabel.height = size2.height;

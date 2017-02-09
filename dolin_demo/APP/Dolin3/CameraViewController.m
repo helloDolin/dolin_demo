@@ -168,7 +168,13 @@
         UIImage* image = info[UIImagePickerControllerOriginalImage];
         // 将image转为data
         NSData *data = UIImageJPEGRepresentation(image,1.0);
+        
+        //<#消除警告#>
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
+        
         NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF16StringEncoding];
+#pragma clang diagnostic pop
         
         // info[UIImagePickerControllerMediaMetadata];
         // 可以打印出info 取自己想要的信息

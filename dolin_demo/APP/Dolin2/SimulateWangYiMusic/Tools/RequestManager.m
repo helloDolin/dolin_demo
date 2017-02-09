@@ -221,8 +221,12 @@
     
     //连接服务器,发送请求
     NSError *error =nil;
+    //消除警告
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
     NSData *musicJSONData =[NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error];
     return error;
+#pragma clang diagnostic pop
 }
 
 //返回数据个数
