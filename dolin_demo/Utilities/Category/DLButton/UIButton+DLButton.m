@@ -45,9 +45,9 @@ void addMethod(Class c, SEL originSEL,SEL newSEL) {
 
 @implementation UIButton (DLButton)
 #pragma mark - life circle
-- (void)dealloc {
-    NSLog(@"%s",__func__);
-}
+//- (void)dealloc {
+//    NSLog(@"%s",__func__);
+//}
 
 + (void)load {
     addMethod(self, @selector(titleRectForContentRect:), @selector(new_titleRectForContentRect:));
