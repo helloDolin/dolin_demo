@@ -146,6 +146,8 @@
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
+#define WEAKSELF typeof(self) __weak weakSelf = self;
+#define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
 
 #pragma mark -  Alert
 #ifdef DEBUG
