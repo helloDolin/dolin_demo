@@ -12,7 +12,6 @@
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
-@property (nonatomic, strong) UITableView    * tableView;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 @property (nonatomic, strong) NSMutableArray *arr;
 
@@ -101,7 +100,7 @@
 
 // <##>
 - (void)setLeftBarBtn {
-    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"edit", nil) style:UIBarButtonItemStylePlain target:self action:@selector(leftItemAction)];
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"crash", nil) style:UIBarButtonItemStylePlain target:self action:@selector(leftItemAction)];
     self.navigationItem.leftBarButtonItem = barButtonItem;
 }
 
@@ -129,6 +128,8 @@
 //}
 
 - (void)leftItemAction {
+    exit(0);  // 关闭程序，审核不会给过
+    return;
     static BOOL b = YES;
     if (b) {
         [self.tableView setEditing:YES animated:YES];
@@ -152,7 +153,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     cell.textLabel.text = _arr[indexPath.row];
     return cell;
@@ -223,7 +224,7 @@
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64) style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.delegate = self;
-//        _tableView.allowsSelectionDuringEditing = YES; 编辑状态下也可以点击
+//        _tableView.allowsSelectionDuringEditing = YES; 编辑状态下也可以点
     }
     return _tableView;
 }

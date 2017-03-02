@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Dolin1ViewController : DolinBaseViewController
+@property (nonatomic, strong) UITableView    * tableView;
 
 @end

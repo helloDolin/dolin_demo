@@ -23,7 +23,6 @@
 #import "MMPlaceHolder.h"
 #import "SVProgressHUD.h"
 
-#import "UIViewController+EventGather.h"
 
 // 仿网易相关
 #import <AVFoundation/AVFoundation.h>
