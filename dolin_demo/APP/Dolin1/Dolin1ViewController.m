@@ -26,8 +26,6 @@
     
     [self.view addSubview:self.tableView];
     
-    self.navigationController.delegate = self;
-
 //    [self setUpFPSLabel];
 //    [self setUpRefreshControl];
     [self setLeftBarBtn];
@@ -62,6 +60,11 @@
     if (selectedIndexPath) {
         [self.tableView deselectRowAtIndexPath:selectedIndexPath animated:YES];
     }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.navigationController.delegate = self;
 }
 #pragma mark -  method
 

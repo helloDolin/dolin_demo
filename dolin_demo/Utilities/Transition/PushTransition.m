@@ -49,7 +49,7 @@
 
 #pragma mark - UIViewControllerAnimatedTransitioning
 - (NSTimeInterval)transitionDuration:(nullable id <UIViewControllerContextTransitioning>)transitionContext {
-    return 0.8;
+    return 1.5;
 }
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
@@ -74,9 +74,10 @@
         
         // 将截图添加到容器内
         [containerView addSubview:snapImgView];
-        
+        snapImgView.transform = CGAffineTransformMakeScale(0.5, 0.5);
         // 酷炫动画在这里搞
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+            snapImgView.transform = CGAffineTransformIdentity;
             CGRect rect =  CGRectMake(0, 20, SCREEN_WIDTH, 44);
             snapImgView.frame = rect;
         } completion:^(BOOL b) {

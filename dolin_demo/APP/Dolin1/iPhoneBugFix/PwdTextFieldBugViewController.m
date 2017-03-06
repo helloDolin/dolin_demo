@@ -9,7 +9,7 @@
 #import "PwdTextFieldBugViewController.h"
 #import "PopTransition.h"
 
-@interface PwdTextFieldBugViewController ()<UINavigationControllerDelegate>
+@interface PwdTextFieldBugViewController ()
 {
     UIScreenEdgePanGestureRecognizer* _pan;
     UIPercentDrivenInteractiveTransition* _interaction;
@@ -41,23 +41,12 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    self.navigationController.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-#pragma mark - UINavigationControllerDelegate
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
-    //分pop和push两种情况分别返回动画过渡代理相应不同的动画操作
-    if (operation == UINavigationControllerOperationPop) {
-        return [PopTransition new];
-    }
-    return nil;
-}
-
 
 - (void)panGestureRecognizer:(UIScreenEdgePanGestureRecognizer*)sender {
     CGFloat progress = (-1 * [sender translationInView:sender.view].x) / self.view.width;
