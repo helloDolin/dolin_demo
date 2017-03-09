@@ -150,6 +150,9 @@
 		3A7C69471DEC0E7E00225D28 /* TestWKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */; };
 		3A92DAEE1E2774550092A33A /* LoadingBtnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92DAED1E2774550092A33A /* LoadingBtnVC.m */; };
 		3A92DAF11E2774850092A33A /* LoadingBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92DAF01E2774850092A33A /* LoadingBtn.m */; };
+		3AA0C1B41E71628A009B1628 /* CalculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1AF1E71628A009B1628 /* CalculatorMaker.m */; };
+		3AA0C1B51E71628A009B1628 /* ChainCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1B11E71628A009B1628 /* ChainCodeVC.m */; };
+		3AA0C1B61E71628A009B1628 /* NSObject+Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1B31E71628A009B1628 /* NSObject+Calculator.m */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
 		3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4831F1E48115C0008CE57 /* BlockAlertView.m */; };
@@ -402,6 +405,12 @@
 		3A92DAEF1E2774850092A33A /* LoadingBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingBtn.h; sourceTree = "<group>"; };
 		3A92DAF01E2774850092A33A /* LoadingBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingBtn.m; sourceTree = "<group>"; };
 		3A98B2051DBF08B900CADF29 /* dolin_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dolin_demo.entitlements; sourceTree = "<group>"; };
+		3AA0C1AE1E71628A009B1628 /* CalculatorMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorMaker.h; sourceTree = "<group>"; };
+		3AA0C1AF1E71628A009B1628 /* CalculatorMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorMaker.m; sourceTree = "<group>"; };
+		3AA0C1B01E71628A009B1628 /* ChainCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainCodeVC.h; sourceTree = "<group>"; };
+		3AA0C1B11E71628A009B1628 /* ChainCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainCodeVC.m; sourceTree = "<group>"; };
+		3AA0C1B21E71628A009B1628 /* NSObject+Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Calculator.h"; sourceTree = "<group>"; };
+		3AA0C1B31E71628A009B1628 /* NSObject+Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Calculator.m"; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		3AC4831E1E48115C0008CE57 /* BlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlertView.h; sourceTree = "<group>"; };
@@ -561,9 +570,10 @@
 		3A7C67B31DEC0D6800225D28 /* Dolin1 */ = {
 			isa = PBXGroup;
 			children = (
-				3AC4834B1E49A93D0008CE57 /* Imitate */,
 				3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */,
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
+				3AA0C1AD1E71628A009B1628 /* GoodCodeDesign */,
+				3AC4834B1E49A93D0008CE57 /* Imitate */,
 				3A38F4741E1E55090036DE63 /* Animation */,
 				3A38F4861E1E55350036DE63 /* AutoLayout+Masonry */,
 				3A7C693E1DEC0E7E00225D28 /* WebViewVC */,
@@ -1055,6 +1065,19 @@
 			path = WebViewVC;
 			sourceTree = "<group>";
 		};
+		3AA0C1AD1E71628A009B1628 /* GoodCodeDesign */ = {
+			isa = PBXGroup;
+			children = (
+				3AA0C1B01E71628A009B1628 /* ChainCodeVC.h */,
+				3AA0C1B11E71628A009B1628 /* ChainCodeVC.m */,
+				3AA0C1AE1E71628A009B1628 /* CalculatorMaker.h */,
+				3AA0C1AF1E71628A009B1628 /* CalculatorMaker.m */,
+				3AA0C1B21E71628A009B1628 /* NSObject+Calculator.h */,
+				3AA0C1B31E71628A009B1628 /* NSObject+Calculator.m */,
+			);
+			path = GoodCodeDesign;
+			sourceTree = "<group>";
+		};
 		3AC4834B1E49A93D0008CE57 /* Imitate */ = {
 			isa = PBXGroup;
 			children = (
@@ -1372,12 +1395,14 @@
 				3A7C69271DEC0D6800225D28 /* UIImage+animatedGIF.m in Sources */,
 				3A38F4911E1E558D0036DE63 /* Animation_Study_VC.m in Sources */,
 				3A7C69201DEC0D6800225D28 /* ImageViewer.m in Sources */,
+				3AA0C1B41E71628A009B1628 /* CalculatorMaker.m in Sources */,
 				3AC483611E49A93D0008CE57 /* SimulateTwitterView.m in Sources */,
 				3A7C68D41DEC0D6800225D28 /* UIBezierPathViewController.m in Sources */,
 				3A7C69311DEC0D6800225D28 /* UIView+LJC.m in Sources */,
 				3A7C68E11DEC0D6800225D28 /* SheViewController.m in Sources */,
 				3A7C691D1DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
 				3A7C68C31DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.m in Sources */,
+				3AA0C1B51E71628A009B1628 /* ChainCodeVC.m in Sources */,
 				3AC483621E49A93D0008CE57 /* SimulateTwitterViewController.m in Sources */,
 				3A7C68C21DEC0D6800225D28 /* LocalNotificationViewController.m in Sources */,
 				3A7C692F1DEC0D6800225D28 /* UITableView+Common.m in Sources */,
@@ -1405,6 +1430,7 @@
 				3A7C68DD1DEC0D6800225D28 /* MusicListCell.m in Sources */,
 				3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */,
 				3AC4835F1E49A93D0008CE57 /* StrangeTableViewCell.m in Sources */,
+				3AA0C1B61E71628A009B1628 /* NSObject+Calculator.m in Sources */,
 				3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */,
 				3A7C69331DEC0D6800225D28 /* UIWindow+Expand.m in Sources */,
 				3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */,
