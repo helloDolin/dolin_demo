@@ -34,6 +34,7 @@
     self.arr = [@[
                   @"动画相关-Animation_Study_VC",
                   @"链式编程-ChainCodeVC",
+                  @"最近较火的Banner-Banner2VC",
                   @"商品详情-ImitateGoodDetailVC",
                   @"AutoLayout+Scroll-AutoLayout_ScrollViewVC",
                   @"仿Twitter-SimulateTwitterViewController",

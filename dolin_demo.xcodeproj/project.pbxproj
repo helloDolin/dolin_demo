@@ -153,6 +153,8 @@
 		3AA0C1B41E71628A009B1628 /* CalculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1AF1E71628A009B1628 /* CalculatorMaker.m */; };
 		3AA0C1B51E71628A009B1628 /* ChainCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1B11E71628A009B1628 /* ChainCodeVC.m */; };
 		3AA0C1B61E71628A009B1628 /* NSObject+Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1B31E71628A009B1628 /* NSObject+Calculator.m */; };
+		3AA0C1BA1E7163BA009B1628 /* BannerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1B91E7163BA009B1628 /* BannerLayout.m */; };
+		3AA0C1BD1E7163DA009B1628 /* Banner2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1BC1E7163DA009B1628 /* Banner2VC.m */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
 		3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4831F1E48115C0008CE57 /* BlockAlertView.m */; };
@@ -411,6 +413,10 @@
 		3AA0C1B11E71628A009B1628 /* ChainCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainCodeVC.m; sourceTree = "<group>"; };
 		3AA0C1B21E71628A009B1628 /* NSObject+Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Calculator.h"; sourceTree = "<group>"; };
 		3AA0C1B31E71628A009B1628 /* NSObject+Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Calculator.m"; sourceTree = "<group>"; };
+		3AA0C1B81E7163BA009B1628 /* BannerLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerLayout.h; sourceTree = "<group>"; };
+		3AA0C1B91E7163BA009B1628 /* BannerLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerLayout.m; sourceTree = "<group>"; };
+		3AA0C1BB1E7163DA009B1628 /* Banner2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Banner2VC.h; sourceTree = "<group>"; };
+		3AA0C1BC1E7163DA009B1628 /* Banner2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banner2VC.m; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		3AC4831E1E48115C0008CE57 /* BlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlertView.h; sourceTree = "<group>"; };
@@ -572,6 +578,7 @@
 			children = (
 				3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */,
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
+				3AA0C1B71E7163BA009B1628 /* Banner2 */,
 				3AA0C1AD1E71628A009B1628 /* GoodCodeDesign */,
 				3AC4834B1E49A93D0008CE57 /* Imitate */,
 				3A38F4741E1E55090036DE63 /* Animation */,
@@ -1078,6 +1085,17 @@
 			path = GoodCodeDesign;
 			sourceTree = "<group>";
 		};
+		3AA0C1B71E7163BA009B1628 /* Banner2 */ = {
+			isa = PBXGroup;
+			children = (
+				3AA0C1BB1E7163DA009B1628 /* Banner2VC.h */,
+				3AA0C1BC1E7163DA009B1628 /* Banner2VC.m */,
+				3AA0C1B81E7163BA009B1628 /* BannerLayout.h */,
+				3AA0C1B91E7163BA009B1628 /* BannerLayout.m */,
+			);
+			path = Banner2;
+			sourceTree = "<group>";
+		};
 		3AC4834B1E49A93D0008CE57 /* Imitate */ = {
 			isa = PBXGroup;
 			children = (
@@ -1375,6 +1393,7 @@
 				16C6717A1DEDD9C3000781E1 /* PopTransition.m in Sources */,
 				3A7C69461DEC0E7E00225D28 /* TestWebViewVC.m in Sources */,
 				3A92DAF11E2774850092A33A /* LoadingBtn.m in Sources */,
+				3AA0C1BD1E7163DA009B1628 /* Banner2VC.m in Sources */,
 				3A7C68E51DEC0D6800225D28 /* LaunchViewController.m in Sources */,
 				3A7C69361DEC0D6800225D28 /* MMPlaceHolder.m in Sources */,
 				3A7C68E21DEC0D6800225D28 /* Dolin4ViewController.m in Sources */,
@@ -1430,6 +1449,7 @@
 				3A7C68DD1DEC0D6800225D28 /* MusicListCell.m in Sources */,
 				3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */,
 				3AC4835F1E49A93D0008CE57 /* StrangeTableViewCell.m in Sources */,
+				3AA0C1BA1E7163BA009B1628 /* BannerLayout.m in Sources */,
 				3AA0C1B61E71628A009B1628 /* NSObject+Calculator.m in Sources */,
 				3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */,
 				3A7C69331DEC0D6800225D28 /* UIWindow+Expand.m in Sources */,
