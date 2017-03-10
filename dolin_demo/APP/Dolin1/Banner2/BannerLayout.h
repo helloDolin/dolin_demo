@@ -48,4 +48,11 @@
 @property (nonatomic, assign) UIEdgeInsets edgeInset;
 
 
+/**
+ 获取最后一个cell x坐标值
+
+ @return    
+ */
+- (CGFloat)getLastItemX;
+
 @end

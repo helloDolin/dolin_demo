@@ -8,6 +8,7 @@
 
 #import "DolinBannerView.h"
 #import "UIImageView+WebCache.h"
+#import "YYWeakProxy.h"
 
 //获得RGB颜色
 #define RGBA(r, g, b, a)                    [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
@@ -65,6 +66,7 @@ static const NSTimeInterval kAutoScrollViewDelay = 3.0; // 延时时间
 
 -(void)dealloc {
     [self p_removeTimer];
+    NSLog(@"%s",__func__);
 }
 
 #pragma mark -  点击事件
@@ -91,7 +93,7 @@ static const NSTimeInterval kAutoScrollViewDelay = 3.0; // 延时时间
 
 - (void)p_setUpTimer {
     if (!_timer) {
-        _timer = [NSTimer timerWithTimeInterval:kAutoScrollViewDelay target:self selector:@selector(scorll) userInfo:nil repeats:YES];
+        _timer = [NSTimer timerWithTimeInterval:kAutoScrollViewDelay target:[YYWeakProxy proxyWithTarget:self] selector:@selector(scorll) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
     }
     

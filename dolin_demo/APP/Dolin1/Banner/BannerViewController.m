@@ -18,6 +18,11 @@
 
 @implementation BannerViewController
 
+// <#dealloc#>
+- (void)dealloc {
+    NSLog(@"dolin dealloc======%s",__func__);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -43,7 +48,12 @@
 #pragma mark -  getter
 - (NSArray *)netImageArray {
     if(!_netImageArray) {
-        _netImageArray = @[@"http://ws.xzhushou.cn/focusimg/201508201549023.jpg",@"http://ws.xzhushou.cn/focusimg/52.jpg",@"http://ws.xzhushou.cn/focusimg/51.jpg",@"http://ws.xzhushou.cn/focusimg/50.jpg"];
+        _netImageArray = @[
+                           @"http://ws.xzhushou.cn/focusimg/201508201549023.jpg",
+                           @"http://ws.xzhushou.cn/focusimg/52.jpg",
+                           @"http://ws.xzhushou.cn/focusimg/51.jpg",
+                           @"http://ws.xzhushou.cn/focusimg/50.jpg"
+                           ];
     }
     return _netImageArray;
 }

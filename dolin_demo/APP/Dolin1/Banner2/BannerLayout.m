@@ -36,6 +36,11 @@
     self.scale = 1.0;
 }
 
+- (CGFloat)getLastItemX {
+    NSInteger count = [self.collectionView numberOfItemsInSection:0];
+    return (count - 1) *(self.itemSize.width + self.spacing) - self.edgeInset.left;
+}
+
 #pragma mark - override
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
     return YES;

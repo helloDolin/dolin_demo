@@ -27,6 +27,8 @@
 		3A515C9A1E2CB2DA00ECFBB0 /* UIBezierPathVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A515C991E2CB2DA00ECFBB0 /* UIBezierPathVC.m */; };
 		3A515C9D1E2CB30100ECFBB0 /* UIBezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A515C9C1E2CB30100ECFBB0 /* UIBezierPathView.m */; };
 		3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CF2621E03BD3700CAF8F6 /* UIImage+DLRoundImg.m */; };
+		3A5ED63B1E7279A900F232A4 /* Banner2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5ED6391E7279A900F232A4 /* Banner2Cell.m */; };
+		3A5ED63C1E7279A900F232A4 /* Banner2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5ED63A1E7279A900F232A4 /* Banner2Cell.xib */; };
 		3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */; };
 		3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67BF1DEC0D6800225D28 /* BannerViewController.m */; };
 		3A7C68B71DEC0D6800225D28 /* DolinBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67C11DEC0D6800225D28 /* DolinBannerView.m */; };
@@ -212,6 +214,9 @@
 		3A515C9C1E2CB30100ECFBB0 /* UIBezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathView.m; sourceTree = "<group>"; };
 		3A5CF2611E03BD3700CAF8F6 /* UIImage+DLRoundImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DLRoundImg.h"; sourceTree = "<group>"; };
 		3A5CF2621E03BD3700CAF8F6 /* UIImage+DLRoundImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DLRoundImg.m"; sourceTree = "<group>"; };
+		3A5ED6381E7279A900F232A4 /* Banner2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Banner2Cell.h; sourceTree = "<group>"; };
+		3A5ED6391E7279A900F232A4 /* Banner2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banner2Cell.m; sourceTree = "<group>"; };
+		3A5ED63A1E7279A900F232A4 /* Banner2Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Banner2Cell.xib; sourceTree = "<group>"; };
 		3A7C67B11DEC0D6800225D28 /* DolinBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinBaseViewController.h; sourceTree = "<group>"; };
 		3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinBaseViewController.m; sourceTree = "<group>"; };
 		3A7C67BE1DEC0D6800225D28 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
@@ -1092,6 +1097,9 @@
 				3AA0C1BC1E7163DA009B1628 /* Banner2VC.m */,
 				3AA0C1B81E7163BA009B1628 /* BannerLayout.h */,
 				3AA0C1B91E7163BA009B1628 /* BannerLayout.m */,
+				3A5ED6381E7279A900F232A4 /* Banner2Cell.h */,
+				3A5ED6391E7279A900F232A4 /* Banner2Cell.m */,
+				3A5ED63A1E7279A900F232A4 /* Banner2Cell.xib */,
 			);
 			path = Banner2;
 			sourceTree = "<group>";
@@ -1313,6 +1321,7 @@
 				3A7C68E71DEC0D6800225D28 /* she.jpg in Resources */,
 				3A7C68E81DEC0D6800225D28 /* keep.mp4 in Resources */,
 				3A7C69061DEC0D6800225D28 /* cm2_play_icn_cmt_num@3x.png in Resources */,
+				3A5ED63C1E7279A900F232A4 /* Banner2Cell.xib in Resources */,
 				3A7C68F91DEC0D6800225D28 /* cm2_list_detail_icn_faved@3x.png in Resources */,
 				3A7C68ED1DEC0D6800225D28 /* cm2_default_cover_play@3x.png in Resources */,
 				3A7C68EA1DEC0D6800225D28 /* 123@3x.png in Resources */,
@@ -1459,6 +1468,7 @@
 				3A7C68DC1DEC0D6800225D28 /* PlayMusicViewController.m in Sources */,
 				3A7C69241DEC0D6800225D28 /* YYWeakProxy.m in Sources */,
 				3A38F4831E1E55090036DE63 /* CGAffineTransformStudy_VC.m in Sources */,
+				3A5ED63B1E7279A900F232A4 /* Banner2Cell.m in Sources */,
 				3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */,
 				3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */,
 				3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */,
