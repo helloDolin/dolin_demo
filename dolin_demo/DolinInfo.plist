@@ -44,7 +44,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>App需要您的同意,才能访问相机</string>
 	<key>NSContactsUsageDescription</key>
-	<string>App需要您的同意,才能访问通讯录录</string>
+	<string>App需要您的同意,才能访问通讯录</string>
 	<key>NSHealthShareUsageDescription</key>
 	<string>App需要您的同意,才能访问健康分享</string>
 	<key>NSHealthUpdateUsageDescription</key>
