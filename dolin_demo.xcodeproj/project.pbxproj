@@ -157,6 +157,7 @@
 		3AA0C1B61E71628A009B1628 /* NSObject+Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1B31E71628A009B1628 /* NSObject+Calculator.m */; };
 		3AA0C1BA1E7163BA009B1628 /* BannerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1B91E7163BA009B1628 /* BannerLayout.m */; };
 		3AA0C1BD1E7163DA009B1628 /* Banner2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1BC1E7163DA009B1628 /* Banner2VC.m */; };
+		3AA3B3451E76899A00F6221C /* dolinH5.html in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3B3441E76899A00F6221C /* dolinH5.html */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
 		3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4831F1E48115C0008CE57 /* BlockAlertView.m */; };
@@ -422,6 +423,7 @@
 		3AA0C1B91E7163BA009B1628 /* BannerLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerLayout.m; sourceTree = "<group>"; };
 		3AA0C1BB1E7163DA009B1628 /* Banner2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Banner2VC.h; sourceTree = "<group>"; };
 		3AA0C1BC1E7163DA009B1628 /* Banner2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banner2VC.m; sourceTree = "<group>"; };
+		3AA3B3441E76899A00F6221C /* dolinH5.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dolinH5.html; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		3AC4831E1E48115C0008CE57 /* BlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlertView.h; sourceTree = "<group>"; };
@@ -1073,6 +1075,7 @@
 				3A7C69401DEC0E7E00225D28 /* TestWebViewVC.m */,
 				3A7C69411DEC0E7E00225D28 /* TestWKWebViewVC.h */,
 				3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */,
+				3AA3B3441E76899A00F6221C /* dolinH5.html */,
 			);
 			path = WebViewVC;
 			sourceTree = "<group>";
@@ -1281,6 +1284,7 @@
 				3A7C69041DEC0D6800225D28 /* cm2_play_icn_airplay@3x.png in Resources */,
 				3A7C69171DEC0D6800225D28 /* moren.jpeg in Resources */,
 				3A7C69031DEC0D6800225D28 /* cm2_play_disc_mask@3x.png in Resources */,
+				3AA3B3451E76899A00F6221C /* dolinH5.html in Resources */,
 				3A7C69161DEC0D6800225D28 /* IMG_0004.PNG in Resources */,
 				3A7C69111DEC0D6800225D28 /* cm2_vehicle_btn_play_prs@3x.png in Resources */,
 				3A7C69121DEC0D6800225D28 /* cm2_vehicle_btn_prev_prs@3x.png in Resources */,

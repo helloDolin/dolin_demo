@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dolinH5</title>
+	<style type="text/css">
+	*{
+		font-size: 50px;
+	}
+	</style>
+</head>
+
+<body>
+<h1>好久没写html了</h1>
+
+      <div><input type="button" value="Alert" onclick="callJsAlert()"></div>
+      <br/>
+      <div><input type="button" value="Confirm" onclick="callJsConfirm()"></div><br/>
+
+    <div>
+      <div><input type="button" value="Prompt" onclick="callJsInput()"></div><br/>
+      <div>😆 <a href="http://www.baidu.com">百度</a></div>
+    </div>
+
+    <br/>
+    <div id="SwiftDiv">
+      <span id="jsParamFuncSpan" style="color: orange; font-size: 50px;"></span>
+    </div>
+
+    <script type="text/javascript">
+      function callJsAlert() {
+        alert('alert 123');
+        window.webkit.messageHandlers.senderModel.postMessage({body: 'Alert'});
+      }
+
+    function callJsConfirm() {
+      if (confirm('Confirm', 'confirm 123')) {
+        document.getElementById('jsParamFuncSpan').innerHTML
+        = 'true';
+      }
+      else {
+        document.getElementById('jsParamFuncSpan').innerHTML
+        = 'false';
+      }
+      window.webkit.messageHandlers.senderModel.postMessage({body: 'Confirm'});
+    }
+
+    function callJsInput() {
+      var response = prompt('Hello', 'input 123:');
+      document.getElementById('jsParamFuncSpan').innerHTML = response;
+      window.webkit.messageHandlers.senderModel.postMessage({body: response});
+
+    }
+      </script>
+</body>
+</html>
