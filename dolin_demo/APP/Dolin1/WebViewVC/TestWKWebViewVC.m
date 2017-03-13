@@ -13,9 +13,7 @@
 // WKUIDelegate主要处理JS脚本，确认框，警告框等。因此WKNavigationDelegate更加常用。
 
 @interface TestWKWebViewVC ()<WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler>
-{
-    WKUserContentController *_userContentController;
-}
+
 @property (nonatomic, strong) WKWebView *webView;
 @property (nonatomic, strong) UIProgressView *progressView;
 
