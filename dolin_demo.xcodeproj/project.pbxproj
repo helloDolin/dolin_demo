@@ -158,6 +158,7 @@
 		3AA0C1BA1E7163BA009B1628 /* BannerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1B91E7163BA009B1628 /* BannerLayout.m */; };
 		3AA0C1BD1E7163DA009B1628 /* Banner2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1BC1E7163DA009B1628 /* Banner2VC.m */; };
 		3AA3B3451E76899A00F6221C /* dolinH5.html in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3B3441E76899A00F6221C /* dolinH5.html */; };
+		3AA3B3481E7694A500F6221C /* WKDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3B3471E7694A500F6221C /* WKDelegateController.m */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
 		3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4831F1E48115C0008CE57 /* BlockAlertView.m */; };
@@ -424,6 +425,8 @@
 		3AA0C1BB1E7163DA009B1628 /* Banner2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Banner2VC.h; sourceTree = "<group>"; };
 		3AA0C1BC1E7163DA009B1628 /* Banner2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banner2VC.m; sourceTree = "<group>"; };
 		3AA3B3441E76899A00F6221C /* dolinH5.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dolinH5.html; sourceTree = "<group>"; };
+		3AA3B3461E7694A500F6221C /* WKDelegateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKDelegateController.h; sourceTree = "<group>"; };
+		3AA3B3471E7694A500F6221C /* WKDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKDelegateController.m; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		3AC4831E1E48115C0008CE57 /* BlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlertView.h; sourceTree = "<group>"; };
@@ -1075,6 +1078,8 @@
 				3A7C69401DEC0E7E00225D28 /* TestWebViewVC.m */,
 				3A7C69411DEC0E7E00225D28 /* TestWKWebViewVC.h */,
 				3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */,
+				3AA3B3461E7694A500F6221C /* WKDelegateController.h */,
+				3AA3B3471E7694A500F6221C /* WKDelegateController.m */,
 				3AA3B3441E76899A00F6221C /* dolinH5.html */,
 			);
 			path = WebViewVC;
@@ -1450,6 +1455,7 @@
 				3A7C68C81DEC0D6800225D28 /* RunTimeStudy_VC.m in Sources */,
 				3A7C68C71DEC0D6800225D28 /* Runtime_Test.m in Sources */,
 				3A38F4851E1E55090036DE63 /* README_animate.md in Sources */,
+				3AA3B3481E7694A500F6221C /* WKDelegateController.m in Sources */,
 				3A7C69221DEC0D6800225D28 /* PhotoTableView.m in Sources */,
 				3A7C68C01DEC0D6800225D28 /* LeftAlignedFlowLayout.m in Sources */,
 				3A7C69321DEC0D6800225D28 /* UIView+ZKPulseView.m in Sources */,

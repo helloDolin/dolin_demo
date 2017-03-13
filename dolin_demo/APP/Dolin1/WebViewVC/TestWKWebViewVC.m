@@ -8,11 +8,12 @@
 
 #import "TestWKWebViewVC.h"
 #import <WebKit/WebKit.h>
+#import "WKDelegateController.h"
 
 // WKNavigationDelegate主要处理一些跳转、加载处理操作，
 // WKUIDelegate主要处理JS脚本，确认框，警告框等。因此WKNavigationDelegate更加常用。
 
-@interface TestWKWebViewVC ()<WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler>
+@interface TestWKWebViewVC ()<WKUIDelegate,WKNavigationDelegate,WKScriptMessageHandler,WKDelegate>
 
 @property (nonatomic, strong) WKWebView *webView;
 @property (nonatomic, strong) UIProgressView *progressView;
@@ -27,6 +28,7 @@
     [self.webView removeObserver:self forKeyPath:@"loading"];
     [self.webView removeObserver:self forKeyPath:@"title"];
     [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
+    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"senderModel"];
 }
 
 - (void)viewDidLoad {
@@ -44,11 +46,11 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"前进" style:UIBarButtonItemStyleDone target:self action:@selector(gofarward)];
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    WKUserContentController *controller = self.webView.configuration.userContentController;
-    [controller removeScriptMessageHandlerForName:@"senderModel"];
-}
+//- (void)viewWillDisappear:(BOOL)animated {
+//    [super viewWillDisappear:animated];
+//    WKUserContentController *controller = self.webView.configuration.userContentController;
+//    [controller removeScriptMessageHandlerForName:@"senderModel"];
+//}
 
 - (void)goback {
     if ([self.webView canGoBack]) {
@@ -104,11 +106,15 @@
 }
 
 // 页面加载完成之后调用
-- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    [webView evaluateJavaScript:@"sayHi()" completionHandler:^(id _Nullable result, NSError * _Nullable error) {
+        NSLog(@"%@",result);
+    }];
 }
 
 // 页面加载失败时调用
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation{
+
 }
 
 // 接收到服务器跳转请求之后调用
@@ -211,7 +217,13 @@
         // 通过JS与webView内容交互
         config.userContentController = [WKUserContentController new];
         // 注入JS对象名称senderModel，当JS通过senderModel来调用时，我们可以在WKScriptMessageHandler代理中接收到
-        [config.userContentController addScriptMessageHandler:self name:@"senderModel"];
+        
+        // 第二种方式
+        WKDelegateController * delegateController = [[WKDelegateController alloc]init];
+        delegateController.delegate = self;
+
+//        [config.userContentController addScriptMessageHandler:self name:@"senderModel"];
+        [config.userContentController addScriptMessageHandler:delegateController name:@"senderModel"];
 
         _webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64) configuration:config];
         
