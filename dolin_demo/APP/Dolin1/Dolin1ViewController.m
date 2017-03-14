@@ -8,7 +8,7 @@
 
 #import "Dolin1ViewController.h"
 #import "YYFPSLabel.h"
-#import "PushTransition.h"
+#import "LinAnimateTransition.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
@@ -217,7 +217,7 @@
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
     // 仅在Dolin1VC做动画
     if (operation == UINavigationControllerOperationPush && [fromVC isKindOfClass:[self class]]) {
-        return [PushTransition new];
+        return [LinAnimateTransition linAnimateTransitionWithType:LinAnimateTransitionTypePush];
     }
     return nil;
 }
