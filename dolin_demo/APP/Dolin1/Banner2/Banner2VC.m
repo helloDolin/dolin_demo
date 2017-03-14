@@ -16,6 +16,8 @@
     CGFloat _currentOffsetX;
     BannerLayout *_layout;
     NSArray<NSString*> *_datas;
+    
+    NSTimer *_timer;
 }
 @property (strong, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) NSIndexPath *currentIndexPath;
@@ -51,15 +53,30 @@
                @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489137693663&di=763343bc48723a9139c4fce22d781fff&imgtype=0&src=http%3A%2F%2Fww1.sinaimg.cn%2Flarge%2Fa32aa58ftw1dvfunkqms4j.jpg"
                ];
     _currentOffsetX = 0;
-    NSTimer* timer = [NSTimer timerWithTimeInterval:0.1 target:[YYWeakProxy proxyWithTarget:self] selector:@selector(timerAction) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    [self p_setUpTimer];
 }
+
+- (void)p_setUpTimer {
+    if (!_timer) {
+        _timer = [NSTimer timerWithTimeInterval:0.01 target:[YYWeakProxy proxyWithTarget:self] selector:@selector(timerAction) userInfo:nil repeats:YES];
+        [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+    }    
+}
+
+- (void)p_removeTimer {
+    if (!_timer) {
+        return;
+    }
+    [_timer invalidate];
+    _timer = nil;
+}
+
 #pragma mark - event
 - (void)timerAction {
     [self.collectionView setContentOffset:CGPointMake(_currentOffsetX, 0)];
     ;
     // TODO:这块的处理，待优化
-    _currentOffsetX += 10.0;
+    _currentOffsetX += 1.0;
     CGFloat subNum = _currentOffsetX - [_layout getLastItemX];
     if ( subNum > 0 ) {
         _currentOffsetX = 0;
@@ -87,7 +104,14 @@
         return;
     }
     self.currentIndexPath = indexPath;
-    
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    [self p_setUpTimer];
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [self p_removeTimer];
 }
 
 #pragma mark - getter && setter

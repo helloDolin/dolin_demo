@@ -69,7 +69,6 @@
 		3A7C68E41DEC0D6800225D28 /* DolinTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C682E1DEC0D6800225D28 /* DolinTabBarController.m */; };
 		3A7C68E51DEC0D6800225D28 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68311DEC0D6800225D28 /* LaunchViewController.m */; };
 		3A7C68E61DEC0D6800225D28 /* HYQiHei-50J.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C68341DEC0D6800225D28 /* HYQiHei-50J.ttf */; };
-		3A7C68E71DEC0D6800225D28 /* she.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C68361DEC0D6800225D28 /* she.jpg */; };
 		3A7C68E81DEC0D6800225D28 /* keep.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C68371DEC0D6800225D28 /* keep.mp4 */; };
 		3A7C68E91DEC0D6800225D28 /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C68391DEC0D6800225D28 /* 123.jpg */; };
 		3A7C68EA1DEC0D6800225D28 /* 123@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C683A1DEC0D6800225D28 /* 123@3x.png */; };
@@ -295,7 +294,6 @@
 		3A7C68301DEC0D6800225D28 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
 		3A7C68311DEC0D6800225D28 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		3A7C68341DEC0D6800225D28 /* HYQiHei-50J.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HYQiHei-50J.ttf"; sourceTree = "<group>"; };
-		3A7C68361DEC0D6800225D28 /* she.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = she.jpg; sourceTree = "<group>"; };
 		3A7C68371DEC0D6800225D28 /* keep.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = keep.mp4; sourceTree = "<group>"; };
 		3A7C68391DEC0D6800225D28 /* 123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpg; sourceTree = "<group>"; };
 		3A7C683A1DEC0D6800225D28 /* 123@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "123@3x.png"; sourceTree = "<group>"; };
@@ -585,13 +583,13 @@
 			children = (
 				3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */,
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
+				3A7C67BD1DEC0D6800225D28 /* Banner */,
 				3AA0C1B71E7163BA009B1628 /* Banner2 */,
 				3AA0C1AD1E71628A009B1628 /* GoodCodeDesign */,
 				3AC4834B1E49A93D0008CE57 /* Imitate */,
 				3A38F4741E1E55090036DE63 /* Animation */,
 				3A38F4861E1E55350036DE63 /* AutoLayout+Masonry */,
 				3A7C693E1DEC0E7E00225D28 /* WebViewVC */,
-				3A7C67BD1DEC0D6800225D28 /* Banner */,
 				3A7C67C21DEC0D6800225D28 /* CustomLabel */,
 				3A7C67C91DEC0D6800225D28 /* GhostAlbum */,
 				3A7C67D61DEC0D6800225D28 /* iPhoneBugFix */,
@@ -849,20 +847,11 @@
 			isa = PBXGroup;
 			children = (
 				3A7C68341DEC0D6800225D28 /* HYQiHei-50J.ttf */,
-				3A7C68351DEC0D6800225D28 /* images */,
 				3A7C68371DEC0D6800225D28 /* keep.mp4 */,
 				3A7C68381DEC0D6800225D28 /* WYicons */,
 				3A7C686A1DEC0D6800225D28 /* Localizable.strings */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		3A7C68351DEC0D6800225D28 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				3A7C68361DEC0D6800225D28 /* she.jpg */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 		3A7C68381DEC0D6800225D28 /* WYicons */ = {
@@ -1322,7 +1311,6 @@
 				3A7C68FA1DEC0D6800225D28 /* cm2_list_detail_icn_share@3x.png in Resources */,
 				3A7C69141DEC0D6800225D28 /* fugai@3x.png in Resources */,
 				3A7C68F61DEC0D6800225D28 /* cm2_list_btn_more@3x.png in Resources */,
-				3A7C68E71DEC0D6800225D28 /* she.jpg in Resources */,
 				3A7C68E81DEC0D6800225D28 /* keep.mp4 in Resources */,
 				3A7C69061DEC0D6800225D28 /* cm2_play_icn_cmt_num@3x.png in Resources */,
 				3A5ED63C1E7279A900F232A4 /* Banner2Cell.xib in Resources */,

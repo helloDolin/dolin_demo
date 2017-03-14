@@ -33,12 +33,11 @@
 
     self.arr = [@[
                   @"动画相关-Animation_Study_VC",
-                  @"链式编程-ChainCodeVC",
                   @"最近较火的Banner-Banner2VC",
-                  @"商品详情-ImitateGoodDetailVC",
-                  @"AutoLayout+Scroll-AutoLayout_ScrollViewVC",
-                  @"仿Twitter-SimulateTwitterViewController",
                   @"仿keep引导页-SimulateKeepViewController",
+                  @"仿Twitter-SimulateTwitterViewController",
+                  @"链式编程-ChainCodeVC",
+                  @"AutoLayout+Scroll-AutoLayout_ScrollViewVC",
                   GET_STR(Banner-BannerViewController),
                   @"通讯录相关-GetContactsVC",
                   @"苹果密码框bug-PwdTextFieldBugViewController",
@@ -53,6 +52,7 @@
                   @"runtime-RunTimeStudy_VC",
                   @"TestWebView-TestWebViewVC",
                   @"TestWKWebViewVC-TestWKWebViewVC",
+                  @"商品详情-ImitateGoodDetailVC",
                   ]mutableCopy];
 }
 - (void)viewWillAppear:(BOOL)animated {
