@@ -7,7 +7,6 @@
 //
 
 #import "PwdTextFieldBugViewController.h"
-#import "PopTransition.h"
 
 @interface PwdTextFieldBugViewController ()
 {

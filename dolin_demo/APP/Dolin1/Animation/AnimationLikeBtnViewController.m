@@ -9,6 +9,9 @@
 #import "AnimationLikeBtnViewController.h"
 
 @interface AnimationLikeBtnViewController ()<CAAnimationDelegate>
+{
+    NSInteger _clickCount;
+}
 
 @property(nonatomic,strong)UIButton* likeBtn;
 
@@ -21,23 +24,36 @@
     [super viewDidLoad];
     
     [self.view addSubview:self.likeBtn];
-    
-//    [self addAnimationToView3:self.likeBtn];
+
 }
 
 /**
  *  点赞按钮事件
  */
 - (void)likeBtnAction {
-    
     static BOOL isClickLikeBtn = YES;
+    
     [self.likeBtn setImage:[[UIImage imageNamed:(isClickLikeBtn ? @"btn_like":@"btn_unlike")]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
     isClickLikeBtn = !isClickLikeBtn;
     
+    
     if (!isClickLikeBtn) {
-        [self addAnimationToView2:self.likeBtn];
+        _clickCount++;
+        if ((_clickCount&1) == 1) {
+            [self addAnimationToView2:self.likeBtn];
+        } else {
+            UIImageView* imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"btn_like"]];
+            [self.likeBtn addSubview:imageView];
+            imageView.frame = CGRectMake(0, 0, 15, 15);
+            imageView.center = self.view.center;
+            [UIView animateWithDuration:0.5 animations:^ {
+                imageView.transform = CGAffineTransformScale(imageView.transform, 8, 8);
+                imageView.alpha = 0;
+            } completion:^(BOOL finished) {
+                [imageView removeFromSuperview];
+            }];
+        }
     }
-
 }
 
 - (void)addAnimationToView3:(UIView*)view {

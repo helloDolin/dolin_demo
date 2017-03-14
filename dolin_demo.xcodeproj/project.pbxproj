@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16C6717A1DEDD9C3000781E1 /* PopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C671791DEDD9C3000781E1 /* PopTransition.m */; };
 		16C6717D1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		16C8D63F1D33511700228ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D63E1D33511700228ABD /* main.m */; };
 		16C8D6421D33511700228ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D6411D33511700228ABD /* AppDelegate.m */; };
@@ -181,8 +180,6 @@
 
 /* Begin PBXFileReference section */
 		163A578A1D33558E003B9609 /* DolinPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DolinPrefix.pch; sourceTree = "<group>"; };
-		16C671781DEDD9C3000781E1 /* PopTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTransition.h; sourceTree = "<group>"; };
-		16C671791DEDD9C3000781E1 /* PopTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTransition.m; sourceTree = "<group>"; };
 		16C6717B1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		16C8D63A1D33511700228ABD /* dolin_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dolin_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1065,8 +1062,6 @@
 			children = (
 				3A7C68AF1DEC0D6800225D28 /* PushTransition.h */,
 				3A7C68B01DEC0D6800225D28 /* PushTransition.m */,
-				16C671781DEDD9C3000781E1 /* PopTransition.h */,
-				16C671791DEDD9C3000781E1 /* PopTransition.m */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -1408,7 +1403,6 @@
 				3A7C68B91DEC0D6800225D28 /* DolinLabelViewController.m in Sources */,
 				3A38F4821E1E55090036DE63 /* AnimationStudyVC.m in Sources */,
 				3A7C68BE1DEC0D6800225D28 /* PlantImgItemUtil.m in Sources */,
-				16C6717A1DEDD9C3000781E1 /* PopTransition.m in Sources */,
 				3A7C69461DEC0E7E00225D28 /* TestWebViewVC.m in Sources */,
 				3A92DAF11E2774850092A33A /* LoadingBtn.m in Sources */,
 				3AA0C1BD1E7163DA009B1628 /* Banner2VC.m in Sources */,

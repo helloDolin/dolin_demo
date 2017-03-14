@@ -215,8 +215,8 @@
 
 #pragma mark - UINavigationControllerDelegate
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
-    //分pop和push两种情况分别返回动画过渡代理相应不同的动画操作
-    if (operation == UINavigationControllerOperationPush) {
+    // 仅在Dolin1VC做动画
+    if (operation == UINavigationControllerOperationPush && [fromVC isKindOfClass:[self class]]) {
         return [PushTransition new];
     }
     return nil;

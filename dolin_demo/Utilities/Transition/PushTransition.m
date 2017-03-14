@@ -11,12 +11,9 @@
 
 @implementation PushTransition
 
-
-
 - (void)dealloc {
     NSLog(@"%s",__func__);
 }
-
 
 /**
  截图大法
