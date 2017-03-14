@@ -106,7 +106,15 @@
     self.currentIndexPath = indexPath;
 }
 
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+//    if (decelerate) {
+//        _currentOffsetX = scrollView.contentOffset.x;
+//        [self p_setUpTimer];
+//    }
+//}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    _currentOffsetX = scrollView.contentOffset.x;
     [self p_setUpTimer];
 }
 
