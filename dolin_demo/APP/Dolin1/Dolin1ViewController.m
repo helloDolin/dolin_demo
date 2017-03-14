@@ -36,6 +36,7 @@
                   @"最近较火的Banner-Banner2VC",
                   @"仿keep引导页-SimulateKeepViewController",
                   @"仿Twitter-SimulateTwitterViewController",
+                  @"联动table-LinkworkTableViewVC",
                   @"链式编程-ChainCodeVC",
                   @"AutoLayout+Scroll-AutoLayout_ScrollViewVC",
                   GET_STR(Banner-BannerViewController),
@@ -55,6 +56,7 @@
                   @"商品详情-ImitateGoodDetailVC",
                   ]mutableCopy];
 }
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     // 再次回到这个页面cell选中效果慢慢消失

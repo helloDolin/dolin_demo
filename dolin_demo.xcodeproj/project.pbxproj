@@ -174,6 +174,8 @@
 		3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */; };
 		3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */; };
 		3AD3092E1E779475004C2496 /* LinAnimateTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3092D1E779475004C2496 /* LinAnimateTransition.m */; };
+		3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3095A1E77D563004C2496 /* LinkworkLeftCell.m */; };
+		3AD3095E1E77D563004C2496 /* LinkworkTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3095C1E77D563004C2496 /* LinkworkTableViewVC.m */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
 
@@ -451,6 +453,10 @@
 		3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DLButton.m"; sourceTree = "<group>"; };
 		3AD3092C1E779475004C2496 /* LinAnimateTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinAnimateTransition.h; sourceTree = "<group>"; };
 		3AD3092D1E779475004C2496 /* LinAnimateTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinAnimateTransition.m; sourceTree = "<group>"; };
+		3AD309591E77D563004C2496 /* LinkworkLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkworkLeftCell.h; sourceTree = "<group>"; };
+		3AD3095A1E77D563004C2496 /* LinkworkLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkworkLeftCell.m; sourceTree = "<group>"; };
+		3AD3095B1E77D563004C2496 /* LinkworkTableViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkworkTableViewVC.h; sourceTree = "<group>"; };
+		3AD3095C1E77D563004C2496 /* LinkworkTableViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkworkTableViewVC.m; sourceTree = "<group>"; };
 		3AE180EA1DB70F0600E8A1FA /* DolinInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DolinInfo.plist; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -583,6 +589,7 @@
 			children = (
 				3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */,
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
+				3AD309581E77D532004C2496 /* LinkworkTable */,
 				3A7C67BD1DEC0D6800225D28 /* Banner */,
 				3AA0C1B71E7163BA009B1628 /* Banner2 */,
 				3AA0C1AD1E71628A009B1628 /* GoodCodeDesign */,
@@ -1168,6 +1175,17 @@
 			path = DLButton;
 			sourceTree = "<group>";
 		};
+		3AD309581E77D532004C2496 /* LinkworkTable */ = {
+			isa = PBXGroup;
+			children = (
+				3AD309591E77D563004C2496 /* LinkworkLeftCell.h */,
+				3AD3095A1E77D563004C2496 /* LinkworkLeftCell.m */,
+				3AD3095B1E77D563004C2496 /* LinkworkTableViewVC.h */,
+				3AD3095C1E77D563004C2496 /* LinkworkTableViewVC.m */,
+			);
+			path = LinkworkTable;
+			sourceTree = "<group>";
+		};
 		96B6CFAEDF4D3AF27BC73BDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1397,6 +1415,7 @@
 				3AA0C1BD1E7163DA009B1628 /* Banner2VC.m in Sources */,
 				3A7C68E51DEC0D6800225D28 /* LaunchViewController.m in Sources */,
 				3A7C69361DEC0D6800225D28 /* MMPlaceHolder.m in Sources */,
+				3AD3095E1E77D563004C2496 /* LinkworkTableViewVC.m in Sources */,
 				3A7C68E21DEC0D6800225D28 /* Dolin4ViewController.m in Sources */,
 				16C8D6421D33511700228ABD /* AppDelegate.m in Sources */,
 				3A7C692B1DEC0D6800225D28 /* UIImage+Screenshot.m in Sources */,
@@ -1463,6 +1482,7 @@
 				3A5ED63B1E7279A900F232A4 /* Banner2Cell.m in Sources */,
 				3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */,
 				3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */,
+				3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */,
 				3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */,
 				3AC4835E1E49A93D0008CE57 /* StrangeScorllViewController.m in Sources */,
 				3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */,
