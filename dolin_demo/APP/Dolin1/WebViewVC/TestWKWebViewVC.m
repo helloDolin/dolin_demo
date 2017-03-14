@@ -69,30 +69,31 @@
 
 #pragma mark - KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
-    
-    if ([keyPath isEqualToString:@"title"]) {
-        self.title = self.webView.title;
-    }
-    
-    else if ([keyPath isEqualToString:@"loading"]){
-
-    }
-    
-    else if ([keyPath isEqualToString:@"estimatedProgress"]){
-        // estimatedProgress取值范围是0-1;
-        [UIView animateWithDuration:0.3 animations:^{
-            [_progressView setProgress:_webView.estimatedProgress];
-        } completion:^(BOOL finished) {
-            if (_progressView.progress == 1) {
-                [_progressView removeFromSuperview];
-            };
-        }];
-    }
-    
-    if (!self.webView.loading) {
-        [UIView animateWithDuration:0.5 animations:^{
-            self.progressView.alpha = 0;
-        }];
+    if (object == self.webView) {
+        if ([keyPath isEqualToString:@"title"]) {
+            self.title = self.webView.title;
+        }
+        
+        else if ([keyPath isEqualToString:@"loading"]){
+            
+        }
+        
+        else if ([keyPath isEqualToString:@"estimatedProgress"]){
+            // estimatedProgress取值范围是0-1;
+            [UIView animateWithDuration:0.3 animations:^{
+                [_progressView setProgress:_webView.estimatedProgress];
+            } completion:^(BOOL finished) {
+                if (_progressView.progress == 1) {
+                    [_progressView removeFromSuperview];
+                };
+            }];
+        }
+        
+        if (!self.webView.loading) {
+            [UIView animateWithDuration:0.5 animations:^{
+                self.progressView.alpha = 0;
+            }];
+        }
     }
 }
 
@@ -193,7 +194,7 @@
 }
 
 #pragma mark - WKScriptMessageHandler
-- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message{
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
     // 这里可以通过name处理多组交互
     if ([message.name isEqualToString:@"senderModel"]) {
         //body只支持NSNumber, NSString, NSDate, NSArray,NSDictionary 和 NSNull类型
