@@ -36,6 +36,7 @@
                   @"最近较火的Banner-Banner2VC",
                   @"仿keep引导页-SimulateKeepViewController",
                   @"仿Twitter-SimulateTwitterViewController",
+                  @"仿淘宝商品详情-ImitateGoodDetailVC",
                   @"联动table-LinkworkTableViewVC",
                   @"链式编程-ChainCodeVC",
                   @"AutoLayout+Scroll-AutoLayout_ScrollViewVC",
@@ -53,7 +54,6 @@
                   @"runtime-RunTimeStudy_VC",
                   @"TestWebView-TestWebViewVC",
                   @"TestWKWebViewVC-TestWKWebViewVC",
-                  @"商品详情-ImitateGoodDetailVC",
                   ]mutableCopy];
 }
 
