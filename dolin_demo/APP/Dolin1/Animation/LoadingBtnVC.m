@@ -8,6 +8,7 @@
 
 #import "LoadingBtnVC.h"
 #import "LoadingBtn.h"
+#import "LinAnimateTransition.h"
 
 @interface LoadingBtnVC ()
 {
@@ -28,15 +29,18 @@
 
     WS(weakSelf);
     _btn1 = [LoadingBtn LoadingBtnInitWithFrame:CGRectMake(0, 64, 300, 100) andBackgroundColor:RANDOM_UICOLOR andTitle:@"hello" andTitleColor:RANDOM_UICOLOR andTitleFont:[UIFont systemFontOfSize:15] andCornerRadius:10 andClickBlock:^{
-        NSLog(@"%p",weakSelf);
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            LoadingBtnVC *vc = [LoadingBtnVC new];
+            [weakSelf presentViewController:vc animated:YES completion:nil];
+        });
     }];
     [self.view addSubview:_btn1];
     
     // testBtn
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    btn.frame = CGRectMake(0, 64 + 200, 375, 100);
+    btn.frame = CGRectMake(0, 0, 375, 64);
     btn.backgroundColor = [UIColor orangeColor];
-    [btn setTitle:@"stop" forState:UIControlStateNormal];
+    [btn setTitle:@"dismiss" forState:UIControlStateNormal];
     btn.tintColor = [UIColor whiteColor];
     [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
@@ -53,11 +57,19 @@
 #pragma mark - event
 - (void)btnAction {
     [_btn1 stopAnimateAndCallBack:^{
-        NSLog(@"动画结束");
+        [self dismissViewControllerAnimated:YES completion:nil];
     }];
 }
-#pragma mark - UITableViewDelegate && UITableViewDataSource
+#pragma mark - UIViewControllerTransitioningDelegate
 
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    return [LinAnimateTransition linAnimateTransitionWithType:LinAnimateTransitionTypePresent];
+}
+
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    return [LinAnimateTransition linAnimateTransitionWithType:LinAnimateTransitionTypeDismiss];
+}
 #pragma mark - getter && setter
 
 #pragma mark - API
