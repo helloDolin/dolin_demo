@@ -122,11 +122,15 @@
         
         _titleContainerScrollView.titleContainerScrollViewDelegate = self;
         
-        WS(weakSelf);
-        _titleContainerScrollView.buttonClickBlock = ^(NSInteger currentPage){
-            // 滚动collectionView
+        
+        @weakify(self);
+        _titleContainerScrollView.buttonClickBlock = ^(NSInteger currentPage) {
+            @strongify(self);
+            if (!self) {
+                return;
+            }
             NSIndexPath *indexPath=[NSIndexPath indexPathForRow:currentPage inSection:0];
-            [weakSelf.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
+            [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
         };
     }
     return _titleContainerScrollView;

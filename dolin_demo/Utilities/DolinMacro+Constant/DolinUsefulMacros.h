@@ -138,14 +138,6 @@
 //#define IOS7_OR_LATER       ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
 
 
-
-
-#pragma mark -  block self
-#define BlockWeakObject(o) __typeof(o) __weak
-#define BlockWeakSelf BlockWeakObject(self)
-
-#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
-
 #define WEAKSELF typeof(self) __weak weakSelf = self;
 #define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
 
@@ -214,6 +206,56 @@ return shared##className; \
 //随便写一个宏
 #define GET_STR(str) [NSString stringWithFormat:@"%@",@#str]
 
+/**
+ Synthsize a weak or strong reference.
+ 
+ Example:
+ @weakify(self)
+ [self doSomething^{
+ @strongify(self)
+ if (!self) return;
+ ...
+ }];
+ 
+ */
+#ifndef weakify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define weakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
+#else
+#define weakify(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define weakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+#else
+#define weakify(object) try{} @finally{} {} __block __typeof__(object) block##_##object = object;
+#endif
+#endif
+#endif
+
+#ifndef strongify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define strongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
+#else
+#define strongify(object) autoreleasepool{} __typeof__(object) object = block##_##object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define strongify(object) try{} @finally{} __typeof__(object) object = weak##_##object;
+#else
+#define strongify(object) try{} @finally{} __typeof__(object) object = block##_##object;
+#endif
+#endif
+#endif
+
+
+#pragma mark -  block self
+#define BlockWeakObject(o) __typeof(o) __weak
+#define BlockWeakSelf BlockWeakObject(self)
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 
 #endif /* DolinUsefulMacros_h */
