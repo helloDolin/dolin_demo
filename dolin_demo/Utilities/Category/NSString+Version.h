@@ -11,8 +11,8 @@
 
 @interface NSString (Version) 
 
--(BOOL) isOlderVersionThan:(NSString*)otherVersion;
--(BOOL) isNewerVersionThan:(NSString*)otherVersion;
+- (BOOL)isOlderVersionThan:(NSString*)otherVersion;
+- (BOOL)isNewerVersionThan:(NSString*)otherVersion;
 
 @end
 

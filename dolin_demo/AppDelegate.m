@@ -59,6 +59,7 @@
 // 对于应用程序初始化，强烈建议您使用此方法和应用程序
 // 如果应用程序无法处理URL资源或继续用户活动，则返回NO，否则返回YES。如果应用程序由于远程通知而启动，则会忽略返回值。
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSLog(@"willFinishLaunchingWithOptions %@",launchOptions);
     [self setUpBadgeNum:application];
     [self setUpWindow];
     [self setUpLocalNotification:application];
@@ -69,31 +70,38 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    NSLog(@"didFinishLaunchingWithOptions %@",launchOptions);
     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    // Games should use this method to pause the game. (这个单独摘出来)
 //    Xcode8开始，不需要写代码控制了，在TARGETS -> AppName -> Capabilities中可视化配置
+    NSLog(@"applicationWillResignActive");
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    NSLog(@"applicationDidEnterBackground");
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    NSLog(@"applicationWillEnterForeground");
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    NSLog(@"applicationDidBecomeActive");
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    // appropriate  [əˈpropriɪt] 适当的；恰当的；合适的
+    NSLog(@"applicationWillTerminate");
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification*)notification {
