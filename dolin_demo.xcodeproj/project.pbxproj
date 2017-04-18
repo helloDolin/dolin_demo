@@ -28,6 +28,7 @@
 		3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CF2621E03BD3700CAF8F6 /* UIImage+DLRoundImg.m */; };
 		3A5ED63B1E7279A900F232A4 /* Banner2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5ED6391E7279A900F232A4 /* Banner2Cell.m */; };
 		3A5ED63C1E7279A900F232A4 /* Banner2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5ED63A1E7279A900F232A4 /* Banner2Cell.xib */; };
+		3A680E521EA5B071003C2E1B /* InterviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A680E511EA5B071003C2E1B /* InterviewVC.m */; };
 		3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */; };
 		3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67BF1DEC0D6800225D28 /* BannerViewController.m */; };
 		3A7C68B71DEC0D6800225D28 /* DolinBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67C11DEC0D6800225D28 /* DolinBannerView.m */; };
@@ -217,6 +218,8 @@
 		3A5ED6381E7279A900F232A4 /* Banner2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Banner2Cell.h; sourceTree = "<group>"; };
 		3A5ED6391E7279A900F232A4 /* Banner2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banner2Cell.m; sourceTree = "<group>"; };
 		3A5ED63A1E7279A900F232A4 /* Banner2Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Banner2Cell.xib; sourceTree = "<group>"; };
+		3A680E501EA5B071003C2E1B /* InterviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewVC.h; sourceTree = "<group>"; };
+		3A680E511EA5B071003C2E1B /* InterviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewVC.m; sourceTree = "<group>"; };
 		3A7C67B11DEC0D6800225D28 /* DolinBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinBaseViewController.h; sourceTree = "<group>"; };
 		3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinBaseViewController.m; sourceTree = "<group>"; };
 		3A7C67BE1DEC0D6800225D28 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
@@ -606,6 +609,8 @@
 				3A7C67E21DEC0D6800225D28 /* RotateScreen */,
 				3A7C67E51DEC0D6800225D28 /* Runtime */,
 				3A7C68021DEC0D6800225D28 /* UIBezierPath_Study */,
+				3A680E501EA5B071003C2E1B /* InterviewVC.h */,
+				3A680E511EA5B071003C2E1B /* InterviewVC.m */,
 			);
 			path = Dolin1;
 			sourceTree = "<group>";
@@ -1487,6 +1492,7 @@
 				3AC4835E1E49A93D0008CE57 /* StrangeScorllViewController.m in Sources */,
 				3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */,
 				3A7C692C1DEC0D6800225D28 /* UINavigationBar+Awesome.m in Sources */,
+				3A680E521EA5B071003C2E1B /* InterviewVC.m in Sources */,
 				3A7C68DB1DEC0D6800225D28 /* RequestManager.m in Sources */,
 				3A7C68E01DEC0D6800225D28 /* Dolin3ViewController.m in Sources */,
 				3A7C69211DEC0D6800225D28 /* PhotoScrollView.m in Sources */,

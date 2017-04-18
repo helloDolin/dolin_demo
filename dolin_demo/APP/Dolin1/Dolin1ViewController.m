@@ -32,6 +32,7 @@
     [self setRightBarBtn];
 
     self.arr = [@[
+                  @"Interview-InterviewVC",
                   @"动画相关-Animation_Study_VC",
                   @"最近较火的Banner-Banner2VC",
                   @"仿keep引导页-SimulateKeepViewController",
