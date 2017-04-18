@@ -56,11 +56,7 @@
     }
     
     [_testView mas_remakeConstraints:^(MASConstraintMaker *make) {
-
-        make.width.and.height.lessThanOrEqualTo(self.view);
         make.width.and.height.equalTo(self.view).with.priorityLow();
-        
-//        if (_testView.width < _testView.height) {
         if (isPortrait) {
             make.height.equalTo(self.view.mas_width).multipliedBy(3 / 4.0); // 注意这里需要float类型
         }
