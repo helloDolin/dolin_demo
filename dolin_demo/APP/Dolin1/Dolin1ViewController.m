@@ -32,7 +32,7 @@
     [self setRightBarBtn];
 
     self.arr = [@[
-                  @"CoreDataVC-CoreDataVC",
+                  @"戒烟？-SmokeRememberVC",
                   @"Interview-InterviewVC",
                   @"动画相关-Animation_Study_VC",
                   @"最近较火的Banner-Banner2VC",

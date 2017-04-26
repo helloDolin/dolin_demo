@@ -8,7 +8,6 @@
 
 #import "CoreDataVC.h"
 #import <CoreData/CoreData.h>
-#import "AppDelegate.h"
 #import "Student+CoreDataClass.h"
 #import "Classes+CoreDataClass.h"
 
