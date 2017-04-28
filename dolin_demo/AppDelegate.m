@@ -18,10 +18,7 @@
 
 @implementation AppDelegate
 
-#pragma mark -  method 
-- (void)setUpBadgeNum:(UIApplication*)application {
-    application.applicationIconBadgeNumber = 0;
-}
+#pragma mark -  method
 
 - (void)setUpWindow {
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
@@ -35,6 +32,17 @@
 }
 
 - (void)setUpLocalNotification:(UIApplication*)application {
+//    开始本地推送通知：
+//    第一种方法，延时推送，根据本地通知对象的fireDate设置进行本地推送通知
+//    
+//    [[UIApplication shareApplication] scheduleLocalNotification:notification];
+//    第二种方法，立刻推送，忽略本地通知对象的fireDate设置进行本地推送通知
+//    
+//    [[UIApplication shareApplication] presentLocalNotificationNow:notification];
+    
+    
+    UILocalNotification *notification = [self makeLocalNotification];
+    [application scheduleLocalNotification:notification];
     // 在iOS 8.0之后如果要使用本地通知，需要得到用户的许可;
     if ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0) {
         UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound |UIUserNotificationTypeAlert categories:nil];
@@ -42,6 +50,32 @@
         [application registerUserNotificationSettings:setting];
     }
 
+}
+- (UILocalNotification *)makeLocalNotification{
+    // 创建本地推送通知对象
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"yyyy-MM-dd HH-mm-sss"];
+    NSDate *resDate = [formatter dateFromString:@"2017-04-28 11-55-00"];
+    // 设定为明天中午12点触发通知
+    notification.fireDate = resDate;
+    // 记得设置当前时区，没有设置的话，fireDate将不考虑时区，这样的通知会不准确
+    notification.timeZone = [NSTimeZone defaultTimeZone];
+    // 每隔一天触发一次
+    notification.repeatInterval = NSCalendarUnitDay;
+    //设置通知属性
+    notification.alertBody = @"最近添加了诸多有趣的特性，是否立即体验？";// 通知主体
+    notification.applicationIconBadgeNumber = 1; // 应用程序图标右上角显示的消息数
+    notification.alertAction = @"打开应用";  // 待机界面的滑动动作提示
+    notification.alertLaunchImage = @"Default"; // 通过点击通知打开应用时的启动图片,这里使用程序启动图片
+    notification.soundName = UILocalNotificationDefaultSoundName;//收到通知时播放的声音，默认消息声音
+    //设置用户信息
+    notification.userInfo = @{
+                               @"user":@"dolin",
+                               @"msg":@"eat"
+                               }; // 绑定到通知上的其他附加信息
+    
+    return notification;
 }
 
 - (void)setUpAudioPlayBack {
@@ -60,7 +94,6 @@
 // 如果应用程序无法处理URL资源或继续用户活动，则返回NO，否则返回YES。如果应用程序由于远程通知而启动，则会忽略返回值。
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSLog(@"willFinishLaunchingWithOptions %@",launchOptions);
-    [self setUpBadgeNum:application];
     [self setUpWindow];
     [self setUpLocalNotification:application];
     [self setUpAudioPlayBack];
@@ -91,6 +124,8 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     NSLog(@"applicationWillEnterForeground");
+    // 去除应用边角数字
+    [application setApplicationIconBadgeNumber:0];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -104,11 +139,12 @@
     NSLog(@"applicationWillTerminate");
 }
 
+/* 应用还在运行，无论前台还是后台，都会调用该方法处理通知 */
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification*)notification {
     NSDictionary * dic = notification.userInfo;
     NSLog(@"%@",dic);
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"test" message:notification.alertBody delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"eat!" message:notification.alertBody delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
     [alert show];
     
     // 图标上的数字减1

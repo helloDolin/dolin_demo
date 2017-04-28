@@ -44,7 +44,6 @@
                   GET_STR(Banner-BannerViewController),
                   @"通讯录相关-GetContactsVC",
                   @"苹果密码框bug-PwdTextFieldBugViewController",
-                  @"本地推送-LocalNotificationViewController",
                   @"UIScrollView奇技淫巧-StrangeScorllViewController",
                   @"自定义Label-DolinLabelViewController",
                   @"鬼相册-GhostAlbumViewController",
