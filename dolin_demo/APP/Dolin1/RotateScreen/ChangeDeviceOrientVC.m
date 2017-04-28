@@ -23,13 +23,52 @@
     
     [self.view addSubview:self.imgView];
     
+    [_imgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(200, 200));
+        make.center.equalTo(self.view);
+    }];
+    
     // 监听设备自动旋转
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientChange:) name:UIDeviceOrientationDidChangeNotification object:nil];
 }
 
+- (void)turnLeft {
+    [UIView animateWithDuration:1.5 animations:^{
+        _imgView.transform = CGAffineTransformMakeRotation(M_PI / 2);
+    }];
+}
+
+- (void)turnRight {
+    [UIView animateWithDuration:1.5 animations:^{
+        _imgView.transform = CGAffineTransformMakeRotation(- M_PI / 2);
+    }];
+}
+
+- (void)turnPortrait {
+    [UIView animateWithDuration:1.5 animations:^{
+        _imgView.transform = CGAffineTransformIdentity;
+    }];
+}
+
 // 通知设备旋转了
 - (void)orientChange:(NSNotification *)noti {
-    [self orientChangeWithSuperView:self.view showView:self.imgView showViewRect:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    // [self orientChangeWithSuperView:self.view showView:self.imgView showViewRect:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    UIDeviceOrientation  orient = [UIDevice currentDevice].orientation;
+    
+    switch (orient) {
+        case UIDeviceOrientationPortrait:
+            [self turnPortrait];
+            break;
+        case UIDeviceOrientationLandscapeLeft:
+            [self turnLeft];
+            break;
+        case UIDeviceOrientationLandscapeRight:
+            [self turnRight];
+            break;
+        default:
+            
+            break;
+    }
 }
 
 
@@ -90,7 +129,7 @@
 #pragma mark - getter
 - (UIImageView*)imgView {
     if (!_imgView) {
-        _imgView = [[UIImageView alloc]initWithFrame:self.view.frame];
+        _imgView = [[UIImageView alloc]init];
         _imgView.contentMode = UIViewContentModeScaleAspectFit;
         _imgView.image = [UIImage imageNamed:@"MT"];
     }

@@ -43,6 +43,8 @@
     
     UILocalNotification *notification = [self makeLocalNotification];
     [application scheduleLocalNotification:notification];
+    
+    
     // 在iOS 8.0之后如果要使用本地通知，需要得到用户的许可;
     if ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0) {
         UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound |UIUserNotificationTypeAlert categories:nil];
@@ -64,7 +66,7 @@
     // 每隔一天触发一次
     notification.repeatInterval = NSCalendarUnitDay;
     //设置通知属性
-    notification.alertBody = @"最近添加了诸多有趣的特性，是否立即体验？";// 通知主体
+    notification.alertBody = @"go to eat";// 通知主体
     notification.applicationIconBadgeNumber = 1; // 应用程序图标右上角显示的消息数
     notification.alertAction = @"打开应用";  // 待机界面的滑动动作提示
     notification.alertLaunchImage = @"Default"; // 通过点击通知打开应用时的启动图片,这里使用程序启动图片
@@ -139,7 +141,7 @@
     NSLog(@"applicationWillTerminate");
 }
 
-// 应用还在运行，无论前台还是后台，都会调用该方法处理通知 
+// 应用还在运行，无论前台还是后台，都会调用该方法处理通知
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification*)notification {
     NSDictionary * dic = notification.userInfo;
     NSLog(@"%@",dic);
