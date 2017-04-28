@@ -139,7 +139,7 @@
     NSLog(@"applicationWillTerminate");
 }
 
-/* 应用还在运行，无论前台还是后台，都会调用该方法处理通知 */
+// 应用还在运行，无论前台还是后台，都会调用该方法处理通知 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification*)notification {
     NSDictionary * dic = notification.userInfo;
     NSLog(@"%@",dic);
@@ -150,5 +150,19 @@
     // 图标上的数字减1
     application.applicationIconBadgeNumber -= 1;
 }
+
+// 监听远程推送通知
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    
+}
+
+// 远程推送通知步骤：
+// iOS8以后，使用远程通知，需要请求用户授权
+// 注册远程通知成功后会调用以下方法，获取deviceToken设备令牌：
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // 将deviceToken交给某方保存，如：JSPatch
+    // 把deviceToken设备令牌发送给服务器，时刻保持deviceToken是最新的
+}
+
 
 @end
