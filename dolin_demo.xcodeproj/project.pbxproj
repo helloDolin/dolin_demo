@@ -607,11 +607,11 @@
 		3A7C67B31DEC0D6800225D28 /* Dolin1 */ = {
 			isa = PBXGroup;
 			children = (
-				3ADF3A521EBC0E3600A5EFF6 /* AVFoundation */,
 				3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */,
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
 				3A680E501EA5B071003C2E1B /* InterviewVC.h */,
 				3A680E511EA5B071003C2E1B /* InterviewVC.m */,
+				3ADF3A521EBC0E3600A5EFF6 /* AVFoundation */,
 				3AD309581E77D532004C2496 /* LinkworkTable */,
 				3A7C67BD1DEC0D6800225D28 /* Banner */,
 				3AA0C1B71E7163BA009B1628 /* Banner2 */,
