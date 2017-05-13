@@ -35,6 +35,9 @@
 #import "Dowload.h"                 //下载工具
 #import "MBFadeAlertView.h"         //弹窗
 
+// extension
+#define SUITE_NAME @"group.extension.todayWidget"
+
 
 // 控制台彩色日志，插件
 #define XCODE_COLORS_ESCAPE @"\033["

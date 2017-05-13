@@ -32,6 +32,7 @@
     [self setRightBarBtn];
 
     self.arr = [@[
+                  @"extensionStudy-AddNoteViewController",
                   @"DLVideoVC-DLVideoVC",
                   @"Interview-InterviewVC",
                   @"动画相关-Animation_Study_VC",

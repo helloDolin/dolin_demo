@@ -115,6 +115,7 @@
     // Games should use this method to pause the game. (这个单独摘出来)
 //    Xcode8开始，不需要写代码控制了，在TARGETS -> AppName -> Capabilities中可视化配置
     NSLog(@"applicationWillResignActive");
+    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
@@ -166,5 +167,16 @@
     // 把deviceToken设备令牌发送给服务器，时刻保持deviceToken是最新的
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    
+    if ([url.absoluteString hasPrefix:@"todaywidget"]) {
+        if ([url.absoluteString hasSuffix:@"add"]) {//判断是否是直接跳入到添加页面
+//            UIViewController *addVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AddVC"];
+//            UINavigationController *rootNav = (UINavigationController*)self.window.rootViewController;
+//            [rootNav pushViewController:addVC animated:YES];
+        }
+    }
+    return YES;
+}
 
 @end

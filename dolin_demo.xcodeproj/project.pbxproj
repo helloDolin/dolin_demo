@@ -148,6 +148,14 @@
 		3A7C69361DEC0D6800225D28 /* MMPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68AD1DEC0D6800225D28 /* MMPlaceHolder.m */; };
 		3A7C69461DEC0E7E00225D28 /* TestWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C69401DEC0E7E00225D28 /* TestWebViewVC.m */; };
 		3A7C69471DEC0E7E00225D28 /* TestWKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */; };
+		3A7F972B1EC71705007BB5B8 /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F972A1EC71705007BB5B8 /* AddNoteViewController.m */; };
+		3A7F97311EC71CDE007BB5B8 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F97301EC71CDE007BB5B8 /* NoteViewController.m */; };
+		3A7F973B1EC71E54007BB5B8 /* TableKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7F97391EC71E54007BB5B8 /* TableKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A7F973E1EC71E54007BB5B8 /* TableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7F97371EC71E54007BB5B8 /* TableKit.framework */; };
+		3A7F973F1EC71E54007BB5B8 /* TableKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7F97371EC71E54007BB5B8 /* TableKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A7F974A1EC71F36007BB5B8 /* TableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7F97371EC71E54007BB5B8 /* TableKit.framework */; };
+		3A7F974B1EC71F57007BB5B8 /* NoteListDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7F972C1EC71A7B007BB5B8 /* NoteListDelegate.h */; };
+		3A7F974C1EC71F6D007BB5B8 /* NoteListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F972D1EC71A7B007BB5B8 /* NoteListDelegate.m */; };
 		3A92DAEE1E2774550092A33A /* LoadingBtnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92DAED1E2774550092A33A /* LoadingBtnVC.m */; };
 		3A92DAF11E2774850092A33A /* LoadingBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92DAF01E2774850092A33A /* LoadingBtn.m */; };
 		3AA0C1B41E71628A009B1628 /* CalculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1AF1E71628A009B1628 /* CalculatorMaker.m */; };
@@ -183,8 +191,54 @@
 		3ADF3A5D1EBC176A00A5EFF6 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADF3A5C1EBC176A00A5EFF6 /* VideoModel.m */; };
 		3ADF3A611EBC185500A5EFF6 /* DLVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADF3A5F1EBC185500A5EFF6 /* DLVideoCell.m */; };
 		3ADF3A621EBC185500A5EFF6 /* DLVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ADF3A601EBC185500A5EFF6 /* DLVideoCell.xib */; };
+		3AF03B771EC6E8A4008DDF80 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF03B761EC6E8A4008DDF80 /* NotificationCenter.framework */; };
+		3AF03B7B1EC6E8A4008DDF80 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF03B7A1EC6E8A4008DDF80 /* TodayViewController.m */; };
+		3AF03B7E1EC6E8A4008DDF80 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF03B7C1EC6E8A4008DDF80 /* MainInterface.storyboard */; };
+		3AF03B821EC6E8A5008DDF80 /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3AF03B751EC6E8A4008DDF80 /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A7F973C1EC71E54007BB5B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16C8D6321D33511700228ABD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A7F97361EC71E54007BB5B8;
+			remoteInfo = TableKit;
+		};
+		3AF03B801EC6E8A5008DDF80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16C8D6321D33511700228ABD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AF03B741EC6E8A4008DDF80;
+			remoteInfo = TodayWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A7F97431EC71E54007BB5B8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A7F973F1EC71E54007BB5B8 /* TableKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF03B861EC6E8A5008DDF80 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3AF03B821EC6E8A5008DDF80 /* TodayWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		163A578A1D33558E003B9609 /* DolinPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DolinPrefix.pch; sourceTree = "<group>"; };
@@ -413,6 +467,20 @@
 		3A7C69401DEC0E7E00225D28 /* TestWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWebViewVC.m; sourceTree = "<group>"; };
 		3A7C69411DEC0E7E00225D28 /* TestWKWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWKWebViewVC.h; sourceTree = "<group>"; };
 		3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWKWebViewVC.m; sourceTree = "<group>"; };
+		3A7F97281EC712CA007BB5B8 /* TodayWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayWidget.entitlements; sourceTree = "<group>"; };
+		3A7F97291EC71705007BB5B8 /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
+		3A7F972A1EC71705007BB5B8 /* AddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoteViewController.m; sourceTree = "<group>"; };
+		3A7F972C1EC71A7B007BB5B8 /* NoteListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListDelegate.h; sourceTree = "<group>"; };
+		3A7F972D1EC71A7B007BB5B8 /* NoteListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListDelegate.m; sourceTree = "<group>"; };
+		3A7F972F1EC71CDE007BB5B8 /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
+		3A7F97301EC71CDE007BB5B8 /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
+		3A7F97371EC71E54007BB5B8 /* TableKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TableKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A7F97391EC71E54007BB5B8 /* TableKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableKit.h; sourceTree = "<group>"; };
+		3A7F973A1EC71E54007BB5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A7F97451EC71F19007BB5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A7F97461EC71F19007BB5B8 /* TableKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableKit.h; sourceTree = "<group>"; };
+		3A7F97481EC71F2C007BB5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A7F97491EC71F2C007BB5B8 /* TableKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableKit.h; sourceTree = "<group>"; };
 		3A875A741DBF074D002A3F24 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3A92DAEC1E2774550092A33A /* LoadingBtnVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingBtnVC.h; sourceTree = "<group>"; };
 		3A92DAED1E2774550092A33A /* LoadingBtnVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingBtnVC.m; sourceTree = "<group>"; };
@@ -478,6 +546,12 @@
 		3ADF3A5F1EBC185500A5EFF6 /* DLVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLVideoCell.m; sourceTree = "<group>"; };
 		3ADF3A601EBC185500A5EFF6 /* DLVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLVideoCell.xib; sourceTree = "<group>"; };
 		3AE180EA1DB70F0600E8A1FA /* DolinInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DolinInfo.plist; sourceTree = "<group>"; };
+		3AF03B751EC6E8A4008DDF80 /* TodayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF03B761EC6E8A4008DDF80 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		3AF03B791EC6E8A4008DDF80 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		3AF03B7A1EC6E8A4008DDF80 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		3AF03B7D1EC6E8A4008DDF80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3AF03B7F1EC6E8A5008DDF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -490,9 +564,26 @@
 			files = (
 				3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */,
 				3AC483B51E4C56C50008CE57 /* JSPatchPlatform.framework in Frameworks */,
+				3A7F973E1EC71E54007BB5B8 /* TableKit.framework in Frameworks */,
 				3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */,
 				3A0806631DFFC73500C162A3 /* Reveal.framework in Frameworks */,
 				4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A7F97331EC71E54007BB5B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF03B721EC6E8A4008DDF80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7F974A1EC71F36007BB5B8 /* TableKit.framework in Frameworks */,
+				3AF03B771EC6E8A4008DDF80 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +594,8 @@
 			isa = PBXGroup;
 			children = (
 				16C8D63C1D33511700228ABD /* dolin_demo */,
+				3AF03B781EC6E8A4008DDF80 /* TodayWidget */,
+				3A7F97381EC71E54007BB5B8 /* TableKit */,
 				16C8D63B1D33511700228ABD /* Products */,
 				E7346D5FBE4829F14DF92A99 /* Pods */,
 				96B6CFAEDF4D3AF27BC73BDB /* Frameworks */,
@@ -513,6 +606,8 @@
 			isa = PBXGroup;
 			children = (
 				16C8D63A1D33511700228ABD /* dolin_demo.app */,
+				3AF03B751EC6E8A4008DDF80 /* TodayWidget.appex */,
+				3A7F97371EC71E54007BB5B8 /* TableKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -628,6 +723,12 @@
 				3A7C67E21DEC0D6800225D28 /* RotateScreen */,
 				3A7C67E51DEC0D6800225D28 /* Runtime */,
 				3A7C68021DEC0D6800225D28 /* UIBezierPath_Study */,
+				3A7F97291EC71705007BB5B8 /* AddNoteViewController.h */,
+				3A7F972A1EC71705007BB5B8 /* AddNoteViewController.m */,
+				3A7F972C1EC71A7B007BB5B8 /* NoteListDelegate.h */,
+				3A7F972D1EC71A7B007BB5B8 /* NoteListDelegate.m */,
+				3A7F972F1EC71CDE007BB5B8 /* NoteViewController.h */,
+				3A7F97301EC71CDE007BB5B8 /* NoteViewController.m */,
 			);
 			path = Dolin1;
 			sourceTree = "<group>";
@@ -1091,6 +1192,33 @@
 			path = WebViewVC;
 			sourceTree = "<group>";
 		};
+		3A7F97381EC71E54007BB5B8 /* TableKit */ = {
+			isa = PBXGroup;
+			children = (
+				3A7F97391EC71E54007BB5B8 /* TableKit.h */,
+				3A7F973A1EC71E54007BB5B8 /* Info.plist */,
+			);
+			path = TableKit;
+			sourceTree = "<group>";
+		};
+		3A7F97441EC71F19007BB5B8 /* TableKit */ = {
+			isa = PBXGroup;
+			children = (
+				3A7F97451EC71F19007BB5B8 /* Info.plist */,
+				3A7F97461EC71F19007BB5B8 /* TableKit.h */,
+			);
+			path = TableKit;
+			sourceTree = "<group>";
+		};
+		3A7F97471EC71F2C007BB5B8 /* TableKit */ = {
+			isa = PBXGroup;
+			children = (
+				3A7F97481EC71F2C007BB5B8 /* Info.plist */,
+				3A7F97491EC71F2C007BB5B8 /* TableKit.h */,
+			);
+			path = TableKit;
+			sourceTree = "<group>";
+		};
 		3AA0C1AD1E71628A009B1628 /* GoodCodeDesign */ = {
 			isa = PBXGroup;
 			children = (
@@ -1218,14 +1346,29 @@
 			path = AVFoundation;
 			sourceTree = "<group>";
 		};
+		3AF03B781EC6E8A4008DDF80 /* TodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3A7F97281EC712CA007BB5B8 /* TodayWidget.entitlements */,
+				3AF03B791EC6E8A4008DDF80 /* TodayViewController.h */,
+				3AF03B7A1EC6E8A4008DDF80 /* TodayViewController.m */,
+				3AF03B7C1EC6E8A4008DDF80 /* MainInterface.storyboard */,
+				3AF03B7F1EC6E8A5008DDF80 /* Info.plist */,
+			);
+			path = TodayWidget;
+			sourceTree = "<group>";
+		};
 		96B6CFAEDF4D3AF27BC73BDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A7F97471EC71F2C007BB5B8 /* TableKit */,
+				3A7F97441EC71F19007BB5B8 /* TableKit */,
 				3A5E344A1EB04B0D00588600 /* CoreData.framework */,
 				3A875A741DBF074D002A3F24 /* MapKit.framework */,
 				3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */,
 				3AB96E251D8FC3B500D0114B /* libz.tbd */,
 				BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */,
+				3AF03B761EC6E8A4008DDF80 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1241,6 +1384,18 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		3A7F97341EC71E54007BB5B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7F973B1EC71E54007BB5B8 /* TableKit.h in Headers */,
+				3A7F974B1EC71F57007BB5B8 /* NoteListDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		16C8D6391D33511700228ABD /* dolin_demo */ = {
 			isa = PBXNativeTarget;
@@ -1252,15 +1407,54 @@
 				16C8D6381D33511700228ABD /* Resources */,
 				1224C601395866C17C1670D6 /* [CP] Embed Pods Frameworks */,
 				A13F3F133DB0BAB9C5FA1AF8 /* [CP] Copy Pods Resources */,
+				3AF03B861EC6E8A5008DDF80 /* Embed App Extensions */,
+				3A7F97431EC71E54007BB5B8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3AF03B811EC6E8A5008DDF80 /* PBXTargetDependency */,
+				3A7F973D1EC71E54007BB5B8 /* PBXTargetDependency */,
 			);
 			name = dolin_demo;
 			productName = dolin_demo;
 			productReference = 16C8D63A1D33511700228ABD /* dolin_demo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3A7F97361EC71E54007BB5B8 /* TableKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A7F97401EC71E54007BB5B8 /* Build configuration list for PBXNativeTarget "TableKit" */;
+			buildPhases = (
+				3A7F97321EC71E54007BB5B8 /* Sources */,
+				3A7F97331EC71E54007BB5B8 /* Frameworks */,
+				3A7F97341EC71E54007BB5B8 /* Headers */,
+				3A7F97351EC71E54007BB5B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableKit;
+			productName = TableKit;
+			productReference = 3A7F97371EC71E54007BB5B8 /* TableKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3AF03B741EC6E8A4008DDF80 /* TodayWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AF03B851EC6E8A5008DDF80 /* Build configuration list for PBXNativeTarget "TodayWidget" */;
+			buildPhases = (
+				3AF03B711EC6E8A4008DDF80 /* Sources */,
+				3AF03B721EC6E8A4008DDF80 /* Frameworks */,
+				3AF03B731EC6E8A4008DDF80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayWidget;
+			productName = TodayWidget;
+			productReference = 3AF03B751EC6E8A4008DDF80 /* TodayWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -1276,6 +1470,9 @@
 						DevelopmentTeam = 35P2C5J2YM;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
@@ -1287,6 +1484,21 @@
 							};
 							com.apple.Maps.iOS = {
 								enabled = 0;
+							};
+						};
+					};
+					3A7F97361EC71E54007BB5B8 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 35P2C5J2YM;
+						ProvisioningStyle = Automatic;
+					};
+					3AF03B741EC6E8A4008DDF80 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 35P2C5J2YM;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
 							};
 						};
 					};
@@ -1307,6 +1519,8 @@
 			projectRoot = "";
 			targets = (
 				16C8D6391D33511700228ABD /* dolin_demo */,
+				3AF03B741EC6E8A4008DDF80 /* TodayWidget */,
+				3A7F97361EC71E54007BB5B8 /* TableKit */,
 			);
 		};
 /* End PBXProject section */
@@ -1379,6 +1593,21 @@
 				3A7C68F41DEC0D6800225D28 /* cm2_icn_loop@3x.png in Resources */,
 				3A7C68FB1DEC0D6800225D28 /* cm2_list_icn_multi@3x.png in Resources */,
 				3A7C69181DEC0D6800225D28 /* shengluohao.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A7F97351EC71E54007BB5B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF03B731EC6E8A4008DDF80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF03B7E1EC6E8A4008DDF80 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1461,6 +1690,7 @@
 				3A515C9A1E2CB2DA00ECFBB0 /* UIBezierPathVC.m in Sources */,
 				3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */,
 				3A7C68D81DEC0D6800225D28 /* ExpandClickAreaButton.m in Sources */,
+				3A7F972B1EC71705007BB5B8 /* AddNoteViewController.m in Sources */,
 				3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */,
 				3A7C68D61DEC0D6800225D28 /* Music.m in Sources */,
 				3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */,
@@ -1519,6 +1749,7 @@
 				3A38F4831E1E55090036DE63 /* CGAffineTransformStudy_VC.m in Sources */,
 				3A5ED63B1E7279A900F232A4 /* Banner2Cell.m in Sources */,
 				3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */,
+				3A7F97311EC71CDE007BB5B8 /* NoteViewController.m in Sources */,
 				3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */,
 				3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */,
 				3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */,
@@ -1549,7 +1780,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A7F97321EC71E54007BB5B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7F974C1EC71F6D007BB5B8 /* NoteListDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AF03B711EC6E8A4008DDF80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AF03B7B1EC6E8A4008DDF80 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A7F973D1EC71E54007BB5B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A7F97361EC71E54007BB5B8 /* TableKit */;
+			targetProxy = 3A7F973C1EC71E54007BB5B8 /* PBXContainerItemProxy */;
+		};
+		3AF03B811EC6E8A5008DDF80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AF03B741EC6E8A4008DDF80 /* TodayWidget */;
+			targetProxy = 3AF03B801EC6E8A5008DDF80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */ = {
@@ -1566,6 +1826,14 @@
 				3A7C686B1DEC0D6800225D28 /* zh-Hans */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		3AF03B7C1EC6E8A4008DDF80 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AF03B7D1EC6E8A4008DDF80 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1671,6 +1939,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
+				CODE_SIGN_ENTITLEMENTS = dolin_demo/dolin_demo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 35P2C5J2YM;
@@ -1738,6 +2007,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
+				CODE_SIGN_ENTITLEMENTS = dolin_demo/dolin_demo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 35P2C5J2YM;
@@ -1799,6 +2069,92 @@
 			};
 			name = Release;
 		};
+		3A7F97411EC71E54007BB5B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 35P2C5J2YM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TableKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.TableKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A7F97421EC71E54007BB5B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 35P2C5J2YM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TableKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.TableKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3AF03B831EC6E8A5008DDF80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = TodayWidget/TodayWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 35P2C5J2YM;
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.shaolin.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3AF03B841EC6E8A5008DDF80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = TodayWidget/TodayWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 35P2C5J2YM;
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.shaolin.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1816,6 +2172,23 @@
 			buildConfigurations = (
 				16C8D6521D33511700228ABD /* Debug */,
 				16C8D6531D33511700228ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A7F97401EC71E54007BB5B8 /* Build configuration list for PBXNativeTarget "TableKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A7F97411EC71E54007BB5B8 /* Debug */,
+				3A7F97421EC71E54007BB5B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3AF03B851EC6E8A5008DDF80 /* Build configuration list for PBXNativeTarget "TodayWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF03B831EC6E8A5008DDF80 /* Debug */,
+				3AF03B841EC6E8A5008DDF80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
