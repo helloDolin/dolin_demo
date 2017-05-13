@@ -42,10 +42,11 @@ static NSString* const kKeyPathName = @"contentOffset";
 
 - (void)setupView:(UIImage*)backgroundImage avatarImage:(UIImage *)avatarImage titleString:(NSString *)titleString subtitleString:(NSString *)subtitleString  {
     
-    self.header = [[UIView alloc] initWithFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, 107)];
+    self.header = [[UIView alloc] initWithFrame:CGRectMake(self.x, self.y, self.width, 107)];
+    self.header.backgroundColor = [UIColor redColor];
     [self addSubview:self.header];
     
-    self.headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.origin.x, self.header.frame.size.height - 5, self.frame.size.width, 25)];
+    self.headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.x, self.header.height - 5, self.width, 25)];
     self.headerLabel.textAlignment = NSTextAlignmentCenter;
     self.headerLabel.text = titleString;
     self.headerLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:18];
@@ -55,7 +56,7 @@ static NSString* const kKeyPathName = @"contentOffset";
     self.tableView = [[UITableView alloc] initWithFrame:self.frame];
     self.tableView.backgroundColor = [UIColor clearColor];
     
-    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.header.frame.size.height + 100)];
+    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(self.x, self.y, self.width, self.header.height + 100)];
     [self addSubview:self.tableView];
     
     self.avatarImage = [[UIImageView alloc] initWithFrame:CGRectMake(10, 79, 69, 69)];
@@ -82,11 +83,6 @@ static NSString* const kKeyPathName = @"contentOffset";
     self.headerImageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.header insertSubview:self.headerImageView aboveSubview:self.headerLabel];
     self.header.clipsToBounds = YES;
-    
-    self.avatarImage.layer.cornerRadius = 10;
-    self.avatarImage.layer.borderWidth = 3;
-    self.avatarImage.layer.borderColor = [UIColor whiteColor].CGColor;
-    
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
@@ -104,7 +100,7 @@ static NSString* const kKeyPathName = @"contentOffset";
     // 下拉
     if (offset < 0) {
         CGFloat headerScaleFactor = -(offset) / self.header.bounds.size.height;
-        CGFloat headerSizevariation = ((self.header.bounds.size.height * (1.0 + headerScaleFactor)) - self.header.bounds.size.height)/2.0;
+        CGFloat headerSizevariation = -(offset)/2.0;
         headerTransform = CATransform3DTranslate(headerTransform, 0, headerSizevariation, 0);
         headerTransform = CATransform3DScale(headerTransform, 1.0 + headerScaleFactor, 1.0 + headerScaleFactor, 0);
         self.header.layer.transform = headerTransform;
@@ -112,33 +108,31 @@ static NSString* const kKeyPathName = @"contentOffset";
     
     // 上拉
     else {
-        
-        // Header -----------
+        // Header
         headerTransform = CATransform3DTranslate(headerTransform, 0, MAX( -offset_HeaderStop, -offset), 0);
         
-        //  ------------ Label
+        // Label
         CATransform3D labelTransform = CATransform3DMakeTranslation(0, MAX(-distance_W_LabelHeader, offset_B_LabelHeader - offset), 0);
         self.headerLabel.layer.transform = labelTransform;
         self.headerLabel.layer.zPosition = 2;
         
-        // Avatar -----------
-        CGFloat avatarScaleFactor = (MIN(offset_HeaderStop, offset)) / self.avatarImage.bounds.size.height / 1.4; // Slow down the animation
+        // Avatar
+        // Slow down the animation
+        CGFloat avatarScaleFactor = (MIN(offset_HeaderStop, offset)) / self.avatarImage.bounds.size.height / 1.4;
         CGFloat avatarSizeVariation = ((self.avatarImage.bounds.size.height * (1.0 + avatarScaleFactor)) - self.avatarImage.bounds.size.height) / 2.0;
         avatarTransform = CATransform3DTranslate(avatarTransform, 0, avatarSizeVariation, 0);
         avatarTransform = CATransform3DScale(avatarTransform, 1.0 - avatarScaleFactor, 1.0 - avatarScaleFactor, 0);
         
         if (offset <= offset_HeaderStop) {
-            
             if (self.avatarImage.layer.zPosition <= self.headerImageView.layer.zPosition) {
                 self.header.layer.zPosition = 0;
             }
-            
-        }else {
+        }
+        else {
             if (self.avatarImage.layer.zPosition >= self.headerImageView.layer.zPosition) {
                 self.header.layer.zPosition = 2;
             }
         }
-        
     }
 
     self.header.layer.transform = headerTransform;
