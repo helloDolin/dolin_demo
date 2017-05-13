@@ -25,7 +25,6 @@
 }
 
 - (void)loadData {
-    
     [_noteList removeAllObjects];
     NSArray *myNote = [[[NSUserDefaults alloc] initWithSuiteName:@"group.extension.todayWidget"] valueForKey:@"MyNote"];
     if (myNote) {

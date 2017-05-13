@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TableKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>TodayWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>dolin_demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>16C8D6391D33511700228ABD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A7F97361EC71E54007BB5B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3AF03B741EC6E8A4008DDF80</key>
 		<dict>
 			<key>primary</key>
 			<true/>

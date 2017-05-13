@@ -7,6 +7,7 @@
 //
 
 #import "AddNoteViewController.h"
+#import "NoteViewController.h"
 
 @interface AddNoteViewController ()
 @property (nonatomic, strong) UITextField *textField;
@@ -18,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self layoutUI];
+    [self setRightBarBtn];
+    [self.textField becomeFirstResponder];
 }
 
 - (void)layoutUI {
@@ -37,10 +40,20 @@
     }];
 }
 
+- (void)setRightBarBtn {
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"List" style:UIBarButtonItemStylePlain target:self action:@selector(rightItemAction)];
+    self.navigationItem.rightBarButtonItem = barButtonItem;
+}
+
+- (void)rightItemAction {
+    NoteViewController* vc = [NoteViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (UITextField*)textField {
     if (!_textField) {
         _textField = [[UITextField alloc]init];
-        _textField
+        _textField.borderStyle = UITextBorderStyleLine;
     }
     return _textField;
 }
@@ -55,7 +68,8 @@
         }
         [note insertObject:self.textField.text atIndex:0];
         [[[NSUserDefaults alloc] initWithSuiteName:SUITE_NAME] setValue:note forKey:@"MyNote"];
-        [self.navigationController popViewControllerAnimated:YES];
+        
+        [self rightItemAction];
     }
 }
 

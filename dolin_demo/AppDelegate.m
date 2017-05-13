@@ -11,6 +11,7 @@
 #import "UIWindow+Expand.h"
 #import <AVFoundation/AVFoundation.h>
 #import <JSPatchPlatform/JSPatch.h>
+#import "AddNoteViewController.h"
 
 @interface AppDelegate ()
 
@@ -170,12 +171,14 @@
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     
     if ([url.absoluteString hasPrefix:@"todaywidget"]) {
-        if ([url.absoluteString hasSuffix:@"add"]) {//判断是否是直接跳入到添加页面
-//            UIViewController *addVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AddVC"];
-//            UINavigationController *rootNav = (UINavigationController*)self.window.rootViewController;
-//            [rootNav pushViewController:addVC animated:YES];
+        // 判断是否是直接跳入到添加页面
+        if ([url.absoluteString hasSuffix:@"add"]) {
+            AddNoteViewController* addVC = [AddNoteViewController new];
+            UINavigationController *rootNav = (UINavigationController*)self.window.rootViewController;
+            [rootNav pushViewController:addVC animated:YES];
         }
     }
+    
     return YES;
 }
 
