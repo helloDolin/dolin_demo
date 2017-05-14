@@ -176,9 +176,11 @@
     if ([url.absoluteString hasPrefix:@"todaywidget"]) {
         // 判断是否是直接跳入到添加页面
         if ([url.absoluteString hasSuffix:@"add"]) {
+            UITabBarController *tabVC = (UITabBarController*)self.window.rootViewController;
+            
+            UINavigationController *nav = (UINavigationController *)tabVC.viewControllers[0];
             AddNoteViewController* addVC = [AddNoteViewController new];
-            UINavigationController *rootNav = (UINavigationController*)self.window.rootViewController;
-            [rootNav pushViewController:addVC animated:YES];
+            [nav pushViewController:addVC animated:YES];
         }
     }
     
