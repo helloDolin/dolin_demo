@@ -55,11 +55,14 @@
 
 }
 - (UILocalNotification *)makeLocalNotification{
+    // 重点 先取消掉上一次的全部notification
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    
     // 创建本地推送通知对象
     UILocalNotification *notification = [[UILocalNotification alloc] init];
     NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
     [formatter setDateFormat:@"yyyy-MM-dd HH-mm-sss"];
-    NSDate *resDate = [formatter dateFromString:@"2017-05-02 11-55-00"];
+    NSDate *resDate = [formatter dateFromString:@"2017-05-16 14-06-00"];
     // 设定为明天中午12点触发通知
     notification.fireDate = resDate;
     // 记得设置当前时区，没有设置的话，fireDate将不考虑时区，这样的通知会不准确
