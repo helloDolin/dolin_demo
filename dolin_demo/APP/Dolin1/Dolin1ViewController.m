@@ -9,6 +9,7 @@
 #import "Dolin1ViewController.h"
 #import "YYFPSLabel.h"
 #import "LinAnimateTransition.h"
+#import "UIViewController+Debugging.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
@@ -30,7 +31,9 @@
 //    [self setUpRefreshControl];
     [self setLeftBarBtn];
     [self setRightBarBtn];
-
+    
+    [self toggleDebugger];
+    
     self.arr = [@[
                   @"extensionStudy-AddNoteViewController",
                   @"DLVideoVC-DLVideoVC",
