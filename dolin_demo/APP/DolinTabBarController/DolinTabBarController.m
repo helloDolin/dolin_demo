@@ -7,23 +7,23 @@
 //
 
 #import "DolinTabBarController.h"
+
 #import "Dolin1ViewController.h"
 #import "Dolin2ViewController.h"
 #import "Dolin3ViewController.h"
 #import "Dolin4ViewController.h"
 
 #import "UITabBar+Badge.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 
 @interface DolinTabBarController ()
 
-//毛玻璃
+// 毛玻璃
 @property(nonatomic,strong)UIBlurEffect *blureffect;
-//毛玻璃
+// 毛玻璃
 @property(nonatomic,strong)UIVisualEffectView *visualeffectview;
 
-// 记录点击那个item
-@property (nonatomic, assign) NSInteger indexFlag;
 
 @end
 
@@ -33,7 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupTabBar];
+    [self setUpTabBar];
     [self setUpAllChildViewController];
     [self setUpNavigationBar];
     [self.tabBar showBadgeOnItemIndex:3];  // 设置小红点
@@ -47,7 +47,6 @@
 }
 
 #pragma mark -  method
-
 - (void)setUpTabBarItemFontColor {
     //设置字体颜色
     UIColor *titleNormalColor = [UIColor colorWithWhite:0.8 alpha:1];
@@ -61,10 +60,7 @@
                                                        nil] forState:UIControlStateSelected];
 }
 
-- (void)setupTabBar {
-//    self.tabBar.barStyle = UIBarStyleBlack;
-//    self.tabBar.translucent = NO;
-    
+- (void)setUpTabBar {
     //tabbar背景色
     //毛玻璃
     self.blureffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
@@ -136,33 +132,56 @@
 #pragma mark - UITabBarDelegate
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
     NSInteger index = [self.tabBar.items indexOfObject:item];
-    
-    if (self.indexFlag != index) {
-        [self animationWithIndex:index];
-    }
-
+    [self animationWithIndex:index]; // 点击时动画
+    [self playSound]; // 点击时音效
 }
 
-// 动画
-- (void)animationWithIndex:(NSInteger) index {
+
+- (void)playSound {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"like" ofType:@"caf"];
+    SystemSoundID soundID;
+    NSURL *soundURL = [NSURL fileURLWithPath:path];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL,&soundID);
+    AudioServicesPlaySystemSound(soundID);
+}
+
+- (void)animationWithIndex:(NSInteger)index {
     NSMutableArray * tabbarbuttonArray = [NSMutableArray array];
     for (UIView *tabBarButton in self.tabBar.subviews) {
         if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
             [tabbarbuttonArray addObject:tabBarButton];
         }
     }
-    
     CABasicAnimation*pulse = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    pulse.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    pulse.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     pulse.duration = 0.08;
-    pulse.repeatCount= 1;
-    pulse.autoreverses= YES;
-    pulse.fromValue= [NSNumber numberWithFloat:0.7];
-    pulse.toValue= [NSNumber numberWithFloat:1.3];
+    pulse.repeatCount = 1;
+    pulse.autoreverses = YES;
+    pulse.fromValue = [NSNumber numberWithFloat:0.7];
+    pulse.toValue = [NSNumber numberWithFloat:1.3];
     [[tabbarbuttonArray[index] layer] addAnimation:pulse forKey:nil];
-    
-    self.indexFlag = index;
-    
 }
+
+//// 动画
+//- (void)animationWithIndex:(NSInteger) index {
+//    NSMutableArray * tabbarbuttonArray = [NSMutableArray array];
+//    for (UIView *tabBarButton in self.tabBar.subviews) {
+//        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+//            [tabbarbuttonArray addObject:tabBarButton];
+//        }
+//    }
+//    
+//    CABasicAnimation*pulse = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+//    pulse.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//    pulse.duration = 0.08;
+//    pulse.repeatCount= 1;
+//    pulse.autoreverses= YES;
+//    pulse.fromValue= [NSNumber numberWithFloat:0.7];
+//    pulse.toValue= [NSNumber numberWithFloat:1.3];
+//    [[tabbarbuttonArray[index] layer] addAnimation:pulse forKey:nil];
+//    
+//    self.indexFlag = index;
+//    
+//}
 
 @end

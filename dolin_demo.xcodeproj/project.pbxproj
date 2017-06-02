@@ -182,6 +182,7 @@
 		3AC483B61E4C56C50008CE57 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 3AC483B41E4C56C50008CE57 /* main.js */; };
 		3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */; };
 		3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */; };
+		3ACABD321EE1687100849B58 /* like.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3ACABD311EE1687100849B58 /* like.caf */; };
 		3AD3092E1E779475004C2496 /* LinAnimateTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3092D1E779475004C2496 /* LinAnimateTransition.m */; };
 		3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3095A1E77D563004C2496 /* LinkworkLeftCell.m */; };
 		3AD3095E1E77D563004C2496 /* LinkworkTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3095C1E77D563004C2496 /* LinkworkTableViewVC.m */; };
@@ -196,6 +197,7 @@
 		3AF03B7E1EC6E8A4008DDF80 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF03B7C1EC6E8A4008DDF80 /* MainInterface.storyboard */; };
 		3AF03B821EC6E8A5008DDF80 /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3AF03B751EC6E8A4008DDF80 /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3AF40DEE1EDE62C100F5F6F5 /* UIViewController+Debugging.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF40DED1EDE62C100F5F6F5 /* UIViewController+Debugging.m */; };
+		3AFE58A71EE168C4009962DB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFE58A61EE168C4009962DB /* AudioToolbox.framework */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
 
@@ -530,6 +532,7 @@
 		3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Explode.m"; sourceTree = "<group>"; };
 		3AC533CC1E1CF92300FE560E /* UIButton+DLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DLButton.h"; sourceTree = "<group>"; };
 		3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DLButton.m"; sourceTree = "<group>"; };
+		3ACABD311EE1687100849B58 /* like.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = like.caf; sourceTree = "<group>"; };
 		3AD3092C1E779475004C2496 /* LinAnimateTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinAnimateTransition.h; sourceTree = "<group>"; };
 		3AD3092D1E779475004C2496 /* LinAnimateTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinAnimateTransition.m; sourceTree = "<group>"; };
 		3AD309591E77D563004C2496 /* LinkworkLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkworkLeftCell.h; sourceTree = "<group>"; };
@@ -555,6 +558,7 @@
 		3AF03B7F1EC6E8A5008DDF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AF40DEC1EDE62C100F5F6F5 /* UIViewController+Debugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Debugging.h"; sourceTree = "<group>"; };
 		3AF40DED1EDE62C100F5F6F5 /* UIViewController+Debugging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Debugging.m"; sourceTree = "<group>"; };
+		3AFE58A61EE168C4009962DB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -565,6 +569,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AFE58A71EE168C4009962DB /* AudioToolbox.framework in Frameworks */,
 				3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */,
 				3AC483B51E4C56C50008CE57 /* JSPatchPlatform.framework in Frameworks */,
 				3A7F973E1EC71E54007BB5B8 /* TableKit.framework in Frameworks */,
@@ -970,6 +975,7 @@
 		3A7C68331DEC0D6800225D28 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3ACABD311EE1687100849B58 /* like.caf */,
 				3A7C68341DEC0D6800225D28 /* HYQiHei-50J.ttf */,
 				3A7C68371DEC0D6800225D28 /* keep.mp4 */,
 				3A7C68381DEC0D6800225D28 /* WYicons */,
@@ -1366,6 +1372,7 @@
 		96B6CFAEDF4D3AF27BC73BDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3AFE58A61EE168C4009962DB /* AudioToolbox.framework */,
 				3A7F97471EC71F2C007BB5B8 /* TableKit */,
 				3A7F97441EC71F19007BB5B8 /* TableKit */,
 				3A5E344A1EB04B0D00588600 /* CoreData.framework */,
@@ -1540,6 +1547,7 @@
 				3A7C690F1DEC0D6800225D28 /* cm2_vehicle_btn_next_prs@3x.png in Resources */,
 				3ADF3A621EBC185500A5EFF6 /* DLVideoCell.xib in Resources */,
 				3A7C69081DEC0D6800225D28 /* cm2_play_icn_dld_prs@3x.png in Resources */,
+				3ACABD321EE1687100849B58 /* like.caf in Resources */,
 				3A7C68DE1DEC0D6800225D28 /* MusicListCell.xib in Resources */,
 				3A7C69041DEC0D6800225D28 /* cm2_play_icn_airplay@3x.png in Resources */,
 				3A7C69171DEC0D6800225D28 /* moren.jpeg in Resources */,
