@@ -714,6 +714,12 @@
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
 				3A680E501EA5B071003C2E1B /* InterviewVC.h */,
 				3A680E511EA5B071003C2E1B /* InterviewVC.m */,
+				3A7F97291EC71705007BB5B8 /* AddNoteViewController.h */,
+				3A7F972A1EC71705007BB5B8 /* AddNoteViewController.m */,
+				3A7F972C1EC71A7B007BB5B8 /* NoteListDelegate.h */,
+				3A7F972D1EC71A7B007BB5B8 /* NoteListDelegate.m */,
+				3A7F972F1EC71CDE007BB5B8 /* NoteViewController.h */,
+				3A7F97301EC71CDE007BB5B8 /* NoteViewController.m */,
 				3ADF3A521EBC0E3600A5EFF6 /* AVFoundation */,
 				3AD309581E77D532004C2496 /* LinkworkTable */,
 				3A7C67BD1DEC0D6800225D28 /* Banner */,
@@ -731,12 +737,6 @@
 				3A7C67E21DEC0D6800225D28 /* RotateScreen */,
 				3A7C67E51DEC0D6800225D28 /* Runtime */,
 				3A7C68021DEC0D6800225D28 /* UIBezierPath_Study */,
-				3A7F97291EC71705007BB5B8 /* AddNoteViewController.h */,
-				3A7F972A1EC71705007BB5B8 /* AddNoteViewController.m */,
-				3A7F972C1EC71A7B007BB5B8 /* NoteListDelegate.h */,
-				3A7F972D1EC71A7B007BB5B8 /* NoteListDelegate.m */,
-				3A7F972F1EC71CDE007BB5B8 /* NoteViewController.h */,
-				3A7F97301EC71CDE007BB5B8 /* NoteViewController.m */,
 			);
 			path = Dolin1;
 			sourceTree = "<group>";

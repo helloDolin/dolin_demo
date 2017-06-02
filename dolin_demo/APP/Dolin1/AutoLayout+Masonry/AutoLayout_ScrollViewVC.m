@@ -95,34 +95,7 @@
         nextBoxView = boxView;
     }
     
-    
-    
-//    [self.containerView addSubview:self.scrollBoxView_photo];
-//    [self.containerView addSubview:self.scrollBoxView_card];
-//    [self.containerView addSubview:self.scrollBoxView_save];
-//    
-    
-//
-//    [_scrollBoxView_photo mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(@20);
-//        make.left.right.equalTo(_containerView);
-//        make.height.equalTo(@40);
-//    }];
-//    
-//    [_scrollBoxView_card mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(_scrollBoxView_photo.mas_bottom).offset(10);
-//        make.left.right.equalTo(_containerView);
-//        make.height.equalTo(@80);
-//    }];
-//    
-//    [_scrollBoxView_save mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(_scrollBoxView_card.mas_bottom).offset(10);
-//        make.left.right.equalTo(_containerView);
-//        make.height.equalTo(@120);
-//    }];
-    
     // 这样设置自动约束，系统才能计算出 contentSize
-    
     [_containerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(nextBoxView.mas_bottom);
     }];
