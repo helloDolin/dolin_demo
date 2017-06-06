@@ -198,6 +198,7 @@
 		3AF03B821EC6E8A5008DDF80 /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3AF03B751EC6E8A4008DDF80 /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3AF40DEE1EDE62C100F5F6F5 /* UIViewController+Debugging.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF40DED1EDE62C100F5F6F5 /* UIViewController+Debugging.m */; };
 		3AFE58A71EE168C4009962DB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFE58A61EE168C4009962DB /* AudioToolbox.framework */; };
+		3AFE58AC1EE17225009962DB /* ImitateTGPPersonCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE58AB1EE17225009962DB /* ImitateTGPPersonCenterVC.m */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
 /* End PBXBuildFile section */
 
@@ -559,6 +560,8 @@
 		3AF40DEC1EDE62C100F5F6F5 /* UIViewController+Debugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Debugging.h"; sourceTree = "<group>"; };
 		3AF40DED1EDE62C100F5F6F5 /* UIViewController+Debugging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Debugging.m"; sourceTree = "<group>"; };
 		3AFE58A61EE168C4009962DB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3AFE58AA1EE17225009962DB /* ImitateTGPPersonCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImitateTGPPersonCenterVC.h; sourceTree = "<group>"; };
+		3AFE58AB1EE17225009962DB /* ImitateTGPPersonCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImitateTGPPersonCenterVC.m; sourceTree = "<group>"; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -1260,6 +1263,7 @@
 		3AC4834B1E49A93D0008CE57 /* Imitate */ = {
 			isa = PBXGroup;
 			children = (
+				3AFE58A91EE1720C009962DB /* ImitateTGPPersonCenter */,
 				3AC483631E49A96C0008CE57 /* ImitateGoodDetail */,
 				3AC4834C1E49A93D0008CE57 /* SimulateKeep */,
 				3AC483511E49A93D0008CE57 /* SimulatePhoneMessage */,
@@ -1367,6 +1371,15 @@
 				3AF03B7F1EC6E8A5008DDF80 /* Info.plist */,
 			);
 			path = TodayWidget;
+			sourceTree = "<group>";
+		};
+		3AFE58A91EE1720C009962DB /* ImitateTGPPersonCenter */ = {
+			isa = PBXGroup;
+			children = (
+				3AFE58AA1EE17225009962DB /* ImitateTGPPersonCenterVC.h */,
+				3AFE58AB1EE17225009962DB /* ImitateTGPPersonCenterVC.m */,
+			);
+			path = ImitateTGPPersonCenter;
 			sourceTree = "<group>";
 		};
 		96B6CFAEDF4D3AF27BC73BDB /* Frameworks */ = {
@@ -1787,6 +1800,7 @@
 				3A7C68DA1DEC0D6800225D28 /* PlayManager.m in Sources */,
 				3A7C69251DEC0D6800225D28 /* NSString+Version.m in Sources */,
 				3A7C68C51DEC0D6800225D28 /* ChangeDeviceOrientVC.m in Sources */,
+				3AFE58AC1EE17225009962DB /* ImitateTGPPersonCenterVC.m in Sources */,
 				3A38F48D1E1E55350036DE63 /* ScrollBoxView.m in Sources */,
 				3A38F48C1E1E55350036DE63 /* AutoLayout_ScrollViewVC.m in Sources */,
 				3A7C69341DEC0D6800225D28 /* DolinConstant.m in Sources */,
