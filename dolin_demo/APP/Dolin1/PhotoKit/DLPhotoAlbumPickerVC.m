@@ -64,6 +64,16 @@ static const CGFloat kTableViewCellHeight = 80.0;
     [self loadDataFromAlbumWithIndex:0];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self setTitleView];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self removeTitleView];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -126,6 +136,10 @@ static const CGFloat kTableViewCellHeight = 80.0;
 - (void)setTitleView {
     self.title = @"";
     [self.navigationController.navigationBar addSubview:self.titleView];
+}
+
+- (void)removeTitleView {
+    [self.titleView removeFromSuperview];
 }
 /**
  处理被选中的数组

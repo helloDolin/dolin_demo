@@ -10,6 +10,8 @@
 #import "YYFPSLabel.h"
 #import "LinAnimateTransition.h"
 #import "UIViewController+Debugging.h"
+#import "SystemPermissionsManager.h"
+#import "DLPhotoAlbumPickerVC.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
@@ -191,6 +193,15 @@
     customLeftBarButtonItem.title = @"返回";
     self.navigationItem.backBarButtonItem = customLeftBarButtonItem;
     
+    if ([viewController isKindOfClass:[DLPhotoAlbumPickerVC class]]) {
+        if(![SystemPermissionsManager requestAuthorization:SystemPermissions_ALAssetsLibrary withSureBtnClickBlock:^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self.navigationController pushViewController:viewController animated:YES];
+            });
+        }]) {
+            return;
+        }
+    }
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
