@@ -30,6 +30,9 @@
 		3A5ED63B1E7279A900F232A4 /* Banner2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5ED6391E7279A900F232A4 /* Banner2Cell.m */; };
 		3A5ED63C1E7279A900F232A4 /* Banner2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5ED63A1E7279A900F232A4 /* Banner2Cell.xib */; };
 		3A680E521EA5B071003C2E1B /* InterviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A680E511EA5B071003C2E1B /* InterviewVC.m */; };
+		3A7776B31EE7D1D100B3E793 /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7776AE1EE7D1D100B3E793 /* AddNoteViewController.m */; };
+		3A7776B41EE7D1D100B3E793 /* NoteListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7776B01EE7D1D100B3E793 /* NoteListDelegate.m */; };
+		3A7776B51EE7D1D100B3E793 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7776B21EE7D1D100B3E793 /* NoteViewController.m */; };
 		3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */; };
 		3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67BF1DEC0D6800225D28 /* BannerViewController.m */; };
 		3A7C68B71DEC0D6800225D28 /* DolinBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67C11DEC0D6800225D28 /* DolinBannerView.m */; };
@@ -148,14 +151,10 @@
 		3A7C69361DEC0D6800225D28 /* MMPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68AD1DEC0D6800225D28 /* MMPlaceHolder.m */; };
 		3A7C69461DEC0E7E00225D28 /* TestWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C69401DEC0E7E00225D28 /* TestWebViewVC.m */; };
 		3A7C69471DEC0E7E00225D28 /* TestWKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */; };
-		3A7F972B1EC71705007BB5B8 /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F972A1EC71705007BB5B8 /* AddNoteViewController.m */; };
-		3A7F97311EC71CDE007BB5B8 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F97301EC71CDE007BB5B8 /* NoteViewController.m */; };
 		3A7F973B1EC71E54007BB5B8 /* TableKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7F97391EC71E54007BB5B8 /* TableKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A7F973E1EC71E54007BB5B8 /* TableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7F97371EC71E54007BB5B8 /* TableKit.framework */; };
 		3A7F973F1EC71E54007BB5B8 /* TableKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7F97371EC71E54007BB5B8 /* TableKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A7F974A1EC71F36007BB5B8 /* TableKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7F97371EC71E54007BB5B8 /* TableKit.framework */; };
-		3A7F974B1EC71F57007BB5B8 /* NoteListDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7F972C1EC71A7B007BB5B8 /* NoteListDelegate.h */; };
-		3A7F974C1EC71F6D007BB5B8 /* NoteListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F972D1EC71A7B007BB5B8 /* NoteListDelegate.m */; };
 		3A92DAEE1E2774550092A33A /* LoadingBtnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92DAED1E2774550092A33A /* LoadingBtnVC.m */; };
 		3A92DAF11E2774850092A33A /* LoadingBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92DAF01E2774850092A33A /* LoadingBtn.m */; };
 		3AA0C1B41E71628A009B1628 /* CalculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1AF1E71628A009B1628 /* CalculatorMaker.m */; };
@@ -287,6 +286,12 @@
 		3A5ED63A1E7279A900F232A4 /* Banner2Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Banner2Cell.xib; sourceTree = "<group>"; };
 		3A680E501EA5B071003C2E1B /* InterviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewVC.h; sourceTree = "<group>"; };
 		3A680E511EA5B071003C2E1B /* InterviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewVC.m; sourceTree = "<group>"; };
+		3A7776AD1EE7D1D100B3E793 /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
+		3A7776AE1EE7D1D100B3E793 /* AddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoteViewController.m; sourceTree = "<group>"; };
+		3A7776AF1EE7D1D100B3E793 /* NoteListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListDelegate.h; sourceTree = "<group>"; };
+		3A7776B01EE7D1D100B3E793 /* NoteListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListDelegate.m; sourceTree = "<group>"; };
+		3A7776B11EE7D1D100B3E793 /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
+		3A7776B21EE7D1D100B3E793 /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
 		3A7C67B11DEC0D6800225D28 /* DolinBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinBaseViewController.h; sourceTree = "<group>"; };
 		3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinBaseViewController.m; sourceTree = "<group>"; };
 		3A7C67BE1DEC0D6800225D28 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
@@ -472,12 +477,6 @@
 		3A7C69411DEC0E7E00225D28 /* TestWKWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWKWebViewVC.h; sourceTree = "<group>"; };
 		3A7C69421DEC0E7E00225D28 /* TestWKWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWKWebViewVC.m; sourceTree = "<group>"; };
 		3A7F97281EC712CA007BB5B8 /* TodayWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayWidget.entitlements; sourceTree = "<group>"; };
-		3A7F97291EC71705007BB5B8 /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
-		3A7F972A1EC71705007BB5B8 /* AddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoteViewController.m; sourceTree = "<group>"; };
-		3A7F972C1EC71A7B007BB5B8 /* NoteListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListDelegate.h; sourceTree = "<group>"; };
-		3A7F972D1EC71A7B007BB5B8 /* NoteListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListDelegate.m; sourceTree = "<group>"; };
-		3A7F972F1EC71CDE007BB5B8 /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
-		3A7F97301EC71CDE007BB5B8 /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
 		3A7F97371EC71E54007BB5B8 /* TableKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TableKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7F97391EC71E54007BB5B8 /* TableKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableKit.h; sourceTree = "<group>"; };
 		3A7F973A1EC71E54007BB5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -686,6 +685,19 @@
 			path = "AutoLayout+Masonry";
 			sourceTree = "<group>";
 		};
+		3A7776AC1EE7D1D100B3E793 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3A7776AD1EE7D1D100B3E793 /* AddNoteViewController.h */,
+				3A7776AE1EE7D1D100B3E793 /* AddNoteViewController.m */,
+				3A7776AF1EE7D1D100B3E793 /* NoteListDelegate.h */,
+				3A7776B01EE7D1D100B3E793 /* NoteListDelegate.m */,
+				3A7776B11EE7D1D100B3E793 /* NoteViewController.h */,
+				3A7776B21EE7D1D100B3E793 /* NoteViewController.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		3A7C67AF1DEC0D6700225D28 /* APP */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,12 +729,7 @@
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
 				3A680E501EA5B071003C2E1B /* InterviewVC.h */,
 				3A680E511EA5B071003C2E1B /* InterviewVC.m */,
-				3A7F97291EC71705007BB5B8 /* AddNoteViewController.h */,
-				3A7F972A1EC71705007BB5B8 /* AddNoteViewController.m */,
-				3A7F972C1EC71A7B007BB5B8 /* NoteListDelegate.h */,
-				3A7F972D1EC71A7B007BB5B8 /* NoteListDelegate.m */,
-				3A7F972F1EC71CDE007BB5B8 /* NoteViewController.h */,
-				3A7F97301EC71CDE007BB5B8 /* NoteViewController.m */,
+				3A7776AC1EE7D1D100B3E793 /* Extension */,
 				3ADF3A521EBC0E3600A5EFF6 /* AVFoundation */,
 				3AD309581E77D532004C2496 /* LinkworkTable */,
 				3A7C67BD1DEC0D6800225D28 /* Banner */,
@@ -1415,7 +1422,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A7F973B1EC71E54007BB5B8 /* TableKit.h in Headers */,
-				3A7F974B1EC71F57007BB5B8 /* NoteListDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1717,7 +1723,6 @@
 				3A515C9A1E2CB2DA00ECFBB0 /* UIBezierPathVC.m in Sources */,
 				3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */,
 				3A7C68D81DEC0D6800225D28 /* ExpandClickAreaButton.m in Sources */,
-				3A7F972B1EC71705007BB5B8 /* AddNoteViewController.m in Sources */,
 				3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */,
 				3A7C68D61DEC0D6800225D28 /* Music.m in Sources */,
 				3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */,
@@ -1727,6 +1732,7 @@
 				3A7C69271DEC0D6800225D28 /* UIImage+animatedGIF.m in Sources */,
 				3A38F4911E1E558D0036DE63 /* Animation_Study_VC.m in Sources */,
 				3A7C69201DEC0D6800225D28 /* ImageViewer.m in Sources */,
+				3A7776B41EE7D1D100B3E793 /* NoteListDelegate.m in Sources */,
 				3AA0C1B41E71628A009B1628 /* CalculatorMaker.m in Sources */,
 				3AC483611E49A93D0008CE57 /* SimulateTwitterView.m in Sources */,
 				3ADF3A551EBC0F3A00A5EFF6 /* DLVideoPlayView.m in Sources */,
@@ -1757,6 +1763,7 @@
 				3A7C68C01DEC0D6800225D28 /* LeftAlignedFlowLayout.m in Sources */,
 				3A7C69321DEC0D6800225D28 /* UIView+ZKPulseView.m in Sources */,
 				3A7C68BC1DEC0D6800225D28 /* PlantCollectionViewCell.m in Sources */,
+				3A7776B31EE7D1D100B3E793 /* AddNoteViewController.m in Sources */,
 				3A7C68E31DEC0D6800225D28 /* TitleContainerScrollView.m in Sources */,
 				3A7C68D91DEC0D6800225D28 /* MBFadeAlertView.m in Sources */,
 				3A7C68BF1DEC0D6800225D28 /* GhostAlbumViewController.m in Sources */,
@@ -1776,10 +1783,10 @@
 				3A38F4831E1E55090036DE63 /* CGAffineTransformStudy_VC.m in Sources */,
 				3A5ED63B1E7279A900F232A4 /* Banner2Cell.m in Sources */,
 				3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */,
-				3A7F97311EC71CDE007BB5B8 /* NoteViewController.m in Sources */,
 				3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */,
 				3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */,
 				3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */,
+				3A7776B51EE7D1D100B3E793 /* NoteViewController.m in Sources */,
 				3AC4835E1E49A93D0008CE57 /* StrangeScorllViewController.m in Sources */,
 				3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */,
 				3A7C692C1DEC0D6800225D28 /* UINavigationBar+Awesome.m in Sources */,
@@ -1812,7 +1819,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A7F974C1EC71F6D007BB5B8 /* NoteListDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
