@@ -17,6 +17,7 @@
 
 @interface SystemPermissionsManager() <CLLocationManagerDelegate>
 
+@property (nonatomic, copy) SureBtnClickBlock sureBtnClickBlock;
 @property(nonatomic,strong) CLLocationManager *locationManager;
 
 @end
@@ -38,9 +39,14 @@
 SINGLETON_FOR_IMPLEMENTATION(SystemPermissionsManager);
 
 #pragma mark - method
-+ (BOOL)requestAuthorization:(SystemPermissions)systemPermissions {
++ (BOOL)requestAuthorization:(SystemPermissions)systemPermissions withSureBtnClickBlock:(SureBtnClickBlock)sureBtnClickBlock {
     SystemPermissionsManager* systemPermissionsManager = [SystemPermissionsManager sharedSystemPermissionsManager];
+    systemPermissionsManager.sureBtnClickBlock = sureBtnClickBlock;
     return [systemPermissionsManager requestAuthorization:systemPermissions];
+}
+
++ (BOOL)requestAuthorization:(SystemPermissions)systemPermissions {
+    return [self requestAuthorization:systemPermissions withSureBtnClickBlock:nil];
 }
 
 - (BOOL)requestAuthorization:(SystemPermissions)systemPermissions {
@@ -174,7 +180,9 @@ SINGLETON_FOR_IMPLEMENTATION(SystemPermissionsManager);
                 return NO;
             } else if (authorizationStatus == PHAuthorizationStatusNotDetermined) {
                 [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-                    
+                    if (PHAuthorizationStatusAuthorized == status) {
+                        self.sureBtnClickBlock();
+                    }
                 }];
                 return NO;
             } else if (authorizationStatus == PHAuthorizationStatusAuthorized) {
@@ -206,7 +214,7 @@ SINGLETON_FOR_IMPLEMENTATION(SystemPermissionsManager);
                 // 请求授权
                 [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
                     if (granted) {
-                        
+                        self.sureBtnClickBlock();
                     } else {
                         
                     }

@@ -168,6 +168,8 @@
 		3A97CD821EE7F5F600AC19F5 /* PhotoAlbumCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A97CD7B1EE7F5F600AC19F5 /* PhotoAlbumCategoryCell.xib */; };
 		3A97CD831EE7F5F600AC19F5 /* PhotoAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A97CD7D1EE7F5F600AC19F5 /* PhotoAlbumCell.m */; };
 		3A97CD841EE7F5F600AC19F5 /* PhotoAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A97CD7E1EE7F5F600AC19F5 /* PhotoAlbumCell.xib */; };
+		3A97CD8A1EE800AC00AC19F5 /* DLPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A97CD871EE800AC00AC19F5 /* DLPhotoBrowser.m */; };
+		3A97CD8B1EE800AC00AC19F5 /* DLPhotoBrowserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A97CD891EE800AC00AC19F5 /* DLPhotoBrowserVC.m */; };
 		3AA0C1B41E71628A009B1628 /* CalculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1AF1E71628A009B1628 /* CalculatorMaker.m */; };
 		3AA0C1B51E71628A009B1628 /* ChainCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1B11E71628A009B1628 /* ChainCodeVC.m */; };
 		3AA0C1B61E71628A009B1628 /* NSObject+Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1B31E71628A009B1628 /* NSObject+Calculator.m */; };
@@ -175,6 +177,8 @@
 		3AA0C1BD1E7163DA009B1628 /* Banner2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0C1BC1E7163DA009B1628 /* Banner2VC.m */; };
 		3AA3B3451E76899A00F6221C /* dolinH5.html in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3B3441E76899A00F6221C /* dolinH5.html */; };
 		3AA3B3481E7694A500F6221C /* WKDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3B3471E7694A500F6221C /* WKDelegateController.m */; };
+		3AA544891EE8015D00A6C20F /* PhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA544871EE8015D00A6C20F /* PhotoBrowserCell.m */; };
+		3AA5448A1EE8015D00A6C20F /* PhotoBrowserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA544881EE8015D00A6C20F /* PhotoBrowserCell.xib */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
 		3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4831F1E48115C0008CE57 /* BlockAlertView.m */; };
@@ -517,6 +521,10 @@
 		3A97CD7C1EE7F5F600AC19F5 /* PhotoAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumCell.h; sourceTree = "<group>"; };
 		3A97CD7D1EE7F5F600AC19F5 /* PhotoAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumCell.m; sourceTree = "<group>"; };
 		3A97CD7E1EE7F5F600AC19F5 /* PhotoAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoAlbumCell.xib; sourceTree = "<group>"; };
+		3A97CD861EE800AC00AC19F5 /* DLPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLPhotoBrowser.h; sourceTree = "<group>"; };
+		3A97CD871EE800AC00AC19F5 /* DLPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLPhotoBrowser.m; sourceTree = "<group>"; };
+		3A97CD881EE800AC00AC19F5 /* DLPhotoBrowserVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLPhotoBrowserVC.h; sourceTree = "<group>"; };
+		3A97CD891EE800AC00AC19F5 /* DLPhotoBrowserVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLPhotoBrowserVC.m; sourceTree = "<group>"; };
 		3A98B2051DBF08B900CADF29 /* dolin_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dolin_demo.entitlements; sourceTree = "<group>"; };
 		3AA0C1AE1E71628A009B1628 /* CalculatorMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorMaker.h; sourceTree = "<group>"; };
 		3AA0C1AF1E71628A009B1628 /* CalculatorMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorMaker.m; sourceTree = "<group>"; };
@@ -531,6 +539,9 @@
 		3AA3B3441E76899A00F6221C /* dolinH5.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dolinH5.html; sourceTree = "<group>"; };
 		3AA3B3461E7694A500F6221C /* WKDelegateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKDelegateController.h; sourceTree = "<group>"; };
 		3AA3B3471E7694A500F6221C /* WKDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKDelegateController.m; sourceTree = "<group>"; };
+		3AA544861EE8015D00A6C20F /* PhotoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowserCell.h; sourceTree = "<group>"; };
+		3AA544871EE8015D00A6C20F /* PhotoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserCell.m; sourceTree = "<group>"; };
+		3AA544881EE8015D00A6C20F /* PhotoBrowserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoBrowserCell.xib; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		3AC4831E1E48115C0008CE57 /* BlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockAlertView.h; sourceTree = "<group>"; };
@@ -716,6 +727,7 @@
 		3A7776B61EE7D21000B3E793 /* PhotoKit */ = {
 			isa = PBXGroup;
 			children = (
+				3A97CD851EE800AC00AC19F5 /* DLBrowser */,
 				3A97CD751EE7F5F600AC19F5 /* View */,
 				3A7776BA1EE7D37F00B3E793 /* ModelPhotoAlbum.h */,
 				3A7776BB1EE7D37F00B3E793 /* ModelPhotoAlbum.m */,
@@ -1288,6 +1300,9 @@
 		3A97CD751EE7F5F600AC19F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3AA544861EE8015D00A6C20F /* PhotoBrowserCell.h */,
+				3AA544871EE8015D00A6C20F /* PhotoBrowserCell.m */,
+				3AA544881EE8015D00A6C20F /* PhotoBrowserCell.xib */,
 				3A97CD761EE7F5F600AC19F5 /* PhotoAlbumCameraCell.h */,
 				3A97CD771EE7F5F600AC19F5 /* PhotoAlbumCameraCell.m */,
 				3A97CD781EE7F5F600AC19F5 /* PhotoAlbumCameraCell.xib */,
@@ -1299,6 +1314,17 @@
 				3A97CD7E1EE7F5F600AC19F5 /* PhotoAlbumCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3A97CD851EE800AC00AC19F5 /* DLBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				3A97CD861EE800AC00AC19F5 /* DLPhotoBrowser.h */,
+				3A97CD871EE800AC00AC19F5 /* DLPhotoBrowser.m */,
+				3A97CD881EE800AC00AC19F5 /* DLPhotoBrowserVC.h */,
+				3A97CD891EE800AC00AC19F5 /* DLPhotoBrowserVC.m */,
+			);
+			path = DLBrowser;
 			sourceTree = "<group>";
 		};
 		3AA0C1AD1E71628A009B1628 /* GoodCodeDesign */ = {
@@ -1633,6 +1659,7 @@
 				3A7C69171DEC0D6800225D28 /* moren.jpeg in Resources */,
 				3A7C69031DEC0D6800225D28 /* cm2_play_disc_mask@3x.png in Resources */,
 				3AA3B3451E76899A00F6221C /* dolinH5.html in Resources */,
+				3AA5448A1EE8015D00A6C20F /* PhotoBrowserCell.xib in Resources */,
 				3A7C69161DEC0D6800225D28 /* IMG_0004.PNG in Resources */,
 				3A7C69111DEC0D6800225D28 /* cm2_vehicle_btn_play_prs@3x.png in Resources */,
 				3A7C69121DEC0D6800225D28 /* cm2_vehicle_btn_prev_prs@3x.png in Resources */,
@@ -1785,8 +1812,10 @@
 				3ADF3A611EBC185500A5EFF6 /* DLVideoCell.m in Sources */,
 				3A7C692A1DEC0D6800225D28 /* UIImage+RTTint.m in Sources */,
 				3A7C68E41DEC0D6800225D28 /* DolinTabBarController.m in Sources */,
+				3AA544891EE8015D00A6C20F /* PhotoBrowserCell.m in Sources */,
 				3A515C9A1E2CB2DA00ECFBB0 /* UIBezierPathVC.m in Sources */,
 				3A7776D61EE7EF5300B3E793 /* NoteViewController.m in Sources */,
+				3A97CD8A1EE800AC00AC19F5 /* DLPhotoBrowser.m in Sources */,
 				3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */,
 				3A7C68D81DEC0D6800225D28 /* ExpandClickAreaButton.m in Sources */,
 				3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */,
@@ -1870,6 +1899,7 @@
 				3ADF3A5D1EBC176A00A5EFF6 /* VideoModel.m in Sources */,
 				3A7C68BA1DEC0D6800225D28 /* Dolin1ViewController.m in Sources */,
 				3A7776C21EE7EB0C00B3E793 /* ModelSelectedAsset.m in Sources */,
+				3A97CD8B1EE800AC00AC19F5 /* DLPhotoBrowserVC.m in Sources */,
 				3A7C68C11DEC0D6800225D28 /* PwdTextFieldBugViewController.m in Sources */,
 				3A7C68C41DEC0D6800225D28 /* RichTextViewController.m in Sources */,
 				3A7C69471DEC0E7E00225D28 /* TestWKWebViewVC.m in Sources */,

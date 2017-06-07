@@ -44,11 +44,14 @@ typedef NS_ENUM(NSUInteger, SystemPermissions) {
     SystemPermissions_ABAddressBook
 };
 
+typedef void(^SureBtnClickBlock)(void);
+
 /**
  系统权限管理
  */
 @interface SystemPermissionsManager : NSObject
 
++ (BOOL)requestAuthorization:(SystemPermissions)systemPermissions withSureBtnClickBlock:(SureBtnClickBlock)sureBtnClickBlock;
 + (BOOL)requestAuthorization:(SystemPermissions)systemPermissions;
 
 @end
