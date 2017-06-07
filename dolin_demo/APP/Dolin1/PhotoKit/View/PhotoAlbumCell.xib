@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoAlbumCell">
+            <rect key="frame" x="0.0" y="0.0" width="194" height="169"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="194" height="169"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pK0-vR-0W1">
+                        <rect key="frame" x="0.0" y="0.0" width="194" height="169"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRT-z4-UK9">
+                        <rect key="frame" x="164" y="0.0" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="LwW-jc-6qp"/>
+                            <constraint firstAttribute="height" constant="30" id="muz-6Z-XG0"/>
+                        </constraints>
+                        <state key="normal" image="album_unselected"/>
+                        <state key="selected" image="album_selected"/>
+                        <connections>
+                            <action selector="checkBtnAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="4Uh-xn-CSm"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pK0-vR-0W1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5dA-MS-946"/>
+                <constraint firstItem="aRT-z4-UK9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="97h-ek-mt7"/>
+                <constraint firstItem="pK0-vR-0W1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NgW-fg-SMv"/>
+                <constraint firstAttribute="trailing" secondItem="pK0-vR-0W1" secondAttribute="trailing" id="OvN-1N-XlS"/>
+                <constraint firstAttribute="bottom" secondItem="pK0-vR-0W1" secondAttribute="bottom" id="TRJ-Vg-VN5"/>
+                <constraint firstAttribute="trailing" secondItem="aRT-z4-UK9" secondAttribute="trailing" id="nfD-TV-Iez"/>
+            </constraints>
+            <size key="customSize" width="194" height="169"/>
+            <connections>
+                <outlet property="checkBtn" destination="aRT-z4-UK9" id="tGW-PG-7OC"/>
+                <outlet property="imgView" destination="pK0-vR-0W1" id="X4w-1V-MTn"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="90.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="album_selected" width="26" height="26"/>
+        <image name="album_unselected" width="26" height="26"/>
+    </resources>
+</document>

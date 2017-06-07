@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="PhotoAlbumCategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cvR-Rp-rDO">
+                        <rect key="frame" x="8" y="8" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="Qqi-VJ-kaj"/>
+                            <constraint firstAttribute="height" constant="64" id="l7C-zv-UZ6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrp-ZQ-xeA">
+                        <rect key="frame" x="84" y="30" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmz-Bk-Ozh">
+                        <rect key="frame" x="263" y="30" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4b-P3-Csr">
+                        <rect key="frame" x="0.0" y="83" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="evf-vv-gy0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jrp-ZQ-xeA" firstAttribute="centerY" secondItem="cvR-Rp-rDO" secondAttribute="centerY" id="6Ej-WS-Wun"/>
+                    <constraint firstAttribute="trailing" secondItem="b4b-P3-Csr" secondAttribute="trailing" id="8qN-Ie-gci"/>
+                    <constraint firstItem="cvR-Rp-rDO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="9sH-Rw-HlL"/>
+                    <constraint firstAttribute="trailing" secondItem="rmz-Bk-Ozh" secondAttribute="trailing" constant="15" id="I9a-gy-c8J"/>
+                    <constraint firstItem="b4b-P3-Csr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Qh0-f5-Fks"/>
+                    <constraint firstItem="cvR-Rp-rDO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="UVe-li-lhv"/>
+                    <constraint firstAttribute="bottom" secondItem="b4b-P3-Csr" secondAttribute="bottom" id="gj9-yr-f5h"/>
+                    <constraint firstItem="Jrp-ZQ-xeA" firstAttribute="leading" secondItem="cvR-Rp-rDO" secondAttribute="trailing" constant="12" id="qrd-xG-D3p"/>
+                    <constraint firstItem="rmz-Bk-Ozh" firstAttribute="centerY" secondItem="cvR-Rp-rDO" secondAttribute="centerY" id="yml-gs-19d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="cvR-Rp-rDO" id="mOa-dc-J3v"/>
+                <outlet property="photoCountLabel" destination="rmz-Bk-Ozh" id="9tK-y7-lJH"/>
+                <outlet property="titleLabel" destination="Jrp-ZQ-xeA" id="NcT-BB-RB1"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="72"/>
+        </tableViewCell>
+    </objects>
+</document>

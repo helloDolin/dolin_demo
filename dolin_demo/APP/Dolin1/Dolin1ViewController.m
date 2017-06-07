@@ -35,6 +35,7 @@
     [self toggleDebugger];
     
     self.arr = [@[
+                  @"照片选取器-DLPhotoAlbumPickerVC",
                   @"仿掌盟个人中心-ImitateTGPPersonCenterVC",
                   @"extensionStudy-AddNoteViewController",
                   @"DLVideoVC-DLVideoVC",
