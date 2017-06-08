@@ -103,7 +103,9 @@ SINGLETON_FOR_IMPLEMENTATION(UtilOfPhotoAlbum)
     option.synchronous = NO;
     
     // 控制请求的图片质量
-    option.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
+    // TODO：放开API，在cell中设为PHImageRequestOptionsDeliveryModeOpportunistic，浏览时设为
+    // PHImageRequestOptionsDeliveryModeHighQualityFormat
+    option.deliveryMode = PHImageRequestOptionsDeliveryModeOpportunistic;
     
     // 与 iCloud 密切相关的属性 resultHandler被调用多次的原因
     option.progressHandler = ^(double progress, NSError * _Nullable error, BOOL * _Nonnull stop, NSDictionary * _Nullable info) {

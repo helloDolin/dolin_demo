@@ -93,9 +93,19 @@ static CGFloat const kBottomViewHeight = 50.0;
 - (void)renderCellWithHighQuality2Cell:(PhotoBrowserCell*)cell {
     PHAsset *asset = _arrayDataSources[_currentIndex];
     CGFloat scale = [UIScreen mainScreen].scale;
-    CGFloat width = MIN(200, 200);
+    
+    // size 这边有巨坑，size传不同值会导致img为nil，stackOverFlow上怀疑是苹果的bug
+    // https://stackoverflow.com/questions/31037859/phimagemanager-requestimageforasset-returns-nil-sometimes-for-icloud-photos#
+    
+    NSLog(@"%ld",asset.pixelWidth);
+    NSLog(@"%ld",asset.pixelHeight);
+    NSLog(@"%f",asset.pixelWidth / (float)asset.pixelHeight);
+    CGFloat width = MIN(SCREEN_WIDTH, 500);
     CGSize size = CGSizeMake(width * scale, width * scale * asset.pixelHeight / asset.pixelWidth);
-//    CGSize size = CGSizeMake(asset.pixelWidth,asset.pixelHeight);
+    
+    if (asset.pixelHeight < 500) {
+        size = CGSizeMake(200, 200);
+    }
     
     [[UtilOfPhotoAlbum sharedUtilOfPhotoAlbum] requestImageForAsset:asset size:size   completion:^(UIImage *image, NSDictionary *info)  {
         // 高清图
