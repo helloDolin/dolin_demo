@@ -93,8 +93,9 @@ static CGFloat const kBottomViewHeight = 50.0;
 - (void)renderCellWithHighQuality2Cell:(PhotoBrowserCell*)cell {
     PHAsset *asset = _arrayDataSources[_currentIndex];
     CGFloat scale = [UIScreen mainScreen].scale;
-    CGFloat width = MIN(SCREEN_WIDTH, 500);
+    CGFloat width = MIN(200, 200);
     CGSize size = CGSizeMake(width * scale, width * scale * asset.pixelHeight / asset.pixelWidth);
+//    CGSize size = CGSizeMake(asset.pixelWidth,asset.pixelHeight);
     
     [[UtilOfPhotoAlbum sharedUtilOfPhotoAlbum] requestImageForAsset:asset size:size   completion:^(UIImage *image, NSDictionary *info)  {
         // 高清图
