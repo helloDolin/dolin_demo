@@ -36,8 +36,13 @@ SINGLETON_FOR_HEADER(UtilOfPhotoAlbum);
  */
 - (void)requestImageForAsset:(PHAsset *)asset
                         size:(CGSize)size
-                  completion:(void (^)(UIImage *image, NSDictionary *info))completion;
+                  completion:(void (^)(UIImage *image, NSDictionary *info))completion
+              iCloudProgress:(void (^)(double ))iCloudProgress;
 
+// 上面方法的重载
+- (void)requestImageForAsset:(PHAsset *)asset
+                        size:(CGSize)size
+                  completion:(void (^)(UIImage *image, NSDictionary *info))completion;
 
 /**
  保存图片到以APP名为名的自定义相册

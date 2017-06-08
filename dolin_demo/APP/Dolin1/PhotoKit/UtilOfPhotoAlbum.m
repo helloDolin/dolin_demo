@@ -79,6 +79,17 @@ SINGLETON_FOR_IMPLEMENTATION(UtilOfPhotoAlbum)
 - (void)requestImageForAsset:(PHAsset *)asset
                         size:(CGSize)size
                   completion:(void (^)(UIImage *image, NSDictionary *info))completion {
+    [self requestImageForAsset:asset size:size completion:^(UIImage *image, NSDictionary *info) {
+        completion(image,info);
+    } iCloudProgress:^(double iCloudProgress) {
+        
+    }];
+}
+
+- (void)requestImageForAsset:(PHAsset *)asset
+                        size:(CGSize)size
+                  completion:(void (^)(UIImage *image, NSDictionary *info))completion
+              iCloudProgress:(void (^)(double ))iCloudProgress {
     // ☆☆☆ 重点 ☆☆☆
     PHImageRequestOptions *option = [[PHImageRequestOptions alloc] init];
     
@@ -86,7 +97,7 @@ SINGLETON_FOR_IMPLEMENTATION(UtilOfPhotoAlbum)
     option.resizeMode = PHImageRequestOptionsResizeModeExact;
     
     // 控制是否允许网络请求，默认为 NO,拉取不到 iCloud 的图像原件
-    option.networkAccessAllowed = NO;
+    option.networkAccessAllowed = YES;
     
     // 如果synchronous为 YES，即同步请求时，deliveryMode 会被视为PHImageRequestOptionsDeliveryModeHighQualityForma
     option.synchronous = NO;
@@ -96,7 +107,9 @@ SINGLETON_FOR_IMPLEMENTATION(UtilOfPhotoAlbum)
     
     // 与 iCloud 密切相关的属性 resultHandler被调用多次的原因
     option.progressHandler = ^(double progress, NSError * _Nullable error, BOOL * _Nonnull stop, NSDictionary * _Nullable info) {
-        
+        if (!error) {
+            iCloudProgress(progress);
+        }
     };
     
     [[PHCachingImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeAspectFill options:option resultHandler:^(UIImage * _Nullable image, NSDictionary * _Nullable info) {

@@ -96,13 +96,17 @@ static CGFloat const kBottomViewHeight = 50.0;
     CGFloat width = MIN(SCREEN_WIDTH, 500);
     CGSize size = CGSizeMake(width * scale, width * scale * asset.pixelHeight / asset.pixelWidth);
     
-    [[UtilOfPhotoAlbum sharedUtilOfPhotoAlbum] requestImageForAsset:asset size:size   completion:^(UIImage *image, NSDictionary *info) {
-        cell.imgView.image = image;
+    [[UtilOfPhotoAlbum sharedUtilOfPhotoAlbum] requestImageForAsset:asset size:size   completion:^(UIImage *image, NSDictionary *info)  {
         // 高清图
         if (![[info objectForKey:PHImageResultIsDegradedKey] boolValue]) {
-            
+            cell.imgView.image = image;
         }
-    }];
+    } iCloudProgress:^(double progress) {
+        [SVProgressHUD showProgress:progress];
+        if (progress == 1.0) {
+            [SVProgressHUD dismiss];
+        }
+    } ];
 }
 
 - (void)renderCheckBtnWithCurrentAssert:(PHAsset*)currentAssert {
