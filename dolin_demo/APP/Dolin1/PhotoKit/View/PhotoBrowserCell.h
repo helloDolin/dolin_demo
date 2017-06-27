@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 
-/**
- DLBrowser 与 IndexBrowser 公用
- */
 @interface PhotoBrowserCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
+
+// 重新设置imgView与scrollView的frame
+- (void)resizeSubviews;
 @end

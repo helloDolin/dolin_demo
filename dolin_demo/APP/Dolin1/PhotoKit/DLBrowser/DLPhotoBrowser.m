@@ -195,6 +195,15 @@ static CGFloat const kBottomViewHeight = 50.0;
 - (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
     PhotoBrowserCell *dLPhotoBrowserCell = (PhotoBrowserCell *)cell;
     [dLPhotoBrowserCell.scrollView setZoomScale:1.0 animated:NO];
+    if ([cell isKindOfClass:[PhotoBrowserCell class]]) {
+        [(PhotoBrowserCell *)cell resizeSubviews];
+    }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    if ([cell isKindOfClass:[PhotoBrowserCell class]]) {
+        [(PhotoBrowserCell *)cell resizeSubviews];
+    }
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
