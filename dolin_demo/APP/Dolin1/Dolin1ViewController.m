@@ -23,9 +23,22 @@
 @implementation Dolin1ViewController
 
 #pragma mark -  life circle
+- (void)dealloc {
+    NSLog(@"%s",__func__);
+    [self removeObserver:self.tableView forKeyPath:@"contentOffset"];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    NSLog(@"%@",keyPath);
+    CGFloat offset = self.tableView.contentOffset.y;
+    NSLog(@"%f",offset);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    
+    [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionNew context:nil];
     
     [self.view addSubview:self.tableView];
     

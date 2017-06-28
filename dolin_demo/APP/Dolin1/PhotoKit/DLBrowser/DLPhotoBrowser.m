@@ -189,6 +189,7 @@ static CGFloat const kBottomViewHeight = 50.0;
     [[UtilOfPhotoAlbum sharedUtilOfPhotoAlbum] requestImageForAsset:asset size:size completion:^(UIImage *image, NSDictionary *info) {
         cell.imgView.image = image;
     }];
+    [cell resizeSubviews];
     return cell;
 }
 
