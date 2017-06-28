@@ -30,7 +30,8 @@
                   @"AnimationImages-AnimationImagesViewController",
                   @"点赞动画-AnimationLikeBtnViewController",
                   @"CGAffineTransformStudy-CGAffineTransformStudy_VC",
-                  @"炫酷loading按钮-LoadingBtnVC"
+                  @"炫酷loading按钮-LoadingBtnVC",
+                  @"CABasicAnimationStudyVC-CABasicAnimationStudyVC"
                   ]mutableCopy];
     
 }
