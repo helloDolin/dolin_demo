@@ -33,7 +33,6 @@
     NSLog(@"%@",keyPath);
     CGFloat offset = self.tableView.contentOffset.y;
 //    NSLog(@"%f",offset);
-    
 }
 
 - (void)viewDidLoad {
