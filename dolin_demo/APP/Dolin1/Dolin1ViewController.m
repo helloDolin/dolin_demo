@@ -12,6 +12,7 @@
 #import "UIViewController+Debugging.h"
 #import "SystemPermissionsManager.h"
 #import "DLPhotoAlbumPickerVC.h"
+#import <objc/runtime.h>
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
@@ -31,12 +32,23 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     NSLog(@"%@",keyPath);
     CGFloat offset = self.tableView.contentOffset.y;
-    NSLog(@"%f",offset);
+//    NSLog(@"%f",offset);
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    NSLog(@"address: %p", self.tableView);
+    NSLog(@"class method: %@", self.tableView.class);
+    NSLog(@"description method: %@", self.tableView);
+    NSLog(@"use runtime to get class: %@", object_getClass(self.tableView));
+    [self.tableView addObserver: self forKeyPath: @"contentOffset" options: NSKeyValueObservingOptionNew context: nil];
+    NSLog(@"===================================================");
+    NSLog(@"address: %p", self.tableView);
+    NSLog(@"class method: %@", self.tableView.class);
+    NSLog(@"description method: %@", self.tableView);
+    NSLog(@"use runtime to get class %@", object_getClass(self.tableView));
     
     [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionNew context:nil];
     
