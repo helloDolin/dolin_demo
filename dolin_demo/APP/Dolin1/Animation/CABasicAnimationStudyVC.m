@@ -52,16 +52,16 @@
     // 组合动画
     CAAnimationGroup *group = [CAAnimationGroup animation];
     
-    // 大小改变设置
-    bAnimation.fromValue = [NSValue valueWithCGRect:_testView.bounds];
+    // 大小改变设置 (fromValue不赋值默认就是自己本身属性的值)
+//    bAnimation.fromValue = [NSValue valueWithCGRect:_testView.bounds];
     bAnimation.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 100, 100)];
     
     // 按钮圆角数设置
-    cAnimation.fromValue = [NSNumber numberWithFloat:_testView.layer.cornerRadius];
+//    cAnimation.fromValue = [NSNumber numberWithFloat:_testView.layer.cornerRadius];
     cAnimation.toValue = [NSNumber numberWithFloat:100 / 2];
     
     // 组合动画设置
-    group.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    group.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     [group setAnimations:@[bAnimation,cAnimation]];
     group.duration = 5;
 //    在动画执行完成之后，最好还是将动画移除掉。也就是尽量不要设置removedOnCompletion属性为NO
