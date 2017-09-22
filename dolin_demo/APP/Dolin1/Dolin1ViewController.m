@@ -270,7 +270,14 @@
 #pragma mark -  getter
 - (UITableView*)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64) style:UITableViewStylePlain];
+        CGRect rect = CGRectZero;
+        if (IS_iPhoneX) {
+            rect = CGRectMake(0, 88, SCREEN_WIDTH, SCREEN_HEIGHT - 88 - 34);
+        }
+        else {
+            rect = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64);
+        }
+        _tableView = [[UITableView alloc]initWithFrame:rect style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.delegate = self;
 //        _tableView.allowsSelectionDuringEditing = YES; 编辑状态下也可以点

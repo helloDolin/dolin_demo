@@ -67,7 +67,11 @@
     //添加毛玻璃view视图
     self.visualeffectview = [[UIVisualEffectView alloc]initWithEffect:self.blureffect];
     //设置毛玻璃的view视图的大小
-    self.visualeffectview.frame = self.tabBar.bounds;
+    if (IS_iPhoneX) {
+        self.visualeffectview.frame = CGRectMake(0, 0, SCREEN_WIDTH, IPHONEX_MARGIN_BOTTOM + TabBarHeight);
+    } else {
+        self.visualeffectview.frame = self.tabBar.bounds;
+    }
     //设施模糊的透明度
     self.visualeffectview.alpha = 1;
     
