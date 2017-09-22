@@ -31,6 +31,12 @@
 #define SCREEN_HEIGHT      [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH       [[UIScreen mainScreen] bounds].size.width
 
+// iPhoneX 相关
+#define IS_iPhoneX ([UIScreen mainScreen].bounds.size.width == 375 && [UIScreen mainScreen].bounds.size.height == 812)
+#define IPHONEX_MARGIN_TOP (88)
+#define IPHONEX_MARGIN_BOTTOM (34)
+#define IPHONEX_NavigationBarHeight (88)
+
 #define SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR (SCREEN_HEIGHT - 64.0 - 49.0)
 #define FULL_SCREEN_FRAME CGRectMake(0, 64,SCREEN_WIDTH,SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR)
 
