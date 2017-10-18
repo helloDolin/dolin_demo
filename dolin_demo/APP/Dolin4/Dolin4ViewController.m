@@ -101,7 +101,7 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     // 每次先清空
     [cell.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    BannerViewController* vc = _vcs[indexPath.row];
+    BannerViewController* vc = _vcs[indexPath.item];
     vc.view.frame = CGRectMake(0 , -64, SCREEN_WIDTH, cell.frame.size.height + 64);
     [cell addSubview:vc.view];
     return cell;
