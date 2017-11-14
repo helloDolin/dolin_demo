@@ -61,6 +61,7 @@
     [self toggleDebugger];
     
     self.arr = [@[
+                  @"lottie（牛B）-LottieStudyVC",
                   @"照片选取器-DLPhotoAlbumPickerVC",
                   @"仿掌盟个人中心-ImitateTGPPersonCenterVC",
                   @"extensionStudy-AddNoteViewController",

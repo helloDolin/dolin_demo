@@ -8,8 +8,6 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>LLBootstrapButton.xcscheme</key>
 		<dict>
@@ -20,22 +18,16 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-dolin_demo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>SVProgressHUD.xcscheme</key>
 		<dict>
@@ -43,6 +35,11 @@
 			<false/>
 		</dict>
 		<key>YYText.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>lottie-ios.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -55,22 +52,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0F473A0313FDA968D0FB08EE9FCF1FB4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1EDE13E6F3EAE51A7F01A14B660A25FD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5A07410B15FDB1C8256CC703DBB5FD3F</key>
+		<key>719C1242E5AAF7E84F637991ECD3F881</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>76808AC86C4C8002C7335397C4393636</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7EBB4EA6CDF9888E857AC3A7EC477052</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83A6C76932B5266346D84BDD2F1218F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -85,12 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C8DB28B861C9BFC926495AF08D808F86</key>
+		<key>CC115D846E676638B8280FEB76805BF6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DF4CCB722E80F123B1FD3B5EA7A844C0</key>
+		<key>DE052F084D7CFA3DDC216AE831C4EFFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6F16AF038BA2CF6F6957C3103254619</key>
 		<dict>
 			<key>primary</key>
 			<true/>

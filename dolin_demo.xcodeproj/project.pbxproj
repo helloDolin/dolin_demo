@@ -12,6 +12,9 @@
 		16C8D6421D33511700228ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D6411D33511700228ABD /* AppDelegate.m */; };
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
 		16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */; };
+		16D29B4D1FBB04E30072EB6C /* InterviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D29B481FBB04E30072EB6C /* InterviewVC.m */; };
+		16D29B4E1FBB04E30072EB6C /* ciclista_salita.json in Resources */ = {isa = PBXBuildFile; fileRef = 16D29B4A1FBB04E30072EB6C /* ciclista_salita.json */; };
+		16D29B4F1FBB04E30072EB6C /* LottieStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D29B4C1FBB04E30072EB6C /* LottieStudyVC.m */; };
 		3A0806631DFFC73500C162A3 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0806621DFFC73500C162A3 /* Reveal.framework */; };
 		3A332AAC1EB08D340072BD34 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */; };
 		3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4761E1E55090036DE63 /* AnimationImagesViewController.m */; };
@@ -29,7 +32,6 @@
 		3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CF2621E03BD3700CAF8F6 /* UIImage+DLRoundImg.m */; };
 		3A5ED63B1E7279A900F232A4 /* Banner2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5ED6391E7279A900F232A4 /* Banner2Cell.m */; };
 		3A5ED63C1E7279A900F232A4 /* Banner2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5ED63A1E7279A900F232A4 /* Banner2Cell.xib */; };
-		3A680E521EA5B071003C2E1B /* InterviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A680E511EA5B071003C2E1B /* InterviewVC.m */; };
 		3A7776B91EE7D28000B3E793 /* UtilOfPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7776B81EE7D28000B3E793 /* UtilOfPhotoAlbum.m */; };
 		3A7776BC1EE7D37F00B3E793 /* ModelPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7776BB1EE7D37F00B3E793 /* ModelPhotoAlbum.m */; };
 		3A7776BF1EE7E25C00B3E793 /* DLPhotoAlbumPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7776BE1EE7E25C00B3E793 /* DLPhotoAlbumPickerVC.m */; };
@@ -269,6 +271,11 @@
 		16C8D6411D33511700228ABD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		16C8D6491D33511700228ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16C8D64C1D33511700228ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16D29B471FBB04E30072EB6C /* InterviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewVC.h; sourceTree = "<group>"; };
+		16D29B481FBB04E30072EB6C /* InterviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewVC.m; sourceTree = "<group>"; };
+		16D29B4A1FBB04E30072EB6C /* ciclista_salita.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ciclista_salita.json; sourceTree = "<group>"; };
+		16D29B4B1FBB04E30072EB6C /* LottieStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LottieStudyVC.h; sourceTree = "<group>"; };
+		16D29B4C1FBB04E30072EB6C /* LottieStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LottieStudyVC.m; sourceTree = "<group>"; };
 		3A0806621DFFC73500C162A3 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		3A332AAA1EB08D340072BD34 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
 		3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
@@ -300,8 +307,6 @@
 		3A5ED6381E7279A900F232A4 /* Banner2Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Banner2Cell.h; sourceTree = "<group>"; };
 		3A5ED6391E7279A900F232A4 /* Banner2Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banner2Cell.m; sourceTree = "<group>"; };
 		3A5ED63A1E7279A900F232A4 /* Banner2Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Banner2Cell.xib; sourceTree = "<group>"; };
-		3A680E501EA5B071003C2E1B /* InterviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewVC.h; sourceTree = "<group>"; };
-		3A680E511EA5B071003C2E1B /* InterviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewVC.m; sourceTree = "<group>"; };
 		3A7776B71EE7D28000B3E793 /* UtilOfPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilOfPhotoAlbum.h; sourceTree = "<group>"; };
 		3A7776B81EE7D28000B3E793 /* UtilOfPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilOfPhotoAlbum.m; sourceTree = "<group>"; };
 		3A7776BA1EE7D37F00B3E793 /* ModelPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelPhotoAlbum.h; sourceTree = "<group>"; };
@@ -691,6 +696,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		16D29B461FBB04E30072EB6C /* Interview */ = {
+			isa = PBXGroup;
+			children = (
+				16D29B471FBB04E30072EB6C /* InterviewVC.h */,
+				16D29B481FBB04E30072EB6C /* InterviewVC.m */,
+			);
+			path = Interview;
+			sourceTree = "<group>";
+		};
+		16D29B491FBB04E30072EB6C /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				16D29B4A1FBB04E30072EB6C /* ciclista_salita.json */,
+				16D29B4B1FBB04E30072EB6C /* LottieStudyVC.h */,
+				16D29B4C1FBB04E30072EB6C /* LottieStudyVC.m */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 		3A38F4741E1E55090036DE63 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -788,8 +812,8 @@
 			children = (
 				3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */,
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
-				3A680E501EA5B071003C2E1B /* InterviewVC.h */,
-				3A680E511EA5B071003C2E1B /* InterviewVC.m */,
+				16D29B461FBB04E30072EB6C /* Interview */,
+				16D29B491FBB04E30072EB6C /* Lottie */,
 				3A7776CD1EE7EF5300B3E793 /* Extension */,
 				3A7776B61EE7D21000B3E793 /* PhotoKit */,
 				3ADF3A521EBC0E3600A5EFF6 /* AVFoundation */,
@@ -1711,6 +1735,7 @@
 				3A5ED63C1E7279A900F232A4 /* Banner2Cell.xib in Resources */,
 				3A7C68F91DEC0D6800225D28 /* cm2_list_detail_icn_faved@3x.png in Resources */,
 				3A7C68ED1DEC0D6800225D28 /* cm2_default_cover_play@3x.png in Resources */,
+				16D29B4E1FBB04E30072EB6C /* ciclista_salita.json in Resources */,
 				3A7C68EA1DEC0D6800225D28 /* 123@3x.png in Resources */,
 				3A7C68FC1DEC0D6800225D28 /* cm2_list_icn_play@3x.png in Resources */,
 				16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */,
@@ -1769,7 +1794,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A13F3F133DB0BAB9C5FA1AF8 /* [CP] Copy Pods Resources */ = {
@@ -1825,6 +1850,7 @@
 				3A7C68D81DEC0D6800225D28 /* ExpandClickAreaButton.m in Sources */,
 				3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */,
 				3A7C68D61DEC0D6800225D28 /* Music.m in Sources */,
+				16D29B4F1FBB04E30072EB6C /* LottieStudyVC.m in Sources */,
 				3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */,
 				3A7C68DF1DEC0D6800225D28 /* CameraViewController.m in Sources */,
 				3A7C68C61DEC0D6800225D28 /* NSObject+DLRuntime.m in Sources */,
@@ -1879,6 +1905,7 @@
 				3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */,
 				3A7C69281DEC0D6800225D28 /* UIImage+Blur.m in Sources */,
 				3A7C68B71DEC0D6800225D28 /* DolinBannerView.m in Sources */,
+				16D29B4D1FBB04E30072EB6C /* InterviewVC.m in Sources */,
 				3A7C68DC1DEC0D6800225D28 /* PlayMusicViewController.m in Sources */,
 				3A97CD811EE7F5F600AC19F5 /* PhotoAlbumCategoryCell.m in Sources */,
 				3A7C69241DEC0D6800225D28 /* YYWeakProxy.m in Sources */,
@@ -1892,7 +1919,6 @@
 				3AC4835E1E49A93D0008CE57 /* StrangeScorllViewController.m in Sources */,
 				3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */,
 				3A7C692C1DEC0D6800225D28 /* UINavigationBar+Awesome.m in Sources */,
-				3A680E521EA5B071003C2E1B /* InterviewVC.m in Sources */,
 				3A7C68DB1DEC0D6800225D28 /* RequestManager.m in Sources */,
 				3A7776D91EE7EF7800B3E793 /* NoteListDelegate.m in Sources */,
 				3A7C68E01DEC0D6800225D28 /* Dolin3ViewController.m in Sources */,

@@ -9,4 +9,5 @@ target 'dolin_demo' do
   pod "LLBootstrapButton"
   pod 'YYText'
   pod 'SVProgressHUD'
+  pod 'lottie-ios'
 end

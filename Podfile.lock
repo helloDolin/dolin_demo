@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - LLBootstrapButton (0.0.1)
+  - lottie-ios (2.1.3)
   - Masonry (1.0.2)
   - pop (1.0.9)
   - SDWebImage (3.8.2):
@@ -26,6 +27,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - LLBootstrapButton
+  - lottie-ios
   - Masonry
   - pop (~> 1.0)
   - SDWebImage
@@ -35,12 +37,13 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   LLBootstrapButton: b4f9735e1684f7525aa3b8aea65c55f0af66348d
+  lottie-ios: 8c150606598931621e927377f1426d2d3e99282d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: ab593c08872c6ed54b599d965e357f0f2ba5d704
+PODFILE CHECKSUM: 0a39cb1d779aaf46a8457997fa31026eb7748e6e
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1
