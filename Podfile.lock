@@ -15,13 +15,52 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - LLBootstrapButton (0.0.1)
-  - lottie-ios (2.1.3)
-  - Masonry (1.0.2)
-  - pop (1.0.9)
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
-  - SVProgressHUD (2.1.2)
+  - lottie-ios (2.1.4)
+  - Masonry (1.1.0)
+  - pop (1.0.10)
+  - React/ART (0.50.1):
+    - React/Core
+  - React/BatchedBridge (0.50.1):
+    - React/Core
+    - React/cxxreact_legacy
+  - React/Core (0.50.1):
+    - yoga (= 0.50.1.React)
+  - React/cxxreact_legacy (0.50.1):
+    - React/jschelpers_legacy
+  - React/fishhook (0.50.1)
+  - React/jschelpers_legacy (0.50.1)
+  - React/RCTActionSheet (0.50.1):
+    - React/Core
+  - React/RCTAnimation (0.50.1):
+    - React/Core
+  - React/RCTBlob (0.50.1):
+    - React/Core
+  - React/RCTGeolocation (0.50.1):
+    - React/Core
+  - React/RCTImage (0.50.1):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.50.1):
+    - React/Core
+  - React/RCTNetwork (0.50.1):
+    - React/Core
+  - React/RCTPushNotification (0.50.1):
+    - React/Core
+  - React/RCTSettings (0.50.1):
+    - React/Core
+  - React/RCTText (0.50.1):
+    - React/Core
+  - React/RCTVibration (0.50.1):
+    - React/Core
+  - React/RCTWebSocket (0.50.1):
+    - React/Core
+    - React/fishhook
+    - React/RCTBlob
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
+  - SVProgressHUD (2.2.2)
+  - yoga (0.50.1.React)
   - YYText (1.0.7)
 
 DEPENDENCIES:
@@ -30,20 +69,43 @@ DEPENDENCIES:
   - lottie-ios
   - Masonry
   - pop (~> 1.0)
+  - React/ART (from `./ReactComponent/node_modules/react-native`)
+  - React/BatchedBridge (from `./ReactComponent/node_modules/react-native`)
+  - React/Core (from `./ReactComponent/node_modules/react-native`)
+  - React/RCTActionSheet (from `./ReactComponent/node_modules/react-native`)
+  - React/RCTAnimation (from `./ReactComponent/node_modules/react-native`)
+  - React/RCTGeolocation (from `./ReactComponent/node_modules/react-native`)
+  - React/RCTImage (from `./ReactComponent/node_modules/react-native`)
+  - React/RCTLinkingIOS (from `./ReactComponent/node_modules/react-native`)
+  - React/RCTNetwork (from `./ReactComponent/node_modules/react-native`)
+  - React/RCTPushNotification (from `./ReactComponent/node_modules/react-native`)
+  - React/RCTSettings (from `./ReactComponent/node_modules/react-native`)
+  - React/RCTText (from `./ReactComponent/node_modules/react-native`)
+  - React/RCTVibration (from `./ReactComponent/node_modules/react-native`)
+  - React/RCTWebSocket (from `./ReactComponent/node_modules/react-native`)
   - SDWebImage
   - SVProgressHUD
+  - yoga (from `./ReactComponent/node_modules/react-native/ReactCommon/yoga`)
   - YYText
+
+EXTERNAL SOURCES:
+  React:
+    :path: "./ReactComponent/node_modules/react-native"
+  yoga:
+    :path: "./ReactComponent/node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   LLBootstrapButton: b4f9735e1684f7525aa3b8aea65c55f0af66348d
-  lottie-ios: 8c150606598931621e927377f1426d2d3e99282d
-  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  lottie-ios: 94fa2d82547ce3adf1e61157653ba99999fd279f
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  React: 2b50e9e9151d1b7a5fba4ad593b1393ec3c9654b
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  yoga: f25f45222e44e880cc6e4e26513c24bdc8a5cfd7
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 0a39cb1d779aaf46a8457997fa31026eb7748e6e
+PODFILE CHECKSUM: 4239a062d64c536f2a45c4459e9281415ea4710d
 
 COCOAPODS: 1.2.1

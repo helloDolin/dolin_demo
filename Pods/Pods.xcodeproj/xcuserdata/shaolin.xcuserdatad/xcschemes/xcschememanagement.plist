@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>React.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -49,10 +54,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>yoga.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>719C1242E5AAF7E84F637991ECD3F881</key>
+		<key>28A9FD4A3F5573C759E999FB1E8C0D5F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5399355B7B6D0B4605FDBB358F2E97B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>69704915D8D0D6100BBABCFA5A65D6B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7296C2B803FFF0FF2A887A895B0CE22A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,12 +87,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7EBB4EA6CDF9888E857AC3A7EC477052</key>
+		<key>7A62AF60F2ACCDAFD14C1B4AACB64286</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>83A6C76932B5266346D84BDD2F1218F1</key>
+		<key>7F6CF1A9B1E6E3D4F2EFB09E12B9AF76</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>97993174E2948F3E3F66E002C2E8341C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,17 +112,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CC115D846E676638B8280FEB76805BF6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>DE052F084D7CFA3DDC216AE831C4EFFD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F6F16AF038BA2CF6F6957C3103254619</key>
 		<dict>
 			<key>primary</key>
 			<true/>
