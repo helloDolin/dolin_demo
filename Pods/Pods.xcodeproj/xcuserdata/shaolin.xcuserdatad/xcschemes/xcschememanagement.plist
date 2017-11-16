@@ -49,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>lottie-react-native.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -61,62 +66,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>28A9FD4A3F5573C759E999FB1E8C0D5F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5399355B7B6D0B4605FDBB358F2E97B7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>69704915D8D0D6100BBABCFA5A65D6B0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7296C2B803FFF0FF2A887A895B0CE22A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>76808AC86C4C8002C7335397C4393636</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7A62AF60F2ACCDAFD14C1B4AACB64286</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7F6CF1A9B1E6E3D4F2EFB09E12B9AF76</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>97993174E2948F3E3F66E002C2E8341C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9E033EDB5EC0819481B0546434FA577B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DE052F084D7CFA3DDC216AE831C4EFFD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

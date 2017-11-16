@@ -1,1 +1,1 @@
-../../../../lottie-ios/lottie-ios/Classes/Models/LOTMask.h
+../../../../../ReactComponent/node_modules/lottie-ios/lottie-ios/Classes/Models/LOTMask.h

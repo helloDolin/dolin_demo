@@ -1,1 +1,1 @@
-../../../../lottie-ios/lottie-ios/Classes/RenderSystem/RenderNodes/LOTGradientFillRender.h
+../../../../../ReactComponent/node_modules/lottie-ios/lottie-ios/Classes/RenderSystem/RenderNodes/LOTGradientFillRender.h

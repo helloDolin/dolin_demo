@@ -1,1 +1,1 @@
-../../../../lottie-ios/lottie-ios/Classes/Extensions/CGGeometry+LOTAdditions.h
+../../../../../ReactComponent/node_modules/lottie-ios/lottie-ios/Classes/Extensions/CGGeometry+LOTAdditions.h

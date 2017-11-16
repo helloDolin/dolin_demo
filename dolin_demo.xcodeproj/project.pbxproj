@@ -10,8 +10,6 @@
 		169F8BE11FBC31CF0031F536 /* diantou.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BDE1FBC31CF0031F536 /* diantou.json */; };
 		169F8BE21FBC31CF0031F536 /* think.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BDF1FBC31CF0031F536 /* think.json */; };
 		169F8BE31FBC31CF0031F536 /* zhayan.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BE01FBC31CF0031F536 /* zhayan.json */; };
-		16A106A41FBD668A00992ECC /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A106A31FBD668A00992ECC /* package.json */; };
-		16A106A61FBD679F00992ECC /* index.ios.js in Resources */ = {isa = PBXBuildFile; fileRef = 16A106A51FBD679F00992ECC /* index.ios.js */; };
 		16C6717D1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		16C8D63F1D33511700228ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D63E1D33511700228ABD /* main.m */; };
 		16C8D6421D33511700228ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D6411D33511700228ABD /* AppDelegate.m */; };
@@ -269,8 +267,6 @@
 		169F8BDE1FBC31CF0031F536 /* diantou.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diantou.json; sourceTree = "<group>"; };
 		169F8BDF1FBC31CF0031F536 /* think.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = think.json; sourceTree = "<group>"; };
 		169F8BE01FBC31CF0031F536 /* zhayan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zhayan.json; sourceTree = "<group>"; };
-		16A106A31FBD668A00992ECC /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
-		16A106A51FBD679F00992ECC /* index.ios.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.ios.js; sourceTree = "<group>"; };
 		16C6717B1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		16C8D63A1D33511700228ABD /* dolin_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dolin_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -651,19 +647,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16A106A21FBD64CA00992ECC /* ReactComponent */ = {
-			isa = PBXGroup;
-			children = (
-				16A106A31FBD668A00992ECC /* package.json */,
-				16A106A51FBD679F00992ECC /* index.ios.js */,
-			);
-			path = ReactComponent;
-			sourceTree = "<group>";
-		};
 		16C8D6311D33511700228ABD = {
 			isa = PBXGroup;
 			children = (
-				16A106A21FBD64CA00992ECC /* ReactComponent */,
 				16C8D63C1D33511700228ABD /* dolin_demo */,
 				3AF03B781EC6E8A4008DDF80 /* TodayWidget */,
 				3A7F97381EC71E54007BB5B8 /* TableKit */,
@@ -1694,7 +1680,6 @@
 				3A7C690D1DEC0D6800225D28 /* cm2_topbar_icn_back@3x.png in Resources */,
 				3A7C690F1DEC0D6800225D28 /* cm2_vehicle_btn_next_prs@3x.png in Resources */,
 				3ADF3A621EBC185500A5EFF6 /* DLVideoCell.xib in Resources */,
-				16A106A41FBD668A00992ECC /* package.json in Resources */,
 				3A7C69081DEC0D6800225D28 /* cm2_play_icn_dld_prs@3x.png in Resources */,
 				3ACABD321EE1687100849B58 /* like.caf in Resources */,
 				3A7C68DE1DEC0D6800225D28 /* MusicListCell.xib in Resources */,
@@ -1728,7 +1713,6 @@
 				3A7C69191DEC0D6800225D28 /* ttt@3x.png in Resources */,
 				3A7C690C1DEC0D6800225D28 /* cm2_play_needle_play@3x.png in Resources */,
 				3A7C68FD1DEC0D6800225D28 /* cm2_mv_btn_dlded@3x.png in Resources */,
-				16A106A61FBD679F00992ECC /* index.ios.js in Resources */,
 				3A7C68F01DEC0D6800225D28 /* cm2_fm_vol_btn@3x.png in Resources */,
 				3A7C68F31DEC0D6800225D28 /* cm2_icn_list@3x副本.png in Resources */,
 				3A7C690B1DEC0D6800225D28 /* cm2_play_icn_more@3x.png in Resources */,

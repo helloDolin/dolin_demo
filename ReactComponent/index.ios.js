@@ -4,51 +4,51 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
     AppRegistry,
     StyleSheet,
     Text,
-    View
+    View,
+    Animated
 } from 'react-native';
 
+import Animation from 'lottie-react-native';
+import zhayan from './zhayan.json';
+import diantou from './diantou.json';
+import think from './think.json';
+
 class NativeRNApp extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            src:zhayan
+        }
+    }
+
+    componentDidMount() {
+        let self = this;
+        setInterval(()=>{
+            self.setState({
+                src:diantou
+            });
+            this.animation.play();
+        },5000)
+        this.animation.play();
+    }
     render() {
         return (
-                <View style={styles.container}>
-                <Text style={styles.welcome}>
-                Welcome to React Native!
-                </Text>
-                <Text style={styles.instructions}>
-                To get started, edit index.ios.js
-                </Text>
-                <Text style={styles.instructions}>
-                Press Cmd+R to reload,{'\n'}
-                Cmd+D or shake for dev menu
-                </Text>
-                </View>
-                );
+            <Animation
+                ref = {animation => {this.animation = animation;}}
+                style={{
+                    width: 414,
+                    height: 700,
+                }}
+                source = {this.state.src}
+                loop = {true}
+            />
+        );
     }
 }
 
-const styles = StyleSheet.create({
-                                 container: {
-                                 flex: 1,
-                                 justifyContent: 'center',
-                                 alignItems: 'center',
-                                 backgroundColor: '#F5FCFF',
-                                 },
-                                 welcome: {
-                                 fontSize: 20,
-                                 textAlign: 'center',
-                                 margin: 10,
-                                 },
-                                 instructions: {
-                                 textAlign: 'center',
-                                 color: '#333333',
-                                 marginBottom: 5,
-                                 },
-                                 });
-
-// 项目名要有所对应
 AppRegistry.registerComponent('dolin_demo', () => NativeRNApp);

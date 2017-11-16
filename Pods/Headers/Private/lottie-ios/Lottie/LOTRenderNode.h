@@ -1,1 +1,1 @@
-../../../../lottie-ios/lottie-ios/Classes/RenderSystem/LOTRenderNode.h
+../../../../../ReactComponent/node_modules/lottie-ios/lottie-ios/Classes/RenderSystem/LOTRenderNode.h

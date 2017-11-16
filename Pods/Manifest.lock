@@ -15,9 +15,14 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - LLBootstrapButton (0.0.1)
-  - lottie-ios (2.1.4)
+  - lottie-ios (2.1.3)
+  - lottie-react-native (2.2.7):
+    - lottie-ios
+    - React
   - Masonry (1.1.0)
   - pop (1.0.10)
+  - React (0.50.1):
+    - React/Core (= 0.50.1)
   - React/ART (0.50.1):
     - React/Core
   - React/BatchedBridge (0.50.1):
@@ -66,7 +71,8 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - LLBootstrapButton
-  - lottie-ios
+  - lottie-ios (from `./ReactComponent/node_modules/lottie-ios`)
+  - lottie-react-native (from `./ReactComponent/node_modules/lottie-react-native`)
   - Masonry
   - pop (~> 1.0)
   - React/ART (from `./ReactComponent/node_modules/react-native`)
@@ -89,6 +95,10 @@ DEPENDENCIES:
   - YYText
 
 EXTERNAL SOURCES:
+  lottie-ios:
+    :path: "./ReactComponent/node_modules/lottie-ios"
+  lottie-react-native:
+    :path: "./ReactComponent/node_modules/lottie-react-native"
   React:
     :path: "./ReactComponent/node_modules/react-native"
   yoga:
@@ -97,7 +107,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   LLBootstrapButton: b4f9735e1684f7525aa3b8aea65c55f0af66348d
-  lottie-ios: 94fa2d82547ce3adf1e61157653ba99999fd279f
+  lottie-ios: 8c150606598931621e927377f1426d2d3e99282d
+  lottie-react-native: 7473cccb5efa322498c850bffc60acc9dc0c5846
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   React: 2b50e9e9151d1b7a5fba4ad593b1393ec3c9654b
@@ -106,6 +117,6 @@ SPEC CHECKSUMS:
   yoga: f25f45222e44e880cc6e4e26513c24bdc8a5cfd7
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 4239a062d64c536f2a45c4459e9281415ea4710d
+PODFILE CHECKSUM: e5db8463771dd59273cce61330890b246b98ee85
 
 COCOAPODS: 1.2.1

@@ -1,1 +1,1 @@
-../../../../lottie-ios/lottie-ios/Classes/MacCompatability/UIColor.h
+../../../../../ReactComponent/node_modules/lottie-ios/lottie-ios/Classes/MacCompatability/UIColor.h

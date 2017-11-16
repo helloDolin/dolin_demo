@@ -9,7 +9,6 @@ target 'dolin_demo' do
   pod "LLBootstrapButton"
   pod 'YYText'
   pod 'SVProgressHUD'
-  pod 'lottie-ios'
   # 取决于你的工程如何组织，你的node_modules文件夹可能会在别的地方。
   # 请将:path后面的内容修改为正确的路径（一定要确保正确～～）。
   pod 'yoga', :path => './ReactComponent/node_modules/react-native/ReactCommon/yoga'
@@ -31,4 +30,6 @@ target 'dolin_demo' do
   
   # 添加其他你想在工程中使用的依赖。
   ]
+  pod 'lottie-ios', :path => './ReactComponent/node_modules/lottie-ios'
+  pod 'lottie-react-native', :path => './ReactComponent/node_modules/lottie-react-native'
 end
