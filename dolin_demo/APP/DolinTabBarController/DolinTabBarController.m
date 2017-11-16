@@ -89,7 +89,7 @@
     [self setUpOneChildViewController:dolin2ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_music"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_music_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"music", nil)];
     
     Dolin3ViewController *dolin3ViewController = [[Dolin3ViewController alloc]init];
-    [self setUpOneChildViewController:dolin3ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_friend"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_friend_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"friend", nil)];
+    [self setUpOneChildViewController:dolin3ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_friend"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_friend_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"RN", nil)];
     
     Dolin4ViewController *dolin4ViewController = [[Dolin4ViewController alloc]init];
     [self setUpOneChildViewController:dolin4ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_account"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_account_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"me", nil)];
