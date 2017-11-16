@@ -24,15 +24,28 @@ class NativeRNApp extends Component {
         this.state = {
             src:zhayan
         }
+        this.index = 0;
     }
 
     componentDidMount() {
         let self = this;
         setInterval(()=>{
+            let source = zhayan;
+            if (self.index == 0) {
+                source = zhayan;
+            }
+            else if (self.index == 1) {
+                source = diantou;
+            }
+            else if (self.index == 2) {
+                source = think;
+            }
             self.setState({
-                src:diantou
+                src:source
             });
-            this.animation.play();
+            self.animation.play();
+            self.index++;
+            if (self.index === 3) self.index = 0;
         },5000)
         this.animation.play();
     }

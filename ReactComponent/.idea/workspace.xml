@@ -17,8 +17,8 @@
       <file leaf-file-name="index.ios.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.ios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+            <state relative-caret-position="463">
+              <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#89#128#0" expanded="true" />
@@ -173,12 +173,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510818629761</updated>
-      <workItem from="1510818631323" duration="1817000" />
+      <workItem from="1510818631323" duration="2240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1817000" />
+    <option name="totallyTimeSpent" value="2240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-480" y="-1057" width="1505" height="1013" extended-state="0" />
@@ -242,8 +242,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.ios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        <state relative-caret-position="463">
+          <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#89#128#0" expanded="true" />
