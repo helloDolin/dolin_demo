@@ -10,6 +10,7 @@
 		169F8BE11FBC31CF0031F536 /* diantou.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BDE1FBC31CF0031F536 /* diantou.json */; };
 		169F8BE21FBC31CF0031F536 /* think.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BDF1FBC31CF0031F536 /* think.json */; };
 		169F8BE31FBC31CF0031F536 /* zhayan.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BE01FBC31CF0031F536 /* zhayan.json */; };
+		16B1A8121FBE91F1004B3D74 /* ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 16B1A8111FBE91F1004B3D74 /* ios.jsbundle */; };
 		16C6717D1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		16C8D63F1D33511700228ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D63E1D33511700228ABD /* main.m */; };
 		16C8D6421D33511700228ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D6411D33511700228ABD /* AppDelegate.m */; };
@@ -267,6 +268,7 @@
 		169F8BDE1FBC31CF0031F536 /* diantou.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diantou.json; sourceTree = "<group>"; };
 		169F8BDF1FBC31CF0031F536 /* think.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = think.json; sourceTree = "<group>"; };
 		169F8BE01FBC31CF0031F536 /* zhayan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zhayan.json; sourceTree = "<group>"; };
+		16B1A8111FBE91F1004B3D74 /* ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios.jsbundle; sourceTree = "<group>"; };
 		16C6717B1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		16C8D63A1D33511700228ABD /* dolin_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dolin_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1025,6 +1027,7 @@
 		3A7C68201DEC0D6800225D28 /* Dolin3 */ = {
 			isa = PBXGroup;
 			children = (
+				16B1A8111FBE91F1004B3D74 /* ios.jsbundle */,
 				3A7C68231DEC0D6800225D28 /* Dolin3ViewController.h */,
 				3A7C68241DEC0D6800225D28 /* Dolin3ViewController.m */,
 			);
@@ -1714,6 +1717,7 @@
 				3A7C690C1DEC0D6800225D28 /* cm2_play_needle_play@3x.png in Resources */,
 				3A7C68FD1DEC0D6800225D28 /* cm2_mv_btn_dlded@3x.png in Resources */,
 				3A7C68F01DEC0D6800225D28 /* cm2_fm_vol_btn@3x.png in Resources */,
+				16B1A8121FBE91F1004B3D74 /* ios.jsbundle in Resources */,
 				3A7C68F31DEC0D6800225D28 /* cm2_icn_list@3x副本.png in Resources */,
 				3A7C690B1DEC0D6800225D28 /* cm2_play_icn_more@3x.png in Resources */,
 				3A7C69051DEC0D6800225D28 /* cm2_play_icn_cmt@3x.png in Resources */,
