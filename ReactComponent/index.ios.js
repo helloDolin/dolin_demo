@@ -43,11 +43,13 @@ class NativeRNApp extends Component {
             self.setState({
                 src:source
             });
-            self.animation.play();
             self.index++;
             if (self.index === 3) self.index = 0;
         },5000)
-        this.animation.play();
+        this.animation.playWithCompleteCallcack((state)=>{
+            let {isFinished} = state;
+            alert(isFinished);
+        });
     }
     render() {
         return (
