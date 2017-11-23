@@ -26,7 +26,8 @@ target 'dolin_demo' do
   'RCTWebSocket',
   'RCTLinkingIOS',
   'RCTAnimation',
-  'BatchedBridge'
+  'BatchedBridge',
+  'DevSupport'
   
   # 添加其他你想在工程中使用的依赖。
   ]

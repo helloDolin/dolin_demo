@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // =============本地服务器
-    NSString * strUrl = @"http://localhost:8081/index.ios.bundle?platform=ios&dev=true";
+    NSString * strUrl = @"http://10.0.73.16:8081/index.ios.bundle?platform=ios&dev=true";
     NSURL* jsCodeLocation = [NSURL URLWithString:strUrl];
     RCTRootView * rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                          moduleName:@"dolin_demo"
