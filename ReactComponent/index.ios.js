@@ -65,7 +65,7 @@ class NativeRNApp extends Component {
             self.index++;
             if (self.index === 3) self.index = 0;
             this.animation.playWithCompleteCallcack(()=>{
-                    
+
             });
 
         },5000)

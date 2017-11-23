@@ -1292,7 +1292,11 @@ babelHelpers.toConsumableArray = function (arr) {
   }
 };
 })(typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : this);
-__d(/* dolin_demo/index.ios.js */function(global, require, module, exports) {var _jsxFileName = '/Users/shaolin/Desktop/dolin_demo/ReactComponent/index.ios.js';
+__d(/* dolin_demo/index.ios.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.DoctorStatusType = undefined;
+var _jsxFileName = '/Users/shaolin/Desktop/dolin_demo/ReactComponent/index.ios.js';
 
 var _react = require(12     ); // 12 = react
 
@@ -1316,6 +1320,17 @@ var _think = require(344           ); // 344 = ./think.json
 
 var _think2 = babelHelpers.interopRequireDefault(_think);
 
+var DoctorStatusType = exports.DoctorStatusType = {
+    Awake: 'awake',
+    DoctorSpeak: 'doctorSpeak',
+    AssistantSpeak: 'assistantSpeak',
+    Smile: 'smile',
+    Blink: 'blink',
+    Nod: 'nod',
+    ShakeHead: 'shakeHead',
+    Wait: 'wait',
+    Over: 'over' };
+
 var NativeRNApp = function (_Component) {
     babelHelpers.inherits(NativeRNApp, _Component);
 
@@ -1325,15 +1340,18 @@ var NativeRNApp = function (_Component) {
         var _this = babelHelpers.possibleConstructorReturn(this, (NativeRNApp.__proto__ || Object.getPrototypeOf(NativeRNApp)).call(this, props));
 
         _this.state = {
-            src: _zhayan2.default
+            animateSrc: _zhayan2.default,
+            animateState: ''
         };
         _this.index = 0;
-        return _this;
+        _this.animateLoop = false;return _this;
     }
 
     babelHelpers.createClass(NativeRNApp, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
+            var _this2 = this;
+
             var self = this;
             setInterval(function () {
                 var source = _zhayan2.default;
@@ -1345,32 +1363,34 @@ var NativeRNApp = function (_Component) {
                     source = _think2.default;
                 }
                 self.setState({
-                    src: source
+                    animateSrc: source
                 });
-                self.animation.play();
                 self.index++;
                 if (self.index === 3) self.index = 0;
+                _this2.animation.playWithCompleteCallcack(function () {});
             }, 5000);
-            this.animation.play();
+            this.animation.playWithCompleteCallcack(function (state) {
+                var isFinished = state.isFinished;
+            });
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this2 = this;
+            var _this3 = this;
 
             return _react2.default.createElement(_lottieReactNative2.default, {
                 ref: function ref(animation) {
-                    _this2.animation = animation;
+                    _this3.animation = animation;
                 },
                 style: {
                     width: 414,
                     height: 700
                 },
-                source: this.state.src,
+                source: this.state.animateSrc,
                 loop: true,
                 __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 54
+                    lineNumber: 78
                 }
             });
         }
@@ -46602,6 +46622,11 @@ var LottieAnimation = function (_React$Component) {
       this.runCommand('reset');
     }
   }, {
+    key: 'playWithCompleteCallcack',
+    value: function playWithCompleteCallcack(completeCallcack) {
+      LottieViewManager.playWithCompleteCallcack(this.getHandle(), completeCallcack);
+    }
+  }, {
     key: 'runCommand',
     value: function runCommand(name) {
       var _this2 = this;
@@ -46643,7 +46668,7 @@ var LottieAnimation = function (_React$Component) {
         sourceJson: sourceJson,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 120
+          lineNumber: 125
         }
       }));
     }
@@ -46662,6 +46687,10 @@ Animation.prototype.play = function play() {
 
 Animation.prototype.reset = function pause() {
   return this.getNode().reset();
+};
+
+Animation.prototype.playWithCompleteCallcack = function playWithCompleteCallcack(completeCallcack) {
+  return this.getNode().playWithCompleteCallcack(completeCallcack);
 };
 
 module.exports = Animation;
