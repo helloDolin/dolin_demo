@@ -32,6 +32,9 @@ PODS:
     - yoga (= 0.50.1.React)
   - React/cxxreact_legacy (0.50.1):
     - React/jschelpers_legacy
+  - React/DevSupport (0.50.1):
+    - React/Core
+    - React/RCTWebSocket
   - React/fishhook (0.50.1)
   - React/jschelpers_legacy (0.50.1)
   - React/RCTActionSheet (0.50.1):
@@ -78,6 +81,7 @@ DEPENDENCIES:
   - React/ART (from `./ReactComponent/node_modules/react-native`)
   - React/BatchedBridge (from `./ReactComponent/node_modules/react-native`)
   - React/Core (from `./ReactComponent/node_modules/react-native`)
+  - React/DevSupport (from `./ReactComponent/node_modules/react-native`)
   - React/RCTActionSheet (from `./ReactComponent/node_modules/react-native`)
   - React/RCTAnimation (from `./ReactComponent/node_modules/react-native`)
   - React/RCTGeolocation (from `./ReactComponent/node_modules/react-native`)
@@ -117,6 +121,6 @@ SPEC CHECKSUMS:
   yoga: f25f45222e44e880cc6e4e26513c24bdc8a5cfd7
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: e5db8463771dd59273cce61330890b246b98ee85
+PODFILE CHECKSUM: 1ffbea29db88f0ac05b0911cfd404f4d28e5b365
 
 COCOAPODS: 1.2.1

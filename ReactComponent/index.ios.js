@@ -47,27 +47,30 @@ class NativeRNApp extends Component {
     }
 
     componentDidMount() {
-        // let self = this;
-        // setInterval(()=>{
-        //     let source = zhayan;
-        //     if (self.index == 0) {
-        //         source = zhayan;
-        //     }
-        //     else if (self.index == 1) {
-        //         source = diantou;
-        //     }
-        //     else if (self.index == 2) {
-        //         source = think;
-        //     }
-        //     self.setState({
-        //         animateSrc:source
-        //     });
-        //     self.index++;
-        //     if (self.index === 3) self.index = 0;
-        // },5000)
+        let self = this;
+        setInterval(()=>{
+            let source = zhayan;
+            if (self.index == 0) {
+                source = zhayan;
+            }
+            else if (self.index == 1) {
+                source = diantou;
+            }
+            else if (self.index == 2) {
+                source = think;
+            }
+            self.setState({
+                animateSrc:source
+            });
+            self.index++;
+            if (self.index === 3) self.index = 0;
+            this.animation.playWithCompleteCallcack(()=>{
+                    
+            });
+
+        },5000)
         this.animation.playWithCompleteCallcack((state)=>{
             let {isFinished} = state;
-            alert(isFinished);
         });
     }
     render() {
