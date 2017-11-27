@@ -57,9 +57,7 @@ export default class PADoctor extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        if (this.props.doctorStatus != nextProps.doctorStatus && nextProps.doctorStatus) {
-            this.doctorStatus = nextProps.doctorStatus;
-        }
+        this.doctorStatus = nextProps.doctorStatus;
     }
 
     componentDidMount() {
@@ -122,6 +120,8 @@ export default class PADoctor extends Component {
         // 设置是否loop
         if(this.doctorStatus === DoctorStatus.Speak) {
             this.isLoopAnimation = true;
+        } else {
+            this.isLoopAnimation = false;
         }
 
         return source;

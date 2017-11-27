@@ -17,7 +17,7 @@
       <file leaf-file-name="index.ios.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.ios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
+            <state relative-caret-position="388">
               <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -30,8 +30,8 @@
       <file leaf-file-name="PADoctor.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PADoctor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="100" column="28" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+            <state relative-caret-position="383">
+              <caret line="120" column="54" lean-forward="true" selection-start-line="120" selection-start-column="54" selection-end-line="120" selection-end-column="54" />
               <folding>
                 <element signature="e#83#122#0" expanded="true" />
                 <element signature="e#286#321#0" expanded="true" />
@@ -180,12 +180,12 @@
       <workItem from="1511419353237" duration="737000" />
       <workItem from="1511422324705" duration="20000" />
       <workItem from="1511508730990" duration="5946000" />
-      <workItem from="1511747620546" duration="7537000" />
+      <workItem from="1511747620546" duration="8082000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22908000" />
+    <option name="totallyTimeSpent" value="23453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="733" extended-state="6" />
@@ -488,7 +488,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.ios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
+        <state relative-caret-position="388">
           <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -499,8 +499,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PADoctor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="100" column="28" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+        <state relative-caret-position="383">
+          <caret line="120" column="54" lean-forward="true" selection-start-line="120" selection-start-column="54" selection-end-line="120" selection-end-column="54" />
           <folding>
             <element signature="e#83#122#0" expanded="true" />
             <element signature="e#286#321#0" expanded="true" />
