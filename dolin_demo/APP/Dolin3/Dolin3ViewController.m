@@ -18,17 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // =============本地服务器
-//    NSString * strUrl = @"http://localhost:8081/index.ios.bundle?platform=ios&dev=true";
-//    NSURL* jsCodeLocation = [NSURL URLWithString:strUrl];
-//    RCTRootView * rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-//                                                         moduleName:@"dolin_demo"
-//                                                  initialProperties:nil
-//                                                      launchOptions:nil];
+    NSString * strUrl = @"http://localhost:8081/index.ios.bundle?platform=ios&dev=true";
+    NSURL* jsCodeLocation = [NSURL URLWithString:strUrl];
+    RCTRootView * rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+                                                         moduleName:@"dolin_demo"
+                                                  initialProperties:nil
+                                                      launchOptions:nil];
     
     
     // =============本地 bundle 资源
-    NSURL* jsCodeLocation = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"ios.jsbundle" ofType:nil]];
-    RCTRootView *rootView = [[RCTRootView alloc]initWithBundleURL:jsCodeLocation moduleName:@"dolin_demo" initialProperties:nil launchOptions:nil];
+//    NSURL* jsCodeLocation = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"ios.jsbundle" ofType:nil]];
+//    RCTRootView *rootView = [[RCTRootView alloc]initWithBundleURL:jsCodeLocation moduleName:@"dolin_demo" initialProperties:nil launchOptions:nil];
     
     
     self.view = rootView;
