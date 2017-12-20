@@ -6,7 +6,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
-    "lottie-react-native": "2.2.7",
+    "lottie-react-native": "git+ssh://git@10.0.128.104:ios_group/lottie.git",
+    "node-binance-api": "^0.2.11",
     "react": "16.0.0",
     "react-native": "0.50.1"
   }
