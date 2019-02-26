@@ -76,7 +76,7 @@
     // 创建一个CGMutablePathRef 的可变路径，并返回其句柄。
     CGMutablePathRef curvedPath = CGPathCreateMutable();
     // 在路径上移动当前画笔的位置到一个点，这个点由CGPoint 类型的参数指定。
-    CGPathMoveToPoint(curvedPath, NULL, 0, 64);
+    CGPathMoveToPoint(curvedPath, NULL, 0, NAVIGATION_BAR_HEIGHT);
     // 从当前的画笔位置向指定位置（同样由CGPoint类型的值指定）绘制线段
 //    CGPathAddQuadCurveToPoint(curvedPath, NULL, 10, 450, 310, 450);
 //    CGPathAddQuadCurveToPoint(curvedPath, NULL, 310, 10, 10, 10);
@@ -153,7 +153,7 @@
 - (UIButton*)likeBtn {
     if (!_likeBtn) {
         _likeBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-        _likeBtn.frame = CGRectMake(0,NavigtationBarHeight,50,50);
+        _likeBtn.frame = CGRectMake(0,NAVIGATION_BAR_HEIGHT,50,50);
         _likeBtn.center = self.view.center;
         [_likeBtn setImage:[[UIImage imageNamed:@"btn_unlike"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
         [_likeBtn addTarget:self action:@selector(likeBtnAction) forControlEvents:UIControlEventTouchUpInside];

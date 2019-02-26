@@ -94,7 +94,7 @@
 
 - (void)testBezierPath {
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
-    BezierPathView *v = [[BezierPathView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, height - 140 - 64)];
+    BezierPathView *v = [[BezierPathView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, height - 140 - NAVIGATION_BAR_HEIGHT)];
     [self.view addSubview:v];
     v.layer.borderColor = [UIColor redColor].CGColor;
     v.layer.borderWidth = 5;

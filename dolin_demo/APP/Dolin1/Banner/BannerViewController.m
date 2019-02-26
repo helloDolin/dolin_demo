@@ -27,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    DolinBannerView *dolinBannerView = [[DolinBannerView alloc]initWithFrame:CGRectMake(0, NavigtationBarHeight, self.view.frame.size.width, 200) WithInfoArr:self.netImageArray];
+    DolinBannerView *dolinBannerView = [[DolinBannerView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, self.view.frame.size.width, 200) WithInfoArr:self.netImageArray];
     
     /** 获取网络图片的index*/
     dolinBannerView.delegate = self;

@@ -61,7 +61,7 @@
     [self.scrollView addSubview:self.containerView];
     
     [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(64, 0, 0, 0));
+        make.edges.mas_equalTo(UIEdgeInsetsMake(NAVIGATION_BAR_HEIGHT, 0, 0, 0));
     }];
     
     [_containerView mas_makeConstraints:^(MASConstraintMaker *make) {

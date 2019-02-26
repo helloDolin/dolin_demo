@@ -19,7 +19,6 @@
     
     self.view.backgroundColor = [UIColor convertHexToRGB:@"f0f0f0"];
     // self.edgesForExtendedLayout = UIRectEdgeNone;
-    // 扩展的布局是否包含不透明bar
     self.extendedLayoutIncludesOpaqueBars = YES;
     self.automaticallyAdjustsScrollViewInsets = NO;
 }

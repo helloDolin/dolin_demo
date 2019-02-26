@@ -75,7 +75,7 @@
     _dLVideoPlayView.index = indexPath.row;
     VideoModel* model = _data[indexPath.row];
     [_dLVideoPlayView setUrlString:model.videoUrlStr];
-    _dLVideoPlayView.frame = CGRectMake(0, 64 , SCREEN_WIDTH, SCREEN_HEIGHT - 200);
+    _dLVideoPlayView.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT , SCREEN_WIDTH, SCREEN_HEIGHT - 200);
     [self.view addSubview:_dLVideoPlayView];
     [_dLVideoPlayView.player play];
     _dLVideoPlayView.hidden = NO;
@@ -97,11 +97,11 @@
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
         layout.minimumLineSpacing = 10;
         layout.minimumInteritemSpacing = 10;
-        layout.itemSize = CGSizeMake(SCREEN_WIDTH - 16, SCREEN_HEIGHT - 64 - 16);
+        layout.itemSize = CGSizeMake(SCREEN_WIDTH - 16, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT - 16);
         layout.sectionInset = UIEdgeInsetsMake(8, 8, 8, 8);
         layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         
-        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64 ,SCREEN_WIDTH,SCREEN_HEIGHT - 64) collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT ,SCREEN_WIDTH,SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT) collectionViewLayout:layout];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
         _collectionView.backgroundColor = RANDOM_UICOLOR;

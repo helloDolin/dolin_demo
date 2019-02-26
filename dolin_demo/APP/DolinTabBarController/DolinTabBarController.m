@@ -61,23 +61,6 @@
 }
 
 - (void)setUpTabBar {
-//    //tabbar背景色
-//    //毛玻璃
-//    self.blureffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
-//    //添加毛玻璃view视图
-//    self.visualeffectview = [[UIVisualEffectView alloc]initWithEffect:self.blureffect];
-//    //设置毛玻璃的view视图的大小
-//    if (IS_iPhoneX) {
-//        self.visualeffectview.frame = CGRectMake(0, 0, SCREEN_WIDTH, IPHONEX_MARGIN_BOTTOM + TabBarHeight);
-//    } else {
-//        self.visualeffectview.frame = self.tabBar.bounds;
-//    }
-//    //设施模糊的透明度
-//    self.visualeffectview.alpha = 1;
-//
-//    self.tabBar.backgroundImage =[[UIImage alloc]init];
-//    [self.tabBar insertSubview:self.visualeffectview atIndex:0];
-//    self.tabBar.opaque = YES;
     self.tabBar.barStyle = UIBarStyleBlack;
 }
 
@@ -113,10 +96,8 @@
     
     // bar tint color
     bar.barTintColor = [UIColor colorWithRed:211/255.0f green:38/255.0f  blue:39/255.0f alpha:1.0f];
-    // [UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:0.9];
     // 设置字体颜色
     bar.tintColor = [UIColor whiteColor];
-    
     // 设置title前景色
     [bar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
 }
@@ -166,27 +147,5 @@
     pulse.toValue = [NSNumber numberWithFloat:1.3];
     [[tabbarbuttonArray[index] layer] addAnimation:pulse forKey:nil];
 }
-
-//// 动画
-//- (void)animationWithIndex:(NSInteger) index {
-//    NSMutableArray * tabbarbuttonArray = [NSMutableArray array];
-//    for (UIView *tabBarButton in self.tabBar.subviews) {
-//        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
-//            [tabbarbuttonArray addObject:tabBarButton];
-//        }
-//    }
-//    
-//    CABasicAnimation*pulse = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-//    pulse.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-//    pulse.duration = 0.08;
-//    pulse.repeatCount= 1;
-//    pulse.autoreverses= YES;
-//    pulse.fromValue= [NSNumber numberWithFloat:0.7];
-//    pulse.toValue= [NSNumber numberWithFloat:1.3];
-//    [[tabbarbuttonArray[index] layer] addAnimation:pulse forKey:nil];
-//    
-//    self.indexFlag = index;
-//    
-//}
 
 @end

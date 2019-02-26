@@ -28,7 +28,7 @@
 }
 
 - (void)animationStudy {
-    _testView = [[UIView alloc]initWithFrame:CGRectMake(0, 64, 50, 50)];
+    _testView = [[UIView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, 50, 50)];
     _testView.backgroundColor = RANDOM_UICOLOR;
     
     [self.view addSubview:_testView];
@@ -93,7 +93,7 @@
 - (void)animate0 {
     CABasicAnimation* ba = [CABasicAnimation animationWithKeyPath:@"position"];
     ba.fromValue = [NSValue valueWithCGPoint:CGPointMake(25, 25)];
-    ba.toValue = [NSValue valueWithCGPoint:CGPointMake(SCREEN_WIDTH, SCREEN_HEIGHT - 64)];
+    ba.toValue = [NSValue valueWithCGPoint:CGPointMake(SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT)];
     ba.duration = 2;
     
     ba.autoreverses = YES; // 动画结束后是否自动回到原来位置；

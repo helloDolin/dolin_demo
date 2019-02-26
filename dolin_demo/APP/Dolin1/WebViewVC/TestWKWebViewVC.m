@@ -226,7 +226,7 @@
 //        [config.userContentController addScriptMessageHandler:self name:@"senderModel"];
         [config.userContentController addScriptMessageHandler:delegateController name:@"senderModel"];
 
-        _webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64) configuration:config];
+        _webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT) configuration:config];
         
         _webView.UIDelegate = self;
         _webView.navigationDelegate = self;

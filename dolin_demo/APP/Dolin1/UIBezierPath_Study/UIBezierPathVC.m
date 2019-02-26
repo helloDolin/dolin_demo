@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIBezierPathView* bezierPathView = [[UIBezierPathView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    UIBezierPathView* bezierPathView = [[UIBezierPathView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT)];
     [self.view addSubview:bezierPathView];
 }
 

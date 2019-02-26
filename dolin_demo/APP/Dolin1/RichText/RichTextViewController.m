@@ -24,7 +24,7 @@ static NSString* kStr = @"对酒当歌，人生几何？对酒当歌，人生几
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _testLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 64 + 20, SCREEN_WIDTH, 300)];
+    _testLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT + 20, SCREEN_WIDTH, 300)];
     _testLabel.numberOfLines = 0;
     _testLabel.backgroundColor = [UIColor orangeColor];
     

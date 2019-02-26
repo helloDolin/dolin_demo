@@ -38,7 +38,7 @@
     if (!_bgImgView) {
         _bgImgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"bgImg"]];
         _bgImgView.alpha = 0.8;
-        _bgImgView.frame = CGRectMake(0, NavigtationBarHeight, 60, 60);
+        _bgImgView.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT, 60, 60);
         _bgImgView.center = self.view.center;
     }
     return _bgImgView;
@@ -47,7 +47,7 @@
 - (UIImageView*)animationImgView {
     if (!_animationImgView) {
         _animationImgView = [[UIImageView alloc]init];
-        _animationImgView.frame = CGRectMake(0, NavigtationBarHeight, 43, 43);
+        _animationImgView.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT, 43, 43);
         _animationImgView.center = self.view.center;
 
         

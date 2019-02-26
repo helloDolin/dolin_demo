@@ -239,7 +239,7 @@
     self.transition.type = kCATransitionFade;
     
     //磁针背景
-    self.cdAndneedleBackground =[[UIView alloc]initWithFrame:CGRectMake(0, 64, kWidth, kHeight-64)];
+    self.cdAndneedleBackground =[[UIView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, kWidth, kHeight-NAVIGATION_BAR_HEIGHT)];
     self.cdAndneedleBackground.clipsToBounds =YES;
     [self.backgroundView addSubview:self.cdAndneedleBackground];
     
@@ -670,7 +670,7 @@
     
     self.navigationController.navigationBar.translucent =YES;
     UIColor *color =[UIColor clearColor];
-    CGRect rect =CGRectMake(0.0f, 0.0f,self.view.frame.size.width, 64);
+    CGRect rect =CGRectMake(0.0f, 0.0f,self.view.frame.size.width, NAVIGATION_BAR_HEIGHT);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [color CGColor]);

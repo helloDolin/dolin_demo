@@ -52,7 +52,7 @@ static const CGFloat kAnimateDuration = .5;
     
     
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    btn.frame = CGRectMake(0, 64, 375, 100);
+    btn.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT, 375, 100);
     btn.backgroundColor = [UIColor orangeColor];
     [btn setTitle:@"hello" forState:UIControlStateNormal];
     btn.tintColor = [UIColor whiteColor];

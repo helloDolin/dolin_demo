@@ -32,13 +32,23 @@
 #define SCREEN_WIDTH       [[UIScreen mainScreen] bounds].size.width
 
 // iPhoneX 相关
-#define IS_iPhoneX ([UIScreen mainScreen].bounds.size.width == 375 && [UIScreen mainScreen].bounds.size.height == 812)
-#define IPHONEX_MARGIN_TOP (88)
-#define IPHONEX_MARGIN_BOTTOM (34)
-#define IPHONEX_NavigationBarHeight (88)
+#define IS_DEVICE_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define STATUSBAR_HEIGHT  ((IS_DEVICE_iPhoneX) == NO ? 20 : 44 )
+// 在 iPhone X 上 status bar的增量
+#define STATUSBAR_HEIGHT_DELTA_ON_IPHONEX  ((IS_DEVICE_iPhoneX) == NO ? 0 : 24 )
+// 在 iPhone X 上 bottom bar的增量
+#define BOTTOM_HEIGHT_DELTA_ON_IPHONEX  ((IS_DEVICE_iPhoneX) == NO ? 0 : 34 )
+#define BOTTOM_SAFEAREA_LIMIT_ON_IPHONEX  ([[UIScreen mainScreen] bounds].size.height - BOTTOM_HEIGHT_DELTA_ON_IPHONEX)
+#define H5_TOPBAR_OFFSET_IPHONEX  ((IS_DEVICE_iPhoneX) == NO ? 0 : 44 )
 
-#define SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR (SCREEN_HEIGHT - 64.0 - 49.0)
-#define FULL_SCREEN_FRAME CGRectMake(0, 64,SCREEN_WIDTH,SCREEN_HEIGHT_NOT_NAVIGATIONBAR_AND_TABBAR)
+#pragma mark - 系统控件默认高度
+#define STATUS_BAR_HEIGHT       (20.f)
+#define TOP_BAR_HEIGHT          (44.f)
+#define NAVIGATION_BAR_HEIGHT   (STATUS_BAR_HEIGHT + TOP_BAR_HEIGHT + STATUSBAR_HEIGHT_DELTA_ON_IPHONEX)
+#define TAB_BAR_HEIGHT          (49.f + BOTTOM_HEIGHT_DELTA_ON_IPHONEX)
+#define CELL_DEFAULT_HEIGHT     (44.f)
+#define EnglishKeyboardHeight   (216.f)
+#define ChineseKeyboardHeight   (252.f)
 
 #pragma mark - View 坐标(x,y)和宽高(width,height)
 #define X(v)                    (v).frame.origin.x
@@ -55,15 +65,6 @@
 
 #define MaxX(v)                 CGRectGetMaxX((v).frame)
 #define MaxY(v)                 CGRectGetMaxY((v).frame)
-
-#pragma mark - 系统控件默认高度
-#define StatusBarHeight        (20.f)
-#define TopBarHeight           (44.f)
-#define NavigtationBarHeight   (StatusBarHeight + TopBarHeight)
-#define TabBarHeight        (49.f)
-#define CellDefaultHeight      (44.f)
-#define EnglishKeyboardHeight  (216.f)
-#define ChineseKeyboardHeight  (252.f)
 
 #pragma mark - 沙盒路径
 #define PATH_OF_APP_HOME    NSHomeDirectory()

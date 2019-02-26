@@ -28,7 +28,7 @@
     NSLog(@"%p",self);
 
     WS(weakSelf);
-    _btn1 = [LoadingBtn LoadingBtnInitWithFrame:CGRectMake(0, 64, 300, 100) andBackgroundColor:RANDOM_UICOLOR andTitle:@"hello" andTitleColor:RANDOM_UICOLOR andTitleFont:[UIFont systemFontOfSize:15] andCornerRadius:10 andClickBlock:^{
+    _btn1 = [LoadingBtn LoadingBtnInitWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, 300, 100) andBackgroundColor:RANDOM_UICOLOR andTitle:@"hello" andTitleColor:RANDOM_UICOLOR andTitleFont:[UIFont systemFontOfSize:15] andCornerRadius:10 andClickBlock:^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             LoadingBtnVC *vc = [LoadingBtnVC new];
             [weakSelf presentViewController:vc animated:YES completion:nil];
@@ -38,7 +38,7 @@
     
     // testBtn
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    btn.frame = CGRectMake(0, 0, 375, 64);
+    btn.frame = CGRectMake(0, 0, 375, NAVIGATION_BAR_HEIGHT);
     btn.backgroundColor = [UIColor orangeColor];
     [btn setTitle:@"dismiss" forState:UIControlStateNormal];
     btn.tintColor = [UIColor whiteColor];

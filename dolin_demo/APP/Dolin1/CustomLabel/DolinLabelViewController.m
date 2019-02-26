@@ -32,7 +32,7 @@
     contentLab.numberOfLines = 0;
     CGFloat labelWidth = SCREEN_WIDTH - 10 * 2;
     CGFloat labelHeight = [contentLab getAttributedStringHeightByWidthValue:labelWidth];
-    contentLab.frame = CGRectMake(10, NavigtationBarHeight + 64, labelWidth, labelHeight);
+    contentLab.frame = CGRectMake(10, NAVIGATION_BAR_HEIGHT + NAVIGATION_BAR_HEIGHT, labelWidth, labelHeight);
     [self.view addSubview:contentLab];
 
     

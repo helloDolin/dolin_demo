@@ -37,7 +37,7 @@
 
 - (UITableView*)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT) style:UITableViewStylePlain];
         _tableView.estimatedRowHeight = 44.0;
         _tableDelegate = [[NoteListDelegate alloc] init];
         _tableDelegate.vc = self;

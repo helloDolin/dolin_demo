@@ -386,7 +386,7 @@ static const CGFloat kTableViewCellHeight = 80.0;
         _layout.minimumInteritemSpacing = 8;
         _layout.sectionInset = UIEdgeInsetsMake(8, 8, 8, 8);
         
-        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64) collectionViewLayout:_layout];
+        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT) collectionViewLayout:_layout];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
         _collectionView.backgroundColor = [UIColor whiteColor];
@@ -399,7 +399,7 @@ static const CGFloat kTableViewCellHeight = 80.0;
 
 - (UIView*)tableContainerView {
     if (!_tableContainerView) {
-        _tableContainerView = [[UIView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64)];
+        _tableContainerView = [[UIView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT)];
         _tableContainerView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
         UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapGesAction)];
         [_tableContainerView addGestureRecognizer:tapGes];

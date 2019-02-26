@@ -9,14 +9,12 @@
 #import "Dolin1ViewController.h"
 #import "YYFPSLabel.h"
 #import "LinAnimateTransition.h"
-#import "UIViewController+Debugging.h"
-#import "SystemPermissionsManager.h"
 #import "DLPhotoAlbumPickerVC.h"
 #import <objc/runtime.h>
+#import "SystemPermissionsManager.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
-@property (nonatomic, strong) UIRefreshControl *refreshControl;
 @property (nonatomic, strong) NSMutableArray *arr;
 
 @end
@@ -26,39 +24,14 @@
 #pragma mark -  life circle
 - (void)dealloc {
     NSLog(@"%s",__func__);
-    [self removeObserver:self.tableView forKeyPath:@"contentOffset"];
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-    NSLog(@"%@",keyPath);
-    CGFloat offset = self.tableView.contentOffset.y;
-//    NSLog(@"%f",offset);
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
-    NSLog(@"address: %p", self.tableView);
-    NSLog(@"class method: %@", self.tableView.class);
-    NSLog(@"description method: %@", self.tableView);
-    NSLog(@"use runtime to get class: %@", object_getClass(self.tableView));
-    [self.tableView addObserver: self forKeyPath: @"contentOffset" options: NSKeyValueObservingOptionNew context: nil];
-    NSLog(@"===================================================");
-    NSLog(@"address: %p", self.tableView);
-    NSLog(@"class method: %@", self.tableView.class);
-    NSLog(@"description method: %@", self.tableView);
-    NSLog(@"use runtime to get class %@", object_getClass(self.tableView));
-    
-    [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionNew context:nil];
     
     [self.view addSubview:self.tableView];
-    
-//    [self setUpFPSLabel];
-//    [self setUpRefreshControl];
-    [self setLeftBarBtn];
+    [self setUpFPSLabel];
     [self setRightBarBtn];
-    
-    [self toggleDebugger];
     
     self.arr = [@[
                   @"lottie（牛B）-LottieStudyVC",
@@ -93,8 +66,9 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    // 再次回到这个页面cell选中效果慢慢消失
+    
     NSIndexPath* selectedIndexPath = [self.tableView indexPathForSelectedRow];
+    // 再次回到这个页面cell选中效果慢慢消失
     if (selectedIndexPath) {
         [self.tableView deselectRowAtIndexPath:selectedIndexPath animated:YES];
     }
@@ -110,8 +84,7 @@
  window上添加FPSLabel
  */
 - (void)setUpFPSLabel {
-    YYFPSLabel *fps = [YYFPSLabel new];
-    fps.frame = CGRectMake(0, 64, SCREEN_WIDTH, 20);
+    YYFPSLabel *fps = [[YYFPSLabel alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, 100, 20)];
     [[UIApplication sharedApplication].keyWindow addSubview:fps];
 }
 
@@ -127,28 +100,11 @@
     } completion:nil];
 }
 
-// 可惜这种方式只能下拉刷新，不能上拉加载
-- (void)setUpRefreshControl {
-    self.refreshControl = [[UIRefreshControl alloc]init];
-    self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"刷新啊"];
-    [self.refreshControl addTarget:self action:@selector(refreshAction) forControlEvents:UIControlEventValueChanged];
-    //    CGRect bounds = self.refreshControl.bounds;
-    //    bounds.origin.x = 50; // 左移50 -50就是右移
-    //    bounds.origin.y = 10; // 上移10
-    //    self.refreshControl.bounds = bounds;
-    self.tableView.refreshControl = self.refreshControl;
-}
-
-// <##>
-- (void)setLeftBarBtn {
-    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"crash", nil) style:UIBarButtonItemStylePlain target:self action:@selector(leftItemAction)];
-    self.navigationItem.leftBarButtonItem = barButtonItem;
-}
 
 - (void)setRightBarBtn {
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
     // 这个addData由JSPatch实现
-    //<#消除警告#>
+    // 消除警告
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
     [btn addTarget:self action:@selector(addData) forControlEvents:UIControlEventTouchUpInside];
@@ -157,31 +113,9 @@
     self.navigationItem.rightBarButtonItem = rightItem;
 }
 
-#pragma mark -  event
-- (void)refreshAction {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.refreshControl endRefreshing];
-    });
-}
-
 //- (void)addData {
 //   
 //}
-
-- (void)leftItemAction {
-    exit(0);  // 关闭程序，审核不会给过
-    return;
-    static BOOL b = YES;
-    if (b) {
-        [self.tableView setEditing:YES animated:YES];
-        self.navigationItem.leftBarButtonItem.title = @"取消";
-    } else {
-        [self.tableView setEditing:NO animated:YES];
-        self.navigationItem.leftBarButtonItem.title = @"编辑";
-    }
-    b = !b;
-}
-
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -235,7 +169,6 @@
     
     [self animateCell:cell];
     
-    
     if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
         [cell setSeparatorInset:UIEdgeInsetsZero];
     }
@@ -247,15 +180,6 @@
     if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
         [cell setLayoutMargins:UIEdgeInsetsZero];
     }
-}
-
-// 编辑状态下的代理
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-
-- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return UITableViewCellEditingStyleDelete|UITableViewCellEditingStyleInsert;
 }
 
 #pragma mark - UINavigationControllerDelegate
@@ -271,17 +195,10 @@
 #pragma mark -  getter
 - (UITableView*)tableView {
     if (!_tableView) {
-        CGRect rect = CGRectZero;
-        if (IS_iPhoneX) {
-            rect = CGRectMake(0, 88, SCREEN_WIDTH, SCREEN_HEIGHT - 88 - 34);
-        }
-        else {
-            rect = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64);
-        }
+        CGRect rect = rect = CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT);
         _tableView = [[UITableView alloc]initWithFrame:rect style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.delegate = self;
-//        _tableView.allowsSelectionDuringEditing = YES; 编辑状态下也可以点
     }
     return _tableView;
 }

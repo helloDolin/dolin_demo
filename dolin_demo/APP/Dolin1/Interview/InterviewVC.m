@@ -33,7 +33,7 @@
     [_leftLbl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view);
         make.right.equalTo(_rightLbl.mas_left).offset(-20);
-        make.top.equalTo(self.view.mas_top).offset(64);
+        make.top.equalTo(self.view.mas_top).offset(NAVIGATION_BAR_HEIGHT);
     }];
     
     [_rightLbl mas_makeConstraints:^(MASConstraintMaker *make) {

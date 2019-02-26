@@ -153,7 +153,7 @@ static float const kTitlesViewY = 200.0;
     
     CGFloat offsetY = scrollView.contentOffset.y;
     
-    _headerScrollHoverY = (kHeaderViewHeight - kTitlesViewHeight - 64);
+    _headerScrollHoverY = (kHeaderViewHeight - kTitlesViewHeight - NAVIGATION_BAR_HEIGHT);
     if (offsetY > _headerScrollHoverY) {
         self.headerView.y = -_headerScrollHoverY;
         return;

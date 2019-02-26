@@ -118,16 +118,16 @@
 #pragma mark - getter && setter
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
-        _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64)];
+        _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT)];
         _scrollView.pagingEnabled = YES;
-        _scrollView.contentSize = CGSizeMake(SCREEN_WIDTH, (SCREEN_HEIGHT - 64) * 2);
+        _scrollView.contentSize = CGSizeMake(SCREEN_WIDTH, (SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT) * 2);
     }
     return _scrollView;
 }
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64)];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT)];
         _tableView.dataSource = self;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ImitateGoodDetailVC"];
     }
@@ -153,7 +153,7 @@
         delegateController.delegate = self;
         [config.userContentController addScriptMessageHandler:delegateController name:@"senderModel"];
         
-        _webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64) configuration:config];
+        _webView = [[WKWebView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT) configuration:config];
         
         _webView.UIDelegate = self;
         _webView.navigationDelegate = self;
@@ -177,7 +177,7 @@
 
 - (UIProgressView *)progressView{
     if (!_progressView ) {
-        _progressView = [[UIProgressView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 0)];
+        _progressView = [[UIProgressView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, 0)];
         _progressView.progressTintColor = RANDOM_UICOLOR;
         _progressView.trackTintColor = RANDOM_UICOLOR;//[UIColor clearColor];
     }

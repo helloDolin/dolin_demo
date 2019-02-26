@@ -130,7 +130,7 @@
 #pragma mark - getter
 - (UIWebView*)webView {
     if (!_webView) {
-        _webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64)];
+        _webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT)];
         _webView.delegate = self;
     }
     return _webView;

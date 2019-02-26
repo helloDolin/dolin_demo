@@ -215,7 +215,6 @@
 		3AF03B7B1EC6E8A4008DDF80 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF03B7A1EC6E8A4008DDF80 /* TodayViewController.m */; };
 		3AF03B7E1EC6E8A4008DDF80 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF03B7C1EC6E8A4008DDF80 /* MainInterface.storyboard */; };
 		3AF03B821EC6E8A5008DDF80 /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3AF03B751EC6E8A4008DDF80 /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		3AF40DEE1EDE62C100F5F6F5 /* UIViewController+Debugging.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF40DED1EDE62C100F5F6F5 /* UIViewController+Debugging.m */; };
 		3AFE58A71EE168C4009962DB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFE58A61EE168C4009962DB /* AudioToolbox.framework */; };
 		3AFE58AC1EE17225009962DB /* ImitateTGPPersonCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE58AB1EE17225009962DB /* ImitateTGPPersonCenterVC.m */; };
 		4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74FD7DA6852F55EDA70E6C /* libPods-dolin_demo.a */; };
@@ -605,8 +604,6 @@
 		3AF03B7A1EC6E8A4008DDF80 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		3AF03B7D1EC6E8A4008DDF80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		3AF03B7F1EC6E8A5008DDF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AF40DEC1EDE62C100F5F6F5 /* UIViewController+Debugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Debugging.h"; sourceTree = "<group>"; };
-		3AF40DED1EDE62C100F5F6F5 /* UIViewController+Debugging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Debugging.m"; sourceTree = "<group>"; };
 		3AFE58A61EE168C4009962DB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		3AFE58AA1EE17225009962DB /* ImitateTGPPersonCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImitateTGPPersonCenterVC.h; sourceTree = "<group>"; };
 		3AFE58AB1EE17225009962DB /* ImitateTGPPersonCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImitateTGPPersonCenterVC.m; sourceTree = "<group>"; };
@@ -1200,8 +1197,6 @@
 		3A7C68831DEC0D6800225D28 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				3AF40DEC1EDE62C100F5F6F5 /* UIViewController+Debugging.h */,
-				3AF40DED1EDE62C100F5F6F5 /* UIViewController+Debugging.m */,
 				3A332AAA1EB08D340072BD34 /* NSDate+Utilities.h */,
 				3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */,
 				3A7C689D1DEC0D6800225D28 /* UIView */,
@@ -1837,7 +1832,6 @@
 				3AD3092E1E779475004C2496 /* LinAnimateTransition.m in Sources */,
 				3A92DAF11E2774850092A33A /* LoadingBtn.m in Sources */,
 				3AA0C1BD1E7163DA009B1628 /* Banner2VC.m in Sources */,
-				3AF40DEE1EDE62C100F5F6F5 /* UIViewController+Debugging.m in Sources */,
 				3A7C68E51DEC0D6800225D28 /* LaunchViewController.m in Sources */,
 				3A7C69361DEC0D6800225D28 /* MMPlaceHolder.m in Sources */,
 				3AD3095E1E77D563004C2496 /* LinkworkTableViewVC.m in Sources */,

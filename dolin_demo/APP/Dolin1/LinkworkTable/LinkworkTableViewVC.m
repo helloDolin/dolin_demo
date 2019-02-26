@@ -151,7 +151,7 @@
 #pragma mark - getter && setter
 - (UITableView *)leftTableView {
     if (!_leftTableView) {
-        _leftTableView = [[UITableView alloc] initWithFrame:(CGRect){0, 64, SCREEN_WIDTH * 0.25f, SCREEN_HEIGHT - 64}];
+        _leftTableView = [[UITableView alloc] initWithFrame:(CGRect){0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH * 0.25f, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT}];
         _leftTableView.delegate = self;
         _leftTableView.dataSource = self;
     }
@@ -160,7 +160,7 @@
 
 - (UITableView *)rightTableView {
     if (!_rightTableView) {
-        _rightTableView = [[UITableView alloc] initWithFrame:(CGRect){SCREEN_WIDTH * 0.25f, 64, SCREEN_WIDTH * 0.75f, SCREEN_HEIGHT - 64}];
+        _rightTableView = [[UITableView alloc] initWithFrame:(CGRect){SCREEN_WIDTH * 0.25f, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH * 0.75f, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT}];
         _rightTableView.delegate = self;
         _rightTableView.dataSource = self;
     }

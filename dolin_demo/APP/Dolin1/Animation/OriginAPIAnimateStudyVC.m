@@ -179,12 +179,12 @@
     [self.view addSubview:self.view2];
     [self.view addSubview:self.view3];
     
-    CGFloat padding = (SCREEN_HEIGHT - 64 - 300) / 4;
+    CGFloat padding = (SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT - 300) / 4;
     
     [_view1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(SCREEN_WIDTH));
         make.height.equalTo(@100);
-        make.top.equalTo(self.view).offset(padding + 64);
+        make.top.equalTo(self.view).offset(padding + NAVIGATION_BAR_HEIGHT);
     }];
     
     [_view2 mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -210,7 +210,7 @@
         _alwaysRotateView = [[UIView alloc]init];
         _alwaysRotateView.backgroundColor = RANDOM_UICOLOR;
         _alwaysRotateView.frame = CGRectMake(0, 0, 100, 100);
-        _alwaysRotateView.layer.position = CGPointMake((SCREEN_WIDTH - 100) / 2, 100 + 64 );
+        _alwaysRotateView.layer.position = CGPointMake((SCREEN_WIDTH - 100) / 2, 100 + NAVIGATION_BAR_HEIGHT );
         _alwaysRotateView.layer.anchorPoint = CGPointMake(0, 0);
     }
     return _alwaysRotateView;
