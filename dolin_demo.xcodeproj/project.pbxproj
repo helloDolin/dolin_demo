@@ -19,7 +19,6 @@
 		16D29B4D1FBB04E30072EB6C /* InterviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D29B481FBB04E30072EB6C /* InterviewVC.m */; };
 		16D29B4E1FBB04E30072EB6C /* ciclista_salita.json in Resources */ = {isa = PBXBuildFile; fileRef = 16D29B4A1FBB04E30072EB6C /* ciclista_salita.json */; };
 		16D29B4F1FBB04E30072EB6C /* LottieStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D29B4C1FBB04E30072EB6C /* LottieStudyVC.m */; };
-		3A0806631DFFC73500C162A3 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0806621DFFC73500C162A3 /* Reveal.framework */; };
 		3A332AAC1EB08D340072BD34 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */; };
 		3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4761E1E55090036DE63 /* AnimationImagesViewController.m */; };
 		3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4781E1E55090036DE63 /* AnimationLikeBtnViewController.m */; };
@@ -63,7 +62,6 @@
 		3A7C68C61DEC0D6800225D28 /* NSObject+DLRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67E71DEC0D6800225D28 /* NSObject+DLRuntime.m */; };
 		3A7C68C71DEC0D6800225D28 /* Runtime_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67E91DEC0D6800225D28 /* Runtime_Test.m */; };
 		3A7C68C81DEC0D6800225D28 /* RunTimeStudy_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67EB1DEC0D6800225D28 /* RunTimeStudy_VC.m */; };
-		3A7C68C91DEC0D6800225D28 /* UIImage+DLRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67ED1DEC0D6800225D28 /* UIImage+DLRuntime.m */; };
 		3A7C68D31DEC0D6800225D28 /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68041DEC0D6800225D28 /* BezierPathView.m */; };
 		3A7C68D41DEC0D6800225D28 /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68061DEC0D6800225D28 /* UIBezierPathViewController.m */; };
 		3A7C68D51DEC0D6800225D28 /* Dolin2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68091DEC0D6800225D28 /* Dolin2ViewController.m */; };
@@ -197,7 +195,6 @@
 		3AC483621E49A93D0008CE57 /* SimulateTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4835B1E49A93D0008CE57 /* SimulateTwitterViewController.m */; };
 		3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483651E49A9860008CE57 /* ImitateGoodDetailVC.m */; };
 		3AC483691E49A9DE0008CE57 /* GetContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483681E49A9DE0008CE57 /* GetContactsVC.m */; };
-		3AC483B51E4C56C50008CE57 /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC483B31E4C56C50008CE57 /* JSPatchPlatform.framework */; };
 		3AC483B61E4C56C50008CE57 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 3AC483B41E4C56C50008CE57 /* main.js */; };
 		3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */; };
 		3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */; };
@@ -363,8 +360,6 @@
 		3A7C67E91DEC0D6800225D28 /* Runtime_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime_Test.m; sourceTree = "<group>"; };
 		3A7C67EA1DEC0D6800225D28 /* RunTimeStudy_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeStudy_VC.h; sourceTree = "<group>"; };
 		3A7C67EB1DEC0D6800225D28 /* RunTimeStudy_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeStudy_VC.m; sourceTree = "<group>"; };
-		3A7C67EC1DEC0D6800225D28 /* UIImage+DLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DLRuntime.h"; sourceTree = "<group>"; };
-		3A7C67ED1DEC0D6800225D28 /* UIImage+DLRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DLRuntime.m"; sourceTree = "<group>"; };
 		3A7C68031DEC0D6800225D28 /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
 		3A7C68041DEC0D6800225D28 /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
 		3A7C68051DEC0D6800225D28 /* UIBezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathViewController.h; sourceTree = "<group>"; };
@@ -619,10 +614,8 @@
 			files = (
 				3AFE58A71EE168C4009962DB /* AudioToolbox.framework in Frameworks */,
 				3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */,
-				3AC483B51E4C56C50008CE57 /* JSPatchPlatform.framework in Frameworks */,
 				3A7F973E1EC71E54007BB5B8 /* TableKit.framework in Frameworks */,
 				3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */,
-				3A0806631DFFC73500C162A3 /* Reveal.framework in Frameworks */,
 				4CFC5A0098B9E1EA53C97E33 /* libPods-dolin_demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -934,8 +927,6 @@
 				3A7C67E91DEC0D6800225D28 /* Runtime_Test.m */,
 				3A7C67EA1DEC0D6800225D28 /* RunTimeStudy_VC.h */,
 				3A7C67EB1DEC0D6800225D28 /* RunTimeStudy_VC.m */,
-				3A7C67EC1DEC0D6800225D28 /* UIImage+DLRuntime.h */,
-				3A7C67ED1DEC0D6800225D28 /* UIImage+DLRuntime.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -1934,7 +1925,6 @@
 				3A7C68C41DEC0D6800225D28 /* RichTextViewController.m in Sources */,
 				3A7C69471DEC0E7E00225D28 /* TestWKWebViewVC.m in Sources */,
 				3A97CD831EE7F5F600AC19F5 /* PhotoAlbumCell.m in Sources */,
-				3A7C68C91DEC0D6800225D28 /* UIImage+DLRuntime.m in Sources */,
 				3A7C68DA1DEC0D6800225D28 /* PlayManager.m in Sources */,
 				3A7C69251DEC0D6800225D28 /* NSString+Version.m in Sources */,
 				3A7C68C51DEC0D6800225D28 /* ChangeDeviceOrientVC.m in Sources */,
@@ -2127,12 +2117,10 @@
 					"$(inherited)",
 					"-ObjC",
 					"-l\"AFNetworking\"",
-					"-l\"LLBootstrapButton\"",
 					"-l\"Masonry\"",
 					"-l\"SDWebImage\"",
 					"-l\"YYText\"",
 					"-l\"c++\"",
-					"-l\"pop\"",
 					"-framework",
 					"\"Accelerate\"",
 					"-framework",
@@ -2195,12 +2183,10 @@
 					"$(inherited)",
 					"-ObjC",
 					"-l\"AFNetworking\"",
-					"-l\"LLBootstrapButton\"",
 					"-l\"Masonry\"",
 					"-l\"SDWebImage\"",
 					"-l\"YYText\"",
 					"-l\"c++\"",
-					"-l\"pop\"",
 					"-framework",
 					"\"Accelerate\"",
 					"-framework",

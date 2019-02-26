@@ -5,8 +5,6 @@ target 'dolin_demo' do
   pod 'AFNetworking', '~> 3.0’
   pod 'SDWebImage'
   pod 'Masonry'
-  pod 'pop', '~> 1.0'
-  pod "LLBootstrapButton"
   pod 'YYText'
   pod 'SVProgressHUD'
   # 取决于你的工程如何组织，你的node_modules文件夹可能会在别的地方。

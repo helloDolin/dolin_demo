@@ -7,7 +7,6 @@
 //
 
 #import "TitleContainerScrollView.h"
-#import  <pop/POP.h>    //Facebook 动画包
 #import "UIView+Extension.h"
 
 // 默认颜色

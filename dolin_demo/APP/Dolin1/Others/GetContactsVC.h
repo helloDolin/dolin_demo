@@ -9,7 +9,7 @@
 #import "DolinBaseViewController.h"
 
 /**
- 页面描述：
+ 页面描述：获取联系人
  */
 @interface GetContactsVC : DolinBaseViewController
 

@@ -9,6 +9,8 @@
 #import "LottieStudyVC.h"
 #import <Lottie/Lottie.h>
 
+const kBtnHeight = 50;
+
 @interface LottieStudyVC ()
 {
     NSArray* _arr;
@@ -27,7 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, 50);
+    btn.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, kBtnHeight);
     btn.backgroundColor = RANDOM_UICOLOR;
     [btn setTitle:@"click me！！！" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
@@ -53,7 +55,7 @@
 - (LOTAnimationView*)diantouAnimation {
     if (!_diantouAnimation) {
         _diantouAnimation = [LOTAnimationView animationNamed:@"diantou" inBundle:[NSBundle mainBundle]];
-        _diantouAnimation.frame = CGRectMake(0, 114, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT);
+        _diantouAnimation.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT + kBtnHeight, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT);
         _diantouAnimation.loopAnimation = YES;
     }
     return _diantouAnimation;
@@ -62,7 +64,7 @@
 - (LOTAnimationView*)thinkAnimation {
     if (!_thinkAnimation) {
         _thinkAnimation = [LOTAnimationView animationNamed:@"think" inBundle:[NSBundle mainBundle]];
-        _thinkAnimation.frame = CGRectMake(0, 114, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT);
+        _thinkAnimation.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT + kBtnHeight, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT);
         _thinkAnimation.loopAnimation = YES;
     }
     return _thinkAnimation;
@@ -71,7 +73,7 @@
 - (LOTAnimationView*)zhayanAnimation {
     if (!_zhayanAnimation) {
         _zhayanAnimation = [LOTAnimationView animationNamed:@"zhayan" inBundle:[NSBundle mainBundle]];
-        _zhayanAnimation.frame = CGRectMake(0, 114, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT);
+        _zhayanAnimation.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT + kBtnHeight, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT);
         _zhayanAnimation.loopAnimation = YES;
     }
     return _zhayanAnimation;
@@ -80,7 +82,7 @@
 - (LOTAnimationView*)ciclista_salitaAnimation {
     if (!_ciclista_salitaAnimation) {
         _ciclista_salitaAnimation = [LOTAnimationView animationNamed:@"ciclista_salita" inBundle:[NSBundle mainBundle]];
-        _ciclista_salitaAnimation.frame = CGRectMake(0, 114, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT);
+        _ciclista_salitaAnimation.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT + kBtnHeight, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT);
         _ciclista_salitaAnimation.loopAnimation = YES;
     }
     return _ciclista_salitaAnimation;
