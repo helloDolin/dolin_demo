@@ -36,6 +36,7 @@
     self.arr = [@[
                   @"lottie（牛B）-LottieStudyVC",
                   @"照片选取器-DLPhotoAlbumPickerVC",
+                  @"FDTemplateVC-FDTemplateVC",
                   @"仿掌盟个人中心-ImitateTGPPersonCenterVC",
                   @"extensionStudy-AddNoteViewController",
                   @"DLVideoVC-DLVideoVC",

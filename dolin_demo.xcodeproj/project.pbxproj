@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16488136222673E400A35107 /* FDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488134222673E400A35107 /* FDTableViewCell.m */; };
+		16488137222673E400A35107 /* FDTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16488135222673E400A35107 /* FDTableViewCell.xib */; };
+		1648813A222677A400A35107 /* FDTemplateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488139222677A400A35107 /* FDTemplateVC.m */; };
+		1648813D222678FE00A35107 /* FDCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1648813C222678FE00A35107 /* FDCellModel.m */; };
+		16488147222684AD00A35107 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488141222684AC00A35107 /* UITableView+FDTemplateLayoutCell.m */; };
+		16488148222684AD00A35107 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488143222684AC00A35107 /* UITableView+FDKeyedHeightCache.m */; };
+		16488149222684AD00A35107 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488144222684AC00A35107 /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		1648814A222684AD00A35107 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488145222684AC00A35107 /* UITableView+FDIndexPathHeightCache.m */; };
+		1648814D2226B5CC00A35107 /* FDPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1648814C2226B5CC00A35107 /* FDPhotoCell.m */; };
 		169F8BE11FBC31CF0031F536 /* diantou.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BDE1FBC31CF0031F536 /* diantou.json */; };
 		169F8BE21FBC31CF0031F536 /* think.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BDF1FBC31CF0031F536 /* think.json */; };
 		169F8BE31FBC31CF0031F536 /* zhayan.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BE01FBC31CF0031F536 /* zhayan.json */; };
@@ -261,6 +270,23 @@
 
 /* Begin PBXFileReference section */
 		163A578A1D33558E003B9609 /* DolinPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DolinPrefix.pch; sourceTree = "<group>"; };
+		16488133222673E400A35107 /* FDTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDTableViewCell.h; sourceTree = "<group>"; };
+		16488134222673E400A35107 /* FDTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDTableViewCell.m; sourceTree = "<group>"; };
+		16488135222673E400A35107 /* FDTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDTableViewCell.xib; sourceTree = "<group>"; };
+		16488138222677A400A35107 /* FDTemplateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDTemplateVC.h; sourceTree = "<group>"; };
+		16488139222677A400A35107 /* FDTemplateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDTemplateVC.m; sourceTree = "<group>"; };
+		1648813B222678FE00A35107 /* FDCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDCellModel.h; sourceTree = "<group>"; };
+		1648813C222678FE00A35107 /* FDCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDCellModel.m; sourceTree = "<group>"; };
+		1648813F222684AC00A35107 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		16488140222684AC00A35107 /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		16488141222684AC00A35107 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		16488142222684AC00A35107 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		16488143222684AC00A35107 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		16488144222684AC00A35107 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
+		16488145222684AC00A35107 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		16488146222684AC00A35107 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		1648814B2226B5CC00A35107 /* FDPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDPhotoCell.h; sourceTree = "<group>"; };
+		1648814C2226B5CC00A35107 /* FDPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDPhotoCell.m; sourceTree = "<group>"; };
 		169F8BDE1FBC31CF0031F536 /* diantou.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diantou.json; sourceTree = "<group>"; };
 		169F8BDF1FBC31CF0031F536 /* think.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = think.json; sourceTree = "<group>"; };
 		169F8BE01FBC31CF0031F536 /* zhayan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zhayan.json; sourceTree = "<group>"; };
@@ -639,6 +665,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		164881302226738D00A35107 /* FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				16488138222677A400A35107 /* FDTemplateVC.h */,
+				16488139222677A400A35107 /* FDTemplateVC.m */,
+				16488133222673E400A35107 /* FDTableViewCell.h */,
+				16488134222673E400A35107 /* FDTableViewCell.m */,
+				16488135222673E400A35107 /* FDTableViewCell.xib */,
+				1648813B222678FE00A35107 /* FDCellModel.h */,
+				1648813C222678FE00A35107 /* FDCellModel.m */,
+				1648814B2226B5CC00A35107 /* FDPhotoCell.h */,
+				1648814C2226B5CC00A35107 /* FDPhotoCell.m */,
+			);
+			path = FDTemplateLayoutCell;
+			sourceTree = "<group>";
+		};
+		1648813E222684AC00A35107 /* UITableView-FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				1648813F222684AC00A35107 /* UITableView+FDKeyedHeightCache.h */,
+				16488140222684AC00A35107 /* UITableView+FDTemplateLayoutCellDebug.h */,
+				16488141222684AC00A35107 /* UITableView+FDTemplateLayoutCell.m */,
+				16488142222684AC00A35107 /* UITableView+FDIndexPathHeightCache.h */,
+				16488143222684AC00A35107 /* UITableView+FDKeyedHeightCache.m */,
+				16488144222684AC00A35107 /* UITableView+FDTemplateLayoutCellDebug.m */,
+				16488145222684AC00A35107 /* UITableView+FDIndexPathHeightCache.m */,
+				16488146222684AC00A35107 /* UITableView+FDTemplateLayoutCell.h */,
+			);
+			path = "UITableView-FDTemplateLayoutCell";
+			sourceTree = "<group>";
+		};
 		16C8D6311D33511700228ABD = {
 			isa = PBXGroup;
 			children = (
@@ -807,6 +864,7 @@
 			children = (
 				3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */,
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
+				164881302226738D00A35107 /* FDTemplateLayoutCell */,
 				16D29B461FBB04E30072EB6C /* Interview */,
 				16D29B491FBB04E30072EB6C /* Lottie */,
 				3A7776CD1EE7EF5300B3E793 /* Extension */,
@@ -1188,8 +1246,7 @@
 		3A7C68831DEC0D6800225D28 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				3A332AAA1EB08D340072BD34 /* NSDate+Utilities.h */,
-				3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */,
+				1648813E222684AC00A35107 /* UITableView-FDTemplateLayoutCell */,
 				3A7C689D1DEC0D6800225D28 /* UIView */,
 				3A7C68891DEC0D6800225D28 /* UIImage */,
 				3A7C68861DEC0D6800225D28 /* UIColor */,
@@ -1206,6 +1263,8 @@
 				3A7C689C1DEC0D6800225D28 /* UITableView+Common.m */,
 				3A7C68A41DEC0D6800225D28 /* UIWindow+Expand.h */,
 				3A7C68A51DEC0D6800225D28 /* UIWindow+Expand.m */,
+				3A332AAA1EB08D340072BD34 /* NSDate+Utilities.h */,
+				3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1597,7 +1656,7 @@
 		16C8D6321D33511700228ABD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = shaolin;
 				TargetAttributes = {
 					16C8D6391D33511700228ABD = {
@@ -1668,6 +1727,7 @@
 				3A7C68FF1DEC0D6800225D28 /* cm2_mv_btn_play_ver@3x.png in Resources */,
 				3A7C690D1DEC0D6800225D28 /* cm2_topbar_icn_back@3x.png in Resources */,
 				3A7C690F1DEC0D6800225D28 /* cm2_vehicle_btn_next_prs@3x.png in Resources */,
+				16488137222673E400A35107 /* FDTableViewCell.xib in Resources */,
 				3ADF3A621EBC185500A5EFF6 /* DLVideoCell.xib in Resources */,
 				3A7C69081DEC0D6800225D28 /* cm2_play_icn_dld_prs@3x.png in Resources */,
 				3ACABD321EE1687100849B58 /* like.caf in Resources */,
@@ -1832,9 +1892,11 @@
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
 				3ADF3A611EBC185500A5EFF6 /* DLVideoCell.m in Sources */,
 				3A7C692A1DEC0D6800225D28 /* UIImage+RTTint.m in Sources */,
+				16488148222684AD00A35107 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				3A7C68E41DEC0D6800225D28 /* DolinTabBarController.m in Sources */,
 				3AA544891EE8015D00A6C20F /* PhotoBrowserCell.m in Sources */,
 				3A515C9A1E2CB2DA00ECFBB0 /* UIBezierPathVC.m in Sources */,
+				1648813A222677A400A35107 /* FDTemplateVC.m in Sources */,
 				3A7776D61EE7EF5300B3E793 /* NoteViewController.m in Sources */,
 				3A97CD8A1EE800AC00AC19F5 /* DLPhotoBrowser.m in Sources */,
 				3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */,
@@ -1863,9 +1925,11 @@
 				3A332AAC1EB08D340072BD34 /* NSDate+Utilities.m in Sources */,
 				3A7C68D31DEC0D6800225D28 /* BezierPathView.m in Sources */,
 				3AC4835D1E49A93D0008CE57 /* SimulateKeepViewController.m in Sources */,
+				1648814A222684AD00A35107 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				3A7C68BB1DEC0D6800225D28 /* ImageModel.m in Sources */,
 				3A92DAEE1E2774550092A33A /* LoadingBtnVC.m in Sources */,
 				3AC4835C1E49A93D0008CE57 /* SimulateKeepScroll.m in Sources */,
+				16488149222684AD00A35107 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				3A7C691E1DEC0D6800225D28 /* LoadingViewForOC.m in Sources */,
 				3A7C68D71DEC0D6800225D28 /* Dowload.m in Sources */,
 				3A7C69261DEC0D6800225D28 /* UIColor+ColorUtility.m in Sources */,
@@ -1902,12 +1966,15 @@
 				3A5ED63B1E7279A900F232A4 /* Banner2Cell.m in Sources */,
 				3A7776BF1EE7E25C00B3E793 /* DLPhotoAlbumPickerVC.m in Sources */,
 				3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */,
+				16488136222673E400A35107 /* FDTableViewCell.m in Sources */,
 				3AC483201E48115C0008CE57 /* BlockAlertView.m in Sources */,
 				3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */,
+				1648814D2226B5CC00A35107 /* FDPhotoCell.m in Sources */,
 				3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */,
 				3AC4835E1E49A93D0008CE57 /* StrangeScorllViewController.m in Sources */,
 				3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */,
 				3A7C692C1DEC0D6800225D28 /* UINavigationBar+Awesome.m in Sources */,
+				16488147222684AD00A35107 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				3A7C68DB1DEC0D6800225D28 /* RequestManager.m in Sources */,
 				3A7776D91EE7EF7800B3E793 /* NoteListDelegate.m in Sources */,
 				3A7C68E01DEC0D6800225D28 /* Dolin3ViewController.m in Sources */,
@@ -1915,6 +1982,7 @@
 				3A7C69211DEC0D6800225D28 /* PhotoScrollView.m in Sources */,
 				3A7C69351DEC0D6800225D28 /* DolinTopWindowUtil.m in Sources */,
 				3A7C68D51DEC0D6800225D28 /* Dolin2ViewController.m in Sources */,
+				1648813D222678FE00A35107 /* FDCellModel.m in Sources */,
 				3A7C68B81DEC0D6800225D28 /* DolinLabel.m in Sources */,
 				3A7C69291DEC0D6800225D28 /* UIImage+ImageWithColor.m in Sources */,
 				3ADF3A5D1EBC176A00A5EFF6 /* VideoModel.m in Sources */,
@@ -2005,14 +2073,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -2055,14 +2131,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -2226,7 +2310,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2251,7 +2335,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
