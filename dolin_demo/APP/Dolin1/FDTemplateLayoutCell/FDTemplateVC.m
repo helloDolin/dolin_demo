@@ -61,7 +61,7 @@
                     @"http://p1.music.126.net/QBQvSe84znaWIm2PrhQ_ng==/5930765720512200.jpg",
                     @"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3043554241,523381466&fm=26&gp=0.jpg"];
     
-    _arr = @[model1,model2,model3,model4,model4,model3,model2,model1];
+    _arr = @[model1,model2,model3,model4];
 }
 
 /*
