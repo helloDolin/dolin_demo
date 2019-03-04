@@ -13,7 +13,7 @@
 /**
  *十六进制转RGB
  */
-+(UIColor *)convertHexToRGB:(NSString *)hexString{
++ (UIColor *)convertHexToRGB:(NSString *)hexString{
     NSString *str;
     if ([hexString hasPrefix:@"0x"] || [hexString hasPrefix:@"0X"]) {
         str=[[NSString alloc] initWithFormat:@"%@",hexString];

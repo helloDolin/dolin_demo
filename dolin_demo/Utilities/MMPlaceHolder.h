@@ -6,6 +6,13 @@
 //  Copyright (c) 2014 LJC. All rights reserved.
 //
 
+
+/**
+ 一行代码解决显示问题 简单易用
+ 搭建码农和设计之间的沟通桥梁 减少沟通成本(Talk is cheap. Show me the code.)
+ 显示大小自适应(最小支持30*30哦)
+ */
+
 #import <UIKit/UIKit.h>
 
 @interface MMPlaceHolderConfig : NSObject

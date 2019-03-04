@@ -25,6 +25,7 @@
 @implementation SystemPermissionsManager
 
 #pragma mark - life circle
+
 - (instancetype)init
 {
     self = [super init];
@@ -79,7 +80,7 @@ SINGLETON_FOR_IMPLEMENTATION(SystemPermissionsManager);
     ABAuthorizationStatus authStatus = ABAddressBookGetAuthorizationStatus();
     NSString *tips = [NSString stringWithFormat:@"请在iPhone的”设置-隐私-联系人“选项中，允许%@访问你的手机通讯录",APP_NAME];
     
-    if (authStatus ==kABAuthorizationStatusDenied) {
+    if (authStatus == kABAuthorizationStatusDenied) {
         [self executeAlterTips:tips isSupport:YES];
         return NO;
     } else if (authStatus == kABAuthorizationStatusRestricted) {

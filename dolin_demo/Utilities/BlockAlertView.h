@@ -8,19 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-// 取消方法弃用告警
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-
 @interface BlockAlertView : UIAlertView
 
 + (void)alertWithTitle:(NSString*)title
                message:(NSString*)message
     cancelBtnWithTitle:(NSString*)cancelBtnTitle
-           cancelBlock:(void(^)())cancelBlock
+           cancelBlock:(void(^)(void))cancelBlock
 confirmButtonWithTitle:(NSString*)confirmBtnTitle
-          confirmBlock:(void(^)())confirmBlock;
+          confirmBlock:(void(^)(void))confirmBlock;
 
 @end
-
-#pragma clang diagnostic pop

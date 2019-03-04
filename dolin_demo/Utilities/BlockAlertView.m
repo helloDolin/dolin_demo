@@ -10,14 +10,14 @@
 
 @interface BlockAlertView()<UIAlertViewDelegate>
 
-@property (nonatomic, copy) void (^cancelBlock)();
-@property (nonatomic, copy) void (^confirmBlock)();
+@property (nonatomic, copy) void (^cancelBlock)(void);
+@property (nonatomic, copy) void (^confirmBlock)(void);
 
 @end
 
 @implementation BlockAlertView
 
-- (id)initWithTitle:(NSString *)title message:(NSString *)message cancelButtonWithTitle:(NSString *)cancelTitle cancelBlock:(void (^)())cancelBlock confirmButtonWithTitle:(NSString *)confirmTitle confirmBlock:(void (^)())confirmBlock {
+- (id)initWithTitle:(NSString *)title message:(NSString *)message cancelButtonWithTitle:(NSString *)cancelTitle cancelBlock:(void (^)(void))cancelBlock confirmButtonWithTitle:(NSString *)confirmTitle confirmBlock:(void (^)(void))confirmBlock {
     self = [super initWithTitle:title message:message delegate:self cancelButtonTitle:cancelTitle otherButtonTitles:confirmTitle, nil];
     if (self) {
         _cancelBlock = cancelBlock;
@@ -29,10 +29,15 @@
 + (void)alertWithTitle:(NSString*)title
                message:(NSString*)message
     cancelBtnWithTitle:(NSString*)cancelBtnTitle
-           cancelBlock:(void(^)())cancelBlock
+           cancelBlock:(void(^)(void))cancelBlock
 confirmButtonWithTitle:(NSString*)confirmBtnTitle
-          confirmBlock:(void(^)())confirmBlock {
-    BlockAlertView* blockAlertView = [[BlockAlertView alloc]initWithTitle:title message:message cancelButtonWithTitle:cancelBtnTitle cancelBlock:cancelBlock confirmButtonWithTitle:confirmBtnTitle confirmBlock:confirmBlock];
+          confirmBlock:(void(^)(void))confirmBlock {
+    BlockAlertView* blockAlertView = [[BlockAlertView alloc]initWithTitle:title
+                                                                  message:message
+                                                    cancelButtonWithTitle:cancelBtnTitle
+                                                              cancelBlock:cancelBlock
+                                                   confirmButtonWithTitle:confirmBtnTitle
+                                                             confirmBlock:confirmBlock];
     [blockAlertView show];
 }
 
