@@ -18,9 +18,8 @@
 
 @implementation BannerViewController
 
-// <#dealloc#>
 - (void)dealloc {
-    NSLog(@"dolin dealloc======%s",__func__);
+    NSLog(@"%s",__func__);
 }
 
 - (void)viewDidLoad {

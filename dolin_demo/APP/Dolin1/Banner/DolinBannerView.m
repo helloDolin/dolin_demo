@@ -40,6 +40,7 @@ static const NSTimeInterval kAutoScrollViewDelay = 3.0; // 延时时间
 @implementation DolinBannerView
 
 #pragma mark -  life circle
+
 - (instancetype)initWithFrame:(CGRect)frame WithInfoArr:(NSArray *)infoArr {
     self = [super initWithFrame:frame];
     if (self) {

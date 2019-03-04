@@ -20,7 +20,7 @@
 // dealloc
 - (void)dealloc {
     NSLog(@"%p",_contenxtDelegate);
-    NSLog(@"dolin dealloc======%s",__func__);
+    NSLog(@"%s",__func__);
 }
 
 + (LinAnimateTransition *)linAnimateTransitionWithType:(LinAnimateTransitionType)linAnimateTransitionType {
