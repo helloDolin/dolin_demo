@@ -145,6 +145,12 @@
     NSString *title = _arr[indexPath.row];
     NSString *className = [[title componentsSeparatedByString:@"-"] lastObject];
     
+    if ([className isEqualToString:@"DLPhotoAlbumPickerVC"]) {
+        if(![SystemPermissionsManager requestAuthorization:SystemPermissions_ALAssetsLibrary withSureBtnClickBlock:nil]) {
+            return;
+        }
+    }
+    
     UIViewController* viewController = [[NSClassFromString(className) alloc] init];
     viewController.title = [[title componentsSeparatedByString:@"-"] firstObject];
     viewController.hidesBottomBarWhenPushed = YES;
@@ -152,16 +158,6 @@
     UIBarButtonItem *customLeftBarButtonItem = [[UIBarButtonItem alloc] init];
     customLeftBarButtonItem.title = @"返回";
     self.navigationItem.backBarButtonItem = customLeftBarButtonItem;
-    
-    if ([viewController isKindOfClass:[DLPhotoAlbumPickerVC class]]) {
-        if(![SystemPermissionsManager requestAuthorization:SystemPermissions_ALAssetsLibrary withSureBtnClickBlock:^{
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [self.navigationController pushViewController:viewController animated:YES];
-            });
-        }]) {
-            return;
-        }
-    }
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

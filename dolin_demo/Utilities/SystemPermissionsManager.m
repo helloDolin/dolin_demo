@@ -231,7 +231,7 @@ SINGLETON_FOR_IMPLEMENTATION(SystemPermissionsManager);
 
 - (void)executeAlterTips:(NSString *)alterTips isSupport:(BOOL)isSupport {
     // 异步处理
-    dispatch_async(dispatch_get_main_queue(), ^{
+    
         NSString *alterContent = @"";
         if (isSupport) {
             alterContent = alterTips;
@@ -253,7 +253,7 @@ SINGLETON_FOR_IMPLEMENTATION(SystemPermissionsManager);
                 
             }];
         }
-    });
+
 }
 
 - (void)setUpLocation {
