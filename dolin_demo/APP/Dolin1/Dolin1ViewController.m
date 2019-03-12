@@ -12,6 +12,7 @@
 #import "DLPhotoAlbumPickerVC.h"
 #import <objc/runtime.h>
 #import "SystemPermissionsManager.h"
+#import "MJRefresh.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
@@ -32,6 +33,7 @@
     [self.view addSubview:self.tableView];
     [self setUpFPSLabel];
     [self setRightBarBtn];
+    [self setUpMJRefresh];
     
     self.arr = [@[
                   @"lottie（牛B）-LottieStudyVC",
@@ -81,6 +83,14 @@
     self.navigationController.delegate = self;
 }
 #pragma mark -  method
+
+- (void)setUpMJRefresh {
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        self.arr = [[[self.arr reverseObjectEnumerator]allObjects]mutableCopy];
+        [self.tableView.mj_header endRefreshing];
+        [self.tableView reloadData];
+    }];
+}
 
 /**
  window上添加FPSLabel
