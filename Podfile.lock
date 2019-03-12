@@ -14,11 +14,16 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - lottie-ios (2.1.3)
   - lottie-react-native (2.2.7):
     - lottie-ios
     - React
   - Masonry (1.1.0)
+  - MJExtension (3.0.15.1)
+  - MJRefresh (3.1.15.7)
   - React (0.50.1):
     - React/Core (= 0.50.1)
   - React/ART (0.50.1):
@@ -71,9 +76,12 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - FMDB (~> 2.7.5)
   - lottie-ios (from `./ReactComponent/node_modules/lottie-ios`)
   - lottie-react-native (from `./ReactComponent/node_modules/lottie-react-native`)
-  - Masonry
+  - Masonry (~> 1.1.0)
+  - MJExtension (~> 3.0.15.1)
+  - MJRefresh (~> 3.1.15.7)
   - React/ART (from `./ReactComponent/node_modules/react-native`)
   - React/BatchedBridge (from `./ReactComponent/node_modules/react-native`)
   - React/Core (from `./ReactComponent/node_modules/react-native`)
@@ -89,10 +97,10 @@ DEPENDENCIES:
   - React/RCTText (from `./ReactComponent/node_modules/react-native`)
   - React/RCTVibration (from `./ReactComponent/node_modules/react-native`)
   - React/RCTWebSocket (from `./ReactComponent/node_modules/react-native`)
-  - SDWebImage
-  - SVProgressHUD
+  - SDWebImage (~> 4.0)
+  - SVProgressHUD (~> 2.2.5)
   - yoga (from `./ReactComponent/node_modules/react-native/ReactCommon/yoga`)
-  - YYText
+  - YYText (~> 1.0.7)
 
 EXTERNAL SOURCES:
   lottie-ios:
@@ -106,15 +114,18 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   lottie-ios: 8c150606598931621e927377f1426d2d3e99282d
   lottie-react-native: 7473cccb5efa322498c850bffc60acc9dc0c5846
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   React: 2b50e9e9151d1b7a5fba4ad593b1393ec3c9654b
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   yoga: f25f45222e44e880cc6e4e26513c24bdc8a5cfd7
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 0d28e0f11afc909e279e67e1cc8f62c6234e449e
+PODFILE CHECKSUM: d15aab130ecbe41fb77fe1b44cd145c474d40e98
 
 COCOAPODS: 1.2.1

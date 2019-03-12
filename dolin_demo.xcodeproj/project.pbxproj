@@ -19,6 +19,7 @@
 		169F8BE11FBC31CF0031F536 /* diantou.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BDE1FBC31CF0031F536 /* diantou.json */; };
 		169F8BE21FBC31CF0031F536 /* think.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BDF1FBC31CF0031F536 /* think.json */; };
 		169F8BE31FBC31CF0031F536 /* zhayan.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BE01FBC31CF0031F536 /* zhayan.json */; };
+		16A91C982237FC7D00ADED94 /* FmdbVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A91C972237FC7D00ADED94 /* FmdbVC.m */; };
 		16B1A8121FBE91F1004B3D74 /* ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 16B1A8111FBE91F1004B3D74 /* ios.jsbundle */; };
 		16C6717D1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		16C8D63F1D33511700228ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D63E1D33511700228ABD /* main.m */; };
@@ -290,6 +291,8 @@
 		169F8BDE1FBC31CF0031F536 /* diantou.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diantou.json; sourceTree = "<group>"; };
 		169F8BDF1FBC31CF0031F536 /* think.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = think.json; sourceTree = "<group>"; };
 		169F8BE01FBC31CF0031F536 /* zhayan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zhayan.json; sourceTree = "<group>"; };
+		16A91C962237FC7D00ADED94 /* FmdbVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FmdbVC.h; sourceTree = "<group>"; };
+		16A91C972237FC7D00ADED94 /* FmdbVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FmdbVC.m; sourceTree = "<group>"; };
 		16B1A8111FBE91F1004B3D74 /* ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios.jsbundle; sourceTree = "<group>"; };
 		16C6717B1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
@@ -696,6 +699,15 @@
 			path = "UITableView-FDTemplateLayoutCell";
 			sourceTree = "<group>";
 		};
+		16A91C952237FC4300ADED94 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				16A91C962237FC7D00ADED94 /* FmdbVC.h */,
+				16A91C972237FC7D00ADED94 /* FmdbVC.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
 		16C8D6311D33511700228ABD = {
 			isa = PBXGroup;
 			children = (
@@ -864,6 +876,7 @@
 			children = (
 				3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */,
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
+				16A91C952237FC4300ADED94 /* FMDB */,
 				164881302226738D00A35107 /* FDTemplateLayoutCell */,
 				16D29B461FBB04E30072EB6C /* Interview */,
 				16D29B491FBB04E30072EB6C /* Lottie */,
@@ -1929,6 +1942,7 @@
 				3A7C68BB1DEC0D6800225D28 /* ImageModel.m in Sources */,
 				3A92DAEE1E2774550092A33A /* LoadingBtnVC.m in Sources */,
 				3AC4835C1E49A93D0008CE57 /* SimulateKeepScroll.m in Sources */,
+				16A91C982237FC7D00ADED94 /* FmdbVC.m in Sources */,
 				16488149222684AD00A35107 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				3A7C691E1DEC0D6800225D28 /* LoadingViewForOC.m in Sources */,
 				3A7C68D71DEC0D6800225D28 /* Dowload.m in Sources */,

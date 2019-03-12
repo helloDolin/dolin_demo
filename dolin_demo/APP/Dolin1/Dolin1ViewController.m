@@ -62,6 +62,7 @@
                   @"runtime-RunTimeStudy_VC",
                   @"TestWebView-TestWebViewVC",
                   @"TestWKWebViewVC-TestWKWebViewVC",
+                  @"FmdbVC-FmdbVC"
                   ]mutableCopy];
 }
 
