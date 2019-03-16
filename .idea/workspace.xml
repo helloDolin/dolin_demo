@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bca7bece-d99b-4c05-af41-ce1a43ada254" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dolin_demo.xcworkspace/xcuserdata/shaolin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/dolin_demo.xcworkspace/xcuserdata/shaolin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
-    </list>
+    <list default="true" id="bca7bece-d99b-4c05-af41-ce1a43ada254" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -70,9 +68,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -104,11 +102,12 @@
       <updated>1551852331409</updated>
       <workItem from="1551852334403" duration="13000" />
       <workItem from="1551852374247" duration="313000" />
+      <workItem from="1552708996727" duration="5000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326000" />
+    <option name="totallyTimeSpent" value="331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="731" extended-state="6" />

@@ -634,7 +634,7 @@
     if ([[PlayManager sharedManager] isPlaying] == NO) {
         //播放动画(放磁针)
         [UIView animateWithDuration:0.4f animations:^{
-        self.needleImageView.transform =CGAffineTransformMakeRotation(0);
+            self.needleImageView.transform = CGAffineTransformMakeRotation(0);
             
             }];
         [[PlayManager sharedManager] playMusic];

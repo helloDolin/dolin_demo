@@ -49,16 +49,6 @@
 
 @implementation Dolin2ViewController
 
-#pragma mark - init
-+ (instancetype)sharedDolin2ViewController {
-    static Dolin2ViewController *handle =nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        handle = [[Dolin2ViewController alloc]init];
-    });
-    return handle;
-}
-
 #pragma mark - life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
