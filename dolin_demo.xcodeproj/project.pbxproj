@@ -687,14 +687,14 @@
 		1648813E222684AC00A35107 /* UITableView-FDTemplateLayoutCell */ = {
 			isa = PBXGroup;
 			children = (
-				1648813F222684AC00A35107 /* UITableView+FDKeyedHeightCache.h */,
-				16488140222684AC00A35107 /* UITableView+FDTemplateLayoutCellDebug.h */,
-				16488141222684AC00A35107 /* UITableView+FDTemplateLayoutCell.m */,
-				16488142222684AC00A35107 /* UITableView+FDIndexPathHeightCache.h */,
-				16488143222684AC00A35107 /* UITableView+FDKeyedHeightCache.m */,
-				16488144222684AC00A35107 /* UITableView+FDTemplateLayoutCellDebug.m */,
-				16488145222684AC00A35107 /* UITableView+FDIndexPathHeightCache.m */,
 				16488146222684AC00A35107 /* UITableView+FDTemplateLayoutCell.h */,
+				16488141222684AC00A35107 /* UITableView+FDTemplateLayoutCell.m */,
+				1648813F222684AC00A35107 /* UITableView+FDKeyedHeightCache.h */,
+				16488143222684AC00A35107 /* UITableView+FDKeyedHeightCache.m */,
+				16488142222684AC00A35107 /* UITableView+FDIndexPathHeightCache.h */,
+				16488145222684AC00A35107 /* UITableView+FDIndexPathHeightCache.m */,
+				16488140222684AC00A35107 /* UITableView+FDTemplateLayoutCellDebug.h */,
+				16488144222684AC00A35107 /* UITableView+FDTemplateLayoutCellDebug.m */,
 			);
 			path = "UITableView-FDTemplateLayoutCell";
 			sourceTree = "<group>";
