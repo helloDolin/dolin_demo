@@ -156,12 +156,6 @@
     NSString *title = _arr[indexPath.row];
     NSString *className = [[title componentsSeparatedByString:@"-"] lastObject];
     
-    if (indexPath.row == 0) {
-        if(![DLSystemPermissionsManager requestAuthorization:SystemPermissionsLocation withSureBtnClickBlock:nil]) {
-            return;
-        }
-    }
-    
     if ([className isEqualToString:@"DLPhotoAlbumPickerVC"]) {
         if(![DLSystemPermissionsManager requestAuthorization:SystemPermissionsPhotoLibrary withSureBtnClickBlock:nil]) {
             return;
