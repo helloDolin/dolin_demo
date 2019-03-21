@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BlockAlertView : UIAlertView
+@interface DLBlockAlertView : UIAlertView
 
 + (void)alertWithTitle:(NSString*)title
                message:(NSString*)message

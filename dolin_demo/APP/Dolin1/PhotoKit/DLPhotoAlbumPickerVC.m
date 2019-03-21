@@ -13,7 +13,7 @@
 #import "DLPhotoBrowserVC.h"
 #import "PhotoAlbumCameraCell.h"
 #import "MBFadeAlertView.h"
-#import "SystemPermissionsManager.h"
+#import "DLSystemPermissionsManager.h"
 
 static const NSInteger kMaxSelectedCount = 9;
 static const CGFloat kTableViewCellHeight = 80.0;
@@ -293,7 +293,7 @@ static const CGFloat kTableViewCellHeight = 80.0;
     // 拍照
     if (indexPath.row == 0) {
         // 权限处理
-        if(![SystemPermissionsManager requestAuthorization:SystemPermissions_AVMediaTypeVideo withSureBtnClickBlock:^{
+        if(![DLSystemPermissionsManager requestAuthorization:SystemPermissionsCamera withSureBtnClickBlock:^{
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self presentImgPickerVC];
             });

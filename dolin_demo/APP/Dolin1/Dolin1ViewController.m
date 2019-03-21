@@ -8,10 +8,10 @@
 
 #import "Dolin1ViewController.h"
 #import "YYFPSLabel.h"
-#import "LinAnimateTransition.h"
+#import "DLAnimateTransition.h"
 #import "DLPhotoAlbumPickerVC.h"
 #import <objc/runtime.h>
-#import "SystemPermissionsManager.h"
+#import "DLSystemPermissionsManager.h"
 #import "MJRefresh.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
@@ -156,8 +156,14 @@
     NSString *title = _arr[indexPath.row];
     NSString *className = [[title componentsSeparatedByString:@"-"] lastObject];
     
+    if (indexPath.row == 0) {
+        if(![DLSystemPermissionsManager requestAuthorization:SystemPermissionsLocation withSureBtnClickBlock:nil]) {
+            return;
+        }
+    }
+    
     if ([className isEqualToString:@"DLPhotoAlbumPickerVC"]) {
-        if(![SystemPermissionsManager requestAuthorization:SystemPermissions_ALAssetsLibrary withSureBtnClickBlock:nil]) {
+        if(![DLSystemPermissionsManager requestAuthorization:SystemPermissionsPhotoLibrary withSureBtnClickBlock:nil]) {
             return;
         }
     }
@@ -194,7 +200,7 @@
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
     // 仅在Dolin1VC做动画
     if (operation == UINavigationControllerOperationPush && [fromVC isKindOfClass:[self class]]) {
-        return [LinAnimateTransition linAnimateTransitionWithType:LinAnimateTransitionTypePush];
+        return [DLAnimateTransition linAnimateTransitionWithType:LinAnimateTransitionTypePush];
     }
     return nil;
 }

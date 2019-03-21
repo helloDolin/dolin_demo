@@ -6,16 +6,16 @@
 //  Copyright © 2017年 shaolin. All rights reserved.
 //
 
-#import "LinAnimateTransition.h"
+#import "DLAnimateTransition.h"
 
-@interface LinAnimateTransition()
+@interface DLAnimateTransition()
 
 @property (nonatomic, weak)id <UIViewControllerContextTransitioning> contenxtDelegate;
 @property (nonatomic, assign) LinAnimateTransitionType linAnimateTransitionType;
 
 @end
 
-@implementation LinAnimateTransition
+@implementation DLAnimateTransition
 
 // dealloc
 - (void)dealloc {
@@ -23,8 +23,8 @@
     NSLog(@"%s",__func__);
 }
 
-+ (LinAnimateTransition *)linAnimateTransitionWithType:(LinAnimateTransitionType)linAnimateTransitionType {
-    LinAnimateTransition *obj = [[LinAnimateTransition alloc]init];
++ (DLAnimateTransition *)linAnimateTransitionWithType:(LinAnimateTransitionType)linAnimateTransitionType {
+    DLAnimateTransition *obj = [[DLAnimateTransition alloc]init];
     obj.linAnimateTransitionType = linAnimateTransitionType;
     return obj;
 }

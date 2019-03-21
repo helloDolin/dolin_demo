@@ -9,7 +9,7 @@
 #import "ChainCodeVC.h"
 #import "CalculatorMaker.h"
 #import "NSObject+Calculator.h" 
-#import "BlockAlertView.h"
+#import "DLBlockAlertView.h"
 
 @interface ChainCodeVC ()
 
@@ -31,7 +31,7 @@
     
     NSLog(@"%ld",result);
     
-    [BlockAlertView alertWithTitle:@"仿Masonry设计思路" message:@"仿Masonry设计思路\n调用可以看这个类里的一个例子，原理很简单\n但是设计思路很棒！" cancelBtnWithTitle:nil cancelBlock:nil confirmButtonWithTitle:@"yeah！" confirmBlock:nil];
+    [DLBlockAlertView alertWithTitle:@"仿Masonry设计思路" message:@"仿Masonry设计思路\n调用可以看这个类里的一个例子，原理很简单\n但是设计思路很棒！" cancelBtnWithTitle:nil cancelBlock:nil confirmButtonWithTitle:@"yeah！" confirmBlock:nil];
 }
 
 - (void)didReceiveMemoryWarning {

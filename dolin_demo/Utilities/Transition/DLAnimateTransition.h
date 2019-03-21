@@ -18,8 +18,8 @@ typedef NS_ENUM(NSUInteger, LinAnimateTransitionType) {
 /**
  转场动画
  */
-@interface LinAnimateTransition : NSObject<UIViewControllerAnimatedTransitioning,CAAnimationDelegate>
+@interface DLAnimateTransition : NSObject<UIViewControllerAnimatedTransitioning,CAAnimationDelegate>
 
-+ (LinAnimateTransition *)linAnimateTransitionWithType:(LinAnimateTransitionType)linAnimateTransitionType;
++ (DLAnimateTransition *)linAnimateTransitionWithType:(LinAnimateTransitionType)linAnimateTransitionType;
 
 @end

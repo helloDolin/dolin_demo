@@ -8,7 +8,7 @@
 
 #import "LoadingBtnVC.h"
 #import "LoadingBtn.h"
-#import "LinAnimateTransition.h"
+#import "DLAnimateTransition.h"
 
 @interface LoadingBtnVC ()
 {
@@ -63,12 +63,12 @@
 #pragma mark - UIViewControllerTransitioningDelegate
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
-    return [LinAnimateTransition linAnimateTransitionWithType:LinAnimateTransitionTypePresent];
+    return [DLAnimateTransition linAnimateTransitionWithType:LinAnimateTransitionTypePresent];
 }
 
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    return [LinAnimateTransition linAnimateTransitionWithType:LinAnimateTransitionTypeDismiss];
+    return [DLAnimateTransition linAnimateTransitionWithType:LinAnimateTransitionTypeDismiss];
 }
 #pragma mark - getter && setter
 

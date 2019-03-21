@@ -8,15 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-// 以后扩充
-
-// 联网权限
-// 相册权限
-// 相机、麦克风权限
-// 定位权限
-// 推送权限
-// 通讯录权限
-// 日历、备忘录权限
+/*
+ 权限TODO:
+    提醒
+    日历
+    HeathKit
+    
+ */
 
 /**
  *  系统权限
@@ -25,15 +23,15 @@ typedef NS_ENUM(NSUInteger, SystemPermissions) {
     /**
      *  相机
      */
-    SystemPermissions_AVMediaTypeVideo,
+    SystemPermissionsCamera,
     /**
      *  相册
      */
-    SystemPermissions_ALAssetsLibrary,
+    SystemPermissionsPhotoLibrary,
     /**
      *  定位
      */
-    SystemPermissions_CLLocationManager,
+    SystemPermissionsLocation,
     /**
      *  音频
      */
@@ -41,7 +39,7 @@ typedef NS_ENUM(NSUInteger, SystemPermissions) {
     /**
      *  通讯录
      */
-    SystemPermissions_ABAddressBook
+    SystemPermissionsAddressBook
 };
 
 typedef void(^SureBtnClickBlock)(void);
@@ -49,9 +47,10 @@ typedef void(^SureBtnClickBlock)(void);
 /**
  系统权限管理
  */
-@interface SystemPermissionsManager : NSObject
+@interface DLSystemPermissionsManager : NSObject
 
 + (BOOL)requestAuthorization:(SystemPermissions)systemPermissions withSureBtnClickBlock:(SureBtnClickBlock)sureBtnClickBlock;
+
 + (BOOL)requestAuthorization:(SystemPermissions)systemPermissions;
 
 @end

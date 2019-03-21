@@ -9,29 +9,12 @@
 #ifndef DolinUsefulMacros_h
 #define DolinUsefulMacros_h
 
-#pragma mark - 音乐方面
-
-#define kWidth   self.view.frame.size.width
-#define kHeight  self.view.frame.size.height
-
-// 我的id：107875443
-// 二哥id：112370983
-#define kUrl @"http://music.163.com/api/playlist/detail?id=107875443"  //我喜欢的音乐
-#define kLyricUrl @"http://music.163.com/api/song/media?id=" // 歌词
-
-#pragma mark - App Frame
-// App Frame
-#define Application_Frame       [[UIScreen mainScreen] applicationFrame]
-
-// App Frame Height&Width
-#define App_Frame_Height        [[UIScreen mainScreen] applicationFrame].size.height
-#define App_Frame_Width         [[UIScreen mainScreen] applicationFrame].size.width
-
+#pragma mark - MainScreen Height&Width
 // MainScreen Height&Width
 #define SCREEN_HEIGHT      [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH       [[UIScreen mainScreen] bounds].size.width
 
-// iPhoneX 相关
+#pragma mark - iPhoneX 相关
 #define IS_DEVICE_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 #define STATUSBAR_HEIGHT  ((IS_DEVICE_iPhoneX) == NO ? 20 : 44 )
 // 在 iPhone X 上 status bar的增量
@@ -144,10 +127,6 @@
 // 此宏对于iOS 10 已经无效
 //#define IOS7_OR_LATER       ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
 
-
-#define WEAKSELF typeof(self) __weak weakSelf = self;
-#define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
-
 #pragma mark -  Alert
 #ifdef DEBUG
 #define ALERT(some_thing, ...)    \
@@ -259,10 +238,13 @@ return shared##className; \
 
 
 #pragma mark -  block self
+
 #define BlockWeakObject(o) __typeof(o) __weak
 #define BlockWeakSelf BlockWeakObject(self)
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
+#define WEAKSELF typeof(self) __weak weakSelf = self;
+#define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
 
 #endif /* DolinUsefulMacros_h */
