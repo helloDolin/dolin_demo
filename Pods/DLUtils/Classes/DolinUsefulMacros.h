@@ -118,7 +118,7 @@
 #define APP_STORE_URL       @"itms-apps://itunes.apple.com/us/app/xiong-zhao/id1020593660?l=zh&ls=1&mt=8"
 #define APP_STORE_INFO_URL  @"https://itunes.apple.com/cn/lookup?id=1020593660"
 #define VERSION             [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleShortVersionString"]
-#define APP_NAME             [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleName"]
+#define APP_NAME            [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleName"]
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
 #define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)

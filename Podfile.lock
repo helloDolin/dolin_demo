@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - DLUtils (0.0.5)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -76,6 +77,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - DLUtils (~> 0.0.5)
   - FMDB (~> 2.7.5)
   - lottie-ios (from `./ReactComponent/node_modules/lottie-ios`)
   - lottie-react-native (from `./ReactComponent/node_modules/lottie-react-native`)
@@ -102,6 +104,18 @@ DEPENDENCIES:
   - yoga (from `./ReactComponent/node_modules/react-native/ReactCommon/yoga`)
   - YYText (~> 1.0.7)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - DLUtils
+    - FMDB
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - SDWebImage
+    - SVProgressHUD
+    - YYText
+
 EXTERNAL SOURCES:
   lottie-ios:
     :path: "./ReactComponent/node_modules/lottie-ios"
@@ -114,6 +128,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  DLUtils: 8f1437a35bd88f22e2d6a939eff9fa8e199b749b
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   lottie-ios: 8c150606598931621e927377f1426d2d3e99282d
   lottie-react-native: 7473cccb5efa322498c850bffc60acc9dc0c5846
@@ -126,6 +141,6 @@ SPEC CHECKSUMS:
   yoga: f25f45222e44e880cc6e4e26513c24bdc8a5cfd7
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: d15aab130ecbe41fb77fe1b44cd145c474d40e98
+PODFILE CHECKSUM: c457d3cb8b9aada7291c1f733b5272ecd9529934
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.7.0.beta.2

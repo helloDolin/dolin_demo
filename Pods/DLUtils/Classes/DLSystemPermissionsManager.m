@@ -12,6 +12,7 @@
 #import <Photos/Photos.h>
 #import <AddressBookUI/AddressBookUI.h>
 #import <CoreLocation/CoreLocation.h>
+#import "DolinUsefulMacros.h"
 
 @interface DLSystemPermissionsManager() <CLLocationManagerDelegate>
 

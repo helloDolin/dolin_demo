@@ -194,8 +194,6 @@
 		3AA722D91F03B193000EFF1F /* CABasicAnimationStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA722D81F03B193000EFF1F /* CABasicAnimationStudyVC.m */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
-		3AC483201E48115C0008CE57 /* DLBlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4831F1E48115C0008CE57 /* DLBlockAlertView.m */; };
-		3AC483231E481C230008CE57 /* DLSystemPermissionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483221E481C230008CE57 /* DLSystemPermissionsManager.m */; };
 		3AC4835C1E49A93D0008CE57 /* SimulateKeepScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4834E1E49A93D0008CE57 /* SimulateKeepScroll.m */; };
 		3AC4835D1E49A93D0008CE57 /* SimulateKeepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483501E49A93D0008CE57 /* SimulateKeepViewController.m */; };
 		3AC4835E1E49A93D0008CE57 /* StrangeScorllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483531E49A93D0008CE57 /* StrangeScorllViewController.m */; };
@@ -209,7 +207,6 @@
 		3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */; };
 		3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */; };
 		3ACABD321EE1687100849B58 /* like.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3ACABD311EE1687100849B58 /* like.caf */; };
-		3AD3092E1E779475004C2496 /* DLAnimateTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3092D1E779475004C2496 /* DLAnimateTransition.m */; };
 		3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3095A1E77D563004C2496 /* LinkworkLeftCell.m */; };
 		3AD3095E1E77D563004C2496 /* LinkworkTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3095C1E77D563004C2496 /* LinkworkTableViewVC.m */; };
 		3ADF3A551EBC0F3A00A5EFF6 /* DLVideoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADF3A541EBC0F3A00A5EFF6 /* DLVideoPlayView.m */; };
@@ -522,7 +519,6 @@
 		3A7C68A51DEC0D6800225D28 /* UIWindow+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Expand.m"; sourceTree = "<group>"; };
 		3A7C68A71DEC0D6800225D28 /* DolinConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinConstant.h; sourceTree = "<group>"; };
 		3A7C68A81DEC0D6800225D28 /* DolinConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinConstant.m; sourceTree = "<group>"; };
-		3A7C68A91DEC0D6800225D28 /* DolinUsefulMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinUsefulMacros.h; sourceTree = "<group>"; };
 		3A7C68AA1DEC0D6800225D28 /* DolinTopWindowUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinTopWindowUtil.h; sourceTree = "<group>"; };
 		3A7C68AB1DEC0D6800225D28 /* DolinTopWindowUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinTopWindowUtil.m; sourceTree = "<group>"; };
 		3A7C68AC1DEC0D6800225D28 /* MMPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPlaceHolder.h; sourceTree = "<group>"; };
@@ -578,10 +574,6 @@
 		3AA722D81F03B193000EFF1F /* CABasicAnimationStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationStudyVC.m; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		3AC4831E1E48115C0008CE57 /* DLBlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBlockAlertView.h; sourceTree = "<group>"; };
-		3AC4831F1E48115C0008CE57 /* DLBlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLBlockAlertView.m; sourceTree = "<group>"; };
-		3AC483211E481C230008CE57 /* DLSystemPermissionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSystemPermissionsManager.h; sourceTree = "<group>"; };
-		3AC483221E481C230008CE57 /* DLSystemPermissionsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSystemPermissionsManager.m; sourceTree = "<group>"; };
 		3AC4834D1E49A93D0008CE57 /* SimulateKeepScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateKeepScroll.h; sourceTree = "<group>"; };
 		3AC4834E1E49A93D0008CE57 /* SimulateKeepScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateKeepScroll.m; sourceTree = "<group>"; };
 		3AC4834F1E49A93D0008CE57 /* SimulateKeepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateKeepViewController.h; sourceTree = "<group>"; };
@@ -606,8 +598,6 @@
 		3AC533CC1E1CF92300FE560E /* UIButton+DLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DLButton.h"; sourceTree = "<group>"; };
 		3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DLButton.m"; sourceTree = "<group>"; };
 		3ACABD311EE1687100849B58 /* like.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = like.caf; sourceTree = "<group>"; };
-		3AD3092C1E779475004C2496 /* DLAnimateTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLAnimateTransition.h; sourceTree = "<group>"; };
-		3AD3092D1E779475004C2496 /* DLAnimateTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLAnimateTransition.m; sourceTree = "<group>"; };
 		3AD309591E77D563004C2496 /* LinkworkLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkworkLeftCell.h; sourceTree = "<group>"; };
 		3AD3095A1E77D563004C2496 /* LinkworkLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkworkLeftCell.m; sourceTree = "<group>"; };
 		3AD3095B1E77D563004C2496 /* LinkworkTableViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkworkTableViewVC.h; sourceTree = "<group>"; };
@@ -1214,11 +1204,6 @@
 				3A7C68AB1DEC0D6800225D28 /* DolinTopWindowUtil.m */,
 				3A7C68AC1DEC0D6800225D28 /* MMPlaceHolder.h */,
 				3A7C68AD1DEC0D6800225D28 /* MMPlaceHolder.m */,
-				3AC4831E1E48115C0008CE57 /* DLBlockAlertView.h */,
-				3AC4831F1E48115C0008CE57 /* DLBlockAlertView.m */,
-				3AC483211E481C230008CE57 /* DLSystemPermissionsManager.h */,
-				3AC483221E481C230008CE57 /* DLSystemPermissionsManager.m */,
-				3A7C68AE1DEC0D6800225D28 /* Transition */,
 				3A7C68711DEC0D6800225D28 /* BeautifulClasses */,
 				3A7C68831DEC0D6800225D28 /* Category */,
 				3A7C68A61DEC0D6800225D28 /* DolinMacro+Constant */,
@@ -1332,19 +1317,9 @@
 			children = (
 				3A7C68A71DEC0D6800225D28 /* DolinConstant.h */,
 				3A7C68A81DEC0D6800225D28 /* DolinConstant.m */,
-				3A7C68A91DEC0D6800225D28 /* DolinUsefulMacros.h */,
 				1620FD522243A49100FF9BAD /* MusicWY.h */,
 			);
 			path = "DolinMacro+Constant";
-			sourceTree = "<group>";
-		};
-		3A7C68AE1DEC0D6800225D28 /* Transition */ = {
-			isa = PBXGroup;
-			children = (
-				3AD3092C1E779475004C2496 /* DLAnimateTransition.h */,
-				3AD3092D1E779475004C2496 /* DLAnimateTransition.m */,
-			);
-			path = Transition;
 			sourceTree = "<group>";
 		};
 		3A7C693E1DEC0E7E00225D28 /* WebViewVC */ = {
@@ -1614,7 +1589,6 @@
 				16C8D6361D33511700228ABD /* Sources */,
 				16C8D6371D33511700228ABD /* Frameworks */,
 				16C8D6381D33511700228ABD /* Resources */,
-				1224C601395866C17C1670D6 /* [CP] Embed Pods Frameworks */,
 				A13F3F133DB0BAB9C5FA1AF8 /* [CP] Copy Pods Resources */,
 				3AF03B861EC6E8A5008DDF80 /* Embed App Extensions */,
 				3A7F97431EC71E54007BB5B8 /* Embed Frameworks */,
@@ -1834,34 +1808,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1224C601395866C17C1670D6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8C36E570CBD02ECA4B6FF703 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dolin_demo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A13F3F133DB0BAB9C5FA1AF8 /* [CP] Copy Pods Resources */ = {
@@ -1870,13 +1832,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1886,7 +1853,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AC483231E481C230008CE57 /* DLSystemPermissionsManager.m in Sources */,
 				3A7C691F1DEC0D6800225D28 /* BasePictureTableView.m in Sources */,
 				3AC483691E49A9DE0008CE57 /* GetContactsVC.m in Sources */,
 				3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */,
@@ -1895,7 +1861,6 @@
 				3A38F4821E1E55090036DE63 /* AnimationStudyVC.m in Sources */,
 				3A7C68BE1DEC0D6800225D28 /* PlantImgItemUtil.m in Sources */,
 				3A7C69461DEC0E7E00225D28 /* TestWebViewVC.m in Sources */,
-				3AD3092E1E779475004C2496 /* DLAnimateTransition.m in Sources */,
 				3A92DAF11E2774850092A33A /* LoadingBtn.m in Sources */,
 				3AA0C1BD1E7163DA009B1628 /* Banner2VC.m in Sources */,
 				3A7C68E51DEC0D6800225D28 /* LaunchViewController.m in Sources */,
@@ -1983,7 +1948,6 @@
 				3A7776BF1EE7E25C00B3E793 /* DLPhotoAlbumPickerVC.m in Sources */,
 				3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */,
 				16488136222673E400A35107 /* FDTableViewCell.m in Sources */,
-				3AC483201E48115C0008CE57 /* DLBlockAlertView.m in Sources */,
 				3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */,
 				1648814D2226B5CC00A35107 /* FDPhotoCell.m in Sources */,
 				3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */,
