@@ -9,7 +9,6 @@
 #import "PlantImgItemUtil.h"
 #import "ImageModel.h"
 #import <UIKit/UIKit.h>
-#import "DolinUsefulMacros.h"
 
 #define IMG_MAX_HEIGHT (SCREEN_HEIGHT) * 0.25
 

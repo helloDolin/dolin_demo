@@ -21,7 +21,6 @@
 		169F8BE31FBC31CF0031F536 /* zhayan.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BE01FBC31CF0031F536 /* zhayan.json */; };
 		16A91C982237FC7D00ADED94 /* FmdbVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A91C972237FC7D00ADED94 /* FmdbVC.m */; };
 		16B1A8121FBE91F1004B3D74 /* ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 16B1A8111FBE91F1004B3D74 /* ios.jsbundle */; };
-		16C6717D1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		16C8D63F1D33511700228ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D63E1D33511700228ABD /* main.m */; };
 		16C8D6421D33511700228ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D6411D33511700228ABD /* AppDelegate.m */; };
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
@@ -292,8 +291,6 @@
 		16A91C962237FC7D00ADED94 /* FmdbVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FmdbVC.h; sourceTree = "<group>"; };
 		16A91C972237FC7D00ADED94 /* FmdbVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FmdbVC.m; sourceTree = "<group>"; };
 		16B1A8111FBE91F1004B3D74 /* ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios.jsbundle; sourceTree = "<group>"; };
-		16C6717B1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
-		16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		16C8D63A1D33511700228ABD /* dolin_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dolin_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C8D63E1D33511700228ABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16C8D6401D33511700228ABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1250,8 +1247,6 @@
 				3A7C68891DEC0D6800225D28 /* UIImage */,
 				3A7C68861DEC0D6800225D28 /* UIColor */,
 				3AC533CB1E1CF92300FE560E /* DLButton */,
-				16C6717B1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.h */,
-				16C6717C1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m */,
 				3A7C68841DEC0D6800225D28 /* NSString+Version.h */,
 				3A7C68851DEC0D6800225D28 /* NSString+Version.m */,
 				3A7C68951DEC0D6800225D28 /* UINavigationBar+Awesome.h */,
@@ -1928,7 +1923,6 @@
 				3A7C68D91DEC0D6800225D28 /* MBFadeAlertView.m in Sources */,
 				3A7C68BF1DEC0D6800225D28 /* GhostAlbumViewController.m in Sources */,
 				3A97CD7F1EE7F5F600AC19F5 /* PhotoAlbumCameraCell.m in Sources */,
-				16C6717D1DEDDAD6000781E1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				3A7C68DD1DEC0D6800225D28 /* MusicListCell.m in Sources */,
 				3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */,
 				3AC4835F1E49A93D0008CE57 /* StrangeTableViewCell.m in Sources */,

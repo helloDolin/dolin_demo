@@ -29,10 +29,6 @@
 ///
 /// Adding the implementation file of this category to your target will
 /// automatically patch UINavigationController with this feature.
-
-/**
- *  即使是自定义的返回按钮也可以带默认的动画效果
- */
 @interface UINavigationController (FDFullscreenPopGesture)
 
 /// The gesture recognizer that actually handles interactive pop.
@@ -58,9 +54,5 @@
 /// checked when view controller based navigation bar's appearance is enabled.
 /// Default to NO, bars are more likely to show.
 @property (nonatomic, assign) BOOL fd_prefersNavigationBarHidden;
-
-/// Max allowed initial distance to left edge when you begin the interactive pop
-/// gesture. 0 by default, which means it will ignore this limit.
-@property (nonatomic, assign) CGFloat fd_interactivePopMaxAllowedInitialDistanceToLeftEdge;
 
 @end
