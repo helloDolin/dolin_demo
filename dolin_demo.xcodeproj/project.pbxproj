@@ -1640,6 +1640,7 @@
 		16C8D6321D33511700228ABD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DL;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = shaolin;
 				TargetAttributes = {
