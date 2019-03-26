@@ -79,8 +79,16 @@
 - (void)btnAction {
     self.textField.secureTextEntry = !self.textField.secureTextEntry;
     NSString* txt = self.textField.text;
-    self.textField.text = @""; //先给其一个乱七八糟的值，再赋值就解决这个bug了，苹果设计的缺陷
+    // 先给其一个乱七八糟的值，再赋值就解决这个bug了，苹果设计的缺陷
+    // 苹果已修复此bug
+    self.textField.text = @"";
     self.textField.text = txt;
+    if (self.textField.isSecureTextEntry) {
+        [_btn setTitle:@"显示密码" forState:UIControlStateNormal];
+    }
+    else {
+        [_btn setTitle:@"隐藏密码" forState:UIControlStateNormal];
+    }
 }
 
 - (UIButton*)btn {
@@ -88,7 +96,7 @@
         _btn = [UIButton buttonWithType:UIButtonTypeSystem];
         _btn.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT,SCREEN_WIDTH , 50);
         _btn.backgroundColor = [UIColor orangeColor];
-        [_btn setTitle:@"test" forState:UIControlStateNormal];
+        [_btn setTitle:@"显示密码" forState:UIControlStateNormal];
         _btn.tintColor = [UIColor whiteColor];
         [_btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -97,22 +105,15 @@
 
 - (UITextField*)textField {
     if (!_textField) {
-        _textField = [[UITextField alloc] initWithFrame:CGRectMake(120.0f, 80.0f + NAVIGATION_BAR_HEIGHT, 150.0f, 30.0f)];
-        [_textField setBorderStyle:UITextBorderStyleRoundedRect]; //外框类型
-        
-        _textField.placeholder = @"password"; //默认显示的字
-        
-        _textField.secureTextEntry = YES; //密码
-        
-        // 定义文本是否使用iPhone的自动更正功能。
+        _textField = [[UITextField alloc] initWithFrame:CGRectMake(120,NAVIGATION_BAR_HEIGHT + 50 + 30, 150, 30)];
+        [_textField setBorderStyle:UITextBorderStyleBezel];
+        _textField.placeholder = @"password";
+        _textField.secureTextEntry = YES;
         _textField.autocorrectionType = UITextAutocorrectionTypeNo;
-        
         // 定义文本自动大小写样式。UITextAutocapitalizationTypeNone关闭自动大写。
         _textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
         _textField.returnKeyType = UIReturnKeyDone;
-        _textField.clearButtonMode = UITextFieldViewModeWhileEditing; //编辑时会出现个修改X
-        
-//        _textField.delegate = self;
+        _textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     }
     return _textField;
 }

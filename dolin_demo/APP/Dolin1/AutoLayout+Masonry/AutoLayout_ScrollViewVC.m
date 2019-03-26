@@ -65,8 +65,8 @@
     }];
     
     [_containerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(_scrollView);
-        make.width.equalTo(_scrollView.mas_width);
+        make.edges.equalTo(self->_scrollView);
+        make.width.equalTo(self->_scrollView.mas_width);
     }];
     
     
@@ -79,7 +79,7 @@
         boxView.detail.text = _arr[i][@"detail"];
         [self.containerView addSubview:boxView];
         [boxView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.and.right.equalTo(_containerView);
+            make.left.and.right.equalTo(self->_containerView);
             make.height.equalTo(@ (30 + 30 * i));
             
             if ( nextBoxView )
@@ -88,7 +88,7 @@
             }
             else
             {
-                make.top.mas_equalTo(_containerView.mas_top).offset(10);
+                make.top.mas_equalTo(self->_containerView.mas_top).offset(10);
             }
         }];
         

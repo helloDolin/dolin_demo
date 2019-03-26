@@ -6,9 +6,9 @@
 //  Copyright © 2017年 shaolin. All rights reserved.
 //
 
-#import "InterviewVC.h"
+#import "AutoLayoutPriority.h"
 
-@interface InterviewVC ()
+@interface AutoLayoutPriority ()
 
 @property (nonatomic, strong) UIView *testView;
 @property (nonatomic, strong) UILabel *leftLbl;
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation InterviewVC
+@implementation AutoLayoutPriority
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,44 +27,25 @@
     
     
     [self.view addSubview:self.testView];
+    
     [self.view addSubview:self.leftLbl];
     [self.view addSubview:self.rightLbl];
     
     [_leftLbl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view);
-        make.right.equalTo(_rightLbl.mas_left).offset(-20);
+        make.right.equalTo(self->_rightLbl.mas_left).offset(-20);
         make.top.equalTo(self.view.mas_top).offset(NAVIGATION_BAR_HEIGHT);
     }];
     
     [_rightLbl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.view);
-        make.top.equalTo(_leftLbl.mas_top);
+        make.top.equalTo(self->_leftLbl.mas_top);
+        make.left.equalTo(self->_leftLbl.mas_right).offset(10);
     }];
     
-    [_rightLbl setContentCompressionResistancePriority:UILayoutPriorityRequired
+    // 设置左边label压缩优先级低于默认750，所以当有压缩情景时，右边全部显示，左边...
+    [_leftLbl setContentCompressionResistancePriority:700
                                              forAxis:UILayoutConstraintAxisHorizontal];
-}
-
-- (void)updateTestViewConstraint {
-    BOOL isPortrait = NO;
-    CGFloat superW = self.view.width;
-    CGFloat superH = self.view.height;
-    
-    // 竖屏
-    if (superW / superH < 1) {
-        isPortrait = YES;
-    }
-    
-    [_testView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.width.and.height.equalTo(self.view).with.priorityLow();
-        if (isPortrait) {
-            make.height.equalTo(self.view.mas_width).multipliedBy(3 / 4.0); // 注意这里需要float类型
-        }
-        else {
-            make.width.equalTo(self.view.mas_height).multipliedBy(4.0 / 3);
-        }
-        make.center.equalTo(self.view);
-    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -77,13 +58,13 @@
     UIDeviceOrientation  orient = [UIDevice currentDevice].orientation;
     switch (orient) {
         case UIDeviceOrientationPortrait:
-            [self updateTestViewConstraint];
+           
             break;
         case UIDeviceOrientationLandscapeLeft:
-            [self updateTestViewConstraint];
+            
             break;
         case UIDeviceOrientationLandscapeRight:
-            [self updateTestViewConstraint];
+            
             break;
         default:
             break;
@@ -102,7 +83,7 @@
 - (UILabel*)leftLbl {
     if (!_leftLbl) {
         _leftLbl = [[UILabel alloc]init];
-        _leftLbl.text = @"adsfasdfadsfas";
+        _leftLbl.text = @"adsfasdfadsfasadsfasdfadsfasadsfasdfadsfas";
     }
     return _leftLbl;
 }
@@ -110,8 +91,7 @@
 - (UILabel*)rightLbl {
     if (!_rightLbl) {
         _rightLbl = [[UILabel alloc]init];
-        _rightLbl.text = @"奥德赛发送到发送到发送到发送到发送到发送到发多少";
-        _rightLbl.numberOfLines = 1;
+        _rightLbl.text = @"123123123123";
     }
     return _rightLbl;
 }

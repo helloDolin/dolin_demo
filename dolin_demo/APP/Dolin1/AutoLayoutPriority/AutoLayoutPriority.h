@@ -8,6 +8,6 @@
 
 #import "DolinBaseViewController.h"
 
-@interface InterviewVC : DolinBaseViewController
+@interface AutoLayoutPriority : DolinBaseViewController
 
 @end

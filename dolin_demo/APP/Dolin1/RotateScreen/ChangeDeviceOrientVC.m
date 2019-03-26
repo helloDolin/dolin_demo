@@ -28,33 +28,31 @@
         make.center.equalTo(self.view);
     }];
     
-    // 监听设备自动旋转
+    // 监听设备旋转
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientChange:) name:UIDeviceOrientationDidChangeNotification object:nil];
 }
 
 - (void)turnLeft {
     [UIView animateWithDuration:1.5 animations:^{
-        _imgView.transform = CGAffineTransformMakeRotation(M_PI / 2);
+        self->_imgView.transform = CGAffineTransformMakeRotation(M_PI / 2);
     }];
 }
 
 - (void)turnRight {
     [UIView animateWithDuration:1.5 animations:^{
-        _imgView.transform = CGAffineTransformMakeRotation(- M_PI / 2);
+        self->_imgView.transform = CGAffineTransformMakeRotation(- M_PI / 2);
     }];
 }
 
 - (void)turnPortrait {
     [UIView animateWithDuration:1.5 animations:^{
-        _imgView.transform = CGAffineTransformIdentity;
+        self->_imgView.transform = CGAffineTransformIdentity;
     }];
 }
 
 // 通知设备旋转了
 - (void)orientChange:(NSNotification *)noti {
-    // [self orientChangeWithSuperView:self.view showView:self.imgView showViewRect:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     UIDeviceOrientation  orient = [UIDevice currentDevice].orientation;
-    
     switch (orient) {
         case UIDeviceOrientationPortrait:
             [self turnPortrait];
@@ -66,7 +64,6 @@
             [self turnRight];
             break;
         default:
-            
             break;
     }
 }

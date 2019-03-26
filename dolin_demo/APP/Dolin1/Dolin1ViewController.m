@@ -42,7 +42,7 @@
                   @"仿掌盟个人中心-ImitateTGPPersonCenterVC",
                   @"extensionStudy-AddNoteViewController",
                   @"DLVideoVC-DLVideoVC",
-                  @"Interview-InterviewVC",
+                  @"AutoLayoutPriority-AutoLayoutPriority",
                   @"动画相关-Animation_Study_VC",
                   @"最近较火的Banner-Banner2VC",
                   @"仿keep引导页-SimulateKeepViewController",

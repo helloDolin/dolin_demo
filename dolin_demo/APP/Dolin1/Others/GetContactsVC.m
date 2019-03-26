@@ -41,14 +41,14 @@
     [self.view addSubview:self.getContactsBtn];
     
     [self.getContactsBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(@104);
-        make.left.equalTo(@20);
+        make.top.equalTo(@(104));
+        make.left.equalTo(@(20));
         make.size.mas_equalTo(CGSizeMake(100, 50));
     }];
     
     [self.phoneNumLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(_getContactsBtn.mas_right).offset(20);
-        make.top.bottom.equalTo(_getContactsBtn);
+        make.left.equalTo(self->_getContactsBtn.mas_right).offset(20);
+        make.top.bottom.equalTo(self->_getContactsBtn);
         make.right.equalTo(self.view.mas_right).offset(-20);
     }];
 }
@@ -56,7 +56,7 @@
 - (void)getContactsBtnAction{
     if([[UIDevice currentDevice].systemVersion doubleValue] >= 9.0)  {
         
-        //让用户给权限,没有的话会被拒
+        // 让用户给权限,没有的话会被拒
         CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
         if (status == CNAuthorizationStatusNotDetermined) {
             CNContactStore *store = [[CNContactStore alloc] init];
@@ -80,12 +80,12 @@
             picker.displayedPropertyKeys = @[CNContactPhoneNumbersKey];
             [self presentViewController: picker  animated:YES completion:nil];
         }
-        else{
+        else {
             [SVProgressHUD showInfoWithStatus:@"您未开启通讯录权限,请前往设置中心开启"];
         }
         
-    }else{
-        
+    }
+    else {
         __weak typeof(self)weakSelf = self;
         ABAddressBookRef bookref = ABAddressBookCreateWithOptions(NULL, NULL);
         ABAuthorizationStatus status = ABAddressBookGetAuthorizationStatus();
@@ -112,8 +112,8 @@
             peosonVC.peoplePickerDelegate = weakSelf;
             peosonVC.displayedProperties = @[[NSNumber numberWithInt:kABPersonPhoneProperty]];
             [weakSelf presentViewController:peosonVC animated:YES completion:nil];
-        }else
-        {
+        }
+        else {
             [SVProgressHUD showInfoWithStatus:@"您未开启通讯录权限,请前往设置中心开启"];
         }
     }
