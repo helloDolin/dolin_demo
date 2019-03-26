@@ -12,6 +12,7 @@ target 'dolin_demo' do
   pod 'MJExtension', '~> 3.0.15.1'
   pod 'DLUtils', '~> 0.0.5'
   pod 'FDFullscreenPopGesture', '~> 1.1'
+  pod 'YYModel'
   # 取决于你的工程如何组织，你的node_modules文件夹可能会在别的地方。
   # 请将:path后面的内容修改为正确的路径（一定要确保正确～～）。
   pod 'yoga', :path => './ReactComponent/node_modules/react-native/ReactCommon/yoga'

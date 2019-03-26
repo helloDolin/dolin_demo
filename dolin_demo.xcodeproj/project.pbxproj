@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1630F53D2249CB0F002499C3 /* Dolin2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F53C2249CB0F002499C3 /* Dolin2ViewController.m */; };
+		1630F5402249D08A002499C3 /* MNBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F53F2249D08A002499C3 /* MNBaseModel.m */; };
+		1630F5462249D45E002499C3 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F5452249D45E002499C3 /* BaseModel.m */; };
+		1630F5492249D56D002499C3 /* RecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F5482249D56D002499C3 /* RecommendModel.m */; };
+		1630F54C2249DB6C002499C3 /* MNBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F54B2249DB6C002499C3 /* MNBaseTableViewCell.m */; };
+		1630F54F2249DBDF002499C3 /* RecommendMusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F54E2249DBDF002499C3 /* RecommendMusicCell.m */; };
+		1630F5522249DCBC002499C3 /* RecommendCellTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F5512249DCBC002499C3 /* RecommendCellTitleView.m */; };
+		1630F5552249E8D4002499C3 /* MusicCDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F5542249E8D4002499C3 /* MusicCDView.m */; };
+		1630F5582249EC30002499C3 /* MusicProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F5572249EC30002499C3 /* MusicProgressView.m */; };
+		1630F55C2249ED3B002499C3 /* XDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F55B2249ED3A002499C3 /* XDProgressView.m */; };
 		16488136222673E400A35107 /* FDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488134222673E400A35107 /* FDTableViewCell.m */; };
 		16488137222673E400A35107 /* FDTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16488135222673E400A35107 /* FDTableViewCell.xib */; };
 		1648813A222677A400A35107 /* FDTemplateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488139222677A400A35107 /* FDTemplateVC.m */; };
@@ -21,6 +31,7 @@
 		169F8BE31FBC31CF0031F536 /* zhayan.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BE01FBC31CF0031F536 /* zhayan.json */; };
 		16A91C982237FC7D00ADED94 /* FmdbVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A91C972237FC7D00ADED94 /* FmdbVC.m */; };
 		16B1A8121FBE91F1004B3D74 /* ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 16B1A8111FBE91F1004B3D74 /* ios.jsbundle */; };
+		16C6028F224A0F2B00F3DA0B /* MBFadeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6028E224A0F2B00F3DA0B /* MBFadeAlertView.m */; };
 		16C8D63F1D33511700228ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D63E1D33511700228ABD /* main.m */; };
 		16C8D6421D33511700228ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D6411D33511700228ABD /* AppDelegate.m */; };
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
@@ -73,16 +84,6 @@
 		3A7C68C81DEC0D6800225D28 /* RunTimeStudy_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67EB1DEC0D6800225D28 /* RunTimeStudy_VC.m */; };
 		3A7C68D31DEC0D6800225D28 /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68041DEC0D6800225D28 /* BezierPathView.m */; };
 		3A7C68D41DEC0D6800225D28 /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68061DEC0D6800225D28 /* UIBezierPathViewController.m */; };
-		3A7C68D51DEC0D6800225D28 /* Dolin2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68091DEC0D6800225D28 /* Dolin2ViewController.m */; };
-		3A7C68D61DEC0D6800225D28 /* Music.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C680D1DEC0D6800225D28 /* Music.m */; };
-		3A7C68D71DEC0D6800225D28 /* Dowload.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68101DEC0D6800225D28 /* Dowload.m */; };
-		3A7C68D81DEC0D6800225D28 /* ExpandClickAreaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68121DEC0D6800225D28 /* ExpandClickAreaButton.m */; };
-		3A7C68D91DEC0D6800225D28 /* MBFadeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68141DEC0D6800225D28 /* MBFadeAlertView.m */; };
-		3A7C68DA1DEC0D6800225D28 /* PlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68161DEC0D6800225D28 /* PlayManager.m */; };
-		3A7C68DB1DEC0D6800225D28 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68181DEC0D6800225D28 /* RequestManager.m */; };
-		3A7C68DC1DEC0D6800225D28 /* PlayMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C681B1DEC0D6800225D28 /* PlayMusicViewController.m */; };
-		3A7C68DD1DEC0D6800225D28 /* MusicListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C681E1DEC0D6800225D28 /* MusicListCell.m */; };
-		3A7C68DE1DEC0D6800225D28 /* MusicListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C681F1DEC0D6800225D28 /* MusicListCell.xib */; };
 		3A7C68E01DEC0D6800225D28 /* Dolin3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68241DEC0D6800225D28 /* Dolin3ViewController.m */; };
 		3A7C68E21DEC0D6800225D28 /* Dolin4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68291DEC0D6800225D28 /* Dolin4ViewController.m */; };
 		3A7C68E31DEC0D6800225D28 /* TitleContainerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C682B1DEC0D6800225D28 /* TitleContainerScrollView.m */; };
@@ -267,6 +268,26 @@
 
 /* Begin PBXFileReference section */
 		1620FD522243A49100FF9BAD /* MusicWY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicWY.h; sourceTree = "<group>"; };
+		1630F53B2249CB0F002499C3 /* Dolin2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dolin2ViewController.h; sourceTree = "<group>"; };
+		1630F53C2249CB0F002499C3 /* Dolin2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dolin2ViewController.m; sourceTree = "<group>"; };
+		1630F53E2249D08A002499C3 /* MNBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNBaseModel.h; sourceTree = "<group>"; };
+		1630F53F2249D08A002499C3 /* MNBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNBaseModel.m; sourceTree = "<group>"; };
+		1630F5442249D45E002499C3 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		1630F5452249D45E002499C3 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		1630F5472249D56D002499C3 /* RecommendModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendModel.h; sourceTree = "<group>"; };
+		1630F5482249D56D002499C3 /* RecommendModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendModel.m; sourceTree = "<group>"; };
+		1630F54A2249DB6C002499C3 /* MNBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNBaseTableViewCell.h; sourceTree = "<group>"; };
+		1630F54B2249DB6C002499C3 /* MNBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNBaseTableViewCell.m; sourceTree = "<group>"; };
+		1630F54D2249DBDF002499C3 /* RecommendMusicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendMusicCell.h; sourceTree = "<group>"; };
+		1630F54E2249DBDF002499C3 /* RecommendMusicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendMusicCell.m; sourceTree = "<group>"; };
+		1630F5502249DCBC002499C3 /* RecommendCellTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendCellTitleView.h; sourceTree = "<group>"; };
+		1630F5512249DCBC002499C3 /* RecommendCellTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendCellTitleView.m; sourceTree = "<group>"; };
+		1630F5532249E8D4002499C3 /* MusicCDView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicCDView.h; sourceTree = "<group>"; };
+		1630F5542249E8D4002499C3 /* MusicCDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicCDView.m; sourceTree = "<group>"; };
+		1630F5562249EC30002499C3 /* MusicProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicProgressView.h; sourceTree = "<group>"; };
+		1630F5572249EC30002499C3 /* MusicProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicProgressView.m; sourceTree = "<group>"; };
+		1630F55A2249ED3A002499C3 /* XDProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDProgressView.h; sourceTree = "<group>"; };
+		1630F55B2249ED3A002499C3 /* XDProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDProgressView.m; sourceTree = "<group>"; };
 		163A578A1D33558E003B9609 /* DolinPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DolinPrefix.pch; sourceTree = "<group>"; };
 		16488133222673E400A35107 /* FDTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDTableViewCell.h; sourceTree = "<group>"; };
 		16488134222673E400A35107 /* FDTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDTableViewCell.m; sourceTree = "<group>"; };
@@ -291,6 +312,8 @@
 		16A91C962237FC7D00ADED94 /* FmdbVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FmdbVC.h; sourceTree = "<group>"; };
 		16A91C972237FC7D00ADED94 /* FmdbVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FmdbVC.m; sourceTree = "<group>"; };
 		16B1A8111FBE91F1004B3D74 /* ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios.jsbundle; sourceTree = "<group>"; };
+		16C6028D224A0F2B00F3DA0B /* MBFadeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFadeAlertView.h; sourceTree = "<group>"; };
+		16C6028E224A0F2B00F3DA0B /* MBFadeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFadeAlertView.m; sourceTree = "<group>"; };
 		16C8D63A1D33511700228ABD /* dolin_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dolin_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C8D63E1D33511700228ABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16C8D6401D33511700228ABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -388,25 +411,6 @@
 		3A7C68041DEC0D6800225D28 /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
 		3A7C68051DEC0D6800225D28 /* UIBezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathViewController.h; sourceTree = "<group>"; };
 		3A7C68061DEC0D6800225D28 /* UIBezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathViewController.m; sourceTree = "<group>"; };
-		3A7C68081DEC0D6800225D28 /* Dolin2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin2ViewController.h; sourceTree = "<group>"; };
-		3A7C68091DEC0D6800225D28 /* Dolin2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin2ViewController.m; sourceTree = "<group>"; };
-		3A7C680C1DEC0D6800225D28 /* Music.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Music.h; sourceTree = "<group>"; };
-		3A7C680D1DEC0D6800225D28 /* Music.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Music.m; sourceTree = "<group>"; };
-		3A7C680F1DEC0D6800225D28 /* Dowload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dowload.h; sourceTree = "<group>"; };
-		3A7C68101DEC0D6800225D28 /* Dowload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dowload.m; sourceTree = "<group>"; };
-		3A7C68111DEC0D6800225D28 /* ExpandClickAreaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandClickAreaButton.h; sourceTree = "<group>"; };
-		3A7C68121DEC0D6800225D28 /* ExpandClickAreaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandClickAreaButton.m; sourceTree = "<group>"; };
-		3A7C68131DEC0D6800225D28 /* MBFadeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFadeAlertView.h; sourceTree = "<group>"; };
-		3A7C68141DEC0D6800225D28 /* MBFadeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFadeAlertView.m; sourceTree = "<group>"; };
-		3A7C68151DEC0D6800225D28 /* PlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayManager.h; sourceTree = "<group>"; };
-		3A7C68161DEC0D6800225D28 /* PlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayManager.m; sourceTree = "<group>"; };
-		3A7C68171DEC0D6800225D28 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
-		3A7C68181DEC0D6800225D28 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
-		3A7C681A1DEC0D6800225D28 /* PlayMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayMusicViewController.h; sourceTree = "<group>"; };
-		3A7C681B1DEC0D6800225D28 /* PlayMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayMusicViewController.m; sourceTree = "<group>"; };
-		3A7C681D1DEC0D6800225D28 /* MusicListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListCell.h; sourceTree = "<group>"; };
-		3A7C681E1DEC0D6800225D28 /* MusicListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListCell.m; sourceTree = "<group>"; };
-		3A7C681F1DEC0D6800225D28 /* MusicListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicListCell.xib; sourceTree = "<group>"; };
 		3A7C68231DEC0D6800225D28 /* Dolin3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin3ViewController.h; sourceTree = "<group>"; };
 		3A7C68241DEC0D6800225D28 /* Dolin3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin3ViewController.m; sourceTree = "<group>"; };
 		3A7C68281DEC0D6800225D28 /* Dolin4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin4ViewController.h; sourceTree = "<group>"; };
@@ -656,6 +660,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1630F5592249ED3A002499C3 /* XDProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				1630F55A2249ED3A002499C3 /* XDProgressView.h */,
+				1630F55B2249ED3A002499C3 /* XDProgressView.m */,
+			);
+			path = XDProgressView;
+			sourceTree = "<group>";
+		};
 		164881302226738D00A35107 /* FDTemplateLayoutCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1008,67 +1021,27 @@
 		3A7C68071DEC0D6800225D28 /* Dolin2 */ = {
 			isa = PBXGroup;
 			children = (
-				3A7C68081DEC0D6800225D28 /* Dolin2ViewController.h */,
-				3A7C68091DEC0D6800225D28 /* Dolin2ViewController.m */,
-				3A7C680A1DEC0D6800225D28 /* SimulateWangYiMusic */,
+				1630F5592249ED3A002499C3 /* XDProgressView */,
+				1630F53B2249CB0F002499C3 /* Dolin2ViewController.h */,
+				1630F53C2249CB0F002499C3 /* Dolin2ViewController.m */,
+				1630F53E2249D08A002499C3 /* MNBaseModel.h */,
+				1630F53F2249D08A002499C3 /* MNBaseModel.m */,
+				1630F5442249D45E002499C3 /* BaseModel.h */,
+				1630F5452249D45E002499C3 /* BaseModel.m */,
+				1630F5472249D56D002499C3 /* RecommendModel.h */,
+				1630F5482249D56D002499C3 /* RecommendModel.m */,
+				1630F54A2249DB6C002499C3 /* MNBaseTableViewCell.h */,
+				1630F54B2249DB6C002499C3 /* MNBaseTableViewCell.m */,
+				1630F54D2249DBDF002499C3 /* RecommendMusicCell.h */,
+				1630F54E2249DBDF002499C3 /* RecommendMusicCell.m */,
+				1630F5502249DCBC002499C3 /* RecommendCellTitleView.h */,
+				1630F5512249DCBC002499C3 /* RecommendCellTitleView.m */,
+				1630F5532249E8D4002499C3 /* MusicCDView.h */,
+				1630F5542249E8D4002499C3 /* MusicCDView.m */,
+				1630F5562249EC30002499C3 /* MusicProgressView.h */,
+				1630F5572249EC30002499C3 /* MusicProgressView.m */,
 			);
 			path = Dolin2;
-			sourceTree = "<group>";
-		};
-		3A7C680A1DEC0D6800225D28 /* SimulateWangYiMusic */ = {
-			isa = PBXGroup;
-			children = (
-				3A7C680B1DEC0D6800225D28 /* Model */,
-				3A7C680E1DEC0D6800225D28 /* Tools */,
-				3A7C68191DEC0D6800225D28 /* VC */,
-				3A7C681C1DEC0D6800225D28 /* View */,
-			);
-			path = SimulateWangYiMusic;
-			sourceTree = "<group>";
-		};
-		3A7C680B1DEC0D6800225D28 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3A7C680C1DEC0D6800225D28 /* Music.h */,
-				3A7C680D1DEC0D6800225D28 /* Music.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3A7C680E1DEC0D6800225D28 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				3A7C680F1DEC0D6800225D28 /* Dowload.h */,
-				3A7C68101DEC0D6800225D28 /* Dowload.m */,
-				3A7C68111DEC0D6800225D28 /* ExpandClickAreaButton.h */,
-				3A7C68121DEC0D6800225D28 /* ExpandClickAreaButton.m */,
-				3A7C68131DEC0D6800225D28 /* MBFadeAlertView.h */,
-				3A7C68141DEC0D6800225D28 /* MBFadeAlertView.m */,
-				3A7C68151DEC0D6800225D28 /* PlayManager.h */,
-				3A7C68161DEC0D6800225D28 /* PlayManager.m */,
-				3A7C68171DEC0D6800225D28 /* RequestManager.h */,
-				3A7C68181DEC0D6800225D28 /* RequestManager.m */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		3A7C68191DEC0D6800225D28 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				3A7C681A1DEC0D6800225D28 /* PlayMusicViewController.h */,
-				3A7C681B1DEC0D6800225D28 /* PlayMusicViewController.m */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		3A7C681C1DEC0D6800225D28 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				3A7C681D1DEC0D6800225D28 /* MusicListCell.h */,
-				3A7C681E1DEC0D6800225D28 /* MusicListCell.m */,
-				3A7C681F1DEC0D6800225D28 /* MusicListCell.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		3A7C68201DEC0D6800225D28 /* Dolin3 */ = {
@@ -1197,6 +1170,8 @@
 		3A7C68701DEC0D6800225D28 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				16C6028D224A0F2B00F3DA0B /* MBFadeAlertView.h */,
+				16C6028E224A0F2B00F3DA0B /* MBFadeAlertView.m */,
 				3A7C68AA1DEC0D6800225D28 /* DolinTopWindowUtil.h */,
 				3A7C68AB1DEC0D6800225D28 /* DolinTopWindowUtil.m */,
 				3A7C68AC1DEC0D6800225D28 /* MMPlaceHolder.h */,
@@ -1716,7 +1691,6 @@
 				3ADF3A621EBC185500A5EFF6 /* DLVideoCell.xib in Resources */,
 				3A7C69081DEC0D6800225D28 /* cm2_play_icn_dld_prs@3x.png in Resources */,
 				3ACABD321EE1687100849B58 /* like.caf in Resources */,
-				3A7C68DE1DEC0D6800225D28 /* MusicListCell.xib in Resources */,
 				3A7C69041DEC0D6800225D28 /* cm2_play_icn_airplay@3x.png in Resources */,
 				3A7C69171DEC0D6800225D28 /* moren.jpeg in Resources */,
 				3A7C69031DEC0D6800225D28 /* cm2_play_disc_mask@3x.png in Resources */,
@@ -1852,6 +1826,7 @@
 				3A7C691F1DEC0D6800225D28 /* BasePictureTableView.m in Sources */,
 				3AC483691E49A9DE0008CE57 /* GetContactsVC.m in Sources */,
 				3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */,
+				1630F5402249D08A002499C3 /* MNBaseModel.m in Sources */,
 				3A7776D41EE7EF5300B3E793 /* AddNoteViewController.m in Sources */,
 				3A7C68B91DEC0D6800225D28 /* DolinLabelViewController.m in Sources */,
 				3A38F4821E1E55090036DE63 /* AnimationStudyVC.m in Sources */,
@@ -1873,12 +1848,12 @@
 				3AA544891EE8015D00A6C20F /* PhotoBrowserCell.m in Sources */,
 				3A515C9A1E2CB2DA00ECFBB0 /* UIBezierPathVC.m in Sources */,
 				1648813A222677A400A35107 /* FDTemplateVC.m in Sources */,
+				1630F54C2249DB6C002499C3 /* MNBaseTableViewCell.m in Sources */,
+				1630F53D2249CB0F002499C3 /* Dolin2ViewController.m in Sources */,
 				3A7776D61EE7EF5300B3E793 /* NoteViewController.m in Sources */,
 				3A97CD8A1EE800AC00AC19F5 /* DLPhotoBrowser.m in Sources */,
 				3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */,
-				3A7C68D81DEC0D6800225D28 /* ExpandClickAreaButton.m in Sources */,
 				3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */,
-				3A7C68D61DEC0D6800225D28 /* Music.m in Sources */,
 				16D29B4F1FBB04E30072EB6C /* LottieStudyVC.m in Sources */,
 				3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */,
 				3A7C68C61DEC0D6800225D28 /* NSObject+DLRuntime.m in Sources */,
@@ -1896,6 +1871,7 @@
 				3AA0C1B51E71628A009B1628 /* ChainCodeVC.m in Sources */,
 				3AC483621E49A93D0008CE57 /* SimulateTwitterViewController.m in Sources */,
 				3A7776B91EE7D28000B3E793 /* UtilOfPhotoAlbum.m in Sources */,
+				1630F5522249DCBC002499C3 /* RecommendCellTitleView.m in Sources */,
 				3A7C692F1DEC0D6800225D28 /* UITableView+Common.m in Sources */,
 				3A7C692E1DEC0D6800225D28 /* UITabBar+Badge.m in Sources */,
 				3A332AAC1EB08D340072BD34 /* NSDate+Utilities.m in Sources */,
@@ -1908,7 +1884,7 @@
 				16A91C982237FC7D00ADED94 /* FmdbVC.m in Sources */,
 				16488149222684AD00A35107 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				3A7C691E1DEC0D6800225D28 /* LoadingViewForOC.m in Sources */,
-				3A7C68D71DEC0D6800225D28 /* Dowload.m in Sources */,
+				1630F54F2249DBDF002499C3 /* RecommendMusicCell.m in Sources */,
 				3A7C69261DEC0D6800225D28 /* UIColor+ColorUtility.m in Sources */,
 				3A7C68C81DEC0D6800225D28 /* RunTimeStudy_VC.m in Sources */,
 				3ADF3A5A1EBC156800A5EFF6 /* DLVideoVC.m in Sources */,
@@ -1919,12 +1895,11 @@
 				3A7C69221DEC0D6800225D28 /* PhotoTableView.m in Sources */,
 				3A7C68C01DEC0D6800225D28 /* LeftAlignedFlowLayout.m in Sources */,
 				3A7C69321DEC0D6800225D28 /* UIView+ZKPulseView.m in Sources */,
+				1630F55C2249ED3B002499C3 /* XDProgressView.m in Sources */,
 				3A7C68BC1DEC0D6800225D28 /* PlantCollectionViewCell.m in Sources */,
 				3A7C68E31DEC0D6800225D28 /* TitleContainerScrollView.m in Sources */,
-				3A7C68D91DEC0D6800225D28 /* MBFadeAlertView.m in Sources */,
 				3A7C68BF1DEC0D6800225D28 /* GhostAlbumViewController.m in Sources */,
 				3A97CD7F1EE7F5F600AC19F5 /* PhotoAlbumCameraCell.m in Sources */,
-				3A7C68DD1DEC0D6800225D28 /* MusicListCell.m in Sources */,
 				3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */,
 				3AC4835F1E49A93D0008CE57 /* StrangeTableViewCell.m in Sources */,
 				3AA0C1BA1E7163BA009B1628 /* BannerLayout.m in Sources */,
@@ -1935,28 +1910,29 @@
 				3A7C69281DEC0D6800225D28 /* UIImage+Blur.m in Sources */,
 				3A7C68B71DEC0D6800225D28 /* DolinBannerView.m in Sources */,
 				16D29B4D1FBB04E30072EB6C /* InterviewVC.m in Sources */,
-				3A7C68DC1DEC0D6800225D28 /* PlayMusicViewController.m in Sources */,
 				3A97CD811EE7F5F600AC19F5 /* PhotoAlbumCategoryCell.m in Sources */,
 				3A7C69241DEC0D6800225D28 /* YYWeakProxy.m in Sources */,
 				3A38F4831E1E55090036DE63 /* CGAffineTransformStudy_VC.m in Sources */,
 				3A5ED63B1E7279A900F232A4 /* Banner2Cell.m in Sources */,
 				3A7776BF1EE7E25C00B3E793 /* DLPhotoAlbumPickerVC.m in Sources */,
+				16C6028F224A0F2B00F3DA0B /* MBFadeAlertView.m in Sources */,
 				3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */,
 				16488136222673E400A35107 /* FDTableViewCell.m in Sources */,
 				3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */,
 				1648814D2226B5CC00A35107 /* FDPhotoCell.m in Sources */,
+				1630F5462249D45E002499C3 /* BaseModel.m in Sources */,
 				3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */,
 				3AC4835E1E49A93D0008CE57 /* StrangeScorllViewController.m in Sources */,
 				3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */,
 				3A7C692C1DEC0D6800225D28 /* UINavigationBar+Awesome.m in Sources */,
 				16488147222684AD00A35107 /* UITableView+FDTemplateLayoutCell.m in Sources */,
-				3A7C68DB1DEC0D6800225D28 /* RequestManager.m in Sources */,
 				3A7776D91EE7EF7800B3E793 /* NoteListDelegate.m in Sources */,
+				1630F5492249D56D002499C3 /* RecommendModel.m in Sources */,
 				3A7C68E01DEC0D6800225D28 /* Dolin3ViewController.m in Sources */,
+				1630F5582249EC30002499C3 /* MusicProgressView.m in Sources */,
 				3AA722D91F03B193000EFF1F /* CABasicAnimationStudyVC.m in Sources */,
 				3A7C69211DEC0D6800225D28 /* PhotoScrollView.m in Sources */,
 				3A7C69351DEC0D6800225D28 /* DolinTopWindowUtil.m in Sources */,
-				3A7C68D51DEC0D6800225D28 /* Dolin2ViewController.m in Sources */,
 				1648813D222678FE00A35107 /* FDCellModel.m in Sources */,
 				3A7C68B81DEC0D6800225D28 /* DolinLabel.m in Sources */,
 				3A7C69291DEC0D6800225D28 /* UIImage+ImageWithColor.m in Sources */,
@@ -1968,8 +1944,8 @@
 				3A7C68C41DEC0D6800225D28 /* RichTextViewController.m in Sources */,
 				3A7C69471DEC0E7E00225D28 /* TestWKWebViewVC.m in Sources */,
 				3A97CD831EE7F5F600AC19F5 /* PhotoAlbumCell.m in Sources */,
-				3A7C68DA1DEC0D6800225D28 /* PlayManager.m in Sources */,
 				3A7C69251DEC0D6800225D28 /* NSString+Version.m in Sources */,
+				1630F5552249E8D4002499C3 /* MusicCDView.m in Sources */,
 				3A7C68C51DEC0D6800225D28 /* ChangeDeviceOrientVC.m in Sources */,
 				3AFE58AC1EE17225009962DB /* ImitateTGPPersonCenterVC.m in Sources */,
 				3A38F48D1E1E55350036DE63 /* ScrollBoxView.m in Sources */,

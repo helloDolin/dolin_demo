@@ -96,7 +96,7 @@
  window上添加FPSLabel
  */
 - (void)setUpFPSLabel {
-    YYFPSLabel *fps = [[YYFPSLabel alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, 100, 20)];
+    YYFPSLabel *fps = [[YYFPSLabel alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT - 20, 100, 20)];
     [[UIApplication sharedApplication].keyWindow addSubview:fps];
 }
 

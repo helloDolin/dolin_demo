@@ -1,19 +1,16 @@
 //
-//  Dolin2ViewController.h
+//  BaseModel.h
 //  dolin_demo
 //
 //  Created by Dolin on 2019/3/26.
 //  Copyright © 2019 shaolin. All rights reserved.
 //
 
-#import "DolinBaseViewController.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- 仿猫弄
- */
-@interface Dolin2ViewController : DolinBaseViewController
+@interface BaseModel : NSObject
 
 @end
 

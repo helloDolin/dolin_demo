@@ -74,6 +74,7 @@ PODS:
   - SDWebImage/Core (4.4.6)
   - SVProgressHUD (2.2.5)
   - yoga (0.50.1.React)
+  - YYModel (1.0.4)
   - YYText (1.0.7)
 
 DEPENDENCIES:
@@ -104,6 +105,7 @@ DEPENDENCIES:
   - SDWebImage (~> 4.0)
   - SVProgressHUD (~> 2.2.5)
   - yoga (from `./ReactComponent/node_modules/react-native/ReactCommon/yoga`)
+  - YYModel
   - YYText (~> 1.0.7)
 
 SPEC REPOS:
@@ -117,6 +119,7 @@ SPEC REPOS:
     - MJRefresh
     - SDWebImage
     - SVProgressHUD
+    - YYModel
     - YYText
 
 EXTERNAL SOURCES:
@@ -143,8 +146,9 @@ SPEC CHECKSUMS:
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   yoga: f25f45222e44e880cc6e4e26513c24bdc8a5cfd7
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 36acb579577d1c2ce6d9eaa28ac74d790d9d2e8d
+PODFILE CHECKSUM: c4a07e589a7e8d96fdfa8f0b21fb25cfd19f4ace
 
 COCOAPODS: 1.7.0.beta.2
