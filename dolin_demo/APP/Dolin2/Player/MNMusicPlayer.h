@@ -10,9 +10,9 @@
 @class RecommendModel;
 
 typedef NS_ENUM(NSInteger,MNLoopState){
-    MNOnceLoop = 0,//列表顺序播放
-    MNSingleLoop,//单曲循环
-    MNRandomLoop//随机播放
+    MNOnceLoop = 0,// 列表顺序播放
+    MNSingleLoop, // 单曲循环
+    MNRandomLoop // 随机播放
 };
 
 NS_ASSUME_NONNULL_BEGIN

@@ -24,7 +24,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         FSStreamConfiguration* config = [[FSStreamConfiguration alloc]init];
-        config.httpConnectionBufferSize *= 2;
+        config.httpConnectionBufferSize *= 3;
         config.enableTimeAndPitchConversion = YES;
         
         player = [[super alloc]initWithConfiguration:config];
@@ -68,11 +68,11 @@
                     break;
             }
         };
-        //设置音量
+        // 设置音量
         [player setVolume:0.5];
-        //设置播放速率
+        // 设置播放速率
         [player setPlayRate:1];
-        player.loopState = MNOnceLoop;
+        player.loopState = MNSingleLoop;
     });
     return player;
 }

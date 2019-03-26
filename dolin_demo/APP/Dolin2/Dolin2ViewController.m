@@ -37,7 +37,7 @@
     NSString* urlStr = [NSString stringWithFormat:@"http://mmmono.com/api/v3/tab/?start=%d%%2C10&tab_id=8&tab_type=3",_pageNum];
     AFHTTPSessionManager* manager = [AFHTTPSessionManager manager];
     [manager GET:urlStr parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (_data.count == 0) {
+        if (self->_data.count == 0) {
             [self.tableView.mj_header endRefreshing];
         }
         else {
@@ -49,7 +49,6 @@
             [self->_data addObject:recommendModel];
         }];
         [self.tableView reloadData];
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
     }];
@@ -68,7 +67,11 @@
 
 #pragma mark -  UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath  {
-    CGFloat height = [tableView fd_heightForCellWithIdentifier:NSStringFromClass([RecommendMusicCell class]) configuration:^(RecommendMusicCell* cell) {
+//    CGFloat height = [tableView fd_heightForCellWithIdentifier:NSStringFromClass([RecommendMusicCell class]) configuration:^(RecommendMusicCell* cell) {
+//        [self configureCell:cell atIndexPath:indexPath];
+//    }];
+    RecommendModel* model = _data[indexPath.row];
+    CGFloat height = [tableView fd_heightForCellWithIdentifier:NSStringFromClass([RecommendMusicCell class]) cacheByKey:model.Id configuration:^(id cell) {
         [self configureCell:cell atIndexPath:indexPath];
     }];
     return height;
@@ -85,6 +88,14 @@
         _tableView = [[UITableView alloc]initWithFrame:rect style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.delegate = self;
+        // 解决reloadTableView之后滚动条乱跳的问题
+        // iOS 11Self-Sizing自动打开后，contentSize和contentOffset都可能发生改变
+        // 通过以下方式禁用
+#ifdef __IPHONE_11_0
+        _tableView.estimatedRowHeight = 0;
+        _tableView.estimatedSectionHeaderHeight = 0;
+        _tableView.estimatedSectionFooterHeight = 0;
+#endif
         [_tableView registerClass:[RecommendMusicCell class] forCellReuseIdentifier:NSStringFromClass([RecommendMusicCell class])];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
