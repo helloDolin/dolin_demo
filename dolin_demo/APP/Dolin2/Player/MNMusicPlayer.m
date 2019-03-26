@@ -7,6 +7,7 @@
 //
 
 #import "MNMusicPlayer.h"
+#import "YYWeakProxy.h"
 
 @interface MNMusicPlayer()
 
@@ -78,7 +79,7 @@
 
 - (void)startTimer {
     if (!_progressTimer) {
-        _progressTimer = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateProgress)];
+        _progressTimer = [CADisplayLink displayLinkWithTarget:[[YYWeakProxy alloc]initWithTarget:self] selector:@selector(updateProgress)];
         [_progressTimer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     }
 }
@@ -89,7 +90,7 @@
         [self stop];
         [super playFromURL:url];
     } else {
-        [super  play];
+        [super play];
     }
     [self startTimer];
 }
@@ -99,6 +100,10 @@
     CGFloat progress = self.currentTimePlayed.playbackTimeInSeconds / self.duration.playbackTimeInSeconds;
     NSDictionary *dic = @{@"currentTime":currentTime,@"progress":[NSNumber numberWithFloat:progress]};
     [[NSNotificationCenter defaultCenter] postNotificationName:MNPlayingMusicNotification object:dic];
+}
+
+- (void)dealloc {
+    [_progressTimer invalidate];
 }
 
 @end

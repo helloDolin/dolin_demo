@@ -13,6 +13,7 @@
 
 @interface MusicProgressView()
 {
+    // 使用第三方的XDProgressView，可以自由调整刷新速率，原生默认为1秒，暂时还没找到调整方法
     XDProgressView *_pView;
     UIButton *_playBtn;
     UILabel *_musicTitleLabel;
