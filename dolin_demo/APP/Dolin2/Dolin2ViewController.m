@@ -80,10 +80,9 @@
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             // req
-            [_data removeAllObjects];
+            [self->_data removeAllObjects];
             [self req];
         }];
-        _tableView.rowHeight = 400;
     }
     return _tableView;
 }

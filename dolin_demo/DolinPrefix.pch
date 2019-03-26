@@ -35,7 +35,8 @@
 //#import "MBFadeAlertView.h"         //弹窗
 
 #import <AVFoundation/AVFoundation.h>
-#import "UIImageView+WebCache.h" 
+#import "UIImageView+WebCache.h"
+#import "DolinConstant.h"
 
 // extension
 #define SUITE_NAME @"group.extension.todayWidget"

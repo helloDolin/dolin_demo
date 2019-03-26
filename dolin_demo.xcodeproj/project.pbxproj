@@ -8,14 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1630F53D2249CB0F002499C3 /* Dolin2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F53C2249CB0F002499C3 /* Dolin2ViewController.m */; };
-		1630F5402249D08A002499C3 /* MNBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F53F2249D08A002499C3 /* MNBaseModel.m */; };
-		1630F5462249D45E002499C3 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F5452249D45E002499C3 /* BaseModel.m */; };
-		1630F5492249D56D002499C3 /* RecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F5482249D56D002499C3 /* RecommendModel.m */; };
-		1630F54C2249DB6C002499C3 /* MNBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F54B2249DB6C002499C3 /* MNBaseTableViewCell.m */; };
-		1630F54F2249DBDF002499C3 /* RecommendMusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F54E2249DBDF002499C3 /* RecommendMusicCell.m */; };
-		1630F5522249DCBC002499C3 /* RecommendCellTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F5512249DCBC002499C3 /* RecommendCellTitleView.m */; };
-		1630F5552249E8D4002499C3 /* MusicCDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F5542249E8D4002499C3 /* MusicCDView.m */; };
-		1630F5582249EC30002499C3 /* MusicProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F5572249EC30002499C3 /* MusicProgressView.m */; };
 		1630F55C2249ED3B002499C3 /* XDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F55B2249ED3A002499C3 /* XDProgressView.m */; };
 		16488136222673E400A35107 /* FDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488134222673E400A35107 /* FDTableViewCell.m */; };
 		16488137222673E400A35107 /* FDTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16488135222673E400A35107 /* FDTableViewCell.xib */; };
@@ -32,6 +24,15 @@
 		16A91C982237FC7D00ADED94 /* FmdbVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A91C972237FC7D00ADED94 /* FmdbVC.m */; };
 		16B1A8121FBE91F1004B3D74 /* ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 16B1A8111FBE91F1004B3D74 /* ios.jsbundle */; };
 		16C6028F224A0F2B00F3DA0B /* MBFadeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6028E224A0F2B00F3DA0B /* MBFadeAlertView.m */; };
+		16C602A8224A406500F3DA0B /* MNBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C60294224A406400F3DA0B /* MNBaseModel.m */; };
+		16C602A9224A406500F3DA0B /* RecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C60295224A406400F3DA0B /* RecommendModel.m */; };
+		16C602AA224A406500F3DA0B /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C60296224A406400F3DA0B /* BaseModel.m */; };
+		16C602AB224A406500F3DA0B /* MNMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6029B224A406400F3DA0B /* MNMusicPlayer.m */; };
+		16C602AC224A406500F3DA0B /* MNBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C602A0224A406500F3DA0B /* MNBaseTableViewCell.m */; };
+		16C602AD224A406500F3DA0B /* RecommendMusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C602A2224A406500F3DA0B /* RecommendMusicCell.m */; };
+		16C602AE224A406500F3DA0B /* MusicProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C602A3224A406500F3DA0B /* MusicProgressView.m */; };
+		16C602AF224A406500F3DA0B /* MusicCDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C602A4224A406500F3DA0B /* MusicCDView.m */; };
+		16C602B0224A406500F3DA0B /* RecommendCellTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C602A7224A406500F3DA0B /* RecommendCellTitleView.m */; };
 		16C8D63F1D33511700228ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D63E1D33511700228ABD /* main.m */; };
 		16C8D6421D33511700228ABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C8D6411D33511700228ABD /* AppDelegate.m */; };
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
@@ -270,22 +271,6 @@
 		1620FD522243A49100FF9BAD /* MusicWY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicWY.h; sourceTree = "<group>"; };
 		1630F53B2249CB0F002499C3 /* Dolin2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dolin2ViewController.h; sourceTree = "<group>"; };
 		1630F53C2249CB0F002499C3 /* Dolin2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dolin2ViewController.m; sourceTree = "<group>"; };
-		1630F53E2249D08A002499C3 /* MNBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNBaseModel.h; sourceTree = "<group>"; };
-		1630F53F2249D08A002499C3 /* MNBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNBaseModel.m; sourceTree = "<group>"; };
-		1630F5442249D45E002499C3 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
-		1630F5452249D45E002499C3 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
-		1630F5472249D56D002499C3 /* RecommendModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendModel.h; sourceTree = "<group>"; };
-		1630F5482249D56D002499C3 /* RecommendModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendModel.m; sourceTree = "<group>"; };
-		1630F54A2249DB6C002499C3 /* MNBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNBaseTableViewCell.h; sourceTree = "<group>"; };
-		1630F54B2249DB6C002499C3 /* MNBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNBaseTableViewCell.m; sourceTree = "<group>"; };
-		1630F54D2249DBDF002499C3 /* RecommendMusicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendMusicCell.h; sourceTree = "<group>"; };
-		1630F54E2249DBDF002499C3 /* RecommendMusicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendMusicCell.m; sourceTree = "<group>"; };
-		1630F5502249DCBC002499C3 /* RecommendCellTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendCellTitleView.h; sourceTree = "<group>"; };
-		1630F5512249DCBC002499C3 /* RecommendCellTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendCellTitleView.m; sourceTree = "<group>"; };
-		1630F5532249E8D4002499C3 /* MusicCDView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicCDView.h; sourceTree = "<group>"; };
-		1630F5542249E8D4002499C3 /* MusicCDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicCDView.m; sourceTree = "<group>"; };
-		1630F5562249EC30002499C3 /* MusicProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicProgressView.h; sourceTree = "<group>"; };
-		1630F5572249EC30002499C3 /* MusicProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicProgressView.m; sourceTree = "<group>"; };
 		1630F55A2249ED3A002499C3 /* XDProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDProgressView.h; sourceTree = "<group>"; };
 		1630F55B2249ED3A002499C3 /* XDProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDProgressView.m; sourceTree = "<group>"; };
 		163A578A1D33558E003B9609 /* DolinPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DolinPrefix.pch; sourceTree = "<group>"; };
@@ -314,6 +299,24 @@
 		16B1A8111FBE91F1004B3D74 /* ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios.jsbundle; sourceTree = "<group>"; };
 		16C6028D224A0F2B00F3DA0B /* MBFadeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFadeAlertView.h; sourceTree = "<group>"; };
 		16C6028E224A0F2B00F3DA0B /* MBFadeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFadeAlertView.m; sourceTree = "<group>"; };
+		16C60294224A406400F3DA0B /* MNBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNBaseModel.m; sourceTree = "<group>"; };
+		16C60295224A406400F3DA0B /* RecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendModel.m; sourceTree = "<group>"; };
+		16C60296224A406400F3DA0B /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		16C60297224A406400F3DA0B /* MNBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNBaseModel.h; sourceTree = "<group>"; };
+		16C60298224A406400F3DA0B /* RecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendModel.h; sourceTree = "<group>"; };
+		16C60299224A406400F3DA0B /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		16C6029B224A406400F3DA0B /* MNMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNMusicPlayer.m; sourceTree = "<group>"; };
+		16C6029C224A406400F3DA0B /* MNMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNMusicPlayer.h; sourceTree = "<group>"; };
+		16C6029E224A406500F3DA0B /* MusicCDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicCDView.h; sourceTree = "<group>"; };
+		16C6029F224A406500F3DA0B /* MusicProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicProgressView.h; sourceTree = "<group>"; };
+		16C602A0224A406500F3DA0B /* MNBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNBaseTableViewCell.m; sourceTree = "<group>"; };
+		16C602A1224A406500F3DA0B /* RecommendCellTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCellTitleView.h; sourceTree = "<group>"; };
+		16C602A2224A406500F3DA0B /* RecommendMusicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendMusicCell.m; sourceTree = "<group>"; };
+		16C602A3224A406500F3DA0B /* MusicProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicProgressView.m; sourceTree = "<group>"; };
+		16C602A4224A406500F3DA0B /* MusicCDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicCDView.m; sourceTree = "<group>"; };
+		16C602A5224A406500F3DA0B /* MNBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNBaseTableViewCell.h; sourceTree = "<group>"; };
+		16C602A6224A406500F3DA0B /* RecommendMusicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendMusicCell.h; sourceTree = "<group>"; };
+		16C602A7224A406500F3DA0B /* RecommendCellTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendCellTitleView.m; sourceTree = "<group>"; };
 		16C8D63A1D33511700228ABD /* dolin_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dolin_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C8D63E1D33511700228ABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16C8D6401D33511700228ABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -709,6 +712,45 @@
 			path = FMDB;
 			sourceTree = "<group>";
 		};
+		16C60293224A406400F3DA0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16C60299224A406400F3DA0B /* BaseModel.h */,
+				16C60296224A406400F3DA0B /* BaseModel.m */,
+				16C60297224A406400F3DA0B /* MNBaseModel.h */,
+				16C60294224A406400F3DA0B /* MNBaseModel.m */,
+				16C60298224A406400F3DA0B /* RecommendModel.h */,
+				16C60295224A406400F3DA0B /* RecommendModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		16C6029A224A406400F3DA0B /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				16C6029B224A406400F3DA0B /* MNMusicPlayer.m */,
+				16C6029C224A406400F3DA0B /* MNMusicPlayer.h */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		16C6029D224A406500F3DA0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16C6029E224A406500F3DA0B /* MusicCDView.h */,
+				16C6029F224A406500F3DA0B /* MusicProgressView.h */,
+				16C602A0224A406500F3DA0B /* MNBaseTableViewCell.m */,
+				16C602A1224A406500F3DA0B /* RecommendCellTitleView.h */,
+				16C602A2224A406500F3DA0B /* RecommendMusicCell.m */,
+				16C602A3224A406500F3DA0B /* MusicProgressView.m */,
+				16C602A4224A406500F3DA0B /* MusicCDView.m */,
+				16C602A5224A406500F3DA0B /* MNBaseTableViewCell.h */,
+				16C602A6224A406500F3DA0B /* RecommendMusicCell.h */,
+				16C602A7224A406500F3DA0B /* RecommendCellTitleView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		16C8D6311D33511700228ABD = {
 			isa = PBXGroup;
 			children = (
@@ -1021,25 +1063,12 @@
 		3A7C68071DEC0D6800225D28 /* Dolin2 */ = {
 			isa = PBXGroup;
 			children = (
+				16C60293224A406400F3DA0B /* Model */,
+				16C6029A224A406400F3DA0B /* Player */,
+				16C6029D224A406500F3DA0B /* View */,
 				1630F5592249ED3A002499C3 /* XDProgressView */,
 				1630F53B2249CB0F002499C3 /* Dolin2ViewController.h */,
 				1630F53C2249CB0F002499C3 /* Dolin2ViewController.m */,
-				1630F53E2249D08A002499C3 /* MNBaseModel.h */,
-				1630F53F2249D08A002499C3 /* MNBaseModel.m */,
-				1630F5442249D45E002499C3 /* BaseModel.h */,
-				1630F5452249D45E002499C3 /* BaseModel.m */,
-				1630F5472249D56D002499C3 /* RecommendModel.h */,
-				1630F5482249D56D002499C3 /* RecommendModel.m */,
-				1630F54A2249DB6C002499C3 /* MNBaseTableViewCell.h */,
-				1630F54B2249DB6C002499C3 /* MNBaseTableViewCell.m */,
-				1630F54D2249DBDF002499C3 /* RecommendMusicCell.h */,
-				1630F54E2249DBDF002499C3 /* RecommendMusicCell.m */,
-				1630F5502249DCBC002499C3 /* RecommendCellTitleView.h */,
-				1630F5512249DCBC002499C3 /* RecommendCellTitleView.m */,
-				1630F5532249E8D4002499C3 /* MusicCDView.h */,
-				1630F5542249E8D4002499C3 /* MusicCDView.m */,
-				1630F5562249EC30002499C3 /* MusicProgressView.h */,
-				1630F5572249EC30002499C3 /* MusicProgressView.m */,
 			);
 			path = Dolin2;
 			sourceTree = "<group>";
@@ -1826,7 +1855,6 @@
 				3A7C691F1DEC0D6800225D28 /* BasePictureTableView.m in Sources */,
 				3AC483691E49A9DE0008CE57 /* GetContactsVC.m in Sources */,
 				3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */,
-				1630F5402249D08A002499C3 /* MNBaseModel.m in Sources */,
 				3A7776D41EE7EF5300B3E793 /* AddNoteViewController.m in Sources */,
 				3A7C68B91DEC0D6800225D28 /* DolinLabelViewController.m in Sources */,
 				3A38F4821E1E55090036DE63 /* AnimationStudyVC.m in Sources */,
@@ -1841,6 +1869,8 @@
 				16C8D6421D33511700228ABD /* AppDelegate.m in Sources */,
 				3A7C692B1DEC0D6800225D28 /* UIImage+Screenshot.m in Sources */,
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
+				16C602AF224A406500F3DA0B /* MusicCDView.m in Sources */,
+				16C602AB224A406500F3DA0B /* MNMusicPlayer.m in Sources */,
 				3ADF3A611EBC185500A5EFF6 /* DLVideoCell.m in Sources */,
 				3A7C692A1DEC0D6800225D28 /* UIImage+RTTint.m in Sources */,
 				16488148222684AD00A35107 /* UITableView+FDKeyedHeightCache.m in Sources */,
@@ -1848,17 +1878,19 @@
 				3AA544891EE8015D00A6C20F /* PhotoBrowserCell.m in Sources */,
 				3A515C9A1E2CB2DA00ECFBB0 /* UIBezierPathVC.m in Sources */,
 				1648813A222677A400A35107 /* FDTemplateVC.m in Sources */,
-				1630F54C2249DB6C002499C3 /* MNBaseTableViewCell.m in Sources */,
+				16C602AC224A406500F3DA0B /* MNBaseTableViewCell.m in Sources */,
 				1630F53D2249CB0F002499C3 /* Dolin2ViewController.m in Sources */,
 				3A7776D61EE7EF5300B3E793 /* NoteViewController.m in Sources */,
 				3A97CD8A1EE800AC00AC19F5 /* DLPhotoBrowser.m in Sources */,
 				3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */,
 				3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */,
+				16C602AE224A406500F3DA0B /* MusicProgressView.m in Sources */,
 				16D29B4F1FBB04E30072EB6C /* LottieStudyVC.m in Sources */,
 				3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */,
 				3A7C68C61DEC0D6800225D28 /* NSObject+DLRuntime.m in Sources */,
 				3A38F4841E1E55090036DE63 /* OriginAPIAnimateStudyVC.m in Sources */,
 				3A7C69271DEC0D6800225D28 /* UIImage+animatedGIF.m in Sources */,
+				16C602B0224A406500F3DA0B /* RecommendCellTitleView.m in Sources */,
 				3A38F4911E1E558D0036DE63 /* Animation_Study_VC.m in Sources */,
 				3A7C69201DEC0D6800225D28 /* ImageViewer.m in Sources */,
 				3AA0C1B41E71628A009B1628 /* CalculatorMaker.m in Sources */,
@@ -1871,7 +1903,6 @@
 				3AA0C1B51E71628A009B1628 /* ChainCodeVC.m in Sources */,
 				3AC483621E49A93D0008CE57 /* SimulateTwitterViewController.m in Sources */,
 				3A7776B91EE7D28000B3E793 /* UtilOfPhotoAlbum.m in Sources */,
-				1630F5522249DCBC002499C3 /* RecommendCellTitleView.m in Sources */,
 				3A7C692F1DEC0D6800225D28 /* UITableView+Common.m in Sources */,
 				3A7C692E1DEC0D6800225D28 /* UITabBar+Badge.m in Sources */,
 				3A332AAC1EB08D340072BD34 /* NSDate+Utilities.m in Sources */,
@@ -1884,7 +1915,6 @@
 				16A91C982237FC7D00ADED94 /* FmdbVC.m in Sources */,
 				16488149222684AD00A35107 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				3A7C691E1DEC0D6800225D28 /* LoadingViewForOC.m in Sources */,
-				1630F54F2249DBDF002499C3 /* RecommendMusicCell.m in Sources */,
 				3A7C69261DEC0D6800225D28 /* UIColor+ColorUtility.m in Sources */,
 				3A7C68C81DEC0D6800225D28 /* RunTimeStudy_VC.m in Sources */,
 				3ADF3A5A1EBC156800A5EFF6 /* DLVideoVC.m in Sources */,
@@ -1904,6 +1934,7 @@
 				3AC4835F1E49A93D0008CE57 /* StrangeTableViewCell.m in Sources */,
 				3AA0C1BA1E7163BA009B1628 /* BannerLayout.m in Sources */,
 				3AA0C1B61E71628A009B1628 /* NSObject+Calculator.m in Sources */,
+				16C602A9224A406500F3DA0B /* RecommendModel.m in Sources */,
 				3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */,
 				3A7C69331DEC0D6800225D28 /* UIWindow+Expand.m in Sources */,
 				3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */,
@@ -1920,21 +1951,20 @@
 				16488136222673E400A35107 /* FDTableViewCell.m in Sources */,
 				3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */,
 				1648814D2226B5CC00A35107 /* FDPhotoCell.m in Sources */,
-				1630F5462249D45E002499C3 /* BaseModel.m in Sources */,
 				3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */,
 				3AC4835E1E49A93D0008CE57 /* StrangeScorllViewController.m in Sources */,
 				3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */,
 				3A7C692C1DEC0D6800225D28 /* UINavigationBar+Awesome.m in Sources */,
+				16C602AD224A406500F3DA0B /* RecommendMusicCell.m in Sources */,
 				16488147222684AD00A35107 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				3A7776D91EE7EF7800B3E793 /* NoteListDelegate.m in Sources */,
-				1630F5492249D56D002499C3 /* RecommendModel.m in Sources */,
 				3A7C68E01DEC0D6800225D28 /* Dolin3ViewController.m in Sources */,
-				1630F5582249EC30002499C3 /* MusicProgressView.m in Sources */,
 				3AA722D91F03B193000EFF1F /* CABasicAnimationStudyVC.m in Sources */,
 				3A7C69211DEC0D6800225D28 /* PhotoScrollView.m in Sources */,
 				3A7C69351DEC0D6800225D28 /* DolinTopWindowUtil.m in Sources */,
 				1648813D222678FE00A35107 /* FDCellModel.m in Sources */,
 				3A7C68B81DEC0D6800225D28 /* DolinLabel.m in Sources */,
+				16C602A8224A406500F3DA0B /* MNBaseModel.m in Sources */,
 				3A7C69291DEC0D6800225D28 /* UIImage+ImageWithColor.m in Sources */,
 				3ADF3A5D1EBC176A00A5EFF6 /* VideoModel.m in Sources */,
 				3A7C68BA1DEC0D6800225D28 /* Dolin1ViewController.m in Sources */,
@@ -1942,10 +1972,10 @@
 				3A97CD8B1EE800AC00AC19F5 /* DLPhotoBrowserVC.m in Sources */,
 				3A7C68C11DEC0D6800225D28 /* PwdTextFieldBugViewController.m in Sources */,
 				3A7C68C41DEC0D6800225D28 /* RichTextViewController.m in Sources */,
+				16C602AA224A406500F3DA0B /* BaseModel.m in Sources */,
 				3A7C69471DEC0E7E00225D28 /* TestWKWebViewVC.m in Sources */,
 				3A97CD831EE7F5F600AC19F5 /* PhotoAlbumCell.m in Sources */,
 				3A7C69251DEC0D6800225D28 /* NSString+Version.m in Sources */,
-				1630F5552249E8D4002499C3 /* MusicCDView.m in Sources */,
 				3A7C68C51DEC0D6800225D28 /* ChangeDeviceOrientVC.m in Sources */,
 				3AFE58AC1EE17225009962DB /* ImitateTGPPersonCenterVC.m in Sources */,
 				3A38F48D1E1E55350036DE63 /* ScrollBoxView.m in Sources */,

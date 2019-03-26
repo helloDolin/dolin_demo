@@ -8,5 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString* const NOTIFICATION_GO_INDEX;
+extern NSString* const MNPlayMusicNotification;     // 播放音乐通知
+extern NSString* const MNStopMusicNotification;     // 停止音乐通知
+extern NSString* const MNPlayingMusicNotification;  // 正在播放音乐通知
+
 

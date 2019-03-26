@@ -11,6 +11,7 @@
 #import "RecommendModel.h"
 #import "MusicCDView.h"
 #import "MusicProgressView.h"
+#import "MNMusicPlayer.h"
 
 @interface RecommendMusicCell()
 {
@@ -64,6 +65,10 @@
     [_picImageView addSubview:_musicCDView];
     [_picImageView addSubview:_progressView];
     
+    UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]init];
+    [tap addTarget:self action:@selector(tapAction)];
+    [_picImageView addGestureRecognizer:tap];
+    
     // 添加约束 (约束的bottom一定要设置，即使已经设置了高度，否则自动计算高度不行)
     [_titleView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.top.equalTo(self->_contentView);
@@ -93,7 +98,8 @@
     
     [_musicCDView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self->_picImageView).offset(45);
-        make.left.right.equalTo(self->_picImageView).offset(30);
+        make.left.equalTo(self->_picImageView).offset(30);
+        make.right.equalTo(self->_picImageView).offset(-30);
         make.height.equalTo([NSNumber numberWithFloat:SCREEN_WIDTH - 84]);
     }];
 
@@ -105,11 +111,23 @@
 
 - (void)setRecommendModel:(RecommendModel *)recommendModel {
     _recommendModel = recommendModel;
+    
     _titleView.titleModel = recommendModel;
+    _musicCDView.model = recommendModel;
     _progressView.model = recommendModel;
     [_picImageView sd_setImageWithURL:[NSURL URLWithString:recommendModel.thumb.raw]];
     _titleLabel.text = recommendModel.title;
     _descripLabel.text = recommendModel.descrip ? :@"";
+    
+    if ([[MNMusicPlayer defaultPlayer].url.absoluteString isEqualToString:recommendModel.music_url] && [MNMusicPlayer defaultPlayer].isPlaying) {
+        [_musicCDView playMusic];
+    }else{
+        [_musicCDView stopMusic];
+    }
+}
+
+- (void)tapAction {
+    [[MNMusicPlayer defaultPlayer] playFromURL:[NSURL URLWithString:self.recommendModel.music_url]];
 }
 
 @end

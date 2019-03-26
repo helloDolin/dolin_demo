@@ -9,6 +9,7 @@
 #import "MusicProgressView.h"
 #import "RecommendModel.h"
 #import "XDProgressView.h"
+#import "MNMusicPlayer.h"
 
 @interface MusicProgressView()
 {
@@ -88,6 +89,22 @@
         make.top.equalTo(self);
         make.height.mas_equalTo(40);
     }];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playingNoti:) name:MNPlayingMusicNotification object:nil];
+    
+}
+
+- (void)playingNoti:(NSNotification*)noti {
+    if ([[MNMusicPlayer defaultPlayer].url.absoluteString isEqualToString:self.model.music_url] && [MNMusicPlayer defaultPlayer].isPlaying) {
+        _timeLabel.text = noti.object[@"currentTime"];
+        _pView.progress = [noti.object[@"progress"]floatValue];
+        [_playBtn setImage:[UIImage imageNamed:@"icon-player-pause-white"] forState:UIControlStateNormal];
+    }
+    else {
+        _timeLabel.text = [self getMMSSFromSS:self.model.music_duration];
+        _pView.progress = 0.0;
+        [_playBtn setImage:[UIImage imageNamed:@"icon-player-play-white"] forState:UIControlStateNormal];
+    }
     
 }
 

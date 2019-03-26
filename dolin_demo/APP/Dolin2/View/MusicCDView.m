@@ -11,7 +11,6 @@
 
 @interface MusicCDView()
 {
-    UIView *_blackHoleView;
     UIImageView *_cdImageView;
     UIImageView *_coverImageView;
     CABasicAnimation *_anim;
@@ -29,9 +28,6 @@
 }
 
 -(void)setupView {
-    _blackHoleView = [UIView new];
-    _blackHoleView.backgroundColor = [UIColor blackColor];
-    _blackHoleView.layer.cornerRadius = 5;
     
     _cdImageView = [UIImageView new];
     _cdImageView.image = [UIImage imageNamed:@"icon-disc"];
@@ -42,7 +38,6 @@
     
     [self addSubview:_cdImageView];
     [self addSubview:_coverImageView];
-    [self addSubview:_blackHoleView];
     
     [_cdImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self);
@@ -51,8 +46,8 @@
     [_coverImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self);
         make.centerY.equalTo(self);
-        make.width.mas_equalTo((SCREEN_WIDTH) - 84 / 3);
-        make.height.mas_equalTo((SCREEN_WIDTH) - 84 / 3);
+        make.width.mas_equalTo((SCREEN_WIDTH - 84) / 3);
+        make.height.mas_equalTo((SCREEN_WIDTH - 84) / 3);
     }];
     
     // 创建一个全局的动画
@@ -65,11 +60,23 @@
     _anim.repeatCount = MAXFLOAT;
     
     self.alpha = 0;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playMusic:) name:MNPlayMusicNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(stopMusic) name:MNStopMusicNotification object:nil];
 }
 
 - (void)setModel:(RecommendModel *)model {
     _model = model;
     [_coverImageView sd_setImageWithURL:[NSURL URLWithString:model.album_cover.raw]];
+}
+
+
+- (void)playMusic:(NSNotification*)noti {
+    // 当通知过来的url与当前model相同时，才进行play
+    NSString* musicUrl = noti.object;
+    if ([musicUrl isEqualToString:self.model.music_url]) {
+        [self playMusic];
+    }
 }
 
 // 播放音乐
@@ -81,6 +88,7 @@
     }
     [self.layer addAnimation:_anim forKey:@"rotaion"];
 }
+
 // 暂停音乐
 - (void)stopMusic {
     if (self.alpha != 0) {
@@ -89,6 +97,10 @@
         }];
     }
     [self.layer removeAnimationForKey:@"rotaion"];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

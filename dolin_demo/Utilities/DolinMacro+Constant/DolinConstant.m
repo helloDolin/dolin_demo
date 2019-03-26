@@ -8,6 +8,7 @@
 
 #import "DolinConstant.h"
 
-NSString* const NOTIFICATION_GO_INDEX = @"NOTIFICATION_GO_INDEX";
-
+NSString* const MNPlayMusicNotification = @"MNPlayMusicNotification";
+NSString* const MNStopMusicNotification = @"MNStopMusicNotification";
+NSString* const MNPlayingMusicNotification = @"MNPlayingMusicNotification";
 
