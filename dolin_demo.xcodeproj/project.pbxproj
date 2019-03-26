@@ -728,8 +728,8 @@
 		16C6029A224A406400F3DA0B /* Player */ = {
 			isa = PBXGroup;
 			children = (
-				16C6029B224A406400F3DA0B /* MNMusicPlayer.m */,
 				16C6029C224A406400F3DA0B /* MNMusicPlayer.h */,
+				16C6029B224A406400F3DA0B /* MNMusicPlayer.m */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -738,15 +738,15 @@
 			isa = PBXGroup;
 			children = (
 				16C6029E224A406500F3DA0B /* MusicCDView.h */,
+				16C602A4224A406500F3DA0B /* MusicCDView.m */,
 				16C6029F224A406500F3DA0B /* MusicProgressView.h */,
+				16C602A3224A406500F3DA0B /* MusicProgressView.m */,
+				16C602A5224A406500F3DA0B /* MNBaseTableViewCell.h */,
 				16C602A0224A406500F3DA0B /* MNBaseTableViewCell.m */,
 				16C602A1224A406500F3DA0B /* RecommendCellTitleView.h */,
-				16C602A2224A406500F3DA0B /* RecommendMusicCell.m */,
-				16C602A3224A406500F3DA0B /* MusicProgressView.m */,
-				16C602A4224A406500F3DA0B /* MusicCDView.m */,
-				16C602A5224A406500F3DA0B /* MNBaseTableViewCell.h */,
-				16C602A6224A406500F3DA0B /* RecommendMusicCell.h */,
 				16C602A7224A406500F3DA0B /* RecommendCellTitleView.m */,
+				16C602A6224A406500F3DA0B /* RecommendMusicCell.h */,
+				16C602A2224A406500F3DA0B /* RecommendMusicCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";

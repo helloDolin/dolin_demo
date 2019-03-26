@@ -22,12 +22,12 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setupView];
+        [self layoutUI];
     }
     return self;
 }
 
--(void)setupView {
+- (void)layoutUI {
     
     _cdImageView = [UIImageView new];
     _cdImageView.image = [UIImage imageNamed:@"icon-disc"];

@@ -17,6 +17,7 @@
 @interface Dolin2ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     NSMutableArray* _data;
+    int _pageNum;
 }
 @property(nonatomic,strong)UITableView* tableView;
 @end
@@ -26,21 +27,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
+    _pageNum = 1;
     _data = [NSMutableArray array];
+    [self req];
 }
 
 #pragma mark -  method
 - (void)req {
-    NSString* urlStr = @"http://mmmono.com/api/v3/tab/?start=1%2C10&tab_id=8&tab_type=3";
+    NSString* urlStr = [NSString stringWithFormat:@"http://mmmono.com/api/v3/tab/?start=%d%%2C10&tab_id=8&tab_type=3",_pageNum];
     AFHTTPSessionManager* manager = [AFHTTPSessionManager manager];
     [manager GET:urlStr parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (_data.count == 0) {
+            [self.tableView.mj_header endRefreshing];
+        }
+        else {
+            [self.tableView.mj_footer endRefreshing];
+        }
         NSArray* arr = responseObject[@"entity_list"];
         [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             RecommendModel* recommendModel = [RecommendModel yy_modelWithJSON:obj[@"meow"]];
             [self->_data addObject:recommendModel];
         }];
         [self.tableView reloadData];
-        [self.tableView.mj_header endRefreshing];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
     }];
@@ -81,6 +90,11 @@
         _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             // req
             [self->_data removeAllObjects];
+            _pageNum = 1;
+            [self req];
+        }];
+        _tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+            self->_pageNum++;
             [self req];
         }];
     }

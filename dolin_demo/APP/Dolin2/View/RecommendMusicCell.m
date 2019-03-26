@@ -57,11 +57,15 @@
     _descripLabel.textColor = [UIColor colorWithRed:0.37 green:0.37 blue:0.37 alpha:1];
     _descripLabel.numberOfLines = 0;
     
+    UIView* separateView = [[UIView alloc]init];
+    separateView.backgroundColor = [UIColor colorWithRed:231/255.0 green:231/255.0 blue:231/255.0 alpha:1];
+    
     // content 添加
     [_contentView addSubview:_titleView];
     [_contentView addSubview:_picImageView];
     [_contentView addSubview:_titleLabel];
     [_contentView addSubview:_descripLabel];
+    [_contentView addSubview:separateView];
     [_picImageView addSubview:_musicCDView];
     [_picImageView addSubview:_progressView];
     
@@ -93,7 +97,14 @@
     [_descripLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self->_titleLabel.mas_bottom).offset(10);
         make.left.right.equalTo(self->_picImageView);
-        make.bottom.equalTo(self->_contentView).offset(-10);
+        make.bottom.equalTo(separateView.mas_top).offset(-10);
+    }];
+    
+    [separateView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self->_descripLabel.mas_bottom).offset(10);
+        make.left.right.equalTo(self->_contentView);
+        make.height.equalTo(@(10));
+        make.bottom.equalTo(self->_contentView.mas_bottom);
     }];
     
     [_musicCDView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -107,6 +118,7 @@
         make.left.right.bottom.equalTo(self->_picImageView);
         make.height.equalTo(@(40));
     }];
+
 }
 
 - (void)setRecommendModel:(RecommendModel *)recommendModel {

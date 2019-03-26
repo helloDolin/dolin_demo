@@ -26,12 +26,12 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setupView];
+        [self layoutUI];
     }
     return self;
 }
 
-- (void)setupView {
+- (void)layoutUI {
     self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
     
     _pView = [XDProgressView new];
@@ -39,8 +39,6 @@
     _pView.trackTintColor = [UIColor clearColor];
     _playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_playBtn setImage:[UIImage imageNamed:@"icon-player-play-white"] forState:UIControlStateNormal];
-    // icon-player-play-white
-    
     
     _musicTitleLabel = [UILabel new];
     _musicTitleLabel.font = [UIFont systemFontOfSize:12 weight:UIFontWeightLight];
@@ -84,10 +82,9 @@
     }];
     
     [_pView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self->_playBtn.mas_left).offset(15);
-        make.right.equalTo(self->_timeLabel.mas_left);
-        make.top.equalTo(self);
-        make.height.mas_equalTo(40);
+        make.left.equalTo(self->_musicTitleLabel);
+        make.right.equalTo(self->_timeLabel.mas_left).offset(-10);
+        make.top.bottom.equalTo(self);
     }];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playingNoti:) name:MNPlayingMusicNotification object:nil];
