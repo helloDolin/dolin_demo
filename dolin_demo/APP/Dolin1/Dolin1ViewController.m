@@ -31,25 +31,27 @@
     [super viewDidLoad];
     
     [self.view addSubview:self.tableView];
+    
     [self setUpFPSLabel];
     [self setRightBarBtn];
-    [self setUpMJRefresh];
     
     self.arr = [@[
-                  @"lottie（牛B）-LottieStudyVC",
-                  @"照片选取器-DLPhotoAlbumPickerVC",
-                  @"FDTemplateVC-FDTemplateVC",
-                  @"仿掌盟个人中心-ImitateTGPPersonCenterVC",
-                  @"extensionStudy-AddNoteViewController",
-                  @"DLVideoVC-DLVideoVC",
-                  @"AutoLayoutPriority-AutoLayoutPriority",
                   @"动画相关-Animation_Study_VC",
-                  @"最近较火的Banner-Banner2VC",
+                  @"照片选取器-DLPhotoAlbumPickerVC",
                   @"仿keep引导页-SimulateKeepViewController",
+                  @"仿掌盟个人中心-ImitateTGPPersonCenterVC",
                   @"仿Twitter-SimulateTwitterViewController",
                   @"仿淘宝商品详情-ImitateGoodDetailVC",
-                  @"联动table-LinkworkTableViewVC",
                   @"链式编程-ChainCodeVC",
+                  @"禁用旋转时全屏横屏方法-ChangeDeviceOrientVC",
+                  @"runtime-RunTimeStudy_VC",
+                  @"AutoLayoutPriority-AutoLayoutPriority",
+                  @"lottie（牛B）-LottieStudyVC",
+                  @"FDTemplateVC-FDTemplateVC",
+                  @"extensionStudy-AddNoteViewController",
+                  @"DLVideoVC-DLVideoVC",
+                  @"最近较火的Banner-Banner2VC",
+                  @"联动table-LinkworkTableViewVC",
                   @"AutoLayout+Scroll-AutoLayout_ScrollViewVC",
                   GET_STR(Banner-BannerViewController),
                   @"通讯录相关-GetContactsVC",
@@ -57,11 +59,9 @@
                   @"UIScrollView奇技淫巧-StrangeScorllViewController",
                   @"自定义Label-DolinLabelViewController",
                   @"鬼相册-GhostAlbumViewController",
-                  @"禁用旋转时全屏横屏方法-ChangeDeviceOrientVC",
                   @"贝塞尔先生-UIBezierPathViewController",
                   @"贝塞尔先生-UIBezierPathVC",
                   @"富文本-RichTextViewController",
-                  @"runtime-RunTimeStudy_VC",
                   @"TestWebView-TestWebViewVC",
                   @"TestWKWebViewVC-TestWKWebViewVC",
                   @"FmdbVC-FmdbVC"
@@ -83,14 +83,6 @@
     self.navigationController.delegate = self;
 }
 #pragma mark -  method
-
-- (void)setUpMJRefresh {
-    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        self.arr = [[[self.arr reverseObjectEnumerator]allObjects]mutableCopy];
-        [self.tableView.mj_header endRefreshing];
-        [self.tableView reloadData];
-    }];
-}
 
 /**
  window上添加FPSLabel
