@@ -9,7 +9,7 @@
 #import "MusicProgressView.h"
 #import "RecommendModel.h"
 #import "XDProgressView.h"
-#import "MNMusicPlayer.h"
+#import "DLMusicPlayer.h"
 
 @interface MusicProgressView()
 {
@@ -93,7 +93,7 @@
 }
 
 - (void)playingNoti:(NSNotification*)noti {
-    if ([[MNMusicPlayer defaultPlayer].url.absoluteString isEqualToString:self.model.music_url] && [MNMusicPlayer defaultPlayer].isPlaying) {
+    if ([[DLMusicPlayer sharedDLMusicPlayer].url isEqualToString:self.model.music_url] && [DLMusicPlayer sharedDLMusicPlayer].isPlaying) {
         _timeLabel.text = noti.object[@"currentTime"];
         _pView.progress = [noti.object[@"progress"]floatValue];
         [_playBtn setImage:[UIImage imageNamed:@"icon-player-pause-white"] forState:UIControlStateNormal];

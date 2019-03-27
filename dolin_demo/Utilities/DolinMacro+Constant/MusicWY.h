@@ -14,6 +14,7 @@
 
 // 我的id：107875443
 // 二哥id：112370983
+// http://music.163.com/song/media/outer/url?id=28639182.mp3
 #define kUrl @"http://music.163.com/api/playlist/detail?id=107875443"  //我喜欢的音乐
 #define kLyricUrl @"http://music.163.com/api/song/media?id=" // 歌词
 

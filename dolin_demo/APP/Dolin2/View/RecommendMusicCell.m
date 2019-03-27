@@ -11,7 +11,7 @@
 #import "RecommendModel.h"
 #import "MusicCDView.h"
 #import "MusicProgressView.h"
-#import "MNMusicPlayer.h"
+#import "DLMusicPlayer.h"
 
 @interface RecommendMusicCell()
 {
@@ -131,7 +131,7 @@
     _titleLabel.text = recommendModel.title;
     _descripLabel.text = recommendModel.descrip ? :@"";
     
-    if ([[MNMusicPlayer defaultPlayer].url.absoluteString isEqualToString:recommendModel.music_url] && [MNMusicPlayer defaultPlayer].isPlaying) {
+    if ([[DLMusicPlayer sharedDLMusicPlayer].url isEqualToString:recommendModel.music_url] && [DLMusicPlayer sharedDLMusicPlayer].isPlaying) {
         [_musicCDView playMusic];
     }else{
         [_musicCDView stopMusic];
@@ -139,7 +139,7 @@
 }
 
 - (void)tapAction {
-    [[MNMusicPlayer defaultPlayer] playFromURL:[NSURL URLWithString:self.recommendModel.music_url]];
+    [[DLMusicPlayer sharedDLMusicPlayer] play:self.recommendModel.music_url];
 }
 
 @end
