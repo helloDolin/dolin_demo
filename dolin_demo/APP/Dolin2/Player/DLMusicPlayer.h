@@ -18,7 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)sharedDLMusicPlayer;
 
 - (void)play:(NSString*)url;
-
+- (void)playMusic;
+- (void)pasuseMusic;
 @end
 
 NS_ASSUME_NONNULL_END

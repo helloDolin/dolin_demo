@@ -33,7 +33,14 @@
         return;
     }
     
+    // 判断如果传进来的url一致
+    if ([url isEqualToString:self.url]) {
+        [self pasuseMusic];
+        return;
+    }
+    
     self.url = url;
+    
     
     // 如果当前有正在播放的item移除观察者
     if (self.player.currentItem) {
@@ -97,6 +104,10 @@
 - (void)playMusic {
     [self.player play];
     [self startTimer];
+}
+
+- (void)pasuseMusic {
+    [self.player pause];
 }
 
 #pragma mark -  KVO

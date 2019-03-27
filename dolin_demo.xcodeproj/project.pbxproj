@@ -38,6 +38,7 @@
 		16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D6491D33511700228ABD /* Assets.xcassets */; };
 		16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */; };
 		16D1D05F224BD31100435C3A /* DLMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1D05E224BD31100435C3A /* DLMusicPlayer.m */; };
+		16D1D062224BEA4D00435C3A /* MNMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1D061224BEA4D00435C3A /* MNMusicPlayer.m */; };
 		16D29B4E1FBB04E30072EB6C /* ciclista_salita.json in Resources */ = {isa = PBXBuildFile; fileRef = 16D29B4A1FBB04E30072EB6C /* ciclista_salita.json */; };
 		16D29B4F1FBB04E30072EB6C /* LottieStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D29B4C1FBB04E30072EB6C /* LottieStudyVC.m */; };
 		3A332AAC1EB08D340072BD34 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */; };
@@ -324,6 +325,8 @@
 		16C8D64C1D33511700228ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16D1D05D224BD31100435C3A /* DLMusicPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLMusicPlayer.h; sourceTree = "<group>"; };
 		16D1D05E224BD31100435C3A /* DLMusicPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLMusicPlayer.m; sourceTree = "<group>"; };
+		16D1D060224BEA4C00435C3A /* MNMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNMusicPlayer.h; sourceTree = "<group>"; };
+		16D1D061224BEA4D00435C3A /* MNMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNMusicPlayer.m; sourceTree = "<group>"; };
 		16D29B4A1FBB04E30072EB6C /* ciclista_salita.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ciclista_salita.json; sourceTree = "<group>"; };
 		16D29B4B1FBB04E30072EB6C /* LottieStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LottieStudyVC.h; sourceTree = "<group>"; };
 		16D29B4C1FBB04E30072EB6C /* LottieStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LottieStudyVC.m; sourceTree = "<group>"; };
@@ -725,6 +728,8 @@
 		16C6029A224A406400F3DA0B /* Player */ = {
 			isa = PBXGroup;
 			children = (
+				16D1D060224BEA4C00435C3A /* MNMusicPlayer.h */,
+				16D1D061224BEA4D00435C3A /* MNMusicPlayer.m */,
 				16D1D05D224BD31100435C3A /* DLMusicPlayer.h */,
 				16D1D05E224BD31100435C3A /* DLMusicPlayer.m */,
 			);
@@ -1876,6 +1881,7 @@
 				1648813A222677A400A35107 /* FDTemplateVC.m in Sources */,
 				16C602AC224A406500F3DA0B /* MNBaseTableViewCell.m in Sources */,
 				1630F53D2249CB0F002499C3 /* Dolin2ViewController.m in Sources */,
+				16D1D062224BEA4D00435C3A /* MNMusicPlayer.m in Sources */,
 				3A7776D61EE7EF5300B3E793 /* NoteViewController.m in Sources */,
 				3A97CD8A1EE800AC00AC19F5 /* DLPhotoBrowser.m in Sources */,
 				3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */,
