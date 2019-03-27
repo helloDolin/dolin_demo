@@ -41,17 +41,16 @@ static CGFloat kUnderLineViewHeight = 2.0;
     return [self initWithFrame:frame withTitleNormalColor:kTitleColor_normal withTitleSelectedColor:kTitleColor_selected withUnderLineViewColor:kUnderLineViewColor];
 }
 
-- (TitleContainerScrollView*)initWithFrame:(CGRect)frame
+// 万能初始化方法
+- (instancetype)initWithFrame:(CGRect)frame
                       withTitleNormalColor:(UIColor*)titleNormalColor
                     withTitleSelectedColor:(UIColor*)titleSelectedColor
                     withUnderLineViewColor:(UIColor *)underLineViewColor {
     self = [super initWithFrame:frame];
     if (self) {
-        self.titleNormalColor   = titleNormalColor;
-        self.titleSelectedColor = titleSelectedColor;
-        self.underLineViewColor = underLineViewColor;
-        
-        
+        _titleNormalColor   = titleNormalColor;
+        _titleSelectedColor = titleSelectedColor;
+        _underLineViewColor = underLineViewColor;
     }
     return self;
 }
@@ -97,16 +96,11 @@ static CGFloat kUnderLineViewHeight = 2.0;
     if (_buttonClickBlock) {
         _buttonClickBlock(_currentPage);
     }
-    UIButton *btn = (UIButton *)sender;
-    [self setUpUnderLineViewPositionByBtn:btn withAnimation:YES];
 }
 
 #pragma mark - setter
 - (void)setTitles:(NSMutableArray *)titles {
     _titles = titles;
-    
-    self.showsHorizontalScrollIndicator = NO;
-    self.showsVerticalScrollIndicator = NO;
     
     self.buttonsArr = [NSMutableArray array];
     
@@ -122,31 +116,33 @@ static CGFloat kUnderLineViewHeight = 2.0;
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         [button setTitle:_titles[i] forState:UIControlStateNormal];
         [button setTitleColor:_titleNormalColor forState:UIControlStateNormal];
-        [button setTitleEdgeInsets:UIEdgeInsetsMake(10, 0, 0, 0)];
         
         // button.intrinsicContentSize.width + 20 btn原本宽度上再加20
-        CGRect frame = CGRectMake(originX + kPadding, 0, button.intrinsicContentSize.width + 20, kTitleContainerScrollViewHeight);
-        button.frame = frame;
+        button.frame = CGRectMake(originX + kPadding, 0, button.intrinsicContentSize.width + 20, kTitleContainerScrollViewHeight);
         
-        // 这种写法用意：最左边的padding 是 其他padding的一半
-        originX = CGRectGetMaxX(frame) + kPadding;
+        originX = button.maxX + kPadding;
         
         [self addSubview:button];
+        
         [self.buttonsArr addObject:button];
     }
     
     UIButton* lastBtn = self.buttonsArr.lastObject;
-    self.contentSize = CGSizeMake(CGRectGetMaxX(lastBtn.frame) + kPadding, self.frame.size.height);
     
+    self.contentSize = CGSizeMake(lastBtn.maxX + kPadding, self.height);
     
     // 默认选中第一个按钮
     UIButton *firstButton = self.buttonsArr.firstObject;
     firstButton.titleLabel.font = [UIFont systemFontOfSize:_fontSizeSelected];
     [firstButton setTitleColor:_titleSelectedColor forState:UIControlStateNormal];
     
-    [self setUpUnderLineViewPositionByBtn:firstButton withAnimation:NO];
+    [self setUpUnderLineViewPositionByBtn:firstButton];
     
     [self addSubview:self.underLineView];
+    
+    // 不显示滚动条
+    self.showsHorizontalScrollIndicator = NO;
+    self.showsVerticalScrollIndicator = NO;
 
 }
 
@@ -168,51 +164,56 @@ static CGFloat kUnderLineViewHeight = 2.0;
     // 精华
     CGFloat leftWeight = button.center.x - SCREEN_WIDTH / 2;
     CGFloat rightWeight = (self.contentSize.width - button.center.x) - SCREEN_WIDTH / 2;
-    if (leftWeight > 0 && rightWeight >0) {
+    
+    // 优化第一个btn与最后一个btn显示位置 2019-03-27 17:04:04
+    if (currentPage == 1) {
+        self.contentOffset = CGPointMake(0, 0);
+    }
+    else if (currentPage == self.titles.count - 1 - 1){
+        self.contentOffset = CGPointMake(self.contentSize.width - self.width, 0);
+    }
+    else if (leftWeight > 0 && rightWeight >0) {
         CGPoint point= self.contentOffset;
         point.x = leftWeight;
         [UIView animateWithDuration:0.25 animations:^{
             self.contentOffset = point;
-        } completion:nil];
+        }];
     }
     
     // 以rectangle滑动是为了解决最后一个btn的显示问题
     CGRect frame = button.frame;
     [self scrollRectToVisible:frame animated:YES];
-    
-    [self setUpUnderLineViewPositionByBtn:button withAnimation:YES];
 }
 
 #pragma mark - method
 /**
- *  设置下划线的位置
+ *  设置下划线的位置 (deprecate)
  */
-- (void)setUpUnderLineViewPositionByBtn:(UIButton*)btn withAnimation:(BOOL)isAnimation{
-    if (isAnimation) {
-//        在scrollViewDidScroll代理中做处理，这边就不需要动画了
+//- (void)setUpUnderLineViewPositionByBtn:(UIButton*)btn withAnimation:(BOOL)isAnimation{
+//    if (isAnimation) {
+//        // 在scrollViewDidScroll代理中做处理，这边就不需要动画了(已经修改为实时滑动)
 //        [UIView animateWithDuration:0.25f animations:^{
 //            [self setUpUnderLineViewPositionByBtn:btn];
 //        }];
-    }
-    else {
-        [self setUpUnderLineViewPositionByBtn:btn];
-    }
-}
+//    }
+//    else {
+//        [self setUpUnderLineViewPositionByBtn:btn];
+//    }
+//}
 
 - (void)setUpUnderLineViewPositionByBtn:(UIButton*)btn {
-    self.underLineView.frame = CGRectMake(0, kTitleContainerScrollViewHeight - _underLineHeight, btn.frame.size.width,_underLineHeight);
-    self.underLineView.center = CGPointMake(btn.center.x, kTitleContainerScrollViewHeight - _underLineHeight / 2 );
+    self.underLineView.frame = CGRectMake(0, kTitleContainerScrollViewHeight - _underLineHeight, btn.width,_underLineHeight);
+    self.underLineView.centerX = btn.centerX;
 }
 
 - (void)changeStatusByLeftScale:(CGFloat)leftScale rightScale:(CGFloat)rightScale leftIndex:(NSInteger)leftIndex rightIndex:(NSInteger)rightIndex {
     UIButton* btnLeft = self.buttonsArr[leftIndex];
     UIButton* btnRight = self.buttonsArr[rightIndex];
-    
-    // 这边的颜色为选中后的颜色，这边需要手动改，暂时没有想到好的方法
     UIColor* leftColor = [UIColor colorWithRed:leftScale green:leftScale blue:leftScale alpha:1];
     UIColor* rightColor = [UIColor colorWithRed:rightScale green:rightScale blue:rightScale alpha:1];
     [btnLeft setTitleColor:leftColor forState:UIControlStateNormal];
     [btnRight setTitleColor:rightColor forState:UIControlStateNormal];
+    // 好算法
     self.underLineView.centerX = btnLeft.centerX + (btnRight.centerX - btnLeft.centerX) * rightScale;
     self.underLineView.width   = btnLeft.width + (btnRight.width - btnLeft.width) * rightScale;
 }

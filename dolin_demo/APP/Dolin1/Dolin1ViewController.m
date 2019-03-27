@@ -47,7 +47,7 @@
                   @"runtime-RunTimeStudy_VC",
                   @"AutoLayoutPriority-AutoLayoutPriority",
                   @"lottie（牛B）-LottieStudyVC",
-                  @"FDTemplateVC-FDTemplateVC",
+                  @"UITableViewFDTemplateLayoutCell-FDTemplateVC",
                   @"extensionStudy-AddNoteViewController",
                   @"DLVideoVC-DLVideoVC",
                   @"最近较火的Banner-Banner2VC",

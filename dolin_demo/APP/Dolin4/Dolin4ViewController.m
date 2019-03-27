@@ -12,7 +12,7 @@
 
 @interface Dolin4ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,TitleContainerScrollViewDelegate>
 {
-    NSMutableArray* _vcs;
+    NSMutableArray<UIViewController*>* _vcs;
 }
 @property (nonatomic, strong) TitleContainerScrollView *titleContainerScrollView;
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -24,19 +24,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
+    NSArray<NSString*>* arr = @[
+                      @"动画相关-Animation_Study_VC",
+                      @"UITableViewFDTemplateLayoutCell-FDTemplateVC",
+                      @"动画相关-Animation_Study_VC",
+                      @"UITableViewFDTemplateLayoutCell-FDTemplateVC",
+                      @"动画相关-Animation_Study_VC",
+                      @"UITableViewFDTemplateLayoutCell-FDTemplateVC",
+                      @"动画相关-Animation_Study_VC",
+                      @"UITableViewFDTemplateLayoutCell-FDTemplateVC"
+                      ];
     
     
-    NSMutableArray* titles = [@[@"helloworld",@"test2test2",@"test3",@"test4",@"test5",@"test6",@"test7",@"test10test10",@"test9",@"test10test10",@"test6test6"]mutableCopy];
-    self.titleContainerScrollView.titles = titles;
-    
+    NSMutableArray* titles = [NSMutableArray array];
     _vcs = [NSMutableArray array];
-    for (int i = 0; i < titles.count; i++) {
-        BannerViewController* vc = [[BannerViewController alloc]init];
-        vc.view.backgroundColor = RANDOM_UICOLOR;
-        // 注意：如果A控制器的View添加到B控制器的View上，那么A控制器一定要成为B控制器的子控制器。
-        [self addChildViewController:vc];
-        [_vcs addObject:vc];
-    }
+    
+    [arr enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSString* title = [obj componentsSeparatedByString:@"-"][0];
+        NSString* vcClassName = [obj componentsSeparatedByString:@"-"][1];
+        [titles addObject:title];
+        [self->_vcs addObject:[[NSClassFromString(vcClassName) alloc] init]];
+    }];
+
+    self.titleContainerScrollView.titles = [titles copy];
+    
+    // 添加子控制器
+    // 如果A控制器的View添加到B控制器的View上，那么A控制器一定要成为B控制器的子控制器
+    [_vcs enumerateObjectsUsingBlock:^(UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [self addChildViewController:obj];
+    }];
     
     [self.view addSubview:self.titleContainerScrollView];
     [self.view addSubview:self.collectionView];
@@ -101,8 +117,7 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     // 每次先清空
     [cell.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    BannerViewController* vc = _vcs[indexPath.item];
-    vc.view.frame = CGRectMake(0 , -NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, cell.frame.size.height + NAVIGATION_BAR_HEIGHT);
+    UIViewController* vc = _vcs[indexPath.item];
     [cell addSubview:vc.view];
     return cell;
 }
@@ -112,7 +127,7 @@
 - (TitleContainerScrollView*)titleContainerScrollView {
     if (!_titleContainerScrollView) {
         _titleContainerScrollView = [[TitleContainerScrollView alloc] initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, kTitleContainerScrollViewHeight)];
-        _titleContainerScrollView.backgroundColor = [UIColor orangeColor];
+        _titleContainerScrollView.backgroundColor = RANDOM_UICOLOR;
         [_titleContainerScrollView onceParameterConfig:^(CGFloat *fontSizeNormal, CGFloat *fontSizeSelected, CGFloat *underLineHeight ,UIColor** underLineColor) {
             *fontSizeNormal = 14.0;
             *fontSizeSelected = 16.0;
@@ -129,7 +144,7 @@
             if (!self) {
                 return;
             }
-            NSIndexPath *indexPath=[NSIndexPath indexPathForRow:currentPage inSection:0];
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:currentPage inSection:0];
             [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
         };
     }

@@ -41,6 +41,12 @@
     
 }
 
+- (void)viewDidLayoutSubviews {
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+}
+
 #pragma mark - method
 
 #pragma mark - event
@@ -92,7 +98,7 @@
 #pragma mark - getter && setter
 - (UITableView*)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]init];
         _tableView.dataSource = self;
         _tableView.delegate = self;
     }
