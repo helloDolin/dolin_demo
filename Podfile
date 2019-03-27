@@ -10,7 +10,7 @@ target 'dolin_demo' do
   pod 'FMDB','~> 2.7.5'
   pod 'MJRefresh', '~> 3.1.15.7'
   pod 'MJExtension', '~> 3.0.15.1'
-  pod 'DLUtils', '~> 0.0.5'
+  pod 'DLUtils', '~> 0.0.7'
   pod 'FDFullscreenPopGesture', '~> 1.1'
   pod 'YYModel'
   pod 'FreeStreamer', '~> 3.9.3'

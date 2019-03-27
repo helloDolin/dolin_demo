@@ -99,9 +99,8 @@
         [_tableView registerClass:[RecommendMusicCell class] forCellReuseIdentifier:NSStringFromClass([RecommendMusicCell class])];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-            // req
             [self->_data removeAllObjects];
-            _pageNum = 1;
+            self->_pageNum = 1;
             [self req];
         }];
         _tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{

@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - DLUtils (0.0.5)
+  - DLUtils (0.0.7)
   - FDFullscreenPopGesture (1.1)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
@@ -83,7 +83,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - DLUtils (~> 0.0.5)
+  - DLUtils (~> 0.0.7)
   - FDFullscreenPopGesture (~> 1.1)
   - FMDB (~> 2.7.5)
   - FreeStreamer (~> 3.9.3)
@@ -143,7 +143,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  DLUtils: 8f1437a35bd88f22e2d6a939eff9fa8e199b749b
+  DLUtils: f4cfbf4072bd784ca80373da283c1b20d62e5177
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FreeStreamer: 8d52b299dc97e557ff156480bf86a666165bd1e5
@@ -161,6 +161,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 252dab0653dbd73a36c683e60f744664704e1414
+PODFILE CHECKSUM: ef56ac7141f7ad6b9e5682c95f4692bd141b17ab
 
 COCOAPODS: 1.7.0.beta.2

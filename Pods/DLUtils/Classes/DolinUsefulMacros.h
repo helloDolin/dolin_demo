@@ -14,24 +14,41 @@
 #define SCREEN_HEIGHT      [[UIScreen mainScreen] bounds].size.height
 #define SCREEN_WIDTH       [[UIScreen mainScreen] bounds].size.width
 
-#pragma mark - iPhoneX 相关
-#define IS_DEVICE_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
-#define STATUSBAR_HEIGHT  ((IS_DEVICE_iPhoneX) == NO ? 20 : 44 )
-// 在 iPhone X 上 status bar的增量
-#define STATUSBAR_HEIGHT_DELTA_ON_IPHONEX  ((IS_DEVICE_iPhoneX) == NO ? 0 : 24 )
-// 在 iPhone X 上 bottom bar的增量
-#define BOTTOM_HEIGHT_DELTA_ON_IPHONEX  ((IS_DEVICE_iPhoneX) == NO ? 0 : 34 )
+#pragma mark - iPhoneX 系列
+// 判断是否是ipad
+#define isPad ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+// 判断iPhone4系列
+#define kiPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+// 判断iPhone5系列
+#define kiPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+// 判断iPhone6系列
+#define kiPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+// 判断iphone6+系列
+#define kiPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+// 判断iPhoneX
+#define IS_IPHONE_X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+// 判断iPHoneXr
+#define IS_IPHONE_Xr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+// 判断iPhoneXs
+#define IS_IPHONE_Xs ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+// 判断iPhoneXs Max
+#define IS_IPHONE_Xs_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+
+// 在 iPhoneX 系列上 status bar的增量
+#define STATUSBAR_HEIGHT_DELTA_ON_IPHONEX  ((IS_IPHONE_X || IS_IPHONE_Xr || IS_IPHONE_Xs || IS_IPHONE_Xs_Max) == NO ? 0.0 : 24.0 )
+// 在 iPhoneX 系列上 bottom bar的增量
+#define BOTTOM_HEIGHT_DELTA_ON_IPHONEX  ((IS_IPHONE_X || IS_IPHONE_Xr || IS_IPHONE_Xs || IS_IPHONE_Xs_Max) == NO ? 0.0 : 34.0 )
+
 #define BOTTOM_SAFEAREA_LIMIT_ON_IPHONEX  ([[UIScreen mainScreen] bounds].size.height - BOTTOM_HEIGHT_DELTA_ON_IPHONEX)
-#define H5_TOPBAR_OFFSET_IPHONEX  ((IS_DEVICE_iPhoneX) == NO ? 0 : 44 )
 
 #pragma mark - 系统控件默认高度
-#define STATUS_BAR_HEIGHT       (20.f)
-#define TOP_BAR_HEIGHT          (44.f)
-#define NAVIGATION_BAR_HEIGHT   (STATUS_BAR_HEIGHT + TOP_BAR_HEIGHT + STATUSBAR_HEIGHT_DELTA_ON_IPHONEX)
-#define TAB_BAR_HEIGHT          (49.f + BOTTOM_HEIGHT_DELTA_ON_IPHONEX)
-#define CELL_DEFAULT_HEIGHT     (44.f)
-#define EnglishKeyboardHeight   (216.f)
-#define ChineseKeyboardHeight   (252.f)
+#define STATUS_BAR_HEIGHT       (20.0 + STATUSBAR_HEIGHT_DELTA_ON_IPHONEX)
+#define TOP_BAR_HEIGHT          (44.0)
+#define NAVIGATION_BAR_HEIGHT   (STATUS_BAR_HEIGHT + TOP_BAR_HEIGHT)
+#define TAB_BAR_HEIGHT          (49.0 + BOTTOM_HEIGHT_DELTA_ON_IPHONEX)
+#define CELL_DEFAULT_HEIGHT     (44.0)
+#define EnglishKeyboardHeight   (216.0)
+#define ChineseKeyboardHeight   (252.0)
 
 #pragma mark - View 坐标(x,y)和宽高(width,height)
 #define X(v)                    (v).frame.origin.x
