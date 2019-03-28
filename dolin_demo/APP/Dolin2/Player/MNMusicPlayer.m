@@ -85,12 +85,11 @@
 }
 
 - (void)playFromURL:(NSURL *)url {
+    // 此pause内部会判断如果running就暂停，如果暂停就running
     [self pause];
     if (![url.absoluteString isEqualToString:self.url.absoluteString]) {
         [self stop];
         [super playFromURL:url];
-    } else {
-        [super play];
     }
     [self startTimer];
 }
