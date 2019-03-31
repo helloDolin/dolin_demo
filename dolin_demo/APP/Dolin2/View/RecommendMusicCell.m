@@ -51,11 +51,15 @@
     _titleLabel = [UILabel new];
     _titleLabel.numberOfLines = 2;
     _titleLabel.font = [UIFont systemFontOfSize:19];
+    _titleLabel.layer.masksToBounds = YES;
+     _titleLabel.backgroundColor = [UIColor whiteColor];
     
     _descripLabel = [UILabel new];
     _descripLabel.font = [UIFont systemFontOfSize:13];
     _descripLabel.textColor = [UIColor colorWithRed:0.37 green:0.37 blue:0.37 alpha:1];
     _descripLabel.numberOfLines = 0;
+    _descripLabel.layer.masksToBounds = YES;
+    _descripLabel.backgroundColor = [UIColor whiteColor];
     
     UIView* separateView = [[UIView alloc]init];
     separateView.backgroundColor = [UIColor colorWithRed:231/255.0 green:231/255.0 blue:231/255.0 alpha:1];

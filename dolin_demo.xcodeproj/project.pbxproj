@@ -39,6 +39,7 @@
 		16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */; };
 		16D1D05F224BD31100435C3A /* DLMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1D05E224BD31100435C3A /* DLMusicPlayer.m */; };
 		16D1D062224BEA4D00435C3A /* MNMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1D061224BEA4D00435C3A /* MNMusicPlayer.m */; };
+		16D1D0C82250F26A00435C3A /* DLBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1D0C72250F26A00435C3A /* DLBannerView.m */; };
 		16D29B4E1FBB04E30072EB6C /* ciclista_salita.json in Resources */ = {isa = PBXBuildFile; fileRef = 16D29B4A1FBB04E30072EB6C /* ciclista_salita.json */; };
 		16D29B4F1FBB04E30072EB6C /* LottieStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D29B4C1FBB04E30072EB6C /* LottieStudyVC.m */; };
 		3A332AAC1EB08D340072BD34 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */; };
@@ -67,7 +68,6 @@
 		3A7776DA1EE7EF7800B3E793 /* NoteListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7776D81EE7EF7800B3E793 /* NoteListDelegate.m */; };
 		3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */; };
 		3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67BF1DEC0D6800225D28 /* BannerViewController.m */; };
-		3A7C68B71DEC0D6800225D28 /* DolinBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67C11DEC0D6800225D28 /* DolinBannerView.m */; };
 		3A7C68B81DEC0D6800225D28 /* DolinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67C41DEC0D6800225D28 /* DolinLabel.m */; };
 		3A7C68B91DEC0D6800225D28 /* DolinLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67C61DEC0D6800225D28 /* DolinLabelViewController.m */; };
 		3A7C68BA1DEC0D6800225D28 /* Dolin1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */; };
@@ -206,7 +206,6 @@
 		3AC483691E49A9DE0008CE57 /* GetContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483681E49A9DE0008CE57 /* GetContactsVC.m */; };
 		3AC483B61E4C56C50008CE57 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 3AC483B41E4C56C50008CE57 /* main.js */; };
 		3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */; };
-		3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */; };
 		3ACABD321EE1687100849B58 /* like.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3ACABD311EE1687100849B58 /* like.caf */; };
 		3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3095A1E77D563004C2496 /* LinkworkLeftCell.m */; };
 		3AD3095E1E77D563004C2496 /* LinkworkTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3095C1E77D563004C2496 /* LinkworkTableViewVC.m */; };
@@ -327,6 +326,8 @@
 		16D1D05E224BD31100435C3A /* DLMusicPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLMusicPlayer.m; sourceTree = "<group>"; };
 		16D1D060224BEA4C00435C3A /* MNMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNMusicPlayer.h; sourceTree = "<group>"; };
 		16D1D061224BEA4D00435C3A /* MNMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNMusicPlayer.m; sourceTree = "<group>"; };
+		16D1D0C62250F26A00435C3A /* DLBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLBannerView.h; sourceTree = "<group>"; };
+		16D1D0C72250F26A00435C3A /* DLBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLBannerView.m; sourceTree = "<group>"; };
 		16D29B4A1FBB04E30072EB6C /* ciclista_salita.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ciclista_salita.json; sourceTree = "<group>"; };
 		16D29B4B1FBB04E30072EB6C /* LottieStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LottieStudyVC.h; sourceTree = "<group>"; };
 		16D29B4C1FBB04E30072EB6C /* LottieStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LottieStudyVC.m; sourceTree = "<group>"; };
@@ -379,8 +380,6 @@
 		3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinBaseViewController.m; sourceTree = "<group>"; };
 		3A7C67BE1DEC0D6800225D28 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		3A7C67BF1DEC0D6800225D28 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
-		3A7C67C01DEC0D6800225D28 /* DolinBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinBannerView.h; sourceTree = "<group>"; };
-		3A7C67C11DEC0D6800225D28 /* DolinBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinBannerView.m; sourceTree = "<group>"; };
 		3A7C67C31DEC0D6800225D28 /* DolinLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinLabel.h; sourceTree = "<group>"; };
 		3A7C67C41DEC0D6800225D28 /* DolinLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinLabel.m; sourceTree = "<group>"; };
 		3A7C67C51DEC0D6800225D28 /* DolinLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinLabelViewController.h; sourceTree = "<group>"; };
@@ -599,8 +598,6 @@
 		3AC483B41E4C56C50008CE57 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		3AC533C81E1CF8DE00FE560E /* UIView+Explode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Explode.h"; sourceTree = "<group>"; };
 		3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Explode.m"; sourceTree = "<group>"; };
-		3AC533CC1E1CF92300FE560E /* UIButton+DLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DLButton.h"; sourceTree = "<group>"; };
-		3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DLButton.m"; sourceTree = "<group>"; };
 		3ACABD311EE1687100849B58 /* like.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = like.caf; sourceTree = "<group>"; };
 		3AD309591E77D563004C2496 /* LinkworkLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkworkLeftCell.h; sourceTree = "<group>"; };
 		3AD3095A1E77D563004C2496 /* LinkworkLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkworkLeftCell.m; sourceTree = "<group>"; };
@@ -953,8 +950,8 @@
 			children = (
 				3A7C67BE1DEC0D6800225D28 /* BannerViewController.h */,
 				3A7C67BF1DEC0D6800225D28 /* BannerViewController.m */,
-				3A7C67C01DEC0D6800225D28 /* DolinBannerView.h */,
-				3A7C67C11DEC0D6800225D28 /* DolinBannerView.m */,
+				16D1D0C62250F26A00435C3A /* DLBannerView.h */,
+				16D1D0C72250F26A00435C3A /* DLBannerView.m */,
 			);
 			path = Banner;
 			sourceTree = "<group>";
@@ -1250,7 +1247,6 @@
 				3A7C689D1DEC0D6800225D28 /* UIView */,
 				3A7C68891DEC0D6800225D28 /* UIImage */,
 				3A7C68861DEC0D6800225D28 /* UIColor */,
-				3AC533CB1E1CF92300FE560E /* DLButton */,
 				3A7C68841DEC0D6800225D28 /* NSString+Version.h */,
 				3A7C68851DEC0D6800225D28 /* NSString+Version.m */,
 				3A7C68951DEC0D6800225D28 /* UINavigationBar+Awesome.h */,
@@ -1481,15 +1477,6 @@
 				3AC483B41E4C56C50008CE57 /* main.js */,
 			);
 			path = JSPatch;
-			sourceTree = "<group>";
-		};
-		3AC533CB1E1CF92300FE560E /* DLButton */ = {
-			isa = PBXGroup;
-			children = (
-				3AC533CC1E1CF92300FE560E /* UIButton+DLButton.h */,
-				3AC533CD1E1CF92300FE560E /* UIButton+DLButton.m */,
-			);
-			path = DLButton;
 			sourceTree = "<group>";
 		};
 		3AD309581E77D532004C2496 /* LinkworkTable */ = {
@@ -1939,9 +1926,8 @@
 				16C602A9224A406500F3DA0B /* RecommendModel.m in Sources */,
 				3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */,
 				3A7C69331DEC0D6800225D28 /* UIWindow+Expand.m in Sources */,
-				3AC533CE1E1CF92300FE560E /* UIButton+DLButton.m in Sources */,
 				3A7C69281DEC0D6800225D28 /* UIImage+Blur.m in Sources */,
-				3A7C68B71DEC0D6800225D28 /* DolinBannerView.m in Sources */,
+				16D1D0C82250F26A00435C3A /* DLBannerView.m in Sources */,
 				3A97CD811EE7F5F600AC19F5 /* PhotoAlbumCategoryCell.m in Sources */,
 				3A7C69241DEC0D6800225D28 /* YYWeakProxy.m in Sources */,
 				3A38F4831E1E55090036DE63 /* CGAffineTransformStudy_VC.m in Sources */,
@@ -2165,6 +2151,7 @@
 				CODE_SIGN_ENTITLEMENTS = dolin_demo/dolin_demo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 35P2C5J2YM;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

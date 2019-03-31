@@ -90,6 +90,8 @@
     if (![url.absoluteString isEqualToString:self.url.absoluteString]) {
         [self stop];
         [super playFromURL:url];
+    } else {
+        [super play];
     }
     [self startTimer];
 }
