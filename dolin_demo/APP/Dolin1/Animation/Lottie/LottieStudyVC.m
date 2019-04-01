@@ -9,7 +9,7 @@
 #import "LottieStudyVC.h"
 #import <Lottie/Lottie.h>
 
-const kBtnHeight = 50;
+const float kBtnHeight = 50;
 
 @interface LottieStudyVC ()
 {
@@ -27,7 +27,6 @@ const kBtnHeight = 50;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, kBtnHeight);
     btn.backgroundColor = RANDOM_UICOLOR;
@@ -84,24 +83,9 @@ const kBtnHeight = 50;
         _ciclista_salitaAnimation = [LOTAnimationView animationNamed:@"ciclista_salita" inBundle:[NSBundle mainBundle]];
         _ciclista_salitaAnimation.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT + kBtnHeight, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT);
         _ciclista_salitaAnimation.loopAnimation = YES;
+        _ciclista_salitaAnimation.contentMode = UIViewContentModeScaleAspectFit;
     }
     return _ciclista_salitaAnimation;
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

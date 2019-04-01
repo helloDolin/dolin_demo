@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1612AAEA22525383004F0ECC /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612AAE622525383004F0ECC /* UIBezierPathViewController.m */; };
+		1612AAEB22525383004F0ECC /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612AAE922525383004F0ECC /* BezierPathView.m */; };
+		1612AAF32252544A004F0ECC /* zhayan.json in Resources */ = {isa = PBXBuildFile; fileRef = 1612AAEE2252544A004F0ECC /* zhayan.json */; };
+		1612AAF42252544A004F0ECC /* ciclista_salita.json in Resources */ = {isa = PBXBuildFile; fileRef = 1612AAEF2252544A004F0ECC /* ciclista_salita.json */; };
+		1612AAF52252544A004F0ECC /* think.json in Resources */ = {isa = PBXBuildFile; fileRef = 1612AAF02252544A004F0ECC /* think.json */; };
+		1612AAF62252544A004F0ECC /* diantou.json in Resources */ = {isa = PBXBuildFile; fileRef = 1612AAF12252544A004F0ECC /* diantou.json */; };
+		1612AAF72252544B004F0ECC /* LottieStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612AAF22252544A004F0ECC /* LottieStudyVC.m */; };
 		1630F53D2249CB0F002499C3 /* Dolin2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F53C2249CB0F002499C3 /* Dolin2ViewController.m */; };
 		1630F55C2249ED3B002499C3 /* XDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F55B2249ED3A002499C3 /* XDProgressView.m */; };
 		16488136222673E400A35107 /* FDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488134222673E400A35107 /* FDTableViewCell.m */; };
@@ -18,9 +25,6 @@
 		16488149222684AD00A35107 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488144222684AC00A35107 /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		1648814A222684AD00A35107 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488145222684AC00A35107 /* UITableView+FDIndexPathHeightCache.m */; };
 		1648814D2226B5CC00A35107 /* FDPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1648814C2226B5CC00A35107 /* FDPhotoCell.m */; };
-		169F8BE11FBC31CF0031F536 /* diantou.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BDE1FBC31CF0031F536 /* diantou.json */; };
-		169F8BE21FBC31CF0031F536 /* think.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BDF1FBC31CF0031F536 /* think.json */; };
-		169F8BE31FBC31CF0031F536 /* zhayan.json in Resources */ = {isa = PBXBuildFile; fileRef = 169F8BE01FBC31CF0031F536 /* zhayan.json */; };
 		16A91C982237FC7D00ADED94 /* FmdbVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A91C972237FC7D00ADED94 /* FmdbVC.m */; };
 		16B1A8121FBE91F1004B3D74 /* ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 16B1A8111FBE91F1004B3D74 /* ios.jsbundle */; };
 		16C6028F224A0F2B00F3DA0B /* MBFadeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6028E224A0F2B00F3DA0B /* MBFadeAlertView.m */; };
@@ -40,8 +44,6 @@
 		16D1D05F224BD31100435C3A /* DLMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1D05E224BD31100435C3A /* DLMusicPlayer.m */; };
 		16D1D062224BEA4D00435C3A /* MNMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1D061224BEA4D00435C3A /* MNMusicPlayer.m */; };
 		16D1D0C82250F26A00435C3A /* DLBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1D0C72250F26A00435C3A /* DLBannerView.m */; };
-		16D29B4E1FBB04E30072EB6C /* ciclista_salita.json in Resources */ = {isa = PBXBuildFile; fileRef = 16D29B4A1FBB04E30072EB6C /* ciclista_salita.json */; };
-		16D29B4F1FBB04E30072EB6C /* LottieStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D29B4C1FBB04E30072EB6C /* LottieStudyVC.m */; };
 		3A332AAC1EB08D340072BD34 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */; };
 		3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4761E1E55090036DE63 /* AnimationImagesViewController.m */; };
 		3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4781E1E55090036DE63 /* AnimationLikeBtnViewController.m */; };
@@ -53,8 +55,6 @@
 		3A38F48D1E1E55350036DE63 /* ScrollBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F48A1E1E55350036DE63 /* ScrollBoxView.m */; };
 		3A38F48E1E1E55350036DE63 /* ScrollBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A38F48B1E1E55350036DE63 /* ScrollBoxView.xib */; };
 		3A38F4911E1E558D0036DE63 /* Animation_Study_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4901E1E558D0036DE63 /* Animation_Study_VC.m */; };
-		3A515C9A1E2CB2DA00ECFBB0 /* UIBezierPathVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A515C991E2CB2DA00ECFBB0 /* UIBezierPathVC.m */; };
-		3A515C9D1E2CB30100ECFBB0 /* UIBezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A515C9C1E2CB30100ECFBB0 /* UIBezierPathView.m */; };
 		3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CF2621E03BD3700CAF8F6 /* UIImage+DLRoundImg.m */; };
 		3A5ED63B1E7279A900F232A4 /* Banner2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5ED6391E7279A900F232A4 /* Banner2Cell.m */; };
 		3A5ED63C1E7279A900F232A4 /* Banner2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5ED63A1E7279A900F232A4 /* Banner2Cell.xib */; };
@@ -83,8 +83,6 @@
 		3A7C68C51DEC0D6800225D28 /* ChangeDeviceOrientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67E41DEC0D6800225D28 /* ChangeDeviceOrientVC.m */; };
 		3A7C68C71DEC0D6800225D28 /* Runtime_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67E91DEC0D6800225D28 /* Runtime_Test.m */; };
 		3A7C68C81DEC0D6800225D28 /* RunTimeStudy_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67EB1DEC0D6800225D28 /* RunTimeStudy_VC.m */; };
-		3A7C68D31DEC0D6800225D28 /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68041DEC0D6800225D28 /* BezierPathView.m */; };
-		3A7C68D41DEC0D6800225D28 /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68061DEC0D6800225D28 /* UIBezierPathViewController.m */; };
 		3A7C68E01DEC0D6800225D28 /* Dolin3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68241DEC0D6800225D28 /* Dolin3ViewController.m */; };
 		3A7C68E21DEC0D6800225D28 /* Dolin4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68291DEC0D6800225D28 /* Dolin4ViewController.m */; };
 		3A7C68E31DEC0D6800225D28 /* TitleContainerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C682B1DEC0D6800225D28 /* TitleContainerScrollView.m */; };
@@ -265,6 +263,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1612AAE622525383004F0ECC /* UIBezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathViewController.m; sourceTree = "<group>"; };
+		1612AAE722525383004F0ECC /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
+		1612AAE822525383004F0ECC /* UIBezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathViewController.h; sourceTree = "<group>"; };
+		1612AAE922525383004F0ECC /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
+		1612AAED2252544A004F0ECC /* LottieStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LottieStudyVC.h; sourceTree = "<group>"; };
+		1612AAEE2252544A004F0ECC /* zhayan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zhayan.json; sourceTree = "<group>"; };
+		1612AAEF2252544A004F0ECC /* ciclista_salita.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ciclista_salita.json; sourceTree = "<group>"; };
+		1612AAF02252544A004F0ECC /* think.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = think.json; sourceTree = "<group>"; };
+		1612AAF12252544A004F0ECC /* diantou.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diantou.json; sourceTree = "<group>"; };
+		1612AAF22252544A004F0ECC /* LottieStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LottieStudyVC.m; sourceTree = "<group>"; };
 		1620FD522243A49100FF9BAD /* MusicWY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicWY.h; sourceTree = "<group>"; };
 		1630F53B2249CB0F002499C3 /* Dolin2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dolin2ViewController.h; sourceTree = "<group>"; };
 		1630F53C2249CB0F002499C3 /* Dolin2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dolin2ViewController.m; sourceTree = "<group>"; };
@@ -288,9 +296,6 @@
 		16488146222684AC00A35107 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
 		1648814B2226B5CC00A35107 /* FDPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDPhotoCell.h; sourceTree = "<group>"; };
 		1648814C2226B5CC00A35107 /* FDPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDPhotoCell.m; sourceTree = "<group>"; };
-		169F8BDE1FBC31CF0031F536 /* diantou.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diantou.json; sourceTree = "<group>"; };
-		169F8BDF1FBC31CF0031F536 /* think.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = think.json; sourceTree = "<group>"; };
-		169F8BE01FBC31CF0031F536 /* zhayan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zhayan.json; sourceTree = "<group>"; };
 		16A91C962237FC7D00ADED94 /* FmdbVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FmdbVC.h; sourceTree = "<group>"; };
 		16A91C972237FC7D00ADED94 /* FmdbVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FmdbVC.m; sourceTree = "<group>"; };
 		16B1A8111FBE91F1004B3D74 /* ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios.jsbundle; sourceTree = "<group>"; };
@@ -326,9 +331,6 @@
 		16D1D061224BEA4D00435C3A /* MNMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNMusicPlayer.m; sourceTree = "<group>"; };
 		16D1D0C62250F26A00435C3A /* DLBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLBannerView.h; sourceTree = "<group>"; };
 		16D1D0C72250F26A00435C3A /* DLBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLBannerView.m; sourceTree = "<group>"; };
-		16D29B4A1FBB04E30072EB6C /* ciclista_salita.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ciclista_salita.json; sourceTree = "<group>"; };
-		16D29B4B1FBB04E30072EB6C /* LottieStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LottieStudyVC.h; sourceTree = "<group>"; };
-		16D29B4C1FBB04E30072EB6C /* LottieStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LottieStudyVC.m; sourceTree = "<group>"; };
 		3A0806621DFFC73500C162A3 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		3A332AAA1EB08D340072BD34 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
 		3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
@@ -350,10 +352,6 @@
 		3A38F48B1E1E55350036DE63 /* ScrollBoxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollBoxView.xib; sourceTree = "<group>"; };
 		3A38F48F1E1E558D0036DE63 /* Animation_Study_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation_Study_VC.h; sourceTree = "<group>"; };
 		3A38F4901E1E558D0036DE63 /* Animation_Study_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation_Study_VC.m; sourceTree = "<group>"; };
-		3A515C981E2CB2DA00ECFBB0 /* UIBezierPathVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathVC.h; sourceTree = "<group>"; };
-		3A515C991E2CB2DA00ECFBB0 /* UIBezierPathVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathVC.m; sourceTree = "<group>"; };
-		3A515C9B1E2CB30100ECFBB0 /* UIBezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathView.h; sourceTree = "<group>"; };
-		3A515C9C1E2CB30100ECFBB0 /* UIBezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathView.m; sourceTree = "<group>"; };
 		3A5CF2611E03BD3700CAF8F6 /* UIImage+DLRoundImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DLRoundImg.h"; sourceTree = "<group>"; };
 		3A5CF2621E03BD3700CAF8F6 /* UIImage+DLRoundImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DLRoundImg.m"; sourceTree = "<group>"; };
 		3A5E344A1EB04B0D00588600 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -407,10 +405,6 @@
 		3A7C67E91DEC0D6800225D28 /* Runtime_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime_Test.m; sourceTree = "<group>"; };
 		3A7C67EA1DEC0D6800225D28 /* RunTimeStudy_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeStudy_VC.h; sourceTree = "<group>"; };
 		3A7C67EB1DEC0D6800225D28 /* RunTimeStudy_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeStudy_VC.m; sourceTree = "<group>"; };
-		3A7C68031DEC0D6800225D28 /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
-		3A7C68041DEC0D6800225D28 /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
-		3A7C68051DEC0D6800225D28 /* UIBezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathViewController.h; sourceTree = "<group>"; };
-		3A7C68061DEC0D6800225D28 /* UIBezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathViewController.m; sourceTree = "<group>"; };
 		3A7C68231DEC0D6800225D28 /* Dolin3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin3ViewController.h; sourceTree = "<group>"; };
 		3A7C68241DEC0D6800225D28 /* Dolin3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin3ViewController.m; sourceTree = "<group>"; };
 		3A7C68281DEC0D6800225D28 /* Dolin4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin4ViewController.h; sourceTree = "<group>"; };
@@ -654,6 +648,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1612AAE522525383004F0ECC /* UIBezierPath_Study */ = {
+			isa = PBXGroup;
+			children = (
+				1612AAE722525383004F0ECC /* BezierPathView.h */,
+				1612AAE922525383004F0ECC /* BezierPathView.m */,
+				1612AAE822525383004F0ECC /* UIBezierPathViewController.h */,
+				1612AAE622525383004F0ECC /* UIBezierPathViewController.m */,
+			);
+			path = UIBezierPath_Study;
+			sourceTree = "<group>";
+		};
+		1612AAEC2252544A004F0ECC /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				1612AAED2252544A004F0ECC /* LottieStudyVC.h */,
+				1612AAF22252544A004F0ECC /* LottieStudyVC.m */,
+				1612AAEE2252544A004F0ECC /* zhayan.json */,
+				1612AAEF2252544A004F0ECC /* ciclista_salita.json */,
+				1612AAF02252544A004F0ECC /* think.json */,
+				1612AAF12252544A004F0ECC /* diantou.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 		1630F5592249ED3A002499C3 /* XDProgressView */ = {
 			isa = PBXGroup;
 			children = (
@@ -802,22 +820,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		16D29B491FBB04E30072EB6C /* Lottie */ = {
-			isa = PBXGroup;
-			children = (
-				169F8BDE1FBC31CF0031F536 /* diantou.json */,
-				169F8BDF1FBC31CF0031F536 /* think.json */,
-				169F8BE01FBC31CF0031F536 /* zhayan.json */,
-				16D29B4A1FBB04E30072EB6C /* ciclista_salita.json */,
-				16D29B4B1FBB04E30072EB6C /* LottieStudyVC.h */,
-				16D29B4C1FBB04E30072EB6C /* LottieStudyVC.m */,
-			);
-			path = Lottie;
-			sourceTree = "<group>";
-		};
 		3A38F4741E1E55090036DE63 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				1612AAEC2252544A004F0ECC /* Lottie */,
+				1612AAE522525383004F0ECC /* UIBezierPath_Study */,
 				3A38F48F1E1E558D0036DE63 /* Animation_Study_VC.h */,
 				3A38F4901E1E558D0036DE63 /* Animation_Study_VC.m */,
 				3A38F4751E1E55090036DE63 /* AnimationImagesViewController.h */,
@@ -913,7 +920,6 @@
 				16C602B1224A609200F3DA0B /* AutoLayoutPriority */,
 				16A91C952237FC4300ADED94 /* FMDB */,
 				164881302226738D00A35107 /* FDTemplateLayoutCell */,
-				16D29B491FBB04E30072EB6C /* Lottie */,
 				3A7776CD1EE7EF5300B3E793 /* Extension */,
 				3A7776B61EE7D21000B3E793 /* PhotoKit */,
 				3ADF3A521EBC0E3600A5EFF6 /* AVFoundation */,
@@ -932,7 +938,6 @@
 				3A7C67DF1DEC0D6800225D28 /* RichText */,
 				3A7C67E21DEC0D6800225D28 /* RotateScreen */,
 				3A7C67E51DEC0D6800225D28 /* Runtime */,
-				3A7C68021DEC0D6800225D28 /* UIBezierPath_Study */,
 			);
 			path = Dolin1;
 			sourceTree = "<group>";
@@ -1032,21 +1037,6 @@
 				3A7C67EB1DEC0D6800225D28 /* RunTimeStudy_VC.m */,
 			);
 			path = Runtime;
-			sourceTree = "<group>";
-		};
-		3A7C68021DEC0D6800225D28 /* UIBezierPath_Study */ = {
-			isa = PBXGroup;
-			children = (
-				3A7C68031DEC0D6800225D28 /* BezierPathView.h */,
-				3A7C68041DEC0D6800225D28 /* BezierPathView.m */,
-				3A7C68051DEC0D6800225D28 /* UIBezierPathViewController.h */,
-				3A7C68061DEC0D6800225D28 /* UIBezierPathViewController.m */,
-				3A515C981E2CB2DA00ECFBB0 /* UIBezierPathVC.h */,
-				3A515C991E2CB2DA00ECFBB0 /* UIBezierPathVC.m */,
-				3A515C9B1E2CB30100ECFBB0 /* UIBezierPathView.h */,
-				3A515C9C1E2CB30100ECFBB0 /* UIBezierPathView.m */,
-			);
-			path = UIBezierPath_Study;
 			sourceTree = "<group>";
 		};
 		3A7C68071DEC0D6800225D28 /* Dolin2 */ = {
@@ -1690,6 +1680,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1612AAF32252544A004F0ECC /* zhayan.json in Resources */,
 				3A7C68FF1DEC0D6800225D28 /* cm2_mv_btn_play_ver@3x.png in Resources */,
 				3A7C690D1DEC0D6800225D28 /* cm2_topbar_icn_back@3x.png in Resources */,
 				3A7C690F1DEC0D6800225D28 /* cm2_vehicle_btn_next_prs@3x.png in Resources */,
@@ -1706,15 +1697,14 @@
 				3A7C69111DEC0D6800225D28 /* cm2_vehicle_btn_play_prs@3x.png in Resources */,
 				3A7C69121DEC0D6800225D28 /* cm2_vehicle_btn_prev_prs@3x.png in Resources */,
 				3A7C68EE1DEC0D6800225D28 /* cm2_default_cover_playlistonly_112@3x.png in Resources */,
-				169F8BE21FBC31CF0031F536 /* think.json in Resources */,
 				3A7C69021DEC0D6800225D28 /* cm2_play_disc_mask-ip6@2x.png in Resources */,
 				3A7C691A1DEC0D6800225D28 /* Localizable.strings in Resources */,
 				3A7C69011DEC0D6800225D28 /* cm2_play_btn_loop@3x.png in Resources */,
 				16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */,
 				3A7C68F81DEC0D6800225D28 /* cm2_list_detail_icn_dld@3x.png in Resources */,
-				169F8BE31FBC31CF0031F536 /* zhayan.json in Resources */,
 				3A7C69101DEC0D6800225D28 /* cm2_vehicle_btn_pause_prs@3x.png in Resources */,
 				3A7C69001DEC0D6800225D28 /* cm2_play_btn_dld_ok@3x.png in Resources */,
+				1612AAF52252544A004F0ECC /* think.json in Resources */,
 				3A7C68E91DEC0D6800225D28 /* 123.jpg in Resources */,
 				3A7C68E61DEC0D6800225D28 /* HYQiHei-50J.ttf in Resources */,
 				3A7C68BD1DEC0D6800225D28 /* PlantCollectionViewCell.xib in Resources */,
@@ -1747,12 +1737,12 @@
 				3A7C69141DEC0D6800225D28 /* fugai@3x.png in Resources */,
 				3A7C68F61DEC0D6800225D28 /* cm2_list_btn_more@3x.png in Resources */,
 				3A7C68E81DEC0D6800225D28 /* keep.mp4 in Resources */,
-				169F8BE11FBC31CF0031F536 /* diantou.json in Resources */,
+				1612AAF62252544A004F0ECC /* diantou.json in Resources */,
 				3A7C69061DEC0D6800225D28 /* cm2_play_icn_cmt_num@3x.png in Resources */,
 				3A5ED63C1E7279A900F232A4 /* Banner2Cell.xib in Resources */,
 				3A7C68F91DEC0D6800225D28 /* cm2_list_detail_icn_faved@3x.png in Resources */,
+				1612AAF42252544A004F0ECC /* ciclista_salita.json in Resources */,
 				3A7C68ED1DEC0D6800225D28 /* cm2_default_cover_play@3x.png in Resources */,
-				16D29B4E1FBB04E30072EB6C /* ciclista_salita.json in Resources */,
 				3A7C68EA1DEC0D6800225D28 /* 123@3x.png in Resources */,
 				3A7C68FC1DEC0D6800225D28 /* cm2_list_icn_play@3x.png in Resources */,
 				16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */,
@@ -1854,7 +1844,6 @@
 				16488148222684AD00A35107 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				3A7C68E41DEC0D6800225D28 /* DolinTabBarController.m in Sources */,
 				3AA544891EE8015D00A6C20F /* PhotoBrowserCell.m in Sources */,
-				3A515C9A1E2CB2DA00ECFBB0 /* UIBezierPathVC.m in Sources */,
 				1648813A222677A400A35107 /* FDTemplateVC.m in Sources */,
 				16C602AC224A406500F3DA0B /* MNBaseTableViewCell.m in Sources */,
 				1630F53D2249CB0F002499C3 /* Dolin2ViewController.m in Sources */,
@@ -1864,7 +1853,6 @@
 				3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */,
 				3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */,
 				16C602AE224A406500F3DA0B /* MusicProgressView.m in Sources */,
-				16D29B4F1FBB04E30072EB6C /* LottieStudyVC.m in Sources */,
 				3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */,
 				3A38F4841E1E55090036DE63 /* OriginAPIAnimateStudyVC.m in Sources */,
 				3A7C69271DEC0D6800225D28 /* UIImage+animatedGIF.m in Sources */,
@@ -1874,16 +1862,15 @@
 				3AA0C1B41E71628A009B1628 /* CalculatorMaker.m in Sources */,
 				3AC483611E49A93D0008CE57 /* SimulateTwitterView.m in Sources */,
 				3ADF3A551EBC0F3A00A5EFF6 /* DLVideoPlayView.m in Sources */,
-				3A7C68D41DEC0D6800225D28 /* UIBezierPathViewController.m in Sources */,
 				3A7C691D1DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
 				3A7C68C31DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.m in Sources */,
 				3AA0C1B51E71628A009B1628 /* ChainCodeVC.m in Sources */,
 				3AC483621E49A93D0008CE57 /* SimulateTwitterViewController.m in Sources */,
+				1612AAF72252544B004F0ECC /* LottieStudyVC.m in Sources */,
 				3A7776B91EE7D28000B3E793 /* UtilOfPhotoAlbum.m in Sources */,
 				3A7C692F1DEC0D6800225D28 /* UITableView+Common.m in Sources */,
 				3A7C692E1DEC0D6800225D28 /* UITabBar+Badge.m in Sources */,
 				3A332AAC1EB08D340072BD34 /* NSDate+Utilities.m in Sources */,
-				3A7C68D31DEC0D6800225D28 /* BezierPathView.m in Sources */,
 				3AC4835D1E49A93D0008CE57 /* SimulateKeepViewController.m in Sources */,
 				1648814A222684AD00A35107 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				3A7C68BB1DEC0D6800225D28 /* ImageModel.m in Sources */,
@@ -1896,6 +1883,7 @@
 				3A7C68C81DEC0D6800225D28 /* RunTimeStudy_VC.m in Sources */,
 				3ADF3A5A1EBC156800A5EFF6 /* DLVideoVC.m in Sources */,
 				3A7C68C71DEC0D6800225D28 /* Runtime_Test.m in Sources */,
+				1612AAEA22525383004F0ECC /* UIBezierPathViewController.m in Sources */,
 				3A7776BC1EE7D37F00B3E793 /* ModelPhotoAlbum.m in Sources */,
 				3A38F4851E1E55090036DE63 /* README_animate.md in Sources */,
 				3AA3B3481E7694A500F6221C /* WKDelegateController.m in Sources */,
@@ -1955,9 +1943,9 @@
 				16C602B4224A609300F3DA0B /* AutoLayoutPriority.m in Sources */,
 				3AFE58AC1EE17225009962DB /* ImitateTGPPersonCenterVC.m in Sources */,
 				3A38F48D1E1E55350036DE63 /* ScrollBoxView.m in Sources */,
+				1612AAEB22525383004F0ECC /* BezierPathView.m in Sources */,
 				3A38F48C1E1E55350036DE63 /* AutoLayout_ScrollViewVC.m in Sources */,
 				3A7C69341DEC0D6800225D28 /* DolinConstant.m in Sources */,
-				3A515C9D1E2CB30100ECFBB0 /* UIBezierPathView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

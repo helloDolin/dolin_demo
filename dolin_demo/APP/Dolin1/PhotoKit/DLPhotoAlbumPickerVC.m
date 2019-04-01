@@ -188,10 +188,10 @@ static const CGFloat kTableViewCellHeight = 80.0;
 
 - (void)showTableContainerView {
     [UIView animateWithDuration:0.3 animations:^{
-        CGFloat tableViewHeight = _arr_ModelPhotoAlbum.count > 3 ? kTableViewCellHeight * 3 :kTableViewCellHeight*_arr_ModelPhotoAlbum.count;
+        CGFloat tableViewHeight = self->_arr_ModelPhotoAlbum.count > 3 ? kTableViewCellHeight * 3 :kTableViewCellHeight*self->_arr_ModelPhotoAlbum.count;
         self.tableView.height = tableViewHeight;
         self.tableContainerView.alpha = 1;
-        _arrowImgView.transform = CGAffineTransformMakeRotation(M_PI);
+        self->_arrowImgView.transform = CGAffineTransformMakeRotation(M_PI);
     }];
     _isTableContainerViewShow = YES;
 }
@@ -200,7 +200,7 @@ static const CGFloat kTableViewCellHeight = 80.0;
     [UIView animateWithDuration:0.3 animations:^{
         self.tableView.height = 0;
         self.tableContainerView.alpha = 0;
-        _arrowImgView.transform = CGAffineTransformIdentity;
+        self->_arrowImgView.transform = CGAffineTransformIdentity;
     }];
     _isTableContainerViewShow = NO;
 }
@@ -348,15 +348,15 @@ static const CGFloat kTableViewCellHeight = 80.0;
         [_titleView addSubview:_arrowImgView];
         
         [_titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.center.equalTo(_titleView);
-            make.top.equalTo(_titleView);
-            make.bottom.equalTo(_titleView);
+            make.center.equalTo(self->_titleView);
+            make.top.equalTo(self->_titleView);
+            make.bottom.equalTo(self->_titleView);
         }];
         
         [_arrowImgView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_equalTo(CGSizeMake(12, 6));
-            make.centerY.equalTo(_titleLbl.mas_centerY);
-            make.left.equalTo(_titleLbl.mas_right).offset(5);
+            make.centerY.equalTo(self->_titleLbl.mas_centerY);
+            make.left.equalTo(self->_titleLbl.mas_right).offset(5);
         }];
         
     }
