@@ -10,6 +10,6 @@
 
 @interface Dolin1ViewController : DolinBaseViewController
 
-@property (nonatomic, strong) UITableView    * tableView;
+@property (nonatomic,strong) UITableView* tableView;
 
 @end

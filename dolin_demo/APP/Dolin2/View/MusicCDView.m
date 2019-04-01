@@ -52,12 +52,13 @@
     
     // 创建一个全局的动画
     _anim = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    _anim.fromValue = [NSNumber numberWithFloat:0.f];
-    _anim.toValue = [NSNumber numberWithFloat: M_PI * 2];
+    _anim.fromValue = @(0.0);
+    _anim.toValue = @(2 * M_PI);
     _anim.duration = 10;
     _anim.autoreverses = NO;
-    _anim.fillMode = kCAFillModeForwards;
-    _anim.repeatCount = MAXFLOAT;
+    _anim.beginTime = 0; // 延迟0秒后执行动画
+    _anim.fillMode = kCAFillModeForwards; // 动画结束之后保持在动画的最后一帧
+    _anim.repeatCount = HUGE_VAL;
     
     self.alpha = 0;
     

@@ -18,19 +18,10 @@
 @implementation AnimationImagesViewController
 
 #pragma mark -  life circle
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
     [self.view addSubview:self.bgImgView];
     [self.view addSubview:self.animationImgView];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark -  getter 
@@ -58,8 +49,8 @@
         }
         
         _animationImgView.animationImages = arr;
-        // 设置循环次数
-        _animationImgView.animationRepeatCount = -1;
+        // infinite 就是0，默认也是0
+        // _animationImgView.animationRepeatCount = 0;
         _animationImgView.animationDuration = 2;
         [_animationImgView startAnimating];
     }

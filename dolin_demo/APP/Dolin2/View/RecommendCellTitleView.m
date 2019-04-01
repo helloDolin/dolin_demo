@@ -8,6 +8,7 @@
 
 #import "RecommendCellTitleView.h"
 #import "RecommendModel.h"
+#import "UIImage+DLRoundImg.h"
 
 @interface RecommendCellTitleView()
 {
@@ -51,6 +52,13 @@
 
 - (void)setTitleModel:(RecommendModel *)titleModel {
     _titleModel = titleModel;
+    
+//    [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:titleModel.user.avatar_url] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+//        UIImage* newImg = [image dl_roundImgBySize:CGSizeMake(32, 32) bgColor:[UIColor whiteColor] borderColor:RANDOM_UICOLOR borderWidth:2];
+//        self->_avatarImageView.image = newImg;
+//    }];
+    
+    
     [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:titleModel.user.avatar_url]];
     if (titleModel.user.is_anonymous) {
         _userNameLabel.text = @"匿名";

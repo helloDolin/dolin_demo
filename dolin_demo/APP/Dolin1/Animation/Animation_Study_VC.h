@@ -9,7 +9,7 @@
 #import "DolinBaseViewController.h"
 
 /**
- 页面描述：
+ 页面描述：动画相关学习
  */
 @interface Animation_Study_VC : DolinBaseViewController
 

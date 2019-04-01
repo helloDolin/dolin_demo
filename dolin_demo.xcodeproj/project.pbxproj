@@ -161,7 +161,6 @@
 		3A7C692E1DEC0D6800225D28 /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C689A1DEC0D6800225D28 /* UITabBar+Badge.m */; };
 		3A7C692F1DEC0D6800225D28 /* UITableView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C689C1DEC0D6800225D28 /* UITableView+Common.m */; };
 		3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C689F1DEC0D6800225D28 /* UIView+Extension.m */; };
-		3A7C69311DEC0D6800225D28 /* UIView+LJC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68A11DEC0D6800225D28 /* UIView+LJC.m */; };
 		3A7C69321DEC0D6800225D28 /* UIView+ZKPulseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68A31DEC0D6800225D28 /* UIView+ZKPulseView.m */; };
 		3A7C69331DEC0D6800225D28 /* UIWindow+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68A51DEC0D6800225D28 /* UIWindow+Expand.m */; };
 		3A7C69341DEC0D6800225D28 /* DolinConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68A81DEC0D6800225D28 /* DolinConstant.m */; };
@@ -192,7 +191,6 @@
 		3AA3B3481E7694A500F6221C /* WKDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3B3471E7694A500F6221C /* WKDelegateController.m */; };
 		3AA544891EE8015D00A6C20F /* PhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA544871EE8015D00A6C20F /* PhotoBrowserCell.m */; };
 		3AA5448A1EE8015D00A6C20F /* PhotoBrowserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA544881EE8015D00A6C20F /* PhotoBrowserCell.xib */; };
-		3AA722D91F03B193000EFF1F /* CABasicAnimationStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA722D81F03B193000EFF1F /* CABasicAnimationStudyVC.m */; };
 		3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E251D8FC3B500D0114B /* libz.tbd */; };
 		3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */; };
 		3AC4835C1E49A93D0008CE57 /* SimulateKeepScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4834E1E49A93D0008CE57 /* SimulateKeepScroll.m */; };
@@ -514,8 +512,6 @@
 		3A7C689C1DEC0D6800225D28 /* UITableView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Common.m"; sourceTree = "<group>"; };
 		3A7C689E1DEC0D6800225D28 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		3A7C689F1DEC0D6800225D28 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		3A7C68A01DEC0D6800225D28 /* UIView+LJC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJC.h"; sourceTree = "<group>"; };
-		3A7C68A11DEC0D6800225D28 /* UIView+LJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJC.m"; sourceTree = "<group>"; };
 		3A7C68A21DEC0D6800225D28 /* UIView+ZKPulseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZKPulseView.h"; sourceTree = "<group>"; };
 		3A7C68A31DEC0D6800225D28 /* UIView+ZKPulseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZKPulseView.m"; sourceTree = "<group>"; };
 		3A7C68A41DEC0D6800225D28 /* UIWindow+Expand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Expand.h"; sourceTree = "<group>"; };
@@ -573,8 +569,6 @@
 		3AA544861EE8015D00A6C20F /* PhotoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowserCell.h; sourceTree = "<group>"; };
 		3AA544871EE8015D00A6C20F /* PhotoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserCell.m; sourceTree = "<group>"; };
 		3AA544881EE8015D00A6C20F /* PhotoBrowserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoBrowserCell.xib; sourceTree = "<group>"; };
-		3AA722D71F03B193000EFF1F /* CABasicAnimationStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationStudyVC.h; sourceTree = "<group>"; };
-		3AA722D81F03B193000EFF1F /* CABasicAnimationStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationStudyVC.m; sourceTree = "<group>"; };
 		3AB96E251D8FC3B500D0114B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AB96E271D8FC3F800D0114B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		3AC4834D1E49A93D0008CE57 /* SimulateKeepScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateKeepScroll.h; sourceTree = "<group>"; };
@@ -753,8 +747,8 @@
 		16C602B1224A609200F3DA0B /* AutoLayoutPriority */ = {
 			isa = PBXGroup;
 			children = (
-				16C602B2224A609200F3DA0B /* AutoLayoutPriority.m */,
 				16C602B3224A609200F3DA0B /* AutoLayoutPriority.h */,
+				16C602B2224A609200F3DA0B /* AutoLayoutPriority.m */,
 			);
 			path = AutoLayoutPriority;
 			sourceTree = "<group>";
@@ -826,8 +820,6 @@
 			children = (
 				3A38F48F1E1E558D0036DE63 /* Animation_Study_VC.h */,
 				3A38F4901E1E558D0036DE63 /* Animation_Study_VC.m */,
-				3AA722D71F03B193000EFF1F /* CABasicAnimationStudyVC.h */,
-				3AA722D81F03B193000EFF1F /* CABasicAnimationStudyVC.m */,
 				3A38F4751E1E55090036DE63 /* AnimationImagesViewController.h */,
 				3A38F4761E1E55090036DE63 /* AnimationImagesViewController.m */,
 				3A38F4771E1E55090036DE63 /* AnimationLikeBtnViewController.h */,
@@ -1299,8 +1291,6 @@
 				3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */,
 				3A7C689E1DEC0D6800225D28 /* UIView+Extension.h */,
 				3A7C689F1DEC0D6800225D28 /* UIView+Extension.m */,
-				3A7C68A01DEC0D6800225D28 /* UIView+LJC.h */,
-				3A7C68A11DEC0D6800225D28 /* UIView+LJC.m */,
 				3A7C68A21DEC0D6800225D28 /* UIView+ZKPulseView.h */,
 				3A7C68A31DEC0D6800225D28 /* UIView+ZKPulseView.m */,
 			);
@@ -1885,7 +1875,6 @@
 				3AC483611E49A93D0008CE57 /* SimulateTwitterView.m in Sources */,
 				3ADF3A551EBC0F3A00A5EFF6 /* DLVideoPlayView.m in Sources */,
 				3A7C68D41DEC0D6800225D28 /* UIBezierPathViewController.m in Sources */,
-				3A7C69311DEC0D6800225D28 /* UIView+LJC.m in Sources */,
 				3A7C691D1DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
 				3A7C68C31DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.m in Sources */,
 				3AA0C1B51E71628A009B1628 /* ChainCodeVC.m in Sources */,
@@ -1946,7 +1935,6 @@
 				16488147222684AD00A35107 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				3A7776D91EE7EF7800B3E793 /* NoteListDelegate.m in Sources */,
 				3A7C68E01DEC0D6800225D28 /* Dolin3ViewController.m in Sources */,
-				3AA722D91F03B193000EFF1F /* CABasicAnimationStudyVC.m in Sources */,
 				3A7C69211DEC0D6800225D28 /* PhotoScrollView.m in Sources */,
 				3A7C69351DEC0D6800225D28 /* DolinTopWindowUtil.m in Sources */,
 				1648813D222678FE00A35107 /* FDCellModel.m in Sources */,

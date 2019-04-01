@@ -25,20 +25,13 @@
     [self.view addSubview:self.tableView];
     
     self.arr = [@[
-                  @"原生动画API_study1-OriginAPIAnimateStudyVC",
-                  @"原生动画API_study2-AnimationStudyVC",
-                  @"AnimationImages-AnimationImagesViewController",
+                  @"CABasicAnimation+CAShapeLayer-LoadingBtnVC",
+                  @"基本+关键帧+组合-AnimationStudyVC",
+                  @"弹簧+过渡+改变锚点-OriginAPIAnimateStudyVC",
+                  @"gif-AnimationImagesViewController",
                   @"点赞动画-AnimationLikeBtnViewController",
-                  @"CGAffineTransformStudy-CGAffineTransformStudy_VC",
-                  @"炫酷loading按钮-LoadingBtnVC",
-                  @"CABasicAnimationStudyVC-CABasicAnimationStudyVC"
+                  @"仿射变换矩阵-CGAffineTransformStudy_VC",
                   ]mutableCopy];
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
 }
 
 - (void)viewDidLayoutSubviews {
@@ -46,10 +39,6 @@
         make.edges.equalTo(self.view);
     }];
 }
-
-#pragma mark - method
-
-#pragma mark - event
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -104,8 +93,5 @@
     }
     return _tableView;
 }
-#pragma mark - API
-
-#pragma mark - override
 
 @end

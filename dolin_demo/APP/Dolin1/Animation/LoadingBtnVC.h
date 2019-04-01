@@ -8,9 +8,6 @@
 
 #import "DolinBaseViewController.h"
 
-/**
- 页面描述：
- */
 @interface LoadingBtnVC : DolinBaseViewController
 
 @end

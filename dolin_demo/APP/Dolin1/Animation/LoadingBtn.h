@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^CallBack)();
+typedef void (^CallBack)(void);
 
 @interface LoadingBtn : UIButton
 

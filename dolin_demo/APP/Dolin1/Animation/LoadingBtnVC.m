@@ -10,10 +10,10 @@
 #import "LoadingBtn.h"
 #import "DLAnimateTransition.h"
 
-@interface LoadingBtnVC ()
-{
-    LoadingBtn* _btn1;
-}
+@interface LoadingBtnVC ()<UIViewControllerTransitioningDelegate>
+
+@property(nonatomic,strong)LoadingBtn* loadingBtn;
+
 @end
 
 @implementation LoadingBtnVC
@@ -25,20 +25,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%p",self);
+    self.transitioningDelegate = self;
 
     WS(weakSelf);
-    _btn1 = [LoadingBtn LoadingBtnInitWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, 300, 100) andBackgroundColor:RANDOM_UICOLOR andTitle:@"hello" andTitleColor:RANDOM_UICOLOR andTitleFont:[UIFont systemFontOfSize:15] andCornerRadius:10 andClickBlock:^{
+    self.loadingBtn = [LoadingBtn LoadingBtnInitWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, 100) andBackgroundColor:RANDOM_UICOLOR andTitle:@"LOGIN" andTitleColor:RANDOM_UICOLOR andTitleFont:[UIFont systemFontOfSize:15] andCornerRadius:10 andClickBlock:^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            LoadingBtnVC *vc = [LoadingBtnVC new];
-            [weakSelf presentViewController:vc animated:YES completion:nil];
+            [weakSelf.loadingBtn stopAnimateAndCallBack:^{
+                LoadingBtnVC *vc = [LoadingBtnVC new];
+                [weakSelf presentViewController:vc animated:YES completion:nil];
+            }];
         });
     }];
-    [self.view addSubview:_btn1];
+    [self.view addSubview:self.loadingBtn];
     
-    // testBtn
+    // dismissBtn
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    btn.frame = CGRectMake(0, 0, 375, NAVIGATION_BAR_HEIGHT);
+    btn.frame = CGRectMake(0, 0, SCREEN_WIDTH, NAVIGATION_BAR_HEIGHT);
     btn.backgroundColor = [UIColor orangeColor];
     [btn setTitle:@"dismiss" forState:UIControlStateNormal];
     btn.tintColor = [UIColor whiteColor];
@@ -46,34 +48,17 @@
     [self.view addSubview:btn];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-   
-}
-
-#pragma mark - method
-
-
 #pragma mark - event
 - (void)btnAction {
-    [_btn1 stopAnimateAndCallBack:^{
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 #pragma mark - UIViewControllerTransitioningDelegate
-
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     return [DLAnimateTransition linAnimateTransitionWithType:LinAnimateTransitionTypePresent];
 }
 
-
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     return [DLAnimateTransition linAnimateTransitionWithType:LinAnimateTransitionTypeDismiss];
 }
-#pragma mark - getter && setter
-
-#pragma mark - API
-
-#pragma mark - override
 
 @end

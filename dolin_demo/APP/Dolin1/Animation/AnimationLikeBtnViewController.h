@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- *   点赞动画
+ * 点赞动画
  */
 @interface AnimationLikeBtnViewController : DolinBaseViewController
 
