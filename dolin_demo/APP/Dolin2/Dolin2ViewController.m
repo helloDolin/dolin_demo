@@ -13,6 +13,7 @@
 #import "MJRefresh.h"
 #import "RecommendMusicCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
+#import <LYEmptyView/LYEmptyViewHeader.h>
 
 @interface Dolin2ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -26,10 +27,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self.view addSubview:self.tableView];
     _pageNum = 1;
     _data = [NSMutableArray array];
-    [self req];
+    self.tableView.ly_emptyView = [LYEmptyView emptyActionViewWithImageStr:@"noData"
+                                                                  titleStr:@"无数据"
+                                                                 detailStr:@"请稍后再试!"
+                                                               btnTitleStr:@"重新加载"
+                                                                    target:self
+                                                                    action:@selector(req)];
 }
 
 #pragma mark -  method
