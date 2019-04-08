@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "16C8D6391D33511700228ABD"
-               BuildableName = "dolin_demo.app"
-               BlueprintName = "dolin_demo"
+               BuildableName = " .app"
+               BlueprintName = " "
                ReferencedContainer = "container:dolin_demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "16C8D6391D33511700228ABD"
-            BuildableName = "dolin_demo.app"
-            BlueprintName = "dolin_demo"
+            BuildableName = " .app"
+            BlueprintName = " "
             ReferencedContainer = "container:dolin_demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "16C8D6391D33511700228ABD"
-            BuildableName = "dolin_demo.app"
-            BlueprintName = "dolin_demo"
+            BuildableName = " .app"
+            BlueprintName = " "
             ReferencedContainer = "container:dolin_demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -87,8 +87,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "16C8D6391D33511700228ABD"
-            BuildableName = "dolin_demo.app"
-            BlueprintName = "dolin_demo"
+            BuildableName = " .app"
+            BlueprintName = " "
             ReferencedContainer = "container:dolin_demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

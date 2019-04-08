@@ -46,7 +46,7 @@
     [application scheduleLocalNotification:notification];
     
     
-    // 在iOS 8.0之后如果要使用本地通知，需要得到用户的许可;
+    // 在iOS 8.0之后如果要使用本地通知、远程通知，需要得到用户的许可;
     if ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0) {
         UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound |UIUserNotificationTypeAlert categories:nil];
         // 注册用户是否需要通知内容
@@ -90,7 +90,7 @@
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
 }
 
-- (void)setUpOthers {
+- (void)setUpJSPatch {
     // 测试JSPatch
     [JSPatch testScriptInBundle];
 }
@@ -103,8 +103,7 @@
     [self setUpWindow];
     [self setUpLocalNotification:application];
     [self setUpAudioPlayBack];
-    [self setUpOthers];
-    
+    [self setUpJSPatch];
     return YES;
 }
 
@@ -163,27 +162,34 @@
     
 }
 
-// 远程推送通知步骤：
-// iOS8以后，使用远程通知，需要请求用户授权
-// 注册远程通知成功后会调用以下方法，获取deviceToken设备令牌：
+// 引导用户开启push
+// [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+// UIApplicationLaunchOptionsKey 
+
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings NS_DEPRECATED_IOS(8_0, 10_0, "Use UserNotifications Framework's -[UNUserNotificationCenter requestAuthorizationWithOptions:completionHandler:]") __TVOS_PROHIBITED {
+    [application registerForRemoteNotifications];
+}
+
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     // 将deviceToken交给某方保存，如：JSPatch
+    NSString* tokenStr = [NSString stringWithFormat:@"%@",deviceToken];
     // 把deviceToken设备令牌发送给服务器，时刻保持deviceToken是最新的
+} 
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error NS_AVAILABLE_IOS(3_0) {
+    
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    
     if ([url.absoluteString hasPrefix:@"todaywidget"]) {
         // 判断是否是直接跳入到添加页面
         if ([url.absoluteString hasSuffix:@"add"]) {
             UITabBarController *tabVC = (UITabBarController*)self.window.rootViewController;
-            
             UINavigationController *nav = (UINavigationController *)tabVC.viewControllers[0];
             AddNoteViewController* addVC = [AddNoteViewController new];
             [nav pushViewController:addVC animated:YES];
         }
     }
-    
     return YES;
 }
 

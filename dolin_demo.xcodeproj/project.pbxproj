@@ -319,7 +319,7 @@
 		16C602A7224A406500F3DA0B /* RecommendCellTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendCellTitleView.m; sourceTree = "<group>"; };
 		16C602B2224A609200F3DA0B /* AutoLayoutPriority.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutPriority.m; sourceTree = "<group>"; };
 		16C602B3224A609200F3DA0B /* AutoLayoutPriority.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutPriority.h; sourceTree = "<group>"; };
-		16C8D63A1D33511700228ABD /* dolin_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dolin_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C8D63A1D33511700228ABD /*  .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = " .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C8D63E1D33511700228ABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16C8D6401D33511700228ABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		16C8D6411D33511700228ABD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -786,7 +786,7 @@
 		16C8D63B1D33511700228ABD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				16C8D63A1D33511700228ABD /* dolin_demo.app */,
+				16C8D63A1D33511700228ABD /*  .app */,
 				3AF03B751EC6E8A4008DDF80 /* TodayWidget.appex */,
 				3A7F97371EC71E54007BB5B8 /* TableKit.framework */,
 			);
@@ -1547,9 +1547,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		16C8D6391D33511700228ABD /* dolin_demo */ = {
+		16C8D6391D33511700228ABD /*   */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16C8D6511D33511700228ABD /* Build configuration list for PBXNativeTarget "dolin_demo" */;
+			buildConfigurationList = 16C8D6511D33511700228ABD /* Build configuration list for PBXNativeTarget " " */;
 			buildPhases = (
 				8C36E570CBD02ECA4B6FF703 /* [CP] Check Pods Manifest.lock */,
 				16C8D6361D33511700228ABD /* Sources */,
@@ -1565,9 +1565,9 @@
 				3AF03B811EC6E8A5008DDF80 /* PBXTargetDependency */,
 				3A7F973D1EC71E54007BB5B8 /* PBXTargetDependency */,
 			);
-			name = dolin_demo;
+			name = " ";
 			productName = dolin_demo;
-			productReference = 16C8D63A1D33511700228ABD /* dolin_demo.app */;
+			productReference = 16C8D63A1D33511700228ABD /*  .app */;
 			productType = "com.apple.product-type.application";
 		};
 		3A7F97361EC71E54007BB5B8 /* TableKit */ = {
@@ -1668,7 +1668,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				16C8D6391D33511700228ABD /* dolin_demo */,
+				16C8D6391D33511700228ABD /*   */,
 				3AF03B741EC6E8A4008DDF80 /* TodayWidget */,
 				3A7F97361EC71E54007BB5B8 /* TableKit */,
 			);
@@ -2349,7 +2349,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16C8D6511D33511700228ABD /* Build configuration list for PBXNativeTarget "dolin_demo" */ = {
+		16C8D6511D33511700228ABD /* Build configuration list for PBXNativeTarget " " */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16C8D6521D33511700228ABD /* Debug */,
