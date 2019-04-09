@@ -32,7 +32,7 @@
 - (void)varInit {
     self.spacing = 20.0;
     self.itemSize = CGSizeMake(280, 400);
-    self.edgeInset = UIEdgeInsetsMake(20, 20, 20, 20);
+    //self.edgeInset = UIEdgeInsetsMake(20, 20, 20, 20);
     self.scale = 1.0;
 }
 
@@ -50,7 +50,7 @@
 // 内容的宽度为: n * （item + space） - space + edge.left + edge.right
 - (CGSize)collectionViewContentSize {
     NSInteger count = [self.collectionView numberOfItemsInSection:0];
-    CGFloat width = count*(self.itemSize.width+self.spacing) - self.spacing+self.edgeInset.left+self.edgeInset.right;
+    CGFloat width = count * (self.itemSize.width + self.spacing) - self.spacing + self.edgeInset.left + self.edgeInset.right;
     CGFloat height = self.collectionView.bounds.size.height;
     return CGSizeMake(width, height);
 }
@@ -58,28 +58,22 @@
 // 该对象包含对应cell外观所需的必要属性，包括center、frame、transform、alpha及其他属性
 // 这个主要是给cell设置frame。
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
     UICollectionViewLayoutAttributes *attribute = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-    
     attribute.size = self.itemSize;
-    
     CGFloat x = self.edgeInset.left + indexPath.item * (self.itemSize.width + self.spacing);
     CGFloat y = 0.5 * (self.collectionView.bounds.size.height - self.itemSize.height);
     attribute.frame = CGRectMake(x, y, attribute.size.width, attribute.size.height);
-    
     return attribute;
 }
 
 // 在此方法中设置缩放效果
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
-    
     NSArray *attributes = [self attributesInRect:rect];
-    
     if (self.scale==1) {
         return attributes;
     }
     // 找到屏幕中间的位置
-    NSLog(@"self.collectionView.contentOffset.x = %f",self.collectionView.contentOffset.x);
+    // NSLog(@"self.collectionView.contentOffset.x = %f",self.collectionView.contentOffset.x);
     CGFloat center = self.collectionView.contentOffset.x + 0.5 * self.collectionView.bounds.size.width;
     for (UICollectionViewLayoutAttributes *attribute in attributes) {
         // 计算每一个cell离屏幕中间的距离
@@ -101,13 +95,10 @@
 // 滚动停止时某一个cell正好在屏幕中间
 // 在此方法中获取默认情况下停止滚动时离屏幕中间最近的那个cell，并计算两者的距离，将此距离补到proposedContentOffset上即可。
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity {
-    
     CGRect oldRect = CGRectMake(proposedContentOffset.x, proposedContentOffset.y, self.collectionView.bounds.size.width, self.collectionView.bounds.size.height);
     NSArray *attributes = [self layoutAttributesForElementsInRect:oldRect];
-    
     CGFloat minOffset = MAXFLOAT;
     CGFloat center = proposedContentOffset.x + 0.5 * self.collectionView.bounds.size.width;
-    
     for (UICollectionViewLayoutAttributes* attribute in attributes) {
         CGFloat offset = attribute.center.x - center;
         if (ABS(offset) < ABS(minOffset)) {
@@ -115,7 +106,7 @@
         }
     }
     CGFloat newX = proposedContentOffset.x + minOffset;
-    CGFloat newY =  proposedContentOffset.y;
+    CGFloat newY = proposedContentOffset.y;
     return CGPointMake(newX, newY);
 }
 
@@ -155,7 +146,6 @@
 }
 
 - (void)setItemSize:(CGSize)itemSize {
-    
     if (!CGSizeEqualToSize(_itemSize, itemSize)) {
         _itemSize = itemSize;
         [self invalidateLayout];
@@ -163,7 +153,6 @@
 }
 
 - (void)setScale:(CGFloat)scale {
-    
     if (_scale != scale) {
         _scale = scale;
         [self invalidateLayout];
@@ -171,7 +160,6 @@
 }
 
 - (void)setEdgeInset:(UIEdgeInsets)edgeInset {
-    
     if (!UIEdgeInsetsEqualToEdgeInsets(_edgeInset, edgeInset)) {
         _edgeInset = edgeInset;
         [self invalidateLayout];
@@ -180,12 +168,10 @@
 
 #pragma mark - getter
 - (NSMutableArray *)rectAttributes {
-    
     if (!_rectAttributes) {
         _rectAttributes = [NSMutableArray array];
     }
     return _rectAttributes;
 }
-
 
 @end

@@ -13,14 +13,13 @@
 
 @interface Banner2VC ()<UICollectionViewDataSource, UICollectionViewDelegate>
 {
-    CGFloat _currentOffsetX;
     BannerLayout *_layout;
     NSArray<NSString*> *_datas;
-    
+    NSInteger _totalItemsCount;
     NSTimer *_timer;
 }
-@property (strong, nonatomic) UICollectionView *collectionView;
-@property (strong, nonatomic) NSIndexPath *currentIndexPath;
+@property (nonatomic,strong) UICollectionView *collectionView;
+@property (nonatomic,assign) int currentIndex;
 @end
 
 @implementation Banner2VC
@@ -33,32 +32,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.collectionView];
-    
     [self varInit];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
 }
 
 #pragma mark - method
 - (void)varInit {
     _datas = @[
-               @"http://ws.xzhushou.cn/focusimg/201508201549023.jpg",
                @"http://ws.xzhushou.cn/focusimg/52.jpg",
                @"http://ws.xzhushou.cn/focusimg/51.jpg",
                @"http://ws.xzhushou.cn/focusimg/50.jpg",
-               @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489732412&di=22a24a46a55e9b29cb8994da8690faea&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.ddvip.com%2FUpload%2F20150811%2F90701439262241.jpg",
-               @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489137693663&di=763343bc48723a9139c4fce22d781fff&imgtype=0&src=http%3A%2F%2Fww1.sinaimg.cn%2Flarge%2Fa32aa58ftw1dvfunkqms4j.jpg"
                ];
-    _currentOffsetX = 0;
+    _totalItemsCount = _datas.count * 100;
     [self p_setUpTimer];
 }
 
 - (void)p_setUpTimer {
     if (!_timer) {
-        _timer = [NSTimer timerWithTimeInterval:0.01 target:[YYWeakProxy proxyWithTarget:self] selector:@selector(timerAction) userInfo:nil repeats:YES];
+        _timer = [NSTimer timerWithTimeInterval:3 target:[YYWeakProxy proxyWithTarget:self] selector:@selector(timerAction) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
     }    
 }
@@ -71,50 +61,54 @@
     _timer = nil;
 }
 
-#pragma mark - event
-- (void)timerAction {
-    [self.collectionView setContentOffset:CGPointMake(_currentOffsetX, 0)];
-    ;
-    // TODO:这块的处理，待优化
-    _currentOffsetX += 1.0;
-    CGFloat subNum = _currentOffsetX - [_layout getLastItemX];
-    if ( subNum > 0 ) {
-        _currentOffsetX = 0;
+- (void)viewWillLayoutSubviews {
+    if (self.collectionView.contentOffset.x == 0 && _totalItemsCount) {
+        int targetIndex = _totalItemsCount * 0.5;
+        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:targetIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];
     }
+}
+
+- (void)timerAction {
+    int targetIndex = self.currentIndex + 1;
+    if (targetIndex >= _totalItemsCount) {
+        targetIndex = _totalItemsCount * 0.5;
+        // 末尾到中间位置的滚动取消动画
+        [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:targetIndex - 1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];
+    }
+    [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:targetIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+}
+
+
+/**
+ 根据indexpath.row获取数据数组下标
+
+ @param index indexPath.row
+ @return 数据数组下标
+ */
+- (NSInteger)calculateCurrentIndexByCellIndex:(NSInteger)index {
+    return index % _datas.count;
 }
 
 #pragma mark - UICollectionViewDataSource && UICollectionViewDelegate
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return _datas.count;
+    return _totalItemsCount;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     Banner2Cell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Banner2Cell" forIndexPath:indexPath];
-    cell.backgroundColor = RANDOM_UICOLOR;
+    cell.backgroundColor = [UIColor lightGrayColor];
     cell.layer.cornerRadius = 5;
-    cell.banner_lbl.text = [NSString stringWithFormat:@"%ld",indexPath.row];
-    [cell.banner_imgView sd_setImageWithURL:[NSURL URLWithString:_datas[indexPath.row]]];
+    NSInteger index = [self calculateCurrentIndexByCellIndex:indexPath.row];
+    cell.banner_lbl.text = [NSString stringWithFormat:@"%ld",index];
+    [cell.banner_imgView sd_setImageWithURL:[NSURL URLWithString:_datas[index]]];
     return cell;
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    // 根据item中心位置获取当前indexPath
-    NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:CGPointMake(scrollView.contentOffset.x + 0.5 * scrollView.bounds.size.width, 0.5 * scrollView.bounds.size.height)];
-    if (!indexPath || self.currentIndexPath == indexPath) {
-        return;
-    }
-    self.currentIndexPath = indexPath;
-}
-
-//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-//    if (decelerate) {
-//        _currentOffsetX = scrollView.contentOffset.x;
-//        [self p_setUpTimer];
-//    }
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//
 //}
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    _currentOffsetX = scrollView.contentOffset.x;
     [self p_setUpTimer];
 }
 
@@ -123,7 +117,7 @@
 }
 
 #pragma mark - getter && setter
-- (UICollectionView *)collectionView {
+- (UICollectionView*)collectionView {
     if (!_collectionView) {
         _layout = [BannerLayout new];
         _layout.scale = 1.1;
@@ -140,8 +134,14 @@
     return _collectionView;
 }
 
-#pragma mark - API
-
-#pragma mark - override
+- (int)currentIndex {
+    int index = 0;
+    // TODO 硬编码优化
+    // +50 因为itemSize宽为100 暂为硬编码
+    // +20 因为padding为20 暂为硬编码
+    index = (self.collectionView.contentOffset.x + 50) / (_layout.itemSize.width + 20);
+    NSLog(@"%d",index);
+    return MAX(0,index);
+}
 
 @end

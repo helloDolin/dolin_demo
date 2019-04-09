@@ -36,6 +36,8 @@
     
     self.arr = [@[
                   @"动画相关-Animation_Study_VC",
+                  GET_STR(Banner-BannerViewController),
+                  @"Banner2-Banner2VC",
                   @"照片选取器-DLPhotoAlbumPickerVC",
                   @"仿keep引导页-SimulateKeepViewController",
                   @"仿掌盟个人中心-ImitateTGPPersonCenterVC",
@@ -48,10 +50,8 @@
                   @"UITableViewFDTemplateLayoutCell-FDTemplateVC",
                   @"extensionStudy-AddNoteViewController",
                   @"DLVideoVC-DLVideoVC",
-                  @"最近较火的Banner-Banner2VC",
                   @"联动table-LinkworkTableViewVC",
                   @"AutoLayout+Scroll-AutoLayout_ScrollViewVC",
-                  GET_STR(Banner-BannerViewController),
                   @"通讯录相关-GetContactsVC",
                   @"苹果密码框bug-PwdTextFieldBugViewController",
                   @"UIScrollView奇技淫巧-StrangeScorllViewController",

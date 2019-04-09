@@ -13,7 +13,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.banner_lbl.layer.backgroundColor = RANDOM_UICOLOR.CGColor;
+    self.banner_lbl.layer.backgroundColor = [UIColor redColor].CGColor;
     self.banner_lbl.layer.cornerRadius = 3.f;
     self.banner_lbl.textColor = [UIColor whiteColor];
 }
