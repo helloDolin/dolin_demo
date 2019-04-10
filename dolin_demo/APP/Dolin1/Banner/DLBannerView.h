@@ -16,9 +16,10 @@
 
 /**
  核心思想：
- 1.利用collectionview的重用cell减少内存开销
- 2.（不断修改cell数据）items 的 count为数据源个数的100倍，然后取index的时候进行取余
- 3.初始化和滚动到边界位置时，就取消动画滚到中间位置
+ 1.利用collectionviewcell的重用机制减少内存开销
+ 2.items 的 count为数据源个数的1000倍
+ 3.不断修改cell数据，数据源的index
+ 4.初始化和滚动到边界位置时，就取消动画滚到中间位置
  */
 @interface DLBannerView : UIView
 

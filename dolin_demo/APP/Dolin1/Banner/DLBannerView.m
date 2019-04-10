@@ -80,7 +80,7 @@ const NSTimeInterval kAutoScrollDelay = 2.0;
 @property(nonatomic,copy)NSArray<id>* datas;
 @property(nonatomic,strong)NSTimer* timer;
 @property(nonatomic,assign)NSTimeInterval autoScrollDelay;
-@property(nonatomic,assign)int currentIndex;
+@property(nonatomic,assign)int currentItemIndex;
 @property(nonatomic,weak)id<DLBannerViewDelegate> delegate;
 @property(nonatomic,strong)UIPageControl* pageControl;
 
@@ -144,7 +144,7 @@ const NSTimeInterval kAutoScrollDelay = 2.0;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    NSInteger index = [self pageControlIndexWithCurrentCellIndex:self.currentIndex];
+    NSInteger index = [self pageControlIndexWithCurrentCellIndex:self.currentItemIndex];
     self.pageControl.currentPage = index;
 }
 
@@ -162,7 +162,7 @@ const NSTimeInterval kAutoScrollDelay = 2.0;
 }
 
 - (void)scroll {
-    int targetIndex = self.currentIndex + 1;
+    int targetIndex = self.currentItemIndex + 1;
     if (targetIndex >= _totalItemsCount) {
         targetIndex = _totalItemsCount * 0.5;
         // 末尾到中间位置的滚动取消动画
@@ -173,7 +173,7 @@ const NSTimeInterval kAutoScrollDelay = 2.0;
 
 - (void)p_setUpTimer {
     if (!_timer) {
-        _timer = [NSTimer timerWithTimeInterval:2 target:[YYWeakProxy proxyWithTarget:self] selector:@selector(scroll) userInfo:nil repeats:YES];
+        _timer = [NSTimer timerWithTimeInterval:self.autoScrollDelay target:[YYWeakProxy proxyWithTarget:self] selector:@selector(scroll) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
     }
     
@@ -221,7 +221,7 @@ const NSTimeInterval kAutoScrollDelay = 2.0;
     return _pageControl;
 }
 
-- (int)currentIndex {
+- (int)currentItemIndex {
     int index = 0;
     index = _collectionView.contentOffset.x / _layout.itemSize.width;
     return MAX(0,index);
@@ -229,12 +229,13 @@ const NSTimeInterval kAutoScrollDelay = 2.0;
 
 - (void)setDatas:(NSArray<id> *)datas {
     _datas = datas;
-    _totalItemsCount = datas.count * 100;
+    _totalItemsCount = datas.count * 1000;
 }
 
 - (void)setAutoScrollDelay:(NSTimeInterval)autoScrollDelay {
+    _autoScrollDelay = autoScrollDelay;
     if (autoScrollDelay < 0) {
-        autoScrollDelay = kAutoScrollDelay;
+        _autoScrollDelay = kAutoScrollDelay;
     }
 }
 

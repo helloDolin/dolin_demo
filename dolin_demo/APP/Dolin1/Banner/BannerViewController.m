@@ -27,7 +27,7 @@
                        @{@"urlStr":@"http://ws.xzhushou.cn/focusimg/51.jpg",@"title":@"齐秦齐秦齐秦齐秦齐秦齐秦齐秦齐秦齐秦齐秦"},
                        @{@"urlStr":@"http://ws.xzhushou.cn/focusimg/50.jpg",@"title":@"你是心中的日月"},
                        ];
-    DLBannerView *bannerView = [DLBannerView dlBannerViewWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, 200) delegate:self autoScrollDelay:2 datas:datas];
+    DLBannerView *bannerView = [DLBannerView dlBannerViewWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, 200) delegate:self autoScrollDelay:1 datas:datas];
     [self.view addSubview:bannerView];
 }
 
