@@ -40,6 +40,7 @@
 }
 
 - (void)setBelowCount:(NSInteger)belowCount {
+    // 调整父类的 belowCount
     self.superModel.belowCount += (belowCount - _belowCount);
     _belowCount = belowCount;
 }
