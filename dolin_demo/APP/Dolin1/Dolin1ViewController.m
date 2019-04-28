@@ -13,10 +13,11 @@
 #import <objc/runtime.h>
 #import "DLSystemPermissionsManager.h"
 #import "MJRefresh.h"
+#import "DLFoldCellModel.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
-@property (nonatomic, strong) NSMutableArray *arr;
+@property (nonatomic, strong) NSMutableArray<DLFoldCellModel*> *data;
 
 @end
 
@@ -32,36 +33,8 @@
     [self.view addSubview:self.tableView];
     
     [self setUpFPSLabel];
-    [self setRightBarBtn];
-    
-    self.arr = [@[
-                  @"动画相关-Animation_Study_VC",
-                  GET_STR(Banner-BannerViewController),
-                  @"Banner2-Banner2VC",
-                  @"照片选取器-DLPhotoAlbumPickerVC",
-                  @"仿keep引导页-SimulateKeepViewController",
-                  @"仿掌盟个人中心-ImitateTGPPersonCenterVC",
-                  @"仿Twitter-SimulateTwitterViewController",
-                  @"仿淘宝商品详情-ImitateGoodDetailVC",
-                  @"链式编程-ChainCodeVC",
-                  @"禁用旋转时全屏横屏方法-ChangeDeviceOrientVC",
-                  @"runtime-RunTimeStudy_VC",
-                  @"AutoLayoutPriority-AutoLayoutPriority",
-                  @"UITableViewFDTemplateLayoutCell-FDTemplateVC",
-                  @"extensionStudy-AddNoteViewController",
-                  @"DLVideoVC-DLVideoVC",
-                  @"联动table-LinkworkTableViewVC",
-                  @"AutoLayout+Scroll-AutoLayout_ScrollViewVC",
-                  @"通讯录相关-GetContactsVC",
-                  @"苹果密码框bug-PwdTextFieldBugViewController",
-                  @"UIScrollView奇技淫巧-StrangeScorllViewController",
-                  @"自定义Label-DolinLabelViewController",
-                  @"鬼相册-GhostAlbumViewController",
-                  @"富文本-RichTextViewController",
-                  @"TestWebView-TestWebViewVC",
-                  @"TestWKWebViewVC-TestWKWebViewVC",
-                  @"FmdbVC-FmdbVC"
-                  ]mutableCopy];
+    // [self setRightBarBtn];
+    [self setupTableViewData];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -79,6 +52,20 @@
     self.navigationController.delegate = self;
 }
 #pragma mark -  method
+
+/**
+ 设置 tableview 的数据
+ */
+- (void)setupTableViewData {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"dolin1data" ofType:@"json"];
+    NSData *data = [[NSData alloc] initWithContentsOfFile:path];
+    NSArray* arr = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+    self.data = [NSMutableArray array];
+    [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        DLFoldCellModel* model = [DLFoldCellModel modelWithDic:obj];
+        [self.data addObject:model];
+    }];
+}
 
 /**
  window上添加FPSLabel
@@ -113,37 +100,11 @@
     self.navigationItem.rightBarButtonItem = rightItem;
 }
 
-//- (void)addData {
-//   
-//}
-
-#pragma mark - UITableViewDataSource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _arr.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *reuseIdetify = @"FirstTableViewCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    }
-    cell.textLabel.text = _arr[indexPath.row];
-    return cell;
-}
-
-#pragma mark -  UITableViewDelegate 
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 49;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *title = _arr[indexPath.row];
+- (void)jumpToPageByModel:(DLFoldCellModel*)model {
+    NSString *title = model.text;
     NSString *className = [[title componentsSeparatedByString:@"-"] lastObject];
     
+    // 如果是相册，先进行权限判断
     if ([className isEqualToString:@"DLPhotoAlbumPickerVC"]) {
         if(![DLSystemPermissionsManager requestAuthorization:SystemPermissionsPhotoLibrary withSureBtnClickBlock:nil]) {
             return;
@@ -158,6 +119,70 @@
     customLeftBarButtonItem.title = @"返回";
     self.navigationItem.backBarButtonItem = customLeftBarButtonItem;
     [self.navigationController pushViewController:viewController animated:YES];
+}
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.data.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *reuseIdetify = @"FirstTableViewCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        // 设置缩进宽度
+        cell.indentationWidth = 40;
+    }
+    DLFoldCellModel* model = self.data[indexPath.row];
+    cell.textLabel.text = model.text;
+    return cell;
+}
+
+#pragma mark -  UITableViewDelegate
+- (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath {
+    DLFoldCellModel *model = self.data[indexPath.row];
+    return model.level.intValue;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    DLFoldCellModel* didSelectModel = self.data[indexPath.row];
+    [tableView beginUpdates];
+    
+    if (didSelectModel.belowCount == 0) {
+        NSArray* subModels = [didSelectModel open];
+        // 不能再被展开，进行跳转
+        if (!subModels || subModels.count == 0) {
+            [self jumpToPageByModel:didSelectModel];
+        }
+        
+        NSIndexSet* indexes = [NSIndexSet indexSetWithIndexesInRange:((NSRange){indexPath.row + 1,subModels.count})];
+        [self.data insertObjects:subModels atIndexes:indexes];
+        
+        NSMutableArray* indexPaths = [NSMutableArray array];
+        [subModels enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSIndexPath* insertIndexPath = [NSIndexPath indexPathForRow:indexPath.row + 1 + idx inSection:indexPath.section];
+            [indexPaths addObject:insertIndexPath];
+        }];
+        [tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+    }
+    else {
+        NSArray* subModels = [self.data subarrayWithRange:((NSRange){indexPath.row + 1,didSelectModel.belowCount})];
+        [didSelectModel closeWithSubModels:subModels];
+        [self.data removeObjectsInArray:subModels];
+        
+        NSMutableArray* indexPaths = [NSMutableArray array];
+        [subModels enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSIndexPath* insertIndexPath = [NSIndexPath indexPathForRow:(indexPath.row + 1 + idx) inSection:indexPath.section];
+            [indexPaths addObject:insertIndexPath];
+        }];
+        [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+    }
+
+    [tableView endUpdates];
 }
 
 // 闭合cell分割线需要实现此协议

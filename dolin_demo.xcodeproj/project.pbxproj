@@ -44,6 +44,8 @@
 		16D1D05F224BD31100435C3A /* DLMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1D05E224BD31100435C3A /* DLMusicPlayer.m */; };
 		16D1D062224BEA4D00435C3A /* MNMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1D061224BEA4D00435C3A /* MNMusicPlayer.m */; };
 		16D1D0C82250F26A00435C3A /* DLBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D1D0C72250F26A00435C3A /* DLBannerView.m */; };
+		16E34B6A227549E400CDD25B /* DLFoldCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E34B69227549E400CDD25B /* DLFoldCellModel.m */; };
+		16E34B6C22756F8600CDD25B /* dolin1data.json in Resources */ = {isa = PBXBuildFile; fileRef = 16E34B6B22756F8600CDD25B /* dolin1data.json */; };
 		3A332AAC1EB08D340072BD34 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */; };
 		3A38F4801E1E55090036DE63 /* AnimationImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4761E1E55090036DE63 /* AnimationImagesViewController.m */; };
 		3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4781E1E55090036DE63 /* AnimationLikeBtnViewController.m */; };
@@ -331,6 +333,9 @@
 		16D1D061224BEA4D00435C3A /* MNMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNMusicPlayer.m; sourceTree = "<group>"; };
 		16D1D0C62250F26A00435C3A /* DLBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLBannerView.h; sourceTree = "<group>"; };
 		16D1D0C72250F26A00435C3A /* DLBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLBannerView.m; sourceTree = "<group>"; };
+		16E34B68227549E400CDD25B /* DLFoldCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLFoldCellModel.h; sourceTree = "<group>"; };
+		16E34B69227549E400CDD25B /* DLFoldCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLFoldCellModel.m; sourceTree = "<group>"; };
+		16E34B6B22756F8600CDD25B /* dolin1data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dolin1data.json; sourceTree = "<group>"; };
 		3A0806621DFFC73500C162A3 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		3A332AAA1EB08D340072BD34 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
 		3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
@@ -915,6 +920,9 @@
 		3A7C67B31DEC0D6800225D28 /* Dolin1 */ = {
 			isa = PBXGroup;
 			children = (
+				16E34B6B22756F8600CDD25B /* dolin1data.json */,
+				16E34B68227549E400CDD25B /* DLFoldCellModel.h */,
+				16E34B69227549E400CDD25B /* DLFoldCellModel.m */,
 				3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */,
 				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
 				16C602B1224A609200F3DA0B /* AutoLayoutPriority */,
@@ -1659,6 +1667,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
@@ -1734,6 +1743,7 @@
 				3A7C69151DEC0D6800225D28 /* Icon@2x.png in Resources */,
 				3A7C68FA1DEC0D6800225D28 /* cm2_list_detail_icn_share@3x.png in Resources */,
 				3A97CD821EE7F5F600AC19F5 /* PhotoAlbumCategoryCell.xib in Resources */,
+				16E34B6C22756F8600CDD25B /* dolin1data.json in Resources */,
 				3A7C69141DEC0D6800225D28 /* fugai@3x.png in Resources */,
 				3A7C68F61DEC0D6800225D28 /* cm2_list_btn_more@3x.png in Resources */,
 				3A7C68E81DEC0D6800225D28 /* keep.mp4 in Resources */,
@@ -1931,6 +1941,7 @@
 				3A7C69291DEC0D6800225D28 /* UIImage+ImageWithColor.m in Sources */,
 				3ADF3A5D1EBC176A00A5EFF6 /* VideoModel.m in Sources */,
 				3A7C68BA1DEC0D6800225D28 /* Dolin1ViewController.m in Sources */,
+				16E34B6A227549E400CDD25B /* DLFoldCellModel.m in Sources */,
 				3A7776C21EE7EB0C00B3E793 /* ModelSelectedAsset.m in Sources */,
 				3A97CD8B1EE800AC00AC19F5 /* DLPhotoBrowserVC.m in Sources */,
 				3A7C68C11DEC0D6800225D28 /* PwdTextFieldBugViewController.m in Sources */,
