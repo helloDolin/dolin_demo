@@ -167,7 +167,7 @@
             NSIndexPath* insertIndexPath = [NSIndexPath indexPathForRow:indexPath.row + 1 + idx inSection:indexPath.section];
             [indexPaths addObject:insertIndexPath];
         }];
-        [tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+        [tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationRight];
     }
     else {
         NSArray* subModels = [self.data subarrayWithRange:((NSRange){indexPath.row + 1,didSelectModel.belowCount})];
@@ -179,7 +179,7 @@
             NSIndexPath* insertIndexPath = [NSIndexPath indexPathForRow:(indexPath.row + 1 + idx) inSection:indexPath.section];
             [indexPaths addObject:insertIndexPath];
         }];
-        [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+        [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
     }
 
     [tableView endUpdates];
