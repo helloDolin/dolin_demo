@@ -12,6 +12,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <JSPatchPlatform/JSPatch.h>
 #import "AddNoteViewController.h"
+#import <DoraemonKit/DoraemonManager.h>
 
 @interface AppDelegate ()
 
@@ -21,7 +22,7 @@
 
 #pragma mark -  method
 
-- (void)setUpWindow {
+- (void)setupWindow {
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     self.window.backgroundColor = [UIColor whiteColor];
     DolinTabBarController* dolinTabBarController = [[DolinTabBarController alloc]init];
@@ -32,7 +33,7 @@
     [self.window showLanuchPageAndSetSomeOthers];
 }
 
-- (void)setUpLocalNotification:(UIApplication*)application {
+- (void)setupLocalNotification:(UIApplication*)application {
 //    开始本地推送通知：
 //    第一种方法，延时推送，根据本地通知对象的fireDate设置进行本地推送通知
 //    
@@ -84,15 +85,21 @@
     return notification;
 }
 
-- (void)setUpAudioPlayBack {
+- (void)setupAudioPlayBack {
     // 让音乐可以在后台播放
     NSError* error;
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
 }
 
-- (void)setUpJSPatch {
+- (void)setupJSPatch {
     // 测试JSPatch
     [JSPatch testScriptInBundle];
+}
+
+- (void)setupDoraemonKit {
+#ifdef DEBUG
+    [[DoraemonManager shareInstance] install];
+#endif
 }
 
 #pragma mark -  UIApplicationDelegate 
@@ -100,10 +107,12 @@
 // 如果应用程序无法处理URL资源或继续用户活动，则返回NO，否则返回YES。如果应用程序由于远程通知而启动，则会忽略返回值。
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSLog(@"willFinishLaunchingWithOptions %@",launchOptions);
-    [self setUpWindow];
-    [self setUpLocalNotification:application];
-    [self setUpAudioPlayBack];
-    [self setUpJSPatch];
+    [self setupWindow];
+    [self setupLocalNotification:application];
+    [self setupAudioPlayBack];
+    [self setupJSPatch];
+    [self setupDoraemonKit];
+    
     return YES;
 }
 
