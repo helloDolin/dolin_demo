@@ -100,7 +100,7 @@ const NSTimeInterval kAutoScrollDelay = 2.0;
         self.autoScrollDelay = autoScrollDelay;
         self.datas = datas;
         [self layoutUI];
-        [self p_setUpTimer];
+        [self p_setupTimer];
     }
     return self;
 }
@@ -158,7 +158,7 @@ const NSTimeInterval kAutoScrollDelay = 2.0;
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-    [self p_setUpTimer];
+    [self p_setupTimer];
 }
 
 - (void)scroll {
@@ -171,7 +171,7 @@ const NSTimeInterval kAutoScrollDelay = 2.0;
     [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:targetIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
 }
 
-- (void)p_setUpTimer {
+- (void)p_setupTimer {
     if (!_timer) {
         _timer = [NSTimer timerWithTimeInterval:self.autoScrollDelay target:[YYWeakProxy proxyWithTarget:self] selector:@selector(scroll) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];

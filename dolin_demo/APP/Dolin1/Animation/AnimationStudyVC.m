@@ -26,10 +26,10 @@
     _testView.center = self.view.center;
     _testView.backgroundColor = RANDOM_UICOLOR;
     [self.view addSubview:_testView];
-    [self setUpBottomView];
+    [self setupBottomView];
 }
 
-- (void)setUpBottomView {
+- (void)setupBottomView {
     UIView* bottomView = [UIView new];
     bottomView.backgroundColor = RANDOM_UICOLOR;
     [self.view addSubview:bottomView];

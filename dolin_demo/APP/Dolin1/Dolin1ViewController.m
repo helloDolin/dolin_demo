@@ -32,7 +32,7 @@
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
     
-    [self setUpFPSLabel];
+    [self setupFPSLabel];
     // [self setRightBarBtn];
     [self setupTableViewData];
 }
@@ -70,7 +70,7 @@
 /**
  window上添加FPSLabel
  */
-- (void)setUpFPSLabel {
+- (void)setupFPSLabel {
     YYFPSLabel *fps = [[YYFPSLabel alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT - 20, 100, 20)];
     [[UIApplication sharedApplication].keyWindow addSubview:fps];
 }

@@ -62,7 +62,7 @@ static const NSTimeInterval kAutoScrollViewDelay = 3.0; // 延时时间
         [self addSubview:self.pageControl];
         [self p_changeLblLeft:self.maxCount - 1 center:0 right:1];
         
-        [self p_setUpTimer];
+        [self p_setupTimer];
     }
     return self;
 }
@@ -113,7 +113,7 @@ static const NSTimeInterval kAutoScrollViewDelay = 3.0; // 延时时间
 
 #pragma mark -  UIScrollViewDelegate
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-    [self p_setUpTimer];
+    [self p_setupTimer];
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
@@ -129,7 +129,7 @@ static const NSTimeInterval kAutoScrollViewDelay = 3.0; // 延时时间
     [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x + ScrollWidth, 0) animated:YES];
 }
 
-- (void)p_setUpTimer {
+- (void)p_setupTimer {
     if (!_timer) {
         _timer = [NSTimer timerWithTimeInterval:kAutoScrollViewDelay target:self selector:@selector(scorll) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];

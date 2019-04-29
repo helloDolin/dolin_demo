@@ -136,7 +136,7 @@ static CGFloat kUnderLineViewHeight = 2.0;
     firstButton.titleLabel.font = [UIFont systemFontOfSize:_fontSizeSelected];
     [firstButton setTitleColor:_titleSelectedColor forState:UIControlStateNormal];
     
-    [self setUpUnderLineViewPositionByBtn:firstButton];
+    [self setupUnderLineViewPositionByBtn:firstButton];
     
     [self addSubview:self.underLineView];
     
@@ -189,19 +189,19 @@ static CGFloat kUnderLineViewHeight = 2.0;
 /**
  *  设置下划线的位置 (deprecate)
  */
-//- (void)setUpUnderLineViewPositionByBtn:(UIButton*)btn withAnimation:(BOOL)isAnimation{
+//- (void)setupUnderLineViewPositionByBtn:(UIButton*)btn withAnimation:(BOOL)isAnimation{
 //    if (isAnimation) {
 //        // 在scrollViewDidScroll代理中做处理，这边就不需要动画了(已经修改为实时滑动)
 //        [UIView animateWithDuration:0.25f animations:^{
-//            [self setUpUnderLineViewPositionByBtn:btn];
+//            [self setupUnderLineViewPositionByBtn:btn];
 //        }];
 //    }
 //    else {
-//        [self setUpUnderLineViewPositionByBtn:btn];
+//        [self setupUnderLineViewPositionByBtn:btn];
 //    }
 //}
 
-- (void)setUpUnderLineViewPositionByBtn:(UIButton*)btn {
+- (void)setupUnderLineViewPositionByBtn:(UIButton*)btn {
     self.underLineView.frame = CGRectMake(0, kTitleContainerScrollViewHeight - _underLineHeight, btn.width,_underLineHeight);
     self.underLineView.centerX = btn.centerX;
 }

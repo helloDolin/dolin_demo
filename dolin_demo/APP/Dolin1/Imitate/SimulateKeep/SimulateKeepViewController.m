@@ -37,7 +37,7 @@
         
     [self setNoInterruptOtherMusic];
     [self layoutUI];
-    [self setUpUIConstraint];
+    [self setupUIConstraint];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,14 +60,14 @@
 
 #pragma mark -  method
 - (void)layoutUI {
-    [self setUpMoviePlayer];
+    [self setupMoviePlayer];
     [self.view addSubview:self.lblLogo];
     [self.view addSubview:self.simulateKeepScroll];
     [self.view addSubview:self.registBtn];
     [self.view addSubview:self.loginBtn];
 }
 
-- (void)setUpUIConstraint {
+- (void)setupUIConstraint {
     
     [self.lblLogo mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view.mas_left).offset(3.0);
@@ -127,7 +127,7 @@
     }
 }
 
-- (void)setUpMoviePlayer {
+- (void)setupMoviePlayer {
     NSString *urlStr = [[NSBundle mainBundle]pathForResource:@"keep.mp4" ofType:nil];
     NSURL *url = [NSURL fileURLWithPath:urlStr];
     _moviePlayer = [[MPMoviePlayerController alloc]initWithContentURL:url];

@@ -33,11 +33,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setUpTabBar];
-    [self setUpAllChildViewController];
-    [self setUpNavigationBar];
+    [self setupTabBar];
+    [self setupAllChildViewController];
+    [self setupNavigationBar];
     [self.tabBar showBadgeOnItemIndex:3];  // 设置小红点
-    [self setUpTabBarItemFontColor];
+    [self setupTabBarItemFontColor];
     
 }
 
@@ -47,7 +47,7 @@
 }
 
 #pragma mark -  method
-- (void)setUpTabBarItemFontColor {
+- (void)setupTabBarItemFontColor {
     //设置字体颜色
     UIColor *titleNormalColor = [UIColor colorWithWhite:0.8 alpha:1];
     UIColor *titleSelectedColor = [UIColor whiteColor];
@@ -60,27 +60,27 @@
                                                        nil] forState:UIControlStateSelected];
 }
 
-- (void)setUpTabBar {
+- (void)setupTabBar {
     self.tabBar.barStyle = UIBarStyleBlack;
 }
 
 // ps： 关于item的设置，这边可以直接用原生的item素材，选中和未选中状态
-- (void)setUpAllChildViewController{
+- (void)setupAllChildViewController{
     Dolin1ViewController *dolin1ViewController = [[Dolin1ViewController alloc]init];
-    [self setUpOneChildViewController:dolin1ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_discovery"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_discovery_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"discover", nil)];
+    [self setupOneChildViewController:dolin1ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_discovery"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_discovery_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"discover", nil)];
     
     Dolin2ViewController *dolin2ViewController = [[Dolin2ViewController alloc]init];
-    [self setUpOneChildViewController:dolin2ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_music"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_music_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"music", nil)];
+    [self setupOneChildViewController:dolin2ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_music"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_music_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"music", nil)];
     
     Dolin3ViewController *dolin3ViewController = [[Dolin3ViewController alloc]init];
-    [self setUpOneChildViewController:dolin3ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_friend"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_friend_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"RN", nil)];
+    [self setupOneChildViewController:dolin3ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_friend"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_friend_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"RN", nil)];
     
     Dolin4ViewController *dolin4ViewController = [[Dolin4ViewController alloc]init];
-    [self setUpOneChildViewController:dolin4ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_account"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_account_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"me", nil)];
+    [self setupOneChildViewController:dolin4ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_account"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_account_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"me", nil)];
     
 }
 
-- (void)setUpOneChildViewController:(UIViewController *)viewController
+- (void)setupOneChildViewController:(UIViewController *)viewController
                         normalImage:(UIImage*)normalImage
                       selectedImage:(UIImage*)selectedImage
                               title:(NSString *)title {
@@ -91,7 +91,7 @@
     [self addChildViewController:navC];
 }
 
-- (void)setUpNavigationBar {
+- (void)setupNavigationBar {
     UINavigationBar *bar = [UINavigationBar appearance];
     
     // bar tint color

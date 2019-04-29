@@ -43,10 +43,10 @@
                @"http://ws.xzhushou.cn/focusimg/50.jpg",
                ];
     _totalItemsCount = _datas.count * 100;
-    [self p_setUpTimer];
+    [self p_setupTimer];
 }
 
-- (void)p_setUpTimer {
+- (void)p_setupTimer {
     if (!_timer) {
         _timer = [NSTimer timerWithTimeInterval:3 target:[YYWeakProxy proxyWithTarget:self] selector:@selector(timerAction) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
@@ -109,7 +109,7 @@
 //}
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    [self p_setUpTimer];
+    [self p_setupTimer];
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
