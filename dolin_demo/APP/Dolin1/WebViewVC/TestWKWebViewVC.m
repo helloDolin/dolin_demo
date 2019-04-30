@@ -22,9 +22,7 @@
 
 @implementation TestWKWebViewVC
 
-- (void)dealloc
-{
-    NSLog(@"%s",__func__);
+- (void)dealloc {
     [self.webView removeObserver:self forKeyPath:@"loading"];
     [self.webView removeObserver:self forKeyPath:@"title"];
     [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];

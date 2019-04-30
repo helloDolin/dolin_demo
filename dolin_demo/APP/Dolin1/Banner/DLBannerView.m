@@ -239,8 +239,4 @@ const NSTimeInterval kAutoScrollDelay = 2.0;
     }
 }
 
-- (void)dealloc {
-    NSLog(@"%s",__func__);
-}
-
 @end

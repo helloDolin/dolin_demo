@@ -15,10 +15,6 @@
 
 @implementation BannerViewController
 
-- (void)dealloc {
-    NSLog(@"%s",__func__);
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSArray* datas = @[

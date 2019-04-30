@@ -15,9 +15,6 @@
 @implementation WKDelegateController
 
 #pragma mark - life circle
-- (void)dealloc {
-    NSLog(@"%s",__func__);
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

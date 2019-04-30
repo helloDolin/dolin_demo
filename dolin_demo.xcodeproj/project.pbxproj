@@ -27,6 +27,7 @@
 		1648814D2226B5CC00A35107 /* FDPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1648814C2226B5CC00A35107 /* FDPhotoCell.m */; };
 		16A91C982237FC7D00ADED94 /* FmdbVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A91C972237FC7D00ADED94 /* FmdbVC.m */; };
 		16B1A8121FBE91F1004B3D74 /* ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 16B1A8111FBE91F1004B3D74 /* ios.jsbundle */; };
+		16BA4AA72277EA2700363DDE /* UIViewController+printVCDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BA4AA62277EA2700363DDE /* UIViewController+printVCDealloc.m */; };
 		16C6028F224A0F2B00F3DA0B /* MBFadeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6028E224A0F2B00F3DA0B /* MBFadeAlertView.m */; };
 		16C602A8224A406500F3DA0B /* MNBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C60294224A406400F3DA0B /* MNBaseModel.m */; };
 		16C602A9224A406500F3DA0B /* RecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C60295224A406400F3DA0B /* RecommendModel.m */; };
@@ -303,6 +304,8 @@
 		16A91C962237FC7D00ADED94 /* FmdbVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FmdbVC.h; sourceTree = "<group>"; };
 		16A91C972237FC7D00ADED94 /* FmdbVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FmdbVC.m; sourceTree = "<group>"; };
 		16B1A8111FBE91F1004B3D74 /* ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios.jsbundle; sourceTree = "<group>"; };
+		16BA4AA52277EA2700363DDE /* UIViewController+printVCDealloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+printVCDealloc.h"; sourceTree = "<group>"; };
+		16BA4AA62277EA2700363DDE /* UIViewController+printVCDealloc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+printVCDealloc.m"; sourceTree = "<group>"; };
 		16C6028D224A0F2B00F3DA0B /* MBFadeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFadeAlertView.h; sourceTree = "<group>"; };
 		16C6028E224A0F2B00F3DA0B /* MBFadeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFadeAlertView.m; sourceTree = "<group>"; };
 		16C60294224A406400F3DA0B /* MNBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNBaseModel.m; sourceTree = "<group>"; };
@@ -1261,6 +1264,8 @@
 				3A7C68A51DEC0D6800225D28 /* UIWindow+Expand.m */,
 				3A332AAA1EB08D340072BD34 /* NSDate+Utilities.h */,
 				3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */,
+				16BA4AA52277EA2700363DDE /* UIViewController+printVCDealloc.h */,
+				16BA4AA62277EA2700363DDE /* UIViewController+printVCDealloc.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1935,6 +1940,7 @@
 				16C8D6421D33511700228ABD /* AppDelegate.m in Sources */,
 				3A7C692B1DEC0D6800225D28 /* UIImage+Screenshot.m in Sources */,
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
+				16BA4AA72277EA2700363DDE /* UIViewController+printVCDealloc.m in Sources */,
 				16C602AF224A406500F3DA0B /* MusicCDView.m in Sources */,
 				3ADF3A611EBC185500A5EFF6 /* DLVideoCell.m in Sources */,
 				3A7C692A1DEC0D6800225D28 /* UIImage+RTTint.m in Sources */,

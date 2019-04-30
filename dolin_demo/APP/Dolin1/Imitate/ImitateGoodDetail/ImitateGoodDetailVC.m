@@ -24,7 +24,6 @@
 
 #pragma mark - life circle
 - (void)dealloc {
-    NSLog(@"%s",__func__);
     [self.webView removeObserver:self forKeyPath:@"loading"];
     [self.webView removeObserver:self forKeyPath:@"title"];
     [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];

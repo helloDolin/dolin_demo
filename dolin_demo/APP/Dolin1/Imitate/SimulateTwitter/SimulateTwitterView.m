@@ -26,7 +26,6 @@ static NSString* const kKeyPathName = @"contentOffset";
 @implementation SimulateTwitterView
 
 - (void)dealloc {
-    NSLog(@"%s",__func__);
     [self.tableView removeObserver:self forKeyPath:kKeyPathName];
 }
 

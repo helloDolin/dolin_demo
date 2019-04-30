@@ -46,9 +46,8 @@ static const CGFloat kTableViewCellHeight = 80.0;
 
 @implementation DLPhotoAlbumPickerVC
 #pragma mark - life circle
-// dealloc
+
 - (void)dealloc {
-    NSLog(@"%s",__func__);
     [self removeObserver:self forKeyPath:@"selectedAssets"];
 }
 

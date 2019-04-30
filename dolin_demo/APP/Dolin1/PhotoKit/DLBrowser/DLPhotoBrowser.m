@@ -40,9 +40,7 @@ static CGFloat const kBottomViewHeight = 50.0;
 
 @implementation DLPhotoBrowser
 
-// dealloc
 - (void)dealloc {
-    NSLog(@"%s",__func__);
     [self removeObserver:self forKeyPath:@"selectedAssets"];
 }
 

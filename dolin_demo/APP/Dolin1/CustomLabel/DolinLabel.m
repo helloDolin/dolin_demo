@@ -16,10 +16,10 @@
 @end
 
 #pragma mark - init
+
 @implementation DolinLabel
 
 - (void)dealloc {
-    NSLog(@"DolinLabel资源释放");
     _attributedString = nil;
 }
 
