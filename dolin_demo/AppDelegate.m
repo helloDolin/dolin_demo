@@ -102,7 +102,23 @@
 #endif
 }
 
-#pragma mark -  UIApplicationDelegate 
+- (void)setup3DTouch {
+    NSMutableArray *arrShortcutItem = (NSMutableArray *)[UIApplication sharedApplication].shortcutItems;
+    
+    UIApplicationShortcutItem *shoreItem1 = [[UIApplicationShortcutItem alloc] initWithType:@"co.erplus.search" localizedTitle:@"搜索" localizedSubtitle:nil icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeSearch] userInfo:nil];
+    [arrShortcutItem addObject:shoreItem1];
+    
+    UIApplicationShortcutItem *shoreItem2 = [[UIApplicationShortcutItem alloc] initWithType:@"co.erplus.newTask" localizedTitle:@"新建任务" localizedSubtitle:@"" icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeCompose] userInfo:nil];
+    [arrShortcutItem addObject:shoreItem2];
+    [UIApplication sharedApplication].shortcutItems = arrShortcutItem;
+
+}
+
+#pragma mark -  UIApplicationDelegate
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    // 不管APP在后台还是进程被杀死，只要通过主屏快捷操作进来的，都会调用这个方法
+    NSLog(@"name:%@\ntype:%@", shortcutItem.localizedTitle, shortcutItem.type);
+}
 // 对于应用程序初始化，强烈建议您使用此方法和应用程序
 // 如果应用程序无法处理URL资源或继续用户活动，则返回NO，否则返回YES。如果应用程序由于远程通知而启动，则会忽略返回值。
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -112,6 +128,7 @@
     [self setupAudioPlayBack];
     [self setupJSPatch];
     [self setupDoraemonKit];
+    [self setup3DTouch];
     
     return YES;
 }
