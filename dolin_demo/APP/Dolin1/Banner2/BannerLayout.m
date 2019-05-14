@@ -42,12 +42,31 @@
 }
 
 #pragma mark - override
+
+/**
+ 当collectionView的显示范围发生改变的时候，是否需要重新刷新布局
+ 一旦重新刷新布局，就会重新调用下面的方法：
+ 1.prepareLayout
+ 2.layoutAttributesForElementsInRect:方法
+ @param newBounds 新的bounds
+ @return bool
+ */
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
     return YES;
 }
 
-// 目前只考虑一个section的情况
-// 内容的宽度为: n * （item + space） - space + edge.left + edge.right
+/**
+ 用来做布局的初始化操作（不建议在init方法中进行布局的初始化操作）
+ */
+- (void)prepareLayout {
+    [super prepareLayout];
+}
+
+/**
+ 目前只考虑一个section的情况
+ 内容的宽度为: n * （item + space） - space + edge.left + edge.right
+ @return ContentSize
+ */
 - (CGSize)collectionViewContentSize {
     NSInteger count = [self.collectionView numberOfItemsInSection:0];
     CGFloat width = count * (self.itemSize.width + self.spacing) - self.spacing + self.edgeInset.left + self.edgeInset.right;
@@ -66,7 +85,16 @@
     return attribute;
 }
 
-// 在此方法中设置缩放效果
+/**
+ UICollectionViewLayoutAttributes *attrs;
+ 1.一个cell对应一个UICollectionViewLayoutAttributes对象
+ 2.UICollectionViewLayoutAttributes对象决定了cell的frame
+ 这个方法的返回值是一个数组（数组里面存放着rect范围内所有元素的布局属性）
+ 这个方法的返回值决定了rect范围内所有元素的排布（frame）
+ 这个banner在此方法中设置缩放效果
+ @param rect
+ @return
+ */
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
     NSArray *attributes = [self attributesInRect:rect];
     if (self.scale==1) {
@@ -92,8 +120,14 @@
     return attributes;
 }
 
-// 滚动停止时某一个cell正好在屏幕中间
-// 在此方法中获取默认情况下停止滚动时离屏幕中间最近的那个cell，并计算两者的距离，将此距离补到proposedContentOffset上即可。
+/**
+ 这个方法的返回值，就决定了collectionView停止滚动时的偏移量
+ 这个banner设置滚动停止时某一个cell正好在屏幕中间
+ 在此方法中获取默认情况下停止滚动时离屏幕中间最近的那个cell，并计算两者的距离，将此距离补到proposedContentOffset上即可
+ @param proposedContentOffset 建议的偏移量
+ @param velocity 速度
+ @return
+ */
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity {
     CGRect oldRect = CGRectMake(proposedContentOffset.x, proposedContentOffset.y, self.collectionView.bounds.size.width, self.collectionView.bounds.size.height);
     NSArray *attributes = [self layoutAttributesForElementsInRect:oldRect];
