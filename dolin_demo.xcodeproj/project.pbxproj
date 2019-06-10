@@ -27,6 +27,7 @@
 		1648814D2226B5CC00A35107 /* FDPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1648814C2226B5CC00A35107 /* FDPhotoCell.m */; };
 		16A91C982237FC7D00ADED94 /* FmdbVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A91C972237FC7D00ADED94 /* FmdbVC.m */; };
 		16B1A8121FBE91F1004B3D74 /* ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 16B1A8111FBE91F1004B3D74 /* ios.jsbundle */; };
+		16B23F0622AE6756000BEA07 /* DLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B23F0422AE6755000BEA07 /* DLModel.m */; };
 		16BA4AA72277EA2700363DDE /* UIViewController+printVCDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BA4AA62277EA2700363DDE /* UIViewController+printVCDealloc.m */; };
 		16C6028F224A0F2B00F3DA0B /* MBFadeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6028E224A0F2B00F3DA0B /* MBFadeAlertView.m */; };
 		16C602A8224A406500F3DA0B /* MNBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C60294224A406400F3DA0B /* MNBaseModel.m */; };
@@ -304,6 +305,8 @@
 		16A91C962237FC7D00ADED94 /* FmdbVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FmdbVC.h; sourceTree = "<group>"; };
 		16A91C972237FC7D00ADED94 /* FmdbVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FmdbVC.m; sourceTree = "<group>"; };
 		16B1A8111FBE91F1004B3D74 /* ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios.jsbundle; sourceTree = "<group>"; };
+		16B23F0422AE6755000BEA07 /* DLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLModel.m; sourceTree = "<group>"; };
+		16B23F0522AE6756000BEA07 /* DLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLModel.h; sourceTree = "<group>"; };
 		16BA4AA52277EA2700363DDE /* UIViewController+printVCDealloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+printVCDealloc.h"; sourceTree = "<group>"; };
 		16BA4AA62277EA2700363DDE /* UIViewController+printVCDealloc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+printVCDealloc.m"; sourceTree = "<group>"; };
 		16C6028D224A0F2B00F3DA0B /* MBFadeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFadeAlertView.h; sourceTree = "<group>"; };
@@ -744,6 +747,8 @@
 		16C60293224A406400F3DA0B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				16B23F0522AE6756000BEA07 /* DLModel.h */,
+				16B23F0422AE6755000BEA07 /* DLModel.m */,
 				16C60299224A406400F3DA0B /* BaseModel.h */,
 				16C60296224A406400F3DA0B /* BaseModel.m */,
 				16C60297224A406400F3DA0B /* MNBaseModel.h */,
@@ -1960,6 +1965,7 @@
 				3A38F4841E1E55090036DE63 /* OriginAPIAnimateStudyVC.m in Sources */,
 				3A7C69271DEC0D6800225D28 /* UIImage+animatedGIF.m in Sources */,
 				16C602B0224A406500F3DA0B /* RecommendCellTitleView.m in Sources */,
+				16B23F0622AE6756000BEA07 /* DLModel.m in Sources */,
 				3A38F4911E1E558D0036DE63 /* Animation_Study_VC.m in Sources */,
 				3A7C69201DEC0D6800225D28 /* ImageViewer.m in Sources */,
 				3AA0C1B41E71628A009B1628 /* CalculatorMaker.m in Sources */,

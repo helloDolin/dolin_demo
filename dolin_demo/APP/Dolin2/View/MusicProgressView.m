@@ -93,24 +93,44 @@
 }
 
 - (void)playingNoti:(NSNotification*)noti {
-    if ([[MNMusicPlayer defaultPlayer].url.absoluteString isEqualToString:self.model.music_url] && [MNMusicPlayer defaultPlayer].isPlaying) {
+    NSString* musicUrl = noti.object;
+    NSString* mp3Id = self.dLResultTracksModel.tracksModelId;
+    NSString* mp3Url = [NSString stringWithFormat:@"http://music.163.com/song/media/outer/url?id=%@.mp3",mp3Id];
+    if ([[MNMusicPlayer defaultPlayer].url.absoluteString isEqualToString:mp3Url] && [MNMusicPlayer defaultPlayer].isPlaying) {
         _timeLabel.text = noti.object[@"currentTime"];
         _pView.progress = [noti.object[@"progress"]floatValue];
         [_playBtn setImage:[UIImage imageNamed:@"icon-player-pause-white"] forState:UIControlStateNormal];
     }
     else {
-        _timeLabel.text = [self getMMSSFromSS:self.model.music_duration];
+        _timeLabel.text = [self getMMSSFromSS:self.dLResultTracksModel.hMusic.playTime / 1000];
         _pView.progress = 0.0;
         [_playBtn setImage:[UIImage imageNamed:@"icon-player-play-white"] forState:UIControlStateNormal];
     }
-    
+    // 仿猫弄
+//    if ([[MNMusicPlayer defaultPlayer].url.absoluteString isEqualToString:self.model.music_url] && [MNMusicPlayer defaultPlayer].isPlaying) {
+//        _timeLabel.text = noti.object[@"currentTime"];
+//        _pView.progress = [noti.object[@"progress"]floatValue];
+//        [_playBtn setImage:[UIImage imageNamed:@"icon-player-pause-white"] forState:UIControlStateNormal];
+//    }
+//    else {
+//        _timeLabel.text = [self getMMSSFromSS:self.model.music_duration];
+//        _pView.progress = 0.0;
+//        [_playBtn setImage:[UIImage imageNamed:@"icon-player-play-white"] forState:UIControlStateNormal];
+//    }
 }
 
--(void)setModel:(RecommendModel *)model {
+- (void)setModel:(RecommendModel *)model {
     _model = model;
     _pView.progress = 0.0;
     _musicTitleLabel.text = [NSString stringWithFormat:@"%@ - %@",model.song_name,model.artist];
     _timeLabel.text = [self getMMSSFromSS:model.music_duration];
+}
+
+- (void)setDLResultTracksModel:(DLResultTracksModel *)dLResultTracksModel {
+    _dLResultTracksModel = dLResultTracksModel;
+    _pView.progress = 0.0;
+    _musicTitleLabel.text = [NSString stringWithFormat:@"%@ - %@",_dLResultTracksModel.name,_dLResultTracksModel.album.company];
+    _timeLabel.text = [self getMMSSFromSS:_dLResultTracksModel.hMusic.playTime / 1000];
 }
 
 - (NSString *)getMMSSFromSS:(unsigned int)totalTime

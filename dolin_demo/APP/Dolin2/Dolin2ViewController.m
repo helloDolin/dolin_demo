@@ -14,10 +14,11 @@
 #import "RecommendMusicCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import <LYEmptyView/LYEmptyViewHeader.h>
+#import "DLModel.h"
 
 @interface Dolin2ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
-    NSMutableArray* _data;
+    NSMutableArray<DLResultTracksModel*>* _data;
     int _pageNum;
 }
 @property(nonatomic,strong)UITableView* tableView;
@@ -41,21 +42,28 @@
 
 #pragma mark -  method
 - (void)req {
-    NSString* urlStr = [NSString stringWithFormat:@"http://mmmono.com/api/v3/tab/?start=%d%%2C10&tab_id=8&tab_type=3",_pageNum];
+    NSString* urlStr = [NSString stringWithFormat:@"http://music.163.com/api/playlist/detail?id=107875443"];
+//    NSString* urlStr = [NSString stringWithFormat:@"http://mmmono.com/api/v3/tab/?start=%d%%2C10&tab_id=8&tab_type=3",_pageNum];
     AFHTTPSessionManager* manager = [AFHTTPSessionManager manager];
     [manager GET:urlStr parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (self->_data.count == 0) {
-            [self.tableView.mj_header endRefreshing];
-        }
-        else {
-            [self.tableView.mj_footer endRefreshing];
-        }
-        NSArray* arr = responseObject[@"entity_list"];
-        [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            RecommendModel* recommendModel = [RecommendModel yy_modelWithJSON:obj[@"meow"]];
-            [self->_data addObject:recommendModel];
-        }];
+        DLModel* model = [DLModel yy_modelWithJSON:responseObject];
+        self->_data = [model.result.tracks mutableCopy];
         [self.tableView reloadData];
+        [self.tableView.mj_header endRefreshing];
+        [self.tableView.mj_footer endRefreshing];
+        
+//        if (self->_data.count == 0) {
+//            [self.tableView.mj_header endRefreshing];
+//        }
+//        else {
+//            [self.tableView.mj_footer endRefreshing];
+//        }
+//        NSArray* arr = responseObject[@"entity_list"];
+//        [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//            RecommendModel* recommendModel = [RecommendModel yy_modelWithJSON:obj[@"meow"]];
+//            [self->_data addObject:recommendModel];
+//        }];
+//        [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
     }];
@@ -77,15 +85,16 @@
 //    CGFloat height = [tableView fd_heightForCellWithIdentifier:NSStringFromClass([RecommendMusicCell class]) configuration:^(RecommendMusicCell* cell) {
 //        [self configureCell:cell atIndexPath:indexPath];
 //    }];
-    RecommendModel* model = _data[indexPath.row];
-    CGFloat height = [tableView fd_heightForCellWithIdentifier:NSStringFromClass([RecommendMusicCell class]) cacheByKey:model.Id configuration:^(id cell) {
+    DLResultTracksModel* model = _data[indexPath.row];
+    CGFloat height = [tableView fd_heightForCellWithIdentifier:NSStringFromClass([RecommendMusicCell class]) cacheByKey:model.tracksModelId configuration:^(id cell) {
         [self configureCell:cell atIndexPath:indexPath];
     }];
     return height;
 }
 
 - (void)configureCell:(RecommendMusicCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    cell.recommendModel = _data[indexPath.row];
+//    cell.recommendModel = _data[indexPath.row];
+    cell.dLResultTracksModel = _data[indexPath.row];
 }
 
 #pragma mark - getter

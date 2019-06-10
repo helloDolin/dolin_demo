@@ -134,7 +134,7 @@
 - (int)currentIndex {
     int index = 0;
     // TODO 硬编码优化
-    // +50 因为itemSize宽为100 暂为硬编码
+    // +50 因为itemSize宽为self.view.frame.size.width - 100 暂为硬编码
     // +20 因为padding为20 暂为硬编码
     index = (self.collectionView.contentOffset.x + 50) / (_layout.itemSize.width + 20);
     NSLog(@"%d",index);

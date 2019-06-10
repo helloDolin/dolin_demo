@@ -67,4 +67,10 @@
     }
 }
 
+- (void)setDLResultTracksModel:(DLResultTracksModel *)dLResultTracksModel {
+    _dLResultTracksModel = dLResultTracksModel;
+    [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:_dLResultTracksModel.album.blurPicUrl]];
+    _userNameLabel.text = _dLResultTracksModel.name;
+}
+
 @end

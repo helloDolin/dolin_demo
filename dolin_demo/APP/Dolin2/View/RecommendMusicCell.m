@@ -142,8 +142,34 @@
     }
 }
 
+- (void)setDLResultTracksModel:(DLResultTracksModel *)dLResultTracksModel {
+    _dLResultTracksModel = dLResultTracksModel;
+    
+    _titleView.dLResultTracksModel = _dLResultTracksModel;
+    _musicCDView.dLResultTracksModel = _dLResultTracksModel;
+    _progressView.dLResultTracksModel = _dLResultTracksModel;
+    
+    [_picImageView sd_setImageWithURL:[NSURL URLWithString:_dLResultTracksModel.album.blurPicUrl]];
+    _titleLabel.text = _dLResultTracksModel.name;
+    _descripLabel.text = [NSString stringWithFormat:@"作曲：%@\n专辑：%@\n公司：%@",_dLResultTracksModel.artists[0].name,_dLResultTracksModel.album.name,_dLResultTracksModel.album.company];
+    
+    NSString* mp3Id = _dLResultTracksModel.tracksModelId;
+    NSString* mp3Url = [NSString stringWithFormat:@"http://music.163.com/song/media/outer/url?id=%@.mp3",mp3Id];
+    if ([[MNMusicPlayer defaultPlayer].url.absoluteString isEqualToString:mp3Url] && [MNMusicPlayer defaultPlayer].isPlaying) {
+        [_musicCDView playMusic];
+    }else{
+        [_musicCDView stopMusic];
+    }
+}
+
 - (void)tapAction {
-    [[MNMusicPlayer defaultPlayer] playFromURL:[NSURL URLWithString:self.recommendModel.music_url]];
+    //猫弄
+    //[[MNMusicPlayer defaultPlayer] playFromURL:[NSURL URLWithString:self.recommendModel.music_url]];
+    
+    // 网易
+    NSString* mp3Id = self.dLResultTracksModel.tracksModelId;
+    NSString* mp3Url = [NSString stringWithFormat:@"http://music.163.com/song/media/outer/url?id=%@.mp3",mp3Id];
+    [[MNMusicPlayer defaultPlayer] playFromURL:[NSURL URLWithString:mp3Url]];
 }
 
 @end

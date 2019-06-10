@@ -31,6 +31,9 @@
     [self setupFPSLabel];
     // [self setRightBarBtn];
     [self setupTableViewData];
+
+    self.navigationController.delegate = self;
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -45,7 +48,6 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    self.navigationController.delegate = self;
 }
 #pragma mark -  method
 

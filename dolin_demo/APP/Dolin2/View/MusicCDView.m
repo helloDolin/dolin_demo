@@ -71,13 +71,25 @@
     [_coverImageView sd_setImageWithURL:[NSURL URLWithString:model.album_cover.raw]];
 }
 
+- (void)setDLResultTracksModel:(DLResultTracksModel *)dLResultTracksModel {
+    _dLResultTracksModel = dLResultTracksModel;
+    [_coverImageView sd_setImageWithURL:[NSURL URLWithString:_dLResultTracksModel.album.blurPicUrl]];
+}
+
 
 - (void)playMusic:(NSNotification*)noti {
     // 当通知过来的url与当前model相同时，才进行play
     NSString* musicUrl = noti.object;
-    if ([musicUrl isEqualToString:self.model.music_url]) {
+    NSString* mp3Id = self.dLResultTracksModel.tracksModelId;
+    NSString* mp3Url = [NSString stringWithFormat:@"http://music.163.com/song/media/outer/url?id=%@.mp3",mp3Id];
+    if ([musicUrl isEqualToString:mp3Url]) {
         [self playMusic];
     }
+    
+//    // 仿猫弄
+//    if ([musicUrl isEqualToString:self.model.music_url]) {
+//        [self playMusic];
+//    }
 }
 
 // 播放音乐

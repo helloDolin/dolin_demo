@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DLModel.h"
 @class RecommendModel;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -14,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RecommendCellTitleView : UIView
 
 @property(nonatomic,strong) RecommendModel *titleModel;
+@property(nonatomic,strong) DLResultTracksModel *dLResultTracksModel;
 
 @end
 

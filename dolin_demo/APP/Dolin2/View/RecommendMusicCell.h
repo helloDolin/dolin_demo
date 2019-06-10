@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MNBaseTableViewCell.h"
+#import "DLModel.h"
+
 @class RecommendModel;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -15,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RecommendMusicCell : MNBaseTableViewCell
 
 @property(nonatomic,strong) RecommendModel *recommendModel;
+@property(nonatomic,strong) DLResultTracksModel *dLResultTracksModel;
 
 @end
 

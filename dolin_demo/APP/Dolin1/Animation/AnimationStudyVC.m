@@ -96,11 +96,15 @@
 
 - (void)animate1 {
     CAKeyframeAnimation *frameAni = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-    NSValue* value1 = [NSValue valueWithCGPoint:CGPointMake(100, 100)];
-    NSValue* value2 = [NSValue valueWithCGPoint:CGPointMake(100, 200)];
-    NSValue* value3 = [NSValue valueWithCGPoint:CGPointMake(200, 200)];
+//    NSValue* value1 = [NSValue valueWithCGPoint:CGPointMake(100, 100)];
+//    NSValue* value2 = [NSValue valueWithCGPoint:CGPointMake(100, 200)];
+//    NSValue* value3 = [NSValue valueWithCGPoint:CGPointMake(200, 200)];
+    //贝塞尔曲线
+    UIBezierPath *circlePath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(200, 200) radius:60 startAngle:M_PI endAngle:M_PI_2 clockwise:true];
+    // 设置贝塞尔曲线路径
+    frameAni.path = circlePath.CGPath;
     
-    frameAni.values = @[value1,value2,value3];
+//    frameAni.values = @[value1,value2,value3];
     frameAni.duration = 2;
     frameAni.removedOnCompletion = NO;
     frameAni.fillMode = kCAFillModeForwards;
