@@ -28,11 +28,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self.view addSubview:self.tableView];
     _pageNum = 1;
     _data = [NSMutableArray array];
-    self.tableView.ly_emptyView = [LYEmptyView emptyActionViewWithImageStr:@"noData"
+    [self.tableView.mj_header beginRefreshing];
+}
+
+- (void)setupEmptyView {
+    self.tableView.ly_emptyView = [LYEmptyView emptyActionViewWithImageStr:@"MT"
                                                                   titleStr:@"无数据"
                                                                  detailStr:@"请稍后再试!"
                                                                btnTitleStr:@"重新加载"
@@ -42,15 +45,25 @@
 
 #pragma mark -  method
 - (void)req {
+    // 网易API
     NSString* urlStr = [NSString stringWithFormat:@"http://music.163.com/api/playlist/detail?id=107875443"];
+    
+    // 猫弄API
 //    NSString* urlStr = [NSString stringWithFormat:@"http://mmmono.com/api/v3/tab/?start=%d%%2C10&tab_id=8&tab_type=3",_pageNum];
+    
     AFHTTPSessionManager* manager = [AFHTTPSessionManager manager];
+    @weakify(self);
     [manager GET:urlStr parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        @strongify(self);
         DLModel* model = [DLModel yy_modelWithJSON:responseObject];
         self->_data = [model.result.tracks mutableCopy];
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];
         [self.tableView.mj_footer endRefreshing];
+        self.navigationItem.title = model.result.creator.nickname;
+        if (!self ->_data.count) {
+            [self setupEmptyView];
+        }
         
 //        if (self->_data.count == 0) {
 //            [self.tableView.mj_header endRefreshing];
@@ -65,7 +78,8 @@
 //        }];
 //        [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
+        @strongify(self);
+        [self setupEmptyView];
     }];
 }
 
