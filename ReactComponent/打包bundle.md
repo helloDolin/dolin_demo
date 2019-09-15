@@ -1,9 +1,10 @@
+（最新）react-native bundle --entry-file index.js --bundle-output ./ios/bundle/index.ios.jsbundle --platform ios --assets-dest ./ios/bundle --dev false
+
+
 打包bundle
 react-native bundle --entry-file index.ios.js --bundle-output ./output/ios.jsbundle --platform ios --assets-dest ./output --dev true
 
 react-native bundle --entry-file /Users/shaolin/Desktop/dolin_demo/ReactComponent/index.ios.js --bundle-output ./output/ios.jsbundle --platform ios --assets-dest ./output --dev true
-
-
 
 
 react-native bundle [参数]
