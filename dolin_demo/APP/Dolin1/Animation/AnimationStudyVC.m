@@ -8,8 +8,15 @@
 
 #import "AnimationStudyVC.h"
 #import "MMPlaceHolder.h"
-//#import "NSArray+MASAdditions.h"
 
+static const CGFloat kBottomViewHeight = 100.0; // 底部view高度
+
+/**
+ 🦍🦍🦍
+ CABasicAnimation、CAKeyframeAnimation 均继承自 CAPropertyAnimation
+ CAPropertyAnimation 继承自 CAAnimation
+ CAAnimationGroup 继承自 CAAnimation
+ */
 @interface AnimationStudyVC ()
 {
     UIView* _testView;
@@ -20,9 +27,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupUI];
+}
+
+- (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    _testView = [[UIView alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, 50, 50)];
+    _testView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
     _testView.center = self.view.center;
     _testView.backgroundColor = RANDOM_UICOLOR;
     [self.view addSubview:_testView];
@@ -35,9 +45,9 @@
     [self.view addSubview:bottomView];
     
     [bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.mas_equalTo(self.view);
-        make.bottom.mas_equalTo(self.view);
-        make.height.mas_equalTo(@100);
+        make.left.right.mas_equalTo(0);
+        make.bottom.mas_equalTo(0);
+        make.height.mas_equalTo(kBottomViewHeight);
     }];
    
     UIButton* btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -68,32 +78,34 @@
     [btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(@[btn2,btn3,bottomView]);
         make.height.equalTo(bottomView);
+        make.size.equalTo(@[btn2,btn3]);
     }];
-    
-    [btn2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.equalTo(btn1);
-    }];
-    
-    [btn3 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.equalTo(btn1);
-    }];
-    
-    // masonry自带等间距
-    [@[btn1,btn2,btn3] mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:20 leadSpacing:20 tailSpacing:20];
+
+    // 等间距设置
+    [@[btn1,btn2,btn3] mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:10 leadSpacing:20 tailSpacing:10];
     
     [btn1 showPlaceHolder];
 }
 
+
+/**
+ 基本动画
+ 均已锚点为准做动画
+ */
 - (void)animate0 {
-    CABasicAnimation* ba = [CABasicAnimation animationWithKeyPath:@"position"];
-    ba.toValue = [NSValue valueWithCGPoint:CGPointMake(SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT)];
-    ba.duration = 2;
-    ba.autoreverses = YES;
-    ba.removedOnCompletion = NO;
-    ba.fillMode = kCAFillModeForwards;
-    [_testView.layer addAnimation:ba forKey:nil];
+    CABasicAnimation* basicAni = [CABasicAnimation animationWithKeyPath:@"position"];
+    basicAni.fromValue = [NSValue valueWithCGPoint:CGPointMake(0, NAVIGATION_BAR_HEIGHT)]; // 动画起始位置
+    basicAni.toValue = [NSValue valueWithCGPoint:CGPointMake(SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT - kBottomViewHeight)]; // 动画结束位置
+    basicAni.duration = 2; // 动画时长
+    basicAni.autoreverses = YES; // 为YES时，动画结束时，动画返回到初始位置
+    basicAni.removedOnCompletion = NO; // 动画结束后不会回到开始的值，保持动画结束后的形态，layer相关属性值没变
+    basicAni.fillMode = kCAFillModeForwards; // 当动画结束后，layer会一直保持着动画最后的状态
+    [_testView.layer addAnimation:basicAni forKey:nil];
 }
 
+/**
+ 关键帧动画
+ */
 - (void)animate1 {
     CAKeyframeAnimation *frameAni = [CAKeyframeAnimation animationWithKeyPath:@"position"];
 //    NSValue* value1 = [NSValue valueWithCGPoint:CGPointMake(100, 100)];
@@ -111,21 +123,24 @@
     [_testView.layer addAnimation:frameAni forKey:nil];
 }
 
+/**
+ 组合动画
+ */
 - (void)animate2 {
-    CABasicAnimation *bAnimation = [CABasicAnimation animationWithKeyPath:@"bounds"];
-    CABasicAnimation *cAnimation = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
+    CABasicAnimation *boundsAnimation = [CABasicAnimation animationWithKeyPath:@"bounds"];
+    CABasicAnimation *radiusAnimation = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
     CAAnimationGroup *group = [CAAnimationGroup animation];
     
     // fromValue不赋值默认就是自己本身属性的值
     // bAnimation.fromValue = [NSValue valueWithCGRect:_testView.bounds];
-    bAnimation.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 100, 100)];
+    boundsAnimation.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 100, 100)];
     
     // cAnimation.fromValue = [NSNumber numberWithFloat:_testView.layer.cornerRadius];
-    cAnimation.toValue = [NSNumber numberWithFloat:100 / 2];
+    radiusAnimation.toValue = [NSNumber numberWithFloat:100 / 2];
     group.duration = 5;
     group.fillMode = kCAFillModeForwards;
     group.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
-    [group setAnimations:@[bAnimation,cAnimation]];
+    [group setAnimations:@[boundsAnimation,radiusAnimation]];
     group.removedOnCompletion = NO;
     [_testView.layer addAnimation:group forKey:nil];
 }
