@@ -19,7 +19,7 @@ static const CGFloat kBottomViewHeight = 100.0; // 底部view高度
  */
 @interface AnimationStudyVC ()
 {
-    UIView* _testView;
+    UIImageView* _testView;
 }
 @end
 
@@ -32,9 +32,9 @@ static const CGFloat kBottomViewHeight = 100.0; // 底部view高度
 
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
-    _testView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+    _testView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
     _testView.center = self.view.center;
-    _testView.backgroundColor = RANDOM_UICOLOR;
+    _testView.image = [UIImage imageNamed:@"MT"];
     [self.view addSubview:_testView];
     [self setupBottomView];
 }
@@ -141,6 +141,7 @@ static const CGFloat kBottomViewHeight = 100.0; // 底部view高度
     CABasicAnimation *boundsAnimation = [CABasicAnimation animationWithKeyPath:@"bounds"];
     CABasicAnimation *radiusAnimation = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
     CAAnimationGroup *group = [CAAnimationGroup animation];
+    _testView.layer.masksToBounds = YES;
     
     // fromValue不赋值默认就是自己本身属性的值
     // bAnimation.fromValue = [NSValue valueWithCGRect:_testView.bounds];
