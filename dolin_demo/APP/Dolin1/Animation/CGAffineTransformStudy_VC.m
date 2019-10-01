@@ -7,24 +7,31 @@
 //
 
 /**
+    🦍🦍🦍
     仿射变换矩阵:从属于CoreGraphics框架
     总体来说就三种：平移、旋转、缩放，对应变化一次或一直可变化
-    矩阵的转换
+    动画每次都可以叠加，要注意的是叠加每次的动画需相同，比如向y轴方向移动，就一直叠加y的移动，如果这个时候旋转，就懵逼了（暂时这么理解）
+ 
+    CGAffineTransformMakeScale(-1.0, 1.0); // 水平翻转
+    CGAffineTransformMakeScale(1.0,-1.0); // 垂直翻转
+ 
+    矩阵的转换(暂时不深入)
     make：是针对视图的原定最初位置的中心点为起始参照进行相应操作的
     CGAffineTransformIdentity
      [ 1 0 0
        0 1 0
        0 0 1]
-    CGAffineTransformMakeScale(-1.0, 1.0);//水平翻转
-    CGAffineTransformMakeScale(1.0,-1.0);//垂直翻转
  */
 
 #import "CGAffineTransformStudy_VC.h"
 
+static const NSTimeInterval kAnimationTime = 1.0;
+
 @interface CGAffineTransformStudy_VC ()
-{
-    UIImageView* _imgView;
-}
+
+@property(nonatomic,assign)NSInteger clickCount;
+@property(nonatomic,strong)UIImageView *imgView;
+@property(nonatomic,strong)UIButton *btn;
 
 @end
 
@@ -32,70 +39,76 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self setupUI];
+    self.clickCount = 1;
+}
+
+- (void)setupUI {
     _imgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
     _imgView.center = self.view.center;
     _imgView.image = [UIImage imageNamed:@"MT"];
     [self.view addSubview:_imgView];
     
-    
-    UIButton* btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    btn.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, 100);
-    btn.backgroundColor = [UIColor orangeColor];
-    [btn setTitle:@"test" forState:UIControlStateNormal];
-    btn.tintColor = [UIColor whiteColor];
-    [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    _btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    _btn.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, 100);
+    _btn.backgroundColor = [UIColor orangeColor];
+    [_btn setTitle:@"translate" forState:UIControlStateNormal];
+    _btn.tintColor = [UIColor whiteColor];
+    [_btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_btn];
 }
 
 - (void)btnAction {
-//    [self translate];
-//    [self rotate1];
-//    [self translateAndRotateAndScale];
-    [UIView animateWithDuration:1.0 animations:^{
-        CGAffineTransform t = CGAffineTransformMakeScale(-1.0, 1.0);
-        self->_imgView.transform = t;
-    }];
-}
-
-- (CGAffineTransform)CGAffineTransformMakeShear:(CGFloat) x y:(CGFloat) y {
-    CGAffineTransform transform = CGAffineTransformIdentity;
-    transform.c = x;
-    transform.b = y;
-    return transform;
-}
-
-- (void)translateAndRotateAndScale {
-    CGAffineTransform t = _imgView.transform;
-    t = CGAffineTransformRotate(t, M_PI);
-    t = CGAffineTransformTranslate(t, 0, 60);
-    _imgView.transform = t;
-}
-
-// 旋转传的是弧度 arc
-- (void)rotate1 {
-    static BOOL b = YES;
-    if (b) {
-        // CGAffineTransformMakeRotation
-        // 只能变化一次，因为这种方式的变化始终是以最原始的状态值进行变化的，所以只能变化一次
-        [UIView animateWithDuration:2 animations:^{
-            self->_imgView.transform = CGAffineTransformMakeRotation(M_PI);
-        }];
-    } else {
-        // CGAffineTransformIdentity
-        // 清空所有的设置的transform(一般和动画配合使用，只能使用于transfofrm设置的画面)
-        [UIView animateWithDuration:2 animations:^{
-            self->_imgView.transform = CGAffineTransformIdentity;
-        }];
+    if (self.clickCount == 1) {
+        [self translate];
+    } else if (self.clickCount == 2){
+        [self rotate];
+    } else if (self.clickCount == 3){
+        [self recover];
+        self.clickCount = 0;
     }
-    b = !b;
+    self.clickCount ++;
 }
 
 - (void)translate {
-    // 每次变化都是以上一次的状态（CGAffineTransform t）进行的变化，所以可以多次变化
-    CGAffineTransform transform = _imgView.transform;
-    // 改变变化矩阵
-    _imgView.transform = CGAffineTransformTranslate(transform, 0, 10);
+    [UIView animateWithDuration:kAnimationTime animations:^{
+        // 每次变化都是以上一次的状态（self->_imgView.transform）进行的变化，所以可以多次变
+        self->_imgView.transform = CGAffineTransformTranslate(self->_imgView.transform,0,100);
+        self->_btn.enabled = NO;
+    } completion:^(BOOL finished) {
+        [self recover];
+    }];
+}
+
+- (void)rotate {
+    [UIView animateWithDuration:kAnimationTime animations:^{
+        self->_btn.enabled = NO;
+        self->_imgView.transform = CGAffineTransformRotate(self->_imgView.transform, M_PI_2);
+    } completion:^(BOOL finished) {
+        self->_btn.enabled = YES;
+    }];
+}
+
+- (void)recover {
+    // CGAffineTransformIdentity
+    // 清空所有的设置的transform(一般和动画配合使用，只能使用于Transform设置的画面)
+    [UIView animateWithDuration:kAnimationTime animations:^{
+        self->_imgView.transform = CGAffineTransformIdentity;
+        self->_btn.enabled = NO;
+    } completion:^(BOOL finished) {
+        self->_btn.enabled = YES;
+    }];
+}
+
+- (void)setClickCount:(NSInteger)clickCount {
+    _clickCount = clickCount;
+    if (_clickCount == 0) {
+        [_btn setTitle:@"translate" forState:UIControlStateNormal];
+    } else if (_clickCount == 2){
+        [_btn setTitle:@"rotate" forState:UIControlStateNormal];
+    } else if (_clickCount == 3){
+        [_btn setTitle:@"recover" forState:UIControlStateNormal];
+    }
 }
 
 @end
