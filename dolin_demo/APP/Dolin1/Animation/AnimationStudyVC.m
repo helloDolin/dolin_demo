@@ -71,18 +71,27 @@ static const CGFloat kBottomViewHeight = 100.0; // 底部view高度
     btn3.tag = 202;
     [btn3 addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     
+    UIButton* btn4 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn4.backgroundColor = RANDOM_UICOLOR;
+    [btn4 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn4 setTitle:[NSString stringWithFormat:@"去除动画"] forState:UIControlStateNormal];
+    btn4.tag = 203;
+    [btn4 addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+    
     [bottomView addSubview:btn1];
     [bottomView addSubview:btn2];
     [bottomView addSubview:btn3];
+    [bottomView addSubview:btn4];
+
     
     [btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(@[btn2,btn3,bottomView]);
+        make.centerY.equalTo(@[btn2,btn3,btn4,bottomView]);
         make.height.equalTo(bottomView);
-        make.size.equalTo(@[btn2,btn3]);
+        make.size.equalTo(@[btn2,btn3,btn4]);
     }];
 
     // 等间距设置
-    [@[btn1,btn2,btn3] mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:10 leadSpacing:20 tailSpacing:10];
+    [@[btn1,btn2,btn3,btn4] mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:10 leadSpacing:20 tailSpacing:10];
     
     [btn1 showPlaceHolder];
 }
@@ -107,20 +116,22 @@ static const CGFloat kBottomViewHeight = 100.0; // 底部view高度
  关键帧动画
  */
 - (void)animate1 {
-    CAKeyframeAnimation *frameAni = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-//    NSValue* value1 = [NSValue valueWithCGPoint:CGPointMake(100, 100)];
-//    NSValue* value2 = [NSValue valueWithCGPoint:CGPointMake(100, 200)];
-//    NSValue* value3 = [NSValue valueWithCGPoint:CGPointMake(200, 200)];
-    //贝塞尔曲线
-    UIBezierPath *circlePath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(200, 200) radius:60 startAngle:M_PI endAngle:M_PI_2 clockwise:true];
-    // 设置贝塞尔曲线路径
-    frameAni.path = circlePath.CGPath;
+//    CAKeyframeAnimation *frameAni = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+//    //贝塞尔曲线
+//    UIBezierPath *circlePath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(200, 200) radius:60 startAngle:M_PI endAngle:M_PI_2 clockwise:true];
+//    // 设置贝塞尔曲线路径
+//    frameAni.path = circlePath.CGPath;
+//    frameAni.duration = 2;
+//    frameAni.removedOnCompletion = NO;
+//    frameAni.fillMode = kCAFillModeForwards;
+//    [_testView.layer addAnimation:frameAni forKey:nil];
     
-//    frameAni.values = @[value1,value2,value3];
-    frameAni.duration = 2;
-    frameAni.removedOnCompletion = NO;
-    frameAni.fillMode = kCAFillModeForwards;
-    [_testView.layer addAnimation:frameAni forKey:nil];
+    CAKeyframeAnimation *shake = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.z"];
+    shake.values = @[@(YYTextDegreesToRadians(-90)),@(YYTextDegreesToRadians(90))];
+    shake.duration = 3;
+    shake.autoreverses = YES;
+    shake.repeatCount = CGFLOAT_MAX;
+    [_testView.layer addAnimation:shake forKey:nil];
 }
 
 /**
@@ -145,6 +156,9 @@ static const CGFloat kBottomViewHeight = 100.0; // 底部view高度
     [_testView.layer addAnimation:group forKey:nil];
 }
 
+- (void)removeAnimation {
+    [_testView.layer removeAllAnimations];
+}
 
 - (void)btnAction:(UIButton*)btn {
     NSInteger tag = btn.tag - 200;
@@ -157,6 +171,9 @@ static const CGFloat kBottomViewHeight = 100.0; // 底部view高度
             break;
         case 2:
             [self animate2];
+            break;
+        case 3:
+            [self removeAnimation];
             break;
         default:
             break;
