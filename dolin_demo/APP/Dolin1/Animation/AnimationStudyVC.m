@@ -125,13 +125,28 @@ static const CGFloat kBottomViewHeight = 100.0; // 底部view高度
 //    frameAni.removedOnCompletion = NO;
 //    frameAni.fillMode = kCAFillModeForwards;
 //    [_testView.layer addAnimation:frameAni forKey:nil];
-    
+    [self setAnchorPoint:CGPointMake(0.5, 0) forView:_testView];
     CAKeyframeAnimation *shake = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.z"];
-    shake.values = @[@(YYTextDegreesToRadians(-90)),@(YYTextDegreesToRadians(90))];
+    shake.values = @[
+                         @(YYTextDegreesToRadians(-45)),
+                         @(YYTextDegreesToRadians(45))
+                     ];
     shake.duration = 3;
     shake.autoreverses = YES;
     shake.repeatCount = CGFLOAT_MAX;
     [_testView.layer addAnimation:shake forKey:nil];
+}
+
+- (void)setAnchorPoint:(CGPoint)anchorPoint forView:(UIView *)view {
+    CGPoint oldOrigin = view.frame.origin;
+    view.layer.anchorPoint = anchorPoint;
+    CGPoint newOrigin = view.frame.origin;
+    
+    CGPoint transition;
+    transition.x = newOrigin.x - oldOrigin.x;
+    transition.y = newOrigin.y - oldOrigin.y;
+    
+    view.center = CGPointMake (view.center.x - transition.x, view.center.y - transition.y);
 }
 
 /**

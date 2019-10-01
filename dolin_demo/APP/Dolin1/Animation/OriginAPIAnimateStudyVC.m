@@ -17,8 +17,8 @@
 @property (nonatomic, strong) UIImageView *view1;
 @property (nonatomic, strong) UIImageView *view2;
 @property (nonatomic, strong) UIImageView *view3;
-
 @property (nonatomic, strong) UIView *alwaysRotateView;
+@property (nonatomic, assign) NSInteger clickCount;
 
 @end
 
@@ -28,27 +28,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self layoutUI];
-    [self setLeftBarBtn];
+    [self setupUI];
+    self.clickCount = 1;
 }
 
 #pragma mark - method
 - (void)setLeftBarBtn {
-    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"edit", nil) style:UIBarButtonItemStylePlain target:self action:@selector(leftItemAction)];
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"点我开始动画", nil) style:UIBarButtonItemStylePlain target:self action:@selector(leftItemAction)];
     self.navigationItem.leftBarButtonItem = barButtonItem;
 }
 
 - (void)leftItemAction {
-//    [self test1];
-//    [self test2];
-//    [self test3];
-    [self test4];
+    [self.alwaysRotateView.layer removeAllAnimations];
+
+    if (self.clickCount == 1) {
+        [self alwaysRotate];
+    } else if (self.clickCount == 2){
+        [self test1];
+    } else if (self.clickCount == 3){
+        [self test2];
+    } else if (self.clickCount == 4){
+        [self test3];
+        self.clickCount = 0;
+    }
+    self.clickCount ++;
 }
 
 // 改变锚点
-- (void)test4 {
+- (void)alwaysRotate {
     CABasicAnimation* ani = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    ani.toValue = @(2 * M_PI);
+    ani.toValue = @(YYTextDegreesToRadians(360));
     ani.repeatCount = HUGE_VAL;
     ani.duration = 1;
     ani.fillMode = kCAFillModeForwards;
@@ -118,7 +127,7 @@
     /**
      与物理弹簧的运动,相对应的定时曲线执行视图动画
      damp:振幅，弹簧振幅 0-1取值：数值越小「弹簧」的振动效果越明显
-     Velocity:速率 为了顺利开始动画，请将此值与视图的速度（与附件前相同）进行匹配。
+     Velocity:速率 为了顺利开始动画，请将此值与视图的速度进行匹配。
     */
     [UIView animateWithDuration:5 delay:0.5 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
         self.view1.centerY += 100;
@@ -140,11 +149,12 @@
     }];
 }
 
-- (void)layoutUI {
+- (void)setupUI {
     [self.view addSubview:self.alwaysRotateView];
     [self.view addSubview:self.view1];
     [self.view addSubview:self.view2];
     [self.view addSubview:self.view3];
+    [self setLeftBarBtn];
     
     CGFloat padding = (SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT - 300) / 4;
     
@@ -167,9 +177,6 @@
     }];
 
 }
-#pragma mark - event
-
-#pragma mark - UITableViewDelegate && UITableViewDataSource
 
 #pragma mark - getter && setter
 - (UIView*)alwaysRotateView {
@@ -196,7 +203,6 @@
     if (!_view2) {
         _view2 = [[UIImageView alloc]init];
         _view2.backgroundColor = RANDOM_UICOLOR;
-
     }
     return _view2;
 }
