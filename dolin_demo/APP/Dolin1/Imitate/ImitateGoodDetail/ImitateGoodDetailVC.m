@@ -63,10 +63,10 @@
         else if ([keyPath isEqualToString:@"estimatedProgress"]){
             // estimatedProgress取值范围是0-1;
             [UIView animateWithDuration:0.3 animations:^{
-                [_progressView setProgress:_webView.estimatedProgress];
+                [self->_progressView setProgress:_webView.estimatedProgress];
             } completion:^(BOOL finished) {
-                if (_progressView.progress == 1) {
-                    [_progressView removeFromSuperview];
+                if (self->_progressView.progress == 1) {
+                    [self->_progressView removeFromSuperview];
                 };
             }];
         }

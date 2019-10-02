@@ -15,12 +15,7 @@
 }
 
 @property (nonatomic, strong) UIScrollView *scrollView;
-
 @property (nonatomic, strong) UIView *containerView;
-
-@property (nonatomic, strong) ScrollBoxView *scrollBoxView_photo;
-@property (nonatomic, strong) ScrollBoxView *scrollBoxView_card;
-@property (nonatomic, strong) ScrollBoxView *scrollBoxView_save;
 
 @end
 
@@ -54,9 +49,7 @@
 #pragma mark - method
 - (void)layoutUI {
     [self.view addSubview:self.scrollView];
-    
     [self.scrollView addSubview:self.containerView];
-    
     [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(NAVIGATION_BAR_HEIGHT, 0, 0, 0));
     }];
@@ -76,30 +69,21 @@
         boxView.detail.text = _arr[i][@"detail"];
         [self.containerView addSubview:boxView];
         [boxView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.and.right.equalTo(self->_containerView);
+            make.left.right.equalTo(self->_containerView);
             make.height.equalTo(@ (30 + 30 * i));
-            
-            if ( nextBoxView )
-            {
+            if (nextBoxView) {
                 make.top.mas_equalTo(nextBoxView.mas_bottom).offset(10);
-            }
-            else
-            {
+            } else {
                 make.top.mas_equalTo(self->_containerView.mas_top).offset(10);
             }
         }];
-        
         nextBoxView = boxView;
     }
-    
     // 这样设置自动约束，系统才能计算出 contentSize
     [_containerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(nextBoxView.mas_bottom);
     }];
 }
-#pragma mark - event
-
-#pragma mark - UITableViewDelegate && UITableViewDataSource
 
 #pragma mark - getter && setter
 - (UIScrollView*)scrollView {
@@ -115,29 +99,5 @@
     }
     return _containerView;
 }
-
-- (ScrollBoxView*)scrollBoxView_photo {
-    if (!_scrollBoxView_photo) {
-        _scrollBoxView_photo = [ScrollBoxView viewFromXib];
-    }
-    return _scrollBoxView_photo;
-}
-
-- (ScrollBoxView*)scrollBoxView_card {
-    if (!_scrollBoxView_card) {
-        _scrollBoxView_card = [ScrollBoxView viewFromXib];
-    }
-    return _scrollBoxView_card;
-}
-
-- (ScrollBoxView*)scrollBoxView_save {
-    if (!_scrollBoxView_save) {
-        _scrollBoxView_save = [ScrollBoxView viewFromXib];
-    }
-    return _scrollBoxView_save;
-}
-#pragma mark - API
-
-#pragma mark - override
 
 @end

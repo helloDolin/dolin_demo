@@ -33,7 +33,6 @@
 }
 
 #pragma mark -- UITableViewDelegate && UITableViewDatasource
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     [self loadData];
     return _noteList.count;
@@ -60,26 +59,21 @@
     
     UITableViewRowAction *delete = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
         [tableView setEditing:NO animated:YES];
-        NSString *note = _noteList[indexPath.row];
+        NSString *note = self->_noteList[indexPath.row];
         NSMutableArray *myNote = [NSMutableArray arrayWithArray:[[[NSUserDefaults alloc] initWithSuiteName:@"group.extension.todayWidget"] valueForKey:@"MyNote"]];
         [myNote removeObject:note];
         [[[NSUserDefaults alloc] initWithSuiteName:@"group.extension.todayWidget"] setValue:myNote forKey:@"MyNote"];
-        [_noteList removeObjectAtIndex:indexPath.row];
+        [self->_noteList removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }];
     return @[delete];
 }
 
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (self.vc.extensionContext) {
         [self.vc.extensionContext openURL:[NSURL URLWithString:@"todaywidget://home"] completionHandler:nil];
     }
-    
-    
-    
 }
 
 @end

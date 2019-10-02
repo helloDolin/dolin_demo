@@ -32,13 +32,11 @@
 #pragma mark - override
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
     self.playerLayer.frame = self.bounds;
 }
 
 #pragma mark - getter
-- (AVPlayer *)player
-{
+- (AVPlayer *)player {
     if (!_player) {
         _player = [[AVPlayer alloc] init];
     }
@@ -57,7 +55,5 @@
     
     [self.player replaceCurrentItemWithPlayerItem:self.currentItem];
 }
-
-
 
 @end

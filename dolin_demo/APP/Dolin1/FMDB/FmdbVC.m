@@ -10,8 +10,9 @@
 #import "FMDatabase.h"
 
 /**
- FMDatabase：一个FMDatabase对象就代表一个单独的SQLite数据库，用来执行SQL语句
- FMResultSet：使用FMDatabase执行查询后的结果集
+ 🦍🦍🦍
+ FMDatabase：一个 FMDatabase 对象就代表一个单独的SQLite数据库，用来执行SQL语句
+ FMResultSet：使用 FMDatabase 执行查询后的结果集
  FMDatabaseQueue：用于在多线程中指向多个查询或更新，它是线程安全的
  */
 @interface FmdbVC ()
@@ -22,11 +23,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // 创建database路径
-    NSString *docuPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    [self testFMDB];
+}
+
+- (void)testFMDB {
+    NSString *docuPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];// 创建database路径（Document下）
     NSString *dbPath = [docuPath stringByAppendingPathComponent:@"test.db"];
-    // 创建对应路径下的数据库
-    FMDatabase* db = [FMDatabase databaseWithPath:dbPath];
+    
+    FMDatabase* db = [FMDatabase databaseWithPath:dbPath];// 创建对应路径下的数据库
     [db open];
     if (![db open]) {
         NSLog(@"db open fail");
@@ -41,10 +45,9 @@
         NSLog(@"create table success");
     }
     // 不确定的参数用？来占位
-//    BOOL isInsertSuccess1 = [db executeUpdate:@"insert into 't_student'(name,phone,score) values(?,?,?)" withArgumentsInArray:@[@"zhangsan",@"18521568888",@88]];
-//    BOOL isInsertSuccess2 = [db executeUpdate:@"insert into 't_student'(ID,name,phone,score) values(?,?,?,?)" withArgumentsInArray:@[@2,@"lisi",@"18521566666",@6666]];
-
-
+    //    BOOL isInsertSuccess1 = [db executeUpdate:@"insert into 't_student'(name,phone,score) values(?,?,?)" withArgumentsInArray:@[@"zhangsan",@"18521568888",@88]];
+    //    BOOL isInsertSuccess2 = [db executeUpdate:@"insert into 't_student'(ID,name,phone,score) values(?,?,?,?)" withArgumentsInArray:@[@2,@"lisi",@"18521566666",@6666]];
+    
     NSString* selectSql = @"select * from t_student";
     FMResultSet* resultSet = [db executeQuery:selectSql];
     while ([resultSet next]) {

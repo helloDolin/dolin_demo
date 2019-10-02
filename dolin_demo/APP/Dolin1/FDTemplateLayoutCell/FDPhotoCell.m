@@ -27,7 +27,7 @@
     [self.contentView addSubview:self.imgView];
     self.imgView.backgroundColor = [UIColor blackColor];
     [self.imgView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
+        make.edges.mas_equalTo(0);
     }];
 }
 

@@ -25,6 +25,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
     self.photoContainer.dataSource = self;
     self.photoContainer.delegate = self;
     self.photoContainer.scrollEnabled = NO;

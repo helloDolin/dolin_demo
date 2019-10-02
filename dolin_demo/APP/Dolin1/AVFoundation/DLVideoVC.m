@@ -24,7 +24,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     VideoModel* model1 = [VideoModel new];
     model1.imgUrlStr = @"http://vimg3.ws.126.net/image/snapshot/2017/5/M/J/VCIO0D9MJ.jpg";
@@ -42,13 +41,7 @@
     
     _dLVideoPlayView = [DLVideoPlayView videoPlayView];
     
-    
     [self.view addSubview:self.collectionView];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - UICollectionViewDataSource && UICollectionViewDelegate
@@ -82,9 +75,6 @@
         _dLVideoPlayView.hidden = YES;
     }
 }
-
-
-
 
 #pragma mark - getter
 - (UICollectionView*)collectionView {

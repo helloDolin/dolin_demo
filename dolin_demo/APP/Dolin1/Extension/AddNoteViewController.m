@@ -10,8 +10,10 @@
 #import "NoteViewController.h"
 
 @interface AddNoteViewController ()
+
 @property (nonatomic, strong) UITextField *textField;
 @property (nonatomic, strong) UIButton *addBtn;
+
 @end
 
 @implementation AddNoteViewController
@@ -34,7 +36,7 @@
     }];
     
     [_addBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_textField.mas_bottom).offset(20);
+        make.top.equalTo(self->_textField.mas_bottom).offset(20);
         make.size.mas_equalTo(CGSizeMake(50, 30));
         make.centerX.equalTo(self.view);
     }];
@@ -60,7 +62,6 @@
 
 - (void)addBtnAction {
     if (self.textField.text.length > 0) {
-        
         NSArray *myNote = [[[NSUserDefaults alloc] initWithSuiteName:SUITE_NAME] valueForKey:@"MyNote"];
         NSMutableArray *note = [NSMutableArray arrayWithArray:myNote];
         if (!note) {

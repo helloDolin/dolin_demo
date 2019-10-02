@@ -109,7 +109,6 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     // 如果点击的是右边的tableView暂不做任何处理
     if (tableView == self.rightTableView) {
         return;

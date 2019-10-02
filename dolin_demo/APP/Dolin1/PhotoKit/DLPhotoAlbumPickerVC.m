@@ -73,11 +73,6 @@ static const CGFloat kTableViewCellHeight = 80.0;
     [self removeTitleView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 #pragma mark - KVO
 // 只要selectedAssets发生变化就重新渲染
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
@@ -369,7 +364,6 @@ static const CGFloat kTableViewCellHeight = 80.0;
         _tableView.dataSource = self;
         _tableView.rowHeight = kTableViewCellHeight;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"DLPhotoAlbumPickerVC"];
     }
     return _tableView;
 }

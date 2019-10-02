@@ -17,6 +17,7 @@
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
+@property (nonatomic,strong) UITableView* tableView;
 @property (nonatomic, strong) NSMutableArray<DLFoldCellModel*> *data;
 
 @end
@@ -26,19 +27,11 @@
 #pragma mark -  life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.tableView];
-    
-    [self setupFPSLabel];
-    // [self setRightBarBtn];
-    [self setupTableViewData];
-
-    self.navigationController.delegate = self;
-    
+    [self setupUI];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
     NSIndexPath* selectedIndexPath = [self.tableView indexPathForSelectedRow];
     // 再次回到这个页面cell选中效果慢慢消失
     if (selectedIndexPath) {
@@ -46,10 +39,14 @@
     }
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
 #pragma mark -  method
+- (void)setupUI {
+    [self.view addSubview:self.tableView];
+    [self setupFPSLabel];
+    // [self setRightBarBtn];
+    [self setupTableViewData];
+    self.navigationController.delegate = self;
+}
 
 /**
  设置 tableview 的数据
@@ -74,21 +71,10 @@
 }
 
 /**
- 给cell添加动画效果
- 
- @param cell
+ JSPatch test（addData由JSPatch实现）
  */
-- (void)animateCell:(UITableViewCell*)cell {
-    cell.transform = CGAffineTransformMakeScale(0.5, 0.5);
-    [UIView animateWithDuration:1 delay:0.6 usingSpringWithDamping:0.1 initialSpringVelocity:5 options:UIViewAnimationOptionLayoutSubviews animations:^{
-        cell.transform = CGAffineTransformIdentity;
-    } completion:nil];
-}
-
-
 - (void)setRightBarBtn {
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
-    // 这个addData由JSPatch实现
     // 消除警告
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
@@ -101,22 +87,20 @@
 - (void)jumpToPageByModel:(DLFoldCellModel*)model {
     NSString *title = model.text;
     NSString *className = [[title componentsSeparatedByString:@"-"] lastObject];
-    
     // 如果是相册，先进行权限判断
     if ([className isEqualToString:@"DLPhotoAlbumPickerVC"]) {
         if(![DLSystemPermissionsManager requestAuthorization:SystemPermissionsPhotoLibrary withSureBtnClickBlock:nil]) {
             return;
         }
     }
-    
-    UIViewController* viewController = [[NSClassFromString(className) alloc] init];
-    viewController.title = [[title componentsSeparatedByString:@"-"] firstObject];
-    viewController.hidesBottomBarWhenPushed = YES;
+    UIViewController* vc = [[NSClassFromString(className) alloc] init];
+    vc.title = [[title componentsSeparatedByString:@"-"] firstObject];
+    vc.hidesBottomBarWhenPushed = YES;
     
     UIBarButtonItem *customLeftBarButtonItem = [[UIBarButtonItem alloc] init];
     customLeftBarButtonItem.title = @"返回";
     self.navigationItem.backBarButtonItem = customLeftBarButtonItem;
-    [self.navigationController pushViewController:viewController animated:YES];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - UITableViewDataSource
@@ -125,14 +109,12 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *reuseIdetify = @"FirstTableViewCell";
+    static NSString *reuseIdetify = @"reuseIdetify";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        // 设置缩进宽度
-        cell.indentationWidth = 40;
+        cell.indentationWidth = 40;// 设置缩进宽度
     }
     DLFoldCellModel* model = self.data[indexPath.row];
     cell.textLabel.text = model.text;
@@ -146,10 +128,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     DLFoldCellModel* didSelectModel = self.data[indexPath.row];
     [tableView beginUpdates];
-    
     if (didSelectModel.belowCount == 0) {
         NSArray* subModels = [didSelectModel open];
         // 不能再被展开，进行跳转
@@ -179,26 +159,7 @@
         }];
         [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
     }
-
     [tableView endUpdates];
-}
-
-// 闭合cell分割线需要实现此协议
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    // [self animateCell:cell];
-    
-    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
-        [cell setSeparatorInset:UIEdgeInsetsZero];
-    }
-    
-    if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]) {
-        [cell setPreservesSuperviewLayoutMargins:NO];
-    }
-    
-    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
-        [cell setLayoutMargins:UIEdgeInsetsZero];
-    }
 }
 
 #pragma mark - UINavigationControllerDelegate
@@ -210,7 +171,6 @@
     return nil;
 }
 
-
 #pragma mark -  getter
 - (UITableView*)tableView {
     if (!_tableView) {
@@ -221,4 +181,5 @@
     }
     return _tableView;
 }
+
 @end

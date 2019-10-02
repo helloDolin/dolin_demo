@@ -15,6 +15,7 @@
 @end
 
 /**
+ 🦍🦍🦍
  核心思想：
  1.利用collectionviewcell的重用机制减少内存开销
  2.items 的 count为数据源个数的1000倍
