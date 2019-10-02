@@ -9,7 +9,7 @@
 #import "LaunchViewController.h"
 #import "UIImageView+WebCache.h"
 
-static CGFloat const kAnimationDuration = 3.0;
+static CGFloat const kAnimationDuration = 0.5;
 
 @interface LaunchViewController ()
 
@@ -39,7 +39,7 @@ static CGFloat const kAnimationDuration = 3.0;
 
 #pragma mark -  method
 - (void)animate {
-    [UIView animateWithDuration:kAnimationDuration - 2 animations:^ {
+    [UIView animateWithDuration:kAnimationDuration animations:^ {
         self.mtImgView.frame = CGRectMake(0, 0, 50, 50);
         self.mtImgView.center = self.view.center;
         self.launchImageView.transform = CGAffineTransformMakeScale(1.2, 1.2);

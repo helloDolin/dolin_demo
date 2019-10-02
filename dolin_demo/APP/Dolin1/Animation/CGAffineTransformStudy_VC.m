@@ -30,7 +30,7 @@ static const NSTimeInterval kAnimationTime = 1.0;
 @interface CGAffineTransformStudy_VC ()
 
 @property(nonatomic,assign)NSInteger clickCount;
-@property(nonatomic,strong)UIImageView *imgView;
+@property(nonatomic,strong)UIView *testView;
 @property(nonatomic,strong)UIButton *btn;
 
 @end
@@ -44,10 +44,20 @@ static const NSTimeInterval kAnimationTime = 1.0;
 }
 
 - (void)setupUI {
-    _imgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
-    _imgView.center = self.view.center;
-    _imgView.image = [UIImage imageNamed:@"MT"];
-    [self.view addSubview:_imgView];
+    _testView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
+    _testView.center = self.view.center;
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = _testView.bounds;
+    gradientLayer.startPoint = CGPointMake(0, 0);
+    gradientLayer.endPoint = CGPointMake(1, 0);
+    gradientLayer.locations = @[@0.3, @0.5, @0.6];
+    gradientLayer.colors = [NSArray arrayWithObjects:
+                       (id)[UIColor redColor].CGColor,
+                       (id)[UIColor greenColor].CGColor,
+                       (id)[UIColor blueColor].CGColor,
+                       nil];
+    [_testView.layer addSublayer:gradientLayer];
+    [self.view addSubview:_testView];
     
     _btn = [UIButton buttonWithType:UIButtonTypeSystem];
     _btn.frame = CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, 100);
@@ -72,8 +82,8 @@ static const NSTimeInterval kAnimationTime = 1.0;
 
 - (void)translate {
     [UIView animateWithDuration:kAnimationTime animations:^{
-        // 每次变化都是以上一次的状态（self->_imgView.transform）进行的变化，所以可以多次变
-        self->_imgView.transform = CGAffineTransformTranslate(self->_imgView.transform,0,100);
+        // 每次变化都是以上一次的状态（self->_testView.transform）进行的变化，所以可以多次变
+        self->_testView.transform = CGAffineTransformTranslate(self->_testView.transform,0,100);
         self->_btn.enabled = NO;
     } completion:^(BOOL finished) {
         [self recover];
@@ -83,7 +93,7 @@ static const NSTimeInterval kAnimationTime = 1.0;
 - (void)rotate {
     [UIView animateWithDuration:kAnimationTime animations:^{
         self->_btn.enabled = NO;
-        self->_imgView.transform = CGAffineTransformRotate(self->_imgView.transform, M_PI_2);
+        self->_testView.transform = CGAffineTransformRotate(self->_testView.transform, M_PI_2);
     } completion:^(BOOL finished) {
         self->_btn.enabled = YES;
     }];
@@ -93,7 +103,7 @@ static const NSTimeInterval kAnimationTime = 1.0;
     // CGAffineTransformIdentity
     // 清空所有的设置的transform(一般和动画配合使用，只能使用于Transform设置的画面)
     [UIView animateWithDuration:kAnimationTime animations:^{
-        self->_imgView.transform = CGAffineTransformIdentity;
+        self->_testView.transform = CGAffineTransformIdentity;
         self->_btn.enabled = NO;
     } completion:^(BOOL finished) {
         self->_btn.enabled = YES;
