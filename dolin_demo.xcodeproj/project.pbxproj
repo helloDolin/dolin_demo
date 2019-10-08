@@ -222,6 +222,11 @@
 		3AFE58A71EE168C4009962DB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFE58A61EE168C4009962DB /* AudioToolbox.framework */; };
 		3AFE58AC1EE17225009962DB /* ImitateTGPPersonCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE58AB1EE17225009962DB /* ImitateTGPPersonCenterVC.m */; };
 		493FC64D10DA491EE25E3E80 /* libPods-TableKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0D1096B41FDA6C6A35DA5E /* libPods-TableKit.a */; };
+		71B2C6B8234C5C7B00239A99 /* Radio_MultipleChoiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6B7234C5C7B00239A99 /* Radio_MultipleChoiceVC.m */; };
+		71B2C6BB234C5EB800239A99 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6BA234C5EB800239A99 /* TestModel.m */; };
+		71B2C6BE234C5F1B00239A99 /* TestCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6BD234C5F1B00239A99 /* TestCollectionCell.m */; };
+		71B2C6C1234C5FC600239A99 /* TestHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6C0234C5FC600239A99 /* TestHeader.m */; };
+		71B2C6C4234C648500239A99 /* TestFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6C3234C648500239A99 /* TestFooter.m */; };
 		BD1499E7A67F3F29FA7FB593 /* libPods- .a in Frameworks */ = {isa = PBXBuildFile; fileRef = B269915BAC7276D4246047AD /* libPods- .a */; };
 		E39EC7B9A61145B2E2DF9E17 /* libPods-TodayWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A753A3DC1CFCC64573753A2 /* libPods-TodayWidget.a */; };
 /* End PBXBuildFile section */
@@ -629,6 +634,16 @@
 		3AFE58AB1EE17225009962DB /* ImitateTGPPersonCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImitateTGPPersonCenterVC.m; sourceTree = "<group>"; };
 		4A0D1096B41FDA6C6A35DA5E /* libPods-TableKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TableKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
+		71B2C6B6234C5C7B00239A99 /* Radio_MultipleChoiceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Radio_MultipleChoiceVC.h; sourceTree = "<group>"; };
+		71B2C6B7234C5C7B00239A99 /* Radio_MultipleChoiceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Radio_MultipleChoiceVC.m; sourceTree = "<group>"; };
+		71B2C6B9234C5EB800239A99 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		71B2C6BA234C5EB800239A99 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		71B2C6BC234C5F1B00239A99 /* TestCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCollectionCell.h; sourceTree = "<group>"; };
+		71B2C6BD234C5F1B00239A99 /* TestCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCollectionCell.m; sourceTree = "<group>"; };
+		71B2C6BF234C5FC600239A99 /* TestHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHeader.h; sourceTree = "<group>"; };
+		71B2C6C0234C5FC600239A99 /* TestHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHeader.m; sourceTree = "<group>"; };
+		71B2C6C2234C648500239A99 /* TestFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFooter.h; sourceTree = "<group>"; };
+		71B2C6C3234C648500239A99 /* TestFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFooter.m; sourceTree = "<group>"; };
 		AB808583BFBC35D39EAACCE8 /* Pods-TableKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableKit/Pods-TableKit.release.xcconfig"; sourceTree = "<group>"; };
 		B269915BAC7276D4246047AD /* libPods- .a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods- .a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2187555B3069CE8D2F53DE4 /* Pods- .debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods- .debug.xcconfig"; path = "Pods/Target Support Files/Pods- /Pods- .debug.xcconfig"; sourceTree = "<group>"; };
@@ -940,6 +955,7 @@
 		3A7C67B31DEC0D6800225D28 /* Dolin1 */ = {
 			isa = PBXGroup;
 			children = (
+				71B2C6B5234C5C2200239A99 /* Radio_MultipleChoice */,
 				16E34B6B22756F8600CDD25B /* dolin1data.json */,
 				16E34B68227549E400CDD25B /* DLFoldCellModel.h */,
 				16E34B69227549E400CDD25B /* DLFoldCellModel.m */,
@@ -1538,6 +1554,23 @@
 			path = ImitateTGPPersonCenter;
 			sourceTree = "<group>";
 		};
+		71B2C6B5234C5C2200239A99 /* Radio_MultipleChoice */ = {
+			isa = PBXGroup;
+			children = (
+				71B2C6B6234C5C7B00239A99 /* Radio_MultipleChoiceVC.h */,
+				71B2C6B7234C5C7B00239A99 /* Radio_MultipleChoiceVC.m */,
+				71B2C6B9234C5EB800239A99 /* TestModel.h */,
+				71B2C6BA234C5EB800239A99 /* TestModel.m */,
+				71B2C6BC234C5F1B00239A99 /* TestCollectionCell.h */,
+				71B2C6BD234C5F1B00239A99 /* TestCollectionCell.m */,
+				71B2C6BF234C5FC600239A99 /* TestHeader.h */,
+				71B2C6C0234C5FC600239A99 /* TestHeader.m */,
+				71B2C6C2234C648500239A99 /* TestFooter.h */,
+				71B2C6C3234C648500239A99 /* TestFooter.m */,
+			);
+			path = Radio_MultipleChoice;
+			sourceTree = "<group>";
+		};
 		96B6CFAEDF4D3AF27BC73BDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1940,6 +1973,7 @@
 				3AA0C1BD1E7163DA009B1628 /* Banner2VC.m in Sources */,
 				3A7C68E51DEC0D6800225D28 /* LaunchViewController.m in Sources */,
 				3A7C69361DEC0D6800225D28 /* MMPlaceHolder.m in Sources */,
+				71B2C6C1234C5FC600239A99 /* TestHeader.m in Sources */,
 				3AD3095E1E77D563004C2496 /* LinkworkTableViewVC.m in Sources */,
 				3A7C68E21DEC0D6800225D28 /* Dolin4ViewController.m in Sources */,
 				16C8D6421D33511700228ABD /* AppDelegate.m in Sources */,
@@ -1979,7 +2013,9 @@
 				3A7776B91EE7D28000B3E793 /* UtilOfPhotoAlbum.m in Sources */,
 				3A7C692F1DEC0D6800225D28 /* UITableView+Common.m in Sources */,
 				3A7C692E1DEC0D6800225D28 /* UITabBar+Badge.m in Sources */,
+				71B2C6C4234C648500239A99 /* TestFooter.m in Sources */,
 				3A332AAC1EB08D340072BD34 /* NSDate+Utilities.m in Sources */,
+				71B2C6B8234C5C7B00239A99 /* Radio_MultipleChoiceVC.m in Sources */,
 				3AC4835D1E49A93D0008CE57 /* SimulateKeepViewController.m in Sources */,
 				1648814A222684AD00A35107 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				3A7C68BB1DEC0D6800225D28 /* ImageModel.m in Sources */,
@@ -2012,12 +2048,14 @@
 				16C602A9224A406500F3DA0B /* RecommendModel.m in Sources */,
 				3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */,
 				3A7C69331DEC0D6800225D28 /* UIWindow+Expand.m in Sources */,
+				71B2C6BE234C5F1B00239A99 /* TestCollectionCell.m in Sources */,
 				3A7C69281DEC0D6800225D28 /* UIImage+Blur.m in Sources */,
 				16D1D0C82250F26A00435C3A /* DLBannerView.m in Sources */,
 				3A97CD811EE7F5F600AC19F5 /* PhotoAlbumCategoryCell.m in Sources */,
 				3A7C69241DEC0D6800225D28 /* YYWeakProxy.m in Sources */,
 				3A38F4831E1E55090036DE63 /* CGAffineTransformStudy_VC.m in Sources */,
 				3A5ED63B1E7279A900F232A4 /* Banner2Cell.m in Sources */,
+				71B2C6BB234C5EB800239A99 /* TestModel.m in Sources */,
 				3A7776BF1EE7E25C00B3E793 /* DLPhotoAlbumPickerVC.m in Sources */,
 				16C6028F224A0F2B00F3DA0B /* MBFadeAlertView.m in Sources */,
 				3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */,

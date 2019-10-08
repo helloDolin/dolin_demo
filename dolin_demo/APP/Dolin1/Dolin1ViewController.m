@@ -93,10 +93,17 @@
             return;
         }
     }
+    // 单多选 present
+    if ([className isEqualToString:@"Radio_MultipleChoiceVC"]) {
+        UIViewController* vc = [[NSClassFromString(className) alloc] init];
+        vc.title = [[title componentsSeparatedByString:@"-"] firstObject];
+        [self presentViewController:vc animated:YES completion:nil];
+        return;
+    }
+    
     UIViewController* vc = [[NSClassFromString(className) alloc] init];
     vc.title = [[title componentsSeparatedByString:@"-"] firstObject];
     vc.hidesBottomBarWhenPushed = YES;
-    
     UIBarButtonItem *customLeftBarButtonItem = [[UIBarButtonItem alloc] init];
     customLeftBarButtonItem.title = @"返回";
     self.navigationItem.backBarButtonItem = customLeftBarButtonItem;

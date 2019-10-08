@@ -46,5 +46,6 @@
         {"text":"TestWebView-TestWebViewVC","level":"1","subModels":[]},
         {"text":"TestWKWebViewVC-TestWKWebViewVC","level":"1","subModels":[]}
     ]},
-    {"text":"FmdbVC-FmdbVC","level":"0","subModels":[]}
+    {"text":"FmdbVC-FmdbVC","level":"0","subModels":[]},
+    {"text":"单多选-Radio_MultipleChoiceVC","level":"0","subModels":[]}
 ]
