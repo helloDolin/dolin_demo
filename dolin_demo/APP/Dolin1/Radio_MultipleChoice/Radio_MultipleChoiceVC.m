@@ -48,6 +48,13 @@ static const CGFloat kSectionPadding = 10.0;
 
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [UIView animateWithDuration:0.3 animations:^{
+        self.collectionView.y = NAVIGATION_BAR_HEIGHT + 100;
+    }];
+}
+
 #pragma mark - Setup View / Data
 
 - (void)setupUI {
@@ -203,7 +210,7 @@ static const CGFloat kSectionPadding = 10.0;
         layout.headerReferenceSize = CGSizeMake(SCREEN_WIDTH, 40); // 这个宽度随便设，都是collectionview宽
         layout.footerReferenceSize = CGSizeMake(1, 2);
         
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT + 100, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT - 200) collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT - 200) collectionViewLayout:layout];
         _collectionView.backgroundColor = [UIColor yellowColor];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
