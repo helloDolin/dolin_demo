@@ -33,7 +33,12 @@ static char kEmptyViewKey;
             }
         }
         [self addSubview:self.ly_emptyView];
-        self.ly_emptyView.hidden = YES;//添加时默认隐藏
+        
+        if ([self isKindOfClass:[UITableView class]] || [self isKindOfClass:[UICollectionView class]]) {
+            [self getDataAndSet]; // 添加时根据DataSource去决定显隐
+        } else {
+            self.ly_emptyView.hidden = YES;// 添加时默认隐藏
+        }
     }
 }
 - (LYEmptyView *)ly_emptyView{
@@ -72,19 +77,16 @@ static char kEmptyViewKey;
     }
 }
 - (void)show{
-    
     //当不自动显隐时，内部自动调用show方法时也不要去显示，要显示的话只有手动去调用 ly_showEmptyView
     if (!self.ly_emptyView.autoShowEmptyView) {
-        self.ly_emptyView.hidden = YES;
         return;
     }
     
     [self ly_showEmptyView];
 }
 - (void)hide{
-    
+    //当不自动显隐时，内部自动调用hide方法时也不要去隐藏，要隐藏的话只有手动去调用 ly_hideEmptyView
     if (!self.ly_emptyView.autoShowEmptyView) {
-        self.ly_emptyView.hidden = YES;
         return;
     }
     
@@ -94,21 +96,23 @@ static char kEmptyViewKey;
 #pragma mark - Public Method
 - (void)ly_showEmptyView{
     
-    [self.ly_emptyView.superview layoutSubviews];
-    
+    NSAssert(![self isKindOfClass:[LYEmptyView class]], @"LYEmptyView及其子类不能调用ly_showEmptyView方法");
+
     self.ly_emptyView.hidden = NO;
     
     //让 emptyBGView 始终保持在最上层
     [self bringSubviewToFront:self.ly_emptyView];
 }
 - (void)ly_hideEmptyView{
+    NSAssert(![self isKindOfClass:[LYEmptyView class]], @"LYEmptyView及其子类不能调用ly_hideEmptyView方法");
     self.ly_emptyView.hidden = YES;
 }
-
 - (void)ly_startLoading{
+    NSAssert(![self isKindOfClass:[LYEmptyView class]], @"LYEmptyView及其子类不能调用ly_startLoading方法");
     self.ly_emptyView.hidden = YES;
 }
 - (void)ly_endLoading{
+    NSAssert(![self isKindOfClass:[LYEmptyView class]], @"LYEmptyView及其子类不能调用ly_endLoading方法");
     self.ly_emptyView.hidden = [self totalDataCount];
 }
 

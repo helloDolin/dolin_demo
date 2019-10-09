@@ -1623,7 +1623,7 @@
 			buildConfigurationList = 16C8D6511D33511700228ABD /* Build configuration list for PBXNativeTarget "dolin_demo" */;
 			buildPhases = (
 				8C36E570CBD02ECA4B6FF703 /* [CP] Check Pods Manifest.lock */,
-				3BF289B7B6D42689CB3D9AB0 /* [CP-User] Run Flutter Build Script */,
+				6CA20EE0C95BDEA7249F61CC /* [CP-User] Run Flutter Build Script */,
 				16C8D6361D33511700228ABD /* Sources */,
 				16C8D6371D33511700228ABD /* Frameworks */,
 				16C8D6381D33511700228ABD /* Resources */,
@@ -1895,7 +1895,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3BF289B7B6D42689CB3D9AB0 /* [CP-User] Run Flutter Build Script */ = {
+		6CA20EE0C95BDEA7249F61CC /* [CP-User] Run Flutter Build Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
