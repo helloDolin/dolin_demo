@@ -14,6 +14,8 @@
 #import "DLSystemPermissionsManager.h"
 #import "MJRefresh.h"
 #import "DLFoldCellModel.h"
+#import <Flutter/Flutter.h>
+#import "AppDelegate.h"
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
@@ -42,8 +44,9 @@
 #pragma mark -  method
 - (void)setupUI {
     [self.view addSubview:self.tableView];
-    [self setupFPSLabel];
+    // [self setupFPSLabel];
     // [self setRightBarBtn];
+    [self setLeftBarBtn];
     [self setupTableViewData];
     self.navigationController.delegate = self;
 }
@@ -66,8 +69,22 @@
  window上添加FPSLabel
  */
 - (void)setupFPSLabel {
-    YYFPSLabel *fps = [[YYFPSLabel alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT - 20, 100, 20)];
+    YYFPSLabel *fps = [[YYFPSLabel alloc]initWithFrame:CGRectMake(80, NAVIGATION_BAR_HEIGHT - 20, 100, 20)];
     [[UIApplication sharedApplication].keyWindow addSubview:fps];
+}
+
+- (void)jump2FlutterPage {
+    FlutterEngine *flutterEngine = [(AppDelegate *)[[UIApplication sharedApplication] delegate] flutterEngine];
+    FlutterViewController *flutterViewController = [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
+    [self presentViewController:flutterViewController animated:false completion:nil];
+}
+
+- (void)setLeftBarBtn {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"Flutter" forState:UIControlStateNormal];
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    [btn addTarget:self action:@selector(jump2FlutterPage) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = leftItem;
 }
 
 /**
