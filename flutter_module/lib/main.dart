@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
         // "hot reload" (press "r" in the console where you ran "flutter run",
         // or press Run > Flutter Hot Reload in a Flutter IDE). Notice that the
         // counter didn't reset back to zero; the application is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page 666'),
+      home: MyHomePage(title: 'Flutter Demo Home Page 777'),
     );
   }
 }
@@ -47,7 +47,8 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
-    SystemNavigator.pop();
+//    SystemNavigator.pop();
+
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
@@ -55,8 +56,26 @@ class _MyHomePageState extends State<MyHomePage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter++;
+      print(_counter);
     });
+//    Future.wait([
+//      // 2秒后返回结果
+//      Future.delayed(new Duration(seconds: 2), () {
+//        print("hello");
+//        return "hello";
+//      }),
+//      // 4秒后返回结果
+//      Future.delayed(new Duration(seconds: 4), () {
+//        print(" world");
+//        return " world";
+//      })
+//    ]).then((results){
+//      print(results[0]+results[1]);
+//    }).catchError((e){
+//      print(e);
+//    });
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -99,14 +118,45 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.display1,
             ),
+            FlatButton(
+              child: Text("open new route"),
+              textColor: Colors.lightBlue,
+              onPressed: (){
+                Navigator.push(context,
+                  MaterialPageRoute(
+                    builder: (context){
+                      return NewRoute();
+                    },
+                    fullscreenDialog: false,
+                  )
+                );
+              },
+            )
           ],
+
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        child: Icon(Icons.add_a_photo),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+
+    );
+  }
+}
+
+class NewRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Scaffold(
+      appBar: AppBar(
+        title:Text("New route"),
+      ),
+      body: Center(
+        child: Text("This is new route"),
+      ),
     );
   }
 }
