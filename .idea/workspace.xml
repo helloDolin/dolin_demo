@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bca7bece-d99b-4c05-af41-ce1a43ada254" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/dolin_demo/APP/Dolin1/TestPresentVC.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dolin_demo/APP/Dolin1/TestPresentVC.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dolin_demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dolin_demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dolin_demo.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/dolin_demo.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dolin_demo/APP/Dolin1/Dolin1ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/dolin_demo/APP/Dolin1/Dolin1ViewController.m" afterDir="false" />
-    </list>
+    <list default="true" id="bca7bece-d99b-4c05-af41-ce1a43ada254" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +22,7 @@
     <expand />
     <select />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_3A3CEA03-FAC0-464D-8A09-2DC0B85CCD77" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_0AE19D17-5885-4144-948F-C5F6096F8964" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -77,7 +70,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name=" " type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dolin_demo" TARGET_NAME=" " CONFIG_NAME="Debug" SCHEME_NAME=" " IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="dolin_demo" RUN_TARGET_NAME=" " MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+    <configuration name=" " type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dolin_demo" TARGET_NAME="dolin_demo" CONFIG_NAME="Debug" SCHEME_NAME=" " IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="dolin_demo" RUN_TARGET_NAME="dolin_demo" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
@@ -102,6 +95,7 @@
       <workItem from="1552708996727" duration="5000" />
       <workItem from="1570505010515" duration="236000" />
       <workItem from="1570505270433" duration="1859000" />
+      <workItem from="1570674045192" duration="6000" />
     </task>
     <servers />
   </component>
