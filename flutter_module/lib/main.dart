@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart'; // 导入 Material UI组件库
-import 'package:flutter/services.dart';
-import 'package:flutter_module/test.dart';
 
 // 应用入口，所以MyApp是应用的根组件
 void main() => runApp(MyApp());
@@ -77,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:456',
+              'You have pushed the button this many times',
             ),
             Text(
               '$_counter',
@@ -102,7 +100,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 print("路由返回值：$result");
               },
             ),
-            RandomWordsWidget(),
             // Image(
             //   image:const AssetImage('assets/imgs/evincome.png'),
             //   width: 80,

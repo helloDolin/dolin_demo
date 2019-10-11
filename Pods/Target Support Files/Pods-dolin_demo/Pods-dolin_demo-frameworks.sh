@@ -94,7 +94,7 @@ install_dsym() {
     binary="${DERIVED_FILES_DIR}/${basename}.framework.dSYM/Contents/Resources/DWARF/${basename}"
 
     # Strip invalid architectures so "fat" simulator / device frameworks work on device
-    if [[ "$(file "$binary")" == *"Mach-O "*"dSYM companion"* ]]; then
+    if [[ "$(file "$binary")" == *"Mach-O dSYM companion"* ]]; then
       strip_invalid_archs "$binary"
     fi
 
@@ -162,12 +162,6 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/DoraemonKit/iOS/DoraemonKit/Framework/DoraemonLoadAnalyze.framework"
-  install_framework "${PODS_ROOT}/../flutter_module/.ios/Flutter/engine/Flutter.framework"
-  install_framework "${PODS_ROOT}/../flutter_module/.ios/Flutter/App.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/../flutter_module/.ios/Flutter/engine/Flutter.framework"
-  install_framework "${PODS_ROOT}/../flutter_module/.ios/Flutter/App.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

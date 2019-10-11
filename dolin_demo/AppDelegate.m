@@ -13,7 +13,6 @@
 #import <JSPatchPlatform/JSPatch.h>
 #import "AddNoteViewController.h"
 #import <DoraemonKit/DoraemonManager.h>
-#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h> // Only if you have Flutter Plugins
 
 @interface AppDelegate ()
 
@@ -136,11 +135,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSLog(@"didFinishLaunchingWithOptions %@",launchOptions);
-    // registerFlutter
-    self.flutterEngine = [[FlutterEngine alloc] initWithName:@"io.flutter" project:nil];
-    [self.flutterEngine runWithEntrypoint:nil];
-    [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
-    return [super application:application didFinishLaunchingWithOptions:launchOptions];
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

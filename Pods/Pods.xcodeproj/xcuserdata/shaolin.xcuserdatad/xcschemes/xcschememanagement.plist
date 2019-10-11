@@ -44,16 +44,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Flutter.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>FlutterPluginRegistrant.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>FreeStreamer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -109,11 +99,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>React.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -149,22 +134,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>flutter_module.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>lottie-ios.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>lottie-react-native.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>yoga.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
