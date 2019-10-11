@@ -29,7 +29,6 @@
                   @"点赞动画-AnimationLikeBtnViewController",
                   @"仿射变换矩阵-CGAffineTransformStudy_VC",
                   @"贝塞尔曲线学习-UIBezierPathViewController",
-                  @"lottie（碉堡了）-LottieStudyVC",
                   ]mutableCopy];
 }
 

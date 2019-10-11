@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		1612AAEA22525383004F0ECC /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612AAE622525383004F0ECC /* UIBezierPathViewController.m */; };
 		1612AAEB22525383004F0ECC /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612AAE922525383004F0ECC /* BezierPathView.m */; };
-		1612AAF32252544A004F0ECC /* zhayan.json in Resources */ = {isa = PBXBuildFile; fileRef = 1612AAEE2252544A004F0ECC /* zhayan.json */; };
-		1612AAF42252544A004F0ECC /* ciclista_salita.json in Resources */ = {isa = PBXBuildFile; fileRef = 1612AAEF2252544A004F0ECC /* ciclista_salita.json */; };
-		1612AAF52252544A004F0ECC /* think.json in Resources */ = {isa = PBXBuildFile; fileRef = 1612AAF02252544A004F0ECC /* think.json */; };
-		1612AAF62252544A004F0ECC /* diantou.json in Resources */ = {isa = PBXBuildFile; fileRef = 1612AAF12252544A004F0ECC /* diantou.json */; };
-		1612AAF72252544B004F0ECC /* LottieStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612AAF22252544A004F0ECC /* LottieStudyVC.m */; };
 		1630F53D2249CB0F002499C3 /* Dolin2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F53C2249CB0F002499C3 /* Dolin2ViewController.m */; };
 		1630F55C2249ED3B002499C3 /* XDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F55B2249ED3A002499C3 /* XDProgressView.m */; };
 		16488136222673E400A35107 /* FDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488134222673E400A35107 /* FDTableViewCell.m */; };
@@ -26,7 +21,6 @@
 		1648814A222684AD00A35107 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488145222684AC00A35107 /* UITableView+FDIndexPathHeightCache.m */; };
 		1648814D2226B5CC00A35107 /* FDPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1648814C2226B5CC00A35107 /* FDPhotoCell.m */; };
 		16A91C982237FC7D00ADED94 /* FmdbVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A91C972237FC7D00ADED94 /* FmdbVC.m */; };
-		16B1A8121FBE91F1004B3D74 /* ios.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 16B1A8111FBE91F1004B3D74 /* ios.jsbundle */; };
 		16B23F0622AE6756000BEA07 /* DLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B23F0422AE6755000BEA07 /* DLModel.m */; };
 		16BA4AA72277EA2700363DDE /* UIViewController+printVCDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BA4AA62277EA2700363DDE /* UIViewController+printVCDealloc.m */; };
 		16C6028F224A0F2B00F3DA0B /* MBFadeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6028E224A0F2B00F3DA0B /* MBFadeAlertView.m */; };
@@ -278,12 +272,6 @@
 		1612AAE722525383004F0ECC /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
 		1612AAE822525383004F0ECC /* UIBezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathViewController.h; sourceTree = "<group>"; };
 		1612AAE922525383004F0ECC /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
-		1612AAED2252544A004F0ECC /* LottieStudyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LottieStudyVC.h; sourceTree = "<group>"; };
-		1612AAEE2252544A004F0ECC /* zhayan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zhayan.json; sourceTree = "<group>"; };
-		1612AAEF2252544A004F0ECC /* ciclista_salita.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ciclista_salita.json; sourceTree = "<group>"; };
-		1612AAF02252544A004F0ECC /* think.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = think.json; sourceTree = "<group>"; };
-		1612AAF12252544A004F0ECC /* diantou.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diantou.json; sourceTree = "<group>"; };
-		1612AAF22252544A004F0ECC /* LottieStudyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LottieStudyVC.m; sourceTree = "<group>"; };
 		1620FD522243A49100FF9BAD /* MusicWY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicWY.h; sourceTree = "<group>"; };
 		1630F53B2249CB0F002499C3 /* Dolin2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dolin2ViewController.h; sourceTree = "<group>"; };
 		1630F53C2249CB0F002499C3 /* Dolin2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dolin2ViewController.m; sourceTree = "<group>"; };
@@ -309,7 +297,6 @@
 		1648814C2226B5CC00A35107 /* FDPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDPhotoCell.m; sourceTree = "<group>"; };
 		16A91C962237FC7D00ADED94 /* FmdbVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FmdbVC.h; sourceTree = "<group>"; };
 		16A91C972237FC7D00ADED94 /* FmdbVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FmdbVC.m; sourceTree = "<group>"; };
-		16B1A8111FBE91F1004B3D74 /* ios.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios.jsbundle; sourceTree = "<group>"; };
 		16B23F0422AE6755000BEA07 /* DLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLModel.m; sourceTree = "<group>"; };
 		16B23F0522AE6756000BEA07 /* DLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLModel.h; sourceTree = "<group>"; };
 		16BA4AA52277EA2700363DDE /* UIViewController+printVCDealloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+printVCDealloc.h"; sourceTree = "<group>"; };
@@ -697,19 +684,6 @@
 			path = UIBezierPath_Study;
 			sourceTree = "<group>";
 		};
-		1612AAEC2252544A004F0ECC /* Lottie */ = {
-			isa = PBXGroup;
-			children = (
-				1612AAED2252544A004F0ECC /* LottieStudyVC.h */,
-				1612AAF22252544A004F0ECC /* LottieStudyVC.m */,
-				1612AAEE2252544A004F0ECC /* zhayan.json */,
-				1612AAEF2252544A004F0ECC /* ciclista_salita.json */,
-				1612AAF02252544A004F0ECC /* think.json */,
-				1612AAF12252544A004F0ECC /* diantou.json */,
-			);
-			path = Lottie;
-			sourceTree = "<group>";
-		};
 		1630F5592249ED3A002499C3 /* XDProgressView */ = {
 			isa = PBXGroup;
 			children = (
@@ -863,7 +837,6 @@
 		3A38F4741E1E55090036DE63 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				1612AAEC2252544A004F0ECC /* Lottie */,
 				1612AAE522525383004F0ECC /* UIBezierPath_Study */,
 				3A38F48F1E1E558D0036DE63 /* Animation_Study_VC.h */,
 				3A38F4901E1E558D0036DE63 /* Animation_Study_VC.m */,
@@ -1099,7 +1072,6 @@
 		3A7C68201DEC0D6800225D28 /* Dolin3 */ = {
 			isa = PBXGroup;
 			children = (
-				16B1A8111FBE91F1004B3D74 /* ios.jsbundle */,
 				3A7C68231DEC0D6800225D28 /* Dolin3ViewController.h */,
 				3A7C68241DEC0D6800225D28 /* Dolin3ViewController.m */,
 			);
@@ -1756,7 +1728,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1612AAF32252544A004F0ECC /* zhayan.json in Resources */,
 				3A7C68FF1DEC0D6800225D28 /* cm2_mv_btn_play_ver@3x.png in Resources */,
 				3A7C690D1DEC0D6800225D28 /* cm2_topbar_icn_back@3x.png in Resources */,
 				3A7C690F1DEC0D6800225D28 /* cm2_vehicle_btn_next_prs@3x.png in Resources */,
@@ -1780,7 +1751,6 @@
 				3A7C68F81DEC0D6800225D28 /* cm2_list_detail_icn_dld@3x.png in Resources */,
 				3A7C69101DEC0D6800225D28 /* cm2_vehicle_btn_pause_prs@3x.png in Resources */,
 				3A7C69001DEC0D6800225D28 /* cm2_play_btn_dld_ok@3x.png in Resources */,
-				1612AAF52252544A004F0ECC /* think.json in Resources */,
 				3A7C68E91DEC0D6800225D28 /* 123.jpg in Resources */,
 				3A7C68E61DEC0D6800225D28 /* HYQiHei-50J.ttf in Resources */,
 				3A7C68BD1DEC0D6800225D28 /* PlantCollectionViewCell.xib in Resources */,
@@ -1794,7 +1764,6 @@
 				3A7C690C1DEC0D6800225D28 /* cm2_play_needle_play@3x.png in Resources */,
 				3A7C68FD1DEC0D6800225D28 /* cm2_mv_btn_dlded@3x.png in Resources */,
 				3A7C68F01DEC0D6800225D28 /* cm2_fm_vol_btn@3x.png in Resources */,
-				16B1A8121FBE91F1004B3D74 /* ios.jsbundle in Resources */,
 				3A7C68F31DEC0D6800225D28 /* cm2_icn_list@3x副本.png in Resources */,
 				3A7C690B1DEC0D6800225D28 /* cm2_play_icn_more@3x.png in Resources */,
 				3A7C69051DEC0D6800225D28 /* cm2_play_icn_cmt@3x.png in Resources */,
@@ -1814,11 +1783,9 @@
 				3A7C69141DEC0D6800225D28 /* fugai@3x.png in Resources */,
 				3A7C68F61DEC0D6800225D28 /* cm2_list_btn_more@3x.png in Resources */,
 				3A7C68E81DEC0D6800225D28 /* keep.mp4 in Resources */,
-				1612AAF62252544A004F0ECC /* diantou.json in Resources */,
 				3A7C69061DEC0D6800225D28 /* cm2_play_icn_cmt_num@3x.png in Resources */,
 				3A5ED63C1E7279A900F232A4 /* Banner2Cell.xib in Resources */,
 				3A7C68F91DEC0D6800225D28 /* cm2_list_detail_icn_faved@3x.png in Resources */,
-				1612AAF42252544A004F0ECC /* ciclista_salita.json in Resources */,
 				3A7C68ED1DEC0D6800225D28 /* cm2_default_cover_play@3x.png in Resources */,
 				3A7C68EA1DEC0D6800225D28 /* 123@3x.png in Resources */,
 				3A7C68FC1DEC0D6800225D28 /* cm2_list_icn_play@3x.png in Resources */,
@@ -2030,7 +1997,6 @@
 				3A7C68C31DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.m in Sources */,
 				3AA0C1B51E71628A009B1628 /* ChainCodeVC.m in Sources */,
 				3AC483621E49A93D0008CE57 /* SimulateTwitterViewController.m in Sources */,
-				1612AAF72252544B004F0ECC /* LottieStudyVC.m in Sources */,
 				3A7776B91EE7D28000B3E793 /* UtilOfPhotoAlbum.m in Sources */,
 				3A7C692F1DEC0D6800225D28 /* UITableView+Common.m in Sources */,
 				3A7C692E1DEC0D6800225D28 /* UITabBar+Badge.m in Sources */,

@@ -5,7 +5,6 @@
         "subModels":[
             {"text":"CABasicAnimation+CAShapeLayer-LoadingBtnVC","level":"1","subModels":[
                 {"text":"贝塞尔曲线学习-UIBezierPathViewController","level":"2","subModels":[]},
-                {"text":"lottie（碉堡了）-LottieStudyVC","level":"2","subModels":[]}
             ]},
             {"text":"基本+关键帧+组合-AnimationStudyVC","level":"1","subModels":[]},
             {"text":"弹簧+过渡+改变锚点-OriginAPIAnimateStudyVC","level":"1","subModels":[]},

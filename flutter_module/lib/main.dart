@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_module/test3lib.dart'; // 导入 Material UI组件库
 
 // 应用入口，所以MyApp是应用的根组件
@@ -67,14 +68,21 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.display1,
             ),
             FlatButton(
-              child: Text("jump 2 Newroute \n $_str"),
+              child: Text("jump 2 Newroute \t $_str"),
               textColor: Colors.blue,
               onPressed: () async {
                 var result = await Navigator.pushNamed(context, "new_route",arguments: "hello");
                 setState(() {
                   _str = result;
                 });
-              }
+              },
+              shape: RoundedRectangleBorder(
+                side: BorderSide(
+                  color: Colors.green,
+                  width: 1,
+                ),
+                borderRadius: BorderRadius.circular(6),
+              )
             ),
             Image(
               image:const AssetImage('assets/evincome.png'),
@@ -82,6 +90,20 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 40,
             ),
             RandomWordsWidget(),
+            FlatButton(
+              child: Text("jump 2 Native"),
+              textColor: Colors.blue,
+              onPressed:(){
+                SystemNavigator.pop();
+              },
+              shape: RoundedRectangleBorder(
+                side: BorderSide(
+                  color: Colors.green,
+                  width: 1,
+                ),
+                borderRadius: BorderRadius.circular(6),
+              )
+            ),
           ],
         ),
       ),
