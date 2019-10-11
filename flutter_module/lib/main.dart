@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart'; // 导入 Material UI组件库
 import 'package:flutter/services.dart';
+import 'package:flutter_module/test.dart';
 
 // 应用入口，所以MyApp是应用的根组件
 void main() => runApp(MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       // 应用名称
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.lime,
+        primarySwatch: Colors.blue,
       ),
       // 名为"/"的路由作为应用的首页
       initialRoute: '/',
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       // 路由表注册
       routes: {
         // 注册首页路由
-        "/":(context) => MyHomePage(title: 'Flutter Demo Home Page'),
+        "/":(context) => MyHomePage(title: '首页'),
         "new_route":(context){
           return NewRoute(text: ModalRoute.of(context).settings.arguments);
         },
@@ -76,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'You have pushed the button this many times:456',
             ),
             Text(
               '$_counter',
@@ -84,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             FlatButton(
               child: Text("open new route"),
-              textColor: Colors.lightBlue,
+              textColor: Colors.lime,
               onPressed: () async {
                 var result = await Navigator.pushNamed(context, "new_route",arguments: "hello");
 //                Navigator.push(
@@ -100,7 +101,13 @@ class _MyHomePageState extends State<MyHomePage> {
 //                );
                 print("路由返回值：$result");
               },
-            )
+            ),
+            RandomWordsWidget(),
+            // Image(
+            //   image:const AssetImage('assets/imgs/evincome.png'),
+            //   width: 80,
+            //   height: 80,
+            // ),
           ],
 
         ),
