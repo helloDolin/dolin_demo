@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart'; // 导入 Material UI组件库
+import 'package:flutter/material.dart';
+import 'package:flutter_module/test3lib.dart'; // 导入 Material UI组件库
 
 // 应用入口，所以MyApp是应用的根组件
 void main() => runApp(MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
           return NewRoute(text: ModalRoute.of(context).settings.arguments);
         },
       },
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Flutter Demo Home Page 798'),
     );
   }
 }
@@ -80,6 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 40,
               height: 40,
             ),
+            RandomWordsWidget(),
           ],
         ),
       ),
@@ -123,3 +125,4 @@ class NewRoute extends StatelessWidget {
     );
   }
 }
+
