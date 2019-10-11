@@ -1,9 +1,14 @@
-# Uncomment the next line to define a global platform for your project
+flutter_application_path = './flutter_module/'
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+
 platform :ios, '9.0'
 
 target 'dolin_demo' do
   # Comment the next line if you don't want to use dynamic frameworks
   # use_frameworks! 个别需要用到它，比如reactiveCocoa
+  
+  # Flutter module
+  install_all_flutter_pods(flutter_application_path)
   
   # Pods for
   pod 'AFNetworking', '~> 3.0'

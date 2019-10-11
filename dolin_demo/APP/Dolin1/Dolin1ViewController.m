@@ -15,6 +15,8 @@
 #import "MJRefresh.h"
 #import "DLFoldCellModel.h"
 #import "AppDelegate.h"
+#import <Flutter/Flutter.h>
+#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
@@ -73,11 +75,16 @@
 }
 
 - (void)jump2FlutterPage {
+    // 推荐用这种
 //    FlutterEngine *flutterEngine = [(AppDelegate *)[[UIApplication sharedApplication] delegate] flutterEngine];
 //    FlutterViewController *flutterViewController = [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
-////    [self.navigationController pushViewController:flutterViewController animated:YES];
 //    flutterViewController.modalPresentationStyle = UIModalPresentationFullScreen;
 //    [self presentViewController:flutterViewController animated:false completion:nil];
+    
+    FlutterViewController *flutterVC = [FlutterViewController new];
+    flutterVC.modalPresentationStyle = UIModalPresentationFullScreen;
+    [GeneratedPluginRegistrant registerWithRegistry:flutterVC];
+    [self presentViewController:flutterVC animated:YES completion:nil];
 }
 
 - (void)setLeftBarBtn {

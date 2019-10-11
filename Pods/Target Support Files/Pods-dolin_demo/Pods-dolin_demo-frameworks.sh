@@ -162,6 +162,12 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/DoraemonKit/iOS/DoraemonKit/Framework/DoraemonLoadAnalyze.framework"
+  install_framework "${PODS_ROOT}/../flutter_module/.ios/Flutter/engine/Flutter.framework"
+  install_framework "${PODS_ROOT}/../flutter_module/.ios/Flutter/App.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${PODS_ROOT}/../flutter_module/.ios/Flutter/engine/Flutter.framework"
+  install_framework "${PODS_ROOT}/../flutter_module/.ios/Flutter/App.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
