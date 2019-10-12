@@ -139,12 +139,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>fishhook.xcscheme</key>
+		<key>dl_flutter_module.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>flutter_module.xcscheme</key>
+		<key>fishhook.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
