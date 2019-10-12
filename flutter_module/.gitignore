@@ -1,8 +1,8 @@
 .DS_Store
-.dart_tool/
+#.dart_tool/
 
-.packages
-.pub/
+#.packages
+#.pub/
 
 .idea/
 .vagrant/
