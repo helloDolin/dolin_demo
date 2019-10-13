@@ -1,8 +1,6 @@
 # dolin_demo
 
-
-
-update date：2019年03月26日20:19:32
+### update date：2019年10月13日20:00:10
 
 将 
 
@@ -14,7 +12,7 @@ DLSystemPermissionsManager （系统权限管理工具类）
 
 DolinUsefulMacros （常用的宏，与简书基本同步）
 
-封装成 DLUtils 并上传到 CocoaPod
+封装成私有库 DLUtils 并上传到 CocoaPod
 
 项目工具类依赖，通过pod处理 pod 'DLUtils', '~> 0.0.5'
 
@@ -22,16 +20,10 @@ DolinUsefulMacros （常用的宏，与简书基本同步）
 
 Dolin2ViewController 
 
-原本是仿网易的播放器，由于接口的调整，很多歌听不了，现直接修改为 模仿 猫弄
+网易音乐播放器，API来自我喜欢的音乐收藏，UI 模仿猫弄
 
 ***
 
-demo 内容
-
-* 平时写的一些测试demo，感觉不错的会整合进来
-* 一些常用功能的封装或者觉得酷炫的东东也会放到这个demo中
-* 算是学习、练习、总结吧
-* 分享给大家，也希望大神给出建议（代码风格、逻辑处理、框架搭建等等）
 
 ***
 

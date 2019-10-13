@@ -1,15 +1,15 @@
 source 'https://cdn.cocoapods.org/'
 platform :ios, '9.0'
 
-flutter_application_path = './dl_flutter_module/'
-load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+#flutter_application_path = './dl_flutter_module/'
+#load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 
 target 'dolin_demo' do
   # Comment the next line if you don't want to use dynamic frameworks
   # use_frameworks!
   
   # Flutter module
-  install_all_flutter_pods(flutter_application_path)
+#  install_all_flutter_pods(flutter_application_path)
   
   # Pods for
   pod 'AFNetworking', '~> 3.0'

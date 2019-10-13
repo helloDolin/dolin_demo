@@ -18,8 +18,6 @@ PODS:
   - CocoaLumberjack (3.6.0):
     - CocoaLumberjack/Core (= 3.6.0)
   - CocoaLumberjack/Core (3.6.0)
-  - dl_flutter_module (0.0.1):
-    - Flutter
   - DLUtils (0.0.7)
   - DoraemonKit/Core (1.1.9):
     - BSBacktraceLogger
@@ -47,9 +45,6 @@ PODS:
     - "UITextView+Placeholder"
   - FDFullscreenPopGesture (1.1)
   - fishhook (0.2)
-  - Flutter (1.0.0)
-  - FlutterPluginRegistrant (0.0.1):
-    - Flutter
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -74,15 +69,12 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - dl_flutter_module (from `dl_flutter_module/.ios/Flutter`)
   - DLUtils (~> 0.0.7)
   - DoraemonKit/Core (~> 1.1.7)
   - DoraemonKit/WithGPS (~> 1.1.7)
   - DoraemonKit/WithLoad (~> 1.1.7)
   - DoraemonKit/WithLogger (~> 1.1.7)
   - FDFullscreenPopGesture (~> 1.1)
-  - Flutter (from `dl_flutter_module/.ios/Flutter/engine`)
-  - FlutterPluginRegistrant (from `dl_flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
   - FMDB (~> 2.7.5)
   - FreeStreamer (~> 3.9.3)
   - IQKeyboardManager
@@ -120,25 +112,14 @@ SPEC REPOS:
     - YYModel
     - YYText
 
-EXTERNAL SOURCES:
-  dl_flutter_module:
-    :path: dl_flutter_module/.ios/Flutter
-  Flutter:
-    :path: dl_flutter_module/.ios/Flutter/engine
-  FlutterPluginRegistrant:
-    :path: dl_flutter_module/.ios/Flutter/FlutterPluginRegistrant
-
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
   CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
-  dl_flutter_module: 0ba935b2e02467d2bba2748e8420972e6fbc8a75
   DLUtils: f4cfbf4072bd784ca80373da283c1b20d62e5177
   DoraemonKit: efea4a8afe0a6f2aadffcf5e66010bff692c6f05
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
-  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  FlutterPluginRegistrant: d59dd07dd90e9c6430996073575a5bd1ea19677e
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FreeStreamer: 8d52b299dc97e557ff156480bf86a666165bd1e5
   IQKeyboardManager: 700e5155d6a292383b54e8678aec769e14fc78fc
@@ -155,6 +136,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: f8ed4449a514ea40ff5fa8201d4611ceef4f6d4a
+PODFILE CHECKSUM: 680a466e521001dd40ccd45777a30ce3a7740f52
 
 COCOAPODS: 1.7.0.beta.2

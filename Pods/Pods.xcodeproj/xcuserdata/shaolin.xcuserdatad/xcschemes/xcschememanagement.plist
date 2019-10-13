@@ -44,16 +44,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Flutter.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>FlutterPluginRegistrant.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>FreeStreamer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -135,11 +125,6 @@
 			<false/>
 		</dict>
 		<key>YYText.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>dl_flutter_module.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

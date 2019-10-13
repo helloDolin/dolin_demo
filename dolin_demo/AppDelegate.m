@@ -28,7 +28,6 @@
     DolinTabBarController* dolinTabBarController = [[DolinTabBarController alloc]init];
     self.window.rootViewController = dolinTabBarController;
     [self.window makeKeyAndVisible];
-    
     // 这行代码需放到makeKeyAndVisible之后且window需要自行初始化
     [self.window showLanuchPageAndSetSomeOthers];
 }
@@ -42,10 +41,8 @@
 //    
 //    [[UIApplication shareApplication] presentLocalNotificationNow:notification];
     
-    
     UILocalNotification *notification = [self makeLocalNotification];
     [application scheduleLocalNotification:notification];
-    
     
     // 在iOS 8.0之后如果要使用本地通知、远程通知，需要得到用户的许可;
     if ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0) {
@@ -55,6 +52,7 @@
     }
 
 }
+
 - (UILocalNotification *)makeLocalNotification{
     // 重点 先取消掉上一次的全部notification
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
@@ -63,23 +61,22 @@
     UILocalNotification *notification = [[UILocalNotification alloc] init];
     NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
     [formatter setDateFormat:@"yyyy-MM-dd HH-mm-sss"];
-    NSDate *resDate = [formatter dateFromString:@"2017-05-16 14-06-00"];
-    // 设定为明天中午12点触发通知
+    NSDate *resDate = [formatter dateFromString:@"2017-05-16 13-30-00"];
     notification.fireDate = resDate;
     // 记得设置当前时区，没有设置的话，fireDate将不考虑时区，这样的通知会不准确
     notification.timeZone = [NSTimeZone defaultTimeZone];
     // 每隔一天触发一次
     notification.repeatInterval = NSCalendarUnitDay;
     //设置通知属性
-    notification.alertBody = @"go to eat";// 通知主体
+    notification.alertBody = @"get up & work,come on dolin!😆";// 通知主体
     notification.applicationIconBadgeNumber = 1; // 应用程序图标右上角显示的消息数
-    notification.alertAction = @"打开应用";  // 待机界面的滑动动作提示
+    notification.alertAction = @"The title of the action button or slider.";  // 待机界面的滑动动作提示
     notification.alertLaunchImage = @"Default"; // 通过点击通知打开应用时的启动图片,这里使用程序启动图片
     notification.soundName = UILocalNotificationDefaultSoundName;//收到通知时播放的声音，默认消息声音
-    //设置用户信息
+    // 设置用户信息
     notification.userInfo = @{
                                @"user":@"dolin",
-                               @"msg":@"eat"
+                               @"msg":@"message"
                                }; // 绑定到通知上的其他附加信息
     
     return notification;
@@ -119,6 +116,7 @@
     // 不管APP在后台还是进程被杀死，只要通过主屏快捷操作进来的，都会调用这个方法
     NSLog(@"name:%@\ntype:%@", shortcutItem.localizedTitle, shortcutItem.type);
 }
+
 // 对于应用程序初始化，强烈建议您使用此方法和应用程序
 // 如果应用程序无法处理URL资源或继续用户活动，则返回NO，否则返回YES。如果应用程序由于远程通知而启动，则会忽略返回值。
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
