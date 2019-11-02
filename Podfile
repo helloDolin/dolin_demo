@@ -1,4 +1,3 @@
-source 'https://cdn.cocoapods.org/'
 platform :ios, '9.0'
 
 #flutter_application_path = './dl_flutter_module/'
