@@ -30,4 +30,8 @@
 
 + (UIColor *)doraemon_line;//[UIColor doraemon_colorWithHex:0x000000 andAlpha:0.1];
 
++ (UIColor *)doraemon_randomColor;
+
++ (UIColor *)doraemon_bg; //#F4F5F6
+
 @end

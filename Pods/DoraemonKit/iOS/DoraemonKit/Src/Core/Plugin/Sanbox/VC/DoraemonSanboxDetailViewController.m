@@ -17,9 +17,7 @@
 
 @interface DoraemonSanboxDetailViewController ()<QLPreviewControllerDelegate,QLPreviewControllerDataSource,UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UITextView *textView;
-@property (nonatomic, strong) AVPlayerViewController *playerView;
 @property (nonatomic, copy) NSArray *tableNameArray;
 @property (nonatomic, strong) UITableView *dbTableNameTableView;
 
@@ -30,22 +28,52 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = DoraemonLocalizedString(@"文件预览");
+    
     if (self.filePath.length > 0) {
         NSString *path = self.filePath;
-        if([path hasSuffix:@".DB"] || [path hasSuffix:@".db"] || [path hasSuffix:@".sqlite"] || [path hasSuffix:@".SQLITE"]){
-            //数据库文件
+        if ([path hasSuffix:@".strings"] || [path hasSuffix:@".plist"]) {
+            // 文本文件
+            [self setContent:[[NSDictionary dictionaryWithContentsOfFile:path] description]];
+        } else if([path hasSuffix:@".DB"] || [path hasSuffix:@".db"] || [path hasSuffix:@".sqlite"] || [path hasSuffix:@".SQLITE"]){
+            // 数据库文件
             self.title = DoraemonLocalizedString(@"数据库预览");
             [self browseDBTable];
         } else {
-            // 其他文件 尝试使用 QLPreviewController进行打开
+            // 其他文件 尝试使用 QLPreviewController 进行打开
             QLPreviewController *previewController = [[QLPreviewController alloc]init];
             previewController.delegate = self;
             previewController.dataSource = self;
             [self presentViewController:previewController animated:YES completion:nil];
         }
-    }else{
+    } else {
         [DoraemonToastUtil showToast:DoraemonLocalizedString(@"文件不存在") inView:self.view];
     }
+}
+
+- (void)setContent:(NSString *)text {
+    _textView = [[UITextView alloc] initWithFrame:self.view.bounds];
+    _textView.font = [UIFont systemFontOfSize:12.0f];
+    _textView.textColor = [UIColor blackColor];
+    _textView.textAlignment = NSTextAlignmentLeft;
+    _textView.editable = NO;
+    _textView.dataDetectorTypes = UIDataDetectorTypeLink;
+    _textView.scrollEnabled = YES;
+    _textView.backgroundColor = [UIColor whiteColor];
+    _textView.layer.borderColor = [UIColor grayColor].CGColor;
+    _textView.layer.borderWidth = 2.0f;
+    _textView.text = text;
+#if defined(__IPHONE_13_0) && (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_13_0)
+    if (@available(iOS 13.0, *)) {
+        _textView.textColor = [UIColor labelColor];
+        _textView.backgroundColor = [UIColor systemBackgroundColor];
+    } else {
+#endif
+        _textView.textColor = [UIColor blackColor];
+        _textView.backgroundColor = [UIColor whiteColor];
+#if defined(__IPHONE_13_0) && (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_13_0)
+    }
+#endif
+    [self.view addSubview:_textView];
 }
 
 //浏览数据库中所有数据表
@@ -53,7 +81,7 @@
     [DoraemonDBManager shareManager].dbPath = self.filePath;
     self.tableNameArray = [[DoraemonDBManager shareManager] tablesAtDB];
     self.dbTableNameTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.doraemon_width, self.view.doraemon_height) style:UITableViewStylePlain];
-    self.dbTableNameTableView.backgroundColor = [UIColor whiteColor];
+//    self.dbTableNameTableView.backgroundColor = [UIColor whiteColor];
     self.dbTableNameTableView.delegate = self;
     self.dbTableNameTableView.dataSource = self;
     [self.view addSubview:self.dbTableNameTableView];

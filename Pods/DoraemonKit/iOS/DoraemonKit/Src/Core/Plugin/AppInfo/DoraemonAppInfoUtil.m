@@ -13,6 +13,7 @@
 #import <AddressBook/AddressBook.h>
 #import <Contacts/Contacts.h>
 #import <EventKit/EventKit.h>
+#import <UIKit/UIKit.h>
 
 #define IOS8 ([[[UIDevice currentDevice] systemVersion] doubleValue] >=8.0 ? YES : NO)
 
@@ -78,8 +79,11 @@
     if ([platform isEqualToString:@"iPhone10,6"]) return @"iPhone X";
     if ([platform isEqualToString:@"iPhone11,8"]) return @"iPhone XR";
     if ([platform isEqualToString:@"iPhone11,2"]) return @"iPhone XS";
-    if ([platform isEqualToString:@"iPhone11,4"]) return @"iPhone XS MAX";
-    if ([platform isEqualToString:@"iPhone11,6"]) return @"iPhone XS MAX";
+    if ([platform isEqualToString:@"iPhone11,4"]) return @"iPhone XS Max";
+    if ([platform isEqualToString:@"iPhone11,6"]) return @"iPhone XS Max";
+    if ([platform isEqualToString:@"iPhone12,1"]) return @"iPhone 11";
+    if ([platform isEqualToString:@"iPhone12,3"]) return @"iPhone 11 Pro";
+    if ([platform isEqualToString:@"iPhone12,5"]) return @"iPhone 11 Pro Max";
     
     return platform;
 }
@@ -122,8 +126,6 @@
             authority = @"Always";
         }else if(state == kCLAuthorizationStatusAuthorizedWhenInUse){
             authority = @"WhenInUse";
-        }else if(state == kCLAuthorizationStatusAuthorized){
-            authority = @"Authorized";
         }
     }else{
         authority = @"NoEnabled";
@@ -132,14 +134,8 @@
 }
 
 + (NSString *)pushAuthority{
-    if (IOS8) { //iOS8以上包含iOS8
-        if ([[UIApplication sharedApplication] currentUserNotificationSettings].types  == UIRemoteNotificationTypeNone) {
-            return @"NO";
-        }
-    }else{ // ios7 一下
-        if ([[UIApplication sharedApplication] enabledRemoteNotificationTypes]  == UIRemoteNotificationTypeNone) {
-            return @"NO";
-        }
+    if ([[UIApplication sharedApplication] currentUserNotificationSettings].types  == UIUserNotificationTypeNone) {
+        return @"NO";
     }
     return @"YES";
 }
@@ -250,9 +246,27 @@
 
 + (NSString *)addressAuthority{
     NSString *authority = @"";
-    //iOS9.0之前
-    if([[UIDevice currentDevice].systemVersion floatValue] <= __IPHONE_9_0)
-    {
+    if (@available(iOS 9.0, *)) {//iOS9.0之后
+        CNAuthorizationStatus authStatus = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
+        switch (authStatus) {
+            case CNAuthorizationStatusAuthorized:
+                authority = @"Authorized";
+                break;
+            case CNAuthorizationStatusDenied:
+            {
+                authority = @"Denied";
+            }
+                break;
+            case CNAuthorizationStatusNotDetermined:
+            {
+                authority = @"NotDetermined";
+            }
+                break;
+            case CNAuthorizationStatusRestricted:
+                authority = @"Restricted";
+                break;
+        }
+    }else{//iOS9.0之前
         ABAuthorizationStatus authorStatus = ABAddressBookGetAuthorizationStatus();
         switch (authorStatus) {
             case kABAuthorizationStatusAuthorized:
@@ -272,28 +286,6 @@
                 authority = @"Restricted";
                 break;
             default:
-                break;
-        }
-    }
-    else//iOS9.0之后
-    {
-        CNAuthorizationStatus authStatus = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
-        switch (authStatus) {
-            case CNAuthorizationStatusAuthorized:
-                authority = @"Authorized";
-                break;
-            case CNAuthorizationStatusDenied:
-            {
-                authority = @"Denied";
-            }
-                break;
-            case CNAuthorizationStatusNotDetermined:
-            {
-                authority = @"NotDetermined";
-            }
-                break;
-            case CNAuthorizationStatusRestricted:
-                authority = @"Restricted";
                 break;
         }
     }

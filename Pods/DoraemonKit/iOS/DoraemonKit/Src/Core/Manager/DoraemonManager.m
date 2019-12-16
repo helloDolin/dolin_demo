@@ -4,12 +4,13 @@
 //
 //  Created by yixiang on 2017/12/11.
 //
-
+#import <UIKit/UIKit.h>
 #import "DoraemonManager.h"
 #import "DoraemonEntryView.h"
 #import "DoraemonCacheManager.h"
 #import "DoraemonStartPluginProtocol.h"
 #import "DoraemonDefine.h"
+#import "DoraemonUtil.h"
 #import "DoraemonHomeWindow.h"
 #import "Doraemoni18NUtil.h"
 #import "DoraemonCrashUncaughtExceptionHandler.h"
@@ -18,16 +19,27 @@
 #import "DoraemonStateBar.h"
 #import "DoraemonNSLogViewController.h"
 #import "DoraemonNSLogListViewController.h"
-#import "DoraemonUtil.h"
+#import "DoraemonHomeWindow.h"
 #import "DoraemonAllTestManager.h"
 #import "DoraemonStatisticsUtil.h"
 #import "DoraemonANRManager.h"
+#import "DoraemonLargeImageDetectionManager.h"
 
 #if DoraemonWithLogger
 #import "DoraemonCocoaLumberjackLogger.h"
 #import "DoraemonCocoaLumberjackViewController.h"
 #import "DoraemonCocoaLumberjackListViewController.h"
 #endif
+
+#if DoraemonWithWeex
+#import "DoraemonWeexLogDataSource.h"
+#import "DoraemonWeexInfoDataManager.h"
+#endif
+
+#if DoraemonWithGPS
+#import "DoraemonGPSMocker.h"
+#endif
+
 
 #define kTitle        @"title"
 #define kDesc         @"desc"
@@ -52,6 +64,11 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
 
 @property (nonatomic, copy) DoraemonPerformanceBlock performanceBlock;
 
+@property (nonatomic, assign) BOOL hasInstall;
+
+// 定制位置
+@property (nonatomic) CGPoint startingPosition;
+
 @end
 
 @implementation DoraemonManager
@@ -66,12 +83,28 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
 }
 
 - (void)install{
+    //启用默认位置
+    CGPoint defaultPosition = DoraemonStartingPosition;
+    CGSize size = [UIScreen mainScreen].bounds.size;
+    if (size.width > size.height) {
+        defaultPosition = DoraemonFullScreenStartingPosition;
+    }
+    [self installWithStartingPosition:defaultPosition];
+}
+
+- (void)installWithStartingPosition:(CGPoint) position{
+    _startingPosition = position;
     [self installWithCustomBlock:^{
         //什么也没发生
     }];
 }
 
-- (void)installWithCustomBlock:(void(^)())customBlock{
+- (void)installWithCustomBlock:(void(^)(void))customBlock{
+    //保证install只执行一次
+    if (_hasInstall) {
+        return;
+    }
+    _hasInstall = YES;
     for (int i=0; i<_startPlugins.count; i++) {
         NSString *pluginName = _startPlugins[i];
         Class pluginClass = NSClassFromString(pluginName);
@@ -84,7 +117,7 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
     [self initData];
     customBlock();
 
-    [self initEntry];
+    [self initEntry:self.startingPosition];
     
     //根据开关判断是否收集Crash日志
     if ([[DoraemonCacheManager sharedInstance] crashSwitch]) {
@@ -97,23 +130,37 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
     [[DoraemonCacheManager sharedInstance] saveCpuSwitch:NO];
     [[DoraemonCacheManager sharedInstance] saveMemorySwitch:NO];
     [[DoraemonCacheManager sharedInstance] saveNetFlowSwitch:NO];
-    [[DoraemonCacheManager sharedInstance] saveMockGPSSwitch:NO];
+    
+#if DoraemonWithGPS
+    //开启mockGPS功能
+    if ([[DoraemonCacheManager sharedInstance] mockGPSSwitch]) {
+        CLLocationCoordinate2D coordinate = [[DoraemonCacheManager sharedInstance] mockCoordinate];
+        if (coordinate.longitude>0 && coordinate.latitude>0) {
+            CLLocation *loc = [[CLLocation alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
+            [[DoraemonGPSMocker shareInstance] mockPoint:loc];
+        }
+    }
+#endif
     
     //开启NSLog监控功能
     if ([[DoraemonCacheManager sharedInstance] nsLogSwitch]) {
         [[DoraemonNSLogManager sharedInstance] startNSLogMonitor];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1. * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [[DoraemonStateBar shareInstance] show];
-        });
+        if (@available(iOS 13.0, *)) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1. * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [[DoraemonStateBar shareInstance] show];
+            });
+        }
     }
     
 #if DoraemonWithLogger
     //开启CocoaLumberjack监控
     if ([[DoraemonCacheManager sharedInstance] loggerSwitch]) {
         [DoraemonCocoaLumberjackLogger sharedInstance];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1. * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [[DoraemonStateBar shareInstance] show];
-        });
+        if (@available(iOS 13.0, *)) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1. * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [[DoraemonStateBar shareInstance] show];
+            });
+        }
     }
 #endif
     
@@ -122,10 +169,10 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
             self.performanceBlock(upLoadData);
         }
         //默认实现 保存到沙盒中
-        NSString *testTime = [DoraemonUtil dateFormatTimeInterval:[upLoadData[@"testTime"] floatValue]];
+        NSString *testTimeString = upLoadData[@"testTime"];
         
         NSString *data = [DoraemonUtil dictToJsonStr:upLoadData];
-        [DoraemonUtil savePerformanceDataInFile:testTime data:data];
+        [DoraemonUtil savePerformanceDataInFile:testTimeString data:data];
     }];
     
     [[DoraemonANRManager sharedInstance] addANRBlock:^(NSDictionary *anrInfo) {
@@ -137,9 +184,20 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
     //监听DoraemonStateBar点击事件
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(quickOpenLogVC:) name:DoraemonQuickOpenLogVCNotification object:nil];
     
+    //外部设置大图检测的数值
+    if (_bigImageDetectionSize > 0){
+        [DoraemonLargeImageDetectionManager shareInstance].minimumDetectionSize = _bigImageDetectionSize;
+    }
+    
     //统计开源项目使用量 不用于任何恶意行为
     [[DoraemonStatisticsUtil shareInstance] upLoadUserInfo];
-
+    
+    //Weex工具的初始化
+#if DoraemonWithWeex
+    [DoraemonWeexLogDataSource shareInstance];
+    [DoraemonWeexInfoDataManager shareInstance];
+#endif
+    
 }
 
 
@@ -147,6 +205,13 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
  初始化内置工具数据
  */
 - (void)initData{
+    #pragma mark - Weex专项工具
+#if DoraemonWithWeex
+    [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonWeexLogPlugin];
+    [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonWeexStoragePlugin];
+    [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonWeexInfoPlugin];
+    [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonWeexDevToolPlugin];
+#endif
     #pragma mark - 常用工具
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonAppInfoPlugin];
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonSandboxPlugin];
@@ -163,15 +228,26 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonCocoaLumberjackPlugin];
 #endif
     
+#if DoraemonWithDatabase
+    [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonDatabasePlugin];
+#endif
+    
     #pragma mark - 性能检测
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonFPSPlugin];
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonCPUPlugin];
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonMemoryPlugin];
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonNetFlowPlugin];
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonANRPlugin];
+    [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonLargeImageFilter];
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonAllTestPlugin];
+    [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonStartTimePlugin];
+    [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonUIProfilePlugin];
+    [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonTimeProfilePlugin];
 #if DoraemonWithLoad
     [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonMethodUseTimePlugin];
+#endif
+#if DoraemonWithMLeaksFinder
+    [self addPluginWithPluginType:DoraemonManagerPluginType_DoraemonMemoryLeakPlugin];
 #endif
     
     #pragma mark - 视觉工具
@@ -185,8 +261,11 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
 /**
  初始化工具入口
  */
-- (void)initEntry{
-    _entryView = [[DoraemonEntryView alloc] init];
+- (void)initEntry:(CGPoint) startingPosition{
+    _entryView = [DoraemonEntryView alloc];
+    _entryView.startingPosition = startingPosition;
+    _entryView = [_entryView init];
+    
     [_entryView makeKeyAndVisible];
 }
 
@@ -287,6 +366,10 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
     }
 }
 
+- (BOOL)isShowDoraemon{
+    return !_entryView.hidden;
+}
+
 - (void)showDoraemon{
     if (_entryView.hidden) {
         _entryView.hidden = NO;
@@ -317,13 +400,13 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
     NSInteger from = [userInfo[@"from"] integerValue];
     if (from == DoraemonStateBarFromNSLog) {//快速打开NSLog list页面
         DoraemonNSLogViewController *vc = [[DoraemonNSLogViewController alloc] init];
-        [DoraemonUtil openPlugin:vc];
+        [DoraemonHomeWindow openPlugin:vc];
         DoraemonNSLogListViewController *vcList = [[DoraemonNSLogListViewController alloc] init];
         [vc.navigationController pushViewController:vcList animated:NO];
     }else{//快速打开CocoaLumberjack list页面
 #if DoraemonWithLogger
         DoraemonCocoaLumberjackViewController *vc = [[DoraemonCocoaLumberjackViewController alloc] init];
-        [DoraemonUtil openPlugin:vc];
+        [DoraemonHomeWindow openPlugin:vc];
         DoraemonCocoaLumberjackListViewController *vcList = [[DoraemonCocoaLumberjackListViewController alloc] init];
         [vc.navigationController pushViewController:vcList animated:NO];
 #endif
@@ -338,7 +421,34 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
 - (DoraemonManagerPluginTypeModel *)getDefaultPluginDataWithPluginType:(DoraemonManagerPluginType)pluginType
 {
     NSArray *dataArray = @{
-                           // 常用工具
+                           @(DoraemonManagerPluginType_DoraemonWeexLogPlugin) : @[
+                                   @{kTitle:DoraemonLocalizedString(@"日志")},
+                                   @{kDesc:@"Weex日志显示"},
+                                   @{kIcon:@"doraemon_log"},
+                                   @{kPluginName:@"DoraemonWeexLogPlugin"},
+                                   @{kAtModule:@"Weex专区"}
+                                   ],
+                           @(DoraemonManagerPluginType_DoraemonWeexStoragePlugin) : @[
+                                   @{kTitle:DoraemonLocalizedString(@"缓存")},
+                                   @{kDesc:@"weex storage 查看"},
+                                   @{kIcon:@"doraemon_file"},
+                                   @{kPluginName:@"DoraemonWeexStoragePlugin"},
+                                   @{kAtModule:@"Weex专区"}
+                                   ],
+                           @(DoraemonManagerPluginType_DoraemonWeexInfoPlugin) : @[
+                                   @{kTitle:DoraemonLocalizedString(@"信息")},
+                                   @{kDesc:@"weex 信息查看"},
+                                   @{kIcon:@"doraemon_app_info"},
+                                   @{kPluginName:@"DoraemonWeexInfoPlugin"},
+                                   @{kAtModule:@"Weex专区"}
+                                   ],
+                           @(DoraemonManagerPluginType_DoraemonWeexDevToolPlugin) : @[
+                                   @{kTitle:@"DevTool"},
+                                   @{kDesc:@"weex devtool"},
+                                   @{kIcon:@"doraemon_default"},
+                                   @{kPluginName:@"DoraemonWeexDevTooloPlugin"},
+                                   @{kAtModule:@"Weex专区"}
+                                   ],
                            @(DoraemonManagerPluginType_DoraemonAppInfoPlugin) : @[
                                    @{kTitle:DoraemonLocalizedString(@"App信息")},
                                    @{kDesc:DoraemonLocalizedString(@"App的一些基本信息")},
@@ -402,7 +512,13 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
                                    @{kPluginName:@"DoraemonCocoaLumberjackPlugin"},
                                    @{kAtModule:DoraemonLocalizedString(@"常用工具")}
                                    ],
-                           
+                           @(DoraemonManagerPluginType_DoraemonDatabasePlugin) : @[
+                                   @{kTitle:@"DBView"},
+                                   @{kDesc:DoraemonLocalizedString(@"数据库")},
+                                   @{kIcon:@"doraemon_database"},
+                                   @{kPluginName:@"DoraemonDatabasePlugin"},
+                                   @{kAtModule:DoraemonLocalizedString(@"常用工具")}
+                                   ],
                            // 性能检测
                            @(DoraemonManagerPluginType_DoraemonFPSPlugin) : @[
                                    @{kTitle:DoraemonLocalizedString(@"帧率")},
@@ -454,6 +570,41 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
                                    @{kAtModule:DoraemonLocalizedString(@"性能检测")}
                                    ],
                            
+                           @(DoraemonManagerPluginType_DoraemonLargeImageFilter) : @[
+                                   @{kTitle:DoraemonLocalizedString(@"大图检测")},
+                                   @{kDesc:DoraemonLocalizedString(@"大图检测")},
+                                   @{kIcon:@"doraemon_net"},
+                                   @{kPluginName:@"DoraemonLargeImagePlugin"},
+                                   @{kAtModule:DoraemonLocalizedString(@"性能检测")}
+                                   ],
+                           @(DoraemonManagerPluginType_DoraemonStartTimePlugin) : @[
+                                   @{kTitle:DoraemonLocalizedString(@"启动耗时")},
+                                   @{kDesc:DoraemonLocalizedString(@"启动耗时统计")},
+                                   @{kIcon:@"doraemon_app_start_time"},
+                                   @{kPluginName:@"DoraemonStartTimePlugin"},
+                                   @{kAtModule:DoraemonLocalizedString(@"性能检测")}
+                                   ],
+                           @(DoraemonManagerPluginType_DoraemonMemoryLeakPlugin) : @[
+                                   @{kTitle:DoraemonLocalizedString(@"内存泄漏")},
+                                   @{kDesc:DoraemonLocalizedString(@"内存泄漏统计")},
+                                   @{kIcon:@"doraemon_memory_leak"},
+                                   @{kPluginName:@"DoraemonMLeaksFinderPlugin"},
+                                   @{kAtModule:DoraemonLocalizedString(@"性能检测")}
+                                   ],
+                           @(DoraemonManagerPluginType_DoraemonUIProfilePlugin) : @[
+                                   @{kTitle:DoraemonLocalizedString(@"UI层级检查")},
+                                   @{kDesc:DoraemonLocalizedString(@"显示UI层级检查")},
+                                   @{kIcon:@"doraemon_view_level"},
+                                   @{kPluginName:@"DoraemonUIProfilePlugin"},
+                                   @{kAtModule:DoraemonLocalizedString(@"性能检测")}
+                           ],
+                           @(DoraemonManagerPluginType_DoraemonTimeProfilePlugin) : @[
+                                   @{kTitle:DoraemonLocalizedString(@"函数耗时")},
+                                   @{kDesc:DoraemonLocalizedString(@"函数耗时统计")},
+                                   @{kIcon:@"doraemon_time_profiler"},
+                                   @{kPluginName:@"DoraemonTimeProfilerPlugin"},
+                                   @{kAtModule:DoraemonLocalizedString(@"性能检测")}
+                           ],
                            // 视觉工具
                            @(DoraemonManagerPluginType_DoraemonColorPickPlugin) : @[
                                    @{kTitle:DoraemonLocalizedString(@"颜色吸管")},
@@ -493,6 +644,14 @@ typedef void (^DoraemonPerformanceBlock)(NSDictionary *);
     model.atModule = dataArray[4][kAtModule];
     
     return model;
+}
+
+- (void)setStartClass:(NSString *)startClass {
+    [[DoraemonCacheManager sharedInstance] saveStartClass:startClass];
+}
+
+- (NSString *)startClass{
+    return [[DoraemonCacheManager sharedInstance] startClass];
 }
 
 @end

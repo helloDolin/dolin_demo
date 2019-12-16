@@ -6,6 +6,7 @@
 //
 
 #import "DoraemonStatisticsUtil.h"
+#import "DoraemonDefine.h"
 
 @implementation DoraemonStatisticsUtil
 
@@ -26,7 +27,7 @@
     
     NSString *appId = [[NSBundle mainBundle] bundleIdentifier];;
     NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
-    NSString *doKitVersion = @"1.1.8";
+    NSString *doKitVersion = DoKitVersion;
     NSString *type = @"iOS";
     NSString *from = @"1";
     

@@ -1595,6 +1595,7 @@
 			buildConfigurationList = 16C8D6511D33511700228ABD /* Build configuration list for PBXNativeTarget "dolin_demo" */;
 			buildPhases = (
 				8C36E570CBD02ECA4B6FF703 /* [CP] Check Pods Manifest.lock */,
+				74E6F5FA38B54027400503D6 /* [CP-User] Run Flutter Build Script */,
 				16C8D6361D33511700228ABD /* Sources */,
 				16C8D6371D33511700228ABD /* Frameworks */,
 				16C8D6381D33511700228ABD /* Resources */,
@@ -1846,16 +1847,34 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-frameworks.sh",
-				"${PODS_ROOT}/DoraemonKit/iOS/DoraemonKit/Framework/DoraemonLoadAnalyze.framework",
+				"${PODS_ROOT}/../my_flutter/.ios/Flutter/engine/Flutter.framework",
+				"${PODS_ROOT}/../my_flutter/.ios/Flutter/App.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoraemonLoadAnalyze.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/App.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		74E6F5FA38B54027400503D6 /* [CP-User] Run Flutter Build Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/./my_flutter/.metadata",
+				"${SRCROOT}/my_flutter/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/my_flutter/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/my_flutter/.ios/Flutter/flutter_export_environment.sh",
+			);
+			name = "[CP-User] Run Flutter Build Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/my_flutter/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		8C36E570CBD02ECA4B6FF703 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1905,7 +1924,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManager/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);

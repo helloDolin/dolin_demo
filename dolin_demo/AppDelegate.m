@@ -13,6 +13,7 @@
 #import <JSPatchPlatform/JSPatch.h>
 #import "AddNoteViewController.h"
 #import <DoraemonKit/DoraemonManager.h>
+#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h> // Used to connect plugins.
 
 @interface AppDelegate ()
 
@@ -133,6 +134,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSLog(@"didFinishLaunchingWithOptions %@",launchOptions);
+    self.flutterEngine = [[FlutterEngine alloc] initWithName:@"my flutter engine"];
+    // Runs the default Dart entrypoint with a default Flutter route.
+    [self.flutterEngine run];
+    [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
     return YES;
 }
 

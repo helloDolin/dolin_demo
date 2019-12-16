@@ -1,1 +1,1 @@
-../../../DoraemonKit/iOS/DoraemonKit/Src/Core/Entry/DoraemonEntryView.h
+../../../DoraemonKit/iOS/DoraemonKit/Src/Core/Entry/View/DoraemonEntryView.h

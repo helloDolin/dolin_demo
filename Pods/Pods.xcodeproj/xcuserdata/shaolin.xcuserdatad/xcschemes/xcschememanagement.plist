@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CocoaLumberjack.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>DLUtils.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,7 +39,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Flutter.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FlutterPluginRegistrant.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FreeStreamer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>IQKeyboardManager-IQKeyboardManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -70,11 +80,6 @@
 			<false/>
 		</dict>
 		<key>Masonry.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>PNChart.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -109,16 +114,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>UICountingLabel.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>UITextView+Placeholder.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>YYModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -130,6 +125,11 @@
 			<false/>
 		</dict>
 		<key>fishhook.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>my_flutter.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

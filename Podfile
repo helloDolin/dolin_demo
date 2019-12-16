@@ -1,14 +1,15 @@
 platform :ios, '9.0'
 
-#flutter_application_path = './dl_flutter_module/'
-#load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+flutter_application_path = './my_flutter'
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+
 
 target 'dolin_demo' do
   # Comment the next line if you don't want to use dynamic frameworks
   # use_frameworks!
   
   # Flutter module
-#  install_all_flutter_pods(flutter_application_path)
+  install_all_flutter_pods(flutter_application_path)
   
   # Pods for
   pod 'AFNetworking', '~> 3.0'
@@ -26,10 +27,7 @@ target 'dolin_demo' do
   pod 'IQKeyboardManager'
   pod 'LYEmptyView'
   # DoraemonKit
-  pod 'DoraemonKit/Core', '~> 1.1.7', :configurations => ['Debug']
-  pod 'DoraemonKit/WithLogger', '~> 1.1.7', :configurations => ['Debug']
-  pod 'DoraemonKit/WithGPS', '~> 1.1.7', :configurations => ['Debug']
-  pod 'DoraemonKit/WithLoad', '~> 1.1.7', :configurations => ['Debug']
+  pod 'DoraemonKit/Core', '~> 2.0.0', :configurations => ['Debug']
 end
 
 target 'TableKit' do
