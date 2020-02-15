@@ -65,7 +65,7 @@ DEPENDENCIES:
   - YYText (~> 1.0.7)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://cdn.cocoapods.org/:
     - AFNetworking
     - BSBacktraceLogger
     - DLUtils
@@ -100,8 +100,8 @@ SPEC CHECKSUMS:
   DoraemonKit: 9e923599e28d0b61f1c6de4aef2c2d669b30abb7
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
-  Flutter: 93fdab773cde727b7cef0c53a7aad246b70c2587
-  FlutterPluginRegistrant: 373eb03e81db96a980d08a5e74a98cc9c6c439c3
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  FlutterPluginRegistrant: d59dd07dd90e9c6430996073575a5bd1ea19677e
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FreeStreamer: 8d52b299dc97e557ff156480bf86a666165bd1e5
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
@@ -109,7 +109,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
-  my_flutter: aafacbf8dda422f997d4718a590bf9b66a71cb64
+  my_flutter: c0ca42721b3297bc8d54e93782ac00730d3bd1a1
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
@@ -118,4 +118,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 966a53781a92ed3ecb3824ed7acdf990f9394116
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

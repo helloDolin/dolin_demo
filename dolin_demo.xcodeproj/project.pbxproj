@@ -1846,7 +1846,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-frameworks.sh",
 				"${PODS_ROOT}/../my_flutter/.ios/Flutter/engine/Flutter.framework",
 				"${PODS_ROOT}/../my_flutter/.ios/Flutter/App.framework",
 			);
@@ -1857,7 +1857,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		74E6F5FA38B54027400503D6 /* [CP-User] Run Flutter Build Script */ = {
@@ -1922,7 +1922,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
@@ -1935,7 +1935,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
