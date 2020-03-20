@@ -6,30 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = B26E11467D023FA6CDCE36F75198812F /* Build configuration list for PBXAggregateTarget "Flutter" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = Flutter;
-			productName = Flutter;
-		};
-		E55D6D9CE3B34ED87310823EE348579B /* my_flutter */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = A2A06BBA7029821446FE3E469974A621 /* Build configuration list for PBXAggregateTarget "my_flutter" */;
-			buildPhases = (
-			);
-			dependencies = (
-				DDC9EAAAE76EAB05FD47B7C53926C256 /* PBXTargetDependency */,
-			);
-			name = my_flutter;
-			productName = my_flutter;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		0096B5A8BA8E4F2BFD8839D0FE7CD696 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BAF04252556CBB547762EE4BCB9D8D /* MASLayoutConstraint.m */; };
 		01318B8DF5C2D0FA480AAC5EFA82BFEA /* DoraemonNetFlowSummaryMethodDataView.h in Headers */ = {isa = PBXBuildFile; fileRef = 447FDAE03542F6C665E98AD3A070D178 /* DoraemonNetFlowSummaryMethodDataView.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -94,7 +70,6 @@
 		1102564C9CDAC18DF8D6DB20F6523E72 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E16103B5E45F93761BF7BACB67B7FAF0 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1138227EBBC272D21729A28E019195CA /* DoraemonMemoryOscillogramWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DD9621E9DBDF7E5C28F12D4B73AD6E /* DoraemonMemoryOscillogramWindow.m */; };
 		115ACCE253A886181B55773DDC70D6ED /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E3007CD3BFD9BA998834D81BBCCE612 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		11967CEC233EDC777E0F609CA1F983F5 /* FlutterPluginRegistrant-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F113E9582B0C129C727F02126A43153 /* FlutterPluginRegistrant-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		11B4C847031A7AE45B9F795610BF0965 /* DoraemonANRTool.h in Headers */ = {isa = PBXBuildFile; fileRef = B2EC1B900A1BE74F76993C517CAF4CFD /* DoraemonANRTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		12C4BD1E7C1471893704551F627FE5D4 /* DoraemonStartTimeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A170448FC817635902920C23DDBB0BF3 /* DoraemonStartTimeViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		139697D9E4AC066C9F1F60627027D6C5 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E50766CCF190D1251010830B79F32D65 /* MJRefreshBackFooter.m */; };
@@ -193,7 +168,7 @@
 		346C336F22A464FCBF931F47CE9FEAAA /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E74F30F41F01698EB38B49A987FAD8 /* IQUIViewController+Additions.m */; };
 		34E253EB078AE14E619398EB86C16A2F /* MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC8317C243DE7CFE0D2F72B04E4FB8D /* MJExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		355FC44E1DBCF56D33B25BF797BE2856 /* audio_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC149383C554F55BFBDC1323EC1B64F3 /* audio_queue.cpp */; };
-		3598C73BA09318EEF86A98021607DC0A /* Pods-TodayWidget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F6F4875684B8618B0F1DD3567D1CD7 /* Pods-TodayWidget-dummy.m */; };
+		3598C73BA09318EEF86A98021607DC0A /* Pods-TodayWidget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2087B9F83CC5F4B42DA47D5829791B4A /* Pods-TodayWidget-dummy.m */; };
 		35A5C1B0D35FEE7728D5DEE3B3C4EB63 /* YYTextContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF18566DF3A71EFB60884EDDAFD2BE2 /* YYTextContainerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		368BEF58C8DE371339BA7D1C08FA7C35 /* YYTextTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A2F0F9BC2253ED0DB95808FFA15F46 /* YYTextTransaction.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		36CE101771B205B60D66608E4DF08987 /* UIPasteboard+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 45ECBA30894B31097D29977318D2D5FF /* UIPasteboard+YYText.m */; };
@@ -221,7 +196,6 @@
 		3D7B89A7F80665D793CAF6CF362A6F45 /* FSAudioStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 668F72301548E6022EBE48A24856111A /* FSAudioStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3DDDAE6A1CB55A5B2A87064582DEA1FC /* doraemon_netflow_summary_unselect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E54DCBFCED89F2A3F30CD02946D255A5 /* doraemon_netflow_summary_unselect@3x.png */; };
 		3DF3B8D9173089B4E0B07AF1D6AA92A4 /* DoraemonMemoryPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 94B5853307410D40C3D440CD2A74C6AD /* DoraemonMemoryPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3DF51F536A23EEAB6EF332C27B130769 /* GeneratedPluginRegistrant.h in Headers */ = {isa = PBXBuildFile; fileRef = E32B9B4EC69FB3BFA7F4F253AFE30AEF /* GeneratedPluginRegistrant.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3DFD26F0A6F3F55704037D16F7B53B08 /* DoraemonNetFlowListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC4ED8CD79550EA9F744488821A2CC /* DoraemonNetFlowListCell.m */; };
 		3E19AF87EE9C02930054B382BF5B604F /* DoraemonViewMetricsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994628ABFCCECC3713FED9798FE5B73 /* DoraemonViewMetricsConfig.m */; };
 		3EB31BED71138CA6E24797C65B782C86 /* DoraemonCellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1479543914C4629A3BAA75FC6A8F06A6 /* DoraemonCellButton.m */; };
@@ -284,7 +258,6 @@
 		538DEEF083E2649D010770A08F43FC24 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = DB171BDBE38B6E50108DC870E28A5E26 /* UIImage+MultiFormat.m */; };
 		53904AC7D05BAAAB968AAA084AB04625 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F764F66A04D18AA3AC267622BF77DE9 /* NSObject+MJCoding.m */; };
 		54160408E18D1AA320D1B01F65D421D6 /* YYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C81D089CE6B7944BD0ADCF26CD27B5 /* YYLabel.m */; };
-		54436EB4469C1A17D068AAFFEE0A5700 /* Pods-dolin_demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA900531769A024931D5F4F4F7A3FF0 /* Pods-dolin_demo-dummy.m */; };
 		545325DBA1132F1E2DA1C20B95108395 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6817C67BC9EFA0F82A0D43B374E6CA76 /* SVIndefiniteAnimatedView.m */; };
 		5453861E4DD3AEB2A9AA370DE119D156 /* YYTextWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ACAE38B442AB296CFAD992D1D0E669 /* YYTextWeakProxy.m */; };
 		551EDABAFCE6F89BB75C7174D4D9D059 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC6B5E28519EEDC7B14DF8CF6FCE49A /* UIActivityIndicatorView+AFNetworking.m */; };
@@ -311,7 +284,6 @@
 		59EA578EED8BAC126FDC60C32AE11521 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A960599882E9A0C34E96C35D5F87D94 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		5A59FF38EC616E67A6A19A3595F5D229 /* DoraemonAppInfoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A56B0101B2AB445034DB1F7FD0FDA5 /* DoraemonAppInfoViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5A75A17B427CA5BC83F49DEF738590FA /* IQKeyboardManagerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 67D7D6739E13BFD0C6DB8BD41D44476A /* IQKeyboardManagerConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5AE3DAEF41AD923DB828042F45528AFB /* FlutterPluginRegistrant-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89521C285C997287CE67272D2283BB1B /* FlutterPluginRegistrant-dummy.m */; };
 		5B972D13ADE8384D33ED29445AF3F2EB /* doraemon_expand_no@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 649BDA772550F801EA886EA6BB05FC9A /* doraemon_expand_no@3x.png */; };
 		5BFE139049E51141F6F6D43C3C6499F9 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EB8E75FB095B73327BADC8F5C44A3B6 /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5C8063DE125C303D9F44DFDECD29D573 /* DLBlockAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E417B4D706B89F16601AAE667AFC9D6 /* DLBlockAlertView.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -343,7 +315,6 @@
 		64D65D5223BC43B74859E6F5FA6542F7 /* DoraemonNetFlowPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2241F1F97003E4DC0755597EDD89CCA8 /* DoraemonNetFlowPlugin.m */; };
 		653DD57520CD48F2859FF2EB70CC351C /* DoraemonViewCheckPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 37983D7F268DAFD7D031640366CDE798 /* DoraemonViewCheckPlugin.m */; };
 		65E88072A2BDC576BFC85E67EF9FBBC6 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 258E1366757859F10C0F5B502F8B1AA5 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		661771581DDC93D7459C058963042B39 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB8E2B6F29A8EBA392A6B8DA69A2AF1 /* GeneratedPluginRegistrant.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		66FF9489A3703F23572BFA45AD014292 /* DoraemonLargeImagePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D0F68A17DAB63B832A6553D9039F8E /* DoraemonLargeImagePlugin.m */; };
 		67EFBB5231F68F236AAF2DFF54942C18 /* DLUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DAE56236ACB160D0D3F01321834C4D /* DLUtils-dummy.m */; };
 		6809786D3833C2ED40ECEE4067B53A69 /* DoraemonDBTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9049A7D6B868ABAA21E4511108481B3E /* DoraemonDBTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -383,7 +354,7 @@
 		7208A898B3069FE7807C020FECDBDBD9 /* DoraemonNetFlowOscillogramWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B4D5ED58FB1A80A73B51D11F2C70A6 /* DoraemonNetFlowOscillogramWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		725CC8DF14A3844A66DCE932B1BFF0FA /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ACAB2A645FC2ED2B7401E21A573B265 /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		72797BC85469FCE7E6198B67EC88E851 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = AA179B8DD243F6DE2AE83B78AD90F65C /* AFURLRequestSerialization.m */; };
-		728B07250C10AA6BA9B8151B21B4FC94 /* Pods-TableKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C98CC3AEACD097CC3C5963C8B5BC2A0D /* Pods-TableKit-dummy.m */; };
+		728B07250C10AA6BA9B8151B21B4FC94 /* Pods-TableKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BF8F1132C2215853CBDAB5DF92E77F /* Pods-TableKit-dummy.m */; };
 		7292497C1518670CC8A7CD761ED65BE0 /* DoraemonSubThreadUICheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17D65EB9474AA0452E18373A99F790B /* DoraemonSubThreadUICheckViewController.m */; };
 		73959ACBDFC564F33F552D52B6207C23 /* DoraemonBaseBigTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2871DEB31D3EF9AF1ABA253578D3513 /* DoraemonBaseBigTitleView.m */; };
 		74456EE049058D617CAD1160D3A5E8FF /* DoraemonStartPluginProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9056885A928E3C8A8DE119C33AFFB0 /* DoraemonStartPluginProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -662,6 +633,7 @@
 		CF2EF1062A26D97E0D20E6D166DDC583 /* doraemon_qingchu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE6E0C0F5433DE8A5616649E4DADC8C /* doraemon_qingchu@3x.png */; };
 		CF38FB81161E114F8B1518B25A74AD90 /* audio_queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B15D9D5247C7077FF9F6CC9D303A501 /* audio_queue.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CFB3EA66E116298921E041256D8A9483 /* doraemon_netflow_list_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1CC0C1007B6A4553A2BD6F04565742 /* doraemon_netflow_list_select@2x.png */; };
+		CFBCBA89A29235CAA4B9C93A2F089A3F /* Pods-dolin_demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 571F6B0430A660432B453801DD5D5061 /* Pods-dolin_demo-dummy.m */; };
 		D0083D54A6C66AD2067BB0BCB1986925 /* DoraemonNetFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E300DFAA3C7BBAC75B6C0565ABE3FF /* DoraemonNetFlowViewController.m */; };
 		D02055E16B4D0004195442BD31B253C9 /* YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = ACF0511BCA1960E724F955D2346F9F3D /* YYText.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D053ED043FB6315DF014735C4F929DBB /* DoraemonViewCheckPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = BFDBBCEA5B52FB97D7B23266F404E808 /* DoraemonViewCheckPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -836,6 +808,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		01A170EA1A959D7B9F0753CDB3F33C72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
+			remoteInfo = FMDB;
+		};
 		083FFCE679A78FF25D7E51246897967A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -843,103 +822,82 @@
 			remoteGlobalIDString = 4DF6BA65687AA4231B3B388E7469B994;
 			remoteInfo = BSBacktraceLogger;
 		};
-		0938B6EB4BA16F09A37A9B2BB961DCD9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
-			remoteInfo = AFNetworking;
-		};
-		0EA7EBA38EE7E26F04AC7C89EA46C9C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84B44807A12996D487A4A591A481D6A0;
-			remoteInfo = YYModel;
-		};
-		21B8E32439EDC6D2E80BB04524445AA9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C3AAC0817EA4DC8BD9C0046F50078BF9;
-			remoteInfo = FreeStreamer;
-		};
-		33B8EE67EF378DA3C8DABDF122AA0BD8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
-			remoteInfo = MJRefresh;
-		};
-		3C2E7960B24EBED3EA506EDD8441DC15 /* PBXContainerItemProxy */ = {
+		0F7547E0F54BBB63C22467933C451EB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FBA456CB50E371584C11231929A0971E;
 			remoteInfo = IQKeyboardManager;
 		};
-		428112A542C819AC6F005E6B99B798C0 /* PBXContainerItemProxy */ = {
+		1631DCD452151D27BBC3DD64F9CEA226 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FE0EB310F454719A11FBFEAAC09FE3E;
+			remoteInfo = FDFullscreenPopGesture;
+		};
+		32F8AC1A973535A10EF27302A00E97CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B44807A12996D487A4A591A481D6A0;
+			remoteInfo = YYModel;
+		};
+		44D1323C52CA4E50BE39105C49F29BF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AA4C7BB776C55F3421BA137B643DD64;
+			remoteInfo = LYEmptyView;
+		};
+		5158A19DB97E75ADADB33A8D57B0499D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CAA047C0F5E4106F3904E8497FA17F97;
 			remoteInfo = Reachability;
 		};
-		459B67EBE15C4874352B884887F987E3 /* PBXContainerItemProxy */ = {
+		5163719357299CCE22EF351AFD5B0609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 372C52394EE9FE86C14E6CF0F49D7760;
+			remoteInfo = DLUtils;
+		};
+		73EA01CCC48EEE82DF596CB1999CD397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
+			remoteInfo = MJRefresh;
+		};
+		7857D7690D0B7FA387710D2DA418C284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF6BA65687AA4231B3B388E7469B994;
+			remoteInfo = BSBacktraceLogger;
+		};
+		86AD00D0413885EEA9DD9F9889CE3C9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
 			remoteInfo = SVProgressHUD;
 		};
-		49B94974B52B2FC49CDE774B3315C22F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
-			remoteInfo = Flutter;
-		};
-		5A7C9802EFC052A7B67DC88807530494 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
-			remoteInfo = Flutter;
-		};
-		6084246F6F639316CC22B3D3DC648530 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F5C17E80BD1B7F60A33F79692330A57;
-			remoteInfo = YYText;
-		};
-		62F3F456ED839DA63748FE77283AF3B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
-			remoteInfo = Masonry;
-		};
-		7B1878D3008BC32F98AE21A39D811404 /* PBXContainerItemProxy */ = {
+		88674D420264BC148EEE80B074F75358 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4D3BA58D0583DF37575CACAB3DDADC85;
 			remoteInfo = MJExtension;
 		};
-		8FA16DBCC6B32ADEA41BB3CD697F25C5 /* PBXContainerItemProxy */ = {
+		8B43C2B79550B6EAB9BEEBC73CCD0E95 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 58CAF5B0291DAB42086F0645150E1791;
-			remoteInfo = fishhook;
-		};
-		93C14943D57D25DA70982636A7C374FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E55D6D9CE3B34ED87310823EE348579B;
-			remoteInfo = my_flutter;
+			remoteGlobalIDString = 6F5C17E80BD1B7F60A33F79692330A57;
+			remoteInfo = YYText;
 		};
 		95898788A5E9CBACD3C35CC269714AA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -948,26 +906,12 @@
 			remoteGlobalIDString = CAA047C0F5E4106F3904E8497FA17F97;
 			remoteInfo = Reachability;
 		};
-		9ADC30F71E24522AEDB4A1B6D523A700 /* PBXContainerItemProxy */ = {
+		98D1647426D1341599A1A50CB1E6E311 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
-			remoteInfo = Flutter;
-		};
-		9E028EC7DC1BDA0303E34B83B5CFE70C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 372C52394EE9FE86C14E6CF0F49D7760;
-			remoteInfo = DLUtils;
-		};
-		A1064A0495A455A23E6C8B97CF99BEF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
-			remoteInfo = SDWebImage;
+			remoteGlobalIDString = 58CAF5B0291DAB42086F0645150E1791;
+			remoteInfo = fishhook;
 		};
 		A54E90F53A589CC70CDAF1D463ED3C62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -976,34 +920,6 @@
 			remoteGlobalIDString = 58CAF5B0291DAB42086F0645150E1791;
 			remoteInfo = fishhook;
 		};
-		AB909BE0196AB9D33E6AD68A9EBEA52A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 83DAA8F43D74F8D51203DE23C7C3A3F5;
-			remoteInfo = FlutterPluginRegistrant;
-		};
-		AC11F03310517433233392E1DFA4CAD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8FE0EB310F454719A11FBFEAAC09FE3E;
-			remoteInfo = FDFullscreenPopGesture;
-		};
-		AD03828B1D2043D98386C9045FB4A6CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DF6BA65687AA4231B3B388E7469B994;
-			remoteInfo = BSBacktraceLogger;
-		};
-		AF861A6F8D6D49C914ADB7F2CA0084B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C740322617D8EE2F874BD31781B7702;
-			remoteInfo = DoraemonKit;
-		};
 		BF41D18F36E31CB52B014D19487BB7B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1011,19 +927,40 @@
 			remoteGlobalIDString = 86F85BD17543B52E78020B4385A7C0C6;
 			remoteInfo = "DoraemonKit-DoraemonKit";
 		};
-		C112995E97F63D7CDA9F431FFC37C9FE /* PBXContainerItemProxy */ = {
+		C200648D732237CBC89989EC47C060F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4AA4C7BB776C55F3421BA137B643DD64;
-			remoteInfo = LYEmptyView;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
 		};
-		E07CBAE2D67526DFBD490A0F7C14ED67 /* PBXContainerItemProxy */ = {
+		C3DF1FFE4264DDCC33D54BDD25A164D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
-			remoteInfo = FMDB;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		EF432D811E4722CE6B01C7674E9DE466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
+			remoteInfo = SDWebImage;
+		};
+		F24A5E527E8B20E0F6426C0E16F5CDDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C740322617D8EE2F874BD31781B7702;
+			remoteInfo = DoraemonKit;
+		};
+		FF9F07CF591CDE0079997E0EF5780398 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3AAC0817EA4DC8BD9C0046F50078BF9;
+			remoteInfo = FreeStreamer;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1039,6 +976,7 @@
 		02222264B42BC448AD51EE2611BD3721 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		02426F24C37B6690C4F3EFA5AC5C2FE3 /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackStateFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
 		03059E5A6D002EA47D5E2F48C624B280 /* DoreamonCrashListCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoreamonCrashListCell.h; path = iOS/DoraemonKit/Src/Core/Plugin/Crash/List/DoreamonCrashListCell.h; sourceTree = "<group>"; };
+		031C92D170AD67D501D476C2BD4F730E /* Pods-TableKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableKit.release.xcconfig"; sourceTree = "<group>"; };
 		03394C9A6CB84F5F4732CB027B78C11B /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		034A06134AF7114D4E95593CF43D4775 /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
 		03C2021D0A37125E2DDF07C531B67C84 /* DoraemonSubThreadUICheckViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonSubThreadUICheckViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/SubThreadUICheck/DoraemonSubThreadUICheckViewController.h; sourceTree = "<group>"; };
@@ -1068,8 +1006,8 @@
 		0D8475F419FED986FCFBE0F08CB629EA /* input_stream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = input_stream.h; path = FreeStreamer/FreeStreamer/input_stream.h; sourceTree = "<group>"; };
 		0DAA9E60D4C2E6B7FFDBB2BBC3AE31ED /* libDLUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDLUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE640D57BBC7B273A8CA612E8B46FE1 /* MJExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJExtension-prefix.pch"; sourceTree = "<group>"; };
+		0EA7A61BAC61D512E1CAAE03AAEF7195 /* Pods-TodayWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodayWidget.release.xcconfig"; sourceTree = "<group>"; };
 		0F0CC83E824A6F2569F6F8DCEC5F5E35 /* SDWebImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCoder.m; path = SDWebImage/SDWebImageCoder.m; sourceTree = "<group>"; };
-		0F113E9582B0C129C727F02126A43153 /* FlutterPluginRegistrant-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlutterPluginRegistrant-umbrella.h"; sourceTree = "<group>"; };
 		0FABD163ADAEA0F533D76A69BD6E89B8 /* DoraemonNSLogPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonNSLogPlugin.h; path = iOS/DoraemonKit/Src/Core/Plugin/NSLog/DoraemonNSLogPlugin.h; sourceTree = "<group>"; };
 		0FBFD269A9F0B1292A016988298E3A68 /* doraemon_dir@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_dir@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_dir@2x.png"; sourceTree = "<group>"; };
 		0FFAC7995736F56A42BC8379C943F512 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
@@ -1128,12 +1066,13 @@
 		1F02192F330E5B1515DF8CA72496767B /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		1F72E00ED5A1449636CF1279584F9926 /* SDWebImageFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageFrame.m; path = SDWebImage/SDWebImageFrame.m; sourceTree = "<group>"; };
 		1F874EC88FACC4A3DBBC2D4F8616E34A /* DLSystemPermissionsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLSystemPermissionsManager.h; path = Classes/DLSystemPermissionsManager.h; sourceTree = "<group>"; };
+		1FB3BCB68AFD8CA63B0D1F8E76A13031 /* Pods-TodayWidget-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TodayWidget-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		205EC76B6C9B6FCC402975ACF3CFC1BB /* UIView+DoraemonSubThreadUICheck.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+DoraemonSubThreadUICheck.m"; path = "iOS/DoraemonKit/Src/Core/Plugin/SubThreadUICheck/Function/UIView+DoraemonSubThreadUICheck.m"; sourceTree = "<group>"; };
 		206E8D948E170C4C0795E100BD77C2E8 /* DoraemonChartAxis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonChartAxis.h; path = iOS/DoraemonKit/Src/Core/CommonUI/Charts/DoraemonChartAxis.h; sourceTree = "<group>"; };
+		2087B9F83CC5F4B42DA47D5829791B4A /* Pods-TodayWidget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TodayWidget-dummy.m"; sourceTree = "<group>"; };
 		20B4E32E10307FC652E929FBBEF3F3A6 /* DoraemonANRManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonANRManager.h; path = iOS/DoraemonKit/Src/Core/Plugin/ANR/Function/DoraemonANRManager.h; sourceTree = "<group>"; };
 		21CF34B44D959FBB9FE682EE5BD4C957 /* DoraemonNSLogListCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonNSLogListCell.h; path = iOS/DoraemonKit/Src/Core/Plugin/NSLog/List/DoraemonNSLogListCell.h; sourceTree = "<group>"; };
-		21E3C563F4C9C90AB3D21B357AAFBB06 /* Pods-dolin_demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-dolin_demo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		222A1021B7B6E8D0FB643FA85B112791 /* DoraemonImageDetectionCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonImageDetectionCell.m; path = iOS/DoraemonKit/Src/Core/Plugin/LargeImageDetection/Detail/DoraemonImageDetectionCell.m; sourceTree = "<group>"; };
 		222E9D39CB53CE33910F347388031ADB /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		2241F1F97003E4DC0755597EDD89CCA8 /* DoraemonNetFlowPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonNetFlowPlugin.m; path = iOS/DoraemonKit/Src/Core/Plugin/NetFlow/DoraemonNetFlowPlugin.m; sourceTree = "<group>"; };
@@ -1164,6 +1103,7 @@
 		296E5512FAFD6041470BE3013001D068 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
 		298FCC8C545CE2346D8CC6A8521702E8 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		29D4BEAAB16A2CA13213EDD1A7401DF0 /* DoraemonURLSessionDemux.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonURLSessionDemux.h; path = iOS/DoraemonKit/Src/Core/Network/Interceptor/DoraemonURLSessionDemux.h; sourceTree = "<group>"; };
+		29E6B754E0BB5929F35270D4B0F851DE /* Pods-TodayWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodayWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		2AE39B23E168B7041A01DCE7FCDF92B4 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
 		2B276B0A79173A1D6E83C9B4FB9A4A57 /* libMJExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8477203EF7D11D7B7C124618503D43 /* MJExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJExtension.xcconfig; sourceTree = "<group>"; };
@@ -1173,13 +1113,11 @@
 		2CC57C0667E6B1E9A3B24657C0B9F270 /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/UIView+WebCache.h"; sourceTree = "<group>"; };
 		2DA71493438F4FC2BC41D533C7E140A3 /* DoraemonCrashTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonCrashTool.m; path = iOS/DoraemonKit/Src/Core/Plugin/Crash/Function/DoraemonCrashTool.m; sourceTree = "<group>"; };
 		2DD6AE2568868702D0B1BBF38AA2600B /* UIView+DoraemonSubThreadUICheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+DoraemonSubThreadUICheck.h"; path = "iOS/DoraemonKit/Src/Core/Plugin/SubThreadUICheck/Function/UIView+DoraemonSubThreadUICheck.h"; sourceTree = "<group>"; };
-		2E0D5F9ECE7D84A4C5023821251F8A3C /* Pods-TodayWidget-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TodayWidget-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2E5035E7ECC1F6B3F60A8E9F657C1469 /* DoraemonViewAlignView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonViewAlignView.h; path = iOS/DoraemonKit/Src/Core/Plugin/ViewAlign/Function/DoraemonViewAlignView.h; sourceTree = "<group>"; };
 		2FBC4227AAA8A10568E6A550BEBB36B4 /* DoraemonNSURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonNSURLProtocol.m; path = iOS/DoraemonKit/Src/Core/Network/Interceptor/DoraemonNSURLProtocol.m; sourceTree = "<group>"; };
 		2FC8317C243DE7CFE0D2F72B04E4FB8D /* MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJExtension.h; path = MJExtension/MJExtension.h; sourceTree = "<group>"; };
 		2FDF1130072672DE9825BD6E6B274D9C /* NSImage+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+WebCache.h"; path = "SDWebImage/NSImage+WebCache.h"; sourceTree = "<group>"; };
 		2FE89F47ADE34DBE2ACBB087D6DA2547 /* DoraemonViewCheckView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonViewCheckView.h; path = iOS/DoraemonKit/Src/Core/Plugin/ViewCheck/Function/DoraemonViewCheckView.h; sourceTree = "<group>"; };
-		300288673A6BA3EFF5725CD7767A5E5D /* Pods-dolin_demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-dolin_demo-frameworks.sh"; sourceTree = "<group>"; };
 		30509D8F4BFCC04BBBCAAF68AC3F4AEE /* DoraemonSandboxCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonSandboxCell.h; path = iOS/DoraemonKit/Src/Core/Plugin/Sanbox/VC/DoraemonSandboxCell.h; sourceTree = "<group>"; };
 		305108B257417C4DA32FC7B2CC24356E /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		3055B8DC0EEC581314AF56A7602EB177 /* SDWebImageFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageFrame.h; path = SDWebImage/SDWebImageFrame.h; sourceTree = "<group>"; };
@@ -1190,7 +1128,6 @@
 		31CCC594C488F85D9DB0A69C9E116875 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		31D6919169D405DF4255465D08094518 /* YYTextLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLayout.m; path = YYText/Component/YYTextLayout.m; sourceTree = "<group>"; };
 		31DDFEA86687E2E2B234E13BBC4C5BA7 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
-		31F6F4875684B8618B0F1DD3567D1CD7 /* Pods-TodayWidget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TodayWidget-dummy.m"; sourceTree = "<group>"; };
 		332F350248A4F8141EFAA768FB85587E /* doraemon_arrow_down@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_arrow_down@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_arrow_down@2x.png"; sourceTree = "<group>"; };
 		34402EA63A6BE3E29DAAF913794B10EA /* DoraemonNetFlowDetailCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonNetFlowDetailCell.h; path = iOS/DoraemonKit/Src/Core/Plugin/NetFlow/Detail/DoraemonNetFlowDetailCell.h; sourceTree = "<group>"; };
 		3532DC901E36290CA1CFC6CEF8401374 /* DoraemonUIProfileWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonUIProfileWindow.h; path = iOS/DoraemonKit/Src/Core/Plugin/UIProfile/Function/DoraemonUIProfileWindow.h; sourceTree = "<group>"; };
@@ -1205,7 +1142,6 @@
 		37983D7F268DAFD7D031640366CDE798 /* DoraemonViewCheckPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonViewCheckPlugin.m; path = iOS/DoraemonKit/Src/Core/Plugin/ViewCheck/DoraemonViewCheckPlugin.m; sourceTree = "<group>"; };
 		379AA958834A0F276C88249E5B012767 /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
 		37A14AC2D5160FBD79C25E9C02EDA934 /* DoraemonOscillogramView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonOscillogramView.m; path = iOS/DoraemonKit/Src/Core/CommonUI/Oscillogram/DoraemonOscillogramView.m; sourceTree = "<group>"; };
-		38970606463A63F8F0670CF524CEBA2B /* my_flutter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = my_flutter.xcconfig; sourceTree = "<group>"; };
 		38B9945C49D85708B5A5BB58151C7C52 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		38BF744F9BF769841996C2413C8E56EF /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIScrollView+Additions.h"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
 		39424D45F44DF6D601DE08BF29BFCA7C /* UIView+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YYText.m"; path = "YYText/Utility/UIView+YYText.m"; sourceTree = "<group>"; };
@@ -1221,6 +1157,7 @@
 		3BDC94BDFB2521B58E18ABD4C071A18D /* DoraemonUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonUtil.m; path = iOS/DoraemonKit/Src/Core/Util/DoraemonUtil.m; sourceTree = "<group>"; };
 		3BF5F21BC6A11D79414E8BFC64DD8B3C /* UIView+Doraemon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Doraemon.h"; path = "iOS/DoraemonKit/Src/Core/Category/UIView+Doraemon.h"; sourceTree = "<group>"; };
 		3C9056885A928E3C8A8DE119C33AFFB0 /* DoraemonStartPluginProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonStartPluginProtocol.h; path = iOS/DoraemonKit/Src/Core/Plugin/Protocol/DoraemonStartPluginProtocol.h; sourceTree = "<group>"; };
+		3CC9DC94D6B31C152E9292D0983271DE /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		3CDAB91D879F2214108D3CB2182CA3D0 /* DoraemonSandboxModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonSandboxModel.h; path = iOS/DoraemonKit/Src/Core/Plugin/Sanbox/VC/DoraemonSandboxModel.h; sourceTree = "<group>"; };
 		3D1FFD1007B984CC10A40640B2504566 /* DoraemonCrashListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonCrashListViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/Crash/List/DoraemonCrashListViewController.h; sourceTree = "<group>"; };
 		3D44894E262BCCA6450250951095FE73 /* YYTextTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextTransaction.m; path = YYText/Utility/YYTextTransaction.m; sourceTree = "<group>"; };
@@ -1259,7 +1196,6 @@
 		479214E2C4DE36DADA76A85664D23FD5 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		4797FA031EA7392B9FC6DE1DFFAE9284 /* doraemon_database@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_database@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_database@2x.png"; sourceTree = "<group>"; };
 		488F1A13134B94B7176DB20AD7C3DBE6 /* DoraemonSubThreadUICheckListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonSubThreadUICheckListViewController.m; path = iOS/DoraemonKit/Src/Core/Plugin/SubThreadUICheck/List/DoraemonSubThreadUICheckListViewController.m; sourceTree = "<group>"; };
-		48B80CF1339F3F33CC8E744363819400 /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = App.framework; sourceTree = "<group>"; };
 		48F5851A19A06B76D0A80813A31A964B /* UIImage+Doraemon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Doraemon.h"; path = "iOS/DoraemonKit/Src/Core/Category/UIImage+Doraemon.h"; sourceTree = "<group>"; };
 		490AAEC995F6112F0C2B8D61E4BD5CE1 /* DoraemonCPUOscillogramViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonCPUOscillogramViewController.m; path = iOS/DoraemonKit/Src/Core/Plugin/CPU/Function/DoraemonCPUOscillogramViewController.m; sourceTree = "<group>"; };
 		494B978E1514A49E021B4E82E79B284C /* DoraemonDeleteLocalDataPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonDeleteLocalDataPlugin.m; path = iOS/DoraemonKit/Src/Core/Plugin/DeleteLocalData/DoraemonDeleteLocalDataPlugin.m; sourceTree = "<group>"; };
@@ -1271,25 +1207,23 @@
 		4A2C8A97177592167089586EF68FFBDA /* DoraemonAllTestStatisticsCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonAllTestStatisticsCell.m; path = iOS/DoraemonKit/Src/Core/Plugin/AllTest/Detail/DoraemonAllTestStatisticsCell.m; sourceTree = "<group>"; };
 		4A8169C24081EC13207151058243CF8B /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		4ACAB2A645FC2ED2B7401E21A573B265 /* MJRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = MJRefresh/Base/MJRefreshHeader.h; sourceTree = "<group>"; };
-		4AD841D0CF1742E3AFF5128FF3C65EAC /* Pods-TableKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableKit.release.xcconfig"; sourceTree = "<group>"; };
 		4B228B0FA61053A1F59A97734FD69354 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQNSArray+Sort.m"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.m"; sourceTree = "<group>"; };
 		4B2B546C48B65C90F4D9E4E63899268D /* DoraemonViewCheckManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonViewCheckManager.m; path = iOS/DoraemonKit/Src/Core/Plugin/ViewCheck/Function/DoraemonViewCheckManager.m; sourceTree = "<group>"; };
 		4C135FE155E206E641A2F27AAE287C1A /* IQKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManager.h; path = IQKeyboardManager/IQKeyboardManager.h; sourceTree = "<group>"; };
 		4C60D4621B9DD9A220220F8035D926C3 /* MJRefreshComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshComponent.h; path = MJRefresh/Base/MJRefreshComponent.h; sourceTree = "<group>"; };
 		4C73791F0D5BFA4C0C0583C7EBB83579 /* DoraemonNetFlowDetailSegment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonNetFlowDetailSegment.m; path = iOS/DoraemonKit/Src/Core/Plugin/NetFlow/Detail/DoraemonNetFlowDetailSegment.m; sourceTree = "<group>"; };
 		4C852C71E891877884AD15A48D37A375 /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
+		4CD8141205C8261DC863646A393B02EE /* Pods-TableKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TableKit-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4D4E31C816E0C6B60277FAC586E6D256 /* DoraemonOscillogramWindowManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonOscillogramWindowManager.h; path = iOS/DoraemonKit/Src/Core/CommonUI/Oscillogram/DoraemonOscillogramWindowManager.h; sourceTree = "<group>"; };
 		4DA3BB9A78E67FB518F4ABDB1E40A047 /* doraemon_file@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_file@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_file@2x.png"; sourceTree = "<group>"; };
 		4DF43908E0F363D014CDE4CDB00F0348 /* FSParsePlaylistRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSParsePlaylistRequest.m; path = FreeStreamer/FreeStreamer/FSParsePlaylistRequest.m; sourceTree = "<group>"; };
 		4DF987B4C267461704DFFDC5EE3A8E8A /* DoraemonAppInfoUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonAppInfoUtil.h; path = iOS/DoraemonKit/Src/Core/Plugin/AppInfo/DoraemonAppInfoUtil.h; sourceTree = "<group>"; };
 		4E46174316675E84C7B84543A056AB65 /* doraemon_qingchu@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_qingchu@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_qingchu@2x.png"; sourceTree = "<group>"; };
-		4E521F032CD5F702D202059CD81C07F7 /* FlutterPluginRegistrant.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FlutterPluginRegistrant.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4E62A6E43B38B01A3A33CE4794CD71B9 /* UIView+LYExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+LYExtension.m"; path = "LYEmptyView/UIView+LYExtension.m"; sourceTree = "<group>"; };
 		4E7160B77BD4415DD6011BEF7831F770 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
 		4EF26D387680D435DC90BECFB83764CD /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		4F0C7FF39C0D07615AA20A3433C9CBA0 /* SDAnimatedImageRep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageRep.h; path = SDWebImage/SDAnimatedImageRep.h; sourceTree = "<group>"; };
 		4F365478AC41FB0491E43BE9CD852A10 /* doraemon_net@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_net@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_net@2x.png"; sourceTree = "<group>"; };
-		4FC69721994B25D9EAB660C808904A73 /* FlutterPluginRegistrant-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlutterPluginRegistrant-prefix.pch"; sourceTree = "<group>"; };
 		4FC6B5E28519EEDC7B14DF8CF6FCE49A /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		4FFC83B9B8F9E917E3E45261B50B0D06 /* doraemon_database@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_database@3x.png"; path = "iOS/DoraemonKit/Resource/doraemon_database@3x.png"; sourceTree = "<group>"; };
 		5018BB9A63B3BEC17B61FEC5B0D59231 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -1318,6 +1252,7 @@
 		56CCFEE638852F6D88FDFB14423F3FB0 /* YYTextLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextLine.h; path = YYText/Component/YYTextLine.h; sourceTree = "<group>"; };
 		56F7E6601BB4EE04181C39ADABB8925A /* DoraemonANRViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonANRViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/ANR/DoraemonANRViewController.h; sourceTree = "<group>"; };
 		56FAFB27DE2093B4E59BDCB6DD40A5F3 /* IQBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.m; sourceTree = "<group>"; };
+		571F6B0430A660432B453801DD5D5061 /* Pods-dolin_demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dolin_demo-dummy.m"; sourceTree = "<group>"; };
 		574878987D5AC7FE13D3D2743355C987 /* DoraemonNetFlowDetailViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonNetFlowDetailViewController.m; path = iOS/DoraemonKit/Src/Core/Plugin/NetFlow/Detail/DoraemonNetFlowDetailViewController.m; sourceTree = "<group>"; };
 		5793D53D9B33C7F544BD164D62462C5A /* DoraemonSubThreadUICheckListCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonSubThreadUICheckListCell.m; path = iOS/DoraemonKit/Src/Core/Plugin/SubThreadUICheck/List/DoraemonSubThreadUICheckListCell.m; sourceTree = "<group>"; };
 		57AF7075BDDE9C1DFBBFC86369A85DE6 /* YYText-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYText-prefix.pch"; sourceTree = "<group>"; };
@@ -1343,7 +1278,6 @@
 		5E4D979A0D29488EAF1A17BE4B2D3984 /* DoraemonAllTestManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonAllTestManager.m; path = iOS/DoraemonKit/Src/Core/Plugin/AllTest/Function/DoraemonAllTestManager.m; sourceTree = "<group>"; };
 		5E6CAC5636701857FFC6C865050D2080 /* id3_parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = id3_parser.h; path = FreeStreamer/FreeStreamer/id3_parser.h; sourceTree = "<group>"; };
 		5E78AE4A5F66888CF7745DD7A98E6C11 /* DoraemonTimeProfilerRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonTimeProfilerRecord.m; path = iOS/DoraemonKit/Src/Core/Plugin/TimeProfiler/Function/DoraemonTimeProfilerRecord.m; sourceTree = "<group>"; };
-		5FA900531769A024931D5F4F4F7A3FF0 /* Pods-dolin_demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dolin_demo-dummy.m"; sourceTree = "<group>"; };
 		60E50CA92B5438C07861AA470E267A7C /* DoraemonTimeProfilerCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonTimeProfilerCore.h; path = iOS/DoraemonKit/Src/Core/Plugin/TimeProfiler/Function/DoraemonTimeProfilerCore.h; sourceTree = "<group>"; };
 		610AC482710AB7399DF4071BE979CA62 /* DoraemonTimeProfilerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonTimeProfilerViewController.m; path = iOS/DoraemonKit/Src/Core/Plugin/TimeProfiler/DoraemonTimeProfilerViewController.m; sourceTree = "<group>"; };
 		6131346E9E04AD0E2465035B6B78EF70 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQNSArray+Sort.h"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.h"; sourceTree = "<group>"; };
@@ -1359,7 +1293,6 @@
 		641F270505E3665B87A1154831945D34 /* DoraemonOscillogramView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonOscillogramView.h; path = iOS/DoraemonKit/Src/Core/CommonUI/Oscillogram/DoraemonOscillogramView.h; sourceTree = "<group>"; };
 		649BDA772550F801EA886EA6BB05FC9A /* doraemon_expand_no@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_expand_no@3x.png"; path = "iOS/DoraemonKit/Resource/doraemon_expand_no@3x.png"; sourceTree = "<group>"; };
 		64A2543BE81D76C57084471D74E999EE /* UIViewController+Doraemon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Doraemon.m"; path = "iOS/DoraemonKit/Src/Core/Category/UIViewController+Doraemon.m"; sourceTree = "<group>"; };
-		64CB7A2ACF7403D915AE75DDE272D4C3 /* Flutter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.xcconfig; sourceTree = "<group>"; };
 		64D38F3BB5E9E5716E520C9CE119E029 /* fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
 		64D6FAA6B856582E850B5A3F9725D2B6 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
 		6501287105C7FAE485ACDFC536B95B25 /* DoraemonChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonChart.m; path = iOS/DoraemonKit/Src/Core/CommonUI/Charts/DoraemonChart.m; sourceTree = "<group>"; };
@@ -1391,6 +1324,7 @@
 		6CD4C9533330A8FDE679C5DB1F7B136C /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		6CE71C054A70FF1F51317B8765696C17 /* doraemon_netflow_list_select@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_netflow_list_select@3x.png"; path = "iOS/DoraemonKit/Resource/doraemon_netflow_list_select@3x.png"; sourceTree = "<group>"; };
 		6CFA7666B78BB7DEA4C24419D4524C32 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		6DC4B70888CAC94FCB5CC569EBDB3724 /* Pods-TableKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableKit.debug.xcconfig"; sourceTree = "<group>"; };
 		6E1215A725F754F12A65941346E02829 /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
 		6E3703F273F07B530C23F3ACD93A6F83 /* DoraemonCrashPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonCrashPlugin.m; path = iOS/DoraemonKit/Src/Core/Plugin/Crash/DoraemonCrashPlugin.m; sourceTree = "<group>"; };
 		6E95B6654E14F97E1350D7DD63FF4C5E /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
@@ -1466,12 +1400,12 @@
 		8585548D0E61A9FD1269BDB81ACF2A6B /* doraemon_memory@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_memory@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_memory@2x.png"; sourceTree = "<group>"; };
 		85B1DE1C2EE3BB309413795CD2C6F40F /* FSAudioController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSAudioController.m; path = FreeStreamer/FreeStreamer/FSAudioController.m; sourceTree = "<group>"; };
 		85D03BEC2CA9B2DB28398618379E7744 /* libFDFullscreenPopGesture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFDFullscreenPopGesture.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		85EA83A477ACA941E8D0AADEEF89CDCD /* Pods-TodayWidget-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TodayWidget-acknowledgements.plist"; sourceTree = "<group>"; };
 		8608B4684E275E14272CE123448A4A5D /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUITextFieldView+Additions.h"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
 		8627CD3CADE1BF687F55CB569A933C0C /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		866E1AF1E2009AC2D90D3D7C96D518F7 /* DoraemonColorPickView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonColorPickView.h; path = iOS/DoraemonKit/Src/Core/Plugin/ColorPick/Function/DoraemonColorPickView.h; sourceTree = "<group>"; };
 		8677B4E81C2042E1A7EF7C40392D8BF0 /* DoraemonHomeCloseCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonHomeCloseCell.m; path = iOS/DoraemonKit/Src/Core/Entry/Cell/DoraemonHomeCloseCell.m; sourceTree = "<group>"; };
 		86CBAB0C06FFFB6663FB59E2F3CADB30 /* DoraemonNetFlowViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonNetFlowViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/NetFlow/DoraemonNetFlowViewController.h; sourceTree = "<group>"; };
+		872EDB0520B59B419C47CF84844EFB21 /* Pods-dolin_demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-dolin_demo-resources.sh"; sourceTree = "<group>"; };
 		8742ADA5F8262DAE44B2928545CBD532 /* MJProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJProperty.m; path = MJExtension/MJProperty.m; sourceTree = "<group>"; };
 		87544CEF5D9E23FD2A6B12BEFDB620A1 /* DoraemonUIProfilePlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonUIProfilePlugin.h; path = iOS/DoraemonKit/Src/Core/Plugin/UIProfile/DoraemonUIProfilePlugin.h; sourceTree = "<group>"; };
 		875BED52C835536D328B81BBC78C9D63 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -1482,7 +1416,6 @@
 		88AC18675A4ADBDC17CFB9CA7B25366B /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
 		88BF438C9374E2ECD075E0935551887F /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
 		88DF66727A0376EB0ED901B5AFDFE066 /* doraemon_close_dark@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_close_dark@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_close_dark@2x.png"; sourceTree = "<group>"; };
-		89521C285C997287CE67272D2283BB1B /* FlutterPluginRegistrant-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlutterPluginRegistrant-dummy.m"; sourceTree = "<group>"; };
 		89585E7E8B31EF39B200661CDE3C8C67 /* Doraemoni18NUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Doraemoni18NUtil.m; path = iOS/DoraemonKit/Src/Core/Util/Doraemoni18NUtil.m; sourceTree = "<group>"; };
 		8979A40BFCC45F04CC4CDFFE03949222 /* NSString+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MJExtension.m"; path = "MJExtension/NSString+MJExtension.m"; sourceTree = "<group>"; };
 		897B59247D111A63B5D2E2B9243C33A8 /* DoraemonFPSPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonFPSPlugin.h; path = iOS/DoraemonKit/Src/Core/Plugin/FPS/DoraemonFPSPlugin.h; sourceTree = "<group>"; };
@@ -1514,7 +1447,6 @@
 		92CEF9453692EA6C1B7260E31AA2B852 /* YYTextAsyncLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextAsyncLayer.h; path = YYText/Utility/YYTextAsyncLayer.h; sourceTree = "<group>"; };
 		931A21F61A9FFD0B7090F6FE035EE5E1 /* doraemon_arrow_down@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_arrow_down@3x.png"; path = "iOS/DoraemonKit/Resource/doraemon_arrow_down@3x.png"; sourceTree = "<group>"; };
 		93C420F003C3B9541B9435FE67CDAD63 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		93CAC0BD495F84AD2D16157DB3730238 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
 		93EFF4879453ECA40C23CCD3CCBCBD6E /* YYTextKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextKeyboardManager.m; path = YYText/Component/YYTextKeyboardManager.m; sourceTree = "<group>"; };
 		94B5853307410D40C3D440CD2A74C6AD /* DoraemonMemoryPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonMemoryPlugin.h; path = iOS/DoraemonKit/Src/Core/Plugin/Memory/DoraemonMemoryPlugin.h; sourceTree = "<group>"; };
 		94F8CF399DFCB9B6E0157FBCA0EF2C90 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
@@ -1528,7 +1460,6 @@
 		9647B1EBAE08DB98BDE4883D3DB7A980 /* doraemon_file@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_file@3x.png"; path = "iOS/DoraemonKit/Resource/doraemon_file@3x.png"; sourceTree = "<group>"; };
 		96878B2C1179D97367E95B49039D8791 /* DoraemonHomeEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonHomeEntry.h; path = iOS/DoraemonKit/Src/Core/Entry/DoraemonHomeEntry.h; sourceTree = "<group>"; };
 		97DE7ACA7F19D71767693F67CA0C7270 /* DoraemonCPUUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonCPUUtil.m; path = iOS/DoraemonKit/Src/Core/Plugin/CPU/Function/DoraemonCPUUtil.m; sourceTree = "<group>"; };
-		97F1FAA6895A1CEDFC9E7EED900234F9 /* Pods-TableKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableKit.debug.xcconfig"; sourceTree = "<group>"; };
 		981F16C3969CDFDBBA845BAB5B237159 /* doraemon_h5@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_h5@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_h5@2x.png"; sourceTree = "<group>"; };
 		98527D7196957AAB07B79E2E2AFDE23E /* libIQKeyboardManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIQKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9886C081F2AFC0BED6D37C4088F8107E /* DoraemonEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonEntryView.h; path = iOS/DoraemonKit/Src/Core/Entry/View/DoraemonEntryView.h; sourceTree = "<group>"; };
@@ -1543,6 +1474,7 @@
 		9B837EE02C9C2621B77EC90FB0C49488 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
 		9C5EE00BCEC1B8E73A41FBD372B86061 /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
 		9CA216629A7529B075F3AC826470B254 /* libfishhook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfishhook.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D0D4F9945C47C4842D949A83BD05075 /* Pods-TodayWidget-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TodayWidget-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DEC67E7B1B4D848C926089A20417532 /* DoraemonFPSUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonFPSUtil.h; path = iOS/DoraemonKit/Src/Core/Plugin/FPS/Function/DoraemonFPSUtil.h; sourceTree = "<group>"; };
 		9E417B4D706B89F16601AAE667AFC9D6 /* DLBlockAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLBlockAlertView.h; path = Classes/DLBlockAlertView.h; sourceTree = "<group>"; };
@@ -1558,6 +1490,7 @@
 		A075F60D27AB371F4ACEBCEAD0F98579 /* DoraemonSubThreadUICheckListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonSubThreadUICheckListViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/SubThreadUICheck/List/DoraemonSubThreadUICheckListViewController.h; sourceTree = "<group>"; };
 		A09333839D074EF7D928005DCE264AB2 /* DoraemonCellSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonCellSwitch.m; path = iOS/DoraemonKit/Src/Core/CommonUI/CellSwitch/DoraemonCellSwitch.m; sourceTree = "<group>"; };
 		A0B5429E581BA63C0DD735375A2556DF /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		A0BF5DBD959E21A90FF957456E9D1A2D /* Pods-TableKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TableKit-acknowledgements.plist"; sourceTree = "<group>"; };
 		A0FC8579C17B871D35494F929C67AB64 /* DoraemonAllTestManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonAllTestManager.h; path = iOS/DoraemonKit/Src/Core/Plugin/AllTest/Function/DoraemonAllTestManager.h; sourceTree = "<group>"; };
 		A170448FC817635902920C23DDBB0BF3 /* DoraemonStartTimeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonStartTimeViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/StartTime/DoraemonStartTimeViewController.h; sourceTree = "<group>"; };
 		A17D65EB9474AA0452E18373A99F790B /* DoraemonSubThreadUICheckViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonSubThreadUICheckViewController.m; path = iOS/DoraemonKit/Src/Core/Plugin/SubThreadUICheck/DoraemonSubThreadUICheckViewController.m; sourceTree = "<group>"; };
@@ -1585,7 +1518,6 @@
 		A808B71457B7D1D25AB4D67D4D9DBC79 /* doraemon_netflow_summary_select@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_netflow_summary_select@3x.png"; path = "iOS/DoraemonKit/Resource/doraemon_netflow_summary_select@3x.png"; sourceTree = "<group>"; };
 		A87CB54930C8C324BB92FDE6996DD5C0 /* UIView+Doraemon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Doraemon.m"; path = "iOS/DoraemonKit/Src/Core/Category/UIView+Doraemon.m"; sourceTree = "<group>"; };
 		A8E74F30F41F01698EB38B49A987FAD8 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIViewController+Additions.m"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.m"; sourceTree = "<group>"; };
-		A8FF72A1CEA0B86F35F8C499B7D9A589 /* FlutterPluginRegistrant.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlutterPluginRegistrant.modulemap; sourceTree = "<group>"; };
 		A9B5C66E86FCB56D579A2BA58CF04D8B /* DoraemonNetFlowDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonNetFlowDataSource.m; path = iOS/DoraemonKit/Src/Core/Plugin/NetFlow/Function/DoraemonNetFlowDataSource.m; sourceTree = "<group>"; };
 		A9D566474CFA94C5BB104205039D753B /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
 		AA179B8DD243F6DE2AE83B78AD90F65C /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
@@ -1641,7 +1573,6 @@
 		B8FF2F67B2F29E185E343C38073F81B5 /* doraemon_more@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_more@3x.png"; path = "iOS/DoraemonKit/Resource/doraemon_more@3x.png"; sourceTree = "<group>"; };
 		B92A22DAC79668B9F59A442C3E69987D /* DoraemonDBTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonDBTableViewController.m; path = iOS/DoraemonKit/Src/Core/Plugin/Sanbox/VC/DB/DoraemonDBTableViewController.m; sourceTree = "<group>"; };
 		B956DCD85DFF36616E51CC4EA3B4A0C3 /* YYTextParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextParser.m; path = YYText/String/YYTextParser.m; sourceTree = "<group>"; };
-		B9F5199EC09BD7C71D146BE47CDDE427 /* Flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B9F5F641640667C47F3DB4B1F1EE8C4F /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoNormalFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
 		BA00715F7D5001A06E07582E6E1AB7FC /* IQKeyboardManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-prefix.pch"; sourceTree = "<group>"; };
 		BA2B37042F84AD7B5DB460FBBA1162A7 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
@@ -1692,10 +1623,10 @@
 		C82218BD9611B655F12662736C75F019 /* DoraemonPingThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonPingThread.h; path = iOS/DoraemonKit/Src/Core/Plugin/ANR/Function/DoraemonPingThread.h; sourceTree = "<group>"; };
 		C8CA0B0DD40DFAE64BBC76527064FDDD /* YYTextParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextParser.h; path = YYText/String/YYTextParser.h; sourceTree = "<group>"; };
 		C8D4077D97FF92C71E4BAFC64ECB7E77 /* DoraemonHomeFootCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonHomeFootCell.m; path = iOS/DoraemonKit/Src/Core/Entry/Cell/DoraemonHomeFootCell.m; sourceTree = "<group>"; };
-		C98CC3AEACD097CC3C5963C8B5BC2A0D /* Pods-TableKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TableKit-dummy.m"; sourceTree = "<group>"; };
 		C999A9AD9AAAA0FDA37467F66F87E05B /* DoraemonUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonUtil.h; path = iOS/DoraemonKit/Src/Core/Util/DoraemonUtil.h; sourceTree = "<group>"; };
 		C9A16D2B426D85F571D021D5D77C6CDE /* DoraemonStartTimeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonStartTimeViewController.m; path = iOS/DoraemonKit/Src/Core/Plugin/StartTime/DoraemonStartTimeViewController.m; sourceTree = "<group>"; };
 		C9A322E22F2B38C69EC7D56F0761389E /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		C9BF8F1132C2215853CBDAB5DF92E77F /* Pods-TableKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TableKit-dummy.m"; sourceTree = "<group>"; };
 		C9DAB8686472B95AB4272D472AD1563F /* MJPropertyType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyType.m; path = MJExtension/MJPropertyType.m; sourceTree = "<group>"; };
 		C9DC257F58FD13C731996F2838F5F32E /* http_stream.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = http_stream.cpp; path = FreeStreamer/FreeStreamer/http_stream.cpp; sourceTree = "<group>"; };
 		CA289251646CD0FE7E6C2DE11AF78514 /* NSObject+MJClass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJClass.h"; path = "MJExtension/NSObject+MJClass.h"; sourceTree = "<group>"; };
@@ -1704,7 +1635,6 @@
 		CB46EAE77895A1ECEE5785FB5D978E3F /* DoraemonDBRowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonDBRowView.m; path = iOS/DoraemonKit/Src/Core/Plugin/Sanbox/VC/DB/DoraemonDBRowView.m; sourceTree = "<group>"; };
 		CB6B380468815F77FD352AC6C869AB60 /* DoraemonSanboxDetailViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonSanboxDetailViewController.m; path = iOS/DoraemonKit/Src/Core/Plugin/Sanbox/VC/DoraemonSanboxDetailViewController.m; sourceTree = "<group>"; };
 		CB92D526FFDDDF718A1619DD67D25292 /* DoraemonColorPickWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonColorPickWindow.m; path = iOS/DoraemonKit/Src/Core/Plugin/ColorPick/Function/DoraemonColorPickWindow.m; sourceTree = "<group>"; };
-		CBB8E2B6F29A8EBA392A6B8DA69A2AF1 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GeneratedPluginRegistrant.m; path = Classes/GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		CC728D510CFE2CB105D345CF42F35DF2 /* audio_stream.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = audio_stream.cpp; path = FreeStreamer/FreeStreamer/audio_stream.cpp; sourceTree = "<group>"; };
 		CD10A22DFFDA339A8CB0D78DE996C831 /* doraemon_log@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_log@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_log@2x.png"; sourceTree = "<group>"; };
 		CDB4B7F1027930F7C92319868B7DB713 /* MJRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.xcconfig; sourceTree = "<group>"; };
@@ -1732,12 +1662,12 @@
 		D28A784D929DA9EF535A8CB44FF15E98 /* DoraemonSubThreadUICheckListCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonSubThreadUICheckListCell.h; path = iOS/DoraemonKit/Src/Core/Plugin/SubThreadUICheck/List/DoraemonSubThreadUICheckListCell.h; sourceTree = "<group>"; };
 		D2E8401045E354662F69220027CD46BF /* FSXMLHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSXMLHttpRequest.h; path = FreeStreamer/FreeStreamer/FSXMLHttpRequest.h; sourceTree = "<group>"; };
 		D325DE0B501F8C4D7F396551213EF8CB /* DoraemonNetFlowListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonNetFlowListViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/NetFlow/List/DoraemonNetFlowListViewController.h; sourceTree = "<group>"; };
-		D378F9F4D977EABF6554E816DD92BD30 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		D39C41BE8930118418A6B9F5E211A8C8 /* doraemon_time_profiler@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_time_profiler@3x.png"; path = "iOS/DoraemonKit/Resource/doraemon_time_profiler@3x.png"; sourceTree = "<group>"; };
 		D3A8608DD0F3303B472B2D3163D08E14 /* DoraemonDBCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonDBCell.m; path = iOS/DoraemonKit/Src/Core/Plugin/Sanbox/VC/DB/DoraemonDBCell.m; sourceTree = "<group>"; };
 		D3A973C8ECA643E0D2F252CCCE0B70B0 /* DoraemonUrlUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonUrlUtil.h; path = iOS/DoraemonKit/Src/Core/Plugin/NetFlow/Function/Util/DoraemonUrlUtil.h; sourceTree = "<group>"; };
 		D4526BB8205F0CA3C60D1523506F84B7 /* doraemon_scan@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_scan@3x.png"; path = "iOS/DoraemonKit/Resource/doraemon_scan@3x.png"; sourceTree = "<group>"; };
 		D4716BFCAB9256CB8A9B7F26C67A906C /* DoraemonUIProfileWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonUIProfileWindow.m; path = iOS/DoraemonKit/Src/Core/Plugin/UIProfile/Function/DoraemonUIProfileWindow.m; sourceTree = "<group>"; };
+		D506C108CC4CB052B6AC2F58867A8C78 /* Pods-dolin_demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-dolin_demo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D52FA46C7A6009CA9586DEBAB9128DE2 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+FDFullscreenPopGesture.h"; path = "FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		D59CF049769184A7ED84C1F10D167BA5 /* DoraemonMemoryOscillogramViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonMemoryOscillogramViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/Memory/Function/DoraemonMemoryOscillogramViewController.h; sourceTree = "<group>"; };
 		D5E236C3A7344698358399BF07ED400F /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
@@ -1752,7 +1682,6 @@
 		D83652D5AAFACA7615F1A8F2D1A3ABD2 /* DoraemonHomeCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonHomeCell.h; path = iOS/DoraemonKit/Src/Core/Entry/Cell/DoraemonHomeCell.h; sourceTree = "<group>"; };
 		D90DF0ECF99BB42F8DA077BB94D01B2F /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
 		D9400E4B8544979CF0C5BA3AC887B106 /* doraemon_expand@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_expand@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_expand@2x.png"; sourceTree = "<group>"; };
-		D96B39C030CC4E71006780D23B64B6E9 /* Flutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Flutter.framework; sourceTree = "<group>"; };
 		D9978367192575C74A4D70FAF2EBF328 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		D9DA5BDB7E41B0D8A6EAB5A48C08B143 /* NSButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSButton+WebCache.m"; path = "SDWebImage/NSButton+WebCache.m"; sourceTree = "<group>"; };
 		DA137860FAD4A12A7F786909123607B7 /* FSAudioStream.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FSAudioStream.mm; path = FreeStreamer/FreeStreamer/FSAudioStream.mm; sourceTree = "<group>"; };
@@ -1771,8 +1700,8 @@
 		DEFA57F7CA38310CDD377CA778ACD6FA /* DoraemonLargeImagePlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonLargeImagePlugin.h; path = iOS/DoraemonKit/Src/Core/Plugin/LargeImageDetection/DoraemonLargeImagePlugin.h; sourceTree = "<group>"; };
 		DF001211CC531BFC2C41F6AED16B613A /* DoraemonCellSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonCellSwitch.h; path = iOS/DoraemonKit/Src/Core/CommonUI/CellSwitch/DoraemonCellSwitch.h; sourceTree = "<group>"; };
 		DF22CDCBC151F0FC9976D561F374FBB9 /* DoraemonXAxis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonXAxis.h; path = iOS/DoraemonKit/Src/Core/CommonUI/Charts/DoraemonXAxis.h; sourceTree = "<group>"; };
-		DF7C6EBB9161EEF650EC12B4BB67E628 /* libFlutterPluginRegistrant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFlutterPluginRegistrant.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF98044FD3E410FEB2AABBBD0F469CEA /* doraemon_close_white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_close_white@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_close_white@2x.png"; sourceTree = "<group>"; };
+		DFAEE95694B163EC10B6F4D82602A907 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
 		DFCA2C449068899601741CAE6946D219 /* FSParseRssPodcastFeedRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSParseRssPodcastFeedRequest.m; path = FreeStreamer/FreeStreamer/FSParseRssPodcastFeedRequest.m; sourceTree = "<group>"; };
 		E048064F3C11A419CE46A4A447254244 /* NSImage+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+WebCache.m"; path = "SDWebImage/NSImage+WebCache.m"; sourceTree = "<group>"; };
 		E09A9645EE60A2C675848A14CF05706C /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
@@ -1787,7 +1716,6 @@
 		E25475CF6878288BC034D61F23499A1A /* DoraemonAllTestViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonAllTestViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/AllTest/DoraemonAllTestViewController.h; sourceTree = "<group>"; };
 		E2BFE47E8C67C6E4B1B2D3BDDA8CA9BF /* YYTextRubyAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRubyAnnotation.m; path = YYText/String/YYTextRubyAnnotation.m; sourceTree = "<group>"; };
 		E2EC49C2B1856F3BD44CCBD26F3B2DFE /* NSAttributedString+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+YYText.h"; path = "YYText/Utility/NSAttributedString+YYText.h"; sourceTree = "<group>"; };
-		E32B9B4EC69FB3BFA7F4F253AFE30AEF /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeneratedPluginRegistrant.h; path = Classes/GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		E361B5BAF0B557EC78AFDE2ED540A9F1 /* doraemon_fps@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_fps@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_fps@2x.png"; sourceTree = "<group>"; };
 		E3D06DCC84F03909EC53848CDB5C9F06 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoFooter.h; path = MJRefresh/Base/MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		E3E2115C19B3BD5E883350E4ECB850C1 /* DoraemonOscillogramWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonOscillogramWindow.h; path = iOS/DoraemonKit/Src/Core/CommonUI/Oscillogram/DoraemonOscillogramWindow.h; sourceTree = "<group>"; };
@@ -1804,12 +1732,9 @@
 		E54DCBFCED89F2A3F30CD02946D255A5 /* doraemon_netflow_summary_unselect@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_netflow_summary_unselect@3x.png"; path = "iOS/DoraemonKit/Resource/doraemon_netflow_summary_unselect@3x.png"; sourceTree = "<group>"; };
 		E653874736E9CD4CD5289D649DEE4F4D /* DoraemonChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonChartDataItem.h; path = iOS/DoraemonKit/Src/Core/CommonUI/Charts/DoraemonChartDataItem.h; sourceTree = "<group>"; };
 		E671B5796D996B193246FAB0F69BE0A3 /* DoraemonNetFlowManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonNetFlowManager.h; path = iOS/DoraemonKit/Src/Core/Plugin/NetFlow/Function/DoraemonNetFlowManager.h; sourceTree = "<group>"; };
-		E71B1F381AE64EC739463C345A382865 /* Pods-dolin_demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-dolin_demo-resources.sh"; sourceTree = "<group>"; };
 		E734ADE107EF38B876BB6C2283C74872 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		E785494CF99416DF23DE8952E1DFBA7D /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
-		E7856FDEB7A50455772D9AC564B66E02 /* Pods-TableKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TableKit-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E7E79775D0155CF933527309F0C1AE26 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackStateFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
-		E8602BDB46AAE896496DF93EBAEE2A91 /* Pods-dolin_demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dolin_demo-acknowledgements.plist"; sourceTree = "<group>"; };
 		E867E37FD26912F9E6681B6A54D927D6 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
 		E8B65C2AF6AD2CF190D66626FC5181BA /* DoraemonANRDetailViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonANRDetailViewController.m; path = iOS/DoraemonKit/Src/Core/Plugin/ANR/Detail/DoraemonANRDetailViewController.m; sourceTree = "<group>"; };
 		E8FAF969F359707C14D70BA04C845C7F /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
@@ -1821,12 +1746,12 @@
 		E9CD08F0848109003DBED6988661A53B /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
 		EA09971818DEB0A9201DFA6C0E43E1D1 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		EA164487DE2E639E3A359094CEA70B0E /* DoraemonMemoryViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonMemoryViewController.m; path = iOS/DoraemonKit/Src/Core/Plugin/Memory/DoraemonMemoryViewController.m; sourceTree = "<group>"; };
-		EA1C2A608D14DA5D71EC129FA3251352 /* FlutterPluginRegistrant.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlutterPluginRegistrant.xcconfig; sourceTree = "<group>"; };
 		EA3C3FBE7D911A0EBC1C7E5E8EF8E865 /* DoraemonANRTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonANRTracker.h; path = iOS/DoraemonKit/Src/Core/Plugin/ANR/Function/DoraemonANRTracker.h; sourceTree = "<group>"; };
 		EA9C3856B678CA6E6EB17B5DFF5A6AFE /* NSURLRequest+Doraemon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+Doraemon.h"; path = "iOS/DoraemonKit/Src/Core/Plugin/NetFlow/Function/Util/NSURLRequest+Doraemon.h"; sourceTree = "<group>"; };
 		EB3A5B9B7DCF0F211844DD274FC3B720 /* DoraemonLargeImageDetectionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonLargeImageDetectionManager.m; path = iOS/DoraemonKit/Src/Core/Plugin/LargeImageDetection/Function/DoraemonLargeImageDetectionManager.m; sourceTree = "<group>"; };
 		EB408A7F741134441EB59F0671826BD7 /* libBSBacktraceLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBSBacktraceLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB44E1430D886AF3F951B165A2E8CD13 /* DoraemonNetFlowDetailViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonNetFlowDetailViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/NetFlow/Detail/DoraemonNetFlowDetailViewController.h; sourceTree = "<group>"; };
+		EBCE2F24F6C4119E9EEF8598BF73FF2B /* Pods-dolin_demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-dolin_demo-acknowledgements.plist"; sourceTree = "<group>"; };
 		EC5A855228909104C074A26B805199E6 /* doraemon_crash@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_crash@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_crash@2x.png"; sourceTree = "<group>"; };
 		ECAA48680446D60BFDF875326336E9B1 /* MJRefreshConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
 		ECEFAF9F889847E11D818173F9891D81 /* FDFullscreenPopGesture-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FDFullscreenPopGesture-dummy.m"; sourceTree = "<group>"; };
@@ -1846,7 +1771,6 @@
 		EF92F85866CA961985E569941648A834 /* DoraemonQRCodeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonQRCodeViewController.m; path = iOS/DoraemonKit/Src/Core/Plugin/H5/DoraemonQRCodeViewController.m; sourceTree = "<group>"; };
 		EFDAECFB45B005C171121A5C42C37912 /* doraemon_back_dark@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_back_dark@3x.png"; path = "iOS/DoraemonKit/Resource/doraemon_back_dark@3x.png"; sourceTree = "<group>"; };
 		F058F41E76367711FAA7CB43285DCC51 /* doraemon_file_2@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_file_2@3x.png"; path = "iOS/DoraemonKit/Resource/doraemon_file_2@3x.png"; sourceTree = "<group>"; };
-		F08E7340080C8E4D04C5312B829EC619 /* Pods-TodayWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodayWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		F0912EE2DC5AB5094C4A325854C2AFBA /* doraemon_back@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_back@2x.png"; path = "iOS/DoraemonKit/Resource/doraemon_back@2x.png"; sourceTree = "<group>"; };
 		F0AC603FFA73D33AB0E4B8FBA3B8A147 /* DoraemonViewAlignView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonViewAlignView.m; path = iOS/DoraemonKit/Src/Core/Plugin/ViewAlign/Function/DoraemonViewAlignView.m; sourceTree = "<group>"; };
 		F0BF3E325522016FCE18702BDC6D2F39 /* DoraemonAllTestStatisticsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonAllTestStatisticsViewController.m; path = iOS/DoraemonKit/Src/Core/Plugin/AllTest/Detail/DoraemonAllTestStatisticsViewController.m; sourceTree = "<group>"; };
@@ -1870,7 +1794,6 @@
 		F59883CEE33759416380AC1186C91CC8 /* DoraemonNetFlowSummaryViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonNetFlowSummaryViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/NetFlow/Summary/DoraemonNetFlowSummaryViewController.h; sourceTree = "<group>"; };
 		F5A0111B1E56CDDF57CE054400BFFE38 /* DoraemonTimeProfiler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonTimeProfiler.m; path = iOS/DoraemonKit/Src/Core/Plugin/TimeProfiler/Function/DoraemonTimeProfiler.m; sourceTree = "<group>"; };
 		F5C6C83344F670797A8355127BADD510 /* YYTextAsyncLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextAsyncLayer.m; path = YYText/Utility/YYTextAsyncLayer.m; sourceTree = "<group>"; };
-		F5D1F4140E3040222EDFA053EEE9D1E0 /* my_flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = my_flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F623F96E4A5C62C7534F51D22800AAB2 /* DoraemonXAxis.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonXAxis.m; path = iOS/DoraemonKit/Src/Core/CommonUI/Charts/DoraemonXAxis.m; sourceTree = "<group>"; };
 		F6746DB4704C845EBA129CE541511080 /* DoraemonNSLogModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonNSLogModel.h; path = iOS/DoraemonKit/Src/Core/Plugin/NSLog/Function/DoraemonNSLogModel.h; sourceTree = "<group>"; };
 		F67CA4C2224E0A8674BD7A45754DEB3C /* SDWebImageCoderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCoderHelper.h; path = SDWebImage/SDWebImageCoderHelper.h; sourceTree = "<group>"; };
@@ -1879,7 +1802,6 @@
 		F749D975E9F7D38F94CCB533AC5EBC66 /* DoraemonColorPickInfoWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonColorPickInfoWindow.m; path = iOS/DoraemonKit/Src/Core/Plugin/ColorPick/Function/DoraemonColorPickInfoWindow.m; sourceTree = "<group>"; };
 		F76C573BEF1989E857DC98F5B9EB7C17 /* MJPropertyKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJPropertyKey.h; path = MJExtension/MJPropertyKey.h; sourceTree = "<group>"; };
 		F78FC51F0FB4A0F4AB51975B8427358B /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
-		F7A0CDA138D6FDC95DCD8A7BA03C26BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F7CE81E9D60E422A9976F2557C723072 /* DoraemonColorPickPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonColorPickPlugin.m; path = iOS/DoraemonKit/Src/Core/Plugin/ColorPick/DoraemonColorPickPlugin.m; sourceTree = "<group>"; };
 		F81F5269FA9F23110A437FB12B8ABFCC /* DoraemonSubThreadUICheckDetailViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonSubThreadUICheckDetailViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/SubThreadUICheck/Detail/DoraemonSubThreadUICheckDetailViewController.h; sourceTree = "<group>"; };
 		F822E096F6C804626713C6891DC78F07 /* IQToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQToolbar.h; path = IQKeyboardManager/IQToolbar/IQToolbar.h; sourceTree = "<group>"; };
@@ -1892,7 +1814,6 @@
 		F964CE7E12F7DC8A2E5F2CC9E865ADD5 /* DoraemonSubThreadUICheckPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonSubThreadUICheckPlugin.m; path = iOS/DoraemonKit/Src/Core/Plugin/SubThreadUICheck/DoraemonSubThreadUICheckPlugin.m; sourceTree = "<group>"; };
 		F9B4C87ECC120F788906825A812427BB /* MJExtensionConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJExtensionConst.h; path = MJExtension/MJExtensionConst.h; sourceTree = "<group>"; };
 		F9C066EA4F6D10965611D5C1A8F07197 /* DoraemonColorPickView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonColorPickView.m; path = iOS/DoraemonKit/Src/Core/Plugin/ColorPick/Function/DoraemonColorPickView.m; sourceTree = "<group>"; };
-		F9D869D8DBBB52B334EA4DC90C1D0417 /* Pods-TableKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TableKit-acknowledgements.plist"; sourceTree = "<group>"; };
 		FA78172528700058E0D845A19D1D3FA0 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
 		FAA3BB2C6F7C9FBA8C2799A49AC257E4 /* DoraemonHomeCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonHomeCell.m; path = iOS/DoraemonKit/Src/Core/Entry/Cell/DoraemonHomeCell.m; sourceTree = "<group>"; };
 		FAC4CE18CB9A65C07FAED513B4F80F7C /* DoraemonDeleteLocalDataPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonDeleteLocalDataPlugin.h; path = iOS/DoraemonKit/Src/Core/Plugin/DeleteLocalData/DoraemonDeleteLocalDataPlugin.h; sourceTree = "<group>"; };
@@ -1908,7 +1829,6 @@
 		FD7F87A06FD69037CDE9ED45626B4696 /* DoraemonUIProfileViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonUIProfileViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/UIProfile/DoraemonUIProfileViewController.h; sourceTree = "<group>"; };
 		FD82AF63E707CD1B736E97259CAE302C /* LYEmptyBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LYEmptyBaseView.m; path = LYEmptyView/LYEmptyBaseView.m; sourceTree = "<group>"; };
 		FDA7B7CE6813E7168C924C51D3C449E8 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJRefresh.m"; path = "MJRefresh/UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
-		FDBFBDF881F97266C1A5C004CA51F68F /* Pods-TodayWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TodayWidget.release.xcconfig"; sourceTree = "<group>"; };
 		FDCB709D89DEEBF5F535C4F149EB7A23 /* DoraemonNSLogListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonNSLogListViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/NSLog/List/DoraemonNSLogListViewController.h; sourceTree = "<group>"; };
 		FDE6E0C0F5433DE8A5616649E4DADC8C /* doraemon_qingchu@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "doraemon_qingchu@3x.png"; path = "iOS/DoraemonKit/Resource/doraemon_qingchu@3x.png"; sourceTree = "<group>"; };
 		FE25CD4D6426FA7F44115EA0A3669D32 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
@@ -1950,14 +1870,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E057C1A3A028A3F34D43018E95CB32E /* Frameworks */ = {
+		34293BAE72F02CFBF74A363378B426F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34293BAE72F02CFBF74A363378B426F6 /* Frameworks */ = {
+		357DE7988856E2F8237F74CB7A7D9917 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1993,13 +1913,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		74CA1619F24B79CC712A86A70DED135F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		768FB4C3792903E08DDB1C1E9BCE5993 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2122,14 +2035,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/BSBacktraceLogger";
-			sourceTree = "<group>";
-		};
-		05090406087A83FC4B137BD1A41157A9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D96B39C030CC4E71006780D23B64B6E9 /* Flutter.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		06457C5F66A0F8B3BA5D4E98A1872B11 /* DoraemonKit */ = {
@@ -2435,35 +2340,6 @@
 			name = Serialization;
 			sourceTree = "<group>";
 		};
-		3E85E1A642E68893D82A385B06436C31 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				F5D1F4140E3040222EDFA053EEE9D1E0 /* my_flutter.podspec */,
-				F7A0CDA138D6FDC95DCD8A7BA03C26BC /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		4D67219183EB57D075149BF392542032 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				64CB7A2ACF7403D915AE75DDE272D4C3 /* Flutter.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../../../../Pods/Target Support Files/Flutter";
-			sourceTree = "<group>";
-		};
-		52A3AEAB1EF3D9F738C0C563F9566280 /* my_flutter */ = {
-			isa = PBXGroup;
-			children = (
-				F837B3610A8A07F5533EA5387BF76A21 /* Frameworks */,
-				3E85E1A642E68893D82A385B06436C31 /* Pod */,
-				75E3474B0F00E53EB54DAA96964713F2 /* Support Files */,
-			);
-			name = my_flutter;
-			path = ../my_flutter/.ios/Flutter;
-			sourceTree = "<group>";
-		};
 		5473D31254CEC6FDFAB8428335470719 /* YYModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -2494,12 +2370,18 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
-		5E84C4201860675A48FB4ABB5A65D029 /* Pod */ = {
+		64800D1CDB0E60D88B9B1917D8E0D3D0 /* Pods-dolin_demo */ = {
 			isa = PBXGroup;
 			children = (
-				B9F5199EC09BD7C71D146BE47CDDE427 /* Flutter.podspec */,
+				D506C108CC4CB052B6AC2F58867A8C78 /* Pods-dolin_demo-acknowledgements.markdown */,
+				EBCE2F24F6C4119E9EEF8598BF73FF2B /* Pods-dolin_demo-acknowledgements.plist */,
+				571F6B0430A660432B453801DD5D5061 /* Pods-dolin_demo-dummy.m */,
+				872EDB0520B59B419C47CF84844EFB21 /* Pods-dolin_demo-resources.sh */,
+				3CC9DC94D6B31C152E9292D0983271DE /* Pods-dolin_demo.debug.xcconfig */,
+				DFAEE95694B163EC10B6F4D82602A907 /* Pods-dolin_demo.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Pods-dolin_demo";
+			path = "Target Support Files/Pods-dolin_demo";
 			sourceTree = "<group>";
 		};
 		6522D5C34224094E4DCF1BBD3C61B781 /* Reachability */ = {
@@ -2523,15 +2405,6 @@
 			path = "../Target Support Files/Reachability";
 			sourceTree = "<group>";
 		};
-		75E3474B0F00E53EB54DAA96964713F2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				38970606463A63F8F0670CF524CEBA2B /* my_flutter.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../../../Pods/Target Support Files/my_flutter";
-			sourceTree = "<group>";
-		};
 		763C6B137075DDD4A1A805C16A73B60A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2550,6 +2423,19 @@
 				E734ADE107EF38B876BB6C2283C74872 /* AFNetworkReachabilityManager.m */,
 			);
 			name = Reachability;
+			sourceTree = "<group>";
+		};
+		7B04EAC9A147A212C50560B63CEBAB78 /* Pods-TodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1FB3BCB68AFD8CA63B0D1F8E76A13031 /* Pods-TodayWidget-acknowledgements.markdown */,
+				9D0D4F9945C47C4842D949A83BD05075 /* Pods-TodayWidget-acknowledgements.plist */,
+				2087B9F83CC5F4B42DA47D5829791B4A /* Pods-TodayWidget-dummy.m */,
+				29E6B754E0BB5929F35270D4B0F851DE /* Pods-TodayWidget.debug.xcconfig */,
+				0EA7A61BAC61D512E1CAAE03AAEF7195 /* Pods-TodayWidget.release.xcconfig */,
+			);
+			name = "Pods-TodayWidget";
+			path = "Target Support Files/Pods-TodayWidget";
 			sourceTree = "<group>";
 		};
 		7C3576075554153B688F5B80AB512F50 /* Core */ = {
@@ -2905,25 +2791,14 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		7DE8407FAAB06B387EC7DF8699031C4F /* Pod */ = {
+		82A27C033D7A7E8D011C420C6DA9572B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4E521F032CD5F702D202059CD81C07F7 /* FlutterPluginRegistrant.podspec */,
+				64800D1CDB0E60D88B9B1917D8E0D3D0 /* Pods-dolin_demo */,
+				D3F0114362A3749B1FAB2BCD9F40184A /* Pods-TableKit */,
+				7B04EAC9A147A212C50560B63CEBAB78 /* Pods-TodayWidget */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		82251AC3D33BEA997BB52F1659E383B6 /* Pods-TodayWidget */ = {
-			isa = PBXGroup;
-			children = (
-				2E0D5F9ECE7D84A4C5023821251F8A3C /* Pods-TodayWidget-acknowledgements.markdown */,
-				85EA83A477ACA941E8D0AADEEF89CDCD /* Pods-TodayWidget-acknowledgements.plist */,
-				31F6F4875684B8618B0F1DD3567D1CD7 /* Pods-TodayWidget-dummy.m */,
-				F08E7340080C8E4D04C5312B829EC619 /* Pods-TodayWidget.debug.xcconfig */,
-				FDBFBDF881F97266C1A5C004CA51F68F /* Pods-TodayWidget.release.xcconfig */,
-			);
-			name = "Pods-TodayWidget";
-			path = "Target Support Files/Pods-TodayWidget";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		868463A024B988E6545FE8296A46D0AF /* Support Files */ = {
@@ -2964,6 +2839,35 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		92346EE17E3376809D13381C9CAB763E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F3B6C7D4AD810C6DDF4A69D741EE2 /* DoraemonKit.bundle */,
+				A4FA15D44DF6BAC7550EDEED10862AA3 /* libAFNetworking.a */,
+				EB408A7F741134441EB59F0671826BD7 /* libBSBacktraceLogger.a */,
+				0DAA9E60D4C2E6B7FFDBB2BBC3AE31ED /* libDLUtils.a */,
+				D1896D9851F43425DB6409A9170E0354 /* libDoraemonKit.a */,
+				85D03BEC2CA9B2DB28398618379E7744 /* libFDFullscreenPopGesture.a */,
+				9CA216629A7529B075F3AC826470B254 /* libfishhook.a */,
+				A3A80BA70CFB7F75C5391BEBBBA8C9DA /* libFMDB.a */,
+				359F20447DD6B2DABE3B77D75DA92F82 /* libFreeStreamer.a */,
+				98527D7196957AAB07B79E2E2AFDE23E /* libIQKeyboardManager.a */,
+				EEB5224BF1CABA409B3D3760EDDAEA0A /* libLYEmptyView.a */,
+				1FFED36A657123030ABB700256D73F15 /* libMasonry.a */,
+				2B276B0A79173A1D6E83C9B4FB9A4A57 /* libMJExtension.a */,
+				E49D6D248DD1CEE584E6776B9164A1B2 /* libMJRefresh.a */,
+				524B2B9ABD8566245160E5E1C7AC2AA3 /* libPods-dolin_demo.a */,
+				F67FBA0A4C3D7A2A37FD53BCEA5251BB /* libPods-TableKit.a */,
+				766026998721CB458237C94788E06B87 /* libPods-TodayWidget.a */,
+				400FF55D0451E7A8F33A3D0D3E11C1B9 /* libReachability.a */,
+				B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */,
+				E97D43C46A45EE515A4DA3AF94398441 /* libSVProgressHUD.a */,
+				E460D5B0416D36F66EE8EC89E5D2FA0A /* libYYModel.a */,
+				71762A728913EB440C97D3616D291AF3 /* libYYText.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9610180B6F30A31FB118EB8C2E540B05 /* Support Files */ = {
@@ -3028,19 +2932,6 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
-		AC7FA48833082B59C022663EB47C1D36 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A8FF72A1CEA0B86F35F8C499B7D9A589 /* FlutterPluginRegistrant.modulemap */,
-				EA1C2A608D14DA5D71EC129FA3251352 /* FlutterPluginRegistrant.xcconfig */,
-				89521C285C997287CE67272D2283BB1B /* FlutterPluginRegistrant-dummy.m */,
-				4FC69721994B25D9EAB660C808904A73 /* FlutterPluginRegistrant-prefix.pch */,
-				0F113E9582B0C129C727F02126A43153 /* FlutterPluginRegistrant-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../../../../Pods/Target Support Files/FlutterPluginRegistrant";
-			sourceTree = "<group>";
-		};
 		B050CA9AC1CAD6579440D4129476828C /* BSBacktraceLogger */ = {
 			isa = PBXGroup;
 			children = (
@@ -3049,16 +2940,6 @@
 				039960702CDDA84027C5081A7F04EDA9 /* Support Files */,
 			);
 			path = BSBacktraceLogger;
-			sourceTree = "<group>";
-		};
-		B99E78C0549D8CEC425C13E8FC2A31F6 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F17F093FDE8F813A516609CBF8299161 /* Pods-dolin_demo */,
-				CC4F696F713C4F7063FF06DF4E8AFCB4 /* Pods-TableKit */,
-				82251AC3D33BEA997BB52F1659E383B6 /* Pods-TodayWidget */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		C3C6593DE9A694454B28A8500BC09825 /* Support Files */ = {
@@ -3070,19 +2951,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/FreeStreamer";
-			sourceTree = "<group>";
-		};
-		CC4F696F713C4F7063FF06DF4E8AFCB4 /* Pods-TableKit */ = {
-			isa = PBXGroup;
-			children = (
-				E7856FDEB7A50455772D9AC564B66E02 /* Pods-TableKit-acknowledgements.markdown */,
-				F9D869D8DBBB52B334EA4DC90C1D0417 /* Pods-TableKit-acknowledgements.plist */,
-				C98CC3AEACD097CC3C5963C8B5BC2A0D /* Pods-TableKit-dummy.m */,
-				97F1FAA6895A1CEDFC9E7EED900234F9 /* Pods-TableKit.debug.xcconfig */,
-				4AD841D0CF1742E3AFF5128FF3C65EAC /* Pods-TableKit.release.xcconfig */,
-			);
-			name = "Pods-TableKit";
-			path = "Target Support Files/Pods-TableKit";
 			sourceTree = "<group>";
 		};
 		CDB2BBAC0BC502D6AB87B46E44F8AFED /* Pods */ = {
@@ -3126,22 +2994,11 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D206E2BDCA198302DC38DF147165F39B /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				CDB2BBAC0BC502D6AB87B46E44F8AFED /* Pods */,
-				D69C9E1F7A744FF0733EE79133BB8CA0 /* Products */,
-				B99E78C0549D8CEC425C13E8FC2A31F6 /* Targets Support Files */,
+				92346EE17E3376809D13381C9CAB763E /* Products */,
+				82A27C033D7A7E8D011C420C6DA9572B /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D206E2BDCA198302DC38DF147165F39B /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FFF981AEC658FB13E55AFBDBE6E32925 /* Flutter */,
-				E77FF25A92F543077DC6517BBB22D0D7 /* FlutterPluginRegistrant */,
-				52A3AEAB1EF3D9F738C0C563F9566280 /* my_flutter */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D2B5D41592F1994812A71C861D121920 /* Resources */ = {
@@ -3200,34 +3057,17 @@
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
-		D69C9E1F7A744FF0733EE79133BB8CA0 /* Products */ = {
+		D3F0114362A3749B1FAB2BCD9F40184A /* Pods-TableKit */ = {
 			isa = PBXGroup;
 			children = (
-				0D3F3B6C7D4AD810C6DDF4A69D741EE2 /* DoraemonKit.bundle */,
-				A4FA15D44DF6BAC7550EDEED10862AA3 /* libAFNetworking.a */,
-				EB408A7F741134441EB59F0671826BD7 /* libBSBacktraceLogger.a */,
-				0DAA9E60D4C2E6B7FFDBB2BBC3AE31ED /* libDLUtils.a */,
-				D1896D9851F43425DB6409A9170E0354 /* libDoraemonKit.a */,
-				85D03BEC2CA9B2DB28398618379E7744 /* libFDFullscreenPopGesture.a */,
-				9CA216629A7529B075F3AC826470B254 /* libfishhook.a */,
-				DF7C6EBB9161EEF650EC12B4BB67E628 /* libFlutterPluginRegistrant.a */,
-				A3A80BA70CFB7F75C5391BEBBBA8C9DA /* libFMDB.a */,
-				359F20447DD6B2DABE3B77D75DA92F82 /* libFreeStreamer.a */,
-				98527D7196957AAB07B79E2E2AFDE23E /* libIQKeyboardManager.a */,
-				EEB5224BF1CABA409B3D3760EDDAEA0A /* libLYEmptyView.a */,
-				1FFED36A657123030ABB700256D73F15 /* libMasonry.a */,
-				2B276B0A79173A1D6E83C9B4FB9A4A57 /* libMJExtension.a */,
-				E49D6D248DD1CEE584E6776B9164A1B2 /* libMJRefresh.a */,
-				524B2B9ABD8566245160E5E1C7AC2AA3 /* libPods-dolin_demo.a */,
-				F67FBA0A4C3D7A2A37FD53BCEA5251BB /* libPods-TableKit.a */,
-				766026998721CB458237C94788E06B87 /* libPods-TodayWidget.a */,
-				400FF55D0451E7A8F33A3D0D3E11C1B9 /* libReachability.a */,
-				B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */,
-				E97D43C46A45EE515A4DA3AF94398441 /* libSVProgressHUD.a */,
-				E460D5B0416D36F66EE8EC89E5D2FA0A /* libYYModel.a */,
-				71762A728913EB440C97D3616D291AF3 /* libYYText.a */,
+				4CD8141205C8261DC863646A393B02EE /* Pods-TableKit-acknowledgements.markdown */,
+				A0BF5DBD959E21A90FF957456E9D1A2D /* Pods-TableKit-acknowledgements.plist */,
+				C9BF8F1132C2215853CBDAB5DF92E77F /* Pods-TableKit-dummy.m */,
+				6DC4B70888CAC94FCB5CC569EBDB3724 /* Pods-TableKit.debug.xcconfig */,
+				031C92D170AD67D501D476C2BD4F730E /* Pods-TableKit.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-TableKit";
+			path = "Target Support Files/Pods-TableKit";
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -3347,18 +3187,6 @@
 				FE9790589BEDCE5AC40B8EE50DDCA767 /* Support Files */,
 			);
 			path = YYText;
-			sourceTree = "<group>";
-		};
-		E77FF25A92F543077DC6517BBB22D0D7 /* FlutterPluginRegistrant */ = {
-			isa = PBXGroup;
-			children = (
-				E32B9B4EC69FB3BFA7F4F253AFE30AEF /* GeneratedPluginRegistrant.h */,
-				CBB8E2B6F29A8EBA392A6B8DA69A2AF1 /* GeneratedPluginRegistrant.m */,
-				7DE8407FAAB06B387EC7DF8699031C4F /* Pod */,
-				AC7FA48833082B59C022663EB47C1D36 /* Support Files */,
-			);
-			name = FlutterPluginRegistrant;
-			path = ../my_flutter/.ios/Flutter/FlutterPluginRegistrant;
 			sourceTree = "<group>";
 		};
 		E7CE4E27880F3A45E210C058A6C13DFD /* MJExtension */ = {
@@ -3492,29 +3320,6 @@
 			path = "../Target Support Files/LYEmptyView";
 			sourceTree = "<group>";
 		};
-		F17F093FDE8F813A516609CBF8299161 /* Pods-dolin_demo */ = {
-			isa = PBXGroup;
-			children = (
-				21E3C563F4C9C90AB3D21B357AAFBB06 /* Pods-dolin_demo-acknowledgements.markdown */,
-				E8602BDB46AAE896496DF93EBAEE2A91 /* Pods-dolin_demo-acknowledgements.plist */,
-				5FA900531769A024931D5F4F4F7A3FF0 /* Pods-dolin_demo-dummy.m */,
-				300288673A6BA3EFF5725CD7767A5E5D /* Pods-dolin_demo-frameworks.sh */,
-				E71B1F381AE64EC739463C345A382865 /* Pods-dolin_demo-resources.sh */,
-				D378F9F4D977EABF6554E816DD92BD30 /* Pods-dolin_demo.debug.xcconfig */,
-				93CAC0BD495F84AD2D16157DB3730238 /* Pods-dolin_demo.release.xcconfig */,
-			);
-			name = "Pods-dolin_demo";
-			path = "Target Support Files/Pods-dolin_demo";
-			sourceTree = "<group>";
-		};
-		F837B3610A8A07F5533EA5387BF76A21 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				48B80CF1339F3F33CC8E744363819400 /* App.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		FE9790589BEDCE5AC40B8EE50DDCA767 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -3526,17 +3331,6 @@
 			path = "../Target Support Files/YYText";
 			sourceTree = "<group>";
 		};
-		FFF981AEC658FB13E55AFBDBE6E32925 /* Flutter */ = {
-			isa = PBXGroup;
-			children = (
-				05090406087A83FC4B137BD1A41157A9 /* Frameworks */,
-				5E84C4201860675A48FB4ABB5A65D029 /* Pod */,
-				4D67219183EB57D075149BF392542032 /* Support Files */,
-			);
-			name = Flutter;
-			path = ../my_flutter/.ios/Flutter/engine;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -3545,6 +3339,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				68A84B33C46228A574DD01B9A8FFC464 /* UINavigationController+FDFullscreenPopGesture.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12EAC12F93AFE04978BBA2B29CB92EE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3598,15 +3399,6 @@
 				D3DC240631E1FA883A5604B3E99BAE2B /* UIProgressView+AFNetworking.h in Headers */,
 				A845819E8332E3CA279E6B00EAA55366 /* UIRefreshControl+AFNetworking.h in Headers */,
 				337C8A9592224E2629F71F4759AE0DF2 /* UIWebView+AFNetworking.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		19CB772B9E76EE112F7C1DEA970AB40C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11967CEC233EDC777E0F609CA1F983F5 /* FlutterPluginRegistrant-umbrella.h in Headers */,
-				3DF51F536A23EEAB6EF332C27B130769 /* GeneratedPluginRegistrant.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4038,13 +3830,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E45737AB9F61E79ED41B660B2B747C2D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -4272,24 +4057,6 @@
 			productReference = 71762A728913EB440C97D3616D291AF3 /* libYYText.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		83DAA8F43D74F8D51203DE23C7C3A3F5 /* FlutterPluginRegistrant */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D11066AA8D3D09A6419C992764A5C331 /* Build configuration list for PBXNativeTarget "FlutterPluginRegistrant" */;
-			buildPhases = (
-				19CB772B9E76EE112F7C1DEA970AB40C /* Headers */,
-				3308CF4D73155186C7E0FCD30DE3071C /* Sources */,
-				2E057C1A3A028A3F34D43018E95CB32E /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D861247E670AF688A52282015D51F9D2 /* PBXTargetDependency */,
-			);
-			name = FlutterPluginRegistrant;
-			productName = FlutterPluginRegistrant;
-			productReference = DF7C6EBB9161EEF650EC12B4BB67E628 /* libFlutterPluginRegistrant.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		84B44807A12996D487A4A591A481D6A0 /* YYModel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07475BFF49F618F9523EA1A2F1925CD1 /* Build configuration list for PBXNativeTarget "YYModel" */;
@@ -4360,36 +4127,33 @@
 		};
 		C04F526E08FBBCE330AA269D072ADB68 /* Pods-dolin_demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06B84470F6F3129E7429E3DC76D00484 /* Build configuration list for PBXNativeTarget "Pods-dolin_demo" */;
+			buildConfigurationList = 0C531CC09535D2864D0C062F930B81B9 /* Build configuration list for PBXNativeTarget "Pods-dolin_demo" */;
 			buildPhases = (
-				E45737AB9F61E79ED41B660B2B747C2D /* Headers */,
-				47CB2A6834DC2C5EF8AC45A4A0A12D7B /* Sources */,
-				768FB4C3792903E08DDB1C1E9BCE5993 /* Frameworks */,
+				12EAC12F93AFE04978BBA2B29CB92EE5 /* Headers */,
+				DADF04B5E919D91FD634116DCCD5DB6B /* Sources */,
+				357DE7988856E2F8237F74CB7A7D9917 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				067AC4CF606A5D447A77B71C7E3903C8 /* PBXTargetDependency */,
-				CC60F383CCB56815CAA8B75A5B552C69 /* PBXTargetDependency */,
-				A3D57E0610456DA6FE8DB20BC6FB8249 /* PBXTargetDependency */,
-				6CA56C07B279532C43E90122A23EE9E0 /* PBXTargetDependency */,
-				199F621DCA19E52FD36FD6F676D0E435 /* PBXTargetDependency */,
-				B273EDFC15915575BB593EFBAA087DB4 /* PBXTargetDependency */,
-				9045AC247D985295EC7312D55F414471 /* PBXTargetDependency */,
-				F16EF2ED908BBD3EBC150F6364DE4A15 /* PBXTargetDependency */,
-				D79B3547BC86F029E2938ECA62DB9960 /* PBXTargetDependency */,
-				1C1E46F30BDCEC1580830AD622942F7F /* PBXTargetDependency */,
-				D0247A77072B7A3DDF1979A207975933 /* PBXTargetDependency */,
-				BD8AC63DC707C10B9B50B0FE30A1EB21 /* PBXTargetDependency */,
-				D24C5FF656EB62AB93CEB30B22329D6B /* PBXTargetDependency */,
-				97EE56587F9458D6A2F8C63E6FA1FC59 /* PBXTargetDependency */,
-				0C46A151D3BBEA657B4537A1D1F6E4F4 /* PBXTargetDependency */,
-				4C7C67467F211475015DFC7513C11E9A /* PBXTargetDependency */,
-				2D3A5E266432D42A33D569B4F2D8FDA6 /* PBXTargetDependency */,
-				46CF719FD7F3F9A976C53C1D42A9E4B9 /* PBXTargetDependency */,
-				500334CF3579A3174BDC044F1A54C7C5 /* PBXTargetDependency */,
-				EDDAE056382E6FB47C3BF442A992C340 /* PBXTargetDependency */,
-				906A99AABDEF1F75F96F694EBC16FB95 /* PBXTargetDependency */,
+				EF2393BDA3196149E67B27F339F1A33E /* PBXTargetDependency */,
+				DDFE996FEDD8309031A9521A4DC2C0AC /* PBXTargetDependency */,
+				C811D3BA3CF946CAEC9C648ABAFB8930 /* PBXTargetDependency */,
+				8B1F6B33A7E99E96C9BD4D1931B60378 /* PBXTargetDependency */,
+				315B41DE81E9AB97C680722348855CEE /* PBXTargetDependency */,
+				F45ED14957904B9F0BBB57291A6F066B /* PBXTargetDependency */,
+				165F2E6D53B88D9FB19DE845122CE1FA /* PBXTargetDependency */,
+				617069467E28511CD9BEDA785686C499 /* PBXTargetDependency */,
+				2C06609E325BD17F0CE7A6E6212540E0 /* PBXTargetDependency */,
+				8096E76749567FE0994C5F0B740E934D /* PBXTargetDependency */,
+				7E96333F55D0AC5B606E71DB8A047426 /* PBXTargetDependency */,
+				E18B15E8547C0B824AB921668E60D62E /* PBXTargetDependency */,
+				DCC0A243973D3963EFB09DB9327F038B /* PBXTargetDependency */,
+				285950D429544202114E1AD90404D1C7 /* PBXTargetDependency */,
+				564C2AD68655FD37818BD2E5E66A3072 /* PBXTargetDependency */,
+				66DF64CF87621C323D50B9504D325362 /* PBXTargetDependency */,
+				AB65A9E614F720F734A1F5876996A197 /* PBXTargetDependency */,
+				B183BB7886FFCEB79BA1C07FA540472C /* PBXTargetDependency */,
 			);
 			name = "Pods-dolin_demo";
 			productName = "Pods-dolin_demo";
@@ -4484,7 +4248,7 @@
 				"zh-Hans",
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D69C9E1F7A744FF0733EE79133BB8CA0 /* Products */;
+			productRefGroup = 92346EE17E3376809D13381C9CAB763E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -4495,8 +4259,6 @@
 				86F85BD17543B52E78020B4385A7C0C6 /* DoraemonKit-DoraemonKit */,
 				8FE0EB310F454719A11FBFEAAC09FE3E /* FDFullscreenPopGesture */,
 				58CAF5B0291DAB42086F0645150E1791 /* fishhook */,
-				1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */,
-				83DAA8F43D74F8D51203DE23C7C3A3F5 /* FlutterPluginRegistrant */,
 				8592E0E389D40AC17881400ADC67ABC0 /* FMDB */,
 				C3AAC0817EA4DC8BD9C0046F50078BF9 /* FreeStreamer */,
 				FBA456CB50E371584C11231929A0971E /* IQKeyboardManager */,
@@ -4504,7 +4266,6 @@
 				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
 				4D3BA58D0583DF37575CACAB3DDADC85 /* MJExtension */,
 				6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */,
-				E55D6D9CE3B34ED87310823EE348579B /* my_flutter */,
 				C04F526E08FBBCE330AA269D072ADB68 /* Pods-dolin_demo */,
 				261BE2117A6EBCD504176FD08E6FFD93 /* Pods-TableKit */,
 				FED66C8F03C8C4EA55BC143132FC51BD /* Pods-TodayWidget */,
@@ -4678,15 +4439,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3308CF4D73155186C7E0FCD30DE3071C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5AE3DAEF41AD923DB828042F45528AFB /* FlutterPluginRegistrant-dummy.m in Sources */,
-				661771581DDC93D7459C058963042B39 /* GeneratedPluginRegistrant.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3967BFF2433CD4F30E9E07886E42D6BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4745,14 +4497,6 @@
 				C1F049B01219A1D3E5B0AD05B5B325BC /* YYTextUtilities.m in Sources */,
 				FCE7821ECB350E0CC6FF5D0EBBA6CCCE /* YYTextView.m in Sources */,
 				5453861E4DD3AEB2A9AA370DE119D156 /* YYTextWeakProxy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		47CB2A6834DC2C5EF8AC45A4A0A12D7B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54436EB4469C1A17D068AAFFEE0A5700 /* Pods-dolin_demo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4923,6 +4667,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				728B07250C10AA6BA9B8151B21B4FC94 /* Pods-TableKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADF04B5E919D91FD634116DCCD5DB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBCBA89A29235CAA4B9C93A2F089A3F /* Pods-dolin_demo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5143,23 +4895,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		067AC4CF606A5D447A77B71C7E3903C8 /* PBXTargetDependency */ = {
+		165F2E6D53B88D9FB19DE845122CE1FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
-			targetProxy = 0938B6EB4BA16F09A37A9B2BB961DCD9 /* PBXContainerItemProxy */;
-		};
-		0C46A151D3BBEA657B4537A1D1F6E4F4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Reachability;
-			target = CAA047C0F5E4106F3904E8497FA17F97 /* Reachability */;
-			targetProxy = 428112A542C819AC6F005E6B99B798C0 /* PBXContainerItemProxy */;
-		};
-		199F621DCA19E52FD36FD6F676D0E435 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FDFullscreenPopGesture;
-			target = 8FE0EB310F454719A11FBFEAAC09FE3E /* FDFullscreenPopGesture */;
-			targetProxy = AC11F03310517433233392E1DFA4CAD2 /* PBXContainerItemProxy */;
+			name = FreeStreamer;
+			target = C3AAC0817EA4DC8BD9C0046F50078BF9 /* FreeStreamer */;
+			targetProxy = FF9F07CF591CDE0079997E0EF5780398 /* PBXContainerItemProxy */;
 		};
 		1ABB31DE7A41007AC4D82893350A4E70 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5167,41 +4907,59 @@
 			target = 58CAF5B0291DAB42086F0645150E1791 /* fishhook */;
 			targetProxy = A54E90F53A589CC70CDAF1D463ED3C62 /* PBXContainerItemProxy */;
 		};
-		1C1E46F30BDCEC1580830AD622942F7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = IQKeyboardManager;
-			target = FBA456CB50E371584C11231929A0971E /* IQKeyboardManager */;
-			targetProxy = 3C2E7960B24EBED3EA506EDD8441DC15 /* PBXContainerItemProxy */;
-		};
-		2D3A5E266432D42A33D569B4F2D8FDA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SVProgressHUD;
-			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
-			targetProxy = 459B67EBE15C4874352B884887F987E3 /* PBXContainerItemProxy */;
-		};
-		46CF719FD7F3F9A976C53C1D42A9E4B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YYModel;
-			target = 84B44807A12996D487A4A591A481D6A0 /* YYModel */;
-			targetProxy = 0EA7EBA38EE7E26F04AC7C89EA46C9C2 /* PBXContainerItemProxy */;
-		};
-		4C7C67467F211475015DFC7513C11E9A /* PBXTargetDependency */ = {
+		285950D429544202114E1AD90404D1C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SDWebImage;
 			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
-			targetProxy = A1064A0495A455A23E6C8B97CF99BEF9 /* PBXContainerItemProxy */;
+			targetProxy = EF432D811E4722CE6B01C7674E9DE466 /* PBXContainerItemProxy */;
 		};
-		500334CF3579A3174BDC044F1A54C7C5 /* PBXTargetDependency */ = {
+		2C06609E325BD17F0CE7A6E6212540E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = YYText;
-			target = 6F5C17E80BD1B7F60A33F79692330A57 /* YYText */;
-			targetProxy = 6084246F6F639316CC22B3D3DC648530 /* PBXContainerItemProxy */;
+			name = LYEmptyView;
+			target = 4AA4C7BB776C55F3421BA137B643DD64 /* LYEmptyView */;
+			targetProxy = 44D1323C52CA4E50BE39105C49F29BF2 /* PBXContainerItemProxy */;
 		};
-		6CA56C07B279532C43E90122A23EE9E0 /* PBXTargetDependency */ = {
+		315B41DE81E9AB97C680722348855CEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FDFullscreenPopGesture;
+			target = 8FE0EB310F454719A11FBFEAAC09FE3E /* FDFullscreenPopGesture */;
+			targetProxy = 1631DCD452151D27BBC3DD64F9CEA226 /* PBXContainerItemProxy */;
+		};
+		564C2AD68655FD37818BD2E5E66A3072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
+			targetProxy = 86AD00D0413885EEA9DD9F9889CE3C9B /* PBXContainerItemProxy */;
+		};
+		617069467E28511CD9BEDA785686C499 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManager;
+			target = FBA456CB50E371584C11231929A0971E /* IQKeyboardManager */;
+			targetProxy = 0F7547E0F54BBB63C22467933C451EB4 /* PBXContainerItemProxy */;
+		};
+		66DF64CF87621C323D50B9504D325362 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYModel;
+			target = 84B44807A12996D487A4A591A481D6A0 /* YYModel */;
+			targetProxy = 32F8AC1A973535A10EF27302A00E97CB /* PBXContainerItemProxy */;
+		};
+		7E96333F55D0AC5B606E71DB8A047426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJRefresh;
+			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
+			targetProxy = 73EA01CCC48EEE82DF596CB1999CD397 /* PBXContainerItemProxy */;
+		};
+		8096E76749567FE0994C5F0B740E934D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJExtension;
+			target = 4D3BA58D0583DF37575CACAB3DDADC85 /* MJExtension */;
+			targetProxy = 88674D420264BC148EEE80B074F75358 /* PBXContainerItemProxy */;
+		};
+		8B1F6B33A7E99E96C9BD4D1931B60378 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DoraemonKit;
 			target = 1C740322617D8EE2F874BD31781B7702 /* DoraemonKit */;
-			targetProxy = AF861A6F8D6D49C914ADB7F2CA0084B7 /* PBXContainerItemProxy */;
+			targetProxy = F24A5E527E8B20E0F6426C0E16F5CDDB /* PBXContainerItemProxy */;
 		};
 		8B47817E3BFAB13F3CD708C3492E90F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5209,83 +4967,47 @@
 			target = 4DF6BA65687AA4231B3B388E7469B994 /* BSBacktraceLogger */;
 			targetProxy = 083FFCE679A78FF25D7E51246897967A /* PBXContainerItemProxy */;
 		};
-		9045AC247D985295EC7312D55F414471 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Flutter;
-			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
-			targetProxy = 49B94974B52B2FC49CDE774B3315C22F /* PBXContainerItemProxy */;
-		};
-		906A99AABDEF1F75F96F694EBC16FB95 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = my_flutter;
-			target = E55D6D9CE3B34ED87310823EE348579B /* my_flutter */;
-			targetProxy = 93C14943D57D25DA70982636A7C374FC /* PBXContainerItemProxy */;
-		};
 		90D64242E20BC9CA0644D57ACA8FCBF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "DoraemonKit-DoraemonKit";
 			target = 86F85BD17543B52E78020B4385A7C0C6 /* DoraemonKit-DoraemonKit */;
 			targetProxy = BF41D18F36E31CB52B014D19487BB7B7 /* PBXContainerItemProxy */;
 		};
-		97EE56587F9458D6A2F8C63E6FA1FC59 /* PBXTargetDependency */ = {
+		AB65A9E614F720F734A1F5876996A197 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = 62F3F456ED839DA63748FE77283AF3B9 /* PBXContainerItemProxy */;
+			name = YYText;
+			target = 6F5C17E80BD1B7F60A33F79692330A57 /* YYText */;
+			targetProxy = 8B43C2B79550B6EAB9BEEBC73CCD0E95 /* PBXContainerItemProxy */;
 		};
-		A3D57E0610456DA6FE8DB20BC6FB8249 /* PBXTargetDependency */ = {
+		B183BB7886FFCEB79BA1C07FA540472C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fishhook;
+			target = 58CAF5B0291DAB42086F0645150E1791 /* fishhook */;
+			targetProxy = 98D1647426D1341599A1A50CB1E6E311 /* PBXContainerItemProxy */;
+		};
+		C811D3BA3CF946CAEC9C648ABAFB8930 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DLUtils;
 			target = 372C52394EE9FE86C14E6CF0F49D7760 /* DLUtils */;
-			targetProxy = 9E028EC7DC1BDA0303E34B83B5CFE70C /* PBXContainerItemProxy */;
+			targetProxy = 5163719357299CCE22EF351AFD5B0609 /* PBXContainerItemProxy */;
 		};
-		B273EDFC15915575BB593EFBAA087DB4 /* PBXTargetDependency */ = {
+		DCC0A243973D3963EFB09DB9327F038B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FMDB;
-			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
-			targetProxy = E07CBAE2D67526DFBD490A0F7C14ED67 /* PBXContainerItemProxy */;
+			name = Reachability;
+			target = CAA047C0F5E4106F3904E8497FA17F97 /* Reachability */;
+			targetProxy = 5158A19DB97E75ADADB33A8D57B0499D /* PBXContainerItemProxy */;
 		};
-		BD8AC63DC707C10B9B50B0FE30A1EB21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MJExtension;
-			target = 4D3BA58D0583DF37575CACAB3DDADC85 /* MJExtension */;
-			targetProxy = 7B1878D3008BC32F98AE21A39D811404 /* PBXContainerItemProxy */;
-		};
-		CC60F383CCB56815CAA8B75A5B552C69 /* PBXTargetDependency */ = {
+		DDFE996FEDD8309031A9521A4DC2C0AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BSBacktraceLogger;
 			target = 4DF6BA65687AA4231B3B388E7469B994 /* BSBacktraceLogger */;
-			targetProxy = AD03828B1D2043D98386C9045FB4A6CB /* PBXContainerItemProxy */;
+			targetProxy = 7857D7690D0B7FA387710D2DA418C284 /* PBXContainerItemProxy */;
 		};
-		D0247A77072B7A3DDF1979A207975933 /* PBXTargetDependency */ = {
+		E18B15E8547C0B824AB921668E60D62E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = LYEmptyView;
-			target = 4AA4C7BB776C55F3421BA137B643DD64 /* LYEmptyView */;
-			targetProxy = C112995E97F63D7CDA9F431FFC37C9FE /* PBXContainerItemProxy */;
-		};
-		D24C5FF656EB62AB93CEB30B22329D6B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MJRefresh;
-			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
-			targetProxy = 33B8EE67EF378DA3C8DABDF122AA0BD8 /* PBXContainerItemProxy */;
-		};
-		D79B3547BC86F029E2938ECA62DB9960 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FreeStreamer;
-			target = C3AAC0817EA4DC8BD9C0046F50078BF9 /* FreeStreamer */;
-			targetProxy = 21B8E32439EDC6D2E80BB04524445AA9 /* PBXContainerItemProxy */;
-		};
-		D861247E670AF688A52282015D51F9D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Flutter;
-			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
-			targetProxy = 5A7C9802EFC052A7B67DC88807530494 /* PBXContainerItemProxy */;
-		};
-		DDC9EAAAE76EAB05FD47B7C53926C256 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Flutter;
-			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
-			targetProxy = 9ADC30F71E24522AEDB4A1B6D523A700 /* PBXContainerItemProxy */;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = C3DF1FFE4264DDCC33D54BDD25A164D4 /* PBXContainerItemProxy */;
 		};
 		E5C8546C98E52A22D63ECC01C09196A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5293,17 +5015,17 @@
 			target = CAA047C0F5E4106F3904E8497FA17F97 /* Reachability */;
 			targetProxy = 95898788A5E9CBACD3C35CC269714AA3 /* PBXContainerItemProxy */;
 		};
-		EDDAE056382E6FB47C3BF442A992C340 /* PBXTargetDependency */ = {
+		EF2393BDA3196149E67B27F339F1A33E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = fishhook;
-			target = 58CAF5B0291DAB42086F0645150E1791 /* fishhook */;
-			targetProxy = 8FA16DBCC6B32ADEA41BB3CD697F25C5 /* PBXContainerItemProxy */;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = C200648D732237CBC89989EC47C060F5 /* PBXContainerItemProxy */;
 		};
-		F16EF2ED908BBD3EBC150F6364DE4A15 /* PBXTargetDependency */ = {
+		F45ED14957904B9F0BBB57291A6F066B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FlutterPluginRegistrant;
-			target = 83DAA8F43D74F8D51203DE23C7C3A3F5 /* FlutterPluginRegistrant */;
-			targetProxy = AB909BE0196AB9D33E6AD68A9EBEA52A /* PBXContainerItemProxy */;
+			name = FMDB;
+			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
+			targetProxy = 01A170EA1A959D7B9F0753CDB3F33C72 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -5321,30 +5043,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0065FD7B9CCCA8820A87EC963B73D959 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA1C2A608D14DA5D71EC129FA3251352 /* FlutterPluginRegistrant.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MODULEMAP_FILE = Headers/Public/FlutterPluginRegistrant/FlutterPluginRegistrant.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = FlutterPluginRegistrant;
-				PRODUCT_NAME = FlutterPluginRegistrant;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		040434BED47679A7F63B2CC44F8D0626 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CDB4B7F1027930F7C92319868B7DB713 /* MJRefresh.xcconfig */;
@@ -5364,6 +5062,27 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B6A924722BDA50C6BE0B32D4159ADC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CC9DC94D6B31C152E9292D0983271DE /* Pods-dolin_demo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -5418,7 +5137,7 @@
 		};
 		2135C2EEF9F4DFEF8A7A10BC81E681BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AD841D0CF1742E3AFF5128FF3C65EAC /* Pods-TableKit.release.xcconfig */;
+			baseConfigurationReference = 031C92D170AD67D501D476C2BD4F730E /* Pods-TableKit.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -5555,31 +5274,6 @@
 			};
 			name = Debug;
 		};
-		3F363D91277FF0675E9EFAE84E2663F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA1C2A608D14DA5D71EC129FA3251352 /* FlutterPluginRegistrant.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/FlutterPluginRegistrant/FlutterPluginRegistrant-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MODULEMAP_FILE = Headers/Public/FlutterPluginRegistrant/FlutterPluginRegistrant.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = FlutterPluginRegistrant;
-				PRODUCT_NAME = FlutterPluginRegistrant;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		482FBF33DAF510F8DEE24F9A948B867C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2B8477203EF7D11D7B7C124618503D43 /* MJExtension.xcconfig */;
@@ -5650,28 +5344,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		502AD3E6F6BEE3C8D6DC446F79A296F9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93CAC0BD495F84AD2D16157DB3730238 /* Pods-dolin_demo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		509ADBCE4A8A59D2F3A42312A9B247A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -5815,7 +5487,7 @@
 		};
 		654027907A7AE4874B1121A29758B312 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F08E7340080C8E4D04C5312B829EC619 /* Pods-TodayWidget.debug.xcconfig */;
+			baseConfigurationReference = 29E6B754E0BB5929F35270D4B0F851DE /* Pods-TodayWidget.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -5955,7 +5627,7 @@
 		};
 		8AA2A45ED8CB9D0F0B8A593A90E8F392 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDBFBDF881F97266C1A5C004CA51F68F /* Pods-TodayWidget.release.xcconfig */;
+			baseConfigurationReference = 0EA7A61BAC61D512E1CAAE03AAEF7195 /* Pods-TodayWidget.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -6031,20 +5703,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		915A5E39E586FE1B78B4D4B6AB92E26B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64CB7A2ACF7403D915AE75DDE272D4C3 /* Flutter.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -6136,6 +5794,28 @@
 			};
 			name = Release;
 		};
+		9D2F48410D0FF248FD9F0857521E8259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFAEE95694B163EC10B6F4D82602A907 /* Pods-dolin_demo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		A50D31A08E56C571A945C79F43AEDC0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED12089939BA1330B06C81457CD5FBEA /* DoraemonKit.xcconfig */;
@@ -6207,27 +5887,6 @@
 			};
 			name = Release;
 		};
-		B12018E9285AB2CB8A4047A3EF0E51E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D378F9F4D977EABF6554E816DD92BD30 /* Pods-dolin_demo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		B19B6809FD518AD7D9F6154F55DCCC01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FF2812D0A413952BE283A6BD7249CB97 /* LYEmptyView.xcconfig */;
@@ -6247,19 +5906,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		B4BD0C420AE3711DCBB8CC8E135777BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38970606463A63F8F0670CF524CEBA2B /* my_flutter.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -6399,22 +6045,9 @@
 			};
 			name = Release;
 		};
-		DAEE4111ED231F53AC23FAA3F50A5642 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64CB7A2ACF7403D915AE75DDE272D4C3 /* Flutter.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		E173F1C3626675720D237413083A3BD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97F1FAA6895A1CEDFC9E7EED900234F9 /* Pods-TableKit.debug.xcconfig */;
+			baseConfigurationReference = 6DC4B70888CAC94FCB5CC569EBDB3724 /* Pods-TableKit.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -6498,20 +6131,6 @@
 			};
 			name = Release;
 		};
-		F6B0704F0178201CE43B81036A694DE8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38970606463A63F8F0670CF524CEBA2B /* my_flutter.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		FC410C29392A4BDF9D83636AD9289CAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1E316665795D6726924BDF4854B99F9 /* Reachability.xcconfig */;
@@ -6561,15 +6180,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06B84470F6F3129E7429E3DC76D00484 /* Build configuration list for PBXNativeTarget "Pods-dolin_demo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B12018E9285AB2CB8A4047A3EF0E51E5 /* Debug */,
-				502AD3E6F6BEE3C8D6DC446F79A296F9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		07475BFF49F618F9523EA1A2F1925CD1 /* Build configuration list for PBXNativeTarget "YYModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -6584,6 +6194,15 @@
 			buildConfigurations = (
 				5D61DC43C7DC2F90C295C51D66EEE358 /* Debug */,
 				2864B8151371217E5A22C6412F492423 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C531CC09535D2864D0C062F930B81B9 /* Build configuration list for PBXNativeTarget "Pods-dolin_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B6A924722BDA50C6BE0B32D4159ADC4 /* Debug */,
+				9D2F48410D0FF248FD9F0857521E8259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -6678,15 +6297,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2A06BBA7029821446FE3E469974A621 /* Build configuration list for PBXAggregateTarget "my_flutter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B4BD0C420AE3711DCBB8CC8E135777BC /* Debug */,
-				F6B0704F0178201CE43B81036A694DE8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A4BA875A5C5165394A92ABB92BADAABB /* Build configuration list for PBXNativeTarget "FreeStreamer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -6710,15 +6320,6 @@
 			buildConfigurations = (
 				509ADBCE4A8A59D2F3A42312A9B247A2 /* Debug */,
 				5197BD275EB79E1FC9236DABB048D4D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B26E11467D023FA6CDCE36F75198812F /* Build configuration list for PBXAggregateTarget "Flutter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DAEE4111ED231F53AC23FAA3F50A5642 /* Debug */,
-				915A5E39E586FE1B78B4D4B6AB92E26B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -6764,15 +6365,6 @@
 			buildConfigurations = (
 				A6869057E1D18A775A29ACDF063E071D /* Debug */,
 				7D739AC43A36CD3B68BEDC3B9DFA3B35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D11066AA8D3D09A6419C992764A5C331 /* Build configuration list for PBXNativeTarget "FlutterPluginRegistrant" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0065FD7B9CCCA8820A87EC963B73D959 /* Debug */,
-				3F363D91277FF0675E9EFAE84E2663F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

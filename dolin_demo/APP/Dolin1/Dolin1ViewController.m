@@ -16,7 +16,6 @@
 #import "DLFoldCellModel.h"
 #import "AppDelegate.h"
 
-@import Flutter;
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
@@ -85,17 +84,17 @@
 //                                                          }];
 //    [alert addAction:defaultAction];
 //    [self presentViewController:alert animated:YES completion:nil];
-    [self showFlutter];
+//    [self showFlutter];
 }
 
 - (void)showFlutter {
-    FlutterEngine *flutterEngine =
-        ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
-    FlutterViewController *flutterViewController =
-        [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
+//    FlutterEngine *flutterEngine =
+//        ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
+//    FlutterViewController *flutterViewController =
+//        [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
 //    flutterViewController.modalPresentationStyle = UIModalPresentationFullScreen;
 //    [self.navigationController pushViewController:flutterViewController animated:YES];
-    [self presentViewController:flutterViewController animated:YES completion:nil];
+//    [self presentViewController:flutterViewController animated:YES completion:nil];
 }
 
 - (void)setLeftBarBtn {
