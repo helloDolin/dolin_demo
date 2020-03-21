@@ -80,6 +80,7 @@
         [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
     flutterViewController.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:flutterViewController animated:YES completion:nil];
+    
 }
 
 - (void)setLeftBarBtn {
