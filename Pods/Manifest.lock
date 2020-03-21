@@ -21,6 +21,9 @@ PODS:
     - fishhook
   - FDFullscreenPopGesture (1.1)
   - fishhook (0.2)
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -31,6 +34,8 @@ PODS:
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.7)
+  - my_flutter (0.0.1):
+    - Flutter
   - Reachability (3.2)
   - SDWebImage (4.4.8):
     - SDWebImage/Core (= 4.4.8)
@@ -44,6 +49,8 @@ DEPENDENCIES:
   - DLUtils (~> 0.0.7)
   - DoraemonKit/Core (~> 2.0.0)
   - FDFullscreenPopGesture (~> 1.1)
+  - Flutter (from `my_flutter/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `my_flutter/.ios/Flutter/FlutterPluginRegistrant`)
   - FMDB (~> 2.7.5)
   - FreeStreamer (~> 3.9.3)
   - IQKeyboardManager
@@ -51,6 +58,7 @@ DEPENDENCIES:
   - Masonry (~> 1.1.0)
   - MJExtension (~> 3.0.15.1)
   - MJRefresh (~> 3.1.15.7)
+  - my_flutter (from `my_flutter/.ios/Flutter`)
   - SDWebImage (~> 4.0)
   - SVProgressHUD (~> 2.2.5)
   - YYModel
@@ -77,6 +85,14 @@ SPEC REPOS:
     - YYModel
     - YYText
 
+EXTERNAL SOURCES:
+  Flutter:
+    :path: my_flutter/.ios/Flutter/engine
+  FlutterPluginRegistrant:
+    :path: my_flutter/.ios/Flutter/FlutterPluginRegistrant
+  my_flutter:
+    :path: my_flutter/.ios/Flutter
+
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
@@ -84,6 +100,8 @@ SPEC CHECKSUMS:
   DoraemonKit: 9e923599e28d0b61f1c6de4aef2c2d669b30abb7
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  FlutterPluginRegistrant: d59dd07dd90e9c6430996073575a5bd1ea19677e
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FreeStreamer: 8d52b299dc97e557ff156480bf86a666165bd1e5
   IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
@@ -91,12 +109,13 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  my_flutter: c0ca42721b3297bc8d54e93782ac00730d3bd1a1
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 02ec6a3bf45210d01eaeffe4478d33416f426305
+PODFILE CHECKSUM: d9c816b9f88861c6e39aa76a89e3fc7a8d5dfea4
 
 COCOAPODS: 1.8.4

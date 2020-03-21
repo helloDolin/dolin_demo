@@ -74,27 +74,12 @@
 }
 
 - (void)jump2FlutterPage {
-//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"TODO：Flutter集成"
-//                                                                   message:@"目前的集成本地没问题，但是其他端 git clone 跑不起来 \n 后续准备换其他集成思路"
-//                                                            preferredStyle:UIAlertControllerStyleAlert];
-//    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"确定"
-//                                                            style:UIAlertActionStyleDefault
-//                                                          handler:^(UIAlertAction * _Nonnull action) {
-//                                                              [SVProgressHUD showInfoWithStatus:@"敬请期待"];
-//                                                          }];
-//    [alert addAction:defaultAction];
-//    [self presentViewController:alert animated:YES completion:nil];
-//    [self showFlutter];
-}
-
-- (void)showFlutter {
-//    FlutterEngine *flutterEngine =
-//        ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
-//    FlutterViewController *flutterViewController =
-//        [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
-//    flutterViewController.modalPresentationStyle = UIModalPresentationFullScreen;
-//    [self.navigationController pushViewController:flutterViewController animated:YES];
-//    [self presentViewController:flutterViewController animated:YES completion:nil];
+    FlutterEngine *flutterEngine =
+        ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
+    FlutterViewController *flutterViewController =
+        [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
+    flutterViewController.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:flutterViewController animated:YES completion:nil];
 }
 
 - (void)setLeftBarBtn {

@@ -1595,12 +1595,14 @@
 			buildConfigurationList = 16C8D6511D33511700228ABD /* Build configuration list for PBXNativeTarget "dolin_demo" */;
 			buildPhases = (
 				8C36E570CBD02ECA4B6FF703 /* [CP] Check Pods Manifest.lock */,
+				7ED61470FA0154B9C2E45568 /* [CP-User] Run Flutter Build Script */,
 				16C8D6361D33511700228ABD /* Sources */,
 				16C8D6371D33511700228ABD /* Frameworks */,
 				16C8D6381D33511700228ABD /* Resources */,
 				A13F3F133DB0BAB9C5FA1AF8 /* [CP] Copy Pods Resources */,
 				3AF03B861EC6E8A5008DDF80 /* Embed App Extensions */,
 				3A7F97431EC71E54007BB5B8 /* Embed Frameworks */,
+				8B7F6603D2751E0A2E0431CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1836,6 +1838,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ED61470FA0154B9C2E45568 /* [CP-User] Run Flutter Build Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/./my_flutter/.metadata",
+				"${SRCROOT}/my_flutter/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/my_flutter/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/my_flutter/.ios/Flutter/flutter_export_environment.sh",
+			);
+			name = "[CP-User] Run Flutter Build Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/my_flutter/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+		8B7F6603D2751E0A2E0431CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-frameworks.sh",
+				"${PODS_ROOT}/../my_flutter/.ios/Flutter/engine/Flutter.framework",
+				"${PODS_ROOT}/../my_flutter/.ios/Flutter/App.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/App.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dolin_demo/Pods-dolin_demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8C36E570CBD02ECA4B6FF703 /* [CP] Check Pods Manifest.lock */ = {
