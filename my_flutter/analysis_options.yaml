@@ -44,7 +44,7 @@ linter:
     - avoid_single_cascade_in_expression_statements # 禁止单个级联调用
     - avoid_slow_async_io # 禁止低速IO操作
     - avoid_types_as_parameter_names # 禁止将类型名作为参数名
-    - avoid_types_on_closure_parameters # 禁止给函数表达式添加类型声明, 可自动类型推断
+    # - avoid_types_on_closure_parameters # 禁止给函数表达式添加类型声明, 可自动类型推断
     - avoid_unused_constructor_parameters # 构造方法禁止定义不使用的参数
     - avoid_void_async # 禁止无返回值的 async 方法
     - await_only_futures # await 必须使用 Future,保证向后兼容

@@ -69,7 +69,7 @@ DEPENDENCIES:
   - YYText (~> 1.0.7)
 
 SPEC REPOS:
-  trunk:
+  https://cdn.cocoapods.org/:
     - AFNetworking
     - BSBacktraceLogger
     - DLUtils

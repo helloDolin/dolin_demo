@@ -32,6 +32,26 @@ class _IndexPageState extends State<IndexPage> {
                     Navigator.pushNamed(context, 'dl_bubble');
                   },
                 ),
+                SimpleBtn(
+                  title: '错误路由',
+                  subTitle: 'unknowroute',
+                  tap: () {
+                    Navigator.pushNamed(context, 'unknowroute');
+                  },
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, 'hero_test');
+                  },
+                  child: Hero(
+                    tag: 'hero_test',
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      child: const FlutterLogo(),
+                    ),
+                  ),
+                )
               ],
             ),
           ),
