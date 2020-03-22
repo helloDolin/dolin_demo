@@ -28,6 +28,9 @@
   "dependencies": {
     "Flutter": [
 
+    ],
+    "dl_plugin": [
+
     ]
   }
 }

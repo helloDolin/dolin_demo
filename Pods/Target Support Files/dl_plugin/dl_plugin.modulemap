@@ -1,0 +1,6 @@
+module dl_plugin {
+  umbrella header "dl_plugin-umbrella.h"
+
+  export *
+  module * { export * }
+}

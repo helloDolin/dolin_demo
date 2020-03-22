@@ -15,21 +15,27 @@
 #import "MJRefresh.h"
 #import "DLFoldCellModel.h"
 #import "AppDelegate.h"
-
+#import <Flutter/Flutter.h>
 
 @interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
 @property (nonatomic,strong) UITableView* tableView;
 @property (nonatomic, strong) NSMutableArray<DLFoldCellModel*> *data;
+@property (nonatomic, strong) FlutterViewController *flutterViewController;
 
 @end
 
 @implementation Dolin1ViewController
 
 #pragma mark -  life circle
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
+    [self addObserver];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -42,6 +48,13 @@
 }
 
 #pragma mark -  method
+- (void)addObserver {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+    selector:@selector(dismissFlutterVC)
+        name:@"dismiss_current_vc"
+      object:nil];
+}
+
 - (void)setupUI {
     [self.view addSubview:self.tableView];
     // [self setupFPSLabel];
@@ -49,6 +62,10 @@
     [self setLeftBarBtn];
     [self setupTableViewData];
     self.navigationController.delegate = self;
+}
+
+- (void)dismissFlutterVC {
+    [self.flutterViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 /**
@@ -76,11 +93,10 @@
 - (void)jump2FlutterPage {
     FlutterEngine *flutterEngine =
         ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
-    FlutterViewController *flutterViewController =
+    self.flutterViewController =
         [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
-    flutterViewController.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:flutterViewController animated:YES completion:nil];
-    
+    self.flutterViewController.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:self.flutterViewController animated:YES completion:nil];
 }
 
 - (void)setLeftBarBtn {
