@@ -23,7 +23,7 @@ class _DLBubblePageState extends State<DLBubblePage> {
           children: <Widget>[
             DLBubble(
               trianglePosition: DLTrianglePosition.leftTop,
-              color: Colors.red,
+              color: Colors.blue,
               child: Text(
                 'dolin  dolin ',
                 style: TextStyle(color: Colors.white, fontSize: 30),
