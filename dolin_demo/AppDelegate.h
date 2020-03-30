@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @import Flutter;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

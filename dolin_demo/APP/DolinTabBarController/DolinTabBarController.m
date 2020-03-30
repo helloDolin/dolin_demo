@@ -37,6 +37,9 @@
     //设置字体颜色
     UIColor *titleNormalColor = [UIColor colorWithWhite:0.8 alpha:1];
     UIColor *titleSelectedColor = [UIColor whiteColor];
+
+    self.tabBar.tintColor = [UIColor whiteColor];
+
     
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                        titleNormalColor, NSForegroundColorAttributeName,
@@ -125,9 +128,9 @@
 
 #pragma mark - UITabBarDelegate
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
-    NSInteger index = [self.tabBar.items indexOfObject:item];
-    [self animationWithIndex:index];
-    [self playSound];
+//    NSInteger index = [self.tabBar.items indexOfObject:item];
+//    [self animationWithIndex:index];
+//    [self playSound];
 }
 
 @end

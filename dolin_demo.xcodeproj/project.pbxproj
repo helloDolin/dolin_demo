@@ -220,6 +220,7 @@
 		71B2C6BE234C5F1B00239A99 /* TestCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6BD234C5F1B00239A99 /* TestCollectionCell.m */; };
 		71B2C6C1234C5FC600239A99 /* TestHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6C0234C5FC600239A99 /* TestHeader.m */; };
 		71B2C6C4234C648500239A99 /* TestFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6C3234C648500239A99 /* TestFooter.m */; };
+		71F993392431EC3A001104A2 /* AppDelegate+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F993382431EC3A001104A2 /* AppDelegate+Extend.m */; };
 		7EFC63D1435EDCD772ECB23F /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 437C9F9814174E15222B5068 /* libPods-dolin_demo.a */; };
 		E39EC7B9A61145B2E2DF9E17 /* libPods-TodayWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A753A3DC1CFCC64573753A2 /* libPods-TodayWidget.a */; };
 /* End PBXBuildFile section */
@@ -629,6 +630,8 @@
 		71B2C6C0234C5FC600239A99 /* TestHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHeader.m; sourceTree = "<group>"; };
 		71B2C6C2234C648500239A99 /* TestFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFooter.h; sourceTree = "<group>"; };
 		71B2C6C3234C648500239A99 /* TestFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFooter.m; sourceTree = "<group>"; };
+		71F993372431EC3A001104A2 /* AppDelegate+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Extend.h"; sourceTree = "<group>"; };
+		71F993382431EC3A001104A2 /* AppDelegate+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Extend.m"; sourceTree = "<group>"; };
 		AB808583BFBC35D39EAACCE8 /* Pods-TableKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableKit/Pods-TableKit.release.xcconfig"; sourceTree = "<group>"; };
 		C2187555B3069CE8D2F53DE4 /* Pods- .debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods- .debug.xcconfig"; path = "Pods/Target Support Files/Pods- /Pods- .debug.xcconfig"; sourceTree = "<group>"; };
 		C4660B72E3E3FCD6FBF96B15 /* Pods-dolin_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -821,12 +824,14 @@
 		16C8D63D1D33511700228ABD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3AE180EA1DB70F0600E8A1FA /* DolinInfo.plist */,
 				16C8D6401D33511700228ABD /* AppDelegate.h */,
 				16C8D6411D33511700228ABD /* AppDelegate.m */,
-				16C8D63E1D33511700228ABD /* main.m */,
-				16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */,
+				71F993372431EC3A001104A2 /* AppDelegate+Extend.h */,
+				71F993382431EC3A001104A2 /* AppDelegate+Extend.m */,
+				3AE180EA1DB70F0600E8A1FA /* DolinInfo.plist */,
 				163A578A1D33558E003B9609 /* DolinPrefix.pch */,
+				16C8D64B1D33511700228ABD /* LaunchScreen.storyboard */,
+				16C8D63E1D33511700228ABD /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -2046,6 +2051,7 @@
 				3A7C68C41DEC0D6800225D28 /* RichTextViewController.m in Sources */,
 				16C602AA224A406500F3DA0B /* BaseModel.m in Sources */,
 				3A7C69471DEC0E7E00225D28 /* TestWKWebViewVC.m in Sources */,
+				71F993392431EC3A001104A2 /* AppDelegate+Extend.m in Sources */,
 				3A97CD831EE7F5F600AC19F5 /* PhotoAlbumCell.m in Sources */,
 				3A7C69251DEC0D6800225D28 /* NSString+Version.m in Sources */,
 				3A7C68C51DEC0D6800225D28 /* ChangeDeviceOrientVC.m in Sources */,
