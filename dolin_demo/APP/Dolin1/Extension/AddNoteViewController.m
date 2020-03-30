@@ -26,6 +26,7 @@
 }
 
 - (void)layoutUI {
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.textField];
     [self.view addSubview:self.addBtn];
     

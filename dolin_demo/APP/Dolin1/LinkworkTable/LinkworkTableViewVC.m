@@ -26,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     _arr = @[
              @{@"title":@"热销榜",@"data":@[@"热销榜1",@"热销榜2"]},
              @{@"title":@"优惠",@"data":@[@"优惠1",@"优惠2",@"优惠3",@"优惠4",@"优惠5"]},

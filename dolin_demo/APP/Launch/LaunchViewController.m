@@ -24,7 +24,7 @@ static CGFloat const kAnimationDuration = 0.5;
 #pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.launchImageView];
 //    [self.view addSubview:self.lblTitle];
     [self.view addSubview:self.mtImgView];

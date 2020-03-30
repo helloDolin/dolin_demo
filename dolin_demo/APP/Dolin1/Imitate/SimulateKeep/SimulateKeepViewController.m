@@ -51,6 +51,7 @@
 
 #pragma mark -  method
 - (void)layoutUI {
+    self.view.backgroundColor = [UIColor whiteColor];
     [self setupMoviePlayer];
     [self.view addSubview:self.lblLogo];
     [self.view addSubview:self.simulateKeepScroll];

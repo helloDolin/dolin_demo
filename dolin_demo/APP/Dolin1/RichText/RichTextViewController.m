@@ -22,7 +22,7 @@ static NSString* kStr = @"对酒当歌，人生几何？对酒当歌，人生几
 #pragma mark -  life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
     
     _testLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT + 20, SCREEN_WIDTH, 300)];
     _testLabel.numberOfLines = 0;

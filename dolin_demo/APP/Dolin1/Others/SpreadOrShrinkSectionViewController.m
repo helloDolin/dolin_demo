@@ -26,7 +26,7 @@ static const CGFloat kCellHeight = 40.0;
 #pragma mark -  life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     // ps:_sectionArr与_selectedSectionArr与_rowsInSection的count要相同
     // 这里的设计不好
     _sectionArr = [@[@"section1",@"section2",@"section3",@"section4"]mutableCopy];

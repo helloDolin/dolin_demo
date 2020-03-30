@@ -24,6 +24,7 @@
 }
 
 - (void)setupUI {
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.testView];
     [self.view addSubview:self.leftLbl];
     [self.view addSubview:self.rightLbl];

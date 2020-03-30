@@ -44,6 +44,7 @@ static const NSTimeInterval kAnimationTime = 1.0;
 }
 
 - (void)setupUI {
+    self.view.backgroundColor = [UIColor whiteColor];
     _testView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
     _testView.center = self.view.center;
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];

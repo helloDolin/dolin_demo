@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     [self testBezierPath];
     // 使用CAShapeLayer与UIBezierPath画圆
     [self.view.layer addSublayer:self.circleLayer];

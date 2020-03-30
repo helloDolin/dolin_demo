@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     NSArray* datas = @[
                        @{@"urlStr":@"http://ws.xzhushou.cn/focusimg/201508201549023.jpg",@"title":@"好音乐，车里听"},
                        @{@"urlStr":@"http://ws.xzhushou.cn/focusimg/52.jpg",@"title":@"雕刻时光"},

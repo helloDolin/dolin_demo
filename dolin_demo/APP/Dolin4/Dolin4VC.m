@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
+    self.view.backgroundColor = [UIColor whiteColor];
     NSArray<NSString*>* arr = @[
                       @"动画相关-Animation_Study_VC",
                       @"UITableViewFDTemplateLayoutCell-FDTemplateVC",

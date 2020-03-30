@@ -103,6 +103,7 @@ static const CGFloat kTableViewCellHeight = 80.0;
 }
 
 - (void)layoutUI {
+    self.view.backgroundColor = [UIColor whiteColor];
     [self setLeftBarBtn];
     [self setRightBarBtn];
     [self setTitleView];

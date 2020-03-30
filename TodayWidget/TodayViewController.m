@@ -14,6 +14,7 @@
 {
     NoteListDelegate *tableDelegate;
 }
+
 @property (weak, nonatomic) IBOutlet UITableView *noteTable;
 
 @end
@@ -22,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.view.backgroundColor = [UIColor whiteColor];
     
     _noteTable.estimatedRowHeight = 44.0;
     tableDelegate = [[NoteListDelegate alloc] init];

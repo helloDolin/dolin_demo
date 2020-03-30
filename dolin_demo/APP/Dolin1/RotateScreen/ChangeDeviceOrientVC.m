@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.imgView];
     
     [_imgView mas_makeConstraints:^(MASConstraintMaker *make) {

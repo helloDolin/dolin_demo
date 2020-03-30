@@ -150,6 +150,7 @@
 }
 
 - (void)setupUI {
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.alwaysRotateView];
     [self.view addSubview:self.view1];
     [self.view addSubview:self.view2];

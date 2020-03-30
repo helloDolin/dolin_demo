@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
     Runtime_Test* t = [Runtime_Test new];
     [t performSelector:@selector(eat)];
 }

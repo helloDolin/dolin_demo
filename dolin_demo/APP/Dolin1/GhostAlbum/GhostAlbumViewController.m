@@ -26,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     NSMutableArray* imgArr = [NSMutableArray array];
     ImageModel * img = nil;
     for (int i = 0 ; i < 10; i ++) {

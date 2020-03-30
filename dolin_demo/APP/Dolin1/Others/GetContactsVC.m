@@ -34,6 +34,7 @@
 
 #pragma mark - method
 - (void)layoutUI {
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.phoneNumLbl];
     [self.view addSubview:self.getContactsBtn];
     

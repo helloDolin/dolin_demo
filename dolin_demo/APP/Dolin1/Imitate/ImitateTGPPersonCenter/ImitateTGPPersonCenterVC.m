@@ -61,6 +61,7 @@ static float const kTitlesViewY = 200.0;
 
 #pragma mark - method
 - (void)layoutUI {
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.scrollView];
     [self.scrollView addSubview:self.tableView1];
     [self.scrollView addSubview:self.tableView2];

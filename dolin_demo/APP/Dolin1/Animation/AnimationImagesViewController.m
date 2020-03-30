@@ -20,6 +20,7 @@
 #pragma mark -  life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.bgImgView];
     [self.view addSubview:self.animationImgView];
 }

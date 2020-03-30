@@ -48,6 +48,7 @@
 
 #pragma mark - method
 - (void)layoutUI {
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.scrollView];
     [self.scrollView addSubview:self.containerView];
     [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {

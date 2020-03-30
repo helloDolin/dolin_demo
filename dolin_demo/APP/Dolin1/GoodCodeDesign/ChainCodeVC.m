@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     NSInteger result = [NSObject makeCalc:^(CalculatorMaker *make) {
         make.add(10).muilt(10).sub(10).divide(3);
     }];

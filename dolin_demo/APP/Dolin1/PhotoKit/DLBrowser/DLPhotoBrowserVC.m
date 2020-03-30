@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.dLPhotoBrowser = [DLPhotoBrowser dLPhotoBrowserWithData:self.arrayDataSources targetImageIndex:self.targetImageIndex selectedAssets:self.selectedAssets maxSelectedCount:self.maxSelectedCount];
     self.dLPhotoBrowser.delegate = self;
     [self.view addSubview:self.dLPhotoBrowser];
