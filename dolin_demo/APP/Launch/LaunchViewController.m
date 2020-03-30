@@ -26,15 +26,9 @@ static CGFloat const kAnimationDuration = 0.5;
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.launchImageView];
-//    [self.view addSubview:self.lblTitle];
     [self.view addSubview:self.mtImgView];
     
     [self animate];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark -  method
@@ -56,7 +50,6 @@ static CGFloat const kAnimationDuration = 0.5;
 
 #pragma mark -  getter
 - (UIImageView *)launchImageView {
-    
     if (!_launchImageView) {
         _launchImageView = [[UIImageView alloc] initWithFrame:self.view.frame];
         _launchImageView.image = [UIImage imageNamed:@"launch_img"];
@@ -66,7 +59,6 @@ static CGFloat const kAnimationDuration = 0.5;
             //
 //        }];
     }
-    
     return _launchImageView;
 }
 
@@ -91,6 +83,5 @@ static CGFloat const kAnimationDuration = 0.5;
     }
     return _mtImgView;
 }
-
 
 @end

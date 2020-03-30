@@ -128,9 +128,9 @@
 
 #pragma mark - UITabBarDelegate
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
-//    NSInteger index = [self.tabBar.items indexOfObject:item];
-//    [self animationWithIndex:index];
-//    [self playSound];
+    NSInteger index = [self.tabBar.items indexOfObject:item];
+    [self animationWithIndex:index];
+    [self playSound];
 }
 
 @end

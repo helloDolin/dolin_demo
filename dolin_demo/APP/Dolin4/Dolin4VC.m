@@ -59,9 +59,9 @@
 }
 
 #pragma mark - TitleContainerScrollViewDelegate
-//- (UIColor*)colorOfUnderLineInTitleContainerScrollView:(TitleContainerScrollView*)titleContainerScrollView {
-//    return [UIColor redColor];
-//}
+- (UIColor*)colorOfUnderLineInTitleContainerScrollView:(TitleContainerScrollView*)titleContainerScrollView {
+    return [UIColor whiteColor];
+}
 
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
@@ -71,7 +71,6 @@
     if (value < 0) {
         return;
     }
-    
     
     NSUInteger leftIndex = (int)value;
     NSUInteger rightIndex = leftIndex + 1;
@@ -98,7 +97,7 @@
 
 // 结束滚动时动画
 -(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
-    //计算当前控制器View索引
+    // 计算当前控制器View索引
     NSInteger index = scrollView.contentOffset.x / scrollView.frame.size.width;
     
     self.titleContainerScrollView.currentPage = index;
@@ -122,7 +121,6 @@
     return cell;
 }
 
-
 #pragma mark - getter
 - (TitleContainerScrollView*)titleContainerScrollView {
     if (!_titleContainerScrollView) {
@@ -136,7 +134,6 @@
         }];
         
         _titleContainerScrollView.titleContainerScrollViewDelegate = self;
-        
         
         @weakify(self);
         _titleContainerScrollView.buttonClickBlock = ^(NSInteger currentPage) {
@@ -153,7 +150,6 @@
 
 - (UICollectionView*)collectionView {
     if (!_collectionView) {
-        
         UICollectionViewFlowLayout* layout = [[UICollectionViewFlowLayout alloc]init];
         layout.itemSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT - TAB_BAR_HEIGHT - kTitleContainerScrollViewHeight);
         layout.minimumLineSpacing = 0 ;
@@ -169,7 +165,6 @@
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.bounces = NO;
         [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
-        
     }
     return _collectionView;
 }
