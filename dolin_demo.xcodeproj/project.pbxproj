@@ -907,7 +907,6 @@
 				3A7C68271DEC0D6800225D28 /* Dolin4 */,
 				3A7C682C1DEC0D6800225D28 /* DolinTabBarController */,
 				3A7C682F1DEC0D6800225D28 /* Launch */,
-				3A7C68321DEC0D6800225D28 /* LocalStringStudy */,
 			);
 			path = APP;
 			sourceTree = "<group>";
@@ -1092,13 +1091,6 @@
 				3A7C68311DEC0D6800225D28 /* LaunchViewController.m */,
 			);
 			path = Launch;
-			sourceTree = "<group>";
-		};
-		3A7C68321DEC0D6800225D28 /* LocalStringStudy */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LocalStringStudy;
 			sourceTree = "<group>";
 		};
 		3A7C68331DEC0D6800225D28 /* Resource */ = {

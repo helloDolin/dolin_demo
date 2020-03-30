@@ -1,5 +1,5 @@
 //
-//  Dolin3ViewController.h
+//  GhostAlbumViewController.h
 //  dolin_demo
 //
 //  Created by shaolin on 16/7/11.

@@ -7,35 +7,26 @@
 //
 
 #import "Dolin1VC.h"
-#import "YYFPSLabel.h"
 #import "DLAnimateTransition.h"
 #import "DLPhotoAlbumPickerVC.h"
 #import <objc/runtime.h>
 #import "DLSystemPermissionsManager.h"
 #import "MJRefresh.h"
 #import "DLFoldCellModel.h"
-#import "AppDelegate.h"
-#import <Flutter/Flutter.h>
 
 @interface Dolin1VC ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
 @property (nonatomic,strong) UITableView* tableView;
 @property (nonatomic, strong) NSMutableArray<DLFoldCellModel*> *data;
-@property (nonatomic, strong) FlutterViewController *flutterViewController;
 
 @end
 
 @implementation Dolin1VC
 
 #pragma mark -  life circle
-- (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
-    [self addObserver];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -48,24 +39,13 @@
 }
 
 #pragma mark -  method
-- (void)addObserver {
-    [[NSNotificationCenter defaultCenter] addObserver:self
-    selector:@selector(dismissFlutterVC)
-        name:@"dismiss_current_vc"
-      object:nil];
-}
-
 - (void)setupUI {
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
-    // [self setupFPSLabel];
-    // [self setRightBarBtn];
-    [self setLeftBarBtn];
+//    [self setRightBarBtn];
+//    [self setLeftBarBtn];
     [self setupTableViewData];
     self.navigationController.delegate = self;
-}
-
-- (void)dismissFlutterVC {
-    [self.flutterViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 /**
@@ -82,28 +62,11 @@
     }];
 }
 
-/**
- window上添加FPSLabel
- */
-- (void)setupFPSLabel {
-    YYFPSLabel *fps = [[YYFPSLabel alloc]initWithFrame:CGRectMake(80, NAVIGATION_BAR_HEIGHT - 20, 100, 20)];
-    [[UIApplication sharedApplication].keyWindow addSubview:fps];
-}
-
-- (void)jump2FlutterPage {
-    FlutterEngine *flutterEngine =
-        ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
-    self.flutterViewController =
-        [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
-    self.flutterViewController.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:self.flutterViewController animated:YES completion:nil];
-}
-
 - (void)setLeftBarBtn {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"Flutter" forState:UIControlStateNormal];
+    [btn setTitle:@"todo" forState:UIControlStateNormal];
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
-    [btn addTarget:self action:@selector(jump2FlutterPage) forControlEvents:UIControlEventTouchUpInside];
+//    [btn addTarget:self action:@selector(todo) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = leftItem;
 }
 
