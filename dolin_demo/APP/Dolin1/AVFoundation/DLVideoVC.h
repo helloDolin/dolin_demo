@@ -6,8 +6,8 @@
 //  Copyright © 2017年 shaolin. All rights reserved.
 //
 
-#import "DolinBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface DLVideoVC : DolinBaseViewController
+@interface DLVideoVC : UIViewController
 
 @end

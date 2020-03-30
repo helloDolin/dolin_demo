@@ -6,11 +6,11 @@
 //  Copyright © 2017年 shaolin. All rights reserved.
 //
 
-#import "DolinBaseViewController.h"
+#import <UIKit/UIKit.h>
 
 /**
- 页面描述：如果每个cell都不同，就可以用这种方式，当然table也可以，算是get一个新技能吧
+ 如果每个cell都不同，就可以用这种方式，当然 table 也可以，算是 get 一个新技能吧
  */
-@interface AutoLayout_ScrollViewVC : DolinBaseViewController
+@interface AutoLayout_ScrollViewVC : UIViewController
 
 @end

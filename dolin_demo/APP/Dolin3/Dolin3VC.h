@@ -1,5 +1,5 @@
 //
-//  Dolin3ViewController.h
+//  Dolin3VC.h
 //  dolin_demo
 //
 //  Created by dolin on 16/8/30.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Dolin3ViewController : DolinBaseViewController
+@interface Dolin3VC : UIViewController
 
 @end

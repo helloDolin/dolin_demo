@@ -29,7 +29,7 @@
     DolinTabBarController* dolinTabBarController = [[DolinTabBarController alloc]init];
     self.window.rootViewController = dolinTabBarController;
     [self.window makeKeyAndVisible];
-    // 这行代码需放到makeKeyAndVisible之后且window需要自行初始化
+    // 这行代码需放到 makeKeyAndVisible 之后且 window 需要自行初始化
     [self.window showLanuchPageAndSetSomeOthers];
 }
 
@@ -112,6 +112,13 @@
 
 }
 
+- (void)setupFlutter {
+    self.flutterEngine = [[FlutterEngine alloc] initWithName:@"my flutter engine"];
+    // Runs the default Dart entrypoint with a default Flutter route.
+    [self.flutterEngine run];
+    [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
+}
+
 #pragma mark -  UIApplicationDelegate
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
     // 不管APP在后台还是进程被杀死，只要通过主屏快捷操作进来的，都会调用这个方法
@@ -120,8 +127,21 @@
 
 // 对于应用程序初始化，强烈建议您使用此方法和应用程序
 // 如果应用程序无法处理URL资源或继续用户活动，则返回NO，否则返回YES。如果应用程序由于远程通知而启动，则会忽略返回值。
-- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSLog(@"willFinishLaunchingWithOptions %@",launchOptions);
+//- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//    NSLog(@"willFinishLaunchingWithOptions %@",launchOptions);
+//    [self setupWindow];
+//    [self setupLocalNotification:application];
+//    [self setupAudioPlayBack];
+//    [self setupJSPatch];
+//    [self setupDoraemonKit];
+//    [self setup3DTouch];
+//
+//    return YES;
+//}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [self setupFlutter];
     [self setupWindow];
     [self setupLocalNotification:application];
     [self setupAudioPlayBack];
@@ -129,15 +149,6 @@
     [self setupDoraemonKit];
     [self setup3DTouch];
     
-    return YES;
-}
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    NSLog(@"didFinishLaunchingWithOptions %@",launchOptions);
-    self.flutterEngine = [[FlutterEngine alloc] initWithName:@"my flutter engine"];
-    // Runs the default Dart entrypoint with a default Flutter route.
-    [self.flutterEngine run];
-    [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
     return YES;
 }
 

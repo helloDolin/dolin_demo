@@ -7,23 +7,15 @@
 //
 
 #import "DolinTabBarController.h"
-
-#import "Dolin1ViewController.h"
-#import "Dolin2ViewController.h"
-#import "Dolin3ViewController.h"
-#import "Dolin4ViewController.h"
+#import "Dolin1VC.h"
+#import "Dolin2VC.h"
+#import "Dolin4VC.h"
+#import "AppDelegate.h"
 
 #import "UITabBar+Badge.h"
-#import <AudioToolbox/AudioToolbox.h>
-
+#import <Flutter/Flutter.h>
 
 @interface DolinTabBarController ()
-
-// 毛玻璃
-@property(nonatomic,strong)UIBlurEffect *blureffect;
-// 毛玻璃
-@property(nonatomic,strong)UIVisualEffectView *visualeffectview;
-
 
 @end
 
@@ -36,14 +28,8 @@
     [self setupTabBar];
     [self setupAllChildViewController];
     [self setupNavigationBar];
-    [self.tabBar showBadgeOnItemIndex:3];  // 设置小红点
     [self setupTabBarItemFontColor];
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.tabBar showBadgeOnItemIndex:3];  // 设置小红点
 }
 
 #pragma mark -  method
@@ -64,18 +50,21 @@
     self.tabBar.barStyle = UIBarStyleBlack;
 }
 
-// ps： 关于item的设置，这边可以直接用原生的item素材，选中和未选中状态
+// ps：关于item的设置，这边可以直接用原生的 item 素材，选中和未选中状态
 - (void)setupAllChildViewController{
-    Dolin1ViewController *dolin1ViewController = [[Dolin1ViewController alloc]init];
+    Dolin1VC *dolin1ViewController = [[Dolin1VC alloc]init];
     [self setupOneChildViewController:dolin1ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_discovery"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_discovery_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"discover", nil)];
     
-    Dolin2ViewController *dolin2ViewController = [[Dolin2ViewController alloc]init];
+    Dolin2VC *dolin2ViewController = [[Dolin2VC alloc]init];
     [self setupOneChildViewController:dolin2ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_music"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_music_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"music", nil)];
     
-    Dolin3ViewController *dolin3ViewController = [[Dolin3ViewController alloc]init];
-    [self setupOneChildViewController:dolin3ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_friend"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_friend_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"RN", nil)];
+    FlutterEngine *flutterEngine =
+        ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
+    FlutterViewController *dolin3VC =
+        [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
+    [self setupOneChildViewController:dolin3VC normalImage:[[UIImage imageNamed:@"cm2_btm_icn_friend"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_friend_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"Flutter", nil)];
     
-    Dolin4ViewController *dolin4ViewController = [[Dolin4ViewController alloc]init];
+    Dolin4VC *dolin4ViewController = [[Dolin4VC alloc]init];
     [self setupOneChildViewController:dolin4ViewController normalImage:[[UIImage imageNamed:@"cm2_btm_icn_account"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"cm2_btm_icn_account_prs"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:NSLocalizedString(@"me", nil)];
     
 }
@@ -102,26 +91,11 @@
     [bar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
 }
 
-/**
- *  获取原生图片
- *
- *  @param imageName 图片名
- *
- *  @return
- */
 - (UIImage*)getOriginalImageByImageName:(NSString*)imageName {
     UIImage *originalImage = [UIImage imageNamed:imageName];
     originalImage = [originalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     return originalImage;
 }
-
-#pragma mark - UITabBarDelegate
-- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
-    NSInteger index = [self.tabBar.items indexOfObject:item];
-    [self animationWithIndex:index]; // 点击时动画
-    [self playSound]; // 点击时音效
-}
-
 
 - (void)playSound {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"like" ofType:@"caf"];
@@ -132,20 +106,31 @@
 }
 
 - (void)animationWithIndex:(NSInteger)index {
-//    NSMutableArray * tabbarbuttonArray = [NSMutableArray array];
-//    for (UIView *tabBarButton in self.tabBar.subviews) {
-//        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
-//            [tabbarbuttonArray addObject:tabBarButton];
-//        }
-//    }
-//    CABasicAnimation*pulse = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-//    pulse.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-//    pulse.duration = 0.08;
-//    pulse.repeatCount = 1;
-//    pulse.autoreverses = YES;
-//    pulse.fromValue = [NSNumber numberWithFloat:0.7];
-//    pulse.toValue = [NSNumber numberWithFloat:1.3];
-//    [[tabbarbuttonArray[index] layer] addAnimation:pulse forKey:nil];
+    NSMutableArray * tabbarBtnArr = [NSMutableArray array];
+    
+    for (UIView *tabBarButton in self.tabBar.subviews) {
+        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            [tabbarBtnArr addObject:tabBarButton];
+        }
+    }
+    
+    // scale 模拟跳动动画
+    CABasicAnimation* pulse = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    pulse.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    pulse.duration = 0.08;
+    pulse.repeatCount = 1;
+    pulse.autoreverses = YES;
+    pulse.fromValue = [NSNumber numberWithFloat:0.7];
+    pulse.toValue = [NSNumber numberWithFloat:1.3];
+    UIView *view = tabbarBtnArr[index];
+    [view.layer addAnimation:pulse forKey:nil];
+}
+
+#pragma mark - UITabBarDelegate
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+    NSInteger index = [self.tabBar.items indexOfObject:item];
+    [self animationWithIndex:index];
+    [self playSound];
 }
 
 @end

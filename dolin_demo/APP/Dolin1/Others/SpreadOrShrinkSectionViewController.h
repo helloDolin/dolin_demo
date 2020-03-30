@@ -11,6 +11,6 @@
 /**
  *  点击section展开或收缩 demo
  */
-@interface SpreadOrShrinkSectionViewController : DolinBaseViewController
+@interface SpreadOrShrinkSectionViewController : UIViewController
 
 @end

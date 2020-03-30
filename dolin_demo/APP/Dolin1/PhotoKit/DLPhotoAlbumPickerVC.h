@@ -6,13 +6,13 @@
 //  Copyright © 2017年 shaolin. All rights reserved.
 //
 
-#import "DolinBaseViewController.h"
+#import <UIKit/UIKit.h>
 #import "ModelSelectedAsset.h"
 
 /**
  照片选取器
  */
-@interface DLPhotoAlbumPickerVC : DolinBaseViewController
+@interface DLPhotoAlbumPickerVC : UIViewController
 
 @property (nonatomic, strong) NSMutableArray<ModelSelectedAsset *> *selectedAssets;
 @property (nonatomic, assign) NSInteger maxSelectedCount;

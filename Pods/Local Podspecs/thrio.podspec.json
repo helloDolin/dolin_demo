@@ -1,0 +1,48 @@
+{
+  "name": "thrio",
+  "version": "0.1.0",
+  "summary": "Thrio makes it easy and fast to add flutter to existing mobile applications, and provide a simple and consistent navigator API.",
+  "description": "A flutter plugin which enables hybrid integration of flutter for existing ios or android apps.",
+  "homepage": "https://github.com/hellobike/thrio",
+  "license": {
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "hellobike": "foxsofter@gmail.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Classes/**/*",
+  "public_header_files": [
+    "Classes/*.h",
+    "Classes/Category/*.h",
+    "Classes/Channel/*.h",
+    "Classes/Logger/*.h",
+    "Classes/Module/*.h",
+    "Classes/Registry/*.h",
+    "Classes/Navigator/NavigatorRouteSettings.h",
+    "Classes/Navigator/NavigatorPageRoute.h",
+    "Classes/Navigator/NavigatorPageNotifyProtocol.h",
+    "Classes/Navigator/NavigatorPageObserverProtocol.h",
+    "Classes/Navigator/NavigatorRouteObserverProtocol.h",
+    "Classes/Navigator/NavigatorFlutterViewController.h",
+    "Classes/Navigator/ThrioNavigator.h",
+    "Classes/Navigator/UINavigationController+Navigator.h",
+    "Classes/Navigator/UIViewController+Navigator.h",
+    "Classes/Navigator/UIViewController+WillPopCallback.h",
+    "Classes/Navigator/UIViewController+HidesNavigationBar.h"
+  ],
+  "dependencies": {
+    "Flutter": [
+
+    ]
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES",
+    "VALID_ARCHS[sdk=iphonesimulator*]": "x86_64"
+  }
+}

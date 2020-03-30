@@ -1,12 +1,12 @@
 //
-//  Dolin1ViewController.m
+//  Dolin1VC.m
 //  dolin_demo
 //
 //  Created by shaolin on 16/7/11.
 //  Copyright © 2016年 shaolin. All rights reserved.
 //
 
-#import "Dolin1ViewController.h"
+#import "Dolin1VC.h"
 #import "YYFPSLabel.h"
 #import "DLAnimateTransition.h"
 #import "DLPhotoAlbumPickerVC.h"
@@ -17,7 +17,7 @@
 #import "AppDelegate.h"
 #import <Flutter/Flutter.h>
 
-@interface Dolin1ViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
+@interface Dolin1VC ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
 @property (nonatomic,strong) UITableView* tableView;
 @property (nonatomic, strong) NSMutableArray<DLFoldCellModel*> *data;
@@ -25,7 +25,7 @@
 
 @end
 
-@implementation Dolin1ViewController
+@implementation Dolin1VC
 
 #pragma mark -  life circle
 - (void)dealloc {

@@ -10,6 +10,6 @@
 /**
  *  关键字高亮+计算键盘弹出事件与键盘高度做动画处理
  */
-@interface DolinLabelViewController : DolinBaseViewController
+@interface DolinLabelViewController : UIViewController
 
 @end

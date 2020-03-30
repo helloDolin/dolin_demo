@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BannerViewController : DolinBaseViewController
+@interface BannerViewController : UIViewController
 
 @end

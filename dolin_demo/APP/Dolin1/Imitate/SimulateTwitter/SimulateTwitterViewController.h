@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SimulateTwitterViewController : DolinBaseViewController
+@interface SimulateTwitterViewController : UIViewController
 
 @end

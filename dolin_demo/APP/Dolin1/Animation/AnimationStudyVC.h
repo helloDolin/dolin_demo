@@ -11,6 +11,6 @@
 /**
  *  动画学习 
  */
-@interface AnimationStudyVC : DolinBaseViewController
+@interface AnimationStudyVC : UIViewController
 
 @end

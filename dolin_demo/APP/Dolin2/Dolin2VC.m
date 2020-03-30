@@ -1,12 +1,12 @@
 //
-//  Dolin2ViewController.m
+//  Dolin2VC.m
 //  dolin_demo
 //
 //  Created by Dolin on 2019/3/26.
 //  Copyright © 2019 shaolin. All rights reserved.
 //
 
-#import "Dolin2ViewController.h"
+#import "Dolin2VC.h"
 #import "AFHTTPSessionManager.h"
 #import "RecommendModel.h"
 #import "YYModel.h"
@@ -16,7 +16,7 @@
 #import <LYEmptyView/LYEmptyViewHeader.h>
 #import "DLModel.h"
 
-@interface Dolin2ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface Dolin2VC ()<UITableViewDelegate,UITableViewDataSource>
 {
     NSMutableArray<DLResultTracksModel*>* _data;
     int _pageNum;
@@ -24,7 +24,7 @@
 @property(nonatomic,strong)UITableView* tableView;
 @end
 
-@implementation Dolin2ViewController
+@implementation Dolin2VC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

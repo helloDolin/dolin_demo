@@ -11,6 +11,6 @@
 /**
  *  禁用旋转时全屏横屏方法
  */
-@interface ChangeDeviceOrientVC : DolinBaseViewController
+@interface ChangeDeviceOrientVC : UIViewController
 
 @end

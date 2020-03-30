@@ -1,16 +1,16 @@
 //
-//  Dolin4ViewController.m
+//  Dolin4VC.m
 //  dolin_demo
 //
 //  Created by shaolin on 16/7/11.
 //  Copyright © 2016年 shaolin. All rights reserved.
 //
 
-#import "Dolin4ViewController.h"
+#import "Dolin4VC.h"
 #import "TitleContainerScrollView.h"
 #import "BannerViewController.h"
 
-@interface Dolin4ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,TitleContainerScrollViewDelegate>
+@interface Dolin4VC ()<UICollectionViewDataSource,UICollectionViewDelegate,TitleContainerScrollViewDelegate>
 {
     NSMutableArray<UIViewController*>* _vcs;
 }
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation Dolin4ViewController
+@implementation Dolin4VC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

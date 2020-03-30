@@ -5,7 +5,7 @@
 //  Created by dolin on 2017/3/27.
 //  Copyright © 2017年 boqii. All rights reserved.
 //
-#import "DolinBaseViewController.h"
+#import <UIKit/UIKit.h>
 #import "DLPhotoBrowser.h"
 
 @protocol DLPhotoBrowserVCDelegate <NSObject>
@@ -18,7 +18,7 @@
 /**
  页面描述：
  */
-@interface DLPhotoBrowserVC : DolinBaseViewController
+@interface DLPhotoBrowserVC : UIViewController
 
 @property (nonatomic, weak) id<DLPhotoBrowserVCDelegate> delegate;
 

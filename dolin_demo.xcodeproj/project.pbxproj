@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1612AAEA22525383004F0ECC /* UIBezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612AAE622525383004F0ECC /* UIBezierPathViewController.m */; };
 		1612AAEB22525383004F0ECC /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612AAE922525383004F0ECC /* BezierPathView.m */; };
-		1630F53D2249CB0F002499C3 /* Dolin2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F53C2249CB0F002499C3 /* Dolin2ViewController.m */; };
+		1630F53D2249CB0F002499C3 /* Dolin2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F53C2249CB0F002499C3 /* Dolin2VC.m */; };
 		1630F55C2249ED3B002499C3 /* XDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1630F55B2249ED3A002499C3 /* XDProgressView.m */; };
 		16488136222673E400A35107 /* FDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16488134222673E400A35107 /* FDTableViewCell.m */; };
 		16488137222673E400A35107 /* FDTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16488135222673E400A35107 /* FDTableViewCell.xib */; };
@@ -64,11 +64,10 @@
 		3A7776D61EE7EF5300B3E793 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7776D31EE7EF5300B3E793 /* NoteViewController.m */; };
 		3A7776D91EE7EF7800B3E793 /* NoteListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7776D81EE7EF7800B3E793 /* NoteListDelegate.m */; };
 		3A7776DA1EE7EF7800B3E793 /* NoteListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7776D81EE7EF7800B3E793 /* NoteListDelegate.m */; };
-		3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */; };
 		3A7C68B61DEC0D6800225D28 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67BF1DEC0D6800225D28 /* BannerViewController.m */; };
 		3A7C68B81DEC0D6800225D28 /* DolinLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67C41DEC0D6800225D28 /* DolinLabel.m */; };
 		3A7C68B91DEC0D6800225D28 /* DolinLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67C61DEC0D6800225D28 /* DolinLabelViewController.m */; };
-		3A7C68BA1DEC0D6800225D28 /* Dolin1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */; };
+		3A7C68BA1DEC0D6800225D28 /* Dolin1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67C81DEC0D6800225D28 /* Dolin1VC.m */; };
 		3A7C68BB1DEC0D6800225D28 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67CC1DEC0D6800225D28 /* ImageModel.m */; };
 		3A7C68BC1DEC0D6800225D28 /* PlantCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67CE1DEC0D6800225D28 /* PlantCollectionViewCell.m */; };
 		3A7C68BD1DEC0D6800225D28 /* PlantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C67CF1DEC0D6800225D28 /* PlantCollectionViewCell.xib */; };
@@ -81,8 +80,8 @@
 		3A7C68C51DEC0D6800225D28 /* ChangeDeviceOrientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67E41DEC0D6800225D28 /* ChangeDeviceOrientVC.m */; };
 		3A7C68C71DEC0D6800225D28 /* Runtime_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67E91DEC0D6800225D28 /* Runtime_Test.m */; };
 		3A7C68C81DEC0D6800225D28 /* RunTimeStudy_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67EB1DEC0D6800225D28 /* RunTimeStudy_VC.m */; };
-		3A7C68E01DEC0D6800225D28 /* Dolin3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68241DEC0D6800225D28 /* Dolin3ViewController.m */; };
-		3A7C68E21DEC0D6800225D28 /* Dolin4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68291DEC0D6800225D28 /* Dolin4ViewController.m */; };
+		3A7C68E01DEC0D6800225D28 /* Dolin3VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68241DEC0D6800225D28 /* Dolin3VC.m */; };
+		3A7C68E21DEC0D6800225D28 /* Dolin4VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68291DEC0D6800225D28 /* Dolin4VC.m */; };
 		3A7C68E31DEC0D6800225D28 /* TitleContainerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C682B1DEC0D6800225D28 /* TitleContainerScrollView.m */; };
 		3A7C68E41DEC0D6800225D28 /* DolinTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C682E1DEC0D6800225D28 /* DolinTabBarController.m */; };
 		3A7C68E51DEC0D6800225D28 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68311DEC0D6800225D28 /* LaunchViewController.m */; };
@@ -273,8 +272,8 @@
 		1612AAE822525383004F0ECC /* UIBezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBezierPathViewController.h; sourceTree = "<group>"; };
 		1612AAE922525383004F0ECC /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
 		1620FD522243A49100FF9BAD /* MusicWY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicWY.h; sourceTree = "<group>"; };
-		1630F53B2249CB0F002499C3 /* Dolin2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dolin2ViewController.h; sourceTree = "<group>"; };
-		1630F53C2249CB0F002499C3 /* Dolin2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dolin2ViewController.m; sourceTree = "<group>"; };
+		1630F53B2249CB0F002499C3 /* Dolin2VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dolin2VC.h; sourceTree = "<group>"; };
+		1630F53C2249CB0F002499C3 /* Dolin2VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dolin2VC.m; sourceTree = "<group>"; };
 		1630F55A2249ED3A002499C3 /* XDProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDProgressView.h; sourceTree = "<group>"; };
 		1630F55B2249ED3A002499C3 /* XDProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDProgressView.m; sourceTree = "<group>"; };
 		163A578A1D33558E003B9609 /* DolinPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DolinPrefix.pch; sourceTree = "<group>"; };
@@ -380,16 +379,14 @@
 		3A7776D31EE7EF5300B3E793 /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
 		3A7776D71EE7EF7800B3E793 /* NoteListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListDelegate.h; sourceTree = "<group>"; };
 		3A7776D81EE7EF7800B3E793 /* NoteListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListDelegate.m; sourceTree = "<group>"; };
-		3A7C67B11DEC0D6800225D28 /* DolinBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinBaseViewController.h; sourceTree = "<group>"; };
-		3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinBaseViewController.m; sourceTree = "<group>"; };
 		3A7C67BE1DEC0D6800225D28 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		3A7C67BF1DEC0D6800225D28 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		3A7C67C31DEC0D6800225D28 /* DolinLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinLabel.h; sourceTree = "<group>"; };
 		3A7C67C41DEC0D6800225D28 /* DolinLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinLabel.m; sourceTree = "<group>"; };
 		3A7C67C51DEC0D6800225D28 /* DolinLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinLabelViewController.h; sourceTree = "<group>"; };
 		3A7C67C61DEC0D6800225D28 /* DolinLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinLabelViewController.m; sourceTree = "<group>"; };
-		3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin1ViewController.h; sourceTree = "<group>"; };
-		3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin1ViewController.m; sourceTree = "<group>"; };
+		3A7C67C71DEC0D6800225D28 /* Dolin1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin1VC.h; sourceTree = "<group>"; };
+		3A7C67C81DEC0D6800225D28 /* Dolin1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin1VC.m; sourceTree = "<group>"; };
 		3A7C67CB1DEC0D6800225D28 /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
 		3A7C67CC1DEC0D6800225D28 /* ImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
 		3A7C67CD1DEC0D6800225D28 /* PlantCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantCollectionViewCell.h; sourceTree = "<group>"; };
@@ -413,10 +410,10 @@
 		3A7C67E91DEC0D6800225D28 /* Runtime_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime_Test.m; sourceTree = "<group>"; };
 		3A7C67EA1DEC0D6800225D28 /* RunTimeStudy_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeStudy_VC.h; sourceTree = "<group>"; };
 		3A7C67EB1DEC0D6800225D28 /* RunTimeStudy_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeStudy_VC.m; sourceTree = "<group>"; };
-		3A7C68231DEC0D6800225D28 /* Dolin3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin3ViewController.h; sourceTree = "<group>"; };
-		3A7C68241DEC0D6800225D28 /* Dolin3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin3ViewController.m; sourceTree = "<group>"; };
-		3A7C68281DEC0D6800225D28 /* Dolin4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin4ViewController.h; sourceTree = "<group>"; };
-		3A7C68291DEC0D6800225D28 /* Dolin4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin4ViewController.m; sourceTree = "<group>"; };
+		3A7C68231DEC0D6800225D28 /* Dolin3VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin3VC.h; sourceTree = "<group>"; };
+		3A7C68241DEC0D6800225D28 /* Dolin3VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin3VC.m; sourceTree = "<group>"; };
+		3A7C68281DEC0D6800225D28 /* Dolin4VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolin4VC.h; sourceTree = "<group>"; };
+		3A7C68291DEC0D6800225D28 /* Dolin4VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolin4VC.m; sourceTree = "<group>"; };
 		3A7C682A1DEC0D6800225D28 /* TitleContainerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleContainerScrollView.h; sourceTree = "<group>"; };
 		3A7C682B1DEC0D6800225D28 /* TitleContainerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleContainerScrollView.m; sourceTree = "<group>"; };
 		3A7C682D1DEC0D6800225D28 /* DolinTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DolinTabBarController.h; sourceTree = "<group>"; };
@@ -904,7 +901,6 @@
 		3A7C67AF1DEC0D6700225D28 /* APP */ = {
 			isa = PBXGroup;
 			children = (
-				3A7C67B01DEC0D6800225D28 /* Base */,
 				3A7C67B31DEC0D6800225D28 /* Dolin1 */,
 				3A7C68071DEC0D6800225D28 /* Dolin2 */,
 				3A7C68201DEC0D6800225D28 /* Dolin3 */,
@@ -916,23 +912,14 @@
 			path = APP;
 			sourceTree = "<group>";
 		};
-		3A7C67B01DEC0D6800225D28 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				3A7C67B11DEC0D6800225D28 /* DolinBaseViewController.h */,
-				3A7C67B21DEC0D6800225D28 /* DolinBaseViewController.m */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
 		3A7C67B31DEC0D6800225D28 /* Dolin1 */ = {
 			isa = PBXGroup;
 			children = (
 				16E34B6B22756F8600CDD25B /* dolin1data.json */,
 				16E34B68227549E400CDD25B /* DLFoldCellModel.h */,
 				16E34B69227549E400CDD25B /* DLFoldCellModel.m */,
-				3A7C67C71DEC0D6800225D28 /* Dolin1ViewController.h */,
-				3A7C67C81DEC0D6800225D28 /* Dolin1ViewController.m */,
+				3A7C67C71DEC0D6800225D28 /* Dolin1VC.h */,
+				3A7C67C81DEC0D6800225D28 /* Dolin1VC.m */,
 				71B2C6B5234C5C2200239A99 /* Radio_MultipleChoice */,
 				16C602B1224A609200F3DA0B /* AutoLayoutPriority */,
 				16A91C952237FC4300ADED94 /* FMDB */,
@@ -1063,8 +1050,8 @@
 				16C6029A224A406400F3DA0B /* Player */,
 				16C6029D224A406500F3DA0B /* View */,
 				1630F5592249ED3A002499C3 /* XDProgressView */,
-				1630F53B2249CB0F002499C3 /* Dolin2ViewController.h */,
-				1630F53C2249CB0F002499C3 /* Dolin2ViewController.m */,
+				1630F53B2249CB0F002499C3 /* Dolin2VC.h */,
+				1630F53C2249CB0F002499C3 /* Dolin2VC.m */,
 			);
 			path = Dolin2;
 			sourceTree = "<group>";
@@ -1072,8 +1059,8 @@
 		3A7C68201DEC0D6800225D28 /* Dolin3 */ = {
 			isa = PBXGroup;
 			children = (
-				3A7C68231DEC0D6800225D28 /* Dolin3ViewController.h */,
-				3A7C68241DEC0D6800225D28 /* Dolin3ViewController.m */,
+				3A7C68231DEC0D6800225D28 /* Dolin3VC.h */,
+				3A7C68241DEC0D6800225D28 /* Dolin3VC.m */,
 			);
 			path = Dolin3;
 			sourceTree = "<group>";
@@ -1081,8 +1068,8 @@
 		3A7C68271DEC0D6800225D28 /* Dolin4 */ = {
 			isa = PBXGroup;
 			children = (
-				3A7C68281DEC0D6800225D28 /* Dolin4ViewController.h */,
-				3A7C68291DEC0D6800225D28 /* Dolin4ViewController.m */,
+				3A7C68281DEC0D6800225D28 /* Dolin4VC.h */,
+				3A7C68291DEC0D6800225D28 /* Dolin4VC.m */,
 				3A7C682A1DEC0D6800225D28 /* TitleContainerScrollView.h */,
 				3A7C682B1DEC0D6800225D28 /* TitleContainerScrollView.m */,
 			);
@@ -1947,7 +1934,6 @@
 			files = (
 				3A7C691F1DEC0D6800225D28 /* BasePictureTableView.m in Sources */,
 				3AC483691E49A9DE0008CE57 /* GetContactsVC.m in Sources */,
-				3A7C68B11DEC0D6800225D28 /* DolinBaseViewController.m in Sources */,
 				3A7776D41EE7EF5300B3E793 /* AddNoteViewController.m in Sources */,
 				3A7C68B91DEC0D6800225D28 /* DolinLabelViewController.m in Sources */,
 				3A38F4821E1E55090036DE63 /* AnimationStudyVC.m in Sources */,
@@ -1959,7 +1945,7 @@
 				3A7C69361DEC0D6800225D28 /* MMPlaceHolder.m in Sources */,
 				71B2C6C1234C5FC600239A99 /* TestHeader.m in Sources */,
 				3AD3095E1E77D563004C2496 /* LinkworkTableViewVC.m in Sources */,
-				3A7C68E21DEC0D6800225D28 /* Dolin4ViewController.m in Sources */,
+				3A7C68E21DEC0D6800225D28 /* Dolin4VC.m in Sources */,
 				16C8D6421D33511700228ABD /* AppDelegate.m in Sources */,
 				3A7C692B1DEC0D6800225D28 /* UIImage+Screenshot.m in Sources */,
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
@@ -1972,7 +1958,7 @@
 				3AA544891EE8015D00A6C20F /* PhotoBrowserCell.m in Sources */,
 				1648813A222677A400A35107 /* FDTemplateVC.m in Sources */,
 				16C602AC224A406500F3DA0B /* MNBaseTableViewCell.m in Sources */,
-				1630F53D2249CB0F002499C3 /* Dolin2ViewController.m in Sources */,
+				1630F53D2249CB0F002499C3 /* Dolin2VC.m in Sources */,
 				16D1D062224BEA4D00435C3A /* MNMusicPlayer.m in Sources */,
 				3A7776D61EE7EF5300B3E793 /* NoteViewController.m in Sources */,
 				3A97CD8A1EE800AC00AC19F5 /* DLPhotoBrowser.m in Sources */,
@@ -2052,7 +2038,7 @@
 				16C602AD224A406500F3DA0B /* RecommendMusicCell.m in Sources */,
 				16488147222684AD00A35107 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				3A7776D91EE7EF7800B3E793 /* NoteListDelegate.m in Sources */,
-				3A7C68E01DEC0D6800225D28 /* Dolin3ViewController.m in Sources */,
+				3A7C68E01DEC0D6800225D28 /* Dolin3VC.m in Sources */,
 				3A7C69211DEC0D6800225D28 /* PhotoScrollView.m in Sources */,
 				3A7C69351DEC0D6800225D28 /* DolinTopWindowUtil.m in Sources */,
 				1648813D222678FE00A35107 /* FDCellModel.m in Sources */,
@@ -2060,7 +2046,7 @@
 				16C602A8224A406500F3DA0B /* MNBaseModel.m in Sources */,
 				3A7C69291DEC0D6800225D28 /* UIImage+ImageWithColor.m in Sources */,
 				3ADF3A5D1EBC176A00A5EFF6 /* VideoModel.m in Sources */,
-				3A7C68BA1DEC0D6800225D28 /* Dolin1ViewController.m in Sources */,
+				3A7C68BA1DEC0D6800225D28 /* Dolin1VC.m in Sources */,
 				16E34B6A227549E400CDD25B /* DLFoldCellModel.m in Sources */,
 				3A7776C21EE7EB0C00B3E793 /* ModelSelectedAsset.m in Sources */,
 				3A97CD8B1EE800AC00AC19F5 /* DLPhotoBrowserVC.m in Sources */,

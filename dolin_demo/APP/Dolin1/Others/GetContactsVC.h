@@ -6,11 +6,11 @@
 //  Copyright © 2017年 shaolin. All rights reserved.
 //
 
-#import "DolinBaseViewController.h"
+#import <UIKit/UIKit.h>
 
 /**
  页面描述：获取联系人
  */
-@interface GetContactsVC : DolinBaseViewController
+@interface GetContactsVC : UIViewController
 
 @end

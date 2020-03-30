@@ -10,6 +10,6 @@
 /**
  *  鬼相册
  */
-@interface GhostAlbumViewController : DolinBaseViewController
+@interface GhostAlbumViewController : UIViewController
 
 @end

@@ -15,7 +15,6 @@
 #import <Foundation/Foundation.h>
 #import "DolinUsefulMacros.h"
 #import "MusicWY.h"
-#import "DolinBaseViewController.h"
 #import "UIColor+ColorUtility.h"
 #import "Masonry.h"
 

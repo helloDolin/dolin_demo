@@ -1,5 +1,5 @@
 //
-//  Dolin1ViewController.h
+//  Dolin4VC.h
 //  dolin_demo
 //
 //  Created by shaolin on 16/7/11.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Dolin1ViewController : DolinBaseViewController
+@interface Dolin4VC : UIViewController
 
 @end

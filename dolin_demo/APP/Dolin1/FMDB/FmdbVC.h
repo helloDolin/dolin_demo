@@ -6,11 +6,11 @@
 //  Copyright © 2019 shaolin. All rights reserved.
 //
 
-#import "DolinBaseViewController.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FmdbVC : DolinBaseViewController
+@interface FmdbVC : UIViewController
 
 @end
 

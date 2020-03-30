@@ -11,6 +11,6 @@
 /**
  *  仿keep启动页
  */
-@interface SimulateKeepViewController : DolinBaseViewController
+@interface SimulateKeepViewController : UIViewController
 
 @end

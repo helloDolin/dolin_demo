@@ -6,8 +6,8 @@
 //  Copyright © 2016年 shaolin. All rights reserved.
 //
 
-#import "DolinBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface CGAffineTransformStudy_VC : DolinBaseViewController
+@interface CGAffineTransformStudy_VC : UIViewController
 
 @end

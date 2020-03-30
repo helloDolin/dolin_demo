@@ -6,8 +6,8 @@
 //  Copyright © 2016年 shaolin. All rights reserved.
 //
 
-#import "DolinBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface OriginAPIAnimateStudyVC : DolinBaseViewController
+@interface OriginAPIAnimateStudyVC : UIViewController
 
 @end

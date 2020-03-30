@@ -6,8 +6,8 @@
 //  Copyright © 2017年 shaolin. All rights reserved.
 //
 
-#import "DolinBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface NoteViewController : DolinBaseViewController
+@interface NoteViewController : UIViewController
 
 @end

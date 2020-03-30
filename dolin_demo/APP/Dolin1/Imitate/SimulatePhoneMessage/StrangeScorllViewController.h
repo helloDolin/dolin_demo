@@ -12,6 +12,6 @@
  *  UIScrollView奇技淫巧
  *  http://www.jianshu.com/p/5804fa72aaed
  */
-@interface StrangeScorllViewController : DolinBaseViewController
+@interface StrangeScorllViewController : UIViewController
 
 @end

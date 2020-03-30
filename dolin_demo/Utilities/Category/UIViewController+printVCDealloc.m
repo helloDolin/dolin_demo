@@ -12,9 +12,9 @@
 @implementation UIViewController (printVCDealloc)
 
 + (void)load {
-    Method originMethod = class_getInstanceMethod([self class], NSSelectorFromString(@"dealloc"));
-    Method newMethod = class_getInstanceMethod([self class], NSSelectorFromString(@"deallocPrint"));
-    method_exchangeImplementations(originMethod, newMethod);
+    Method dealloc = class_getInstanceMethod([self class], NSSelectorFromString(@"dealloc"));
+    Method deallocPrint = class_getInstanceMethod([self class], NSSelectorFromString(@"deallocPrint"));
+    method_exchangeImplementations(dealloc, deallocPrint);
 }
 
 - (void)deallocPrint {

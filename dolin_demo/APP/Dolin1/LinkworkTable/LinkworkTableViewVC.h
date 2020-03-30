@@ -6,11 +6,11 @@
 //  Copyright © 2017年 shaolin. All rights reserved.
 //
 
-#import "DolinBaseViewController.h"
+#import <UIKit/UIKit.h>
 
 /**
  页面描述：联动tableView、仿饿了么
  */
-@interface LinkworkTableViewVC : DolinBaseViewController
+@interface LinkworkTableViewVC : UIViewController
 
 @end

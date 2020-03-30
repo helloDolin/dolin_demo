@@ -6,11 +6,11 @@
 //  Copyright © 2017年 shaolin. All rights reserved.
 //
 
-#import "DolinBaseViewController.h"
+#import <UIKit/UIKit.h>
 
 /**
  仿掌盟个人中心
  */
-@interface ImitateTGPPersonCenterVC : DolinBaseViewController
+@interface ImitateTGPPersonCenterVC : UIViewController
 
 @end

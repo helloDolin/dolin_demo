@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AnimationImagesViewController : DolinBaseViewController
+@interface AnimationImagesViewController : UIViewController
 
 @end
