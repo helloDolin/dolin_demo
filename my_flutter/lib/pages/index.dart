@@ -51,7 +51,19 @@ class _IndexPageState extends State<IndexPage> {
                   },
                 ),
                 SimpleBtn(
-                  title: '错误路由',
+                  title: 'search_bar',
+                  tap: () {
+                    Navigator.pushNamed(context, 'search_bar');
+                  },
+                ),
+                SimpleBtn(
+                  title: 'block_chain_analyze',
+                  tap: () {
+                    Navigator.pushNamed(context, 'block_chain_analyze');
+                  },
+                ),
+                SimpleBtn(
+                  title: '未注册的路由',
                   subTitle: 'unknowroute',
                   tap: () {
                     Navigator.pushNamed(context, 'unknowroute');
