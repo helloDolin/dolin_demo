@@ -33,6 +33,24 @@ class _IndexPageState extends State<IndexPage> {
                   },
                 ),
                 SimpleBtn(
+                  title: 'gesture_study',
+                  tap: () {
+                    Navigator.pushNamed(context, 'gesture_study');
+                  },
+                ),
+                SimpleBtn(
+                  title: 'sliver_study',
+                  tap: () {
+                    Navigator.pushNamed(context, 'sliver_study');
+                  },
+                ),
+                SimpleBtn(
+                  title: 'noti_study',
+                  tap: () {
+                    Navigator.pushNamed(context, 'noti_study');
+                  },
+                ),
+                SimpleBtn(
                   title: '错误路由',
                   subTitle: 'unknowroute',
                   tap: () {
