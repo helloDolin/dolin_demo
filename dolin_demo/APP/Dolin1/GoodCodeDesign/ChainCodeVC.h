@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- 页面描述：响应链
+ 响应链编程
  */
 @interface ChainCodeVC : UIViewController
 

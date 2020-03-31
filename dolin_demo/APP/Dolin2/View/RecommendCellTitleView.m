@@ -76,17 +76,17 @@
     
     // 在文本末尾添加标签
     NSString *spaceName = [NSString stringWithFormat:@"%@   ",_dLResultTracksModel.name];
-    
-    UILabel *tagLbl = [[UILabel alloc]init];
-    UIFont *font = [UIFont systemFontOfSize:12 weight:UIFontWeightLight];
-    tagLbl.font = font;
-    tagLbl.text = _dLResultTracksModel.name;
-    [tagLbl sizeToFit];
-    ViewBorderRadius(tagLbl, 5, 1,RANDOM_UICOLOR);
+    // 暂屏蔽
+//    UILabel *tagLbl = [[UILabel alloc]init];
+//    UIFont *font = [UIFont systemFontOfSize:12 weight:UIFontWeightLight];
+//    tagLbl.font = font;
+//    tagLbl.text = _dLResultTracksModel.name;
+//    [tagLbl sizeToFit];
+//    ViewBorderRadius(tagLbl, 5, 1,RANDOM_UICOLOR);
     
     NSMutableAttributedString *text = [[NSMutableAttributedString alloc]initWithString:spaceName];
-    NSMutableAttributedString *attachment = [NSMutableAttributedString yy_attachmentStringWithContent:tagLbl contentMode:UIViewContentModeBottom attachmentSize:tagLbl.size alignToFont:font alignment:YYTextVerticalAlignmentCenter];
-    [text appendAttributedString: attachment];
+//    NSMutableAttributedString *attachment = [NSMutableAttributedString yy_attachmentStringWithContent:tagLbl contentMode:UIViewContentModeBottom attachmentSize:tagLbl.size alignToFont:font alignment:YYTextVerticalAlignmentCenter];
+//    [text appendAttributedString: attachment];
     _userNameLabel.attributedText = text;
 }
 

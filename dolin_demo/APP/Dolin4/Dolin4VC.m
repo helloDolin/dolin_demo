@@ -125,9 +125,9 @@
 - (TitleContainerScrollView*)titleContainerScrollView {
     if (!_titleContainerScrollView) {
         _titleContainerScrollView = [[TitleContainerScrollView alloc] initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, kTitleContainerScrollViewHeight)];
-        _titleContainerScrollView.backgroundColor = RANDOM_UICOLOR;
+        _titleContainerScrollView.backgroundColor = [UIColor colorWithRed:34/255.0f green:139/255.0f  blue:34/255.0f alpha:1.0f];
         [_titleContainerScrollView onceParameterConfig:^(CGFloat *fontSizeNormal, CGFloat *fontSizeSelected, CGFloat *underLineHeight ,UIColor** underLineColor) {
-            *fontSizeNormal = 14.0;
+            *fontSizeNormal = 12.0;
             *fontSizeSelected = 16.0;
             *underLineHeight = 2;
             *underLineColor = [UIColor whiteColor];

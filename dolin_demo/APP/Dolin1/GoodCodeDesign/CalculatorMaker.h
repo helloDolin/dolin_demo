@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+
+
 @interface CalculatorMaker : NSObject
+
+typedef CalculatorMaker* (^Calculate)(NSInteger num);
 
 @property (nonatomic, assign) NSInteger result;
 
-- (CalculatorMaker *(^)(NSInteger))add;
-- (CalculatorMaker *(^)(NSInteger))sub;
-- (CalculatorMaker *(^)(NSInteger))muilt;
-- (CalculatorMaker *(^)(NSInteger))divide;
+- (Calculate)add;
+- (Calculate)sub;
+- (Calculate)muilt;
+- (Calculate)divide;
 
 @end

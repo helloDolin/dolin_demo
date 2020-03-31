@@ -32,10 +32,10 @@
 #pragma mark -  method
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.tableView];
     [self setRightBarBtn];
     [self setupTableViewData];
     self.navigationController.delegate = self;
+    [self.view addSubview:self.tableView];
 }
 
 - (void)setupTableViewData {

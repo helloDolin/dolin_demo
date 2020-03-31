@@ -10,7 +10,7 @@
 
 @implementation CalculatorMaker
 
-- (CalculatorMaker *(^)(NSInteger))add {
+- (Calculate)add {
     return ^CalculatorMaker* (NSInteger value) {
         self->_result += value;
         return self;
@@ -18,21 +18,21 @@
 }
 
 
-- (CalculatorMaker *(^)(NSInteger))sub {
+- (Calculate)sub {
     return ^CalculatorMaker* (NSInteger value) {
         self->_result -= value;
         return self;
     };
 }
 
-- (CalculatorMaker *(^)(NSInteger))muilt {
+- (Calculate)muilt {
     return ^CalculatorMaker* (NSInteger value) {
         self->_result *= value;
         return self;
     };
 }
 
-- (CalculatorMaker *(^)(NSInteger))divide {
+- (Calculate)divide {
     return ^CalculatorMaker* (NSInteger value) {
         self->_result /= value;
         return self;

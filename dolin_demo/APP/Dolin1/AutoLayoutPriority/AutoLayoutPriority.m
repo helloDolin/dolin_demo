@@ -49,7 +49,7 @@
     if (!_leftLbl) {
         _leftLbl = [[UILabel alloc]init];
         _leftLbl.text = @"leftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleftleft";
-        _leftLbl.numberOfLines = 0;
+        _leftLbl.numberOfLines = 1;
     }
     return _leftLbl;
 }
@@ -57,7 +57,8 @@
 - (UILabel*)rightLbl {
     if (!_rightLbl) {
         _rightLbl = [[UILabel alloc]init];
-        _rightLbl.text = @"right";
+        _rightLbl.text = @"rightrightright";
+        _rightLbl.numberOfLines = 1;
     }
     return _rightLbl;
 }

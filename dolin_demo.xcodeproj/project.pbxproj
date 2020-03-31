@@ -75,7 +75,6 @@
 		3A7C68BF1DEC0D6800225D28 /* GhostAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67D31DEC0D6800225D28 /* GhostAlbumViewController.m */; };
 		3A7C68C01DEC0D6800225D28 /* LeftAlignedFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67D51DEC0D6800225D28 /* LeftAlignedFlowLayout.m */; };
 		3A7C68C11DEC0D6800225D28 /* PwdTextFieldBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67D81DEC0D6800225D28 /* PwdTextFieldBugViewController.m */; };
-		3A7C68C31DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67DE1DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.m */; };
 		3A7C68C41DEC0D6800225D28 /* RichTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67E11DEC0D6800225D28 /* RichTextViewController.m */; };
 		3A7C68C51DEC0D6800225D28 /* ChangeDeviceOrientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67E41DEC0D6800225D28 /* ChangeDeviceOrientVC.m */; };
 		3A7C68C71DEC0D6800225D28 /* Runtime_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C67E91DEC0D6800225D28 /* Runtime_Test.m */; };
@@ -350,8 +349,6 @@
 		3A7C67D51DEC0D6800225D28 /* LeftAlignedFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftAlignedFlowLayout.m; sourceTree = "<group>"; };
 		3A7C67D71DEC0D6800225D28 /* PwdTextFieldBugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PwdTextFieldBugViewController.h; sourceTree = "<group>"; };
 		3A7C67D81DEC0D6800225D28 /* PwdTextFieldBugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PwdTextFieldBugViewController.m; sourceTree = "<group>"; };
-		3A7C67DD1DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadOrShrinkSectionViewController.h; sourceTree = "<group>"; };
-		3A7C67DE1DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadOrShrinkSectionViewController.m; sourceTree = "<group>"; };
 		3A7C67E01DEC0D6800225D28 /* RichTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichTextViewController.h; sourceTree = "<group>"; };
 		3A7C67E11DEC0D6800225D28 /* RichTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichTextViewController.m; sourceTree = "<group>"; };
 		3A7C67E31DEC0D6800225D28 /* ChangeDeviceOrientVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeDeviceOrientVC.h; sourceTree = "<group>"; };
@@ -910,8 +907,6 @@
 			children = (
 				3AC483671E49A9DE0008CE57 /* GetContactsVC.h */,
 				3AC483681E49A9DE0008CE57 /* GetContactsVC.m */,
-				3A7C67DD1DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.h */,
-				3A7C67DE1DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -1761,7 +1756,6 @@
 				3AC483611E49A93D0008CE57 /* SimulateTwitterView.m in Sources */,
 				3ADF3A551EBC0F3A00A5EFF6 /* DLVideoPlayView.m in Sources */,
 				3A7C691D1DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
-				3A7C68C31DEC0D6800225D28 /* SpreadOrShrinkSectionViewController.m in Sources */,
 				3AA0C1B51E71628A009B1628 /* ChainCodeVC.m in Sources */,
 				3AC483621E49A93D0008CE57 /* SimulateTwitterViewController.m in Sources */,
 				3A7776B91EE7D28000B3E793 /* UtilOfPhotoAlbum.m in Sources */,
