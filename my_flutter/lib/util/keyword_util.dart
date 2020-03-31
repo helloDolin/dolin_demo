@@ -1,26 +1,30 @@
 import 'package:flutter/material.dart';
 
 class KeywordUtil {
-  static List<TextSpan> keywordTextSpans(String word, String keyword,
-      {TextStyle normalStyle, TextStyle keywordStyle}) {
+  static List<TextSpan> keywordTextSpans(
+    String word,
+    String keyword, {
+    TextStyle normalStyle = const TextStyle(fontSize: 14, color: Colors.black),
+    TextStyle keywordStyle = const TextStyle(fontSize: 14, color: Colors.red),
+  }) {
     final List<TextSpan> spans = [];
+
     if (word == null || word.isEmpty) {
       return spans;
     }
-    // 忽略大小写
-    final wordL = word.toLowerCase();
-    final keywordL = keyword.toLowerCase();
-    final List<String> arr = wordL.split(keywordL);
-    int preIndex = 0;
+
+    if (keyword.isEmpty) {
+      spans.add(TextSpan(text: word, style: normalStyle));
+      return spans;
+    }
+
+    final List<String> arr = word.split('');
+
     for (int i = 0; i < arr.length; i++) {
-      if (i != 0) {
-        preIndex = wordL.indexOf(keywordL, preIndex);
-        spans.add(TextSpan(
-            text: word.substring(preIndex, preIndex + keyword.length),
-            style: keywordStyle));
-      }
       final String val = arr[i];
-      if (val != null && val.isNotEmpty) {
+      if (val.toLowerCase() == keyword.toLowerCase()) {
+        spans.add(TextSpan(text: val, style: keywordStyle));
+      } else {
         spans.add(TextSpan(text: val, style: normalStyle));
       }
     }

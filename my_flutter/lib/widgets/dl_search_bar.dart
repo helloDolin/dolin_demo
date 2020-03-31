@@ -123,10 +123,13 @@ class _DLSearchBarState extends State<DLSearchBar> {
           ),
           child: Row(
             children: <Widget>[
-              const Icon(
-                Icons.search,
-                size: 15,
-                color: Color(0xffbbbbbb),
+              Container(
+                padding: const EdgeInsets.only(right: 5),
+                child: Icon(
+                  Icons.search,
+                  size: 15,
+                  color: const Color(0xffbbbbbb),
+                ),
               ),
               Expanded(
                   flex: 1,
@@ -140,7 +143,6 @@ class _DLSearchBarState extends State<DLSearchBar> {
                         color: Colors.black,
                         fontWeight: FontWeight.w300),
                     decoration: InputDecoration(
-                        contentPadding: const EdgeInsets.only(left: 5),
                         border: InputBorder.none,
                         hintText: widget.hint ?? '',
                         hintStyle: const TextStyle(fontSize: 14)),
@@ -150,6 +152,10 @@ class _DLSearchBarState extends State<DLSearchBar> {
                 child: InkWell(
                   splashColor: Colors.transparent,
                   highlightColor: Colors.transparent,
+                  onTap: () {
+                    _controller.clear();
+                    _onChanged('');
+                  },
                   child: Container(
                     alignment: Alignment.centerLeft,
                     width: _searchBarHeight - 6,
@@ -160,10 +166,6 @@ class _DLSearchBarState extends State<DLSearchBar> {
                       color: Color(0xffbbbbbb),
                     ),
                   ),
-                  onTap: () {
-                    _controller.clear();
-                    _onChanged('');
-                  },
                 ),
               )
             ],

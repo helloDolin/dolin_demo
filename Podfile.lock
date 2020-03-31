@@ -69,7 +69,7 @@ DEPENDENCIES:
   - YYText
 
 SPEC REPOS:
-  trunk:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
     - BSBacktraceLogger
     - DLUtils
@@ -123,6 +123,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 133fb237a88a6737cfe7bcc4a0dfa11b7b8b7795
+PODFILE CHECKSUM: 0c7bed711926bb3c59ed784ee3da5c3cec21840f
 
 COCOAPODS: 1.8.4
