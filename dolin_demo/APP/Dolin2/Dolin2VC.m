@@ -54,7 +54,7 @@
     
     AFHTTPSessionManager* manager = [AFHTTPSessionManager manager];
     @weakify(self);
-    [manager GET:urlStr parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [manager GET:urlStr parameters:nil headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         @strongify(self);
         DLModel* model = [DLModel yy_modelWithJSON:responseObject];
         self->_data = [model.result.tracks mutableCopy];
@@ -65,19 +65,6 @@
         if (!self ->_data.count) {
             [self setupEmptyView];
         }
-        
-//        if (self->_data.count == 0) {
-//            [self.tableView.mj_header endRefreshing];
-//        }
-//        else {
-//            [self.tableView.mj_footer endRefreshing];
-//        }
-//        NSArray* arr = responseObject[@"entity_list"];
-//        [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//            RecommendModel* recommendModel = [RecommendModel yy_modelWithJSON:obj[@"meow"]];
-//            [self->_data addObject:recommendModel];
-//        }];
-//        [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         @strongify(self);
         [self setupEmptyView];

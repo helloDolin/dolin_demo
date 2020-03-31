@@ -11,9 +11,7 @@
 
 @implementation PhotoTableView
 
-
-- (id)initWithFrame:(CGRect)frame style:(UITableViewStyle)style
-{
+- (id)initWithFrame:(CGRect)frame style:(UITableViewStyle)style {
     self = [super initWithFrame:frame style:style];
     if (self) {
         self.pagingEnabled = YES;

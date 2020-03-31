@@ -7,7 +7,6 @@
 //
 
 #import "AnimationStudyVC.h"
-#import "MMPlaceHolder.h"
 
 static const CGFloat kBottomViewHeight = 100.0; // 底部view高度
 
@@ -93,7 +92,6 @@ static const CGFloat kBottomViewHeight = 100.0; // 底部view高度
     // 等间距设置
     [@[btn1,btn2,btn3,btn4] mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:10 leadSpacing:20 tailSpacing:10];
     
-    [btn1 showPlaceHolder];
 }
 
 

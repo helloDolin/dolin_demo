@@ -10,5 +10,4 @@
 
 @interface PhotoTableView : BasePictureTableView
 
-
 @end

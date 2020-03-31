@@ -14,13 +14,11 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "DolinUsefulMacros.h"
-#import "MusicWY.h"
 #import "UIColor+ColorUtility.h"
 #import "Masonry.h"
 
 #import <YYText/YYText.h>
 #import "UIView+Extension.h"
-#import "MMPlaceHolder.h"
 #import "SVProgressHUD.h"
 
 

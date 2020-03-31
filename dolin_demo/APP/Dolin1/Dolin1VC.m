@@ -9,10 +9,10 @@
 #import "Dolin1VC.h"
 #import "DLAnimateTransition.h"
 #import "DLPhotoAlbumPickerVC.h"
-#import <objc/runtime.h>
 #import "DLSystemPermissionsManager.h"
 #import "MJRefresh.h"
 #import "DLFoldCellModel.h"
+#import <objc/runtime.h>
 
 @interface Dolin1VC ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
@@ -29,28 +29,15 @@
     [self setupUI];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    NSIndexPath* selectedIndexPath = [self.tableView indexPathForSelectedRow];
-    // 再次回到这个页面cell选中效果慢慢消失
-    if (selectedIndexPath) {
-        [self.tableView deselectRowAtIndexPath:selectedIndexPath animated:YES];
-    }
-}
-
 #pragma mark -  method
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
-//    [self setRightBarBtn];
-//    [self setLeftBarBtn];
+    [self setRightBarBtn];
     [self setupTableViewData];
     self.navigationController.delegate = self;
 }
 
-/**
- 设置 tableview 的数据
- */
 - (void)setupTableViewData {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"dolin1data" ofType:@"json"];
     NSData *data = [[NSData alloc] initWithContentsOfFile:path];
@@ -60,14 +47,6 @@
         DLFoldCellModel* model = [DLFoldCellModel modelWithDic:obj];
         [self.data addObject:model];
     }];
-}
-
-- (void)setLeftBarBtn {
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"todo" forState:UIControlStateNormal];
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
-//    [btn addTarget:self action:@selector(todo) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = leftItem;
 }
 
 /**

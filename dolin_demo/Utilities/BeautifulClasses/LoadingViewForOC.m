@@ -42,7 +42,7 @@
     return loadingView;
 }
 
-//可以手动调用隐藏动画
+// 可以手动调用隐藏动画
 - (void)hideLoadingView {
     [_round1.layer removeAllAnimations];
     [_round2.layer removeAllAnimations];
