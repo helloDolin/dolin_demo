@@ -1,3 +1,9 @@
+/*
+ * @Author: shaolin 
+ * @Date: 2020-04-01 11:04:24 
+ * @Last Modified by:   shaolin 
+ * @Last Modified time: 2020-04-01 11:04:24 
+ */
 import 'package:flutter/material.dart';
 
 class LoadingContainer extends StatelessWidget {

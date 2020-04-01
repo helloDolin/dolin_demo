@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter/pages/block_chain_analyze/page.dart';
-import 'package:my_flutter/pages/dl_bubble.dart';
+import 'package:my_flutter/pages/dl_alert_page.dart';
+import 'package:my_flutter/pages/dl_bubble_page.dart';
+import 'package:my_flutter/pages/dl_button_page.dart';
 import 'package:my_flutter/pages/gesture_study.dart';
 import 'package:my_flutter/pages/hero_test.dart';
 import 'package:my_flutter/pages/index.dart';
 import 'package:my_flutter/pages/noti_study.dart';
-import 'package:my_flutter/pages/search_bar.dart';
+import 'package:my_flutter/pages/dl_search_bar_page.dart';
 import 'package:my_flutter/pages/sliver_study.dart';
 import 'package:my_flutter/pages/un_know_page.dart';
 
@@ -24,13 +26,15 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/': (context) => const IndexPage(),
-        'dl_bubble': (context) => const DLBubblePage(),
         'hero_test': (context) => const HeroTestPage(),
         'gesture_study': (context) => const GestureStudyPage(),
         'sliver_study': (context) => const SliverStudyPage(),
         'noti_study': (context) => const NotiStudyPage(),
         'block_chain_analyze': (context) => Page(),
-        'search_bar': (context) => const SearchBarPage(),
+        'dl_bubble_page': (context) => const DLBubblePage(),
+        'dl_search_bar_page': (context) => const SearchBarPage(),
+        'dl_button_page': (context) => const DLButtonPage(),
+        'dl_alert_page': (context) => const DLAlertPage(),
       },
       onUnknownRoute: (RouteSettings setting) =>
           MaterialPageRoute(builder: (context) => const UnKnowPage()),

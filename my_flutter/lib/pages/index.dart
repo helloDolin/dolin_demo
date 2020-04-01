@@ -15,7 +15,7 @@ class _IndexPageState extends State<IndexPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: DLAppBar(
-          'dolin widgets',
+          'dolin demo',
           isHideBackBtn: false,
           onTapBackBtn: () async {
             final result = await DlPlugin.dismissCurrentVC;
@@ -27,9 +27,27 @@ class _IndexPageState extends State<IndexPage> {
             child: Column(
               children: <Widget>[
                 SimpleBtn(
-                  title: 'dl_bubble',
+                  title: 'dl_bubble_page',
                   tap: () {
-                    Navigator.pushNamed(context, 'dl_bubble');
+                    Navigator.pushNamed(context, 'dl_bubble_page');
+                  },
+                ),
+                SimpleBtn(
+                  title: 'dl_search_bar_page',
+                  tap: () {
+                    Navigator.pushNamed(context, 'dl_search_bar_page');
+                  },
+                ),
+                SimpleBtn(
+                  title: 'dl_button_page',
+                  tap: () {
+                    Navigator.pushNamed(context, 'dl_button_page');
+                  },
+                ),
+                SimpleBtn(
+                  title: 'dl_alert_page',
+                  tap: () {
+                    Navigator.pushNamed(context, 'dl_alert_page');
                   },
                 ),
                 SimpleBtn(
@@ -48,12 +66,6 @@ class _IndexPageState extends State<IndexPage> {
                   title: 'noti_study',
                   tap: () {
                     Navigator.pushNamed(context, 'noti_study');
-                  },
-                ),
-                SimpleBtn(
-                  title: 'search_bar',
-                  tap: () {
-                    Navigator.pushNamed(context, 'search_bar');
                   },
                 ),
                 SimpleBtn(
