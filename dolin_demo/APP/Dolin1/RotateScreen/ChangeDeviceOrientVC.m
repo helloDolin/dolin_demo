@@ -7,7 +7,6 @@
 //
 
 #import "ChangeDeviceOrientVC.h"
-#import "Masonry.h"
 #import "AppDelegate.h"
 
 @interface ChangeDeviceOrientVC ()

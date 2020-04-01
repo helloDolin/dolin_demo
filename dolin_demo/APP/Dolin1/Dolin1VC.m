@@ -10,8 +10,8 @@
 #import "DLAnimateTransition.h"
 #import "DLPhotoAlbumPickerVC.h"
 #import "DLSystemPermissionsManager.h"
-#import "MJRefresh.h"
 #import "DLFoldCellModel.h"
+#import <MJRefresh/MJRefresh.h>
 #import <objc/runtime.h>
 
 @interface Dolin1VC ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>

@@ -15,7 +15,7 @@
 #import <Foundation/Foundation.h>
 #import "DolinUsefulMacros.h"
 #import "UIColor+ColorUtility.h"
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 
 #import <YYText/YYText.h>
 #import "UIView+Extension.h"

@@ -9,7 +9,6 @@
 #import "SimulateKeepViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import <AVFoundation/AVFoundation.h>
-#import "Masonry.h"
 #import "SimulateKeepScroll.h"
 
 @interface SimulateKeepViewController ()

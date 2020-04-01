@@ -10,7 +10,7 @@
 #import "AFHTTPSessionManager.h"
 #import "RecommendModel.h"
 #import "YYModel.h"
-#import "MJRefresh.h"
+#import <MJRefresh/MJRefresh.h>
 #import "RecommendMusicCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import <LYEmptyView/LYEmptyViewHeader.h>
