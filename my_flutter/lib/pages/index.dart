@@ -36,8 +36,11 @@ class _IndexPageState extends State<IndexPage> {
                 ),
                 SimpleBtn(
                   title: 'dl_search_bar_page',
-                  tap: () {
-                    Navigator.pushNamed(context, 'dl_search_bar_page');
+                  tap: () async {
+                    final result = await Navigator.pushNamed(
+                        context, 'dl_search_bar_page',
+                        arguments: '传递参数');
+                    print('路由返回值: $result');
                   },
                 ),
                 SimpleBtn(

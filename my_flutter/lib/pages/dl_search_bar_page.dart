@@ -3,7 +3,9 @@ import 'package:my_flutter/util/keyword_util.dart';
 import 'package:my_flutter/widgets/dl_search_bar.dart';
 
 class SearchBarPage extends StatefulWidget {
-  const SearchBarPage({Key key}) : super(key: key);
+  const SearchBarPage({Key key, this.defaultSearchWord}) : super(key: key);
+
+  final String defaultSearchWord;
 
   @override
   _SearchBarPageState createState() => _SearchBarPageState();
@@ -19,12 +21,16 @@ class _SearchBarPageState extends State<SearchBarPage> {
         appBar: DLSearchBar(
           autoFocus: true,
           hint: 'hint',
+          defaultText: widget.defaultSearchWord,
           onChanged: (text) {
             if (mounted) {
               setState(() {
                 _searchText = text;
               });
             }
+          },
+          onTapRightButton: () {
+            Navigator.pop(context, '$_searchText');
           },
         ),
         body: Column(

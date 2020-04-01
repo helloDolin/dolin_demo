@@ -18,14 +18,17 @@ class KeywordUtil {
       return spans;
     }
 
-    final List<String> arr = word.split('');
+    final List<String> arr = word.split(keyword);
+    print(arr);
 
-    for (int i = 0; i < arr.length; i++) {
-      final String val = arr[i];
-      if (val.toLowerCase() == keyword.toLowerCase()) {
-        spans.add(TextSpan(text: val, style: keywordStyle));
-      } else {
-        spans.add(TextSpan(text: val, style: normalStyle));
+    // 拼装 spans
+    for (var i = 0; i < arr.length; i++) {
+      if (i != 0) {
+        spans.add(TextSpan(text: keyword, style: keywordStyle));
+      }
+      final String obj = arr[i];
+      if (obj.isNotEmpty) {
+        spans.add(TextSpan(text: obj, style: normalStyle));
       }
     }
     return spans;

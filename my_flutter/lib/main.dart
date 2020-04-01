@@ -34,7 +34,11 @@ class MyApp extends StatelessWidget {
         'noti_study': (context) => const NotiStudyPage(),
         'block_chain_analyze': (context) => Page(),
         'dl_bubble_page': (context) => const DLBubblePage(),
-        'dl_search_bar_page': (context) => const SearchBarPage(),
+        'dl_search_bar_page': (context) {
+          return SearchBarPage(
+            defaultSearchWord: ModalRoute.of(context).settings.arguments,
+          );
+        },
         'dl_button_page': (context) => const DLButtonPage(),
         'dl_alert_page': (context) => const DLAlertPage(),
         'dl_badge_page': (context) => const DLBadgePage(),

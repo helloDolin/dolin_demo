@@ -61,10 +61,11 @@ class _DLSearchBarState extends State<DLSearchBar> {
 
   @override
   void initState() {
-    if (widget.defaultText != null) {
-      _controller.text = widget.defaultText;
-    }
     super.initState();
+    if (widget.defaultText != null && widget.defaultText.isNotEmpty) {
+      _controller.text = widget.defaultText;
+      _showClear = true;
+    }
   }
 
   @override
