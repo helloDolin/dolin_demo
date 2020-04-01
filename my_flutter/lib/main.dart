@@ -4,6 +4,7 @@ import 'package:my_flutter/pages/dl_alert_page.dart';
 import 'package:my_flutter/pages/dl_badge_page.dart';
 import 'package:my_flutter/pages/dl_bubble_page.dart';
 import 'package:my_flutter/pages/dl_button_page.dart';
+import 'package:my_flutter/pages/dl_timeline_item_page.dart';
 import 'package:my_flutter/pages/gesture_study.dart';
 import 'package:my_flutter/pages/hero_test.dart';
 import 'package:my_flutter/pages/index.dart';
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
         'dl_button_page': (context) => const DLButtonPage(),
         'dl_alert_page': (context) => const DLAlertPage(),
         'dl_badge_page': (context) => const DLBadgePage(),
+        'dl_timeline_item_page': (context) => const DLTimelineItemPage(),
       },
       onUnknownRoute: (RouteSettings setting) =>
           MaterialPageRoute(builder: (context) => const UnKnowPage()),
