@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter/pages/block_chain_analyze/page.dart';
 import 'package:my_flutter/pages/dl_alert_page.dart';
+import 'package:my_flutter/pages/dl_badge_page.dart';
 import 'package:my_flutter/pages/dl_bubble_page.dart';
 import 'package:my_flutter/pages/dl_button_page.dart';
 import 'package:my_flutter/pages/gesture_study.dart';
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
         'dl_search_bar_page': (context) => const SearchBarPage(),
         'dl_button_page': (context) => const DLButtonPage(),
         'dl_alert_page': (context) => const DLAlertPage(),
+        'dl_badge_page': (context) => const DLBadgePage(),
       },
       onUnknownRoute: (RouteSettings setting) =>
           MaterialPageRoute(builder: (context) => const UnKnowPage()),

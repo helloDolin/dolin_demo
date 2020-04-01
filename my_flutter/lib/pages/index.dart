@@ -51,6 +51,12 @@ class _IndexPageState extends State<IndexPage> {
                   },
                 ),
                 SimpleBtn(
+                  title: 'dl_badge_page',
+                  tap: () {
+                    Navigator.pushNamed(context, 'dl_badge_page');
+                  },
+                ),
+                SimpleBtn(
                   title: 'gesture_study',
                   tap: () {
                     Navigator.pushNamed(context, 'gesture_study');
