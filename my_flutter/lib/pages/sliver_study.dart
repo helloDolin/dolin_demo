@@ -20,10 +20,10 @@ class _SliverStudyPageState extends State<SliverStudyPage> {
             ),
             floating: true,
             flexibleSpace: Image.network(
-              'https://avatars1.githubusercontent.com/u/12538263?s=460&u=80384da08e252036d7ffe5da82a7908b27296688&v=4',
+              'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582000666297&di=5abda0435fbb67243936a4410ae6f9c8&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F357d23d074c2954d568d1a6f86a5be09d190a45116e95-0jh9Pg_fw658',
               fit: BoxFit.cover,
             ),
-            expandedHeight: 300,
+            expandedHeight: 260,
           ),
           SliverList(
             // SliverList 作为列表控件

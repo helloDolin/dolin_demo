@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter/widgets/dl_app_bar.dart';
+import 'package:my_flutter/widgets/dl_bottom_sheet.dart';
+import 'package:my_flutter/widgets/dl_button.dart';
 import 'package:my_flutter/widgets/simple_btn.dart';
 import 'package:dl_plugin/dl_plugin.dart';
 
@@ -103,6 +105,14 @@ class _IndexPageState extends State<IndexPage> {
               ],
             ),
           ),
+        ),
+        bottomNavigationBar: SafeArea(
+          child: DLMainButton('bottom sheet', radius: 0.0, onPressed: () {
+            DLBottomSheet.show(context, list: ['1', '2', '3'], title: '123',
+                onTapCallBack: (index, str) {
+              print('$index -- $str');
+            });
+          }),
         ));
   }
 }
