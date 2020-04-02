@@ -1,1 +1,0 @@
-../../../DoraemonKit/iOS/DoraemonKit/Src/Core/Plugin/H5/QRCode/DoraemonQRCodeTool.h
