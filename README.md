@@ -32,7 +32,7 @@
 如：JSPatch（这个响亮的名字以后可能就要暗淡了）
 已删除（2020年04月02日）
 
-### update date：2019年10月13日20:00:10
+### update date：2019年10月13日
 将 
 
 DLAnimateTransition（转场动画工具类）
@@ -48,3 +48,7 @@ DolinUsefulMacros （常用的宏，与简书基本同步）
 项目工具类依赖，通过pod处理 pod 'DLUtils', '~> 0.0.7'
 
 ### update date：2020年04月02日
+
+删除 JSpath、reveal 第三方 framework
+
+删除 Pods Podfile.lock 文件
