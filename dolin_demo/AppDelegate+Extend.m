@@ -11,7 +11,6 @@
 #import "DolinTabBarController.h"
 #import "UIWindow+Expand.h"
 #import <AVFoundation/AVFoundation.h>
-#import <JSPatchPlatform/JSPatch.h>
 #import <DoraemonKit/DoraemonManager.h>
 #import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h> // Used to connect plugins.
 
@@ -82,11 +81,6 @@
     // 让音乐可以在后台播放
     NSError* error;
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
-}
-
-- (void)setupJSPatch {
-    // 测试JSPatch
-    [JSPatch testScriptInBundle];
 }
 
 - (void)setupDoraemonKit {

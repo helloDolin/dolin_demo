@@ -17,7 +17,6 @@
     [self setupWindow];
     [self setupLocalNotification:application];
     [self setupAudioPlayBack];
-    [self setupJSPatch];
     [self setupDoraemonKit];
     [self setup3DTouch];
     

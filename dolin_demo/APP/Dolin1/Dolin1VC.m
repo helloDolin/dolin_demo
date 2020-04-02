@@ -32,7 +32,6 @@
 #pragma mark -  method
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setRightBarBtn];
     [self setupTableViewData];
     self.navigationController.delegate = self;
     [self.view addSubview:self.tableView];
@@ -47,20 +46,6 @@
         DLFoldCellModel* model = [DLFoldCellModel modelWithDic:obj];
         [self.data addObject:model];
     }];
-}
-
-/**
- JSPatch test（addData由JSPatch实现）
- */
-- (void)setRightBarBtn {
-    UIButton* btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
-    // 消除警告
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wundeclared-selector"
-    [btn addTarget:self action:@selector(addData) forControlEvents:UIControlEventTouchUpInside];
-#pragma clang diagnostic pop
-    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
-    self.navigationItem.rightBarButtonItem = rightItem;
 }
 
 - (void)jumpToPageByModel:(DLFoldCellModel*)model {

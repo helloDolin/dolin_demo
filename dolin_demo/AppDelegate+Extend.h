@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setupWindow;
 - (void)setupLocalNotification:(UIApplication*)application;
 - (void)setupAudioPlayBack;
-- (void)setupJSPatch;
 - (void)setupDoraemonKit;
 - (void)setup3DTouch;
 

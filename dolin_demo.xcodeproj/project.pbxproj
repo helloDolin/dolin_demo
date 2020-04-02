@@ -146,7 +146,6 @@
 		3AC483621E49A93D0008CE57 /* SimulateTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4835B1E49A93D0008CE57 /* SimulateTwitterViewController.m */; };
 		3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483651E49A9860008CE57 /* ImitateGoodDetailVC.m */; };
 		3AC483691E49A9DE0008CE57 /* GetContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483681E49A9DE0008CE57 /* GetContactsVC.m */; };
-		3AC483B61E4C56C50008CE57 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 3AC483B41E4C56C50008CE57 /* main.js */; };
 		3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */; };
 		3ACABD321EE1687100849B58 /* like.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3ACABD311EE1687100849B58 /* like.caf */; };
 		3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3095A1E77D563004C2496 /* LinkworkLeftCell.m */; };
@@ -286,7 +285,6 @@
 		16E34B6B22756F8600CDD25B /* dolin1data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dolin1data.json; sourceTree = "<group>"; };
 		1D0B3573680EEFA42F549DB4 /* Pods-TableKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableKit/Pods-TableKit.debug.xcconfig"; sourceTree = "<group>"; };
 		2675EDC094D7556981E0FDDB /* Pods-TodayWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodayWidget/Pods-TodayWidget.release.xcconfig"; sourceTree = "<group>"; };
-		3A0806621DFFC73500C162A3 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		3A332AAA1EB08D340072BD34 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
 		3A332AAB1EB08D340072BD34 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
 		3A38F4751E1E55090036DE63 /* AnimationImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationImagesViewController.h; sourceTree = "<group>"; };
@@ -483,8 +481,6 @@
 		3AC483651E49A9860008CE57 /* ImitateGoodDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImitateGoodDetailVC.m; sourceTree = "<group>"; };
 		3AC483671E49A9DE0008CE57 /* GetContactsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetContactsVC.h; sourceTree = "<group>"; };
 		3AC483681E49A9DE0008CE57 /* GetContactsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetContactsVC.m; sourceTree = "<group>"; };
-		3AC483B31E4C56C50008CE57 /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
-		3AC483B41E4C56C50008CE57 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		3AC533C81E1CF8DE00FE560E /* UIView+Explode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Explode.h"; sourceTree = "<group>"; };
 		3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Explode.m"; sourceTree = "<group>"; };
 		3ACABD311EE1687100849B58 /* like.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = like.caf; sourceTree = "<group>"; };
@@ -707,7 +703,6 @@
 			children = (
 				3A7C67AF1DEC0D6700225D28 /* APP */,
 				3A7C68331DEC0D6800225D28 /* Resource */,
-				3A7C686C1DEC0D6800225D28 /* ThirdLibs */,
 				3A7C68701DEC0D6800225D28 /* Utilities */,
 				16C8D63D1D33511700228ABD /* Supporting Files */,
 				3A98B2051DBF08B900CADF29 /* dolin_demo.entitlements */,
@@ -1002,15 +997,6 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		3A7C686C1DEC0D6800225D28 /* ThirdLibs */ = {
-			isa = PBXGroup;
-			children = (
-				3AC483B21E4C56C50008CE57 /* JSPatch */,
-				3A0806621DFFC73500C162A3 /* Reveal.framework */,
-			);
-			path = ThirdLibs;
-			sourceTree = "<group>";
-		};
 		3A7C68701DEC0D6800225D28 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -1285,15 +1271,6 @@
 			path = ImitateGoodDetail;
 			sourceTree = "<group>";
 		};
-		3AC483B21E4C56C50008CE57 /* JSPatch */ = {
-			isa = PBXGroup;
-			children = (
-				3AC483B31E4C56C50008CE57 /* JSPatchPlatform.framework */,
-				3AC483B41E4C56C50008CE57 /* main.js */,
-			);
-			path = JSPatch;
-			sourceTree = "<group>";
-		};
 		3AD309581E77D532004C2496 /* LinkworkTable */ = {
 			isa = PBXGroup;
 			children = (
@@ -1558,7 +1535,6 @@
 				3A97CD841EE7F5F600AC19F5 /* PhotoAlbumCell.xib in Resources */,
 				3ADF3A571EBC109A00A5EFF6 /* DLVideoPlayView.xib in Resources */,
 				3AC483601E49A93D0008CE57 /* StrangeTableViewCell.xib in Resources */,
-				3AC483B61E4C56C50008CE57 /* main.js in Resources */,
 				3A97CD821EE7F5F600AC19F5 /* PhotoAlbumCategoryCell.xib in Resources */,
 				16E34B6C22756F8600CDD25B /* dolin1data.json in Resources */,
 				3A7C68E81DEC0D6800225D28 /* keep.mp4 in Resources */,
@@ -2030,9 +2006,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/dolin_demo",
-					"$(PROJECT_DIR)/dolin_demo/JSPatch",
-					"$(PROJECT_DIR)/dolin_demo/ThirdLibs/JSPatch",
-					"$(PROJECT_DIR)/dolin_demo/ThirdLibs",
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
 				);
@@ -2040,41 +2013,7 @@
 				INFOPLIST_FILE = "${SRCROOT}/dolin_demo/DolinInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"AFNetworking\"",
-					"-l\"Masonry\"",
-					"-l\"SDWebImage\"",
-					"-l\"YYText\"",
-					"-l\"c++\"",
-					"-framework",
-					"\"Accelerate\"",
-					"-framework",
-					"\"CoreFoundation\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreText\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"ImageIO\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-					"-ObjC",
-					"-lz",
-					"-framework",
-					Reveal,
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.shaolin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -2096,9 +2035,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/dolin_demo",
-					"$(PROJECT_DIR)/dolin_demo/JSPatch",
-					"$(PROJECT_DIR)/dolin_demo/ThirdLibs/JSPatch",
-					"$(PROJECT_DIR)/dolin_demo/ThirdLibs",
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
 				);
@@ -2106,41 +2042,7 @@
 				INFOPLIST_FILE = "${SRCROOT}/dolin_demo/DolinInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"AFNetworking\"",
-					"-l\"Masonry\"",
-					"-l\"SDWebImage\"",
-					"-l\"YYText\"",
-					"-l\"c++\"",
-					"-framework",
-					"\"Accelerate\"",
-					"-framework",
-					"\"CoreFoundation\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreText\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"ImageIO\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-					"-ObjC",
-					"-lz",
-					"-framework",
-					Reveal,
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.shaolin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
