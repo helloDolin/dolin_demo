@@ -17,19 +17,9 @@
 #import "UIColor+ColorUtility.h"
 #import <Masonry/Masonry.h>
 
-#import <YYText/YYText.h>
 #import "UIView+Extension.h"
 #import "SVProgressHUD.h"
-
-
-// 仿网易相关
-//#import "RequestManager.h"       //网络请求工具
-//#import "Music.h"                //模型
-//#import "MusicListCell.h"        //自定义cell
-//#import "PlayManager.h"          //播放控制
-//#import "PlayMusicViewController.h" //播放页面
-//#import "Dowload.h"                 //下载工具
-//#import "MBFadeAlertView.h"         //弹窗
+#import "MBFadeAlertView.h" // 弹窗
 
 #import <AVFoundation/AVFoundation.h>
 #import "UIImageView+WebCache.h"
@@ -54,7 +44,5 @@
 #else
 #define NSLog(FORMAT, ...) nil
 #endif
-
-
 
 #endif /* DolinPrefix_pch */

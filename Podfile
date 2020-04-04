@@ -1,4 +1,4 @@
-#source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
 platform :ios, '9.0'
 
@@ -17,7 +17,6 @@ target 'dolin_demo' do
   pod 'MJRefresh', '~> 3.1.15.7'
   pod 'MJExtension', '~> 3.0.15.1'
   pod 'Masonry'
-  pod 'YYText'
   pod 'YYModel'
   pod 'SVProgressHUD', '~> 2.2.5'
   pod 'FMDB','~> 2.7.5'
@@ -27,7 +26,7 @@ target 'dolin_demo' do
   pod 'IQKeyboardManager'
   pod 'LYEmptyView'
   # DoraemonKit
-  pod 'DoraemonKit/Core', '~> 2.0.0', :configurations => ['Debug']
+  pod 'DoraemonKit/Core', '~> 3.0.0', :configurations => ['Debug']
 end
 
 target 'TableKit' do

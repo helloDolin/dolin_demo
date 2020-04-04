@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define degreesToRadian(x) (M_PI * (x) / 180.0)
+#define radianToDegrees(radian) (radian * 180.0) / (M_PI)
+
 typedef NS_ENUM(NSUInteger, BezierPathType) {
     kDefaultPath      = 1, // 三角形
     kRectPath         = 2, // 矩形

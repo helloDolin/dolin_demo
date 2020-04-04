@@ -11,6 +11,7 @@
 // position:anchorPoint在父view中的point
 
 #import "OriginAPIAnimateStudyVC.h"
+#import "BezierPathView.h"
 
 @interface OriginAPIAnimateStudyVC ()
 
@@ -57,7 +58,7 @@
 // 改变锚点
 - (void)alwaysRotate {
     CABasicAnimation* ani = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    ani.toValue = @(YYTextDegreesToRadians(360));
+    ani.toValue = @(degreesToRadian(360));
     ani.repeatCount = HUGE_VAL;
     ani.duration = 1;
     ani.fillMode = kCAFillModeForwards;

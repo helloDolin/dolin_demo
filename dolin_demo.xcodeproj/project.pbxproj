@@ -93,7 +93,6 @@
 		3A7C69201DEC0D6800225D28 /* ImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C687A1DEC0D6800225D28 /* ImageViewer.m */; };
 		3A7C69211DEC0D6800225D28 /* PhotoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C687C1DEC0D6800225D28 /* PhotoScrollView.m */; };
 		3A7C69221DEC0D6800225D28 /* PhotoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C687E1DEC0D6800225D28 /* PhotoTableView.m */; };
-		3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68801DEC0D6800225D28 /* YYFPSLabel.m */; };
 		3A7C69241DEC0D6800225D28 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68821DEC0D6800225D28 /* YYWeakProxy.m */; };
 		3A7C69251DEC0D6800225D28 /* NSString+Version.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68851DEC0D6800225D28 /* NSString+Version.m */; };
 		3A7C69261DEC0D6800225D28 /* UIColor+ColorUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68881DEC0D6800225D28 /* UIColor+ColorUtility.m */; };
@@ -380,8 +379,6 @@
 		3A7C687C1DEC0D6800225D28 /* PhotoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoScrollView.m; sourceTree = "<group>"; };
 		3A7C687D1DEC0D6800225D28 /* PhotoTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableView.h; sourceTree = "<group>"; };
 		3A7C687E1DEC0D6800225D28 /* PhotoTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableView.m; sourceTree = "<group>"; };
-		3A7C687F1DEC0D6800225D28 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
-		3A7C68801DEC0D6800225D28 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
 		3A7C68811DEC0D6800225D28 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		3A7C68821DEC0D6800225D28 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
 		3A7C68841DEC0D6800225D28 /* NSString+Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Version.h"; sourceTree = "<group>"; };
@@ -1019,8 +1016,6 @@
 				3A7C68741DEC0D6800225D28 /* LoadingViewForOC.h */,
 				3A7C68751DEC0D6800225D28 /* LoadingViewForOC.m */,
 				3A7C68761DEC0D6800225D28 /* PhotoBrower */,
-				3A7C687F1DEC0D6800225D28 /* YYFPSLabel.h */,
-				3A7C68801DEC0D6800225D28 /* YYFPSLabel.m */,
 				3A7C68811DEC0D6800225D28 /* YYWeakProxy.h */,
 				3A7C68821DEC0D6800225D28 /* YYWeakProxy.m */,
 			);
@@ -1782,7 +1777,6 @@
 				71B2C6BB234C5EB800239A99 /* TestModel.m in Sources */,
 				3A7776BF1EE7E25C00B3E793 /* DLPhotoAlbumPickerVC.m in Sources */,
 				16C6028F224A0F2B00F3DA0B /* MBFadeAlertView.m in Sources */,
-				3A7C69231DEC0D6800225D28 /* YYFPSLabel.m in Sources */,
 				16488136222673E400A35107 /* FDTableViewCell.m in Sources */,
 				3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */,
 				1648814D2226B5CC00A35107 /* FDPhotoCell.m in Sources */,

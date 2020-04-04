@@ -8,9 +8,6 @@
 
 #import "BezierPathView.h"
 
-#define degreesToRadian(x) (M_PI * (x) / 180.0)
-#define radianToDegrees(radian) (radian * 180.0) / (M_PI)
-
 @implementation BezierPathView
 
 - (void)drawRect:(CGRect)rect {

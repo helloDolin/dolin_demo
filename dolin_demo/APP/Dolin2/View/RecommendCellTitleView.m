@@ -9,12 +9,11 @@
 #import "RecommendCellTitleView.h"
 #import "RecommendModel.h"
 #import "UIImage+DLRoundImg.h"
-#import <YYText/YYText.h>
 
 @interface RecommendCellTitleView()
 {
     UIImageView *_avatarImageView;
-    YYLabel *_userNameLabel;
+    UILabel *_userNameLabel;
 }
 
 @end
@@ -31,7 +30,7 @@
 - (void)layoutUI {
     _avatarImageView = [UIImageView new];
     
-    _userNameLabel = [YYLabel new];
+    _userNameLabel = [UILabel new];
     _userNameLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightLight];
     _userNameLabel.numberOfLines = 0; // 多行显示
     _userNameLabel.preferredMaxLayoutWidth = SCREEN_WIDTH - 24; // 设置最大宽度

@@ -7,6 +7,7 @@
 //
 
 #import "AnimationStudyVC.h"
+#import "BezierPathView.h"
 
 static const CGFloat kBottomViewHeight = 100.0; // 底部view高度
 
@@ -126,8 +127,8 @@ static const CGFloat kBottomViewHeight = 100.0; // 底部view高度
     [self setAnchorPoint:CGPointMake(0.5, 0) forView:_testView];
     CAKeyframeAnimation *shake = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.z"];
     shake.values = @[
-                         @(YYTextDegreesToRadians(-45)),
-                         @(YYTextDegreesToRadians(45))
+                         @(degreesToRadian(-45)),
+                         @(degreesToRadian(45))
                      ];
     shake.duration = 3;
     shake.autoreverses = YES;
