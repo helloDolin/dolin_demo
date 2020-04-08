@@ -23,8 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dl_bubble:
-    path: ./dl_bubble
+  dl_bubble: ^0.0.1
   dl_plugin:
     path: ./dl_plugin
 

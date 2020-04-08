@@ -53,6 +53,10 @@
 		3A38F48D1E1E55350036DE63 /* ScrollBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F48A1E1E55350036DE63 /* ScrollBoxView.m */; };
 		3A38F48E1E1E55350036DE63 /* ScrollBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A38F48B1E1E55350036DE63 /* ScrollBoxView.xib */; };
 		3A38F4911E1E558D0036DE63 /* Animation_Study_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4901E1E558D0036DE63 /* Animation_Study_VC.m */; };
+		3A3CBF57243E0A7D000EBB0E /* like.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3A3CBF52243E0A7D000EBB0E /* like.caf */; };
+		3A3CBF58243E0A7D000EBB0E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A3CBF53243E0A7D000EBB0E /* Localizable.strings */; };
+		3A3CBF59243E0A7D000EBB0E /* keep.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3A3CBF55243E0A7D000EBB0E /* keep.mp4 */; };
+		3A3CBF5A243E0A7D000EBB0E /* HYQiHei-50J.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A3CBF56243E0A7D000EBB0E /* HYQiHei-50J.ttf */; };
 		3A5CF2631E03BD3700CAF8F6 /* UIImage+DLRoundImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5CF2621E03BD3700CAF8F6 /* UIImage+DLRoundImg.m */; };
 		3A5ED63B1E7279A900F232A4 /* Banner2Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5ED6391E7279A900F232A4 /* Banner2Cell.m */; };
 		3A5ED63C1E7279A900F232A4 /* Banner2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5ED63A1E7279A900F232A4 /* Banner2Cell.xib */; };
@@ -84,9 +88,6 @@
 		3A7C68E31DEC0D6800225D28 /* TitleContainerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C682B1DEC0D6800225D28 /* TitleContainerScrollView.m */; };
 		3A7C68E41DEC0D6800225D28 /* DolinTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C682E1DEC0D6800225D28 /* DolinTabBarController.m */; };
 		3A7C68E51DEC0D6800225D28 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68311DEC0D6800225D28 /* LaunchViewController.m */; };
-		3A7C68E61DEC0D6800225D28 /* HYQiHei-50J.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C68341DEC0D6800225D28 /* HYQiHei-50J.ttf */; };
-		3A7C68E81DEC0D6800225D28 /* keep.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C68371DEC0D6800225D28 /* keep.mp4 */; };
-		3A7C691A1DEC0D6800225D28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A7C686A1DEC0D6800225D28 /* Localizable.strings */; };
 		3A7C691D1DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68731DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.m */; };
 		3A7C691E1DEC0D6800225D28 /* LoadingViewForOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68751DEC0D6800225D28 /* LoadingViewForOC.m */; };
 		3A7C691F1DEC0D6800225D28 /* BasePictureTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C68781DEC0D6800225D28 /* BasePictureTableView.m */; };
@@ -146,7 +147,6 @@
 		3AC483661E49A9860008CE57 /* ImitateGoodDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483651E49A9860008CE57 /* ImitateGoodDetailVC.m */; };
 		3AC483691E49A9DE0008CE57 /* GetContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC483681E49A9DE0008CE57 /* GetContactsVC.m */; };
 		3AC533CA1E1CF8DE00FE560E /* UIView+Explode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */; };
-		3ACABD321EE1687100849B58 /* like.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3ACABD311EE1687100849B58 /* like.caf */; };
 		3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3095A1E77D563004C2496 /* LinkworkLeftCell.m */; };
 		3AD3095E1E77D563004C2496 /* LinkworkTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3095C1E77D563004C2496 /* LinkworkTableViewVC.m */; };
 		3ADF3A551EBC0F3A00A5EFF6 /* DLVideoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADF3A541EBC0F3A00A5EFF6 /* DLVideoPlayView.m */; };
@@ -304,6 +304,10 @@
 		3A38F48B1E1E55350036DE63 /* ScrollBoxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollBoxView.xib; sourceTree = "<group>"; };
 		3A38F48F1E1E558D0036DE63 /* Animation_Study_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation_Study_VC.h; sourceTree = "<group>"; };
 		3A38F4901E1E558D0036DE63 /* Animation_Study_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation_Study_VC.m; sourceTree = "<group>"; };
+		3A3CBF52243E0A7D000EBB0E /* like.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = like.caf; sourceTree = "<group>"; };
+		3A3CBF54243E0A7D000EBB0E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3A3CBF55243E0A7D000EBB0E /* keep.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = keep.mp4; sourceTree = "<group>"; };
+		3A3CBF56243E0A7D000EBB0E /* HYQiHei-50J.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HYQiHei-50J.ttf"; sourceTree = "<group>"; };
 		3A5CF2611E03BD3700CAF8F6 /* UIImage+DLRoundImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DLRoundImg.h"; sourceTree = "<group>"; };
 		3A5CF2621E03BD3700CAF8F6 /* UIImage+DLRoundImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DLRoundImg.m"; sourceTree = "<group>"; };
 		3A5E344A1EB04B0D00588600 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -364,9 +368,6 @@
 		3A7C682E1DEC0D6800225D28 /* DolinTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolinTabBarController.m; sourceTree = "<group>"; };
 		3A7C68301DEC0D6800225D28 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
 		3A7C68311DEC0D6800225D28 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
-		3A7C68341DEC0D6800225D28 /* HYQiHei-50J.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HYQiHei-50J.ttf"; sourceTree = "<group>"; };
-		3A7C68371DEC0D6800225D28 /* keep.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = keep.mp4; sourceTree = "<group>"; };
-		3A7C686B1DEC0D6800225D28 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		3A7C68721DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatQRCodeAndBarCodeFromLeon.h; sourceTree = "<group>"; };
 		3A7C68731DEC0D6800225D28 /* CreatQRCodeAndBarCodeFromLeon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatQRCodeAndBarCodeFromLeon.m; sourceTree = "<group>"; };
 		3A7C68741DEC0D6800225D28 /* LoadingViewForOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewForOC.h; sourceTree = "<group>"; };
@@ -480,7 +481,6 @@
 		3AC483681E49A9DE0008CE57 /* GetContactsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetContactsVC.m; sourceTree = "<group>"; };
 		3AC533C81E1CF8DE00FE560E /* UIView+Explode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Explode.h"; sourceTree = "<group>"; };
 		3AC533C91E1CF8DE00FE560E /* UIView+Explode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Explode.m"; sourceTree = "<group>"; };
-		3ACABD311EE1687100849B58 /* like.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = like.caf; sourceTree = "<group>"; };
 		3AD309591E77D563004C2496 /* LinkworkLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkworkLeftCell.h; sourceTree = "<group>"; };
 		3AD3095A1E77D563004C2496 /* LinkworkLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkworkLeftCell.m; sourceTree = "<group>"; };
 		3AD3095B1E77D563004C2496 /* LinkworkTableViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkworkTableViewVC.h; sourceTree = "<group>"; };
@@ -698,8 +698,8 @@
 		16C8D63C1D33511700228ABD /* dolin_demo */ = {
 			isa = PBXGroup;
 			children = (
+				3A3CBF51243E0A7D000EBB0E /* Resource */,
 				3A7C67AF1DEC0D6700225D28 /* APP */,
-				3A7C68331DEC0D6800225D28 /* Resource */,
 				3A7C68701DEC0D6800225D28 /* Utilities */,
 				16C8D63D1D33511700228ABD /* Supporting Files */,
 				3A98B2051DBF08B900CADF29 /* dolin_demo.entitlements */,
@@ -758,6 +758,17 @@
 				3A38F48B1E1E55350036DE63 /* ScrollBoxView.xib */,
 			);
 			path = "AutoLayout+Masonry";
+			sourceTree = "<group>";
+		};
+		3A3CBF51243E0A7D000EBB0E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3A3CBF52243E0A7D000EBB0E /* like.caf */,
+				3A3CBF53243E0A7D000EBB0E /* Localizable.strings */,
+				3A3CBF55243E0A7D000EBB0E /* keep.mp4 */,
+				3A3CBF56243E0A7D000EBB0E /* HYQiHei-50J.ttf */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		3A7776B61EE7D21000B3E793 /* PhotoKit */ = {
@@ -981,17 +992,6 @@
 				3A7C68311DEC0D6800225D28 /* LaunchViewController.m */,
 			);
 			path = Launch;
-			sourceTree = "<group>";
-		};
-		3A7C68331DEC0D6800225D28 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				3ACABD311EE1687100849B58 /* like.caf */,
-				3A7C68341DEC0D6800225D28 /* HYQiHei-50J.ttf */,
-				3A7C68371DEC0D6800225D28 /* keep.mp4 */,
-				3A7C686A1DEC0D6800225D28 /* Localizable.strings */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		3A7C68701DEC0D6800225D28 /* Utilities */ = {
@@ -1517,14 +1517,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3CBF58243E0A7D000EBB0E /* Localizable.strings in Resources */,
 				16488137222673E400A35107 /* FDTableViewCell.xib in Resources */,
 				3ADF3A621EBC185500A5EFF6 /* DLVideoCell.xib in Resources */,
-				3ACABD321EE1687100849B58 /* like.caf in Resources */,
 				3AA3B3451E76899A00F6221C /* dolinH5.html in Resources */,
 				3AA5448A1EE8015D00A6C20F /* PhotoBrowserCell.xib in Resources */,
-				3A7C691A1DEC0D6800225D28 /* Localizable.strings in Resources */,
 				16C8D64D1D33511700228ABD /* LaunchScreen.storyboard in Resources */,
-				3A7C68E61DEC0D6800225D28 /* HYQiHei-50J.ttf in Resources */,
+				3A3CBF57243E0A7D000EBB0E /* like.caf in Resources */,
 				3A7C68BD1DEC0D6800225D28 /* PlantCollectionViewCell.xib in Resources */,
 				3A97CD801EE7F5F600AC19F5 /* PhotoAlbumCameraCell.xib in Resources */,
 				3A97CD841EE7F5F600AC19F5 /* PhotoAlbumCell.xib in Resources */,
@@ -1532,9 +1531,10 @@
 				3AC483601E49A93D0008CE57 /* StrangeTableViewCell.xib in Resources */,
 				3A97CD821EE7F5F600AC19F5 /* PhotoAlbumCategoryCell.xib in Resources */,
 				16E34B6C22756F8600CDD25B /* dolin1data.json in Resources */,
-				3A7C68E81DEC0D6800225D28 /* keep.mp4 in Resources */,
 				3A5ED63C1E7279A900F232A4 /* Banner2Cell.xib in Resources */,
+				3A3CBF5A243E0A7D000EBB0E /* HYQiHei-50J.ttf in Resources */,
 				16C8D64A1D33511700228ABD /* Assets.xcassets in Resources */,
+				3A3CBF59243E0A7D000EBB0E /* keep.mp4 in Resources */,
 				3A38F48E1E1E55350036DE63 /* ScrollBoxView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1856,10 +1856,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		3A7C686A1DEC0D6800225D28 /* Localizable.strings */ = {
+		3A3CBF53243E0A7D000EBB0E /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3A7C686B1DEC0D6800225D28 /* zh-Hans */,
+				3A3CBF54243E0A7D000EBB0E /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

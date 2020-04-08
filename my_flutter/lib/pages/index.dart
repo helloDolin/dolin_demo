@@ -17,7 +17,7 @@ class _IndexPageState extends State<IndexPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: DLAppBar(
-          'dolin demo',
+          'dolin demo123',
           isHideBackBtn: false,
           onTapBackBtn: () async {
             final result = await DlPlugin.dismissCurrentVC;

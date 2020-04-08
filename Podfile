@@ -1,5 +1,3 @@
-source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
-
 platform :ios, '9.0'
 
 flutter_application_path = './my_flutter'
