@@ -1,28 +1,24 @@
 PODS:
-  - AFNetworking (4.0.0):
-    - AFNetworking/NSURLSession (= 4.0.0)
-    - AFNetworking/Reachability (= 4.0.0)
-    - AFNetworking/Security (= 4.0.0)
-    - AFNetworking/Serialization (= 4.0.0)
-    - AFNetworking/UIKit (= 4.0.0)
-  - AFNetworking/NSURLSession (4.0.0):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (4.0.0)
-  - AFNetworking/Security (4.0.0)
-  - AFNetworking/Serialization (4.0.0)
-  - AFNetworking/UIKit (4.0.0):
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - BSBacktraceLogger (0.0.1)
   - dl_plugin (0.0.1):
     - Flutter
   - DLUtils (0.0.7)
-  - DoraemonKit/Core (2.0.0):
-    - BSBacktraceLogger
-    - fishhook
+  - DoraemonKit/Core (3.0.1)
   - FDFullscreenPopGesture (1.1)
-  - fishhook (0.2)
   - Flutter (1.0.0)
   - FlutterPluginRegistrant (0.0.1):
     - dl_plugin
@@ -40,18 +36,17 @@ PODS:
   - my_flutter (0.0.1):
     - Flutter
   - Reachability (3.2)
-  - SDWebImage (5.6.1):
-    - SDWebImage/Core (= 5.6.1)
-  - SDWebImage/Core (5.6.1)
+  - SDWebImage (5.7.3):
+    - SDWebImage/Core (= 5.7.3)
+  - SDWebImage/Core (5.7.3)
   - SVProgressHUD (2.2.5)
   - YYModel (1.0.4)
-  - YYText (1.0.7)
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0)
   - dl_plugin (from `my_flutter/.ios/Flutter/.symlinks/dl_plugin/ios`)
   - DLUtils (~> 0.0.7)
-  - DoraemonKit/Core (~> 2.0.0)
+  - DoraemonKit/Core (~> 3.0.0)
   - FDFullscreenPopGesture (~> 1.1)
   - Flutter (from `my_flutter/.ios/Flutter/engine`)
   - FlutterPluginRegistrant (from `my_flutter/.ios/Flutter/FlutterPluginRegistrant`)
@@ -66,16 +61,13 @@ DEPENDENCIES:
   - SDWebImage (~> 5.0)
   - SVProgressHUD (~> 2.2.5)
   - YYModel
-  - YYText
 
 SPEC REPOS:
   trunk:
     - AFNetworking
-    - BSBacktraceLogger
     - DLUtils
     - DoraemonKit
     - FDFullscreenPopGesture
-    - fishhook
     - FMDB
     - FreeStreamer
     - IQKeyboardManager
@@ -87,7 +79,6 @@ SPEC REPOS:
     - SDWebImage
     - SVProgressHUD
     - YYModel
-    - YYText
 
 EXTERNAL SOURCES:
   dl_plugin:
@@ -100,13 +91,11 @@ EXTERNAL SOURCES:
     :path: my_flutter/.ios/Flutter
 
 SPEC CHECKSUMS:
-  AFNetworking: d9fdf484a3c723ec3c558a41cc5754c7e845ee77
-  BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   dl_plugin: 70280d73ca9fa4a8d57fedcea6f99c3c217e57e4
   DLUtils: f4cfbf4072bd784ca80373da283c1b20d62e5177
-  DoraemonKit: 9e923599e28d0b61f1c6de4aef2c2d669b30abb7
+  DoraemonKit: 00f8c55bec06e240f25e18ec5b7faa012dfbb827
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
-  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   FlutterPluginRegistrant: ee3c77afe7ed82330f096a7383902402e0ccdcb7
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
@@ -118,11 +107,10 @@ SPEC CHECKSUMS:
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   my_flutter: c0ca42721b3297bc8d54e93782ac00730d3bd1a1
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  SDWebImage: 7edb9c3ea661e77a66661f7f044de8c1b55d1120
+  SDWebImage: 97351f6582ceca541ea294ba66a1fcb342a331c2
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
-  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 52071a9281b93196cbbc64928a55601bb339e5b8
+PODFILE CHECKSUM: eb5fb1d908a19bb6db82378e5dc2d4e665a8feca
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
