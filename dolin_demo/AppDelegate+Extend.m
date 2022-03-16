@@ -12,7 +12,6 @@
 #import "UIWindow+Expand.h"
 #import <AVFoundation/AVFoundation.h>
 #import <DoraemonKit/DoraemonManager.h>
-#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h> // Used to connect plugins.
 
 @implementation AppDelegate (Extend)
 
@@ -98,13 +97,6 @@
     UIApplicationShortcutItem *shoreItem2 = [[UIApplicationShortcutItem alloc] initWithType:@"co.erplus.newTask" localizedTitle:@"新建任务" localizedSubtitle:@"" icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeCompose] userInfo:nil];
     [arrShortcutItem addObject:shoreItem2];
     [UIApplication sharedApplication].shortcutItems = arrShortcutItem;
-
 }
 
-- (void)setupFlutter {
-    self.flutterEngine = [[FlutterEngine alloc] initWithName:@"my flutter engine"];
-    // Runs the default Dart entrypoint with a default Flutter route.
-    [self.flutterEngine run];
-    [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
-}
 @end

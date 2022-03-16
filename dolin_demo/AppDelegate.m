@@ -13,7 +13,6 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self setupFlutter];
     [self setupWindow];
     [self setupLocalNotification:application];
     [self setupAudioPlayBack];

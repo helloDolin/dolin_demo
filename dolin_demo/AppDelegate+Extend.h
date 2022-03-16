@@ -13,7 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// AppDelegate 扩展 (分离出 setup 相关)
 @interface AppDelegate (Extend)
 
-- (void)setupFlutter;
 - (void)setupWindow;
 - (void)setupLocalNotification:(UIApplication*)application;
 - (void)setupAudioPlayBack;

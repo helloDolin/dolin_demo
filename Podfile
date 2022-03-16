@@ -1,14 +1,9 @@
 platform :ios, '9.0'
 
-flutter_application_path = './my_flutter'
-load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
-
 target 'dolin_demo' do
   # Comment the next line if you don't want to use dynamic frameworks
   # use_frameworks!
-  
-  install_all_flutter_pods(flutter_application_path)
-  
+    
   # Pods for
   pod 'AFNetworking', '~> 4.0'
   pod 'SDWebImage','~> 5.0'
