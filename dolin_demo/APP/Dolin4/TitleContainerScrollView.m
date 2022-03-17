@@ -93,6 +93,7 @@ static CGFloat kUnderLineViewHeight = 2.0;
 #pragma mark - event
 - (void)buttonClick:(UIButton*)sender {
     self.currentPage = [self.buttonsArr indexOfObject:sender];
+    [self setupUnderLineViewPositionByBtn:self.buttonsArr[self.currentPage]];
     if (_buttonClickBlock) {
         _buttonClickBlock(_currentPage);
     }
@@ -161,28 +162,13 @@ static CGFloat kUnderLineViewHeight = 2.0;
     button.titleLabel.font =  [UIFont systemFontOfSize:_fontSizeSelected];
     [button  setTitleColor:_titleSelectedColor forState:UIControlStateNormal];
     
-    // 精华
-    CGFloat leftWeight = button.center.x - SCREEN_WIDTH / 2;
-    CGFloat rightWeight = (self.contentSize.width - button.center.x) - SCREEN_WIDTH / 2;
-    
-    // 优化第一个btn与最后一个btn显示位置 2019-03-27 17:04:04
-    if (currentPage == 1) {
-        self.contentOffset = CGPointMake(0, 0);
-    }
-    else if (currentPage == self.titles.count - 1 - 1){
-        self.contentOffset = CGPointMake(self.contentSize.width - self.width, 0);
-    }
-    else if (leftWeight > 0 && rightWeight >0) {
-        CGPoint point= self.contentOffset;
-        point.x = leftWeight;
-        [UIView animateWithDuration:0.25 animations:^{
-            self.contentOffset = point;
-        }];
-    }
-    
-    // 以rectangle滑动是为了解决最后一个btn的显示问题
-    CGRect frame = button.frame;
-    [self scrollRectToVisible:frame animated:YES];
+    // 滚动到 offsetX
+    CGFloat offsetX = button.center.x - self.frame.size.width * 0.5;
+    offsetX = offsetX > 0 ? offsetX : 0;
+    CGFloat maxOffsetX = self.contentSize.width - self.frame.size.width;
+    maxOffsetX = maxOffsetX > 0 ? maxOffsetX : 0;
+    offsetX = offsetX > maxOffsetX ? maxOffsetX : offsetX;
+    [self setContentOffset:CGPointMake(offsetX, 0) animated:YES];
 }
 
 #pragma mark - method

@@ -63,7 +63,6 @@ static CGFloat const kAnimationDuration = 0.5;
 }
 
 - (UILabel *)lblTitle{
-    
     if (!_lblTitle) {
         _lblTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT / 2, SCREEN_WIDTH, 45)];
         _lblTitle.text = @"dolin demo";
@@ -71,7 +70,6 @@ static CGFloat const kAnimationDuration = 0.5;
         _lblTitle.textColor = [UIColor whiteColor];
         _lblTitle.font = [UIFont boldSystemFontOfSize:45];
     }
-    
     return _lblTitle;
 }
 

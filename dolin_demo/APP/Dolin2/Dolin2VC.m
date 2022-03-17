@@ -28,11 +28,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.tableView];
+    
+    [self initData];
+    [self setupUI];
+    [self.tableView.mj_header beginRefreshing];
+}
+
+#pragma mark -  method
+- (void)initData {
     _pageNum = 1;
     _data = [NSMutableArray array];
-    [self.tableView.mj_header beginRefreshing];
+}
+
+- (void)setupUI {
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
 
 - (void)setupEmptyView {
@@ -44,7 +57,6 @@
                                                                     action:@selector(req)];
 }
 
-#pragma mark -  method
 - (void)req {
     // 网易API
     NSString* urlStr = [NSString stringWithFormat:@"http://music.163.com/api/playlist/detail?id=107875443"];
@@ -102,8 +114,7 @@
 #pragma mark - getter
 - (UITableView*)tableView {
     if (!_tableView) {
-        CGRect rect = rect = CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT - TAB_BAR_HEIGHT);
-        _tableView = [[UITableView alloc]initWithFrame:rect style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.delegate = self;
         // 解决reloadTableView之后滚动条乱跳的问题

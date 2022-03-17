@@ -135,6 +135,8 @@ static DolinTabBarController *instance = nil;
         UINavigationBarAppearance *appearance = [UINavigationBarAppearance new];
         [appearance configureWithOpaqueBackground];
         appearance.backgroundColor = [UIColor whiteColor];
+        [appearance setBackIndicatorImage:[[UIImage imageNamed:@"left_arrow_grey"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+                              transitionMaskImage:[UIImage imageNamed:@"back_arrow_mask_fixed"]];
         appearance.titleTextAttributes = @{
             NSFontAttributeName: [UIFont systemFontOfSize:18],
             NSForegroundColorAttributeName: [UIColor blackColor]
@@ -173,7 +175,7 @@ static DolinTabBarController *instance = nil;
 - (HLCustomView *)tabBarView {
     if (!_tabBarView) {
         _tabBarView = [[HLCustomView alloc] init];
-        _tabBarView.backgroundColor = [UIColor colorWithWhite:0.6 alpha:1];
+        _tabBarView.backgroundColor = [UIColor colorWithWhite:0.18 alpha:1];
         _tabBarView.layer.shadowOffset = CGSizeMake(0, -4);
         _tabBarView.layer.shadowOpacity = 0.06;
         _tabBarView.layer.shadowColor = UIColor.blackColor.CGColor;
@@ -296,11 +298,11 @@ static DolinTabBarController *instance = nil;
         [vc removeFromParentViewController];
     }
 
-    DLTabModel *tabModel1 = DLTabInfoModel(@"DOLIN1", nil, @"tab_mian_nor", @"tab_mian_sel");
+    DLTabModel *tabModel1 = DLTabInfoModel(@"DOLIN1", nil, @"tab_main_nor", @"tab_main_sel");
     DLTabModel *tabModel2 = DLTabInfoModel(@"DOLIN2", nil, @"tab_music_nor", @"tab_music_sel");
     DLTabModel *tabModel3 = DLTabInfoModel(@"", @"", @"", @"");
     DLTabModel *tabModel4 = DLTabInfoModel(@"DOLIN3", nil, @"tab_friend_nor", @"tab_friend_sel");
-    DLTabModel *tabModel5 = DLTabInfoModel(@"DOLIN4", nil, @"tab_mian_nor", @"tab_mian_sel");
+    DLTabModel *tabModel5 = DLTabInfoModel(@"DOLIN4", nil, @"tab_discover_nor", @"tab_discover_sel");
     UIViewController *vc1 = [[NSClassFromString(@"Dolin1VC") alloc] init];
     UIViewController *vc2 = [[NSClassFromString(@"Dolin2VC") alloc] init];
     UIViewController *vc3 = [[NSClassFromString(@"Dolin3VC") alloc] init];
