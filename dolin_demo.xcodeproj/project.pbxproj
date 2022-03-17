@@ -161,14 +161,16 @@
 		3AF03B821EC6E8A5008DDF80 /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3AF03B751EC6E8A4008DDF80 /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3AFE58A71EE168C4009962DB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFE58A61EE168C4009962DB /* AudioToolbox.framework */; };
 		3AFE58AC1EE17225009962DB /* ImitateTGPPersonCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE58AB1EE17225009962DB /* ImitateTGPPersonCenterVC.m */; };
+		44D081E07999AF4C089778CB /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 437C9F9814174E15222B5068 /* libPods-dolin_demo.a */; };
 		493FC64D10DA491EE25E3E80 /* libPods-TableKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0D1096B41FDA6C6A35DA5E /* libPods-TableKit.a */; };
+		6C1FD66927E32F91001FE40F /* DLTabModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1FD66827E32F91001FE40F /* DLTabModel.m */; };
+		6C7EE07627E328CA00E39C05 /* DLTabBarBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EE07527E328CA00E39C05 /* DLTabBarBtn.m */; };
 		71B2C6B8234C5C7B00239A99 /* Radio_MultipleChoiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6B7234C5C7B00239A99 /* Radio_MultipleChoiceVC.m */; };
 		71B2C6BB234C5EB800239A99 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6BA234C5EB800239A99 /* TestModel.m */; };
 		71B2C6BE234C5F1B00239A99 /* TestCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6BD234C5F1B00239A99 /* TestCollectionCell.m */; };
 		71B2C6C1234C5FC600239A99 /* TestHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6C0234C5FC600239A99 /* TestHeader.m */; };
 		71B2C6C4234C648500239A99 /* TestFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6C3234C648500239A99 /* TestFooter.m */; };
 		71F993392431EC3A001104A2 /* AppDelegate+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F993382431EC3A001104A2 /* AppDelegate+Extend.m */; };
-		7EFC63D1435EDCD772ECB23F /* libPods-dolin_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 437C9F9814174E15222B5068 /* libPods-dolin_demo.a */; };
 		E39EC7B9A61145B2E2DF9E17 /* libPods-TodayWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A753A3DC1CFCC64573753A2 /* libPods-TodayWidget.a */; };
 /* End PBXBuildFile section */
 
@@ -508,6 +510,10 @@
 		437C9F9814174E15222B5068 /* libPods-dolin_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dolin_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0D1096B41FDA6C6A35DA5E /* libPods-TableKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TableKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9CAADF975F9ABE7B95E679 /* Pods-dolin_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolin_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolin_demo/Pods-dolin_demo.debug.xcconfig"; sourceTree = "<group>"; };
+		6C1FD66727E32F91001FE40F /* DLTabModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTabModel.h; sourceTree = "<group>"; };
+		6C1FD66827E32F91001FE40F /* DLTabModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTabModel.m; sourceTree = "<group>"; };
+		6C7EE07427E328CA00E39C05 /* DLTabBarBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTabBarBtn.h; sourceTree = "<group>"; };
+		6C7EE07527E328CA00E39C05 /* DLTabBarBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTabBarBtn.m; sourceTree = "<group>"; };
 		71B2C6B6234C5C7B00239A99 /* Radio_MultipleChoiceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Radio_MultipleChoiceVC.h; sourceTree = "<group>"; };
 		71B2C6B7234C5C7B00239A99 /* Radio_MultipleChoiceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Radio_MultipleChoiceVC.m; sourceTree = "<group>"; };
 		71B2C6B9234C5EB800239A99 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
@@ -536,7 +542,7 @@
 				3AB96E281D8FC3F800D0114B /* JavaScriptCore.framework in Frameworks */,
 				3A7F973E1EC71E54007BB5B8 /* TableKit.framework in Frameworks */,
 				3AB96E261D8FC3B500D0114B /* libz.tbd in Frameworks */,
-				7EFC63D1435EDCD772ECB23F /* libPods-dolin_demo.a in Frameworks */,
+				44D081E07999AF4C089778CB /* libPods-dolin_demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -981,6 +987,10 @@
 			children = (
 				3A7C682D1DEC0D6800225D28 /* DolinTabBarController.h */,
 				3A7C682E1DEC0D6800225D28 /* DolinTabBarController.m */,
+				6C7EE07427E328CA00E39C05 /* DLTabBarBtn.h */,
+				6C7EE07527E328CA00E39C05 /* DLTabBarBtn.m */,
+				6C1FD66727E32F91001FE40F /* DLTabModel.h */,
+				6C1FD66827E32F91001FE40F /* DLTabModel.m */,
 			);
 			path = DolinTabBarController;
 			sourceTree = "<group>";
@@ -1446,7 +1456,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DL;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = shaolin;
 				TargetAttributes = {
 					16C8D6391D33511700228ABD = {
@@ -1688,6 +1698,7 @@
 				3A7C692E1DEC0D6800225D28 /* UITabBar+Badge.m in Sources */,
 				71B2C6C4234C648500239A99 /* TestFooter.m in Sources */,
 				3A332AAC1EB08D340072BD34 /* NSDate+Utilities.m in Sources */,
+				6C1FD66927E32F91001FE40F /* DLTabModel.m in Sources */,
 				71B2C6B8234C5C7B00239A99 /* Radio_MultipleChoiceVC.m in Sources */,
 				3AC4835D1E49A93D0008CE57 /* SimulateKeepViewController.m in Sources */,
 				1648814A222684AD00A35107 /* UITableView+FDIndexPathHeightCache.m in Sources */,
@@ -1734,6 +1745,7 @@
 				16488136222673E400A35107 /* FDTableViewCell.m in Sources */,
 				3AD3095D1E77D563004C2496 /* LinkworkLeftCell.m in Sources */,
 				1648814D2226B5CC00A35107 /* FDPhotoCell.m in Sources */,
+				6C7EE07627E328CA00E39C05 /* DLTabBarBtn.m in Sources */,
 				3A38F4811E1E55090036DE63 /* AnimationLikeBtnViewController.m in Sources */,
 				3AC4835E1E49A93D0008CE57 /* StrangeScorllViewController.m in Sources */,
 				3A7C69301DEC0D6800225D28 /* UIView+Extension.m in Sources */,
@@ -1853,6 +1865,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1878,7 +1891,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
@@ -1911,6 +1924,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1930,7 +1944,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -1959,7 +1973,7 @@
 				);
 				GCC_PREFIX_HEADER = "${SRCROOT}/dolin_demo/DolinPrefix.pch";
 				INFOPLIST_FILE = "${SRCROOT}/dolin_demo/DolinInfo.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.shaolin;
@@ -1988,7 +2002,7 @@
 				);
 				GCC_PREFIX_HEADER = "${SRCROOT}/dolin_demo/DolinPrefix.pch";
 				INFOPLIST_FILE = "${SRCROOT}/dolin_demo/DolinInfo.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.shaolin;
@@ -2014,7 +2028,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TableKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.TableKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2040,7 +2054,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TableKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.TableKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2061,7 +2075,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 35P2C5J2YM;
 				INFOPLIST_FILE = TodayWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.shaolin.TodayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2080,7 +2094,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 35P2C5J2YM;
 				INFOPLIST_FILE = TodayWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dolin.shaolin.TodayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";

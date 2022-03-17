@@ -19,7 +19,7 @@
 
 #import "UIView+Extension.h"
 #import "SVProgressHUD.h"
-#import "MBFadeAlertView.h" // 弹窗
+#import "MBFadeAlertView.h"
 
 #import <AVFoundation/AVFoundation.h>
 #import "UIImageView+WebCache.h"

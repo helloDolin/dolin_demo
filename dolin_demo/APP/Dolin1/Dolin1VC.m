@@ -16,13 +16,13 @@
 
 #import <objc/runtime.h>
 #import <MJRefresh/MJRefresh.h>
-#import <Masonry/Masonry.h>
 
 #import "DLAnimateTransition.h"
 
 @interface Dolin1VC ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
 @property (nonatomic, strong) UITableView* tableView;
+@property (nonatomic, strong) UIView *customNavView;
 @property (nonatomic, strong) NSMutableArray<DLFoldCellModel*> *data;
 
 @end
@@ -34,19 +34,19 @@
     
     [self setupTableViewData];
     [self setupUI];
+    self.navigationController.delegate = self;
 }
 
 #pragma mark -  method
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.navigationController.delegate = self;
-    
+    [self.view addSubview:self.customNavView];
     [self.view addSubview:self.tableView];
+    
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_offset(0);
-        make.left.right.mas_offset(0);
-        make.bottom.mas_offset(0);
+        make.left.right.bottom.mas_offset(0);
+        make.top.equalTo(self.customNavView.mas_bottom);
     }];
 }
 
@@ -80,7 +80,6 @@
     
     UIViewController* vc = [[NSClassFromString(className) alloc] init];
     vc.title = [[title componentsSeparatedByString:@"-"] firstObject];
-    vc.hidesBottomBarWhenPushed = YES;
     UIBarButtonItem *customLeftBarButtonItem = [[UIBarButtonItem alloc] init];
     customLeftBarButtonItem.title = @"返回";
     self.navigationItem.backBarButtonItem = customLeftBarButtonItem;
@@ -163,6 +162,25 @@
         _tableView.delegate = self;
     }
     return _tableView;
+}
+
+- (UIView *)customNavView {
+    if (!_customNavView) {
+        _customNavView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH,[UIApplication sharedApplication].statusBarFrame.size.height + 44)];
+        _customNavView.backgroundColor = [UIColor whiteColor];
+        
+        UILabel *lbl = [[UILabel alloc]init];
+        lbl.text = @"汇总";
+        lbl.textAlignment = NSTextAlignmentCenter;
+        lbl.font = [UIFont systemFontOfSize:18];
+        lbl.textColor = [UIColor blackColor];
+        [_customNavView addSubview:lbl];
+        [lbl mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.mas_equalTo(-10);
+            make.centerX.equalTo(_customNavView);
+        }];
+    }
+    return _customNavView;
 }
 
 @end

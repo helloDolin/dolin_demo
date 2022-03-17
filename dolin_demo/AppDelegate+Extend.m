@@ -6,10 +6,11 @@
 //  Copyright © 2020 shaolin. All rights reserved.
 //
 
+#import "DolinTabBarController.h"
+
+#import "UIWindow+Expand.h"
 #import "AppDelegate+Extend.h"
 
-#import "DolinTabBarController.h"
-#import "UIWindow+Expand.h"
 #import <AVFoundation/AVFoundation.h>
 #import <DoraemonKit/DoraemonManager.h>
 
@@ -19,8 +20,9 @@
 - (void)setupWindow {
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     self.window.backgroundColor = [UIColor whiteColor];
-    DolinTabBarController* dolinTabBarController = [[DolinTabBarController alloc]init];
-    self.window.rootViewController = dolinTabBarController;
+    [[DolinTabBarController sharedInstance] loadElectricHomeVC:NO];
+    UINavigationController *naviVc = [[UINavigationController alloc] initWithRootViewController:[DolinTabBarController sharedInstance]];
+    self.window.rootViewController = naviVc;
     [self.window makeKeyAndVisible];
     // 这行代码需放到 makeKeyAndVisible 之后且 window 需要自行初始化
     [self.window showLanuchPageAndSetSomeOthers];
