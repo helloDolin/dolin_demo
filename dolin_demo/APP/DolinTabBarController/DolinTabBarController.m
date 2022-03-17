@@ -8,12 +8,14 @@
 
 #import "DolinTabBarController.h"
 
-#import "Dolin1VC.h"
 #import "Dolin2VC.h"
-#import "Dolin3VC.h"
 #import "Dolin4VC.h"
+#import "Dolin1VC.h"
+#import "Dolin3VC.h"
 
 #import "UITabBar+Badge.h"
+#import "UIImage+ImageWithColor.h"
+//#import <YYCategories/YYCategories.h>
 
 @interface DolinTabBarController ()
 
@@ -25,32 +27,48 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setupNavigationBar];
     [self setupTabBar];
     [self setupAllChildViewController];
-    [self setupNavigationBar];
-    [self setupTabBarItemFontColor];
-    [self.tabBar showBadgeOnItemIndex:3];  // 设置小红点
+    [self.tabBar showBadgeOnItemIndex:3]; // 设置小红点
 }
 
 #pragma mark -  method
-- (void)setupTabBarItemFontColor {
-    //设置字体颜色
-    UIColor *titleNormalColor = [UIColor colorWithWhite:0.8 alpha:1];
-    UIColor *titleSelectedColor = [UIColor whiteColor];
-
-    self.tabBar.tintColor = [UIColor whiteColor];
-
+- (void)setupNavigationBar {
+    // titleTextAttributes
+    [UINavigationBar appearance].titleTextAttributes = @{
+        NSForegroundColorAttributeName: [UIColor blackColor] ,
+        NSFontAttributeName: [UIFont systemFontOfSize:18]
+    };
     
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                       titleNormalColor, NSForegroundColorAttributeName,
-                                                       nil] forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                       titleSelectedColor, NSForegroundColorAttributeName,
-                                                       nil] forState:UIControlStateSelected];
+    // tintColor：设置字体颜色
+    [UIApplication sharedApplication].delegate.window.tintColor = [UIColor blackColor];
+        
+    if (@available(iOS 13.0, *)) {
+        UINavigationBarAppearance *appearance = [UINavigationBarAppearance new];
+        [appearance configureWithOpaqueBackground];
+        appearance.titleTextAttributes = @{NSFontAttributeName: [UIFont systemFontOfSize:18], NSForegroundColorAttributeName: [UIColor blackColor]};
+        [UINavigationBar appearance].standardAppearance = appearance;
+        [UINavigationBar appearance].scrollEdgeAppearance = appearance;
+    }
 }
 
 - (void)setupTabBar {
-    self.tabBar.barStyle = UIBarStyleBlack;
+    UIColor *titleNormalColor = [UIColor blackColor];
+    UIColor *titleSelectedColor = [UIColor whiteColor];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:titleNormalColor} forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:titleSelectedColor} forState:UIControlStateSelected];
+
+    if (@available(iOS 13.0, *)) {
+        UITabBarAppearance *appearance = [UITabBarAppearance new];
+//        UIImage *bgImage = [UIImage imageNamed:@"home_line"];
+//        [appearance setShadowImage:bgImage];
+        [appearance setBackgroundImage:[UIImage imageNamed:@"twitter_bg"]];
+        appearance.stackedLayoutAppearance.normal.titleTextAttributes = @{NSForegroundColorAttributeName:titleNormalColor};
+        appearance.stackedLayoutAppearance.selected.titleTextAttributes = @{NSForegroundColorAttributeName:titleSelectedColor};
+        self.tabBarItem.standardAppearance = appearance;
+    }
 }
 
 // ps：关于item的设置，这边可以直接用原生的 item 素材，选中和未选中状态
@@ -75,26 +93,9 @@
                               title:(NSString *)title {
     viewController.title = title;
     UINavigationController *navC = [[UINavigationController alloc]initWithRootViewController:viewController];
-    navC.tabBarItem.image = normalImage;
-    navC.tabBarItem.selectedImage = selectedImage;
+    navC.tabBarItem.image = [normalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    navC.tabBarItem.selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [self addChildViewController:navC];
-}
-
-- (void)setupNavigationBar {
-    UINavigationBar *bar = [UINavigationBar appearance];
-    
-    // bar tint color
-    bar.barTintColor = [UIColor colorWithRed:211/255.0f green:38/255.0f  blue:39/255.0f alpha:1.0f];
-    // 设置字体颜色
-    bar.tintColor = [UIColor whiteColor];
-    // 设置title前景色
-    [bar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-}
-
-- (UIImage*)getOriginalImageByImageName:(NSString*)imageName {
-    UIImage *originalImage = [UIImage imageNamed:imageName];
-    originalImage = [originalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    return originalImage;
 }
 
 - (void)playSound {

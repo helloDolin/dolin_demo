@@ -7,34 +7,47 @@
 //
 
 #import "Dolin1VC.h"
-#import "DLAnimateTransition.h"
+
 #import "DLPhotoAlbumPickerVC.h"
+
 #import "DLSystemPermissionsManager.h"
+
 #import "DLFoldCellModel.h"
-#import <MJRefresh/MJRefresh.h>
+
 #import <objc/runtime.h>
+#import <MJRefresh/MJRefresh.h>
+#import <Masonry/Masonry.h>
+
+#import "DLAnimateTransition.h"
 
 @interface Dolin1VC ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 
-@property (nonatomic,strong) UITableView* tableView;
+@property (nonatomic, strong) UITableView* tableView;
 @property (nonatomic, strong) NSMutableArray<DLFoldCellModel*> *data;
 
 @end
 
 @implementation Dolin1VC
 
-#pragma mark -  life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setupTableViewData];
     [self setupUI];
 }
 
 #pragma mark -  method
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setupTableViewData];
+    
     self.navigationController.delegate = self;
+    
     [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_offset(0);
+        make.left.right.mas_offset(0);
+        make.bottom.mas_offset(0);
+    }];
 }
 
 - (void)setupTableViewData {
@@ -145,8 +158,7 @@
 #pragma mark -  getter
 - (UITableView*)tableView {
     if (!_tableView) {
-        CGRect rect = rect = CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_BAR_HEIGHT);
-        _tableView = [[UITableView alloc]initWithFrame:rect style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.dataSource = self;
         _tableView.delegate = self;
     }
