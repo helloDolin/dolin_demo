@@ -26,7 +26,7 @@
     self.transitioningDelegate = self;
 
     WS(weakSelf);
-    self.loadingBtn = [LoadingBtn LoadingBtnInitWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT, SCREEN_WIDTH, 100) andBackgroundColor:RANDOM_UICOLOR andTitle:@"LOGIN" andTitleColor:RANDOM_UICOLOR andTitleFont:[UIFont systemFontOfSize:15] andCornerRadius:10 andClickBlock:^{
+    self.loadingBtn = [LoadingBtn LoadingBtnInitWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT + 30, SCREEN_WIDTH, 100) andBackgroundColor:RANDOM_UICOLOR andTitle:@"LOGIN" andTitleColor:RANDOM_UICOLOR andTitleFont:[UIFont systemFontOfSize:15] andCornerRadius:10 andClickBlock:^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [weakSelf.loadingBtn stopAnimateAndCallBack:^{
                 LoadingBtnVC *vc = [LoadingBtnVC new];

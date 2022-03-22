@@ -49,7 +49,6 @@
 		3A38F4841E1E55090036DE63 /* OriginAPIAnimateStudyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F47E1E1E55090036DE63 /* OriginAPIAnimateStudyVC.m */; };
 		3A38F4851E1E55090036DE63 /* README_animate.md in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F47F1E1E55090036DE63 /* README_animate.md */; };
 		3A38F48C1E1E55350036DE63 /* AutoLayout_ScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4881E1E55350036DE63 /* AutoLayout_ScrollViewVC.m */; };
-		3A38F4911E1E558D0036DE63 /* Animation_Study_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A38F4901E1E558D0036DE63 /* Animation_Study_VC.m */; };
 		3A3CBF57243E0A7D000EBB0E /* like.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3A3CBF52243E0A7D000EBB0E /* like.caf */; };
 		3A3CBF58243E0A7D000EBB0E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A3CBF53243E0A7D000EBB0E /* Localizable.strings */; };
 		3A3CBF59243E0A7D000EBB0E /* keep.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3A3CBF55243E0A7D000EBB0E /* keep.mp4 */; };
@@ -296,8 +295,6 @@
 		3A38F47F1E1E55090036DE63 /* README_animate.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README_animate.md; sourceTree = "<group>"; };
 		3A38F4871E1E55350036DE63 /* AutoLayout_ScrollViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayout_ScrollViewVC.h; sourceTree = "<group>"; };
 		3A38F4881E1E55350036DE63 /* AutoLayout_ScrollViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayout_ScrollViewVC.m; sourceTree = "<group>"; };
-		3A38F48F1E1E558D0036DE63 /* Animation_Study_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation_Study_VC.h; sourceTree = "<group>"; };
-		3A38F4901E1E558D0036DE63 /* Animation_Study_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation_Study_VC.m; sourceTree = "<group>"; };
 		3A3CBF52243E0A7D000EBB0E /* like.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = like.caf; sourceTree = "<group>"; };
 		3A3CBF54243E0A7D000EBB0E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		3A3CBF55243E0A7D000EBB0E /* keep.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = keep.mp4; sourceTree = "<group>"; };
@@ -715,9 +712,6 @@
 		3A38F4741E1E55090036DE63 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				1612AAE522525383004F0ECC /* UIBezierPath_Study */,
-				3A38F48F1E1E558D0036DE63 /* Animation_Study_VC.h */,
-				3A38F4901E1E558D0036DE63 /* Animation_Study_VC.m */,
 				3A38F4751E1E55090036DE63 /* AnimationImagesViewController.h */,
 				3A38F4761E1E55090036DE63 /* AnimationImagesViewController.m */,
 				3A38F4771E1E55090036DE63 /* AnimationLikeBtnViewController.h */,
@@ -726,13 +720,14 @@
 				3A38F47A1E1E55090036DE63 /* AnimationStudyVC.m */,
 				3A38F47B1E1E55090036DE63 /* CGAffineTransformStudy_VC.h */,
 				3A38F47C1E1E55090036DE63 /* CGAffineTransformStudy_VC.m */,
-				3A38F47D1E1E55090036DE63 /* OriginAPIAnimateStudyVC.h */,
-				3A38F47E1E1E55090036DE63 /* OriginAPIAnimateStudyVC.m */,
-				3A92DAEC1E2774550092A33A /* LoadingBtnVC.h */,
-				3A92DAED1E2774550092A33A /* LoadingBtnVC.m */,
 				3A92DAEF1E2774850092A33A /* LoadingBtn.h */,
 				3A92DAF01E2774850092A33A /* LoadingBtn.m */,
+				3A92DAEC1E2774550092A33A /* LoadingBtnVC.h */,
+				3A92DAED1E2774550092A33A /* LoadingBtnVC.m */,
+				3A38F47D1E1E55090036DE63 /* OriginAPIAnimateStudyVC.h */,
+				3A38F47E1E1E55090036DE63 /* OriginAPIAnimateStudyVC.m */,
 				3A38F47F1E1E55090036DE63 /* README_animate.md */,
+				1612AAE522525383004F0ECC /* UIBezierPath_Study */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -1207,7 +1202,6 @@
 				3AC483631E49A96C0008CE57 /* ImitateGoodDetail */,
 				3AC4834C1E49A93D0008CE57 /* SimulateKeep */,
 				3AC483511E49A93D0008CE57 /* SimulatePhoneMessage */,
-				3AC483571E49A93D0008CE57 /* SimulateTwitter */,
 			);
 			path = Imitate;
 			sourceTree = "<group>";
@@ -1231,6 +1225,7 @@
 				3AC483541E49A93D0008CE57 /* StrangeTableViewCell.h */,
 				3AC483551E49A93D0008CE57 /* StrangeTableViewCell.m */,
 				3AC483561E49A93D0008CE57 /* StrangeTableViewCell.xib */,
+				3AC483571E49A93D0008CE57 /* SimulateTwitter */,
 			);
 			path = SimulatePhoneMessage;
 			sourceTree = "<group>";
@@ -1663,7 +1658,6 @@
 				3A7C69271DEC0D6800225D28 /* UIImage+animatedGIF.m in Sources */,
 				16C602B0224A406500F3DA0B /* RecommendCellTitleView.m in Sources */,
 				16B23F0622AE6756000BEA07 /* DLModel.m in Sources */,
-				3A38F4911E1E558D0036DE63 /* Animation_Study_VC.m in Sources */,
 				3A7C69201DEC0D6800225D28 /* ImageViewer.m in Sources */,
 				3AA0C1B41E71628A009B1628 /* CalculatorMaker.m in Sources */,
 				3AC483611E49A93D0008CE57 /* SimulateTwitterView.m in Sources */,

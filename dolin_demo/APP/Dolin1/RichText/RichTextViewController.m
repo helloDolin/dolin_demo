@@ -23,14 +23,19 @@ static NSString* kStr = @"对酒当歌，人生几何？对酒当歌，人生几
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    _testLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, NAVIGATION_BAR_HEIGHT + 20, SCREEN_WIDTH, 300)];
+    // 让 self.view 的 Y 从 navigationBar 下面开始计算
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+
+    _testLabel = [[UILabel alloc] initWithFrame:CGRectZero];
     _testLabel.numberOfLines = 0;
     _testLabel.backgroundColor = [UIColor orangeColor];
     
-    
     [self studyAttributeString2];
     [self.view addSubview:_testLabel];
+    
+    [_testLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.mas_offset(0);
+    }];
 }
 
 #pragma mark - method
