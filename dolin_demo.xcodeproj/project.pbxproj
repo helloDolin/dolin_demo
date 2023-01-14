@@ -161,6 +161,10 @@
 		493FC64D10DA491EE25E3E80 /* libPods-TableKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0D1096B41FDA6C6A35DA5E /* libPods-TableKit.a */; };
 		6C1FD66927E32F91001FE40F /* DLTabModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1FD66827E32F91001FE40F /* DLTabModel.m */; };
 		6C7EE07627E328CA00E39C05 /* DLTabBarBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7EE07527E328CA00E39C05 /* DLTabBarBtn.m */; };
+		6C94514B296FCDF800C83C41 /* DLInterviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C94514A296FCDF800C83C41 /* DLInterviewVC.m */; };
+		6C94514E296FD09C00C83C41 /* DLViewReusePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C94514D296FD09C00C83C41 /* DLViewReusePool.m */; };
+		6C945154296FD2F900C83C41 /* DLIndexTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C945153296FD2F900C83C41 /* DLIndexTableView.m */; };
+		6C9451572970023300C83C41 /* DLUserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9451562970023300C83C41 /* DLUserCenter.m */; };
 		71B2C6B8234C5C7B00239A99 /* Radio_MultipleChoiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6B7234C5C7B00239A99 /* Radio_MultipleChoiceVC.m */; };
 		71B2C6BB234C5EB800239A99 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6BA234C5EB800239A99 /* TestModel.m */; };
 		71B2C6BE234C5F1B00239A99 /* TestCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B2C6BD234C5F1B00239A99 /* TestCollectionCell.m */; };
@@ -503,6 +507,14 @@
 		6C1FD66827E32F91001FE40F /* DLTabModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTabModel.m; sourceTree = "<group>"; };
 		6C7EE07427E328CA00E39C05 /* DLTabBarBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTabBarBtn.h; sourceTree = "<group>"; };
 		6C7EE07527E328CA00E39C05 /* DLTabBarBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTabBarBtn.m; sourceTree = "<group>"; };
+		6C945149296FCDF800C83C41 /* DLInterviewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLInterviewVC.h; sourceTree = "<group>"; };
+		6C94514A296FCDF800C83C41 /* DLInterviewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLInterviewVC.m; sourceTree = "<group>"; };
+		6C94514C296FD09C00C83C41 /* DLViewReusePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLViewReusePool.h; sourceTree = "<group>"; };
+		6C94514D296FD09C00C83C41 /* DLViewReusePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLViewReusePool.m; sourceTree = "<group>"; };
+		6C945152296FD2F900C83C41 /* DLIndexTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLIndexTableView.h; sourceTree = "<group>"; };
+		6C945153296FD2F900C83C41 /* DLIndexTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLIndexTableView.m; sourceTree = "<group>"; };
+		6C9451552970023300C83C41 /* DLUserCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLUserCenter.h; sourceTree = "<group>"; };
+		6C9451562970023300C83C41 /* DLUserCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLUserCenter.m; sourceTree = "<group>"; };
 		71B2C6B6234C5C7B00239A99 /* Radio_MultipleChoiceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Radio_MultipleChoiceVC.h; sourceTree = "<group>"; };
 		71B2C6B7234C5C7B00239A99 /* Radio_MultipleChoiceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Radio_MultipleChoiceVC.m; sourceTree = "<group>"; };
 		71B2C6B9234C5EB800239A99 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
@@ -798,6 +810,7 @@
 		3A7C67B31DEC0D6800225D28 /* Dolin1 */ = {
 			isa = PBXGroup;
 			children = (
+				6C945148296FCDCC00C83C41 /* Interview */,
 				3A38F4741E1E55090036DE63 /* Animation */,
 				3A38F4861E1E55350036DE63 /* AutoLayout+Masonry */,
 				3ADF3A521EBC0E3600A5EFF6 /* AVFoundation */,
@@ -1299,6 +1312,21 @@
 			path = ImitateTGPPersonCenter;
 			sourceTree = "<group>";
 		};
+		6C945148296FCDCC00C83C41 /* Interview */ = {
+			isa = PBXGroup;
+			children = (
+				6C945149296FCDF800C83C41 /* DLInterviewVC.h */,
+				6C94514A296FCDF800C83C41 /* DLInterviewVC.m */,
+				6C94514C296FD09C00C83C41 /* DLViewReusePool.h */,
+				6C94514D296FD09C00C83C41 /* DLViewReusePool.m */,
+				6C945152296FD2F900C83C41 /* DLIndexTableView.h */,
+				6C945153296FD2F900C83C41 /* DLIndexTableView.m */,
+				6C9451552970023300C83C41 /* DLUserCenter.h */,
+				6C9451562970023300C83C41 /* DLUserCenter.m */,
+			);
+			path = Interview;
+			sourceTree = "<group>";
+		};
 		71B2C6B5234C5C2200239A99 /* Radio_MultipleChoice */ = {
 			isa = PBXGroup;
 			children = (
@@ -1636,6 +1664,7 @@
 				3A7C68E21DEC0D6800225D28 /* Dolin4VC.m in Sources */,
 				16C8D6421D33511700228ABD /* AppDelegate.m in Sources */,
 				3A7C692B1DEC0D6800225D28 /* UIImage+Screenshot.m in Sources */,
+				6C945154296FD2F900C83C41 /* DLIndexTableView.m in Sources */,
 				16C8D63F1D33511700228ABD /* main.m in Sources */,
 				16BA4AA72277EA2700363DDE /* UIViewController+printVCDealloc.m in Sources */,
 				16C602AF224A406500F3DA0B /* MusicCDView.m in Sources */,
@@ -1646,6 +1675,7 @@
 				3AA544891EE8015D00A6C20F /* PhotoBrowserCell.m in Sources */,
 				1648813A222677A400A35107 /* FDTemplateVC.m in Sources */,
 				16C602AC224A406500F3DA0B /* MNBaseTableViewCell.m in Sources */,
+				6C94514E296FD09C00C83C41 /* DLViewReusePool.m in Sources */,
 				1630F53D2249CB0F002499C3 /* Dolin2VC.m in Sources */,
 				16D1D062224BEA4D00435C3A /* MNMusicPlayer.m in Sources */,
 				3A7776D61EE7EF5300B3E793 /* NoteViewController.m in Sources */,
@@ -1707,6 +1737,7 @@
 				71B2C6BE234C5F1B00239A99 /* TestCollectionCell.m in Sources */,
 				3A7C69281DEC0D6800225D28 /* UIImage+Blur.m in Sources */,
 				16D1D0C82250F26A00435C3A /* DLBannerView.m in Sources */,
+				6C94514B296FCDF800C83C41 /* DLInterviewVC.m in Sources */,
 				3A97CD811EE7F5F600AC19F5 /* PhotoAlbumCategoryCell.m in Sources */,
 				3A7C69241DEC0D6800225D28 /* YYWeakProxy.m in Sources */,
 				3A38F4831E1E55090036DE63 /* CGAffineTransformStudy_VC.m in Sources */,
@@ -1735,6 +1766,7 @@
 				3ADF3A5D1EBC176A00A5EFF6 /* VideoModel.m in Sources */,
 				3A7C68BA1DEC0D6800225D28 /* Dolin1VC.m in Sources */,
 				16E34B6A227549E400CDD25B /* DLFoldCellModel.m in Sources */,
+				6C9451572970023300C83C41 /* DLUserCenter.m in Sources */,
 				3A7776C21EE7EB0C00B3E793 /* ModelSelectedAsset.m in Sources */,
 				3A97CD8B1EE800AC00AC19F5 /* DLPhotoBrowserVC.m in Sources */,
 				3A7C68C11DEC0D6800225D28 /* PwdTextFieldBugViewController.m in Sources */,
